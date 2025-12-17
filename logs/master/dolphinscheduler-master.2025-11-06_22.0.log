@@ -1,0 +1,10 @@
+[WI-0][TI-0] - 2025-11-06 22:31:23.726 WARN  [MasterRpcServer-worker-0] o.a.d.e.b.s.JdkDynamicServerHandler:[174] - Not receive heart beat from: /172.28.0.6:39680, will close the channel
+[WI-0][TI-0] - 2025-11-06 22:31:23.947 WARN  [HikariPool-1 housekeeper] c.z.h.p.HikariPool:[788] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h20s841ms297µs694ns).
+[WI-0][TI-0] - 2025-11-06 22:31:23.944 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9024629003489258 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 22:31:23.944 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[38] - OverLoad: the system cpu usage: 1.0 is over then the maxSystemCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 22:31:23.726 WARN  [Master-Server-SendThread(zookeeper:2181)] o.a.z.ClientCnxn:[1249] - Client session timed out, have not heard from server in 3598027ms for session id 0x100061b44310000
+[WI-0][TI-0] - 2025-11-06 22:31:24.171 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 22:31:24.417 WARN  [Master-Server-SendThread(zookeeper:2181)] o.a.z.ClientCnxn:[1292] - Session 0x100061b44310000 for server zookeeper/172.28.0.3:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+org.apache.zookeeper.ClientCnxn$SessionTimeoutException: Client session timed out, have not heard from server in 3598027ms for session id 0x100061b44310000
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1250)
+[WI-0][TI-0] - 2025-11-06 22:31:25.536 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[38] - OverLoad: the system cpu usage: 0.7433206106870229 is over then the maxSystemCpuUsagePercentageThresholds 0.7

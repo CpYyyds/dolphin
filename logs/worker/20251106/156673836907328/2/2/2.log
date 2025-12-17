@@ -1,0 +1,24 @@
+2025-11-06 20:42:13.314 INFO  - 🐬 Initialize Task Context
+2025-11-06 20:42:13.704 INFO  - TenantCode: cpy check successfully
+2025-11-06 20:42:13.715 ERROR - The directory: /tmp/dolphinscheduler/exec already exists
+2025-11-06 20:42:13.717 ERROR - The directory: /tmp/dolphinscheduler/exec/process already exists
+2025-11-06 20:42:13.719 INFO  - TaskInstance working directory: /tmp/dolphinscheduler/exec/process/2 create successfully
+2025-11-06 20:42:13.799 ERROR - PhysicalTaskExecutor{id=2, name=wow, stat=INITIALIZED} execute failed
+org.apache.dolphinscheduler.plugin.task.api.TaskException: Download resource file: /tmp/dolphinscheduler/default/resources/flink-file-wordcount-1.0-SNAPSHOT.jar error
+	at org.apache.dolphinscheduler.server.worker.utils.TaskExecutionContextUtils.downloadResourcesIfNeeded(TaskExecutionContextUtils.java:100)
+	at org.apache.dolphinscheduler.server.worker.executor.PhysicalTaskExecutor.initializeTaskContext(PhysicalTaskExecutor.java:133)
+	at org.apache.dolphinscheduler.task.executor.AbstractTaskExecutor.start(AbstractTaskExecutor.java:66)
+	at org.apache.dolphinscheduler.task.executor.worker.TaskExecutorWorker.start(TaskExecutorWorker.java:65)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.io.FileNotFoundException: Source path does not exist: /tmp/dolphinscheduler/default/resources/flink-file-wordcount-1.0-SNAPSHOT.jar
+	at org.apache.dolphinscheduler.plugin.storage.api.local.LocalStorageOperator.copy(LocalStorageOperator.java:98)
+	at org.apache.dolphinscheduler.plugin.storage.api.local.LocalStorageOperator.download(LocalStorageOperator.java:128)
+	at org.apache.dolphinscheduler.server.worker.utils.TaskExecutionContextUtils.downloadResourcesIfNeeded(TaskExecutionContextUtils.java:88)
+	... 8 common frames omitted
+2025-11-06 20:42:14.090 INFO  - 🐬 Finalize Task Instance
+2025-11-06 20:42:14.095 INFO  - FINALIZE_SESSION
+2025-11-06 20:42:14.097 INFO  - Deleted task exec directory: /tmp/dolphinscheduler/exec/process/2

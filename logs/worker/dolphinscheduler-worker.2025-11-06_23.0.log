@@ -1,0 +1,19 @@
+[WI-0][TI-0] - 2025-11-06 23:31:28.926 WARN  [HikariPool-1 housekeeper] c.z.h.p.HikariPool:[788] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h6s90ms726µs437ns).
+[WI-0][TI-0] - 2025-11-06 23:57:04.464 WARN  [Worker-Server-EventThread] o.a.c.ConnectionState:[317] - Session expired event received
+[WI-0][TI-0] - 2025-11-06 23:57:04.464 WARN  [Worker-Server-SendThread(zookeeper:2181)] o.a.z.ClientCnxn:[1429] - Unable to reconnect to ZooKeeper service, session 0x100061b44310001 has expired
+[WI-0][TI-0] - 2025-11-06 23:31:29.068 WARN  [Curator-ConnectionStateManager-0] o.a.d.p.r.z.ZookeeperConnectionStateListener:[54] - Registry suspended
+[WI-0][TI-0] - 2025-11-06 23:31:29.040 WARN  [WorkerRpcServer-worker-0] o.a.d.e.b.s.JdkDynamicServerHandler:[174] - Not receive heart beat from: /172.28.0.6:56754, will close the channel
+[WI-0][TI-0] - 2025-11-06 23:57:05.013 WARN  [Worker-Server-SendThread(zookeeper:2181)] o.a.z.ClientCnxn:[1292] - Session 0x100061b44310001 for server zookeeper/172.28.0.3:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+org.apache.zookeeper.ClientCnxn$SessionExpiredException: Unable to reconnect to ZooKeeper service, session 0x100061b44310001 has expired
+	at org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1430)
+	at org.apache.zookeeper.ClientCnxnSocket.readConnectResult(ClientCnxnSocket.java:154)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:86)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1282)
+[WI-0][TI-0] - 2025-11-06 23:57:05.041 INFO  [Curator-ConnectionStateManager-0] o.a.d.s.w.r.WorkerConnectionStateListener:[38] - Worker received a SUSPENDED event from registry, the current server state is RUNNING
+[WI-0][TI-0] - 2025-11-06 23:57:05.085 WARN  [Curator-ConnectionStateManager-0] o.a.d.p.r.z.ZookeeperConnectionStateListener:[46] - Registry disconnected
+[WI-0][TI-0] - 2025-11-06 23:57:05.090 INFO  [Curator-ConnectionStateManager-0] o.a.d.s.w.r.WorkerConnectionStateListener:[38] - Worker received a DISCONNECTED event from registry, the current server state is RUNNING
+[WI-0][TI-0] - 2025-11-06 23:57:05.098 INFO  [Curator-ConnectionStateManager-0] o.a.d.c.l.ServerLifeCycleManager:[88] - The current server status changed from RUNNING to STOPPED
+[WI-0][TI-0] - 2025-11-06 23:57:05.199 ERROR [NettyClientThread-] o.a.d.e.b.c.NettyClientHandler:[69] - NettyClientHandler catch an exception on channel: [id: 0x3b5626c7, L:/172.28.0.6:59440 - R:172.28.0.6/172.28.0.6:5678]
+io.netty.channel.unix.Errors$NativeIoException: readAddress(..) failed: Connection reset by peer
+[WI-0][TI-0] - 2025-11-06 23:57:05.335 INFO  [NettyClientThread-] o.a.d.e.b.c.NettyClientHandler:[46] - Channel inactive: [id: 0x3b5626c7, L:/172.28.0.6:59440 ! R:172.28.0.6/172.28.0.6:5678]

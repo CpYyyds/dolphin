@@ -1,0 +1,268 @@
+[WI-0][TI-0] - 2025-11-06 13:36:39.541 WARN  [Master-Server-SendThread(zookeeper:2181)] o.a.z.ClientCnxn:[1292] - Session 0x100042203b70000 for server zookeeper/172.28.0.6:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+org.apache.zookeeper.ClientCnxn$EndOfStreamException: Unable to read additional data from server sessionid 0x100042203b70000, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1282)
+[WI-0][TI-0] - 2025-11-06 13:36:39.588 WARN  [HikariPool-1 housekeeper] c.z.h.p.HikariPool:[788] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h19s166ms761µs320ns).
+[WI-0][TI-0] - 2025-11-06 13:36:39.895 WARN  [Curator-ConnectionStateManager-0] o.a.d.p.r.z.ZookeeperConnectionStateListener:[54] - Registry suspended
+[WI-0][TI-0] - 2025-11-06 13:36:39.902 INFO  [Curator-ConnectionStateManager-0] o.a.d.s.m.r.MasterConnectionStateListener:[38] - Master received a SUSPENDED event from registry, the current server state is RUNNING
+[WI-0][TI-0] - 2025-11-06 13:36:40.872 WARN  [Master-Server-EventThread] o.a.c.ConnectionState:[317] - Session expired event received
+[WI-0][TI-0] - 2025-11-06 13:36:40.873 WARN  [Master-Server-SendThread(zookeeper:2181)] o.a.z.ClientCnxn:[1429] - Unable to reconnect to ZooKeeper service, session 0x100042203b70000 has expired
+[WI-0][TI-0] - 2025-11-06 13:36:40.891 WARN  [Master-Server-SendThread(zookeeper:2181)] o.a.z.ClientCnxn:[1292] - Session 0x100042203b70000 for server zookeeper/172.28.0.6:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+org.apache.zookeeper.ClientCnxn$SessionExpiredException: Unable to reconnect to ZooKeeper service, session 0x100042203b70000 has expired
+	at org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1430)
+	at org.apache.zookeeper.ClientCnxnSocket.readConnectResult(ClientCnxnSocket.java:154)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:86)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1282)
+[WI-0][TI-0] - 2025-11-06 13:36:40.908 WARN  [Curator-ConnectionStateManager-0] o.a.d.p.r.z.ZookeeperConnectionStateListener:[46] - Registry disconnected
+[WI-0][TI-0] - 2025-11-06 13:36:41.107 INFO  [Curator-ConnectionStateManager-0] o.a.d.s.m.r.MasterConnectionStateListener:[38] - Master received a DISCONNECTED event from registry, the current server state is RUNNING
+[WI-0][TI-0] - 2025-11-06 13:36:41.131 INFO  [Curator-ConnectionStateManager-0] o.a.d.c.l.ServerLifeCycleManager:[88] - The current server status changed from RUNNING to STOPPED
+[WI-0][TI-0] - 2025-11-06 13:36:44.136 INFO  [Curator-ConnectionStateManager-0] o.a.d.s.m.MasterServer:[196] - MasterServer is stopping, current cause : Master disconnected from registry, will stop myself
+[WI-0][TI-0] - 2025-11-06 13:36:44.137 INFO  [Curator-ConnectionStateManager-0] o.a.d.s.m.e.t.d.WorkerGroupDispatcherCoordinator:[89] - WorkerGroupDispatcherCoordinator closing
+[WI-0][TI-0] - 2025-11-06 13:36:44.139 INFO  [Curator-ConnectionStateManager-0] o.a.d.s.m.e.t.d.WorkerGroupDispatcherCoordinator:[97] - WorkerGroupDispatcherCoordinator closed...
+[WI-0][TI-0] - 2025-11-06 13:36:44.143 INFO  [Curator-ConnectionStateManager-0] o.q.c.QuartzScheduler:[585] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+[WI-0][TI-0] - 2025-11-06 13:36:44.147 WARN  [Curator-ConnectionStateManager-0] o.a.d.s.m.MasterServer:[177] - MasterServer is already stopped, current cause: MasterServer shutdown
+[WI-0][TI-0] - 2025-11-06 13:36:44.148 INFO  [Curator-ConnectionStateManager-0] o.a.d.s.m.e.e.LogicTaskEngineDelegator:[75] - LogicTaskEngineDelegator closed
+[WI-0][TI-0] - 2025-11-06 13:36:44.149 INFO  [Curator-ConnectionStateManager-0] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[174] - LogicTaskExecutorLifecycleEventReporter closed
+[WI-0][TI-0] - 2025-11-06 13:36:44.150 INFO  [Curator-ConnectionStateManager-0] o.a.d.t.e.TaskEngine:[87] - LogicTaskEngine closed
+[WI-0][TI-0] - 2025-11-06 13:36:44.151 INFO  [Curator-ConnectionStateManager-0] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[107] - LogicTaskExecutorEventBusCoordinator closed
+[WI-0][TI-0] - 2025-11-06 13:36:44.153 INFO  [Curator-ConnectionStateManager-0] o.a.d.s.m.e.t.d.WorkerGroupDispatcherCoordinator:[89] - WorkerGroupDispatcherCoordinator closing
+[WI-0][TI-0] - 2025-11-06 13:36:44.154 INFO  [Curator-ConnectionStateManager-0] o.a.d.s.m.e.t.d.WorkerGroupDispatcherCoordinator:[97] - WorkerGroupDispatcherCoordinator closed...
+[WI-0][TI-0] - 2025-11-06 13:36:44.156 INFO  [Curator-ConnectionStateManager-0] o.a.d.s.m.e.c.CommandEngine:[106] - MasterSchedulerBootstrap stopping...
+[WI-0][TI-0] - 2025-11-06 13:36:44.157 INFO  [Curator-ConnectionStateManager-0] o.a.d.s.m.e.c.CommandEngine:[108] - MasterSchedulerBootstrap stopped...
+[WI-0][TI-0] - 2025-11-06 13:36:44.158 WARN  [Curator-ConnectionStateManager-0] o.s.b.f.s.DisposableBeanAdapter:[248] - Invocation of close method failed on bean with name 'workflowEngine': org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'workflowEventBusFireWorkers': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+[WI-0][TI-0] - 2025-11-06 13:36:44.159 INFO  [Curator-ConnectionStateManager-0] o.a.d.s.m.e.c.CommandEngine:[106] - MasterSchedulerBootstrap stopping...
+[WI-0][TI-0] - 2025-11-06 13:36:44.160 INFO  [Curator-ConnectionStateManager-0] o.a.d.s.m.e.c.CommandEngine:[108] - MasterSchedulerBootstrap stopped...
+[WI-0][TI-0] - 2025-11-06 13:36:44.163 WARN  [Curator-ConnectionStateManager-0] o.s.b.f.s.DisposableBeanAdapter:[248] - Invocation of close method failed on bean with name 'workflowEventBusCoordinator': org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'workflowEventBusFireWorkers': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+[WI-0][TI-0] - 2025-11-06 13:36:44.168 INFO  [Curator-ConnectionStateManager-0] o.a.d.s.m.e.WorkflowEventBusFireWorkers:[92] - WorkflowEventBusFireWorkers closed
+[WI-0][TI-0] - 2025-11-06 13:36:44.171 INFO  [Curator-ConnectionStateManager-0] o.a.d.s.m.e.s.SystemEventBusFireWorker:[109] - SystemEventBusFireWorker closed
+[WI-0][TI-0] - 2025-11-06 13:36:44.174 INFO  [Curator-ConnectionStateManager-0] o.q.c.QuartzScheduler:[666] - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+[WI-0][TI-0] - 2025-11-06 13:36:44.176 INFO  [Curator-ConnectionStateManager-0] o.q.c.QuartzScheduler:[585] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+[WI-0][TI-0] - 2025-11-06 13:36:44.181 INFO  [Curator-ConnectionStateManager-0] o.q.c.QuartzScheduler:[740] - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+[WI-0][TI-0] - 2025-11-06 13:36:44.182 INFO  [Curator-ConnectionStateManager-0] o.s.s.q.SchedulerFactoryBean:[847] - Shutting down Quartz Scheduler
+[WI-0][TI-0] - 2025-11-06 13:36:44.183 INFO  [Curator-ConnectionStateManager-0] o.a.d.s.m.e.e.LogicTaskEngineDelegator:[75] - LogicTaskEngineDelegator closed
+[WI-0][TI-0] - 2025-11-06 13:36:44.183 INFO  [Curator-ConnectionStateManager-0] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[174] - LogicTaskExecutorLifecycleEventReporter closed
+[WI-0][TI-0] - 2025-11-06 13:36:44.184 INFO  [Curator-ConnectionStateManager-0] o.a.d.t.e.TaskEngine:[87] - LogicTaskEngine closed
+[WI-0][TI-0] - 2025-11-06 13:36:44.184 INFO  [Curator-ConnectionStateManager-0] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[107] - LogicTaskExecutorEventBusCoordinator closed
+[WI-0][TI-0] - 2025-11-06 13:36:44.185 INFO  [Curator-ConnectionStateManager-0] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[107] - LogicTaskExecutorEventBusCoordinator closed
+[WI-0][TI-0] - 2025-11-06 13:36:44.186 INFO  [Curator-ConnectionStateManager-0] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[174] - LogicTaskExecutorLifecycleEventReporter closed
+[WI-0][TI-0] - 2025-11-06 13:36:44.187 INFO  [Curator-ConnectionStateManager-0] o.a.d.s.m.e.t.d.WorkerGroupDispatcherCoordinator:[89] - WorkerGroupDispatcherCoordinator closing
+[WI-0][TI-0] - 2025-11-06 13:36:44.189 INFO  [Curator-ConnectionStateManager-0] o.a.d.s.m.e.t.d.WorkerGroupDispatcherCoordinator:[97] - WorkerGroupDispatcherCoordinator closed...
+[WI-0][TI-0] - 2025-11-06 13:36:44.190 WARN  [Curator-ConnectionStateManager-0] o.a.d.c.m.BaseHeartBeatTask:[78] - MasterHeartBeatTask finished...
+[WI-0][TI-0] - 2025-11-06 13:36:44.201 INFO  [Curator-ConnectionStateManager-0] o.a.d.s.m.r.MasterRegistryClient:[116] - Master node : 172.28.0.3:5678 unRegistry to register center.
+[WI-0][TI-0] - 2025-11-06 13:36:44.203 WARN  [Curator-ConnectionStateManager-0] o.a.d.c.m.BaseHeartBeatTask:[78] - MasterHeartBeatTask finished...
+[WI-0][TI-0] - 2025-11-06 13:36:44.328 INFO  [Curator-ConnectionStateManager-0] o.a.d.s.m.r.MasterRegistryClient:[89] - Closed MasterRegistryClient
+[WI-0][TI-0] - 2025-11-06 13:36:44.330 ERROR [Thread-9] o.a.d.c.t.ThreadUtils:[80] - Current thread sleep error
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at org.apache.dolphinscheduler.common.thread.ThreadUtils.sleep(ThreadUtils.java:77)
+	at org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator.doStart(TaskGroupCoordinator.java:121)
+	at java.lang.Thread.run(Thread.java:750)
+[WI-0][TI-0] - 2025-11-06 13:36:44.330 INFO  [Curator-ConnectionStateManager-0] o.a.d.s.m.e.TaskGroupCoordinator:[463] - TaskGroupCoordinator closed
+[WI-0][TI-0] - 2025-11-06 13:36:44.331 INFO  [Curator-ConnectionStateManager-0] o.a.d.s.m.e.MasterCoordinator:[61] - MasterCoordinator shutdown...
+[WI-0][TI-0] - 2025-11-06 13:36:44.332 WARN  [Curator-ConnectionStateManager-0] o.a.d.s.m.e.TaskGroupCoordinator:[451] - TaskGroupCoordinator is already closed
+[WI-0][TI-0] - 2025-11-06 13:37:30.514 WARN  [HikariPool-1 housekeeper] c.z.h.p.HikariPool:[788] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=51s794ms933µs863ns).
+[WI-0][TI-0] - 2025-11-06 13:37:30.521 INFO  [Curator-ConnectionStateManager-0] c.z.h.HikariDataSource:[350] - HikariPool-1 - Shutdown initiated...
+[WI-0][TI-0] - 2025-11-06 13:37:30.539 INFO  [Curator-ConnectionStateManager-0] c.z.h.HikariDataSource:[352] - HikariPool-1 - Shutdown completed.
+[WI-0][TI-0] - 2025-11-06 13:37:30.556 INFO  [Curator-ConnectionStateManager-0] o.a.d.e.b.s.NettyRemotingServer:[149] - MasterRpcServer closing
+[WI-0][TI-0] - 2025-11-06 13:37:30.569 INFO  [Curator-ConnectionStateManager-0] o.a.d.e.b.s.NettyRemotingServer:[153] - MasterRpcServer stop bind at port: 5678
+[WI-0][TI-0] - 2025-11-06 13:37:30.599 INFO  [Curator-ConnectionStateManager-0] o.a.d.e.b.s.NettyRemotingServer:[167] - MasterRpcServer closed
+[WI-0][TI-0] - 2025-11-06 13:37:30.601 WARN  [Curator-ConnectionStateManager-0] o.a.d.c.m.BaseHeartBeatTask:[78] - MasterHeartBeatTask finished...
+[WI-0][TI-0] - 2025-11-06 13:37:30.602 INFO  [Curator-ConnectionStateManager-0] o.a.d.s.m.r.MasterRegistryClient:[89] - Closed MasterRegistryClient
+[WI-0][TI-0] - 2025-11-06 13:37:30.603 WARN  [Curator-ConnectionStateManager-0] o.a.d.s.m.e.TaskGroupCoordinator:[451] - TaskGroupCoordinator is already closed
+[WI-0][TI-0] - 2025-11-06 13:37:30.603 INFO  [Curator-ConnectionStateManager-0] o.a.d.s.m.e.MasterCoordinator:[61] - MasterCoordinator shutdown...
+[WI-0][TI-0] - 2025-11-06 13:37:30.604 INFO  [Curator-ConnectionStateManager-0] o.a.d.s.m.e.e.LogicTaskEngineDelegator:[75] - LogicTaskEngineDelegator closed
+[WI-0][TI-0] - 2025-11-06 13:37:30.604 INFO  [Curator-ConnectionStateManager-0] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[174] - LogicTaskExecutorLifecycleEventReporter closed
+[WI-0][TI-0] - 2025-11-06 13:37:30.604 INFO  [Curator-ConnectionStateManager-0] o.a.d.t.e.TaskEngine:[87] - LogicTaskEngine closed
+[WI-0][TI-0] - 2025-11-06 13:37:30.605 INFO  [Curator-ConnectionStateManager-0] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[107] - LogicTaskExecutorEventBusCoordinator closed
+[WI-0][TI-0] - 2025-11-06 13:37:30.605 INFO  [Curator-ConnectionStateManager-0] o.a.d.s.m.e.t.d.WorkerGroupDispatcherCoordinator:[89] - WorkerGroupDispatcherCoordinator closing
+[WI-0][TI-0] - 2025-11-06 13:37:30.606 INFO  [Curator-ConnectionStateManager-0] o.a.d.s.m.e.t.d.WorkerGroupDispatcherCoordinator:[97] - WorkerGroupDispatcherCoordinator closed...
+[WI-0][TI-0] - 2025-11-06 13:37:30.634 INFO  [Curator-ConnectionStateManager-0] o.a.d.s.m.e.c.CommandEngine:[106] - MasterSchedulerBootstrap stopping...
+[WI-0][TI-0] - 2025-11-06 13:37:30.642 INFO  [Curator-ConnectionStateManager-0] o.a.d.s.m.e.c.CommandEngine:[108] - MasterSchedulerBootstrap stopped...
+[WI-0][TI-0] - 2025-11-06 13:37:30.668 INFO  [Curator-ConnectionStateManager-0] o.a.d.s.m.e.s.SystemEventBusFireWorker:[109] - SystemEventBusFireWorker closed
+[WI-0][TI-0] - 2025-11-06 13:37:30.681 ERROR [Curator-ConnectionStateManager-0] o.a.d.s.m.MasterServer:[198] - MasterServer stop failed, current cause: Master disconnected from registry, will stop myself
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'workflowEventBusFireWorkers' defined in URL [jar:file:/opt/dolphinscheduler/master-server/libs/dolphinscheduler-master-3.3.3-SNAPSHOT.jar!/org/apache/dolphinscheduler/server/master/engine/WorkflowEventBusFireWorkers.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'taskDispatchLifecycleEventHandler' defined in URL [jar:file:/opt/dolphinscheduler/master-server/libs/dolphinscheduler-master-3.3.3-SNAPSHOT.jar!/org/apache/dolphinscheduler/server/master/engine/task/lifecycle/handler/TaskDispatchLifecycleEventHandler.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'taskDelayExecutionStateAction' defined in URL [jar:file:/opt/dolphinscheduler/master-server/libs/dolphinscheduler-master-3.3.3-SNAPSHOT.jar!/org/apache/dolphinscheduler/server/master/engine/task/statemachine/TaskDelayExecutionStateAction.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'taskGroupCoordinator' defined in URL [jar:file:/opt/dolphinscheduler/master-server/libs/dolphinscheduler-master-3.3.3-SNAPSHOT.jar!/org/apache/dolphinscheduler/server/master/engine/TaskGroupCoordinator.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'taskGroupMapper' defined in URL [jar:file:/opt/dolphinscheduler/master-server/libs/dolphinscheduler-dao-3.3.3-SNAPSHOT.jar!/org/apache/dolphinscheduler/dao/mapper/TaskGroupMapper.class]: Cannot resolve reference to bean 'sqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'mybatis-plus-com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties': Could not bind properties to 'MybatisPlusProperties' : prefix=mybatis-plus, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is java.lang.IllegalStateException: org.springframework.context.annotation.AnnotationConfigApplicationContext@6b580b88 has been closed already
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:628)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.context.annotation.ContextAnnotationAutowireCandidateResolver$1.getTarget(ContextAnnotationAutowireCandidateResolver.java:95)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692)
+	at org.apache.dolphinscheduler.server.master.engine.WorkflowEventBusFireWorkers$$EnhancerBySpringCGLIB$$efb29bef.close(<generated>)
+	at org.apache.dolphinscheduler.server.master.engine.WorkflowEventBusCoordinator.close(WorkflowEventBusCoordinator.java:78)
+	at org.apache.dolphinscheduler.server.master.engine.WorkflowEngine.close(WorkflowEngine.java:66)
+	at org.apache.dolphinscheduler.server.master.MasterServer.close(MasterServer.java:197)
+	at org.apache.dolphinscheduler.server.master.MasterServer.stop(MasterServer.java:206)
+	at org.apache.dolphinscheduler.server.master.registry.MasterConnectionStateListener.onUpdate(MasterConnectionStateListener.java:49)
+	at org.apache.dolphinscheduler.plugin.registry.zookeeper.ZookeeperConnectionStateListener.stateChanged(ZookeeperConnectionStateListener.java:47)
+	at org.apache.curator.framework.state.ConnectionStateManager.lambda$processEvents$0(ConnectionStateManager.java:281)
+	at org.apache.curator.framework.listen.MappingListenerManager.lambda$forEach$0(MappingListenerManager.java:93)
+	at org.apache.curator.framework.listen.MappingListenerManager.forEach(MappingListenerManager.java:90)
+	at org.apache.curator.framework.listen.StandardListenerManager.forEach(StandardListenerManager.java:90)
+	at org.apache.curator.framework.state.ConnectionStateManager.processEvents(ConnectionStateManager.java:281)
+	at org.apache.curator.framework.state.ConnectionStateManager.access$000(ConnectionStateManager.java:43)
+	at org.apache.curator.framework.state.ConnectionStateManager$1.call(ConnectionStateManager.java:134)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'taskDispatchLifecycleEventHandler' defined in URL [jar:file:/opt/dolphinscheduler/master-server/libs/dolphinscheduler-master-3.3.3-SNAPSHOT.jar!/org/apache/dolphinscheduler/server/master/engine/task/lifecycle/handler/TaskDispatchLifecycleEventHandler.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'taskDelayExecutionStateAction' defined in URL [jar:file:/opt/dolphinscheduler/master-server/libs/dolphinscheduler-master-3.3.3-SNAPSHOT.jar!/org/apache/dolphinscheduler/server/master/engine/task/statemachine/TaskDelayExecutionStateAction.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'taskGroupCoordinator' defined in URL [jar:file:/opt/dolphinscheduler/master-server/libs/dolphinscheduler-master-3.3.3-SNAPSHOT.jar!/org/apache/dolphinscheduler/server/master/engine/TaskGroupCoordinator.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'taskGroupMapper' defined in URL [jar:file:/opt/dolphinscheduler/master-server/libs/dolphinscheduler-dao-3.3.3-SNAPSHOT.jar!/org/apache/dolphinscheduler/dao/mapper/TaskGroupMapper.class]: Cannot resolve reference to bean 'sqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'mybatis-plus-com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties': Could not bind properties to 'MybatisPlusProperties' : prefix=mybatis-plus, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is java.lang.IllegalStateException: org.springframework.context.annotation.AnnotationConfigApplicationContext@6b580b88 has been closed already
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:628)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1609)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1573)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1462)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1349)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.resolvedCachedArgument(AutowiredAnnotationBeanPostProcessor.java:600)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.access$000(AutowiredAnnotationBeanPostProcessor.java:131)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:631)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	... 27 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'taskDelayExecutionStateAction' defined in URL [jar:file:/opt/dolphinscheduler/master-server/libs/dolphinscheduler-master-3.3.3-SNAPSHOT.jar!/org/apache/dolphinscheduler/server/master/engine/task/statemachine/TaskDelayExecutionStateAction.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'taskGroupCoordinator' defined in URL [jar:file:/opt/dolphinscheduler/master-server/libs/dolphinscheduler-master-3.3.3-SNAPSHOT.jar!/org/apache/dolphinscheduler/server/master/engine/TaskGroupCoordinator.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'taskGroupMapper' defined in URL [jar:file:/opt/dolphinscheduler/master-server/libs/dolphinscheduler-dao-3.3.3-SNAPSHOT.jar!/org/apache/dolphinscheduler/dao/mapper/TaskGroupMapper.class]: Cannot resolve reference to bean 'sqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'mybatis-plus-com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties': Could not bind properties to 'MybatisPlusProperties' : prefix=mybatis-plus, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is java.lang.IllegalStateException: org.springframework.context.annotation.AnnotationConfigApplicationContext@6b580b88 has been closed already
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:628)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1609)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1573)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1462)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1349)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolvePreparedArguments(ConstructorResolver.java:834)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:153)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1211)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$ShortcutDependencyDescriptor.resolveShortcut(AutowiredAnnotationBeanPostProcessor.java:818)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1323)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.resolvedCachedArgument(AutowiredAnnotationBeanPostProcessor.java:600)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.access$000(AutowiredAnnotationBeanPostProcessor.java:131)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:631)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	... 45 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'taskGroupCoordinator' defined in URL [jar:file:/opt/dolphinscheduler/master-server/libs/dolphinscheduler-master-3.3.3-SNAPSHOT.jar!/org/apache/dolphinscheduler/server/master/engine/TaskGroupCoordinator.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'taskGroupMapper' defined in URL [jar:file:/opt/dolphinscheduler/master-server/libs/dolphinscheduler-dao-3.3.3-SNAPSHOT.jar!/org/apache/dolphinscheduler/dao/mapper/TaskGroupMapper.class]: Cannot resolve reference to bean 'sqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'mybatis-plus-com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties': Could not bind properties to 'MybatisPlusProperties' : prefix=mybatis-plus, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is java.lang.IllegalStateException: org.springframework.context.annotation.AnnotationConfigApplicationContext@6b580b88 has been closed already
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:628)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$ShortcutDependencyDescriptor.resolveShortcut(AutowiredAnnotationBeanPostProcessor.java:818)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1323)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.resolvedCachedArgument(AutowiredAnnotationBeanPostProcessor.java:600)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.access$000(AutowiredAnnotationBeanPostProcessor.java:131)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:631)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	... 77 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'taskGroupMapper' defined in URL [jar:file:/opt/dolphinscheduler/master-server/libs/dolphinscheduler-dao-3.3.3-SNAPSHOT.jar!/org/apache/dolphinscheduler/dao/mapper/TaskGroupMapper.class]: Cannot resolve reference to bean 'sqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'mybatis-plus-com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties': Could not bind properties to 'MybatisPlusProperties' : prefix=mybatis-plus, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is java.lang.IllegalStateException: org.springframework.context.annotation.AnnotationConfigApplicationContext@6b580b88 has been closed already
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:342)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1707)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1452)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolvePreparedArguments(ConstructorResolver.java:834)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:153)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1211)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$ShortcutDependencyDescriptor.resolveShortcut(AutowiredAnnotationBeanPostProcessor.java:818)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1323)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.resolvedCachedArgument(AutowiredAnnotationBeanPostProcessor.java:600)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.access$000(AutowiredAnnotationBeanPostProcessor.java:131)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:631)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	... 92 common frames omitted
+Caused by: org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'mybatis-plus-com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties': Could not bind properties to 'MybatisPlusProperties' : prefix=mybatis-plus, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is java.lang.IllegalStateException: org.springframework.context.annotation.AnnotationConfigApplicationContext@6b580b88 has been closed already
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.bind(ConfigurationPropertiesBindingPostProcessor.java:92)
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.postProcessBeforeInitialization(ConfigurationPropertiesBindingPostProcessor.java:78)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:440)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolvePreparedArguments(ConstructorResolver.java:834)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:153)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1211)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:410)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330)
+	... 125 common frames omitted
+Caused by: java.lang.IllegalStateException: org.springframework.context.annotation.AnnotationConfigApplicationContext@6b580b88 has been closed already
+	at org.springframework.context.support.AbstractApplicationContext.assertBeanFactoryActive(AbstractApplicationContext.java:1138)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1159)
+	at org.springframework.boot.context.properties.BoundConfigurationProperties.get(BoundConfigurationProperties.java:78)
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBinder.getHandler(ConfigurationPropertiesBinder.java:133)
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBinder.getBindHandler(ConfigurationPropertiesBinder.java:114)
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBinder.bind(ConfigurationPropertiesBinder.java:94)
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.bind(ConfigurationPropertiesBindingPostProcessor.java:89)
+	... 158 common frames omitted

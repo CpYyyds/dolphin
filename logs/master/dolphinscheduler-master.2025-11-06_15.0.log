@@ -1,0 +1,904 @@
+[WI-0][TI-0] - 2025-11-06 15:05:27.200 WARN  [Master-Server] o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[WI-0][TI-0] - 2025-11-06 15:05:27.704 WARN  [Master-Server] o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[WI-0][TI-0] - 2025-11-06 15:05:27.706 INFO  [Master-Server] o.a.d.s.m.MasterServer:[640] - The following 1 profile is active: "mysql"
+[WI-0][TI-0] - 2025-11-06 15:05:29.335 INFO  [Master-Server] o.s.c.c.s.GenericScope:[283] - BeanFactory id=0ec5e0ef-0a33-3723-a9fd-07122e76f4e6
+[WI-0][TI-0] - 2025-11-06 15:05:29.754 INFO  [Master-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 15:05:29.759 INFO  [Master-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 15:05:29.763 INFO  [Master-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$418/2041435954] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 15:05:29.771 INFO  [Master-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 15:05:29.791 INFO  [Master-Server] o.a.d.c.u.NetUtils:[312] - Get all NetworkInterfaces: [name:eth0 (eth0), name:lo (lo)]
+[WI-0][TI-0] - 2025-11-06 15:05:29.871 INFO  [Master-Server] o.a.d.s.m.c.MasterConfig:[126] - 
+****************************Master Configuration**************************************
+  listen-port -> 5678
+  workflow-event-bus-fire-thread-count -> 25
+  logic-task-config -> LogicTaskConfig(taskExecutorThreadCount=25)
+  max-heartbeat-interval -> PT10S
+  server-load-protection -> MasterServerLoadProtectionConfig(maxConcurrentWorkflowInstances=2147483647)
+  master-address -> 172.28.0.6:5678
+  master-registry-path: /nodes/master/172.28.0.6:5678
+  worker-group-refresh-interval: PT5M
+  command-fetch-strategy: CommandFetchStrategy(type=ID_SLOT_BASED, config=CommandFetchStrategy.IdSlotBasedFetchConfig(idStep=1, fetchSize=10))
+  worker-load-balancer-configuration-properties: WorkerLoadBalancerConfigurationProperties(type=ROUND_ROBIN, dynamicWeightConfigProperties=WorkerLoadBalancerConfigurationProperties.DynamicWeightConfigProperties(cpuUsageWeight=30, memoryUsageWeight=30, taskThreadPoolUsageWeight=40))
+****************************Master Configuration**************************************
+[WI-0][TI-0] - 2025-11-06 15:05:29.872 INFO  [Master-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'masterConfig' of type [org.apache.dolphinscheduler.server.master.config.MasterConfig$$EnhancerBySpringCGLIB$$c5690947] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 15:05:30.024 INFO  [Master-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 15:05:30.041 INFO  [Master-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'kubernetes.manifests-io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 15:05:30.053 INFO  [Master-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration' of type [io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 15:05:30.073 INFO  [Master-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultApiClient' of type [io.kubernetes.client.openapi.ApiClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 15:05:30.132 INFO  [Master-Server] o.a.d.p.r.z.ZookeeperRegistryAutoConfiguration:[37] - Load ZookeeperRegistryAutoConfiguration
+[WI-0][TI-0] - 2025-11-06 15:05:30.157 INFO  [Master-Server] o.a.d.p.r.z.ZookeeperRegistryProperties:[96] - 
+****************************ZookeeperRegistryProperties**************************************
+  namespace -> dolphinscheduler
+  connectString -> zookeeper:2181
+  retryPolicy -> ZookeeperRegistryProperties.ZookeeperProperties.RetryPolicy(baseSleepTime=PT0.1S, maxRetries=3, maxSleep=PT1S)
+  digest -> 
+  sessionTimeout -> PT1M
+  connectionTimeout -> PT30S
+  blockUntilConnected -> PT30S
+****************************ZookeeperRegistryProperties**************************************
+[WI-0][TI-0] - 2025-11-06 15:05:30.367 INFO  [Master-Server] o.a.d.p.r.z.ZookeeperRegistry:[113] - ZookeeperRegistry started at: 76/ms
+[WI-0][TI-0] - 2025-11-06 15:05:30.887 INFO  [Master-Server] c.z.h.HikariDataSource:[110] - HikariPool-1 - Starting...
+[WI-0][TI-0] - 2025-11-06 15:05:31.105 INFO  [Master-Server] c.z.h.HikariDataSource:[123] - HikariPool-1 - Start completed.
+[WI-0][TI-0] - 2025-11-06 15:05:34.225 INFO  [Master-Server] o.q.i.StdSchedulerFactory:[1220] - Using default implementation for ThreadExecutor
+[WI-0][TI-0] - 2025-11-06 15:05:34.249 INFO  [Master-Server] o.q.c.SchedulerSignalerImpl:[61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[WI-0][TI-0] - 2025-11-06 15:05:34.250 INFO  [Master-Server] o.q.c.QuartzScheduler:[229] - Quartz Scheduler v.2.3.2 created.
+[WI-0][TI-0] - 2025-11-06 15:05:34.252 INFO  [Master-Server] o.q.s.RAMJobStore:[155] - RAMJobStore initialized.
+[WI-0][TI-0] - 2025-11-06 15:05:34.254 INFO  [Master-Server] o.q.c.QuartzScheduler:[294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[WI-0][TI-0] - 2025-11-06 15:05:34.256 INFO  [Master-Server] o.q.i.StdSchedulerFactory:[1374] - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+[WI-0][TI-0] - 2025-11-06 15:05:34.256 INFO  [Master-Server] o.q.i.StdSchedulerFactory:[1378] - Quartz scheduler version: 2.3.2
+[WI-0][TI-0] - 2025-11-06 15:05:34.257 INFO  [Master-Server] o.q.c.QuartzScheduler:[2293] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@42b500aa
+[WI-0][TI-0] - 2025-11-06 15:05:34.431 INFO  [Master-Server] o.a.d.e.b.s.NettyRemotingServer:[111] - MasterRpcServer bind success at port: 5678
+[WI-0][TI-0] - 2025-11-06 15:05:34.448 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SUB_WORKFLOW
+[WI-0][TI-0] - 2025-11-06 15:05:34.449 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DEPENDENT
+[WI-0][TI-0] - 2025-11-06 15:05:34.450 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: CONDITIONS
+[WI-0][TI-0] - 2025-11-06 15:05:34.452 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SWITCH
+[WI-0][TI-0] - 2025-11-06 15:05:34.454 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: LogicFakeTask
+[WI-0][TI-0] - 2025-11-06 15:05:34.454 WARN  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[44] - The task plugin has already been loaded
+[WI-0][TI-0] - 2025-11-06 15:05:34.458 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorProvider:[41] - Initialize DataSourceProcessorProvider
+[WI-0][TI-0] - 2025-11-06 15:05:34.481 INFO  [Master-Server] o.a.d.s.m.r.MasterRegistryClient:[96] - Master node : 172.28.0.6:5678 registering to registry center
+[WI-0][TI-0] - 2025-11-06 15:05:34.525 INFO  [Master-Server] o.a.d.c.c.SystemConstants:[30] - init timezone: sun.util.calendar.ZoneInfo[id="Asia/Shanghai",offset=28800000,dstSavings=0,useDaylight=false,transitions=31,lastRule=null]
+[WI-0][TI-0] - 2025-11-06 15:05:34.583 INFO  [Master-Server] o.a.d.c.m.BaseHeartBeatTask:[47] - Starting MasterHeartBeatTask...
+[WI-0][TI-0] - 2025-11-06 15:05:34.584 INFO  [Master-Server] o.a.d.c.m.BaseHeartBeatTask:[49] - Started MasterHeartBeatTask, heartBeatInterval: 10000...
+[WI-0][TI-0] - 2025-11-06 15:05:34.584 INFO  [Master-Server] o.a.d.s.m.r.MasterRegistryClient:[109] - Master node : 172.28.0.6:5678 registered to registry center successfully
+[WI-0][TI-0] - 2025-11-06 15:05:34.639 INFO  [Master-Server] o.a.d.r.a.h.DefaultServerStatusChangeListener:[27] - The status is active now.
+[WI-0][TI-0] - 2025-11-06 15:05:34.639 INFO  [Master-Server] o.a.d.s.m.e.TaskGroupCoordinator:[82] - TaskGroupCoordinator starting...
+[WI-0][TI-0] - 2025-11-06 15:05:34.641 INFO  [Master-Server] o.a.d.s.m.e.TaskGroupCoordinator:[93] - TaskGroupCoordinator started...
+[WI-0][TI-0] - 2025-11-06 15:05:34.641 INFO  [Master-Server] o.a.d.s.m.e.MasterCoordinator:[55] - MasterCoordinator started...
+[WI-0][TI-0] - 2025-11-06 15:05:34.686 INFO  [Master-Server] o.a.d.s.m.c.MasterSlotManager:[89] - Do rebalance success, current master slot: 0, total master slots: 1
+[WI-0][TI-0] - 2025-11-06 15:05:34.691 INFO  [Master-Server] o.a.d.s.m.c.ClusterManager:[76] - Initialized MasterClusters: [ {
+  "processId" : 130,
+  "serverStartupTime" : 1762412734330,
+  "address" : "172.28.0.6:5678",
+  "cpuUsage" : 0.0,
+  "memoryUsage" : 0.37068972420240504,
+  "serverStatus" : "NORMAL"
+} ]
+[WI-0][TI-0] - 2025-11-06 15:05:34.695 INFO  [Master-Server] o.a.d.s.m.c.ClusterManager:[93] - Initialized WorkerClusters: [ ]
+[WI-0][TI-0] - 2025-11-06 15:05:34.698 INFO  [Curator-TreeCache-0] o.a.d.s.m.c.AbstractClusterSubscribeListener:[41] - Server MasterServerMetadata(super=BaseServerMetadata(processId=130, serverStartupTime=1762412734330, address=172.28.0.6:5678, cpuUsage=0.0, memoryUsage=0.37068972420240504, serverStatus=NORMAL)) added
+[WI-0][TI-0] - 2025-11-06 15:05:34.788 INFO  [Master-Server] o.a.d.s.m.c.ClusterManager:[59] - ClusterManager started...
+[WI-0][TI-0] - 2025-11-06 15:05:34.790 INFO  [Master-Server] o.a.d.s.m.c.ClusterStateMonitors:[46] - ClusterStateMonitors started...
+[WI-0][TI-0] - 2025-11-06 15:05:35.072 INFO  [Master-Server] o.a.d.s.m.e.WorkflowEventBusFireWorkers:[71] - WorkflowEventBusFireWorkers started, worker size: 25
+[WI-0][TI-0] - 2025-11-06 15:05:35.073 INFO  [Master-Server] o.a.d.s.m.e.WorkflowEventBusCoordinator:[40] - WorkflowEventBusCoordinator started
+[WI-0][TI-0] - 2025-11-06 15:05:35.074 INFO  [Master-Server] o.a.d.s.m.e.c.CommandEngine:[96] - MasterSchedulerBootstrap starting..
+[WI-0][TI-0] - 2025-11-06 15:05:35.075 INFO  [Master-Server] o.a.d.s.m.e.c.CommandEngine:[101] - MasterSchedulerBootstrap started...
+[WI-0][TI-0] - 2025-11-06 15:05:35.075 INFO  [Master-Server] o.a.d.s.m.e.t.d.WorkerGroupDispatcherCoordinator:[49] - WorkerGroupTaskDispatcherManager started...
+[WI-0][TI-0] - 2025-11-06 15:05:35.077 INFO  [Master-Server] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[95] - LogicTaskExecutorEventBusCoordinator started, worker size: 12
+[WI-0][TI-0] - 2025-11-06 15:05:35.078 INFO  [Master-Server] o.a.d.t.e.TaskEngine:[53] - LogicTaskEngine started
+[WI-0][TI-0] - 2025-11-06 15:05:35.079 INFO  [Master-Server] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[81] - LogicTaskExecutorLifecycleEventReporter started
+[WI-0][TI-0] - 2025-11-06 15:05:35.079 INFO  [Master-Server] o.a.d.s.m.e.e.LogicTaskEngineDelegator:[50] - LogicTaskEngineDelegator started
+[WI-0][TI-0] - 2025-11-06 15:05:35.080 INFO  [Master-Server] o.a.d.s.m.e.WorkflowEngine:[55] - WorkflowEngine started
+[WI-0][TI-0] - 2025-11-06 15:05:35.080 INFO  [Master-Server] o.q.c.QuartzScheduler:[547] - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+[WI-0][TI-0] - 2025-11-06 15:05:35.081 INFO  [Master-Server] o.a.d.s.m.e.s.SystemEventBus:[40] - Published SystemEvent: GlobalMasterFailoverEvent{eventTime=Thu Nov 06 15:05:34 CST 2025}
+[WI-0][TI-0] - 2025-11-06 15:05:35.082 INFO  [Master-Server] o.a.d.s.m.e.s.SystemEventBusFireWorker:[62] - SystemEventBusFireWorker started
+[WI-0][TI-0] - 2025-11-06 15:05:35.083 INFO  [SystemEventBusFireWorker] o.a.d.s.m.f.FailoverCoordinator:[73] - Global master failover starting
+[WI-0][TI-0] - 2025-11-06 15:05:35.084 INFO  [Master-Server] o.a.d.s.m.MasterServer:[164] - MasterServer initialized successfully in 754 ms
+[WI-0][TI-0] - 2025-11-06 15:05:35.105 INFO  [SystemEventBusFireWorker] o.a.d.s.m.f.FailoverCoordinator:[99] - Global master failover finished, cost: 21/ms
+[WI-0][TI-0] - 2025-11-06 15:05:35.105 INFO  [SystemEventBusFireWorker] o.a.d.s.m.e.s.SystemEventBusFireWorker:[103] - Fire SystemEvent: GlobalMasterFailoverEvent{eventTime=Thu Nov 06 15:05:34 CST 2025} cost: 23 ms
+[WI-0][TI-0] - 2025-11-06 15:05:36.400 INFO  [Master-Server] o.a.d.s.m.MasterServer:[61] - Started MasterServer in 10.528 seconds (JVM running for 11.127)
+[WI-0][TI-0] - 2025-11-06 15:05:59.995 INFO  [Curator-TreeCache-0] o.a.d.s.m.c.AbstractClusterSubscribeListener:[41] - Server WorkerServerMetadata(workerGroup=default, workerWeight=100.0, taskThreadPoolUsage=0.0) added
+[WI-0][TI-0] - 2025-11-06 15:06:01.728 WARN  [Curator-TreeCache-0] o.a.d.s.m.c.AbstractClusterSubscribeListener:[45] - Server WorkerServerMetadata(workerGroup=default, workerWeight=100.0, taskThreadPoolUsage=0.0) removed
+[WI-0][TI-0] - 2025-11-06 15:06:01.730 INFO  [Curator-TreeCache-0] o.a.d.s.m.e.s.SystemEventBus:[40] - Published SystemEvent: WorkerFailoverEvent{workerServerMetadata='WorkerServerMetadata(workerGroup=default, workerWeight=100.0, taskThreadPoolUsage=0.0)', eventTime=Thu Nov 06 15:06:01 CST 2025, delayTime=30000}
+[WI-0][TI-0] - 2025-11-06 15:07:03.141 WARN  [Master-Server] o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[WI-0][TI-0] - 2025-11-06 15:07:03.544 WARN  [Master-Server] o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[WI-0][TI-0] - 2025-11-06 15:07:03.546 INFO  [Master-Server] o.a.d.s.m.MasterServer:[640] - The following 1 profile is active: "mysql"
+[WI-0][TI-0] - 2025-11-06 15:07:05.015 INFO  [Master-Server] o.s.c.c.s.GenericScope:[283] - BeanFactory id=0ec5e0ef-0a33-3723-a9fd-07122e76f4e6
+[WI-0][TI-0] - 2025-11-06 15:07:05.382 INFO  [Master-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 15:07:05.388 INFO  [Master-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 15:07:05.391 INFO  [Master-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$418/1659537713] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 15:07:05.399 INFO  [Master-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 15:07:05.417 INFO  [Master-Server] o.a.d.c.u.NetUtils:[312] - Get all NetworkInterfaces: [name:eth0 (eth0), name:lo (lo)]
+[WI-0][TI-0] - 2025-11-06 15:07:05.468 INFO  [Master-Server] o.a.d.s.m.c.MasterConfig:[126] - 
+****************************Master Configuration**************************************
+  listen-port -> 5678
+  workflow-event-bus-fire-thread-count -> 25
+  logic-task-config -> LogicTaskConfig(taskExecutorThreadCount=25)
+  max-heartbeat-interval -> PT10S
+  server-load-protection -> MasterServerLoadProtectionConfig(maxConcurrentWorkflowInstances=2147483647)
+  master-address -> 172.28.0.6:5678
+  master-registry-path: /nodes/master/172.28.0.6:5678
+  worker-group-refresh-interval: PT5M
+  command-fetch-strategy: CommandFetchStrategy(type=ID_SLOT_BASED, config=CommandFetchStrategy.IdSlotBasedFetchConfig(idStep=1, fetchSize=10))
+  worker-load-balancer-configuration-properties: WorkerLoadBalancerConfigurationProperties(type=ROUND_ROBIN, dynamicWeightConfigProperties=WorkerLoadBalancerConfigurationProperties.DynamicWeightConfigProperties(cpuUsageWeight=30, memoryUsageWeight=30, taskThreadPoolUsageWeight=40))
+****************************Master Configuration**************************************
+[WI-0][TI-0] - 2025-11-06 15:07:05.469 INFO  [Master-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'masterConfig' of type [org.apache.dolphinscheduler.server.master.config.MasterConfig$$EnhancerBySpringCGLIB$$c6924811] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 15:07:05.564 INFO  [Master-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 15:07:05.578 INFO  [Master-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'kubernetes.manifests-io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 15:07:05.591 INFO  [Master-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration' of type [io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 15:07:05.606 INFO  [Master-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultApiClient' of type [io.kubernetes.client.openapi.ApiClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 15:07:05.665 INFO  [Master-Server] o.a.d.p.r.z.ZookeeperRegistryAutoConfiguration:[37] - Load ZookeeperRegistryAutoConfiguration
+[WI-0][TI-0] - 2025-11-06 15:07:05.692 INFO  [Master-Server] o.a.d.p.r.z.ZookeeperRegistryProperties:[96] - 
+****************************ZookeeperRegistryProperties**************************************
+  namespace -> dolphinscheduler
+  connectString -> zookeeper:2181
+  retryPolicy -> ZookeeperRegistryProperties.ZookeeperProperties.RetryPolicy(baseSleepTime=PT0.1S, maxRetries=3, maxSleep=PT1S)
+  digest -> 
+  sessionTimeout -> PT1M
+  connectionTimeout -> PT30S
+  blockUntilConnected -> PT30S
+****************************ZookeeperRegistryProperties**************************************
+[WI-0][TI-0] - 2025-11-06 15:07:05.828 INFO  [Master-Server] o.a.d.p.r.z.ZookeeperRegistry:[113] - ZookeeperRegistry started at: 50/ms
+[WI-0][TI-0] - 2025-11-06 15:07:06.278 INFO  [Master-Server] c.z.h.HikariDataSource:[110] - HikariPool-1 - Starting...
+[WI-0][TI-0] - 2025-11-06 15:07:06.490 INFO  [Master-Server] c.z.h.HikariDataSource:[123] - HikariPool-1 - Start completed.
+[WI-0][TI-0] - 2025-11-06 15:07:09.675 INFO  [Master-Server] o.q.i.StdSchedulerFactory:[1220] - Using default implementation for ThreadExecutor
+[WI-0][TI-0] - 2025-11-06 15:07:09.696 INFO  [Master-Server] o.q.c.SchedulerSignalerImpl:[61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[WI-0][TI-0] - 2025-11-06 15:07:09.697 INFO  [Master-Server] o.q.c.QuartzScheduler:[229] - Quartz Scheduler v.2.3.2 created.
+[WI-0][TI-0] - 2025-11-06 15:07:09.700 INFO  [Master-Server] o.q.s.RAMJobStore:[155] - RAMJobStore initialized.
+[WI-0][TI-0] - 2025-11-06 15:07:09.702 INFO  [Master-Server] o.q.c.QuartzScheduler:[294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[WI-0][TI-0] - 2025-11-06 15:07:09.704 INFO  [Master-Server] o.q.i.StdSchedulerFactory:[1374] - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+[WI-0][TI-0] - 2025-11-06 15:07:09.704 INFO  [Master-Server] o.q.i.StdSchedulerFactory:[1378] - Quartz scheduler version: 2.3.2
+[WI-0][TI-0] - 2025-11-06 15:07:09.705 INFO  [Master-Server] o.q.c.QuartzScheduler:[2293] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@175957b6
+[WI-0][TI-0] - 2025-11-06 15:07:09.869 INFO  [Master-Server] o.a.d.e.b.s.NettyRemotingServer:[111] - MasterRpcServer bind success at port: 5678
+[WI-0][TI-0] - 2025-11-06 15:07:09.879 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SUB_WORKFLOW
+[WI-0][TI-0] - 2025-11-06 15:07:09.880 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DEPENDENT
+[WI-0][TI-0] - 2025-11-06 15:07:09.882 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: CONDITIONS
+[WI-0][TI-0] - 2025-11-06 15:07:09.883 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SWITCH
+[WI-0][TI-0] - 2025-11-06 15:07:09.885 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: LogicFakeTask
+[WI-0][TI-0] - 2025-11-06 15:07:09.886 WARN  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[44] - The task plugin has already been loaded
+[WI-0][TI-0] - 2025-11-06 15:07:09.890 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorProvider:[41] - Initialize DataSourceProcessorProvider
+[WI-0][TI-0] - 2025-11-06 15:07:09.907 INFO  [Master-Server] o.a.d.s.m.r.MasterRegistryClient:[96] - Master node : 172.28.0.6:5678 registering to registry center
+[WI-0][TI-0] - 2025-11-06 15:07:09.961 INFO  [Master-Server] o.a.d.c.c.SystemConstants:[30] - init timezone: sun.util.calendar.ZoneInfo[id="Asia/Shanghai",offset=28800000,dstSavings=0,useDaylight=false,transitions=31,lastRule=null]
+[WI-0][TI-0] - 2025-11-06 15:07:10.030 INFO  [Master-Server] o.a.d.c.m.BaseHeartBeatTask:[47] - Starting MasterHeartBeatTask...
+[WI-0][TI-0] - 2025-11-06 15:07:10.031 INFO  [Master-Server] o.a.d.c.m.BaseHeartBeatTask:[49] - Started MasterHeartBeatTask, heartBeatInterval: 10000...
+[WI-0][TI-0] - 2025-11-06 15:07:10.031 INFO  [Master-Server] o.a.d.s.m.r.MasterRegistryClient:[109] - Master node : 172.28.0.6:5678 registered to registry center successfully
+[WI-0][TI-0] - 2025-11-06 15:07:10.074 INFO  [Master-Server] o.a.d.r.a.h.DefaultServerStatusChangeListener:[27] - The status is active now.
+[WI-0][TI-0] - 2025-11-06 15:07:10.075 INFO  [Master-Server] o.a.d.s.m.e.TaskGroupCoordinator:[82] - TaskGroupCoordinator starting...
+[WI-0][TI-0] - 2025-11-06 15:07:10.076 INFO  [Master-Server] o.a.d.s.m.e.TaskGroupCoordinator:[93] - TaskGroupCoordinator started...
+[WI-0][TI-0] - 2025-11-06 15:07:10.076 INFO  [Master-Server] o.a.d.s.m.e.MasterCoordinator:[55] - MasterCoordinator started...
+[WI-0][TI-0] - 2025-11-06 15:07:10.111 INFO  [Master-Server] o.a.d.s.m.c.MasterSlotManager:[89] - Do rebalance success, current master slot: 0, total master slots: 1
+[WI-0][TI-0] - 2025-11-06 15:07:10.117 INFO  [Master-Server] o.a.d.s.m.c.ClusterManager:[76] - Initialized MasterClusters: [ {
+  "processId" : 120,
+  "serverStartupTime" : 1762412829786,
+  "address" : "172.28.0.6:5678",
+  "cpuUsage" : 0.0,
+  "memoryUsage" : 0.3761047818662631,
+  "serverStatus" : "NORMAL"
+} ]
+[WI-0][TI-0] - 2025-11-06 15:07:10.121 INFO  [Master-Server] o.a.d.s.m.c.ClusterManager:[93] - Initialized WorkerClusters: [ ]
+[WI-0][TI-0] - 2025-11-06 15:07:10.123 INFO  [Curator-TreeCache-0] o.a.d.s.m.c.AbstractClusterSubscribeListener:[41] - Server MasterServerMetadata(super=BaseServerMetadata(processId=120, serverStartupTime=1762412829786, address=172.28.0.6:5678, cpuUsage=0.0, memoryUsage=0.3761047818662631, serverStatus=NORMAL)) added
+[WI-0][TI-0] - 2025-11-06 15:07:10.219 INFO  [Master-Server] o.a.d.s.m.c.ClusterManager:[59] - ClusterManager started...
+[WI-0][TI-0] - 2025-11-06 15:07:10.220 INFO  [Master-Server] o.a.d.s.m.c.ClusterStateMonitors:[46] - ClusterStateMonitors started...
+[WI-0][TI-0] - 2025-11-06 15:07:10.543 INFO  [Master-Server] o.a.d.s.m.e.WorkflowEventBusFireWorkers:[71] - WorkflowEventBusFireWorkers started, worker size: 25
+[WI-0][TI-0] - 2025-11-06 15:07:10.543 INFO  [Master-Server] o.a.d.s.m.e.WorkflowEventBusCoordinator:[40] - WorkflowEventBusCoordinator started
+[WI-0][TI-0] - 2025-11-06 15:07:10.544 INFO  [Master-Server] o.a.d.s.m.e.c.CommandEngine:[96] - MasterSchedulerBootstrap starting..
+[WI-0][TI-0] - 2025-11-06 15:07:10.544 INFO  [Master-Server] o.a.d.s.m.e.c.CommandEngine:[101] - MasterSchedulerBootstrap started...
+[WI-0][TI-0] - 2025-11-06 15:07:10.545 INFO  [Master-Server] o.a.d.s.m.e.t.d.WorkerGroupDispatcherCoordinator:[49] - WorkerGroupTaskDispatcherManager started...
+[WI-0][TI-0] - 2025-11-06 15:07:10.546 INFO  [Master-Server] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[95] - LogicTaskExecutorEventBusCoordinator started, worker size: 12
+[WI-0][TI-0] - 2025-11-06 15:07:10.546 INFO  [Master-Server] o.a.d.t.e.TaskEngine:[53] - LogicTaskEngine started
+[WI-0][TI-0] - 2025-11-06 15:07:10.547 INFO  [Master-Server] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[81] - LogicTaskExecutorLifecycleEventReporter started
+[WI-0][TI-0] - 2025-11-06 15:07:10.547 INFO  [Master-Server] o.a.d.s.m.e.e.LogicTaskEngineDelegator:[50] - LogicTaskEngineDelegator started
+[WI-0][TI-0] - 2025-11-06 15:07:10.548 INFO  [Master-Server] o.a.d.s.m.e.WorkflowEngine:[55] - WorkflowEngine started
+[WI-0][TI-0] - 2025-11-06 15:07:10.548 INFO  [Master-Server] o.q.c.QuartzScheduler:[547] - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+[WI-0][TI-0] - 2025-11-06 15:07:10.549 INFO  [Master-Server] o.a.d.s.m.e.s.SystemEventBus:[40] - Published SystemEvent: GlobalMasterFailoverEvent{eventTime=Thu Nov 06 15:07:09 CST 2025}
+[WI-0][TI-0] - 2025-11-06 15:07:10.549 INFO  [Master-Server] o.a.d.s.m.e.s.SystemEventBusFireWorker:[62] - SystemEventBusFireWorker started
+[WI-0][TI-0] - 2025-11-06 15:07:10.551 INFO  [SystemEventBusFireWorker] o.a.d.s.m.f.FailoverCoordinator:[73] - Global master failover starting
+[WI-0][TI-0] - 2025-11-06 15:07:10.551 INFO  [Master-Server] o.a.d.s.m.MasterServer:[164] - MasterServer initialized successfully in 765 ms
+[WI-0][TI-0] - 2025-11-06 15:07:10.576 INFO  [SystemEventBusFireWorker] o.a.d.s.m.f.FailoverCoordinator:[99] - Global master failover finished, cost: 25/ms
+[WI-0][TI-0] - 2025-11-06 15:07:10.577 INFO  [SystemEventBusFireWorker] o.a.d.s.m.e.s.SystemEventBusFireWorker:[103] - Fire SystemEvent: GlobalMasterFailoverEvent{eventTime=Thu Nov 06 15:07:09 CST 2025} cost: 27 ms
+[WI-0][TI-0] - 2025-11-06 15:07:11.948 INFO  [Master-Server] o.a.d.s.m.MasterServer:[61] - Started MasterServer in 10.056 seconds (JVM running for 10.61)
+[WI-0][TI-0] - 2025-11-06 15:07:36.208 INFO  [Curator-TreeCache-0] o.a.d.s.m.c.AbstractClusterSubscribeListener:[41] - Server WorkerServerMetadata(workerGroup=default, workerWeight=100.0, taskThreadPoolUsage=0.0) added
+[WI-0][TI-0] - 2025-11-06 15:07:37.947 WARN  [Curator-TreeCache-0] o.a.d.s.m.c.AbstractClusterSubscribeListener:[45] - Server WorkerServerMetadata(workerGroup=default, workerWeight=100.0, taskThreadPoolUsage=0.0) removed
+[WI-0][TI-0] - 2025-11-06 15:07:37.949 INFO  [Curator-TreeCache-0] o.a.d.s.m.e.s.SystemEventBus:[40] - Published SystemEvent: WorkerFailoverEvent{workerServerMetadata='WorkerServerMetadata(workerGroup=default, workerWeight=100.0, taskThreadPoolUsage=0.0)', eventTime=Thu Nov 06 15:07:37 CST 2025, delayTime=30000}
+[WI-0][TI-0] - 2025-11-06 15:11:20.295 WARN  [Master-Server] o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[WI-0][TI-0] - 2025-11-06 15:11:20.696 WARN  [Master-Server] o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[WI-0][TI-0] - 2025-11-06 15:11:20.697 INFO  [Master-Server] o.a.d.s.m.MasterServer:[640] - The following 1 profile is active: "mysql"
+[WI-0][TI-0] - 2025-11-06 15:11:22.012 INFO  [Master-Server] o.s.c.c.s.GenericScope:[283] - BeanFactory id=0ec5e0ef-0a33-3723-a9fd-07122e76f4e6
+[WI-0][TI-0] - 2025-11-06 15:11:22.377 INFO  [Master-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 15:11:22.382 INFO  [Master-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 15:11:22.386 INFO  [Master-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$418/1659537713] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 15:11:22.393 INFO  [Master-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 15:11:22.411 INFO  [Master-Server] o.a.d.c.u.NetUtils:[312] - Get all NetworkInterfaces: [name:eth0 (eth0), name:lo (lo)]
+[WI-0][TI-0] - 2025-11-06 15:11:22.462 INFO  [Master-Server] o.a.d.s.m.c.MasterConfig:[126] - 
+****************************Master Configuration**************************************
+  listen-port -> 5678
+  workflow-event-bus-fire-thread-count -> 25
+  logic-task-config -> LogicTaskConfig(taskExecutorThreadCount=25)
+  max-heartbeat-interval -> PT10S
+  server-load-protection -> MasterServerLoadProtectionConfig(maxConcurrentWorkflowInstances=2147483647)
+  master-address -> 172.28.0.6:5678
+  master-registry-path: /nodes/master/172.28.0.6:5678
+  worker-group-refresh-interval: PT5M
+  command-fetch-strategy: CommandFetchStrategy(type=ID_SLOT_BASED, config=CommandFetchStrategy.IdSlotBasedFetchConfig(idStep=1, fetchSize=10))
+  worker-load-balancer-configuration-properties: WorkerLoadBalancerConfigurationProperties(type=ROUND_ROBIN, dynamicWeightConfigProperties=WorkerLoadBalancerConfigurationProperties.DynamicWeightConfigProperties(cpuUsageWeight=30, memoryUsageWeight=30, taskThreadPoolUsageWeight=40))
+****************************Master Configuration**************************************
+[WI-0][TI-0] - 2025-11-06 15:11:22.463 INFO  [Master-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'masterConfig' of type [org.apache.dolphinscheduler.server.master.config.MasterConfig$$EnhancerBySpringCGLIB$$c6924811] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 15:11:22.577 INFO  [Master-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 15:11:22.594 INFO  [Master-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'kubernetes.manifests-io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 15:11:22.607 INFO  [Master-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration' of type [io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 15:11:22.623 INFO  [Master-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultApiClient' of type [io.kubernetes.client.openapi.ApiClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 15:11:22.704 INFO  [Master-Server] o.a.d.p.r.z.ZookeeperRegistryAutoConfiguration:[37] - Load ZookeeperRegistryAutoConfiguration
+[WI-0][TI-0] - 2025-11-06 15:11:22.732 INFO  [Master-Server] o.a.d.p.r.z.ZookeeperRegistryProperties:[96] - 
+****************************ZookeeperRegistryProperties**************************************
+  namespace -> dolphinscheduler
+  connectString -> zookeeper:2181
+  retryPolicy -> ZookeeperRegistryProperties.ZookeeperProperties.RetryPolicy(baseSleepTime=PT0.1S, maxRetries=3, maxSleep=PT1S)
+  digest -> 
+  sessionTimeout -> PT1M
+  connectionTimeout -> PT30S
+  blockUntilConnected -> PT30S
+****************************ZookeeperRegistryProperties**************************************
+[WI-0][TI-0] - 2025-11-06 15:11:22.914 INFO  [Master-Server] o.a.d.p.r.z.ZookeeperRegistry:[113] - ZookeeperRegistry started at: 89/ms
+[WI-0][TI-0] - 2025-11-06 15:11:23.404 INFO  [Master-Server] c.z.h.HikariDataSource:[110] - HikariPool-1 - Starting...
+[WI-0][TI-0] - 2025-11-06 15:11:23.602 INFO  [Master-Server] c.z.h.HikariDataSource:[123] - HikariPool-1 - Start completed.
+[WI-0][TI-0] - 2025-11-06 15:11:26.653 INFO  [Master-Server] o.q.i.StdSchedulerFactory:[1220] - Using default implementation for ThreadExecutor
+[WI-0][TI-0] - 2025-11-06 15:11:26.669 INFO  [Master-Server] o.q.c.SchedulerSignalerImpl:[61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[WI-0][TI-0] - 2025-11-06 15:11:26.669 INFO  [Master-Server] o.q.c.QuartzScheduler:[229] - Quartz Scheduler v.2.3.2 created.
+[WI-0][TI-0] - 2025-11-06 15:11:26.671 INFO  [Master-Server] o.q.s.RAMJobStore:[155] - RAMJobStore initialized.
+[WI-0][TI-0] - 2025-11-06 15:11:26.673 INFO  [Master-Server] o.q.c.QuartzScheduler:[294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[WI-0][TI-0] - 2025-11-06 15:11:26.674 INFO  [Master-Server] o.q.i.StdSchedulerFactory:[1374] - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+[WI-0][TI-0] - 2025-11-06 15:11:26.674 INFO  [Master-Server] o.q.i.StdSchedulerFactory:[1378] - Quartz scheduler version: 2.3.2
+[WI-0][TI-0] - 2025-11-06 15:11:26.675 INFO  [Master-Server] o.q.c.QuartzScheduler:[2293] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@798b36fd
+[WI-0][TI-0] - 2025-11-06 15:11:26.829 INFO  [Master-Server] o.a.d.e.b.s.NettyRemotingServer:[111] - MasterRpcServer bind success at port: 5678
+[WI-0][TI-0] - 2025-11-06 15:11:26.836 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SUB_WORKFLOW
+[WI-0][TI-0] - 2025-11-06 15:11:26.838 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DEPENDENT
+[WI-0][TI-0] - 2025-11-06 15:11:26.839 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: CONDITIONS
+[WI-0][TI-0] - 2025-11-06 15:11:26.840 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SWITCH
+[WI-0][TI-0] - 2025-11-06 15:11:26.841 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: LogicFakeTask
+[WI-0][TI-0] - 2025-11-06 15:11:26.842 WARN  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[44] - The task plugin has already been loaded
+[WI-0][TI-0] - 2025-11-06 15:11:26.846 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorProvider:[41] - Initialize DataSourceProcessorProvider
+[WI-0][TI-0] - 2025-11-06 15:11:26.856 INFO  [Master-Server] o.a.d.s.m.r.MasterRegistryClient:[96] - Master node : 172.28.0.6:5678 registering to registry center
+[WI-0][TI-0] - 2025-11-06 15:11:26.897 INFO  [Master-Server] o.a.d.c.c.SystemConstants:[30] - init timezone: sun.util.calendar.ZoneInfo[id="Asia/Shanghai",offset=28800000,dstSavings=0,useDaylight=false,transitions=31,lastRule=null]
+[WI-0][TI-0] - 2025-11-06 15:11:26.945 INFO  [Master-Server] o.a.d.c.m.BaseHeartBeatTask:[47] - Starting MasterHeartBeatTask...
+[WI-0][TI-0] - 2025-11-06 15:11:26.946 INFO  [Master-Server] o.a.d.c.m.BaseHeartBeatTask:[49] - Started MasterHeartBeatTask, heartBeatInterval: 10000...
+[WI-0][TI-0] - 2025-11-06 15:11:26.946 INFO  [Master-Server] o.a.d.s.m.r.MasterRegistryClient:[109] - Master node : 172.28.0.6:5678 registered to registry center successfully
+[WI-0][TI-0] - 2025-11-06 15:11:26.992 INFO  [Master-Server] o.a.d.r.a.h.DefaultServerStatusChangeListener:[27] - The status is active now.
+[WI-0][TI-0] - 2025-11-06 15:11:26.993 INFO  [Master-Server] o.a.d.s.m.e.TaskGroupCoordinator:[82] - TaskGroupCoordinator starting...
+[WI-0][TI-0] - 2025-11-06 15:11:26.994 INFO  [Master-Server] o.a.d.s.m.e.TaskGroupCoordinator:[93] - TaskGroupCoordinator started...
+[WI-0][TI-0] - 2025-11-06 15:11:26.994 INFO  [Master-Server] o.a.d.s.m.e.MasterCoordinator:[55] - MasterCoordinator started...
+[WI-0][TI-0] - 2025-11-06 15:11:27.032 INFO  [Master-Server] o.a.d.s.m.c.MasterSlotManager:[89] - Do rebalance success, current master slot: 0, total master slots: 1
+[WI-0][TI-0] - 2025-11-06 15:11:27.038 INFO  [Master-Server] o.a.d.s.m.c.ClusterManager:[76] - Initialized MasterClusters: [ {
+  "processId" : 123,
+  "serverStartupTime" : 1762413086751,
+  "address" : "172.28.0.6:5678",
+  "cpuUsage" : 0.0,
+  "memoryUsage" : 0.3738792031757662,
+  "serverStatus" : "NORMAL"
+} ]
+[WI-0][TI-0] - 2025-11-06 15:11:27.042 INFO  [Master-Server] o.a.d.s.m.c.ClusterManager:[93] - Initialized WorkerClusters: [ ]
+[WI-0][TI-0] - 2025-11-06 15:11:27.045 INFO  [Curator-TreeCache-0] o.a.d.s.m.c.AbstractClusterSubscribeListener:[41] - Server MasterServerMetadata(super=BaseServerMetadata(processId=123, serverStartupTime=1762413086751, address=172.28.0.6:5678, cpuUsage=0.0, memoryUsage=0.3738792031757662, serverStatus=NORMAL)) added
+[WI-0][TI-0] - 2025-11-06 15:11:27.144 INFO  [Master-Server] o.a.d.s.m.c.ClusterManager:[59] - ClusterManager started...
+[WI-0][TI-0] - 2025-11-06 15:11:27.145 INFO  [Master-Server] o.a.d.s.m.c.ClusterStateMonitors:[46] - ClusterStateMonitors started...
+[WI-0][TI-0] - 2025-11-06 15:11:27.459 INFO  [Master-Server] o.a.d.s.m.e.WorkflowEventBusFireWorkers:[71] - WorkflowEventBusFireWorkers started, worker size: 25
+[WI-0][TI-0] - 2025-11-06 15:11:27.460 INFO  [Master-Server] o.a.d.s.m.e.WorkflowEventBusCoordinator:[40] - WorkflowEventBusCoordinator started
+[WI-0][TI-0] - 2025-11-06 15:11:27.460 INFO  [Master-Server] o.a.d.s.m.e.c.CommandEngine:[96] - MasterSchedulerBootstrap starting..
+[WI-0][TI-0] - 2025-11-06 15:11:27.461 INFO  [Master-Server] o.a.d.s.m.e.c.CommandEngine:[101] - MasterSchedulerBootstrap started...
+[WI-0][TI-0] - 2025-11-06 15:11:27.461 INFO  [Master-Server] o.a.d.s.m.e.t.d.WorkerGroupDispatcherCoordinator:[49] - WorkerGroupTaskDispatcherManager started...
+[WI-0][TI-0] - 2025-11-06 15:11:27.463 INFO  [Master-Server] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[95] - LogicTaskExecutorEventBusCoordinator started, worker size: 12
+[WI-0][TI-0] - 2025-11-06 15:11:27.464 INFO  [Master-Server] o.a.d.t.e.TaskEngine:[53] - LogicTaskEngine started
+[WI-0][TI-0] - 2025-11-06 15:11:27.465 INFO  [Master-Server] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[81] - LogicTaskExecutorLifecycleEventReporter started
+[WI-0][TI-0] - 2025-11-06 15:11:27.465 INFO  [Master-Server] o.a.d.s.m.e.e.LogicTaskEngineDelegator:[50] - LogicTaskEngineDelegator started
+[WI-0][TI-0] - 2025-11-06 15:11:27.465 INFO  [Master-Server] o.a.d.s.m.e.WorkflowEngine:[55] - WorkflowEngine started
+[WI-0][TI-0] - 2025-11-06 15:11:27.466 INFO  [Master-Server] o.q.c.QuartzScheduler:[547] - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+[WI-0][TI-0] - 2025-11-06 15:11:27.467 INFO  [Master-Server] o.a.d.s.m.e.s.SystemEventBus:[40] - Published SystemEvent: GlobalMasterFailoverEvent{eventTime=Thu Nov 06 15:11:26 CST 2025}
+[WI-0][TI-0] - 2025-11-06 15:11:27.468 INFO  [Master-Server] o.a.d.s.m.e.s.SystemEventBusFireWorker:[62] - SystemEventBusFireWorker started
+[WI-0][TI-0] - 2025-11-06 15:11:27.469 INFO  [SystemEventBusFireWorker] o.a.d.s.m.f.FailoverCoordinator:[73] - Global master failover starting
+[WI-0][TI-0] - 2025-11-06 15:11:27.470 INFO  [Master-Server] o.a.d.s.m.MasterServer:[164] - MasterServer initialized successfully in 719 ms
+[WI-0][TI-0] - 2025-11-06 15:11:27.495 INFO  [SystemEventBusFireWorker] o.a.d.s.m.f.FailoverCoordinator:[99] - Global master failover finished, cost: 25/ms
+[WI-0][TI-0] - 2025-11-06 15:11:27.495 INFO  [SystemEventBusFireWorker] o.a.d.s.m.e.s.SystemEventBusFireWorker:[103] - Fire SystemEvent: GlobalMasterFailoverEvent{eventTime=Thu Nov 06 15:11:26 CST 2025} cost: 27 ms
+[WI-0][TI-0] - 2025-11-06 15:11:28.968 INFO  [Master-Server] o.a.d.s.m.MasterServer:[61] - Started MasterServer in 9.816 seconds (JVM running for 10.425)
+[WI-0][TI-0] - 2025-11-06 15:11:33.792 INFO  [Curator-TreeCache-0] o.a.d.s.m.c.AbstractClusterSubscribeListener:[41] - Server WorkerServerMetadata(workerGroup=default, workerWeight=100.0, taskThreadPoolUsage=0.0) added
+[WI-0][TI-0] - 2025-11-06 15:11:35.691 WARN  [Curator-TreeCache-0] o.a.d.s.m.c.AbstractClusterSubscribeListener:[45] - Server WorkerServerMetadata(workerGroup=default, workerWeight=100.0, taskThreadPoolUsage=0.0) removed
+[WI-0][TI-0] - 2025-11-06 15:11:35.693 INFO  [Curator-TreeCache-0] o.a.d.s.m.e.s.SystemEventBus:[40] - Published SystemEvent: WorkerFailoverEvent{workerServerMetadata='WorkerServerMetadata(workerGroup=default, workerWeight=100.0, taskThreadPoolUsage=0.0)', eventTime=Thu Nov 06 15:11:35 CST 2025, delayTime=30000}
+[WI-0][TI-0] - 2025-11-06 15:11:57.955 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.7033969727725696 is over then the maxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 15:11:57.956 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 15:11:58.009 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.7033969727725696 is over then the maxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 15:11:58.025 WARN  [Curator-TreeCache-0] o.a.d.s.m.c.MasterSlotManager:[75] - Do rebalance failed, cannot found the current master: 172.28.0.6:5678 in the normal master clusters: []. Please check the current master server status
+[WI-0][TI-0] - 2025-11-06 15:11:58.960 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[38] - OverLoad: the system cpu usage: 0.7752066115702478 is over then the maxSystemCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 15:11:58.961 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 15:11:59.023 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[38] - OverLoad: the system cpu usage: 0.7752066115702478 is over then the maxSystemCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 15:11:59.964 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[38] - OverLoad: the system cpu usage: 0.8020050125313283 is over then the maxSystemCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 15:11:59.967 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 15:12:00.025 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[38] - OverLoad: the system cpu usage: 0.8020050125313283 is over then the maxSystemCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 15:12:00.969 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.7467980093407243 is over then the maxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 15:12:00.971 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 15:12:01.024 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.7467980093407243 is over then the maxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 15:12:01.974 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.7487037893392429 is over then the maxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 15:12:01.979 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 15:12:02.026 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.7487037893392429 is over then the maxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 15:12:02.983 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.758994901237756 is over then the maxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 15:12:02.985 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 15:12:03.028 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.758994901237756 is over then the maxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 15:12:03.988 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.7597030626605249 is over then the maxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 15:12:03.989 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 15:12:04.030 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.7597030626605249 is over then the maxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 15:12:04.993 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.7603366544352426 is over then the maxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 15:12:04.995 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 15:12:05.031 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.7603366544352426 is over then the maxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 15:12:05.691 INFO  [SystemEventBusFireWorker] o.a.d.s.m.f.FailoverCoordinator:[191] - Worker[WorkerServerMetadata(workerGroup=default, workerWeight=100.0, taskThreadPoolUsage=0.0)] failover starting
+[WI-0][TI-0] - 2025-11-06 15:12:05.696 INFO  [SystemEventBusFireWorker] o.a.d.r.a.RegistryClient:[177] - persist key: /nodes/failover-finish-nodes/172.28.0.6:1234-1762413093524-269, value: 1762413125695
+[WI-0][TI-0] - 2025-11-06 15:12:05.700 INFO  [SystemEventBusFireWorker] o.a.d.s.m.f.FailoverCoordinator:[225] - Worker[172.28.0.6:1234] failover 0 tasks finished, cost: 7/ms
+[WI-0][TI-0] - 2025-11-06 15:12:05.700 INFO  [SystemEventBusFireWorker] o.a.d.s.m.e.s.SystemEventBusFireWorker:[103] - Fire SystemEvent: WorkerFailoverEvent{workerServerMetadata='WorkerServerMetadata(workerGroup=default, workerWeight=100.0, taskThreadPoolUsage=0.0)', eventTime=Thu Nov 06 15:11:35 CST 2025, delayTime=30000} cost: 9 ms
+[WI-0][TI-0] - 2025-11-06 15:12:05.999 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.7607135064149916 is over then the maxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 15:12:06.001 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 15:12:06.035 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.7607135064149916 is over then the maxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 15:12:07.005 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.7604852932639085 is over then the maxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 15:12:07.008 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 15:12:07.037 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.7604852932639085 is over then the maxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 15:12:08.016 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.IdSlotBasedCommandFetcher:[60] - MasterSlotManager check slot (-1 -> 1)is invalidated.
+[WI-0][TI-0] - 2025-11-06 15:12:08.066 INFO  [Curator-TreeCache-0] o.a.d.s.m.c.MasterSlotManager:[89] - Do rebalance success, current master slot: 0, total master slots: 1
+[WI-0][TI-0] - 2025-11-06 15:17:06.637 WARN  [Master-Server-SendThread(zookeeper:2181)] o.a.z.ClientCnxn:[1292] - Session 0x10004d1813e0000 for server zookeeper/172.28.0.3:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+org.apache.zookeeper.ClientCnxn$EndOfStreamException: Unable to read additional data from server sessionid 0x10004d1813e0000, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1282)
+[WI-0][TI-0] - 2025-11-06 15:17:06.743 WARN  [Curator-ConnectionStateManager-0] o.a.d.p.r.z.ZookeeperConnectionStateListener:[54] - Registry suspended
+[WI-0][TI-0] - 2025-11-06 15:17:06.746 INFO  [Curator-ConnectionStateManager-0] o.a.d.s.m.r.MasterConnectionStateListener:[38] - Master received a SUSPENDED event from registry, the current server state is RUNNING
+[WI-0][TI-0] - 2025-11-06 15:19:19.189 WARN  [Master-Server] o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[WI-0][TI-0] - 2025-11-06 15:19:19.647 WARN  [Master-Server] o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[WI-0][TI-0] - 2025-11-06 15:19:19.649 INFO  [Master-Server] o.a.d.s.m.MasterServer:[640] - The following 1 profile is active: "mysql"
+[WI-0][TI-0] - 2025-11-06 15:19:21.311 INFO  [Master-Server] o.s.c.c.s.GenericScope:[283] - BeanFactory id=0ec5e0ef-0a33-3723-a9fd-07122e76f4e6
+[WI-0][TI-0] - 2025-11-06 15:19:21.737 INFO  [Master-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 15:19:21.742 INFO  [Master-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 15:19:21.746 INFO  [Master-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$418/1659537713] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 15:19:21.753 INFO  [Master-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 15:19:21.771 INFO  [Master-Server] o.a.d.c.u.NetUtils:[312] - Get all NetworkInterfaces: [name:eth0 (eth0), name:lo (lo)]
+[WI-0][TI-0] - 2025-11-06 15:19:21.843 INFO  [Master-Server] o.a.d.s.m.c.MasterConfig:[126] - 
+****************************Master Configuration**************************************
+  listen-port -> 5678
+  workflow-event-bus-fire-thread-count -> 25
+  logic-task-config -> LogicTaskConfig(taskExecutorThreadCount=25)
+  max-heartbeat-interval -> PT10S
+  server-load-protection -> MasterServerLoadProtectionConfig(maxConcurrentWorkflowInstances=2147483647)
+  master-address -> 172.28.0.6:5678
+  master-registry-path: /nodes/master/172.28.0.6:5678
+  worker-group-refresh-interval: PT5M
+  command-fetch-strategy: CommandFetchStrategy(type=ID_SLOT_BASED, config=CommandFetchStrategy.IdSlotBasedFetchConfig(idStep=1, fetchSize=10))
+  worker-load-balancer-configuration-properties: WorkerLoadBalancerConfigurationProperties(type=ROUND_ROBIN, dynamicWeightConfigProperties=WorkerLoadBalancerConfigurationProperties.DynamicWeightConfigProperties(cpuUsageWeight=30, memoryUsageWeight=30, taskThreadPoolUsageWeight=40))
+****************************Master Configuration**************************************
+[WI-0][TI-0] - 2025-11-06 15:19:21.844 INFO  [Master-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'masterConfig' of type [org.apache.dolphinscheduler.server.master.config.MasterConfig$$EnhancerBySpringCGLIB$$c6924811] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 15:19:21.974 INFO  [Master-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 15:19:21.987 INFO  [Master-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'kubernetes.manifests-io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 15:19:21.994 INFO  [Master-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration' of type [io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 15:19:22.007 INFO  [Master-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultApiClient' of type [io.kubernetes.client.openapi.ApiClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 15:19:22.052 INFO  [Master-Server] o.a.d.p.r.z.ZookeeperRegistryAutoConfiguration:[37] - Load ZookeeperRegistryAutoConfiguration
+[WI-0][TI-0] - 2025-11-06 15:19:22.071 INFO  [Master-Server] o.a.d.p.r.z.ZookeeperRegistryProperties:[96] - 
+****************************ZookeeperRegistryProperties**************************************
+  namespace -> dolphinscheduler
+  connectString -> zookeeper:2181
+  retryPolicy -> ZookeeperRegistryProperties.ZookeeperProperties.RetryPolicy(baseSleepTime=PT0.1S, maxRetries=3, maxSleep=PT1S)
+  digest -> 
+  sessionTimeout -> PT1M
+  connectionTimeout -> PT30S
+  blockUntilConnected -> PT30S
+****************************ZookeeperRegistryProperties**************************************
+[WI-0][TI-0] - 2025-11-06 15:19:22.265 INFO  [Master-Server] o.a.d.p.r.z.ZookeeperRegistry:[113] - ZookeeperRegistry started at: 61/ms
+[WI-0][TI-0] - 2025-11-06 15:19:22.768 INFO  [Master-Server] c.z.h.HikariDataSource:[110] - HikariPool-1 - Starting...
+[WI-0][TI-0] - 2025-11-06 15:19:23.054 INFO  [Master-Server] c.z.h.HikariDataSource:[123] - HikariPool-1 - Start completed.
+[WI-0][TI-0] - 2025-11-06 15:19:26.334 INFO  [Master-Server] o.q.i.StdSchedulerFactory:[1220] - Using default implementation for ThreadExecutor
+[WI-0][TI-0] - 2025-11-06 15:19:26.359 INFO  [Master-Server] o.q.c.SchedulerSignalerImpl:[61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[WI-0][TI-0] - 2025-11-06 15:19:26.360 INFO  [Master-Server] o.q.c.QuartzScheduler:[229] - Quartz Scheduler v.2.3.2 created.
+[WI-0][TI-0] - 2025-11-06 15:19:26.362 INFO  [Master-Server] o.q.s.RAMJobStore:[155] - RAMJobStore initialized.
+[WI-0][TI-0] - 2025-11-06 15:19:26.364 INFO  [Master-Server] o.q.c.QuartzScheduler:[294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[WI-0][TI-0] - 2025-11-06 15:19:26.365 INFO  [Master-Server] o.q.i.StdSchedulerFactory:[1374] - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+[WI-0][TI-0] - 2025-11-06 15:19:26.366 INFO  [Master-Server] o.q.i.StdSchedulerFactory:[1378] - Quartz scheduler version: 2.3.2
+[WI-0][TI-0] - 2025-11-06 15:19:26.366 INFO  [Master-Server] o.q.c.QuartzScheduler:[2293] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@798b36fd
+[WI-0][TI-0] - 2025-11-06 15:19:26.568 INFO  [Master-Server] o.a.d.e.b.s.NettyRemotingServer:[111] - MasterRpcServer bind success at port: 5678
+[WI-0][TI-0] - 2025-11-06 15:19:26.578 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SUB_WORKFLOW
+[WI-0][TI-0] - 2025-11-06 15:19:26.579 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DEPENDENT
+[WI-0][TI-0] - 2025-11-06 15:19:26.581 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: CONDITIONS
+[WI-0][TI-0] - 2025-11-06 15:19:26.582 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SWITCH
+[WI-0][TI-0] - 2025-11-06 15:19:26.584 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: LogicFakeTask
+[WI-0][TI-0] - 2025-11-06 15:19:26.584 WARN  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[44] - The task plugin has already been loaded
+[WI-0][TI-0] - 2025-11-06 15:19:26.590 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorProvider:[41] - Initialize DataSourceProcessorProvider
+[WI-0][TI-0] - 2025-11-06 15:19:26.611 INFO  [Master-Server] o.a.d.s.m.r.MasterRegistryClient:[96] - Master node : 172.28.0.6:5678 registering to registry center
+[WI-0][TI-0] - 2025-11-06 15:19:26.669 INFO  [Master-Server] o.a.d.c.c.SystemConstants:[30] - init timezone: sun.util.calendar.ZoneInfo[id="Asia/Shanghai",offset=28800000,dstSavings=0,useDaylight=false,transitions=31,lastRule=null]
+[WI-0][TI-0] - 2025-11-06 15:19:26.728 INFO  [Master-Server] o.a.d.c.m.BaseHeartBeatTask:[47] - Starting MasterHeartBeatTask...
+[WI-0][TI-0] - 2025-11-06 15:19:26.729 INFO  [Master-Server] o.a.d.c.m.BaseHeartBeatTask:[49] - Started MasterHeartBeatTask, heartBeatInterval: 10000...
+[WI-0][TI-0] - 2025-11-06 15:19:26.732 INFO  [Master-Server] o.a.d.s.m.r.MasterRegistryClient:[109] - Master node : 172.28.0.6:5678 registered to registry center successfully
+[WI-0][TI-0] - 2025-11-06 15:19:26.775 INFO  [Master-Server] o.a.d.r.a.h.DefaultServerStatusChangeListener:[27] - The status is active now.
+[WI-0][TI-0] - 2025-11-06 15:19:26.775 INFO  [Master-Server] o.a.d.s.m.e.TaskGroupCoordinator:[82] - TaskGroupCoordinator starting...
+[WI-0][TI-0] - 2025-11-06 15:19:26.776 INFO  [Master-Server] o.a.d.s.m.e.TaskGroupCoordinator:[93] - TaskGroupCoordinator started...
+[WI-0][TI-0] - 2025-11-06 15:19:26.776 INFO  [Master-Server] o.a.d.s.m.e.MasterCoordinator:[55] - MasterCoordinator started...
+[WI-0][TI-0] - 2025-11-06 15:19:26.817 INFO  [Master-Server] o.a.d.s.m.c.MasterSlotManager:[89] - Do rebalance success, current master slot: 0, total master slots: 1
+[WI-0][TI-0] - 2025-11-06 15:19:26.828 INFO  [Master-Server] o.a.d.s.m.c.ClusterManager:[76] - Initialized MasterClusters: [ {
+  "processId" : 124,
+  "serverStartupTime" : 1762413566443,
+  "address" : "172.28.0.6:5678",
+  "cpuUsage" : 0.0,
+  "memoryUsage" : 0.36538777217921536,
+  "serverStatus" : "NORMAL"
+} ]
+[WI-0][TI-0] - 2025-11-06 15:19:26.831 INFO  [Master-Server] o.a.d.s.m.c.ClusterManager:[93] - Initialized WorkerClusters: [ ]
+[WI-0][TI-0] - 2025-11-06 15:19:26.834 INFO  [Curator-TreeCache-0] o.a.d.s.m.c.AbstractClusterSubscribeListener:[41] - Server MasterServerMetadata(super=BaseServerMetadata(processId=124, serverStartupTime=1762413566443, address=172.28.0.6:5678, cpuUsage=0.0, memoryUsage=0.36538777217921536, serverStatus=NORMAL)) added
+[WI-0][TI-0] - 2025-11-06 15:19:26.947 INFO  [Master-Server] o.a.d.s.m.c.ClusterManager:[59] - ClusterManager started...
+[WI-0][TI-0] - 2025-11-06 15:19:26.948 INFO  [Master-Server] o.a.d.s.m.c.ClusterStateMonitors:[46] - ClusterStateMonitors started...
+[WI-0][TI-0] - 2025-11-06 15:19:27.207 INFO  [Master-Server] o.a.d.s.m.e.WorkflowEventBusFireWorkers:[71] - WorkflowEventBusFireWorkers started, worker size: 25
+[WI-0][TI-0] - 2025-11-06 15:19:27.208 INFO  [Master-Server] o.a.d.s.m.e.WorkflowEventBusCoordinator:[40] - WorkflowEventBusCoordinator started
+[WI-0][TI-0] - 2025-11-06 15:19:27.209 INFO  [Master-Server] o.a.d.s.m.e.c.CommandEngine:[96] - MasterSchedulerBootstrap starting..
+[WI-0][TI-0] - 2025-11-06 15:19:27.210 INFO  [Master-Server] o.a.d.s.m.e.c.CommandEngine:[101] - MasterSchedulerBootstrap started...
+[WI-0][TI-0] - 2025-11-06 15:19:27.210 INFO  [Master-Server] o.a.d.s.m.e.t.d.WorkerGroupDispatcherCoordinator:[49] - WorkerGroupTaskDispatcherManager started...
+[WI-0][TI-0] - 2025-11-06 15:19:27.212 INFO  [Master-Server] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[95] - LogicTaskExecutorEventBusCoordinator started, worker size: 12
+[WI-0][TI-0] - 2025-11-06 15:19:27.213 INFO  [Master-Server] o.a.d.t.e.TaskEngine:[53] - LogicTaskEngine started
+[WI-0][TI-0] - 2025-11-06 15:19:27.214 INFO  [Master-Server] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[81] - LogicTaskExecutorLifecycleEventReporter started
+[WI-0][TI-0] - 2025-11-06 15:19:27.214 INFO  [Master-Server] o.a.d.s.m.e.e.LogicTaskEngineDelegator:[50] - LogicTaskEngineDelegator started
+[WI-0][TI-0] - 2025-11-06 15:19:27.215 INFO  [Master-Server] o.a.d.s.m.e.WorkflowEngine:[55] - WorkflowEngine started
+[WI-0][TI-0] - 2025-11-06 15:19:27.215 INFO  [Master-Server] o.q.c.QuartzScheduler:[547] - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+[WI-0][TI-0] - 2025-11-06 15:19:27.216 INFO  [Master-Server] o.a.d.s.m.e.s.SystemEventBus:[40] - Published SystemEvent: GlobalMasterFailoverEvent{eventTime=Thu Nov 06 15:19:26 CST 2025}
+[WI-0][TI-0] - 2025-11-06 15:19:27.217 INFO  [Master-Server] o.a.d.s.m.e.s.SystemEventBusFireWorker:[62] - SystemEventBusFireWorker started
+[WI-0][TI-0] - 2025-11-06 15:19:27.219 INFO  [SystemEventBusFireWorker] o.a.d.s.m.f.FailoverCoordinator:[73] - Global master failover starting
+[WI-0][TI-0] - 2025-11-06 15:19:27.220 INFO  [Master-Server] o.a.d.s.m.MasterServer:[164] - MasterServer initialized successfully in 777 ms
+[WI-0][TI-0] - 2025-11-06 15:19:27.242 INFO  [SystemEventBusFireWorker] o.a.d.s.m.f.FailoverCoordinator:[99] - Global master failover finished, cost: 23/ms
+[WI-0][TI-0] - 2025-11-06 15:19:27.243 INFO  [SystemEventBusFireWorker] o.a.d.s.m.e.s.SystemEventBusFireWorker:[103] - Fire SystemEvent: GlobalMasterFailoverEvent{eventTime=Thu Nov 06 15:19:26 CST 2025} cost: 25 ms
+[WI-0][TI-0] - 2025-11-06 15:19:28.815 INFO  [Master-Server] o.a.d.s.m.MasterServer:[61] - Started MasterServer in 10.806 seconds (JVM running for 11.491)
+[WI-0][TI-0] - 2025-11-06 15:19:33.329 INFO  [Curator-TreeCache-0] o.a.d.s.m.c.AbstractClusterSubscribeListener:[41] - Server WorkerServerMetadata(workerGroup=default, workerWeight=100.0, taskThreadPoolUsage=0.0) added
+[WI-0][TI-0] - 2025-11-06 15:19:35.179 WARN  [Curator-TreeCache-0] o.a.d.s.m.c.AbstractClusterSubscribeListener:[45] - Server WorkerServerMetadata(workerGroup=default, workerWeight=100.0, taskThreadPoolUsage=0.0) removed
+[WI-0][TI-0] - 2025-11-06 15:19:35.181 INFO  [Curator-TreeCache-0] o.a.d.s.m.e.s.SystemEventBus:[40] - Published SystemEvent: WorkerFailoverEvent{workerServerMetadata='WorkerServerMetadata(workerGroup=default, workerWeight=100.0, taskThreadPoolUsage=0.0)', eventTime=Thu Nov 06 15:19:35 CST 2025, delayTime=30000}
+[WI-0][TI-0] - 2025-11-06 15:19:55.826 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[38] - OverLoad: the system cpu usage: 0.8174342105263158 is over then the maxSystemCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 15:19:55.925 WARN  [Curator-TreeCache-0] o.a.d.s.m.c.MasterSlotManager:[75] - Do rebalance failed, cannot found the current master: 172.28.0.6:5678 in the normal master clusters: []. Please check the current master server status
+[WI-0][TI-0] - 2025-11-06 15:19:56.381 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[38] - OverLoad: the system cpu usage: 0.8174342105263158 is over then the maxSystemCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 15:19:56.382 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 15:19:56.919 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[38] - OverLoad: the system cpu usage: 0.838154808444097 is over then the maxSystemCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 15:19:57.383 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[38] - OverLoad: the system cpu usage: 0.838154808444097 is over then the maxSystemCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 15:19:57.386 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 15:19:57.924 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.7339810382897627 is over then the maxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 15:19:58.389 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.7339810382897627 is over then the maxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 15:19:58.397 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 15:19:58.926 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[38] - OverLoad: the system cpu usage: 0.725 is over then the maxSystemCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 15:19:59.401 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[38] - OverLoad: the system cpu usage: 0.725 is over then the maxSystemCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 15:19:59.402 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 15:19:59.929 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[38] - OverLoad: the system cpu usage: 0.7281067556296914 is over then the maxSystemCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 15:20:00.404 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[38] - OverLoad: the system cpu usage: 0.7281067556296914 is over then the maxSystemCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 15:20:00.407 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 15:20:00.928 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[38] - OverLoad: the system cpu usage: 0.7281067556296914 is over then the maxSystemCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 15:20:01.407 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.7580505191849187 is over then the maxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 15:20:01.408 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 15:20:01.930 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.7580505191849187 is over then the maxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 15:20:02.410 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.7590309348931903 is over then the maxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 15:20:02.411 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 15:20:02.932 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.7590309348931903 is over then the maxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 15:20:03.413 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.7554465871123629 is over then the maxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 15:20:03.413 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 15:20:03.934 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.7554465871123629 is over then the maxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 15:20:04.417 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.IdSlotBasedCommandFetcher:[60] - MasterSlotManager check slot (-1 -> 1)is invalidated.
+[WI-0][TI-0] - 2025-11-06 15:20:04.945 INFO  [Curator-TreeCache-0] o.a.d.s.m.c.MasterSlotManager:[89] - Do rebalance success, current master slot: 0, total master slots: 1
+[WI-0][TI-0] - 2025-11-06 15:20:05.180 INFO  [SystemEventBusFireWorker] o.a.d.s.m.f.FailoverCoordinator:[191] - Worker[WorkerServerMetadata(workerGroup=default, workerWeight=100.0, taskThreadPoolUsage=0.0)] failover starting
+[WI-0][TI-0] - 2025-11-06 15:20:05.183 INFO  [SystemEventBusFireWorker] o.a.d.r.a.RegistryClient:[177] - persist key: /nodes/failover-finish-nodes/172.28.0.6:1234-1762413573120-270, value: 1762413605183
+[WI-0][TI-0] - 2025-11-06 15:20:05.188 INFO  [SystemEventBusFireWorker] o.a.d.s.m.f.FailoverCoordinator:[225] - Worker[172.28.0.6:1234] failover 0 tasks finished, cost: 6/ms
+[WI-0][TI-0] - 2025-11-06 15:20:05.189 INFO  [SystemEventBusFireWorker] o.a.d.s.m.e.s.SystemEventBusFireWorker:[103] - Fire SystemEvent: WorkerFailoverEvent{workerServerMetadata='WorkerServerMetadata(workerGroup=default, workerWeight=100.0, taskThreadPoolUsage=0.0)', eventTime=Thu Nov 06 15:19:35 CST 2025, delayTime=30000} cost: 9 ms
+[WI-0][TI-0] - 2025-11-06 15:44:28.479 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[46] - OverLoad: the jvm cpu usage: 1.0 is over then the maxJvmCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 15:44:28.481 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 15:50:00.245 WARN  [Master-Server-SendThread(zookeeper:2181)] o.a.z.ClientCnxn:[1292] - Session 0x10004d9afc70000 for server zookeeper/172.28.0.3:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+java.io.IOException: Connection reset by peer
+	at sun.nio.ch.FileDispatcherImpl.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:74)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1282)
+[WI-0][TI-0] - 2025-11-06 15:50:00.360 WARN  [Curator-ConnectionStateManager-0] o.a.d.p.r.z.ZookeeperConnectionStateListener:[54] - Registry suspended
+[WI-0][TI-0] - 2025-11-06 15:50:00.365 INFO  [Curator-ConnectionStateManager-0] o.a.d.s.m.r.MasterConnectionStateListener:[38] - Master received a SUSPENDED event from registry, the current server state is RUNNING
+[WI-0][TI-0] - 2025-11-06 15:52:53.024 INFO  [Master-Server] o.a.d.c.u.NetUtils:[312] - Get all NetworkInterfaces: [name:eth0 (eth0), name:lo (lo)]
+[WI-0][TI-0] - 2025-11-06 15:52:53.076 INFO  [Master-Server] o.a.d.s.m.c.MasterConfig:[126] - 
+****************************Master Configuration**************************************
+  listen-port -> 5678
+  workflow-event-bus-fire-thread-count -> 25
+  logic-task-config -> LogicTaskConfig(taskExecutorThreadCount=25)
+  max-heartbeat-interval -> PT10S
+  server-load-protection -> MasterServerLoadProtectionConfig(maxConcurrentWorkflowInstances=2147483647)
+  master-address -> 172.28.0.6:5678
+  master-registry-path: /nodes/master/172.28.0.6:5678
+  worker-group-refresh-interval: PT5M
+  command-fetch-strategy: CommandFetchStrategy(type=ID_SLOT_BASED, config=CommandFetchStrategy.IdSlotBasedFetchConfig(idStep=1, fetchSize=10))
+  worker-load-balancer-configuration-properties: WorkerLoadBalancerConfigurationProperties(type=ROUND_ROBIN, dynamicWeightConfigProperties=WorkerLoadBalancerConfigurationProperties.DynamicWeightConfigProperties(cpuUsageWeight=30, memoryUsageWeight=30, taskThreadPoolUsageWeight=40))
+****************************Master Configuration**************************************
+[WI-0][TI-0] - 2025-11-06 15:52:53.265 INFO  [Master-Server] o.a.d.p.r.z.ZookeeperRegistryAutoConfiguration:[37] - Load ZookeeperRegistryAutoConfiguration
+[WI-0][TI-0] - 2025-11-06 15:52:53.293 INFO  [Master-Server] o.a.d.p.r.z.ZookeeperRegistryProperties:[96] - 
+****************************ZookeeperRegistryProperties**************************************
+  namespace -> dolphinscheduler
+  connectString -> zookeeper:2181
+  retryPolicy -> ZookeeperRegistryProperties.ZookeeperProperties.RetryPolicy(baseSleepTime=PT0.1S, maxRetries=3, maxSleep=PT1S)
+  digest -> 
+  sessionTimeout -> PT1M
+  connectionTimeout -> PT30S
+  blockUntilConnected -> PT30S
+****************************ZookeeperRegistryProperties**************************************
+[WI-0][TI-0] - 2025-11-06 15:52:53.465 INFO  [Master-Server] o.a.d.p.r.z.ZookeeperRegistry:[113] - ZookeeperRegistry started at: 76/ms
+[WI-0][TI-0] - 2025-11-06 15:52:54.171 INFO  [Master-Server] c.z.h.HikariDataSource:[110] - HikariPool-1 - Starting...
+[WI-0][TI-0] - 2025-11-06 15:52:54.515 INFO  [Master-Server] c.z.h.HikariDataSource:[123] - HikariPool-1 - Start completed.
+[WI-0][TI-0] - 2025-11-06 15:52:57.820 INFO  [Master-Server] o.q.i.StdSchedulerFactory:[1220] - Using default implementation for ThreadExecutor
+[WI-0][TI-0] - 2025-11-06 15:52:57.849 INFO  [Master-Server] o.q.c.SchedulerSignalerImpl:[61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[WI-0][TI-0] - 2025-11-06 15:52:57.850 INFO  [Master-Server] o.q.c.QuartzScheduler:[229] - Quartz Scheduler v.2.3.2 created.
+[WI-0][TI-0] - 2025-11-06 15:52:57.852 INFO  [Master-Server] o.q.s.RAMJobStore:[155] - RAMJobStore initialized.
+[WI-0][TI-0] - 2025-11-06 15:52:57.854 INFO  [Master-Server] o.q.c.QuartzScheduler:[294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[WI-0][TI-0] - 2025-11-06 15:52:57.855 INFO  [Master-Server] o.q.i.StdSchedulerFactory:[1374] - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+[WI-0][TI-0] - 2025-11-06 15:52:57.855 INFO  [Master-Server] o.q.i.StdSchedulerFactory:[1378] - Quartz scheduler version: 2.3.2
+[WI-0][TI-0] - 2025-11-06 15:52:57.856 INFO  [Master-Server] o.q.c.QuartzScheduler:[2293] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@7b54a0a4
+[WI-0][TI-0] - 2025-11-06 15:52:58.175 INFO  [Master-Server] o.a.d.e.b.s.NettyRemotingServer:[111] - MasterRpcServer bind success at port: 5678
+[WI-0][TI-0] - 2025-11-06 15:52:58.202 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: JAVA
+[WI-0][TI-0] - 2025-11-06 15:52:58.205 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: JUPYTER
+[WI-0][TI-0] - 2025-11-06 15:52:58.208 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SPARK
+[WI-0][TI-0] - 2025-11-06 15:52:58.210 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: FLINK_STREAM
+[WI-0][TI-0] - 2025-11-06 15:52:58.212 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: PYTHON
+[WI-0][TI-0] - 2025-11-06 15:52:58.215 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: ALIYUN_SERVERLESS_SPARK
+[WI-0][TI-0] - 2025-11-06 15:52:58.217 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DATASYNC
+[WI-0][TI-0] - 2025-11-06 15:52:58.218 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DATA_FACTORY
+[WI-0][TI-0] - 2025-11-06 15:52:58.221 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: CHUNJUN
+[WI-0][TI-0] - 2025-11-06 15:52:58.223 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: CONDITIONS
+[WI-0][TI-0] - 2025-11-06 15:52:58.225 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: REMOTESHELL
+[WI-0][TI-0] - 2025-11-06 15:52:58.226 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SUB_WORKFLOW
+[WI-0][TI-0] - 2025-11-06 15:52:58.228 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: PROCEDURE
+[WI-0][TI-0] - 2025-11-06 15:52:58.229 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SHELL
+[WI-0][TI-0] - 2025-11-06 15:52:58.231 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DEPENDENT
+[WI-0][TI-0] - 2025-11-06 15:52:58.233 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SQOOP
+[WI-0][TI-0] - 2025-11-06 15:52:58.237 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: MR
+[WI-0][TI-0] - 2025-11-06 15:52:58.239 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: PYTORCH
+[WI-0][TI-0] - 2025-11-06 15:52:58.243 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: K8S
+[WI-0][TI-0] - 2025-11-06 15:52:58.245 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SAGEMAKER
+[WI-0][TI-0] - 2025-11-06 15:52:58.254 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SEATUNNEL
+[WI-0][TI-0] - 2025-11-06 15:52:58.258 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: HTTP
+[WI-0][TI-0] - 2025-11-06 15:52:58.262 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: EMR
+[WI-0][TI-0] - 2025-11-06 15:52:58.264 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DMS
+[WI-0][TI-0] - 2025-11-06 15:52:58.266 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: KUBEFLOW
+[WI-0][TI-0] - 2025-11-06 15:52:58.268 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SQL
+[WI-0][TI-0] - 2025-11-06 15:52:58.271 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DVC
+[WI-0][TI-0] - 2025-11-06 15:52:58.274 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DATAX
+[WI-0][TI-0] - 2025-11-06 15:52:58.276 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: ZEPPELIN
+[WI-0][TI-0] - 2025-11-06 15:52:58.279 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DINKY
+[WI-0][TI-0] - 2025-11-06 15:52:58.281 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: MLFLOW
+[WI-0][TI-0] - 2025-11-06 15:52:58.282 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SWITCH
+[WI-0][TI-0] - 2025-11-06 15:52:58.284 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: OPENMLDB
+[WI-0][TI-0] - 2025-11-06 15:52:58.285 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: LogicFakeTask
+[WI-0][TI-0] - 2025-11-06 15:52:58.287 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: LINKIS
+[WI-0][TI-0] - 2025-11-06 15:52:58.290 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: HIVECLI
+[WI-0][TI-0] - 2025-11-06 15:52:58.291 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: FLINK
+[WI-0][TI-0] - 2025-11-06 15:52:58.292 WARN  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[44] - The task plugin has already been loaded
+[WI-0][TI-0] - 2025-11-06 15:52:58.314 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> K8S
+[WI-0][TI-0] - 2025-11-06 15:52:58.316 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> ZEPPELIN
+[WI-0][TI-0] - 2025-11-06 15:52:58.319 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> SSH
+[WI-0][TI-0] - 2025-11-06 15:52:58.323 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> CLICKHOUSE
+[WI-0][TI-0] - 2025-11-06 15:52:58.326 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> DATABEND
+[WI-0][TI-0] - 2025-11-06 15:52:58.331 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> DB2
+[WI-0][TI-0] - 2025-11-06 15:52:58.335 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> HIVE
+[WI-0][TI-0] - 2025-11-06 15:52:58.338 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> MYSQL
+[WI-0][TI-0] - 2025-11-06 15:52:58.341 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> OCEANBASE
+[WI-0][TI-0] - 2025-11-06 15:52:58.344 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> ORACLE
+[WI-0][TI-0] - 2025-11-06 15:52:58.349 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> POSTGRESQL
+[WI-0][TI-0] - 2025-11-06 15:52:58.352 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> SQLSERVER
+[WI-0][TI-0] - 2025-11-06 15:52:58.356 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> REDSHIFT
+[WI-0][TI-0] - 2025-11-06 15:52:58.359 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> ATHENA
+[WI-0][TI-0] - 2025-11-06 15:52:58.363 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> SPARK
+[WI-0][TI-0] - 2025-11-06 15:52:58.366 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> PRESTO
+[WI-0][TI-0] - 2025-11-06 15:52:58.369 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> TRINO
+[WI-0][TI-0] - 2025-11-06 15:52:58.372 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> STARROCKS
+[WI-0][TI-0] - 2025-11-06 15:52:58.375 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> AZURESQL
+[WI-0][TI-0] - 2025-11-06 15:52:58.377 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> DAMENG
+[WI-0][TI-0] - 2025-11-06 15:52:58.380 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> SNOWFLAKE
+[WI-0][TI-0] - 2025-11-06 15:52:58.385 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> KYUUBI
+[WI-0][TI-0] - 2025-11-06 15:52:58.387 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> VERTICA
+[WI-0][TI-0] - 2025-11-06 15:52:58.389 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> DORIS
+[WI-0][TI-0] - 2025-11-06 15:52:58.391 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> SAGEMAKER
+[WI-0][TI-0] - 2025-11-06 15:52:58.393 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> HANA
+[WI-0][TI-0] - 2025-11-06 15:52:58.395 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> ALIYUN_SERVERLESS_SPARK
+[WI-0][TI-0] - 2025-11-06 15:52:58.397 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> DOLPHINDB
+[WI-0][TI-0] - 2025-11-06 15:52:58.400 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorProvider:[41] - Initialize DataSourceProcessorProvider
+[WI-0][TI-0] - 2025-11-06 15:52:58.417 INFO  [Master-Server] o.a.d.s.m.r.MasterRegistryClient:[96] - Master node : 172.28.0.6:5678 registering to registry center
+[WI-0][TI-0] - 2025-11-06 15:52:58.476 INFO  [Master-Server] o.a.d.c.c.SystemConstants:[30] - init timezone: sun.util.calendar.ZoneInfo[id="Asia/Shanghai",offset=28800000,dstSavings=0,useDaylight=false,transitions=31,lastRule=null]
+[WI-0][TI-0] - 2025-11-06 15:52:58.567 INFO  [Master-Server] o.a.d.c.m.BaseHeartBeatTask:[47] - Starting MasterHeartBeatTask...
+[WI-0][TI-0] - 2025-11-06 15:52:58.568 INFO  [Master-Server] o.a.d.c.m.BaseHeartBeatTask:[49] - Started MasterHeartBeatTask, heartBeatInterval: 10000...
+[WI-0][TI-0] - 2025-11-06 15:52:58.568 INFO  [Master-Server] o.a.d.s.m.r.MasterRegistryClient:[109] - Master node : 172.28.0.6:5678 registered to registry center successfully
+[WI-0][TI-0] - 2025-11-06 15:52:58.643 INFO  [Master-Server] o.a.d.r.a.h.DefaultServerStatusChangeListener:[27] - The status is active now.
+[WI-0][TI-0] - 2025-11-06 15:52:58.644 INFO  [Master-Server] o.a.d.s.m.e.TaskGroupCoordinator:[82] - TaskGroupCoordinator starting...
+[WI-0][TI-0] - 2025-11-06 15:52:58.645 INFO  [Master-Server] o.a.d.s.m.e.TaskGroupCoordinator:[93] - TaskGroupCoordinator started...
+[WI-0][TI-0] - 2025-11-06 15:52:58.646 INFO  [Master-Server] o.a.d.s.m.e.MasterCoordinator:[55] - MasterCoordinator started...
+[WI-0][TI-0] - 2025-11-06 15:52:58.702 INFO  [Master-Server] o.a.d.s.m.c.MasterSlotManager:[89] - Do rebalance success, current master slot: 0, total master slots: 1
+[WI-0][TI-0] - 2025-11-06 15:52:58.708 INFO  [Master-Server] o.a.d.s.m.c.ClusterManager:[76] - Initialized MasterClusters: [ {
+  "processId" : 226,
+  "serverStartupTime" : 1762415578003,
+  "address" : "172.28.0.6:5678",
+  "cpuUsage" : 0.0,
+  "memoryUsage" : 0.36607241163246473,
+  "serverStatus" : "NORMAL"
+} ]
+[WI-0][TI-0] - 2025-11-06 15:52:58.713 INFO  [Master-Server] o.a.d.s.m.c.ClusterManager:[93] - Initialized WorkerClusters: [ ]
+[WI-0][TI-0] - 2025-11-06 15:52:58.716 INFO  [Curator-TreeCache-0] o.a.d.s.m.c.AbstractClusterSubscribeListener:[41] - Server MasterServerMetadata(super=BaseServerMetadata(processId=226, serverStartupTime=1762415578003, address=172.28.0.6:5678, cpuUsage=0.0, memoryUsage=0.36607241163246473, serverStatus=NORMAL)) added
+[WI-0][TI-0] - 2025-11-06 15:52:58.879 INFO  [Master-Server] o.a.d.s.m.c.ClusterManager:[59] - ClusterManager started...
+[WI-0][TI-0] - 2025-11-06 15:52:58.881 INFO  [Master-Server] o.a.d.s.m.c.ClusterStateMonitors:[46] - ClusterStateMonitors started...
+[WI-0][TI-0] - 2025-11-06 15:52:59.248 INFO  [Master-Server] o.a.d.s.m.e.WorkflowEventBusFireWorkers:[71] - WorkflowEventBusFireWorkers started, worker size: 25
+[WI-0][TI-0] - 2025-11-06 15:52:59.248 INFO  [Master-Server] o.a.d.s.m.e.WorkflowEventBusCoordinator:[40] - WorkflowEventBusCoordinator started
+[WI-0][TI-0] - 2025-11-06 15:52:59.249 INFO  [Master-Server] o.a.d.s.m.e.c.CommandEngine:[96] - MasterSchedulerBootstrap starting..
+[WI-0][TI-0] - 2025-11-06 15:52:59.249 INFO  [Master-Server] o.a.d.s.m.e.c.CommandEngine:[101] - MasterSchedulerBootstrap started...
+[WI-0][TI-0] - 2025-11-06 15:52:59.250 INFO  [Master-Server] o.a.d.s.m.e.t.d.WorkerGroupDispatcherCoordinator:[49] - WorkerGroupTaskDispatcherManager started...
+[WI-0][TI-0] - 2025-11-06 15:52:59.251 INFO  [Master-Server] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[95] - LogicTaskExecutorEventBusCoordinator started, worker size: 12
+[WI-0][TI-0] - 2025-11-06 15:52:59.252 INFO  [Master-Server] o.a.d.t.e.TaskEngine:[53] - LogicTaskEngine started
+[WI-0][TI-0] - 2025-11-06 15:52:59.253 INFO  [Master-Server] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[81] - LogicTaskExecutorLifecycleEventReporter started
+[WI-0][TI-0] - 2025-11-06 15:52:59.253 INFO  [Master-Server] o.a.d.s.m.e.e.LogicTaskEngineDelegator:[50] - LogicTaskEngineDelegator started
+[WI-0][TI-0] - 2025-11-06 15:52:59.253 INFO  [Master-Server] o.a.d.s.m.e.WorkflowEngine:[55] - WorkflowEngine started
+[WI-0][TI-0] - 2025-11-06 15:52:59.254 INFO  [Master-Server] o.q.c.QuartzScheduler:[547] - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+[WI-0][TI-0] - 2025-11-06 15:52:59.254 INFO  [Master-Server] o.a.d.s.m.e.s.SystemEventBus:[40] - Published SystemEvent: GlobalMasterFailoverEvent{eventTime=Thu Nov 06 15:52:58 CST 2025}
+[WI-0][TI-0] - 2025-11-06 15:52:59.255 INFO  [Master-Server] o.a.d.s.m.e.s.SystemEventBusFireWorker:[62] - SystemEventBusFireWorker started
+[WI-0][TI-0] - 2025-11-06 15:52:59.257 INFO  [SystemEventBusFireWorker] o.a.d.s.m.f.FailoverCoordinator:[73] - Global master failover starting
+[WI-0][TI-0] - 2025-11-06 15:52:59.258 INFO  [Master-Server] o.a.d.s.m.MasterServer:[164] - MasterServer initialized successfully in 1255 ms
+[WI-0][TI-0] - 2025-11-06 15:52:59.279 INFO  [SystemEventBusFireWorker] o.a.d.s.m.f.FailoverCoordinator:[99] - Global master failover finished, cost: 21/ms
+[WI-0][TI-0] - 2025-11-06 15:52:59.280 INFO  [SystemEventBusFireWorker] o.a.d.s.m.e.s.SystemEventBusFireWorker:[103] - Fire SystemEvent: GlobalMasterFailoverEvent{eventTime=Thu Nov 06 15:52:58 CST 2025} cost: 24 ms
+[WI-0][TI-0] - 2025-11-06 15:53:04.658 INFO  [Curator-TreeCache-0] o.a.d.s.m.c.AbstractClusterSubscribeListener:[41] - Server WorkerServerMetadata(workerGroup=default, workerWeight=100.0, taskThreadPoolUsage=0.0) added
+[WI-0][TI-0] - 2025-11-06 15:53:06.459 WARN  [Curator-TreeCache-0] o.a.d.s.m.c.AbstractClusterSubscribeListener:[45] - Server WorkerServerMetadata(workerGroup=default, workerWeight=100.0, taskThreadPoolUsage=0.0) removed
+[WI-0][TI-0] - 2025-11-06 15:53:06.461 INFO  [Curator-TreeCache-0] o.a.d.s.m.e.s.SystemEventBus:[40] - Published SystemEvent: WorkerFailoverEvent{workerServerMetadata='WorkerServerMetadata(workerGroup=default, workerWeight=100.0, taskThreadPoolUsage=0.0)', eventTime=Thu Nov 06 15:53:06 CST 2025, delayTime=30000}
+[WI-0][TI-0] - 2025-11-06 15:53:28.516 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.7104055187545167 is over then the maxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 15:53:28.519 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 15:53:28.623 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.7104055187545167 is over then the maxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 15:53:28.680 WARN  [Curator-TreeCache-0] o.a.d.s.m.c.MasterSlotManager:[75] - Do rebalance failed, cannot found the current master: 172.28.0.6:5678 in the normal master clusters: []. Please check the current master server status
+[WI-0][TI-0] - 2025-11-06 15:53:29.528 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[38] - OverLoad: the system cpu usage: 0.9604286892003298 is over then the maxSystemCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 15:53:29.529 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 15:53:29.672 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[38] - OverLoad: the system cpu usage: 0.9604286892003298 is over then the maxSystemCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 15:53:30.533 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[38] - OverLoad: the system cpu usage: 0.9075770191507078 is over then the maxSystemCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 15:53:30.543 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 15:53:30.674 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[38] - OverLoad: the system cpu usage: 0.9075770191507078 is over then the maxSystemCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 15:53:31.538 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[38] - OverLoad: the system cpu usage: 0.8208092485549132 is over then the maxSystemCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 15:53:31.540 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 15:53:31.674 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[38] - OverLoad: the system cpu usage: 0.8208092485549132 is over then the maxSystemCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 15:53:32.543 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.7832400462031538 is over then the maxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 15:53:32.544 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 15:53:32.675 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.7832400462031538 is over then the maxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 15:53:33.546 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.784236476869396 is over then the maxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 15:53:33.550 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 15:53:33.677 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.784236476869396 is over then the maxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 15:53:34.553 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.7861928040790098 is over then the maxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 15:53:34.555 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 15:53:34.678 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.7861928040790098 is over then the maxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 15:53:35.558 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.7870275837632349 is over then the maxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 15:53:35.560 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 15:53:35.680 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.7870275837632349 is over then the maxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 15:53:36.454 INFO  [SystemEventBusFireWorker] o.a.d.s.m.f.FailoverCoordinator:[191] - Worker[WorkerServerMetadata(workerGroup=default, workerWeight=100.0, taskThreadPoolUsage=0.0)] failover starting
+[WI-0][TI-0] - 2025-11-06 15:53:36.463 INFO  [SystemEventBusFireWorker] o.a.d.r.a.RegistryClient:[177] - persist key: /nodes/failover-finish-nodes/172.28.0.6:1234-1762415584246-338, value: 1762415616463
+[WI-0][TI-0] - 2025-11-06 15:53:36.467 INFO  [SystemEventBusFireWorker] o.a.d.s.m.f.FailoverCoordinator:[225] - Worker[172.28.0.6:1234] failover 0 tasks finished, cost: 11/ms
+[WI-0][TI-0] - 2025-11-06 15:53:36.468 INFO  [SystemEventBusFireWorker] o.a.d.s.m.e.s.SystemEventBusFireWorker:[103] - Fire SystemEvent: WorkerFailoverEvent{workerServerMetadata='WorkerServerMetadata(workerGroup=default, workerWeight=100.0, taskThreadPoolUsage=0.0)', eventTime=Thu Nov 06 15:53:06 CST 2025, delayTime=30000} cost: 14 ms
+[WI-0][TI-0] - 2025-11-06 15:53:36.564 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.7876671811471915 is over then the maxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 15:53:36.568 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 15:53:36.683 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.7876671811471915 is over then the maxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 15:53:37.572 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.7880905765985431 is over then the maxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 15:53:37.576 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 15:53:37.685 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.7880905765985431 is over then the maxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 15:53:38.581 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.IdSlotBasedCommandFetcher:[60] - MasterSlotManager check slot (-1 -> 1)is invalidated.
+[WI-0][TI-0] - 2025-11-06 15:53:38.714 INFO  [Curator-TreeCache-0] o.a.d.s.m.c.MasterSlotManager:[89] - Do rebalance success, current master slot: 0, total master slots: 1
+[WI-0][TI-0] - 2025-11-06 15:54:09.778 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[38] - OverLoad: the system cpu usage: 1.0 is over then the maxSystemCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 15:54:09.806 WARN  [Curator-TreeCache-0] o.a.d.s.m.c.MasterSlotManager:[75] - Do rebalance failed, cannot found the current master: 172.28.0.6:5678 in the normal master clusters: []. Please check the current master server status
+[WI-0][TI-0] - 2025-11-06 15:54:10.794 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.IdSlotBasedCommandFetcher:[60] - MasterSlotManager check slot (-1 -> 1)is invalidated.
+[WI-0][TI-0] - 2025-11-06 15:54:10.822 INFO  [Curator-TreeCache-0] o.a.d.s.m.c.MasterSlotManager:[89] - Do rebalance success, current master slot: 0, total master slots: 1
+[WI-0][TI-0] - 2025-11-06 15:56:38.624 INFO  [MasterCommandHandleThreadPool] o.a.d.s.m.e.WorkflowEventBus:[41] - Publish event: WorkflowStartLifecycleEvent{workflow=aaa-20251106155638045}
+[WI-0][TI-0] - 2025-11-06 15:56:38.628 INFO  [MasterCommandHandleThreadPool] o.a.d.s.m.e.c.CommandEngine:[174] - Success bootstrap command {
+  "id" : 1,
+  "commandType" : "START_PROCESS",
+  "workflowDefinitionCode" : 156657041272416,
+  "workflowDefinitionVersion" : 1,
+  "workflowInstanceId" : 1,
+  "commandParam" : "{\"commandType\":\"START_PROCESS\",\"subWorkflowInstance\":false,\"startNodes\":[],\"commandParams\":[],\"timeZone\":\"Asia/Shanghai\"}",
+  "workflowInstancePriority" : "MEDIUM",
+  "executorId" : 0,
+  "taskDependType" : "TASK_POST",
+  "failureStrategy" : "CONTINUE",
+  "warningType" : "NONE",
+  "warningGroupId" : null,
+  "scheduleTime" : null,
+  "startTime" : null,
+  "updateTime" : "2025-11-06 15:56:38",
+  "workerGroup" : null,
+  "tenantCode" : "default",
+  "environmentCode" : -1,
+  "dryRun" : 0
+}
+[WI-1][TI-0] - 2025-11-06 15:56:38.726 INFO  [ds-workflow-eventbus-worker-24] o.a.d.s.m.e.w.l.h.AbstractWorkflowLifecycleEventHandler:[47] - Begin fire workflow aaa-20251106155638045 LifecycleEvent[WorkflowStartLifecycleEvent{workflow=aaa-20251106155638045}] with state: RUNNING_EXECUTION
+[WI-1][TI-0] - 2025-11-06 15:56:38.728 INFO  [ds-workflow-eventbus-worker-24] o.a.d.s.m.e.WorkflowEventBus:[41] - Publish event: TaskStartLifecycleEvent{task=aaa}
+[WI-1][TI-0] - 2025-11-06 15:56:38.728 INFO  [ds-workflow-eventbus-worker-24] o.a.d.s.m.e.w.l.h.AbstractWorkflowLifecycleEventHandler:[52] - Fired workflow aaa-20251106155638045 LifecycleEvent[WorkflowStartLifecycleEvent{workflow=aaa-20251106155638045}] with state: RUNNING_EXECUTION
+[WI-1][TI-0] - 2025-11-06 15:56:38.741 INFO  [ds-workflow-eventbus-worker-24] o.a.d.s.m.e.WorkflowEventBus:[41] - Publish event: TaskDispatchLifecycleEvent{task=aaa}
+[WI-1][TI-0] - 2025-11-06 15:56:38.742 INFO  [ds-workflow-eventbus-worker-24] o.a.d.s.m.e.t.l.h.AbstractTaskLifecycleEventHandler:[47] - Fired task aaa TaskStartLifecycleEvent{task=aaa} with state SUBMITTED_SUCCESS
+[WI-1][TI-0] - 2025-11-06 15:56:38.772 INFO  [ds-workflow-eventbus-worker-24] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[56] - Initialize WorkerGroupDispatcher: WorkerGroupTaskDispatcher-default
+[WI-1][TI-0] - 2025-11-06 15:56:38.772 INFO  [ds-workflow-eventbus-worker-24] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[62] - The WorkerGroupTaskDispatcher-default starting...
+[WI-1][TI-0] - 2025-11-06 15:56:38.773 INFO  [ds-workflow-eventbus-worker-24] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[64] - The WorkerGroupTaskDispatcher-default  started
+[WI-1][TI-0] - 2025-11-06 15:56:38.774 INFO  [ds-workflow-eventbus-worker-24] o.a.d.s.m.e.t.d.WorkerGroupDispatcherCoordinator:[59] - Success add Task[id=1] to WorkerGroupDispatcher[name=default]
+[WI-1][TI-0] - 2025-11-06 15:56:38.774 INFO  [ds-workflow-eventbus-worker-24] o.a.d.s.m.e.t.l.h.AbstractTaskLifecycleEventHandler:[47] - Fired task aaa TaskDispatchLifecycleEvent{task=aaa} with state SUBMITTED_SUCCESS
+[WI-1][TI-1] - 2025-11-06 15:56:38.781 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 1000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 15:56:39.779 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 2000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 15:56:41.779 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 3000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 15:56:44.780 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 4000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 15:56:48.780 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 5000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 15:56:53.780 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 6000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 15:56:59.781 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 7000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 15:57:06.772 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 8000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 15:57:14.773 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 9000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 15:57:23.773 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 10000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 15:57:33.769 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 11000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 15:57:44.770 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 12000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 15:57:56.771 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 13000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 15:58:09.769 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 14000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 15:58:23.769 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 15000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 15:58:38.766 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 16000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 15:58:54.767 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 17000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 15:59:11.766 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 18000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 15:59:29.767 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 19000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 15:59:48.765 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 20000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)

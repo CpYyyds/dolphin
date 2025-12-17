@@ -1,0 +1,34 @@
+[WI-0][TI-0] - 2025-11-07 14:34:45.233 WARN  [Worker-Server-SendThread(zookeeper:2181)] o.a.z.ClientCnxn:[1292] - Session 0x10008db96ff0005 for server zookeeper/172.28.0.3:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+org.apache.zookeeper.ClientCnxn$EndOfStreamException: Unable to read additional data from server sessionid 0x10008db96ff0005, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1282)
+[WI-0][TI-0] - 2025-11-07 14:34:45.388 WARN  [Curator-ConnectionStateManager-0] o.a.d.p.r.z.ZookeeperConnectionStateListener:[54] - Registry suspended
+[WI-0][TI-0] - 2025-11-07 14:34:45.398 INFO  [Curator-ConnectionStateManager-0] o.a.d.s.w.r.WorkerConnectionStateListener:[38] - Worker received a SUSPENDED event from registry, the current server state is RUNNING
+[WI-0][TI-0] - 2025-11-07 14:34:50.371 ERROR [Worker-Server-SendThread(zookeeper:2181)] o.a.z.c.StaticHostProvider:[148] - Unable to resolve address: zookeeper:2181
+java.net.UnknownHostException: zookeeper: No address associated with hostname
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1330)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1283)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1199)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:88)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:141)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:368)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1197)
+[WI-0][TI-0] - 2025-11-07 14:34:50.455 WARN  [Worker-Server-SendThread(zookeeper:2181)] o.a.z.ClientCnxn:[1292] - Session 0x10008db96ff0005 for server zookeeper:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+java.lang.IllegalArgumentException: Unable to canonicalize address zookeeper:2181 because it's not resolvable
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:78)
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:41)
+	at org.apache.zookeeper.ClientCnxn$SendThread.startConnect(ClientCnxn.java:1151)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1200)
+[WI-0][TI-0] - 2025-11-07 14:34:51.557 ERROR [Worker-Server-SendThread(zookeeper:2181)] o.a.z.c.StaticHostProvider:[148] - Unable to resolve address: zookeeper:2181
+java.net.UnknownHostException: zookeeper
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1287)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1199)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:88)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:141)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:368)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1197)

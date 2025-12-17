@@ -1,0 +1,6 @@
+[WI-0][TI-0] - 2025-11-08 15:57:20.820 WARN  [HikariPool-1 housekeeper] c.z.h.p.HikariPool:[788] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=20h2m4s90ms875µs754ns).
+[WI-0][TI-0] - 2025-11-09 09:55:24.557 WARN  [Curator-ConnectionStateManager-0] o.a.c.f.s.ConnectionStateManager:[320] - Session timeout has elapsed while SUSPENDED. Injecting a session expiration. Elapsed ms: 133198403. Adjusted session timeout ms: 40000
+[WI-0][TI-0] - 2025-11-09 09:55:25.390 WARN  [Worker-Server-EventThread] o.a.c.ConnectionState:[317] - Session expired event received
+[WI-0][TI-0] - 2025-11-09 09:55:25.954 WARN  [Curator-ConnectionStateManager-0] o.a.d.p.r.z.ZookeeperConnectionStateListener:[46] - Registry disconnected
+[WI-0][TI-0] - 2025-11-09 09:55:25.959 INFO  [Curator-ConnectionStateManager-0] o.a.d.s.w.r.WorkerConnectionStateListener:[38] - Worker received a DISCONNECTED event from registry, the current server state is RUNNING
+[WI-0][TI-0] - 2025-11-09 09:55:26.018 INFO  [Curator-ConnectionStateManager-0] o.a.d.c.l.ServerLifeCycleManager:[88] - The current server status changed from RUNNING to STOPPED

@@ -1,0 +1,117 @@
+[WI-0][TI-0] - 2025-11-06 17:05:03.702 WARN  [Worker-Server] o.m.s.m.ClassPathMapperScanner:[44] - No MyBatis mapper was found in '[org.apache.dolphinscheduler.server.worker]' package. Please check your configuration.
+[WI-0][TI-0] - 2025-11-06 17:05:04.174 INFO  [Worker-Server] o.a.d.c.u.NetUtils:[312] - Get all NetworkInterfaces: [name:eth0 (eth0), name:lo (lo)]
+[WI-0][TI-0] - 2025-11-06 17:05:04.213 INFO  [Worker-Server] o.a.d.s.w.c.WorkerConfig:[97] - 
+****************************Worker Configuration**************************************
+  listen-port -> 1234
+  max-heartbeat-interval -> PT10S
+  host-weight -> 100
+  tenantConfig -> TenantConfig(autoCreateTenantEnabled=true, defaultTenantEnabled=false)
+  server-load-protection -> WorkerServerLoadProtectionConfig()
+  address -> 172.28.0.6:1234
+  registry-path: /nodes/worker/172.28.0.6:1234
+  physical-task-config -> PhysicalTaskConfig(taskExecutorThreadSize=25)
+  group -> default
+****************************Worker Configuration**************************************
+[WI-0][TI-0] - 2025-11-06 17:05:04.414 INFO  [Worker-Server] o.a.d.p.r.z.ZookeeperRegistryAutoConfiguration:[37] - Load ZookeeperRegistryAutoConfiguration
+[WI-0][TI-0] - 2025-11-06 17:05:04.430 INFO  [Worker-Server] o.a.d.p.r.z.ZookeeperRegistryProperties:[96] - 
+****************************ZookeeperRegistryProperties**************************************
+  namespace -> dolphinscheduler
+  connectString -> zookeeper:2181
+  retryPolicy -> ZookeeperRegistryProperties.ZookeeperProperties.RetryPolicy(baseSleepTime=PT0.1S, maxRetries=3, maxSleep=PT1S)
+  digest -> 
+  sessionTimeout -> PT1M
+  connectionTimeout -> PT30S
+  blockUntilConnected -> PT30S
+****************************ZookeeperRegistryProperties**************************************
+[WI-0][TI-0] - 2025-11-06 17:05:04.542 INFO  [Worker-Server] o.a.d.p.r.z.ZookeeperRegistry:[113] - ZookeeperRegistry started at: 43/ms
+[WI-0][TI-0] - 2025-11-06 17:05:05.255 INFO  [Worker-Server] c.z.h.HikariDataSource:[110] - HikariPool-1 - Starting...
+[WI-0][TI-0] - 2025-11-06 17:05:05.583 INFO  [Worker-Server] c.z.h.HikariDataSource:[123] - HikariPool-1 - Start completed.
+[WI-0][TI-0] - 2025-11-06 17:05:06.032 INFO  [Worker-Server] o.a.d.e.b.s.NettyRemotingServer:[111] - WorkerRpcServer bind success at port: 1234
+[WI-0][TI-0] - 2025-11-06 17:05:06.091 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: JAVA
+[WI-0][TI-0] - 2025-11-06 17:05:06.098 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: JUPYTER
+[WI-0][TI-0] - 2025-11-06 17:05:06.104 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SPARK
+[WI-0][TI-0] - 2025-11-06 17:05:06.110 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: FLINK_STREAM
+[WI-0][TI-0] - 2025-11-06 17:05:06.114 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: PYTHON
+[WI-0][TI-0] - 2025-11-06 17:05:06.117 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: ALIYUN_SERVERLESS_SPARK
+[WI-0][TI-0] - 2025-11-06 17:05:06.119 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DATASYNC
+[WI-0][TI-0] - 2025-11-06 17:05:06.120 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DATA_FACTORY
+[WI-0][TI-0] - 2025-11-06 17:05:06.124 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: CHUNJUN
+[WI-0][TI-0] - 2025-11-06 17:05:06.125 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: CONDITIONS
+[WI-0][TI-0] - 2025-11-06 17:05:06.127 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: REMOTESHELL
+[WI-0][TI-0] - 2025-11-06 17:05:06.128 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SUB_WORKFLOW
+[WI-0][TI-0] - 2025-11-06 17:05:06.129 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: PROCEDURE
+[WI-0][TI-0] - 2025-11-06 17:05:06.131 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SHELL
+[WI-0][TI-0] - 2025-11-06 17:05:06.132 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DEPENDENT
+[WI-0][TI-0] - 2025-11-06 17:05:06.134 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SQOOP
+[WI-0][TI-0] - 2025-11-06 17:05:06.135 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: MR
+[WI-0][TI-0] - 2025-11-06 17:05:06.138 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: PYTORCH
+[WI-0][TI-0] - 2025-11-06 17:05:06.140 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: K8S
+[WI-0][TI-0] - 2025-11-06 17:05:06.143 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SAGEMAKER
+[WI-0][TI-0] - 2025-11-06 17:05:06.147 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SEATUNNEL
+[WI-0][TI-0] - 2025-11-06 17:05:06.149 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: HTTP
+[WI-0][TI-0] - 2025-11-06 17:05:06.152 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: EMR
+[WI-0][TI-0] - 2025-11-06 17:05:06.154 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DMS
+[WI-0][TI-0] - 2025-11-06 17:05:06.157 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: KUBEFLOW
+[WI-0][TI-0] - 2025-11-06 17:05:06.159 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SQL
+[WI-0][TI-0] - 2025-11-06 17:05:06.164 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DVC
+[WI-0][TI-0] - 2025-11-06 17:05:06.166 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DATAX
+[WI-0][TI-0] - 2025-11-06 17:05:06.168 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: ZEPPELIN
+[WI-0][TI-0] - 2025-11-06 17:05:06.170 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DINKY
+[WI-0][TI-0] - 2025-11-06 17:05:06.171 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: MLFLOW
+[WI-0][TI-0] - 2025-11-06 17:05:06.172 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SWITCH
+[WI-0][TI-0] - 2025-11-06 17:05:06.173 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: OPENMLDB
+[WI-0][TI-0] - 2025-11-06 17:05:06.174 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: LogicFakeTask
+[WI-0][TI-0] - 2025-11-06 17:05:06.175 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: LINKIS
+[WI-0][TI-0] - 2025-11-06 17:05:06.177 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: HIVECLI
+[WI-0][TI-0] - 2025-11-06 17:05:06.178 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: FLINK
+[WI-0][TI-0] - 2025-11-06 17:05:06.178 WARN  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[44] - The task plugin has already been loaded
+[WI-0][TI-0] - 2025-11-06 17:05:06.186 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> K8S
+[WI-0][TI-0] - 2025-11-06 17:05:06.188 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> ZEPPELIN
+[WI-0][TI-0] - 2025-11-06 17:05:06.189 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> SSH
+[WI-0][TI-0] - 2025-11-06 17:05:06.191 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> CLICKHOUSE
+[WI-0][TI-0] - 2025-11-06 17:05:06.193 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> DATABEND
+[WI-0][TI-0] - 2025-11-06 17:05:06.195 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> DB2
+[WI-0][TI-0] - 2025-11-06 17:05:06.197 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> HIVE
+[WI-0][TI-0] - 2025-11-06 17:05:06.199 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> MYSQL
+[WI-0][TI-0] - 2025-11-06 17:05:06.202 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> OCEANBASE
+[WI-0][TI-0] - 2025-11-06 17:05:06.206 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> ORACLE
+[WI-0][TI-0] - 2025-11-06 17:05:06.213 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> POSTGRESQL
+[WI-0][TI-0] - 2025-11-06 17:05:06.216 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> SQLSERVER
+[WI-0][TI-0] - 2025-11-06 17:05:06.218 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> REDSHIFT
+[WI-0][TI-0] - 2025-11-06 17:05:06.220 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> ATHENA
+[WI-0][TI-0] - 2025-11-06 17:05:06.222 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> SPARK
+[WI-0][TI-0] - 2025-11-06 17:05:06.224 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> PRESTO
+[WI-0][TI-0] - 2025-11-06 17:05:06.225 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> TRINO
+[WI-0][TI-0] - 2025-11-06 17:05:06.227 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> STARROCKS
+[WI-0][TI-0] - 2025-11-06 17:05:06.230 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> AZURESQL
+[WI-0][TI-0] - 2025-11-06 17:05:06.232 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> DAMENG
+[WI-0][TI-0] - 2025-11-06 17:05:06.234 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> SNOWFLAKE
+[WI-0][TI-0] - 2025-11-06 17:05:06.237 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> KYUUBI
+[WI-0][TI-0] - 2025-11-06 17:05:06.241 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> VERTICA
+[WI-0][TI-0] - 2025-11-06 17:05:06.243 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> DORIS
+[WI-0][TI-0] - 2025-11-06 17:05:06.245 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> SAGEMAKER
+[WI-0][TI-0] - 2025-11-06 17:05:06.247 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> HANA
+[WI-0][TI-0] - 2025-11-06 17:05:06.250 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> ALIYUN_SERVERLESS_SPARK
+[WI-0][TI-0] - 2025-11-06 17:05:06.251 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> DOLPHINDB
+[WI-0][TI-0] - 2025-11-06 17:05:06.256 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorProvider:[41] - Initialize DataSourceProcessorProvider
+[WI-0][TI-0] - 2025-11-06 17:05:06.298 INFO  [Worker-Server] o.a.d.c.c.SystemConstants:[30] - init timezone: sun.util.calendar.ZoneInfo[id="Asia/Shanghai",offset=28800000,dstSavings=0,useDaylight=false,transitions=31,lastRule=null]
+[WI-0][TI-0] - 2025-11-06 17:05:06.362 INFO  [Worker-Server] o.a.d.s.w.r.WorkerRegistryClient:[94] - Worker node: 172.28.0.6:1234 registry to registry center /nodes/worker/172.28.0.6:1234 successfully
+[WI-0][TI-0] - 2025-11-06 17:05:06.374 INFO  [Worker-Server] o.a.d.c.m.BaseHeartBeatTask:[47] - Starting WorkerHeartBeatTask...
+[WI-0][TI-0] - 2025-11-06 17:05:06.375 INFO  [Worker-Server] o.a.d.c.m.BaseHeartBeatTask:[49] - Started WorkerHeartBeatTask, heartBeatInterval: 10000...
+[WI-0][TI-0] - 2025-11-06 17:05:06.376 INFO  [Worker-Server] o.a.d.s.w.r.WorkerRegistryClient:[102] - Worker node: 172.28.0.6:1234 registry finished
+[WI-0][TI-0] - 2025-11-06 17:05:06.380 INFO  [Worker-Server] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[95] - PhysicalTaskExecutorEventBusCoordinator started, worker size: 12
+[WI-0][TI-0] - 2025-11-06 17:05:06.381 INFO  [Worker-Server] o.a.d.t.e.TaskEngine:[53] - PhysicalTaskEngine started
+[WI-0][TI-0] - 2025-11-06 17:05:06.382 INFO  [Worker-Server] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[81] - PhysicalTaskExecutorLifecycleEventReporter started
+[WI-0][TI-0] - 2025-11-06 17:05:06.382 INFO  [Worker-Server] o.a.d.s.w.e.PhysicalTaskEngineDelegator:[57] - PhysicalTaskEngineDelegator started
+[WI-0][TI-0] - 2025-11-06 17:05:07.883 INFO  [Thread-6] o.a.d.c.l.ServerLifeCycleManager:[88] - The current server status changed from RUNNING to STOPPED
+[WI-0][TI-0] - 2025-11-06 17:05:07.887 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.TaskEngine:[87] - PhysicalTaskEngine closed
+[WI-0][TI-0] - 2025-11-06 17:05:07.888 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[107] - PhysicalTaskExecutorEventBusCoordinator closed
+[WI-0][TI-0] - 2025-11-06 17:05:07.890 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[107] - PhysicalTaskExecutorEventBusCoordinator closed
+[WI-0][TI-0] - 2025-11-06 17:05:07.890 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[174] - PhysicalTaskExecutorLifecycleEventReporter closed
+[WI-0][TI-0] - 2025-11-06 17:05:07.891 WARN  [SpringApplicationShutdownHook] o.a.d.c.m.BaseHeartBeatTask:[78] - WorkerHeartBeatTask finished...
+[WI-0][TI-0] - 2025-11-06 17:05:08.010 INFO  [SpringApplicationShutdownHook] o.a.d.s.w.r.WorkerRegistryClient:[124] - Closed WorkerRegistryClient
+[WI-0][TI-0] - 2025-11-06 17:05:08.012 INFO  [SpringApplicationShutdownHook] c.z.h.HikariDataSource:[350] - HikariPool-1 - Shutdown initiated...
+[WI-0][TI-0] - 2025-11-06 17:05:08.028 INFO  [SpringApplicationShutdownHook] c.z.h.HikariDataSource:[352] - HikariPool-1 - Shutdown completed.
+[WI-0][TI-0] - 2025-11-06 17:05:08.030 INFO  [SpringApplicationShutdownHook] o.a.d.e.b.s.NettyRemotingServer:[149] - WorkerRpcServer closing
+[WI-0][TI-0] - 2025-11-06 17:05:08.031 INFO  [SpringApplicationShutdownHook] o.a.d.e.b.s.NettyRemotingServer:[153] - WorkerRpcServer stop bind at port: 1234
+[WI-0][TI-0] - 2025-11-06 17:05:08.039 INFO  [SpringApplicationShutdownHook] o.a.d.e.b.s.NettyRemotingServer:[167] - WorkerRpcServer closed

@@ -1,0 +1,614 @@
+2025-11-06 18:16:28.172 INFO  [main] o.e.j.u.log:[170] - Logging initialized @10067ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-11-06 18:16:28.742 INFO  [main] o.e.j.s.Server:[375] - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 1.8.0_342-b07
+2025-11-06 18:16:28.830 INFO  [main] o.e.j.s.h.C.application:[2368] - Initializing Spring embedded WebApplicationContext
+2025-11-06 18:16:30.328 INFO  [main] c.z.h.HikariDataSource:[110] - HikariPool-1 - Starting...
+2025-11-06 18:16:30.798 INFO  [main] c.z.h.HikariDataSource:[123] - HikariPool-1 - Start completed.
+2025-11-06 18:16:32.244 INFO  [main] o.a.d.a.c.ApiConfig:[58] - API config: auditEnable -> true 
+2025-11-06 18:16:32.246 INFO  [main] o.a.d.a.c.ApiConfig:[59] - API config: trafficControl -> ApiConfig.TrafficConfiguration(globalSwitch=false, maxGlobalQpsRate=300, tenantSwitch=false, defaultTenantQpsRate=10, customizeTenantQpsRate={}) 
+2025-11-06 18:16:32.249 INFO  [main] o.a.d.a.c.ApiConfig:[60] - API config: pythonGateway -> ApiConfig.PythonGatewayConfiguration(enabled=true, gatewayServerAddress=127.0.0.1, gatewayServerPort=25333, pythonAddress=127.0.0.1, pythonPort=25334, connectTimeout=0, readTimeout=0, authToken=jwUDzpLsNKEFER4*a8gruBH_GsAurNxU7A@Xc) 
+2025-11-06 18:16:32.751 INFO  [main] o.e.j.s.session:[334] - DefaultSessionIdManager workerName=node0
+2025-11-06 18:16:32.753 INFO  [main] o.e.j.s.session:[339] - No SessionScavenger set, using defaults
+2025-11-06 18:16:32.756 INFO  [main] o.e.j.s.session:[132] - node0 Scavenging every 600000ms
+2025-11-06 18:16:32.773 INFO  [main] o.e.j.s.h.ContextHandler:[921] - Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@1ee22768{application,/dolphinscheduler,[file:///tmp/jetty-docbase.12345.3341677123795651556/, jar:file:/opt/dolphinscheduler/api-server/libs/swagger-ui-4.11.1.jar!/META-INF/resources],AVAILABLE}
+2025-11-06 18:16:32.774 INFO  [main] o.e.j.s.Server:[415] - Started @14672ms
+2025-11-06 18:16:40.251 INFO  [main] o.a.d.p.r.z.ZookeeperRegistryAutoConfiguration:[37] - Load ZookeeperRegistryAutoConfiguration
+2025-11-06 18:16:40.345 INFO  [main] o.a.d.p.r.z.ZookeeperRegistryProperties:[96] - 
+****************************ZookeeperRegistryProperties**************************************
+  namespace -> dolphinscheduler
+  connectString -> zookeeper:2181
+  retryPolicy -> ZookeeperRegistryProperties.ZookeeperProperties.RetryPolicy(baseSleepTime=PT0.1S, maxRetries=3, maxSleep=PT1S)
+  digest -> 
+  sessionTimeout -> PT1M
+  connectionTimeout -> PT30S
+  blockUntilConnected -> PT30S
+****************************ZookeeperRegistryProperties**************************************
+2025-11-06 18:16:41.199 INFO  [main] o.a.d.p.r.z.ZookeeperRegistry:[113] - ZookeeperRegistry started at: 75/ms
+2025-11-06 18:16:41.727 INFO  [main] c.a.c.i.ReflectionUtils:[542] - Unable to create MethodHandles to use Java 9+ MethodHandles.privateLookupIn. Will attempt to fallback to using the package-private constructor.
+2025-11-06 18:16:41.762 INFO  [main] c.a.c.i.j.JacksonVersion:[222] - Package versions: jackson-core=2.13.4, jackson-databind=2.13.4, jackson-dataformat-xml=2.13.3, jackson-datatype-jsr310=2.13.4, azure-core=1.36.0, Troubleshooting version conflicts: https://aka.ms/azsdk/java/dependency/troubleshoot
+2025-11-06 18:16:50.701 INFO  [main] o.q.i.StdSchedulerFactory:[1220] - Using default implementation for ThreadExecutor
+2025-11-06 18:16:50.724 INFO  [main] o.q.c.SchedulerSignalerImpl:[61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2025-11-06 18:16:50.725 INFO  [main] o.q.c.QuartzScheduler:[229] - Quartz Scheduler v.2.3.2 created.
+2025-11-06 18:16:50.727 INFO  [main] o.q.s.RAMJobStore:[155] - RAMJobStore initialized.
+2025-11-06 18:16:50.729 INFO  [main] o.q.c.QuartzScheduler:[294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2025-11-06 18:16:50.730 INFO  [main] o.q.i.StdSchedulerFactory:[1374] - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2025-11-06 18:16:50.730 INFO  [main] o.q.i.StdSchedulerFactory:[1378] - Quartz scheduler version: 2.3.2
+2025-11-06 18:16:50.731 INFO  [main] o.q.c.QuartzScheduler:[2293] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@1a034bbc
+2025-11-06 18:16:51.200 INFO  [main] o.a.d.a.p.PythonGateway:[678] - PythonGatewayService started on: /127.0.0.1
+2025-11-06 18:16:51.212 INFO  [Thread-13] p.GatewayServer:[573] - Gateway Server Started
+2025-11-06 18:16:59.884 INFO  [main] o.s.l.c.s.AbstractContextSource:[425] - Property 'userDn' not set - anonymous context will be used for read-write operations
+2025-11-06 18:17:01.048 INFO  [main] o.e.j.s.h.C.application:[2368] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-06 18:17:01.071 INFO  [main] o.e.j.s.AbstractConnector:[333] - Started ServerConnector@1a3b1f7e{HTTP/1.1, (http/1.1)}{0.0.0.0:12345}
+2025-11-06 18:17:01.076 INFO  [main] o.q.c.QuartzScheduler:[547] - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2025-11-06 18:17:01.111 INFO  [main] o.a.d.a.ApiApplicationServer:[64] - Received spring application context ready event will load taskPlugin and write to DB
+2025-11-06 18:17:01.151 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> K8S
+2025-11-06 18:17:01.154 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> ZEPPELIN
+2025-11-06 18:17:01.157 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> SSH
+2025-11-06 18:17:01.161 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> CLICKHOUSE
+2025-11-06 18:17:01.164 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> DATABEND
+2025-11-06 18:17:01.168 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> DB2
+2025-11-06 18:17:01.171 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> HIVE
+2025-11-06 18:17:01.175 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> MYSQL
+2025-11-06 18:17:01.178 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> OCEANBASE
+2025-11-06 18:17:01.182 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> ORACLE
+2025-11-06 18:17:01.185 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> POSTGRESQL
+2025-11-06 18:17:01.188 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> SQLSERVER
+2025-11-06 18:17:01.191 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> REDSHIFT
+2025-11-06 18:17:01.194 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> ATHENA
+2025-11-06 18:17:01.197 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> SPARK
+2025-11-06 18:17:01.200 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> PRESTO
+2025-11-06 18:17:01.204 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> TRINO
+2025-11-06 18:17:01.207 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> STARROCKS
+2025-11-06 18:17:01.211 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> AZURESQL
+2025-11-06 18:17:01.215 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> DAMENG
+2025-11-06 18:17:01.218 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> SNOWFLAKE
+2025-11-06 18:17:01.220 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> KYUUBI
+2025-11-06 18:17:01.222 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> VERTICA
+2025-11-06 18:17:01.224 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> DORIS
+2025-11-06 18:17:01.226 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> SAGEMAKER
+2025-11-06 18:17:01.228 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> HANA
+2025-11-06 18:17:01.231 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> ALIYUN_SERVERLESS_SPARK
+2025-11-06 18:17:01.233 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> DOLPHINDB
+2025-11-06 18:17:01.236 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorProvider:[41] - Initialize DataSourceProcessorProvider
+2025-11-06 18:17:01.264 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: JAVA
+2025-11-06 18:17:01.266 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: JUPYTER
+2025-11-06 18:17:01.269 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SPARK
+2025-11-06 18:17:01.273 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: FLINK_STREAM
+2025-11-06 18:17:01.275 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: PYTHON
+2025-11-06 18:17:01.278 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: ALIYUN_SERVERLESS_SPARK
+2025-11-06 18:17:01.281 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DATASYNC
+2025-11-06 18:17:01.283 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DATA_FACTORY
+2025-11-06 18:17:01.285 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: CHUNJUN
+2025-11-06 18:17:01.286 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: CONDITIONS
+2025-11-06 18:17:01.288 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: REMOTESHELL
+2025-11-06 18:17:01.289 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SUB_WORKFLOW
+2025-11-06 18:17:01.292 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: PROCEDURE
+2025-11-06 18:17:01.294 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SHELL
+2025-11-06 18:17:01.295 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DEPENDENT
+2025-11-06 18:17:01.297 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SQOOP
+2025-11-06 18:17:01.299 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: MR
+2025-11-06 18:17:01.301 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: PYTORCH
+2025-11-06 18:17:01.304 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: K8S
+2025-11-06 18:17:01.306 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SAGEMAKER
+2025-11-06 18:17:01.310 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SEATUNNEL
+2025-11-06 18:17:01.313 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: HTTP
+2025-11-06 18:17:01.317 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: EMR
+2025-11-06 18:17:01.319 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DMS
+2025-11-06 18:17:01.321 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: KUBEFLOW
+2025-11-06 18:17:01.324 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SQL
+2025-11-06 18:17:01.326 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DVC
+2025-11-06 18:17:01.329 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DATAX
+2025-11-06 18:17:01.331 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: ZEPPELIN
+2025-11-06 18:17:01.333 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DINKY
+2025-11-06 18:17:01.335 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: MLFLOW
+2025-11-06 18:17:01.336 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SWITCH
+2025-11-06 18:17:01.338 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: OPENMLDB
+2025-11-06 18:17:01.339 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: LogicFakeTask
+2025-11-06 18:17:01.341 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: LINKIS
+2025-11-06 18:17:01.343 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: HIVECLI
+2025-11-06 18:17:01.344 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: FLINK
+2025-11-06 18:17:01.345 WARN  [main] o.a.d.p.t.a.TaskPluginManager:[44] - The task plugin has already been loaded
+2025-11-06 18:20:27.191 INFO  [qtp357065976-171] o.a.d.a.i.LoginHandlerInterceptor:[75] - user does not exist
+2025-11-06 18:20:27.191 INFO  [qtp357065976-172] o.a.d.a.i.LoginHandlerInterceptor:[75] - user does not exist
+2025-11-06 18:20:28.684 INFO  [qtp357065976-28] o.a.d.a.s.i.AbstractAuthenticator:[101] - Session is created, userName:admin.
+2025-11-06 18:20:28.722 INFO  [qtp357065976-23] o.a.d.c.c.SystemConstants:[30] - init timezone: sun.util.calendar.ZoneInfo[id="Asia/Shanghai",offset=28800000,dstSavings=0,useDaylight=false,transitions=31,lastRule=null]
+2025-11-06 18:20:28.916 ERROR [qtp357065976-172] o.a.d.a.e.ApiExceptionHandler:[40] - org.apache.dolphinscheduler.api.controller.WorkflowInstanceController#queryWorkflowInstanceList[12 args] Meet a ServiceException: 该项目不存在,请刷新页面
+2025-11-06 18:20:31.144 ERROR [qtp357065976-171] o.a.d.a.s.i.ProjectServiceImpl:[247] - Project does not exist.
+2025-11-06 18:20:31.148 ERROR [qtp357065976-26] o.a.d.a.s.i.ProjectServiceImpl:[344] - Project does not exist.
+2025-11-06 18:20:31.177 ERROR [qtp357065976-172] o.a.d.a.s.i.ProjectServiceImpl:[247] - Project does not exist.
+2025-11-06 18:20:31.178 ERROR [qtp357065976-24] o.a.d.a.e.ApiExceptionHandler:[40] - org.apache.dolphinscheduler.api.controller.WorkflowDefinitionController#queryWorkflowDefinitionListPaging[7 args] Meet a ServiceException: 该项目不存在,请刷新页面
+2025-11-06 18:20:37.378 INFO  [qtp357065976-180] o.a.d.a.s.i.ProjectServiceImpl:[134] - Project is created and id is :1
+2025-11-06 18:20:41.119 INFO  [qtp357065976-180] o.a.d.a.c.TaskTypeConfiguration:[73] - support default universal task types: [SHELL, JAVA, PYTHON, PROCEDURE, SQL, SPARK, FLINK, HTTP, MR, DINKY, FLINK_STREAM, HIVECLI, REMOTESHELL]
+2025-11-06 18:20:41.121 INFO  [qtp357065976-180] o.a.d.a.c.TaskTypeConfiguration:[74] - support default cloud task types: [EMR, K8S, DMS, DATA_FACTORY, ALIYUN_SERVERLESS_SPARK]
+2025-11-06 18:20:41.123 INFO  [qtp357065976-180] o.a.d.a.c.TaskTypeConfiguration:[75] - support default logic task types: [SUB_WORKFLOW, DEPENDENT, CONDITIONS, SWITCH]
+2025-11-06 18:20:41.125 INFO  [qtp357065976-180] o.a.d.a.c.TaskTypeConfiguration:[76] - support default dataIntegration task types: [SEATUNNEL, DATAX, SQOOP]
+2025-11-06 18:20:41.126 INFO  [qtp357065976-180] o.a.d.a.c.TaskTypeConfiguration:[77] - support default machineLearning task types: [JUPYTER, MLFLOW, OPENMLDB, DVC, SAGEMAKER, PYTORCH, KUBEFLOW]
+2025-11-06 18:20:41.127 INFO  [qtp357065976-180] o.a.d.a.c.TaskTypeConfiguration:[78] - support default other task types: [ZEPPELIN, CHUNJUN, DATASYNC, LINKIS]
+2025-11-06 18:20:55.152 INFO  [qtp357065976-182] o.a.d.a.s.i.WorkflowDefinitionServiceImpl:[382] - Save workflow definition complete, workflowDefinitionCode:156665912452928, workflowDefinitionVersion:1.
+2025-11-06 18:20:55.164 INFO  [qtp357065976-182] o.a.d.a.s.i.WorkflowDefinitionServiceImpl:[394] - Save workflow task relations complete, projectCode:156665894264640, workflowDefinitionCode:156665912452928, workflowDefinitionVersion:1.
+2025-11-06 18:21:01.247 INFO  [qtp357065976-172] o.a.d.e.b.c.JdkDynamicRpcClientProxyFactory:[56] - Create DynamicRpcClientProxy cache for host: 172.28.0.6:5678
+2025-11-06 18:21:01.503 INFO  [qtp357065976-172] o.a.d.c.u.NetUtils:[312] - Get all NetworkInterfaces: [name:eth0 (eth0), name:lo (lo)]
+2025-11-06 18:22:12.348 WARN  [main-SendThread(zookeeper:2181)] o.a.z.ClientCnxn:[1292] - Session 0x100057c0eca0002 for server zookeeper/172.28.0.3:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+org.apache.zookeeper.ClientCnxn$EndOfStreamException: Unable to read additional data from server sessionid 0x100057c0eca0002, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1282)
+2025-11-06 18:22:17.450 ERROR [main-SendThread(zookeeper:2181)] o.a.z.c.StaticHostProvider:[148] - Unable to resolve address: zookeeper:2181
+java.net.UnknownHostException: zookeeper: No address associated with hostname
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1330)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1283)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1199)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:88)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:141)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:368)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1197)
+2025-11-06 18:22:18.297 WARN  [main-SendThread(zookeeper:2181)] o.a.z.ClientCnxn:[1292] - Session 0x100057c0eca0002 for server zookeeper:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+java.lang.IllegalArgumentException: Unable to canonicalize address zookeeper:2181 because it's not resolvable
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:78)
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:41)
+	at org.apache.zookeeper.ClientCnxn$SendThread.startConnect(ClientCnxn.java:1151)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1200)
+2025-11-06 18:22:19.399 ERROR [main-SendThread(zookeeper:2181)] o.a.z.c.StaticHostProvider:[148] - Unable to resolve address: zookeeper:2181
+java.net.UnknownHostException: zookeeper
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1287)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1199)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:88)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:141)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:368)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1197)
+2025-11-06 18:22:19.582 WARN  [main-SendThread(zookeeper:2181)] o.a.z.ClientCnxn:[1292] - Session 0x100057c0eca0002 for server zookeeper:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+java.lang.IllegalArgumentException: Unable to canonicalize address zookeeper:2181 because it's not resolvable
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:78)
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:41)
+	at org.apache.zookeeper.ClientCnxn$SendThread.startConnect(ClientCnxn.java:1151)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1200)
+2025-11-06 18:22:20.684 ERROR [main-SendThread(zookeeper:2181)] o.a.z.c.StaticHostProvider:[148] - Unable to resolve address: zookeeper:2181
+java.net.UnknownHostException: zookeeper
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1287)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1199)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:88)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:141)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:368)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1197)
+2025-11-06 18:22:21.397 WARN  [main-SendThread(zookeeper:2181)] o.a.z.ClientCnxn:[1292] - Session 0x100057c0eca0002 for server zookeeper:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+java.lang.IllegalArgumentException: Unable to canonicalize address zookeeper:2181 because it's not resolvable
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:78)
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:41)
+	at org.apache.zookeeper.ClientCnxn$SendThread.startConnect(ClientCnxn.java:1151)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1200)
+2025-11-06 18:22:22.498 ERROR [main-SendThread(zookeeper:2181)] o.a.z.c.StaticHostProvider:[148] - Unable to resolve address: zookeeper:2181
+java.net.UnknownHostException: zookeeper
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1287)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1199)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:88)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:141)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:368)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1197)
+2025-11-06 18:22:22.999 WARN  [main-SendThread(zookeeper:2181)] o.a.z.ClientCnxn:[1292] - Session 0x100057c0eca0002 for server zookeeper:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+java.lang.IllegalArgumentException: Unable to canonicalize address zookeeper:2181 because it's not resolvable
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:78)
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:41)
+	at org.apache.zookeeper.ClientCnxn$SendThread.startConnect(ClientCnxn.java:1151)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1200)
+2025-11-06 18:22:24.101 ERROR [main-SendThread(zookeeper:2181)] o.a.z.c.StaticHostProvider:[148] - Unable to resolve address: zookeeper:2181
+java.net.UnknownHostException: zookeeper
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1287)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1199)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:88)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:141)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:368)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1197)
+2025-11-06 18:22:25.030 WARN  [main-SendThread(zookeeper:2181)] o.a.z.ClientCnxn:[1292] - Session 0x100057c0eca0002 for server zookeeper:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+java.lang.IllegalArgumentException: Unable to canonicalize address zookeeper:2181 because it's not resolvable
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:78)
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:41)
+	at org.apache.zookeeper.ClientCnxn$SendThread.startConnect(ClientCnxn.java:1151)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1200)
+2025-11-06 18:22:26.132 ERROR [main-SendThread(zookeeper:2181)] o.a.z.c.StaticHostProvider:[148] - Unable to resolve address: zookeeper:2181
+java.net.UnknownHostException: zookeeper
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1287)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1199)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:88)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:141)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:368)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1197)
+2025-11-06 18:22:26.791 WARN  [main-SendThread(zookeeper:2181)] o.a.z.ClientCnxn:[1292] - Session 0x100057c0eca0002 for server zookeeper:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+java.lang.IllegalArgumentException: Unable to canonicalize address zookeeper:2181 because it's not resolvable
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:78)
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:41)
+	at org.apache.zookeeper.ClientCnxn$SendThread.startConnect(ClientCnxn.java:1151)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1200)
+2025-11-06 18:22:31.896 ERROR [main-SendThread(zookeeper:2181)] o.a.z.c.StaticHostProvider:[148] - Unable to resolve address: zookeeper:2181
+java.net.UnknownHostException: zookeeper: No address associated with hostname
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1330)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1283)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1199)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:88)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:141)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:368)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1197)
+2025-11-06 18:22:32.230 WARN  [main-SendThread(zookeeper:2181)] o.a.z.ClientCnxn:[1292] - Session 0x100057c0eca0002 for server zookeeper:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+java.lang.IllegalArgumentException: Unable to canonicalize address zookeeper:2181 because it's not resolvable
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:78)
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:41)
+	at org.apache.zookeeper.ClientCnxn$SendThread.startConnect(ClientCnxn.java:1151)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1200)
+2025-11-06 18:22:33.332 ERROR [main-SendThread(zookeeper:2181)] o.a.z.c.StaticHostProvider:[148] - Unable to resolve address: zookeeper:2181
+java.net.UnknownHostException: zookeeper
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1287)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1199)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:88)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:141)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:368)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1197)
+2025-11-06 18:22:33.988 WARN  [main-SendThread(zookeeper:2181)] o.a.z.ClientCnxn:[1292] - Session 0x100057c0eca0002 for server zookeeper:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+java.lang.IllegalArgumentException: Unable to canonicalize address zookeeper:2181 because it's not resolvable
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:78)
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:41)
+	at org.apache.zookeeper.ClientCnxn$SendThread.startConnect(ClientCnxn.java:1151)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1200)
+2025-11-06 18:22:35.089 ERROR [main-SendThread(zookeeper:2181)] o.a.z.c.StaticHostProvider:[148] - Unable to resolve address: zookeeper:2181
+java.net.UnknownHostException: zookeeper
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1287)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1199)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:88)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:141)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:368)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1197)
+2025-11-06 18:22:35.940 WARN  [main-SendThread(zookeeper:2181)] o.a.z.ClientCnxn:[1292] - Session 0x100057c0eca0002 for server zookeeper:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+java.lang.IllegalArgumentException: Unable to canonicalize address zookeeper:2181 because it's not resolvable
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:78)
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:41)
+	at org.apache.zookeeper.ClientCnxn$SendThread.startConnect(ClientCnxn.java:1151)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1200)
+2025-11-06 18:22:37.042 ERROR [main-SendThread(zookeeper:2181)] o.a.z.c.StaticHostProvider:[148] - Unable to resolve address: zookeeper:2181
+java.net.UnknownHostException: zookeeper
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1287)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1199)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:88)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:141)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:368)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1197)
+2025-11-06 18:22:37.598 WARN  [main-SendThread(zookeeper:2181)] o.a.z.ClientCnxn:[1292] - Session 0x100057c0eca0002 for server zookeeper:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+java.lang.IllegalArgumentException: Unable to canonicalize address zookeeper:2181 because it's not resolvable
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:78)
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:41)
+	at org.apache.zookeeper.ClientCnxn$SendThread.startConnect(ClientCnxn.java:1151)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1200)
+2025-11-06 18:23:38.048 INFO  [main] o.e.j.u.log:[170] - Logging initialized @5161ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-11-06 18:23:38.375 INFO  [main] o.e.j.s.Server:[375] - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 1.8.0_342-b07
+2025-11-06 18:23:38.436 INFO  [main] o.e.j.s.h.C.application:[2368] - Initializing Spring embedded WebApplicationContext
+2025-11-06 18:23:39.185 INFO  [main] c.z.h.HikariDataSource:[110] - HikariPool-1 - Starting...
+2025-11-06 18:23:39.447 INFO  [main] c.z.h.HikariDataSource:[123] - HikariPool-1 - Start completed.
+2025-11-06 18:23:40.302 INFO  [main] o.a.d.a.c.ApiConfig:[58] - API config: auditEnable -> true 
+2025-11-06 18:23:40.304 INFO  [main] o.a.d.a.c.ApiConfig:[59] - API config: trafficControl -> ApiConfig.TrafficConfiguration(globalSwitch=false, maxGlobalQpsRate=300, tenantSwitch=false, defaultTenantQpsRate=10, customizeTenantQpsRate={}) 
+2025-11-06 18:23:40.306 INFO  [main] o.a.d.a.c.ApiConfig:[60] - API config: pythonGateway -> ApiConfig.PythonGatewayConfiguration(enabled=true, gatewayServerAddress=127.0.0.1, gatewayServerPort=25333, pythonAddress=127.0.0.1, pythonPort=25334, connectTimeout=0, readTimeout=0, authToken=jwUDzpLsNKEFER4*a8gruBH_GsAurNxU7A@Xc) 
+2025-11-06 18:23:40.465 INFO  [main] o.e.j.s.session:[334] - DefaultSessionIdManager workerName=node0
+2025-11-06 18:23:40.466 INFO  [main] o.e.j.s.session:[339] - No SessionScavenger set, using defaults
+2025-11-06 18:23:40.469 INFO  [main] o.e.j.s.session:[132] - node0 Scavenging every 600000ms
+2025-11-06 18:23:40.483 INFO  [main] o.e.j.s.h.ContextHandler:[921] - Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@3d3a28b5{application,/dolphinscheduler,[file:///tmp/jetty-docbase.12345.2016712082986675621/, jar:file:/opt/dolphinscheduler/api-server/libs/swagger-ui-4.11.1.jar!/META-INF/resources],AVAILABLE}
+2025-11-06 18:23:40.485 INFO  [main] o.e.j.s.Server:[415] - Started @7601ms
+2025-11-06 18:23:45.279 INFO  [main] o.a.d.p.r.z.ZookeeperRegistryAutoConfiguration:[37] - Load ZookeeperRegistryAutoConfiguration
+2025-11-06 18:23:45.333 INFO  [main] o.a.d.p.r.z.ZookeeperRegistryProperties:[96] - 
+****************************ZookeeperRegistryProperties**************************************
+  namespace -> dolphinscheduler
+  connectString -> zookeeper:2181
+  retryPolicy -> ZookeeperRegistryProperties.ZookeeperProperties.RetryPolicy(baseSleepTime=PT0.1S, maxRetries=3, maxSleep=PT1S)
+  digest -> 
+  sessionTimeout -> PT1M
+  connectionTimeout -> PT30S
+  blockUntilConnected -> PT30S
+****************************ZookeeperRegistryProperties**************************************
+2025-11-06 18:23:45.697 INFO  [main] o.a.d.p.r.z.ZookeeperRegistry:[113] - ZookeeperRegistry started at: 123/ms
+2025-11-06 18:23:45.784 ERROR [main] o.a.d.r.a.RegistryClient:[254] - Failed to clean the failoverFinishedNode: 172.28.0.6:5678-unknown-unknown
+org.apache.dolphinscheduler.registry.api.RegistryException: zookeeper get data error
+	at org.apache.dolphinscheduler.plugin.registry.zookeeper.ZookeeperRegistry.get(ZookeeperRegistry.java:158)
+	at org.apache.dolphinscheduler.registry.api.RegistryClient.cleanHistoryFailoverFinishedNodes(RegistryClient.java:246)
+	at org.apache.dolphinscheduler.registry.api.RegistryClient.<init>(RegistryClient.java:74)
+	at org.apache.dolphinscheduler.registry.api.RegistryConfiguration.registryClient(RegistryConfiguration.java:30)
+	at org.apache.dolphinscheduler.registry.api.RegistryConfiguration$$EnhancerBySpringCGLIB$$5f3122a4.CGLIB$registryClient$0(<generated>)
+	at org.apache.dolphinscheduler.registry.api.RegistryConfiguration$$EnhancerBySpringCGLIB$$5f3122a4$$FastClassBySpringCGLIB$$6372cdcc.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at org.apache.dolphinscheduler.registry.api.RegistryConfiguration$$EnhancerBySpringCGLIB$$5f3122a4.registryClient(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at org.apache.dolphinscheduler.api.ApiApplicationServer.main(ApiApplicationServer.java:58)
+Caused by: java.lang.IllegalArgumentException: Path must start with / character
+	at org.apache.curator.utils.PathUtils.validatePath(PathUtils.java:55)
+	at org.apache.curator.utils.PathUtils.validatePath(PathUtils.java:38)
+	at org.apache.curator.utils.ZKPaths.fixForNamespace(ZKPaths.java:107)
+	at org.apache.curator.framework.imps.NamespaceImpl.fixForNamespace(NamespaceImpl.java:105)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.fixForNamespace(CuratorFrameworkImpl.java:753)
+	at org.apache.curator.framework.imps.GetDataBuilderImpl.forPath(GetDataBuilderImpl.java:296)
+	at org.apache.curator.framework.imps.GetDataBuilderImpl.forPath(GetDataBuilderImpl.java:36)
+	at org.apache.dolphinscheduler.plugin.registry.zookeeper.ZookeeperRegistry.get(ZookeeperRegistry.java:156)
+	... 61 common frames omitted
+2025-11-06 18:23:46.189 INFO  [main] c.a.c.i.ReflectionUtils:[542] - Unable to create MethodHandles to use Java 9+ MethodHandles.privateLookupIn. Will attempt to fallback to using the package-private constructor.
+2025-11-06 18:23:46.247 INFO  [main] c.a.c.i.j.JacksonVersion:[222] - Package versions: jackson-core=2.13.4, jackson-databind=2.13.4, jackson-dataformat-xml=2.13.3, jackson-datatype-jsr310=2.13.4, azure-core=1.36.0, Troubleshooting version conflicts: https://aka.ms/azsdk/java/dependency/troubleshoot
+2025-11-06 18:23:53.147 INFO  [main] o.q.i.StdSchedulerFactory:[1220] - Using default implementation for ThreadExecutor
+2025-11-06 18:23:53.182 INFO  [main] o.q.c.SchedulerSignalerImpl:[61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2025-11-06 18:23:53.182 INFO  [main] o.q.c.QuartzScheduler:[229] - Quartz Scheduler v.2.3.2 created.
+2025-11-06 18:23:53.185 INFO  [main] o.q.s.RAMJobStore:[155] - RAMJobStore initialized.
+2025-11-06 18:23:53.187 INFO  [main] o.q.c.QuartzScheduler:[294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2025-11-06 18:23:53.189 INFO  [main] o.q.i.StdSchedulerFactory:[1374] - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2025-11-06 18:23:53.190 INFO  [main] o.q.i.StdSchedulerFactory:[1378] - Quartz scheduler version: 2.3.2
+2025-11-06 18:23:53.191 INFO  [main] o.q.c.QuartzScheduler:[2293] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@7db53694
+2025-11-06 18:23:54.362 INFO  [main] o.a.d.a.p.PythonGateway:[678] - PythonGatewayService started on: /127.0.0.1
+2025-11-06 18:23:54.431 INFO  [Thread-13] p.GatewayServer:[573] - Gateway Server Started
+2025-11-06 18:24:09.998 INFO  [main] o.s.l.c.s.AbstractContextSource:[425] - Property 'userDn' not set - anonymous context will be used for read-write operations
+2025-11-06 18:24:10.917 INFO  [main] o.e.j.s.h.C.application:[2368] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-06 18:24:10.943 INFO  [main] o.e.j.s.AbstractConnector:[333] - Started ServerConnector@11c3ce6a{HTTP/1.1, (http/1.1)}{0.0.0.0:12345}
+2025-11-06 18:24:10.948 INFO  [main] o.q.c.QuartzScheduler:[547] - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2025-11-06 18:24:10.977 INFO  [main] o.a.d.a.ApiApplicationServer:[64] - Received spring application context ready event will load taskPlugin and write to DB
+2025-11-06 18:24:11.003 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> K8S
+2025-11-06 18:24:11.006 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> ZEPPELIN
+2025-11-06 18:24:11.010 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> SSH
+2025-11-06 18:24:11.013 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> CLICKHOUSE
+2025-11-06 18:24:11.015 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> DATABEND
+2025-11-06 18:24:11.017 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> DB2
+2025-11-06 18:24:11.021 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> HIVE
+2025-11-06 18:24:11.024 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> MYSQL
+2025-11-06 18:24:11.027 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> OCEANBASE
+2025-11-06 18:24:11.029 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> ORACLE
+2025-11-06 18:24:11.032 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> POSTGRESQL
+2025-11-06 18:24:11.035 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> SQLSERVER
+2025-11-06 18:24:11.038 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> REDSHIFT
+2025-11-06 18:24:11.040 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> ATHENA
+2025-11-06 18:24:11.043 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> SPARK
+2025-11-06 18:24:11.045 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> PRESTO
+2025-11-06 18:24:11.047 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> TRINO
+2025-11-06 18:24:11.049 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> STARROCKS
+2025-11-06 18:24:11.051 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> AZURESQL
+2025-11-06 18:24:11.053 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> DAMENG
+2025-11-06 18:24:11.055 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> SNOWFLAKE
+2025-11-06 18:24:11.057 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> KYUUBI
+2025-11-06 18:24:11.059 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> VERTICA
+2025-11-06 18:24:11.061 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> DORIS
+2025-11-06 18:24:11.062 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> SAGEMAKER
+2025-11-06 18:24:11.064 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> HANA
+2025-11-06 18:24:11.065 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> ALIYUN_SERVERLESS_SPARK
+2025-11-06 18:24:11.066 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> DOLPHINDB
+2025-11-06 18:24:11.068 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorProvider:[41] - Initialize DataSourceProcessorProvider
+2025-11-06 18:24:11.096 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: JAVA
+2025-11-06 18:24:11.099 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: JUPYTER
+2025-11-06 18:24:11.101 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SPARK
+2025-11-06 18:24:11.105 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: FLINK_STREAM
+2025-11-06 18:24:11.108 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: PYTHON
+2025-11-06 18:24:11.110 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: ALIYUN_SERVERLESS_SPARK
+2025-11-06 18:24:11.112 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DATASYNC
+2025-11-06 18:24:11.114 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DATA_FACTORY
+2025-11-06 18:24:11.116 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: CHUNJUN
+2025-11-06 18:24:11.117 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: CONDITIONS
+2025-11-06 18:24:11.118 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: REMOTESHELL
+2025-11-06 18:24:11.119 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SUB_WORKFLOW
+2025-11-06 18:24:11.121 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: PROCEDURE
+2025-11-06 18:24:11.123 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SHELL
+2025-11-06 18:24:11.123 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DEPENDENT
+2025-11-06 18:24:11.125 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SQOOP
+2025-11-06 18:24:11.126 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: MR
+2025-11-06 18:24:11.127 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: PYTORCH
+2025-11-06 18:24:11.129 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: K8S
+2025-11-06 18:24:11.132 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SAGEMAKER
+2025-11-06 18:24:11.135 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SEATUNNEL
+2025-11-06 18:24:11.137 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: HTTP
+2025-11-06 18:24:11.140 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: EMR
+2025-11-06 18:24:11.141 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DMS
+2025-11-06 18:24:11.143 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: KUBEFLOW
+2025-11-06 18:24:11.144 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SQL
+2025-11-06 18:24:11.146 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DVC
+2025-11-06 18:24:11.148 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DATAX
+2025-11-06 18:24:11.150 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: ZEPPELIN
+2025-11-06 18:24:11.152 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DINKY
+2025-11-06 18:24:11.154 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: MLFLOW
+2025-11-06 18:24:11.154 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SWITCH
+2025-11-06 18:24:11.155 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: OPENMLDB
+2025-11-06 18:24:11.156 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: LogicFakeTask
+2025-11-06 18:24:11.158 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: LINKIS
+2025-11-06 18:24:11.160 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: HIVECLI
+2025-11-06 18:24:11.160 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: FLINK
+2025-11-06 18:24:11.161 WARN  [main] o.a.d.p.t.a.TaskPluginManager:[44] - The task plugin has already been loaded
+2025-11-06 18:26:13.241 INFO  [qtp1165086398-29] o.a.d.c.c.SystemConstants:[30] - init timezone: sun.util.calendar.ZoneInfo[id="Asia/Shanghai",offset=28800000,dstSavings=0,useDaylight=false,transitions=31,lastRule=null]
+2025-11-06 18:28:06.273 WARN  [main-SendThread(zookeeper:2181)] o.a.z.ClientCnxn:[1292] - Session 0x10005837e720002 for server zookeeper/172.28.0.3:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+org.apache.zookeeper.ClientCnxn$EndOfStreamException: Unable to read additional data from server sessionid 0x10005837e720002, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1282)
+2025-11-06 18:46:40.838 INFO  [main] o.e.j.u.log:[170] - Logging initialized @13841ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-11-06 18:46:41.751 INFO  [main] o.e.j.s.Server:[375] - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 1.8.0_342-b07
+2025-11-06 18:46:41.926 INFO  [main] o.e.j.s.h.C.application:[2368] - Initializing Spring embedded WebApplicationContext
+2025-11-06 18:46:43.632 INFO  [main] c.z.h.HikariDataSource:[110] - HikariPool-1 - Starting...
+2025-11-06 18:46:44.028 INFO  [main] c.z.h.HikariDataSource:[123] - HikariPool-1 - Start completed.
+2025-11-06 18:46:45.506 INFO  [main] o.a.d.a.c.ApiConfig:[58] - API config: auditEnable -> true 
+2025-11-06 18:46:45.508 INFO  [main] o.a.d.a.c.ApiConfig:[59] - API config: trafficControl -> ApiConfig.TrafficConfiguration(globalSwitch=false, maxGlobalQpsRate=300, tenantSwitch=false, defaultTenantQpsRate=10, customizeTenantQpsRate={}) 
+2025-11-06 18:46:45.513 INFO  [main] o.a.d.a.c.ApiConfig:[60] - API config: pythonGateway -> ApiConfig.PythonGatewayConfiguration(enabled=true, gatewayServerAddress=127.0.0.1, gatewayServerPort=25333, pythonAddress=127.0.0.1, pythonPort=25334, connectTimeout=0, readTimeout=0, authToken=jwUDzpLsNKEFER4*a8gruBH_GsAurNxU7A@Xc) 
+2025-11-06 18:46:45.925 INFO  [main] o.e.j.s.session:[334] - DefaultSessionIdManager workerName=node0
+2025-11-06 18:46:45.926 INFO  [main] o.e.j.s.session:[339] - No SessionScavenger set, using defaults
+2025-11-06 18:46:45.929 INFO  [main] o.e.j.s.session:[132] - node0 Scavenging every 660000ms
+2025-11-06 18:46:45.945 INFO  [main] o.e.j.s.h.ContextHandler:[921] - Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@7c8689e{application,/dolphinscheduler,[file:///tmp/jetty-docbase.12345.8596412478768496710/, jar:file:/opt/dolphinscheduler/api-server/libs/swagger-ui-4.11.1.jar!/META-INF/resources],AVAILABLE}
+2025-11-06 18:46:45.948 INFO  [main] o.e.j.s.Server:[415] - Started @18955ms
+2025-11-06 18:46:53.530 INFO  [main] o.a.d.p.r.z.ZookeeperRegistryAutoConfiguration:[37] - Load ZookeeperRegistryAutoConfiguration
+2025-11-06 18:46:53.637 INFO  [main] o.a.d.p.r.z.ZookeeperRegistryProperties:[96] - 
+****************************ZookeeperRegistryProperties**************************************
+  namespace -> dolphinscheduler
+  connectString -> zookeeper:2181
+  retryPolicy -> ZookeeperRegistryProperties.ZookeeperProperties.RetryPolicy(baseSleepTime=PT0.1S, maxRetries=3, maxSleep=PT1S)
+  digest -> 
+  sessionTimeout -> PT1M
+  connectionTimeout -> PT30S
+  blockUntilConnected -> PT30S
+****************************ZookeeperRegistryProperties**************************************
+2025-11-06 18:46:54.152 INFO  [main] o.a.d.p.r.z.ZookeeperRegistry:[113] - ZookeeperRegistry started at: 126/ms
+2025-11-06 18:46:54.643 INFO  [main] c.a.c.i.ReflectionUtils:[542] - Unable to create MethodHandles to use Java 9+ MethodHandles.privateLookupIn. Will attempt to fallback to using the package-private constructor.
+2025-11-06 18:46:54.723 INFO  [main] c.a.c.i.j.JacksonVersion:[222] - Package versions: jackson-core=2.13.4, jackson-databind=2.13.4, jackson-dataformat-xml=2.13.3, jackson-datatype-jsr310=2.13.4, azure-core=1.36.0, Troubleshooting version conflicts: https://aka.ms/azsdk/java/dependency/troubleshoot
+2025-11-06 18:47:01.363 INFO  [main] o.q.i.StdSchedulerFactory:[1220] - Using default implementation for ThreadExecutor
+2025-11-06 18:47:01.381 INFO  [main] o.q.c.SchedulerSignalerImpl:[61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2025-11-06 18:47:01.382 INFO  [main] o.q.c.QuartzScheduler:[229] - Quartz Scheduler v.2.3.2 created.
+2025-11-06 18:47:01.383 INFO  [main] o.q.s.RAMJobStore:[155] - RAMJobStore initialized.
+2025-11-06 18:47:01.384 INFO  [main] o.q.c.QuartzScheduler:[294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2025-11-06 18:47:01.385 INFO  [main] o.q.i.StdSchedulerFactory:[1374] - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2025-11-06 18:47:01.385 INFO  [main] o.q.i.StdSchedulerFactory:[1378] - Quartz scheduler version: 2.3.2
+2025-11-06 18:47:01.386 INFO  [main] o.q.c.QuartzScheduler:[2293] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@4b20b431
+2025-11-06 18:47:01.998 INFO  [main] o.a.d.a.p.PythonGateway:[678] - PythonGatewayService started on: /127.0.0.1
+2025-11-06 18:47:02.016 INFO  [Thread-13] p.GatewayServer:[573] - Gateway Server Started
+2025-11-06 18:47:10.610 INFO  [main] o.s.l.c.s.AbstractContextSource:[425] - Property 'userDn' not set - anonymous context will be used for read-write operations
+2025-11-06 18:47:11.805 INFO  [main] o.e.j.s.h.C.application:[2368] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-06 18:47:11.828 INFO  [main] o.e.j.s.AbstractConnector:[333] - Started ServerConnector@661db63e{HTTP/1.1, (http/1.1)}{0.0.0.0:12345}
+2025-11-06 18:47:11.833 INFO  [main] o.q.c.QuartzScheduler:[547] - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2025-11-06 18:47:11.860 INFO  [main] o.a.d.a.ApiApplicationServer:[64] - Received spring application context ready event will load taskPlugin and write to DB
+2025-11-06 18:47:11.910 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> K8S
+2025-11-06 18:47:11.914 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> ZEPPELIN
+2025-11-06 18:47:11.918 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> SSH
+2025-11-06 18:47:11.922 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> CLICKHOUSE
+2025-11-06 18:47:11.925 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> DATABEND
+2025-11-06 18:47:11.928 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> DB2
+2025-11-06 18:47:11.933 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> HIVE
+2025-11-06 18:47:11.937 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> MYSQL
+2025-11-06 18:47:11.941 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> OCEANBASE
+2025-11-06 18:47:11.946 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> ORACLE
+2025-11-06 18:47:11.950 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> POSTGRESQL
+2025-11-06 18:47:11.954 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> SQLSERVER
+2025-11-06 18:47:11.958 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> REDSHIFT
+2025-11-06 18:47:11.962 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> ATHENA
+2025-11-06 18:47:11.966 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> SPARK
+2025-11-06 18:47:11.970 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> PRESTO
+2025-11-06 18:47:11.974 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> TRINO
+2025-11-06 18:47:11.977 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> STARROCKS
+2025-11-06 18:47:11.981 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> AZURESQL
+2025-11-06 18:47:11.984 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> DAMENG
+2025-11-06 18:47:11.988 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> SNOWFLAKE
+2025-11-06 18:47:11.992 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> KYUUBI
+2025-11-06 18:47:11.996 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> VERTICA
+2025-11-06 18:47:11.999 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> DORIS
+2025-11-06 18:47:12.002 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> SAGEMAKER
+2025-11-06 18:47:12.006 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> HANA
+2025-11-06 18:47:12.009 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> ALIYUN_SERVERLESS_SPARK
+2025-11-06 18:47:12.013 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> DOLPHINDB
+2025-11-06 18:47:12.016 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorProvider:[41] - Initialize DataSourceProcessorProvider
+2025-11-06 18:47:12.050 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: JAVA
+2025-11-06 18:47:12.054 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: JUPYTER
+2025-11-06 18:47:12.058 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SPARK
+2025-11-06 18:47:12.063 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: FLINK_STREAM
+2025-11-06 18:47:12.065 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: PYTHON
+2025-11-06 18:47:12.069 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: ALIYUN_SERVERLESS_SPARK
+2025-11-06 18:47:12.093 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DATASYNC
+2025-11-06 18:47:12.102 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DATA_FACTORY
+2025-11-06 18:47:12.108 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: CHUNJUN
+2025-11-06 18:47:12.114 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: CONDITIONS
+2025-11-06 18:47:12.121 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: REMOTESHELL
+2025-11-06 18:47:12.124 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SUB_WORKFLOW
+2025-11-06 18:47:12.131 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: PROCEDURE
+2025-11-06 18:47:12.138 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SHELL
+2025-11-06 18:47:12.140 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DEPENDENT
+2025-11-06 18:47:12.146 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SQOOP
+2025-11-06 18:47:12.153 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: MR
+2025-11-06 18:47:12.159 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: PYTORCH
+2025-11-06 18:47:12.168 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: K8S
+2025-11-06 18:47:12.176 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SAGEMAKER
+2025-11-06 18:47:12.208 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SEATUNNEL
+2025-11-06 18:47:12.211 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: HTTP
+2025-11-06 18:47:12.224 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: EMR
+2025-11-06 18:47:12.226 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DMS
+2025-11-06 18:47:12.228 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: KUBEFLOW
+2025-11-06 18:47:12.231 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SQL
+2025-11-06 18:47:12.233 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DVC
+2025-11-06 18:47:12.235 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DATAX
+2025-11-06 18:47:12.238 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: ZEPPELIN
+2025-11-06 18:47:12.240 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DINKY
+2025-11-06 18:47:12.241 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: MLFLOW
+2025-11-06 18:47:12.242 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SWITCH
+2025-11-06 18:47:12.243 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: OPENMLDB
+2025-11-06 18:47:12.244 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: LogicFakeTask
+2025-11-06 18:47:12.246 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: LINKIS
+2025-11-06 18:47:12.247 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: HIVECLI
+2025-11-06 18:47:12.248 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: FLINK
+2025-11-06 18:47:12.248 WARN  [main] o.a.d.p.t.a.TaskPluginManager:[44] - The task plugin has already been loaded
+2025-11-06 18:47:53.012 WARN  [main-SendThread(zookeeper:2181)] o.a.z.ClientCnxn:[1292] - Session 0x100058dcccf0002 for server zookeeper/172.28.0.3:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+org.apache.zookeeper.ClientCnxn$EndOfStreamException: Unable to read additional data from server sessionid 0x100058dcccf0002, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1282)

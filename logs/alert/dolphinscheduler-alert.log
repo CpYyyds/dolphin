@@ -1,0 +1,8 @@
+[WARN] 2025-11-09 09:55:24.142 +0800 org.apache.curator.framework.state.ConnectionStateManager:[320] - Session timeout has elapsed while SUSPENDED. Injecting a session expiration. Elapsed ms: 133194340. Adjusted session timeout ms: 40000
+[WARN] 2025-11-09 09:55:24.111 +0800 com.zaxxer.hikari.pool.HikariPool:[788] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1d14h10s591ms801µs161ns).
+[WARN] 2025-11-09 09:55:25.168 +0800 org.apache.zookeeper.ClientCnxn:[1292] - Session 0x10009efecc20007 for server zookeeper/172.28.0.3:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+java.io.IOException: Connection has already been closed and reconnection is not allowed
+	at org.apache.zookeeper.ClientCnxn$SendThread.changeZkState(ClientCnxn.java:990)
+	at org.apache.zookeeper.ClientCnxn$SendThread.startConnect(ClientCnxn.java:1141)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1200)
+[WARN] 2025-11-09 09:55:25.168 +0800 org.apache.curator.ConnectionState:[317] - Session expired event received

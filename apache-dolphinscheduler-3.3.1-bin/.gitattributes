@@ -1,0 +1,2 @@
+*.jar filter=lfs diff=lfs merge=lfs -text
+apache-dolphinscheduler-3.3.1-bin/plugins/**/*.jar filter=lfs diff=lfs merge=lfs -text

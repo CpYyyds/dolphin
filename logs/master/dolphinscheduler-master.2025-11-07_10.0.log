@@ -1,0 +1,226 @@
+[WI-0][TI-0] - 2025-11-07 10:53:18.231 INFO  [Master-Server] o.a.d.c.u.NetUtils:[312] - Get all NetworkInterfaces: [name:eth0 (eth0), name:lo (lo)]
+[WI-0][TI-0] - 2025-11-07 10:53:18.312 INFO  [Master-Server] o.a.d.s.m.c.MasterConfig:[126] - 
+****************************Master Configuration**************************************
+  listen-port -> 5678
+  workflow-event-bus-fire-thread-count -> 25
+  logic-task-config -> LogicTaskConfig(taskExecutorThreadCount=25)
+  max-heartbeat-interval -> PT10S
+  server-load-protection -> MasterServerLoadProtectionConfig(maxConcurrentWorkflowInstances=2147483647)
+  master-address -> 172.28.0.6:5678
+  master-registry-path: /nodes/master/172.28.0.6:5678
+  worker-group-refresh-interval: PT5M
+  command-fetch-strategy: CommandFetchStrategy(type=ID_SLOT_BASED, config=CommandFetchStrategy.IdSlotBasedFetchConfig(idStep=1, fetchSize=10))
+  worker-load-balancer-configuration-properties: WorkerLoadBalancerConfigurationProperties(type=ROUND_ROBIN, dynamicWeightConfigProperties=WorkerLoadBalancerConfigurationProperties.DynamicWeightConfigProperties(cpuUsageWeight=30, memoryUsageWeight=30, taskThreadPoolUsageWeight=40))
+****************************Master Configuration**************************************
+[WI-0][TI-0] - 2025-11-07 10:53:18.574 INFO  [Master-Server] o.a.d.p.r.z.ZookeeperRegistryAutoConfiguration:[37] - Load ZookeeperRegistryAutoConfiguration
+[WI-0][TI-0] - 2025-11-07 10:53:18.605 INFO  [Master-Server] o.a.d.p.r.z.ZookeeperRegistryProperties:[96] - 
+****************************ZookeeperRegistryProperties**************************************
+  namespace -> dolphinscheduler
+  connectString -> zookeeper:2181
+  retryPolicy -> ZookeeperRegistryProperties.ZookeeperProperties.RetryPolicy(baseSleepTime=PT1S, maxRetries=3, maxSleep=PT5S)
+  digest -> 
+  sessionTimeout -> PT5M
+  connectionTimeout -> PT2M
+  blockUntilConnected -> PT30M
+****************************ZookeeperRegistryProperties**************************************
+[WI-0][TI-0] - 2025-11-07 10:53:19.053 INFO  [Master-Server] o.a.d.p.r.z.ZookeeperRegistry:[113] - ZookeeperRegistry started at: 335/ms
+[WI-0][TI-0] - 2025-11-07 10:53:20.091 INFO  [Master-Server] c.z.h.HikariDataSource:[110] - HikariPool-1 - Starting...
+[WI-0][TI-0] - 2025-11-07 10:53:20.390 INFO  [Master-Server] c.z.h.HikariDataSource:[123] - HikariPool-1 - Start completed.
+[WI-0][TI-0] - 2025-11-07 10:53:23.941 INFO  [Master-Server] o.q.i.StdSchedulerFactory:[1220] - Using default implementation for ThreadExecutor
+[WI-0][TI-0] - 2025-11-07 10:53:23.964 INFO  [Master-Server] o.q.c.SchedulerSignalerImpl:[61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[WI-0][TI-0] - 2025-11-07 10:53:23.966 INFO  [Master-Server] o.q.c.QuartzScheduler:[229] - Quartz Scheduler v.2.3.2 created.
+[WI-0][TI-0] - 2025-11-07 10:53:23.968 INFO  [Master-Server] o.q.s.RAMJobStore:[155] - RAMJobStore initialized.
+[WI-0][TI-0] - 2025-11-07 10:53:23.971 INFO  [Master-Server] o.q.c.QuartzScheduler:[294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[WI-0][TI-0] - 2025-11-07 10:53:23.972 INFO  [Master-Server] o.q.i.StdSchedulerFactory:[1374] - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+[WI-0][TI-0] - 2025-11-07 10:53:23.973 INFO  [Master-Server] o.q.i.StdSchedulerFactory:[1378] - Quartz scheduler version: 2.3.2
+[WI-0][TI-0] - 2025-11-07 10:53:23.974 INFO  [Master-Server] o.q.c.QuartzScheduler:[2293] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@5b32e0b1
+[WI-0][TI-0] - 2025-11-07 10:53:24.340 INFO  [Master-Server] o.a.d.e.b.s.NettyRemotingServer:[111] - MasterRpcServer bind success at port: 5678
+[WI-0][TI-0] - 2025-11-07 10:53:24.426 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: JAVA
+[WI-0][TI-0] - 2025-11-07 10:53:24.434 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: JUPYTER
+[WI-0][TI-0] - 2025-11-07 10:53:24.439 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SPARK
+[WI-0][TI-0] - 2025-11-07 10:53:24.444 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: FLINK_STREAM
+[WI-0][TI-0] - 2025-11-07 10:53:24.449 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: PYTHON
+[WI-0][TI-0] - 2025-11-07 10:53:24.454 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: ALIYUN_SERVERLESS_SPARK
+[WI-0][TI-0] - 2025-11-07 10:53:24.459 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DATASYNC
+[WI-0][TI-0] - 2025-11-07 10:53:24.462 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DATA_FACTORY
+[WI-0][TI-0] - 2025-11-07 10:53:24.464 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: CHUNJUN
+[WI-0][TI-0] - 2025-11-07 10:53:24.468 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: CONDITIONS
+[WI-0][TI-0] - 2025-11-07 10:53:24.471 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: REMOTESHELL
+[WI-0][TI-0] - 2025-11-07 10:53:24.472 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SUB_WORKFLOW
+[WI-0][TI-0] - 2025-11-07 10:53:24.475 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: PROCEDURE
+[WI-0][TI-0] - 2025-11-07 10:53:24.514 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SHELL
+[WI-0][TI-0] - 2025-11-07 10:53:24.515 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DEPENDENT
+[WI-0][TI-0] - 2025-11-07 10:53:24.517 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SQOOP
+[WI-0][TI-0] - 2025-11-07 10:53:24.519 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: MR
+[WI-0][TI-0] - 2025-11-07 10:53:24.521 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: PYTORCH
+[WI-0][TI-0] - 2025-11-07 10:53:24.524 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: K8S
+[WI-0][TI-0] - 2025-11-07 10:53:24.526 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SAGEMAKER
+[WI-0][TI-0] - 2025-11-07 10:53:24.529 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SEATUNNEL
+[WI-0][TI-0] - 2025-11-07 10:53:24.536 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: HTTP
+[WI-0][TI-0] - 2025-11-07 10:53:24.540 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: EMR
+[WI-0][TI-0] - 2025-11-07 10:53:24.542 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DMS
+[WI-0][TI-0] - 2025-11-07 10:53:24.545 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: KUBEFLOW
+[WI-0][TI-0] - 2025-11-07 10:53:24.548 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SQL
+[WI-0][TI-0] - 2025-11-07 10:53:24.550 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DVC
+[WI-0][TI-0] - 2025-11-07 10:53:24.554 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DATAX
+[WI-0][TI-0] - 2025-11-07 10:53:24.556 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: ZEPPELIN
+[WI-0][TI-0] - 2025-11-07 10:53:24.560 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DINKY
+[WI-0][TI-0] - 2025-11-07 10:53:24.563 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: MLFLOW
+[WI-0][TI-0] - 2025-11-07 10:53:24.566 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SWITCH
+[WI-0][TI-0] - 2025-11-07 10:53:24.568 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: OPENMLDB
+[WI-0][TI-0] - 2025-11-07 10:53:24.570 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: LogicFakeTask
+[WI-0][TI-0] - 2025-11-07 10:53:24.572 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: LINKIS
+[WI-0][TI-0] - 2025-11-07 10:53:24.575 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: HIVECLI
+[WI-0][TI-0] - 2025-11-07 10:53:24.577 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: FLINK
+[WI-0][TI-0] - 2025-11-07 10:53:24.578 WARN  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[44] - The task plugin has already been loaded
+[WI-0][TI-0] - 2025-11-07 10:53:24.589 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> K8S
+[WI-0][TI-0] - 2025-11-07 10:53:24.592 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> ZEPPELIN
+[WI-0][TI-0] - 2025-11-07 10:53:24.594 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> SSH
+[WI-0][TI-0] - 2025-11-07 10:53:24.597 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> CLICKHOUSE
+[WI-0][TI-0] - 2025-11-07 10:53:24.599 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> DATABEND
+[WI-0][TI-0] - 2025-11-07 10:53:24.603 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> DB2
+[WI-0][TI-0] - 2025-11-07 10:53:24.607 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> HIVE
+[WI-0][TI-0] - 2025-11-07 10:53:24.609 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> MYSQL
+[WI-0][TI-0] - 2025-11-07 10:53:24.612 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> OCEANBASE
+[WI-0][TI-0] - 2025-11-07 10:53:24.615 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> ORACLE
+[WI-0][TI-0] - 2025-11-07 10:53:24.618 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> POSTGRESQL
+[WI-0][TI-0] - 2025-11-07 10:53:24.623 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> SQLSERVER
+[WI-0][TI-0] - 2025-11-07 10:53:24.627 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> REDSHIFT
+[WI-0][TI-0] - 2025-11-07 10:53:24.632 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> ATHENA
+[WI-0][TI-0] - 2025-11-07 10:53:24.636 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> SPARK
+[WI-0][TI-0] - 2025-11-07 10:53:24.639 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> PRESTO
+[WI-0][TI-0] - 2025-11-07 10:53:24.643 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> TRINO
+[WI-0][TI-0] - 2025-11-07 10:53:24.647 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> STARROCKS
+[WI-0][TI-0] - 2025-11-07 10:53:24.650 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> AZURESQL
+[WI-0][TI-0] - 2025-11-07 10:53:24.654 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> DAMENG
+[WI-0][TI-0] - 2025-11-07 10:53:24.656 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> SNOWFLAKE
+[WI-0][TI-0] - 2025-11-07 10:53:24.659 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> KYUUBI
+[WI-0][TI-0] - 2025-11-07 10:53:24.662 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> VERTICA
+[WI-0][TI-0] - 2025-11-07 10:53:24.664 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> DORIS
+[WI-0][TI-0] - 2025-11-07 10:53:24.667 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> SAGEMAKER
+[WI-0][TI-0] - 2025-11-07 10:53:24.670 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> HANA
+[WI-0][TI-0] - 2025-11-07 10:53:24.672 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> ALIYUN_SERVERLESS_SPARK
+[WI-0][TI-0] - 2025-11-07 10:53:24.675 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> DOLPHINDB
+[WI-0][TI-0] - 2025-11-07 10:53:24.678 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorProvider:[41] - Initialize DataSourceProcessorProvider
+[WI-0][TI-0] - 2025-11-07 10:53:24.692 INFO  [Master-Server] o.a.d.s.m.r.MasterRegistryClient:[96] - Master node : 172.28.0.6:5678 registering to registry center
+[WI-0][TI-0] - 2025-11-07 10:53:24.748 INFO  [Master-Server] o.a.d.c.c.SystemConstants:[30] - init timezone: sun.util.calendar.ZoneInfo[id="Asia/Shanghai",offset=28800000,dstSavings=0,useDaylight=false,transitions=31,lastRule=null]
+[WI-0][TI-0] - 2025-11-07 10:53:24.815 INFO  [Master-Server] o.a.d.c.m.BaseHeartBeatTask:[47] - Starting MasterHeartBeatTask...
+[WI-0][TI-0] - 2025-11-07 10:53:24.816 INFO  [Master-Server] o.a.d.c.m.BaseHeartBeatTask:[49] - Started MasterHeartBeatTask, heartBeatInterval: 10000...
+[WI-0][TI-0] - 2025-11-07 10:53:24.817 INFO  [Master-Server] o.a.d.s.m.r.MasterRegistryClient:[109] - Master node : 172.28.0.6:5678 registered to registry center successfully
+[WI-0][TI-0] - 2025-11-07 10:53:24.928 INFO  [Master-Server] o.a.d.r.a.h.DefaultServerStatusChangeListener:[27] - The status is active now.
+[WI-0][TI-0] - 2025-11-07 10:53:24.929 INFO  [Master-Server] o.a.d.s.m.e.TaskGroupCoordinator:[82] - TaskGroupCoordinator starting...
+[WI-0][TI-0] - 2025-11-07 10:53:24.930 INFO  [Master-Server] o.a.d.s.m.e.TaskGroupCoordinator:[93] - TaskGroupCoordinator started...
+[WI-0][TI-0] - 2025-11-07 10:53:24.931 INFO  [Master-Server] o.a.d.s.m.e.MasterCoordinator:[55] - MasterCoordinator started...
+[WI-0][TI-0] - 2025-11-07 10:53:24.979 INFO  [Master-Server] o.a.d.s.m.c.MasterSlotManager:[89] - Do rebalance success, current master slot: 0, total master slots: 1
+[WI-0][TI-0] - 2025-11-07 10:53:24.985 INFO  [Master-Server] o.a.d.s.m.c.ClusterManager:[76] - Initialized MasterClusters: [ {
+  "processId" : 197,
+  "serverStartupTime" : 1762484004148,
+  "address" : "172.28.0.6:5678",
+  "cpuUsage" : 0.0,
+  "memoryUsage" : 0.2927789555444785,
+  "serverStatus" : "NORMAL"
+} ]
+[WI-0][TI-0] - 2025-11-07 10:53:24.991 INFO  [Master-Server] o.a.d.s.m.c.ClusterManager:[93] - Initialized WorkerClusters: [ ]
+[WI-0][TI-0] - 2025-11-07 10:53:24.994 INFO  [Curator-TreeCache-0] o.a.d.s.m.c.AbstractClusterSubscribeListener:[41] - Server MasterServerMetadata(super=BaseServerMetadata(processId=197, serverStartupTime=1762484004148, address=172.28.0.6:5678, cpuUsage=0.0, memoryUsage=0.2927789555444785, serverStatus=NORMAL)) added
+[WI-0][TI-0] - 2025-11-07 10:53:25.133 INFO  [Master-Server] o.a.d.s.m.c.ClusterManager:[59] - ClusterManager started...
+[WI-0][TI-0] - 2025-11-07 10:53:25.135 INFO  [Master-Server] o.a.d.s.m.c.ClusterStateMonitors:[46] - ClusterStateMonitors started...
+[WI-0][TI-0] - 2025-11-07 10:53:26.414 INFO  [Master-Server] o.a.d.s.m.e.WorkflowEventBusFireWorkers:[71] - WorkflowEventBusFireWorkers started, worker size: 25
+[WI-0][TI-0] - 2025-11-07 10:53:26.420 INFO  [Master-Server] o.a.d.s.m.e.WorkflowEventBusCoordinator:[40] - WorkflowEventBusCoordinator started
+[WI-0][TI-0] - 2025-11-07 10:53:26.421 INFO  [Master-Server] o.a.d.s.m.e.c.CommandEngine:[96] - MasterSchedulerBootstrap starting..
+[WI-0][TI-0] - 2025-11-07 10:53:26.422 INFO  [Master-Server] o.a.d.s.m.e.c.CommandEngine:[101] - MasterSchedulerBootstrap started...
+[WI-0][TI-0] - 2025-11-07 10:53:26.423 INFO  [Master-Server] o.a.d.s.m.e.t.d.WorkerGroupDispatcherCoordinator:[49] - WorkerGroupTaskDispatcherManager started...
+[WI-0][TI-0] - 2025-11-07 10:53:26.427 INFO  [Master-Server] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[95] - LogicTaskExecutorEventBusCoordinator started, worker size: 12
+[WI-0][TI-0] - 2025-11-07 10:53:26.428 INFO  [Master-Server] o.a.d.t.e.TaskEngine:[53] - LogicTaskEngine started
+[WI-0][TI-0] - 2025-11-07 10:53:26.429 INFO  [Master-Server] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[81] - LogicTaskExecutorLifecycleEventReporter started
+[WI-0][TI-0] - 2025-11-07 10:53:26.430 INFO  [Master-Server] o.a.d.s.m.e.e.LogicTaskEngineDelegator:[50] - LogicTaskEngineDelegator started
+[WI-0][TI-0] - 2025-11-07 10:53:26.431 INFO  [Master-Server] o.a.d.s.m.e.WorkflowEngine:[55] - WorkflowEngine started
+[WI-0][TI-0] - 2025-11-07 10:53:26.433 INFO  [Master-Server] o.q.c.QuartzScheduler:[547] - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+[WI-0][TI-0] - 2025-11-07 10:53:26.435 INFO  [Master-Server] o.a.d.s.m.e.s.SystemEventBus:[40] - Published SystemEvent: GlobalMasterFailoverEvent{eventTime=Fri Nov 07 10:53:24 CST 2025}
+[WI-0][TI-0] - 2025-11-07 10:53:26.437 INFO  [Master-Server] o.a.d.s.m.e.s.SystemEventBusFireWorker:[62] - SystemEventBusFireWorker started
+[WI-0][TI-0] - 2025-11-07 10:53:26.440 INFO  [SystemEventBusFireWorker] o.a.d.s.m.f.FailoverCoordinator:[73] - Global master failover starting
+[WI-0][TI-0] - 2025-11-07 10:53:26.441 INFO  [Master-Server] o.a.d.s.m.MasterServer:[164] - MasterServer initialized successfully in 2293 ms
+[WI-0][TI-0] - 2025-11-07 10:53:26.612 INFO  [SystemEventBusFireWorker] o.a.d.s.m.f.FailoverCoordinator:[99] - Global master failover finished, cost: 171/ms
+[WI-0][TI-0] - 2025-11-07 10:53:26.618 INFO  [SystemEventBusFireWorker] o.a.d.s.m.e.s.SystemEventBusFireWorker:[103] - Fire SystemEvent: GlobalMasterFailoverEvent{eventTime=Fri Nov 07 10:53:24 CST 2025} cost: 180 ms
+[WI-0][TI-0] - 2025-11-07 10:53:36.212 INFO  [Curator-TreeCache-0] o.a.d.s.m.c.AbstractClusterSubscribeListener:[41] - Server WorkerServerMetadata(workerGroup=default, workerWeight=100.0, taskThreadPoolUsage=0.0) added
+[WI-0][TI-0] - 2025-11-07 10:54:25.723 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[38] - OverLoad: the system cpu usage: 1.0 is over then the maxSystemCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-07 10:54:26.010 WARN  [Curator-TreeCache-0] o.a.d.s.m.c.MasterSlotManager:[75] - Do rebalance failed, cannot found the current master: 172.28.0.6:5678 in the normal master clusters: []. Please check the current master server status
+[WI-0][TI-0] - 2025-11-07 10:54:26.811 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.IdSlotBasedCommandFetcher:[60] - MasterSlotManager check slot (-1 -> 1)is invalidated.
+[WI-0][TI-0] - 2025-11-07 10:54:27.021 INFO  [Curator-TreeCache-0] o.a.d.s.m.c.MasterSlotManager:[89] - Do rebalance success, current master slot: 0, total master slots: 1
+[WI-0][TI-0] - 2025-11-07 10:58:13.398 INFO  [MasterCommandHandleThreadPool] o.a.d.s.m.e.WorkflowEventBus:[41] - Publish event: WorkflowStartLifecycleEvent{workflow=wow-20251107105812117}
+[WI-0][TI-0] - 2025-11-07 10:58:13.403 INFO  [MasterCommandHandleThreadPool] o.a.d.s.m.e.c.CommandEngine:[174] - Success bootstrap command {
+  "id" : 1,
+  "commandType" : "START_PROCESS",
+  "workflowDefinitionCode" : 156727085175776,
+  "workflowDefinitionVersion" : 1,
+  "workflowInstanceId" : 1,
+  "commandParam" : "{\"commandType\":\"START_PROCESS\",\"subWorkflowInstance\":false,\"startNodes\":[],\"commandParams\":[],\"timeZone\":\"Asia/Shanghai\"}",
+  "workflowInstancePriority" : "MEDIUM",
+  "executorId" : 0,
+  "taskDependType" : "TASK_POST",
+  "failureStrategy" : "CONTINUE",
+  "warningType" : "NONE",
+  "warningGroupId" : null,
+  "scheduleTime" : null,
+  "startTime" : null,
+  "updateTime" : "2025-11-07 10:58:12",
+  "workerGroup" : null,
+  "tenantCode" : "default",
+  "environmentCode" : -1,
+  "dryRun" : 0
+}
+[WI-1][TI-0] - 2025-11-07 10:58:13.478 INFO  [ds-workflow-eventbus-worker-3] o.a.d.s.m.e.w.l.h.AbstractWorkflowLifecycleEventHandler:[47] - Begin fire workflow wow-20251107105812117 LifecycleEvent[WorkflowStartLifecycleEvent{workflow=wow-20251107105812117}] with state: RUNNING_EXECUTION
+[WI-1][TI-0] - 2025-11-07 10:58:13.484 INFO  [ds-workflow-eventbus-worker-3] o.a.d.s.m.e.WorkflowEventBus:[41] - Publish event: TaskStartLifecycleEvent{task=wow}
+[WI-1][TI-0] - 2025-11-07 10:58:13.484 INFO  [ds-workflow-eventbus-worker-3] o.a.d.s.m.e.w.l.h.AbstractWorkflowLifecycleEventHandler:[52] - Fired workflow wow-20251107105812117 LifecycleEvent[WorkflowStartLifecycleEvent{workflow=wow-20251107105812117}] with state: RUNNING_EXECUTION
+[WI-1][TI-0] - 2025-11-07 10:58:13.516 INFO  [ds-workflow-eventbus-worker-3] o.a.d.s.m.e.WorkflowEventBus:[41] - Publish event: TaskDispatchLifecycleEvent{task=wow}
+[WI-1][TI-0] - 2025-11-07 10:58:13.516 INFO  [ds-workflow-eventbus-worker-3] o.a.d.s.m.e.t.l.h.AbstractTaskLifecycleEventHandler:[47] - Fired task wow TaskStartLifecycleEvent{task=wow} with state SUBMITTED_SUCCESS
+[WI-1][TI-0] - 2025-11-07 10:58:13.594 INFO  [ds-workflow-eventbus-worker-3] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[56] - Initialize WorkerGroupDispatcher: WorkerGroupTaskDispatcher-default
+[WI-1][TI-0] - 2025-11-07 10:58:13.595 INFO  [ds-workflow-eventbus-worker-3] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[62] - The WorkerGroupTaskDispatcher-default starting...
+[WI-1][TI-0] - 2025-11-07 10:58:13.596 INFO  [ds-workflow-eventbus-worker-3] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[64] - The WorkerGroupTaskDispatcher-default  started
+[WI-1][TI-0] - 2025-11-07 10:58:13.596 INFO  [ds-workflow-eventbus-worker-3] o.a.d.s.m.e.t.d.WorkerGroupDispatcherCoordinator:[59] - Success add Task[id=1] to WorkerGroupDispatcher[name=default]
+[WI-1][TI-0] - 2025-11-07 10:58:13.597 INFO  [ds-workflow-eventbus-worker-3] o.a.d.s.m.e.t.l.h.AbstractTaskLifecycleEventHandler:[47] - Fired task wow TaskDispatchLifecycleEvent{task=wow} with state SUBMITTED_SUCCESS
+[WI-1][TI-1] - 2025-11-07 10:58:13.786 INFO  [WorkerGroupTaskDispatcher-default] o.a.d.e.b.c.JdkDynamicRpcClientProxyFactory:[56] - Create DynamicRpcClientProxy cache for host: 172.28.0.6:1234
+[WI-0][TI-0] - 2025-11-07 10:58:14.915 INFO  [MasterRpcServer-methodInvoker-1] o.a.d.s.m.e.WorkflowEventBus:[41] - Publish event: TaskDispatchedLifecycleEvent{task=wow, executorHost='172.28.0.6:1234'}
+[WI-1][TI-0] - 2025-11-07 10:58:15.052 INFO  [ds-workflow-eventbus-worker-2] o.a.d.s.m.e.t.l.h.AbstractTaskLifecycleEventHandler:[47] - Fired task wow TaskDispatchedLifecycleEvent{task=wow, executorHost='172.28.0.6:1234'} with state SUBMITTED_SUCCESS
+[WI-0][TI-0] - 2025-11-07 10:58:15.116 INFO  [MasterRpcServer-methodInvoker-2] o.a.d.s.m.e.WorkflowEventBus:[41] - Publish event: TaskRunningLifecycleEvent{task=wow, logPath='/opt/dolphinscheduler/worker-server/logs/20251107/156727085175776/1/1/1.log', startTime=Fri Nov 07 10:58:14 CST 2025}
+[WI-1][TI-0] - 2025-11-07 10:58:15.176 INFO  [ds-workflow-eventbus-worker-18] o.a.d.s.m.e.t.l.h.AbstractTaskLifecycleEventHandler:[47] - Fired task wow TaskRunningLifecycleEvent{task=wow, logPath='/opt/dolphinscheduler/worker-server/logs/20251107/156727085175776/1/1/1.log', startTime=Fri Nov 07 10:58:14 CST 2025} with state DISPATCH
+[WI-0][TI-0] - 2025-11-07 10:58:15.270 INFO  [MasterRpcServer-methodInvoker-3] o.a.d.s.m.e.WorkflowEventBus:[41] - Publish event: TaskRunningLifecycleEvent{task=wow, runtimeContext=null}
+[WI-1][TI-0] - 2025-11-07 10:58:15.293 INFO  [ds-workflow-eventbus-worker-6] o.a.d.s.m.e.t.l.h.AbstractTaskLifecycleEventHandler:[47] - Fired task wow TaskRunningLifecycleEvent{task=wow, runtimeContext=null} with state RUNNING_EXECUTION
+[WI-0][TI-0] - 2025-11-07 10:58:16.264 INFO  [MasterRpcServer-methodInvoker-4] o.a.d.s.m.e.WorkflowEventBus:[41] - Publish event: TaskFailedLifecycleEvent{task=wow, endTime=Fri Nov 07 10:58:16 CST 2025}
+[WI-1][TI-0] - 2025-11-07 10:58:16.306 INFO  [ds-workflow-eventbus-worker-7] o.a.d.s.m.e.WorkflowEventBus:[41] - Publish event: WorkflowTopologyLogicalTransitionWithTaskFinishLifecycleEvent{task=wowtaskState=FAILURE}
+[WI-1][TI-0] - 2025-11-07 10:58:16.319 INFO  [ds-workflow-eventbus-worker-7] o.a.d.s.m.e.t.l.h.AbstractTaskLifecycleEventHandler:[47] - Fired task wow TaskFailedLifecycleEvent{task=wow, endTime=Fri Nov 07 10:58:16 CST 2025} with state RUNNING_EXECUTION
+[WI-1][TI-0] - 2025-11-07 10:58:16.319 INFO  [ds-workflow-eventbus-worker-7] o.a.d.s.m.e.w.l.h.AbstractWorkflowLifecycleEventHandler:[47] - Begin fire workflow wow-20251107105812117 LifecycleEvent[WorkflowTopologyLogicalTransitionWithTaskFinishLifecycleEvent{task=wowtaskState=FAILURE}] with state: RUNNING_EXECUTION
+[WI-1][TI-0] - 2025-11-07 10:58:16.320 INFO  [ds-workflow-eventbus-worker-7] o.a.d.s.m.e.WorkflowEventBus:[41] - Publish event: WorkflowFailedLifecycleEvent{workflow=wow-20251107105812117}
+[WI-1][TI-0] - 2025-11-07 10:58:16.321 INFO  [ds-workflow-eventbus-worker-7] o.a.d.s.m.e.w.l.h.AbstractWorkflowLifecycleEventHandler:[52] - Fired workflow wow-20251107105812117 LifecycleEvent[WorkflowTopologyLogicalTransitionWithTaskFinishLifecycleEvent{task=wowtaskState=FAILURE}] with state: RUNNING_EXECUTION
+[WI-1][TI-0] - 2025-11-07 10:58:16.321 INFO  [ds-workflow-eventbus-worker-7] o.a.d.s.m.e.w.l.h.AbstractWorkflowLifecycleEventHandler:[47] - Begin fire workflow wow-20251107105812117 LifecycleEvent[WorkflowFailedLifecycleEvent{workflow=wow-20251107105812117}] with state: RUNNING_EXECUTION
+[WI-1][TI-0] - 2025-11-07 10:58:16.330 INFO  [ds-workflow-eventbus-worker-7] o.a.d.s.m.e.w.s.AbstractWorkflowStateAction:[154] - Success set WorkflowExecuteRunnable: wow-20251107105812117 state from: RUNNING_EXECUTION to FAILURE
+[WI-1][TI-0] - 2025-11-07 10:58:16.331 INFO  [ds-workflow-eventbus-worker-7] o.a.d.s.m.e.WorkflowEventBus:[41] - Publish event: WorkflowFinalizeLifecycleEvent{workflow=wow-20251107105812117}
+[WI-1][TI-0] - 2025-11-07 10:58:16.332 INFO  [ds-workflow-eventbus-worker-7] o.a.d.s.m.e.w.l.h.AbstractWorkflowLifecycleEventHandler:[52] - Fired workflow wow-20251107105812117 LifecycleEvent[WorkflowFailedLifecycleEvent{workflow=wow-20251107105812117}] with state: FAILURE
+[WI-1][TI-0] - 2025-11-07 10:58:16.332 INFO  [ds-workflow-eventbus-worker-7] o.a.d.s.m.e.w.l.h.AbstractWorkflowLifecycleEventHandler:[47] - Begin fire workflow wow-20251107105812117 LifecycleEvent[WorkflowFinalizeLifecycleEvent{workflow=wow-20251107105812117}] with state: FAILURE
+[WI-1][TI-0] - 2025-11-07 10:58:16.337 INFO  [ds-workflow-eventbus-worker-7] o.a.d.s.m.e.w.s.AbstractWorkflowStateAction:[193] - 
+********************************************************************************
+                    Workflow Instance Detail
+********************************************************************************
+Workflow Instance Name:  wow-20251107105812117
+Command Type:            START_PROCESS
+State:                   FAILURE
+StartNodes:              [wow]
+TotalTasks:              1
+Host:                    172.28.0.6:5678
+Is SubWorkflow:          NO
+Run Times:               1
+Tenant:                  cpy
+Work Group:              default
+EventBusSummary:         WorkflowEventBusSummary{eventCount=10, fireSuccessEventCount=10, fireFailedEventCount=0}
+Schedule Time:           null
+Start Time:              Fri Nov 07 10:58:12 CST 2025
+Restart Time:            Fri Nov 07 10:58:12 CST 2025
+End Time:                Fri Nov 07 10:58:16 CST 2025
+[WI-1][TI-0] - 2025-11-07 10:58:16.341 INFO  [ds-workflow-eventbus-worker-7] o.a.d.s.m.e.w.s.AbstractWorkflowStateAction:[199] - Successfully finalize WorkflowExecuteRunnable: wow-20251107105812117
+[WI-1][TI-0] - 2025-11-07 10:58:16.342 INFO  [ds-workflow-eventbus-worker-7] o.a.d.s.m.e.w.l.h.AbstractWorkflowLifecycleEventHandler:[52] - Fired workflow wow-20251107105812117 LifecycleEvent[WorkflowFinalizeLifecycleEvent{workflow=wow-20251107105812117}] with state: FAILURE

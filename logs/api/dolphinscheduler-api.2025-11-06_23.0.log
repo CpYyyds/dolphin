@@ -1,0 +1,13 @@
+2025-11-06 23:31:29.046 WARN  [HikariPool-1 housekeeper] c.z.h.p.HikariPool:[788] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h6s90ms662µs328ns).
+2025-11-06 23:31:29.062 WARN  [main-EventThread] o.a.c.ConnectionState:[317] - Session expired event received
+2025-11-06 23:57:03.932 INFO  [qtp1751850541-24] o.a.d.a.i.LoginHandlerInterceptor:[75] - user does not exist
+2025-11-06 23:31:29.062 WARN  [main-SendThread(zookeeper:2181)] o.a.z.ClientCnxn:[1429] - Unable to reconnect to ZooKeeper service, session 0x100061b44310002 has expired
+2025-11-06 23:31:29.049 WARN  [Curator-ConnectionStateManager-0] o.a.c.f.s.ConnectionStateManager:[320] - Session timeout has elapsed while SUSPENDED. Injecting a session expiration. Elapsed ms: 3604558. Adjusted session timeout ms: 40000
+2025-11-06 23:57:05.039 WARN  [main-SendThread(zookeeper:2181)] o.a.z.ClientCnxn:[1292] - Session 0x100061b44310002 for server zookeeper/172.28.0.3:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+org.apache.zookeeper.ClientCnxn$SessionExpiredException: Unable to reconnect to ZooKeeper service, session 0x100061b44310002 has expired
+	at org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1430)
+	at org.apache.zookeeper.ClientCnxnSocket.readConnectResult(ClientCnxnSocket.java:154)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:86)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1282)
+2025-11-06 23:57:05.100 WARN  [main-EventThread] o.a.c.ConnectionState:[317] - Session expired event received

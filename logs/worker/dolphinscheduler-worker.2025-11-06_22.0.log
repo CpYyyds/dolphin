@@ -1,0 +1,5 @@
+[WI-0][TI-0] - 2025-11-06 22:31:23.881 WARN  [Worker-Server-SendThread(zookeeper:2181)] o.a.z.ClientCnxn:[1249] - Client session timed out, have not heard from server in 3601899ms for session id 0x100061b44310001
+[WI-0][TI-0] - 2025-11-06 22:31:23.920 WARN  [HikariPool-1 housekeeper] c.z.h.p.HikariPool:[788] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h8s365ms546µs462ns).
+[WI-0][TI-0] - 2025-11-06 22:31:24.301 WARN  [Worker-Server-SendThread(zookeeper:2181)] o.a.z.ClientCnxn:[1292] - Session 0x100061b44310001 for server zookeeper/172.28.0.3:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+org.apache.zookeeper.ClientCnxn$SessionTimeoutException: Client session timed out, have not heard from server in 3601899ms for session id 0x100061b44310001
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1250)

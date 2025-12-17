@@ -1,0 +1,9 @@
+2025-11-09 09:55:24.419 WARN  [Curator-ConnectionStateManager-0] o.a.c.f.s.ConnectionStateManager:[320] - Session timeout has elapsed while SUSPENDED. Injecting a session expiration. Elapsed ms: 447938. Adjusted session timeout ms: 40000
+2025-11-09 09:55:24.243 WARN  [HikariPool-1 housekeeper] c.z.h.p.HikariPool:[788] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1d14h10s384ms896µs916ns).
+2025-11-09 09:55:25.522 WARN  [Curator-ConnectionStateManager-0] o.a.c.f.s.ConnectionStateManager:[320] - Session timeout has elapsed while SUSPENDED. Injecting a session expiration. Elapsed ms: 64684802. Adjusted session timeout ms: 40000
+2025-11-09 09:55:25.523 WARN  [main-EventThread] o.a.c.ConnectionState:[317] - Session expired event received
+2025-11-09 09:55:26.151 WARN  [Curator-ConnectionStateManager-0-SendThread(zookeeper:2181)] o.a.z.ClientCnxn:[1286] - An exception was thrown while closing send thread for session 0x10009efecc20009.
+org.apache.zookeeper.ClientCnxn$EndOfStreamException: Unable to read additional data from server sessionid 0x10009efecc20009, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1282)

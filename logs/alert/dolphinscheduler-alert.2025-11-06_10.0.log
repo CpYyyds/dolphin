@@ -1,0 +1,222 @@
+[WARN] 2025-11-06 10:47:42.310 +0800 o.s.cloud.kubernetes.commons.profile.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[WARN] 2025-11-06 10:47:42.806 +0800 o.s.cloud.kubernetes.commons.profile.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[INFO] 2025-11-06 10:47:42.808 +0800 org.apache.dolphinscheduler.alert.AlertServer:[640] - The following 1 profile is active: "mysql"
+[INFO] 2025-11-06 10:47:44.268 +0800 org.springframework.cloud.context.scope.GenericScope:[283] - BeanFactory id=1ace0ad1-9f10-3f83-85be-b03cc5072c1a
+[INFO] 2025-11-06 10:47:44.761 +0800 org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2025-11-06 10:47:44.766 +0800 org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2025-11-06 10:47:44.769 +0800 org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$417/616990183] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2025-11-06 10:47:44.776 +0800 org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2025-11-06 10:47:44.796 +0800 org.apache.dolphinscheduler.common.utils.NetUtils:[312] - Get all NetworkInterfaces: [name:eth0 (eth0), name:lo (lo)]
+[INFO] 2025-11-06 10:47:44.866 +0800 org.apache.dolphinscheduler.alert.config.AlertConfig:[75] - Alert config: port -> 50052
+[INFO] 2025-11-06 10:47:44.866 +0800 org.apache.dolphinscheduler.alert.config.AlertConfig:[76] - Alert config: alertServerAddress -> 172.28.0.6:50052
+[INFO] 2025-11-06 10:47:44.867 +0800 org.apache.dolphinscheduler.alert.config.AlertConfig:[77] - Alert config: maxHeartbeatInterval -> PT1M
+[INFO] 2025-11-06 10:47:44.868 +0800 org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'alertConfig' of type [org.apache.dolphinscheduler.alert.config.AlertConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2025-11-06 10:47:45.041 +0800 org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2025-11-06 10:47:45.060 +0800 org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'kubernetes.manifests-io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2025-11-06 10:47:45.076 +0800 org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration' of type [io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2025-11-06 10:47:45.094 +0800 org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultApiClient' of type [io.kubernetes.client.openapi.ApiClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2025-11-06 10:47:45.461 +0800 com.zaxxer.hikari.HikariDataSource:[110] - HikariPool-1 - Starting...
+[INFO] 2025-11-06 10:47:45.839 +0800 com.zaxxer.hikari.HikariDataSource:[123] - HikariPool-1 - Start completed.
+[INFO] 2025-11-06 10:47:48.665 +0800 org.apache.dolphinscheduler.plugin.registry.zookeeper.ZookeeperRegistryAutoConfiguration:[37] - Load ZookeeperRegistryAutoConfiguration
+[INFO] 2025-11-06 10:47:48.711 +0800 org.apache.dolphinscheduler.plugin.registry.zookeeper.ZookeeperRegistryProperties:[96] - 
+****************************ZookeeperRegistryProperties**************************************
+  namespace -> dolphinscheduler
+  connectString -> zookeeper:2181
+  retryPolicy -> ZookeeperRegistryProperties.ZookeeperProperties.RetryPolicy(baseSleepTime=PT0.1S, maxRetries=3, maxSleep=PT1S)
+  digest -> 
+  sessionTimeout -> PT1M
+  connectionTimeout -> PT30S
+  blockUntilConnected -> PT30S
+****************************ZookeeperRegistryProperties**************************************
+[INFO] 2025-11-06 10:47:49.216 +0800 org.apache.dolphinscheduler.plugin.registry.zookeeper.ZookeeperRegistry:[113] - ZookeeperRegistry started at: 134/ms
+[INFO] 2025-11-06 10:47:50.234 +0800 org.apache.dolphinscheduler.alert.AlertServer:[77] - AlertServer is staring ...
+[INFO] 2025-11-06 10:47:50.236 +0800 org.apache.dolphinscheduler.alert.plugin.AlertPluginManager:[57] - AlertPluginManager start...
+[INFO] 2025-11-06 10:47:50.388 +0800 org.apache.dolphinscheduler.alert.plugin.AlertPluginManager:[60] - AlertPluginManager started...
+[INFO] 2025-11-06 10:47:50.622 +0800 org.apache.dolphinscheduler.extract.base.server.NettyRemotingServer:[111] - AlertRpcServer bind success at port: 50052
+[INFO] 2025-11-06 10:47:50.623 +0800 org.apache.dolphinscheduler.alert.registry.AlertRegistryClient:[49] - AlertRegistryClient starting...
+[INFO] 2025-11-06 10:47:50.648 +0800 org.apache.dolphinscheduler.common.model.BaseHeartBeatTask:[47] - Starting AlertHeartbeatTask...
+[INFO] 2025-11-06 10:47:50.650 +0800 org.apache.dolphinscheduler.common.model.BaseHeartBeatTask:[49] - Started AlertHeartbeatTask, heartBeatInterval: 60000...
+[INFO] 2025-11-06 10:47:50.651 +0800 org.apache.dolphinscheduler.alert.registry.AlertRegistryClient:[53] - AlertRegistryClient started...
+[INFO] 2025-11-06 10:47:50.722 +0800 org.apache.dolphinscheduler.common.constants.SystemConstants:[30] - init timezone: sun.util.calendar.ZoneInfo[id="Asia/Shanghai",offset=28800000,dstSavings=0,useDaylight=false,transitions=31,lastRule=null]
+[INFO] 2025-11-06 10:47:50.749 +0800 org.apache.dolphinscheduler.registry.api.ha.DefaultServerStatusChangeListener:[27] - The status is active now.
+[INFO] 2025-11-06 10:47:50.753 +0800 org.apache.dolphinscheduler.alert.service.AlertBootstrapService:[48] - AlertBootstrapService starting...
+[INFO] 2025-11-06 10:47:50.770 +0800 org.apache.dolphinscheduler.alert.service.AbstractEventFetcher:[58] - AlertEventFetcher starting...
+[INFO] 2025-11-06 10:47:50.772 +0800 org.apache.dolphinscheduler.alert.service.AbstractEventFetcher:[60] - AlertEventFetcher started...
+[INFO] 2025-11-06 10:47:50.773 +0800 org.apache.dolphinscheduler.alert.service.AbstractEventLoop:[57] - org.apache.dolphinscheduler.alert.service.AlertEventLoop starting...
+[INFO] 2025-11-06 10:47:50.774 +0800 org.apache.dolphinscheduler.alert.service.AbstractEventLoop:[59] - org.apache.dolphinscheduler.alert.service.AlertEventLoop started...
+[INFO] 2025-11-06 10:47:50.776 +0800 org.apache.dolphinscheduler.alert.service.AlertBootstrapService:[51] - AlertBootstrapService started...
+[INFO] 2025-11-06 10:47:50.777 +0800 org.apache.dolphinscheduler.alert.service.AlertHAServer:[40] - AlertHAServer started...
+[INFO] 2025-11-06 10:47:50.777 +0800 org.apache.dolphinscheduler.alert.AlertServer:[97] - AlertServer is started ...
+[INFO] 2025-11-06 10:47:53.338 +0800 org.apache.dolphinscheduler.alert.AlertServer:[61] - Started AlertServer in 12.341 seconds (JVM running for 13.443)
+[INFO] 2025-11-06 10:47:53.348 +0800 org.apache.dolphinscheduler.common.lifecycle.ServerLifeCycleManager:[88] - The current server status changed from RUNNING to STOPPED
+[INFO] 2025-11-06 10:47:53.348 +0800 org.apache.dolphinscheduler.alert.AlertServer:[110] - AlertServer is stopping, cause: AlertServer destroy
+[INFO] 2025-11-06 10:47:53.349 +0800 org.apache.dolphinscheduler.alert.service.AlertBootstrapService:[56] - AlertBootstrapService stopping...
+[INFO] 2025-11-06 10:47:53.350 +0800 org.apache.dolphinscheduler.alert.service.AlertBootstrapService:[59] - AlertBootstrapService stopped...
+[INFO] 2025-11-06 10:47:53.350 +0800 org.apache.dolphinscheduler.alert.service.AlertHAServer:[45] - AlertHAServer shutdown...
+[INFO] 2025-11-06 10:47:53.351 +0800 org.apache.dolphinscheduler.alert.registry.AlertRegistryClient:[58] - AlertRegistryClient closing...
+[WARN] 2025-11-06 10:47:53.351 +0800 org.apache.dolphinscheduler.common.model.BaseHeartBeatTask:[78] - AlertHeartbeatTask finished...
+[INFO] 2025-11-06 10:47:53.352 +0800 org.apache.dolphinscheduler.alert.registry.AlertRegistryClient:[60] - AlertRegistryClient closed...
+[INFO] 2025-11-06 10:47:53.353 +0800 org.apache.dolphinscheduler.extract.base.server.NettyRemotingServer:[149] - AlertRpcServer closing
+[INFO] 2025-11-06 10:47:53.355 +0800 org.apache.dolphinscheduler.extract.base.server.NettyRemotingServer:[153] - AlertRpcServer stop bind at port: 50052
+[INFO] 2025-11-06 10:47:53.364 +0800 org.apache.dolphinscheduler.extract.base.server.NettyRemotingServer:[167] - AlertRpcServer closed
+[INFO] 2025-11-06 10:47:56.368 +0800 org.apache.dolphinscheduler.alert.AlertServer:[119] - AlertServer stopped, cause: AlertServer destroy
+[INFO] 2025-11-06 10:47:56.370 +0800 org.apache.dolphinscheduler.alert.service.AlertBootstrapService:[56] - AlertBootstrapService stopping...
+[WARN] 2025-11-06 10:47:56.371 +0800 org.apache.dolphinscheduler.alert.service.AbstractEventFetcher:[96] - The AlertEventFetcher is not started
+[WARN] 2025-11-06 10:47:56.372 +0800 org.apache.dolphinscheduler.alert.service.AbstractEventLoop:[98] - org.apache.dolphinscheduler.alert.service.AlertEventLoop is not started
+[INFO] 2025-11-06 10:47:56.373 +0800 org.apache.dolphinscheduler.alert.service.AlertBootstrapService:[59] - AlertBootstrapService stopped...
+[INFO] 2025-11-06 10:47:56.375 +0800 org.apache.dolphinscheduler.alert.registry.AlertRegistryClient:[58] - AlertRegistryClient closing...
+[WARN] 2025-11-06 10:47:56.376 +0800 org.apache.dolphinscheduler.common.model.BaseHeartBeatTask:[78] - AlertHeartbeatTask finished...
+[INFO] 2025-11-06 10:47:56.377 +0800 org.apache.dolphinscheduler.alert.registry.AlertRegistryClient:[60] - AlertRegistryClient closed...
+[INFO] 2025-11-06 10:47:56.378 +0800 org.apache.dolphinscheduler.alert.service.AlertHAServer:[45] - AlertHAServer shutdown...
+[INFO] 2025-11-06 10:47:56.510 +0800 com.zaxxer.hikari.HikariDataSource:[350] - HikariPool-1 - Shutdown initiated...
+[INFO] 2025-11-06 10:47:56.529 +0800 com.zaxxer.hikari.HikariDataSource:[352] - HikariPool-1 - Shutdown completed.
+[WARN] 2025-11-06 10:58:22.210 +0800 o.s.cloud.kubernetes.commons.profile.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[WARN] 2025-11-06 10:58:22.809 +0800 o.s.cloud.kubernetes.commons.profile.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[INFO] 2025-11-06 10:58:22.812 +0800 org.apache.dolphinscheduler.alert.AlertServer:[640] - The following 1 profile is active: "mysql"
+[INFO] 2025-11-06 10:58:24.489 +0800 org.springframework.cloud.context.scope.GenericScope:[283] - BeanFactory id=1ace0ad1-9f10-3f83-85be-b03cc5072c1a
+[INFO] 2025-11-06 10:58:24.997 +0800 org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2025-11-06 10:58:25.002 +0800 org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2025-11-06 10:58:25.005 +0800 org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$417/1301542747] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2025-11-06 10:58:25.013 +0800 org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2025-11-06 10:58:25.038 +0800 org.apache.dolphinscheduler.common.utils.NetUtils:[312] - Get all NetworkInterfaces: [name:eth0 (eth0), name:lo (lo)]
+[INFO] 2025-11-06 10:58:25.091 +0800 org.apache.dolphinscheduler.alert.config.AlertConfig:[75] - Alert config: port -> 50052
+[INFO] 2025-11-06 10:58:25.092 +0800 org.apache.dolphinscheduler.alert.config.AlertConfig:[76] - Alert config: alertServerAddress -> 172.28.0.6:50052
+[INFO] 2025-11-06 10:58:25.093 +0800 org.apache.dolphinscheduler.alert.config.AlertConfig:[77] - Alert config: maxHeartbeatInterval -> PT1M
+[INFO] 2025-11-06 10:58:25.094 +0800 org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'alertConfig' of type [org.apache.dolphinscheduler.alert.config.AlertConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2025-11-06 10:58:25.204 +0800 org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2025-11-06 10:58:25.221 +0800 org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'kubernetes.manifests-io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2025-11-06 10:58:25.237 +0800 org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration' of type [io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2025-11-06 10:58:25.255 +0800 org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultApiClient' of type [io.kubernetes.client.openapi.ApiClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2025-11-06 10:58:25.568 +0800 com.zaxxer.hikari.HikariDataSource:[110] - HikariPool-1 - Starting...
+[INFO] 2025-11-06 10:58:25.973 +0800 com.zaxxer.hikari.HikariDataSource:[123] - HikariPool-1 - Start completed.
+[INFO] 2025-11-06 10:58:29.429 +0800 org.apache.dolphinscheduler.plugin.registry.zookeeper.ZookeeperRegistryAutoConfiguration:[37] - Load ZookeeperRegistryAutoConfiguration
+[INFO] 2025-11-06 10:58:29.473 +0800 org.apache.dolphinscheduler.plugin.registry.zookeeper.ZookeeperRegistryProperties:[96] - 
+****************************ZookeeperRegistryProperties**************************************
+  namespace -> dolphinscheduler
+  connectString -> zookeeper:2181
+  retryPolicy -> ZookeeperRegistryProperties.ZookeeperProperties.RetryPolicy(baseSleepTime=PT0.1S, maxRetries=3, maxSleep=PT1S)
+  digest -> 
+  sessionTimeout -> PT1M
+  connectionTimeout -> PT30S
+  blockUntilConnected -> PT30S
+****************************ZookeeperRegistryProperties**************************************
+[INFO] 2025-11-06 10:58:29.854 +0800 org.apache.dolphinscheduler.plugin.registry.zookeeper.ZookeeperRegistry:[113] - ZookeeperRegistry started at: 136/ms
+[ERROR] 2025-11-06 10:58:29.957 +0800 org.apache.dolphinscheduler.registry.api.RegistryClient:[254] - Failed to clean the failoverFinishedNode: 172.28.0.6:1234-1762397245296-269
+org.apache.dolphinscheduler.registry.api.RegistryException: zookeeper get data error
+	at org.apache.dolphinscheduler.plugin.registry.zookeeper.ZookeeperRegistry.get(ZookeeperRegistry.java:158)
+	at org.apache.dolphinscheduler.registry.api.RegistryClient.cleanHistoryFailoverFinishedNodes(RegistryClient.java:246)
+	at org.apache.dolphinscheduler.registry.api.RegistryClient.<init>(RegistryClient.java:74)
+	at org.apache.dolphinscheduler.registry.api.RegistryConfiguration.registryClient(RegistryConfiguration.java:30)
+	at org.apache.dolphinscheduler.registry.api.RegistryConfiguration$$EnhancerBySpringCGLIB$$ff3e639a.CGLIB$registryClient$0(<generated>)
+	at org.apache.dolphinscheduler.registry.api.RegistryConfiguration$$EnhancerBySpringCGLIB$$ff3e639a$$FastClassBySpringCGLIB$$486afb41.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at org.apache.dolphinscheduler.registry.api.RegistryConfiguration$$EnhancerBySpringCGLIB$$ff3e639a.registryClient(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at org.apache.dolphinscheduler.alert.AlertServer.main(AlertServer.java:71)
+Caused by: java.lang.IllegalArgumentException: Path must start with / character
+	at org.apache.curator.utils.PathUtils.validatePath(PathUtils.java:55)
+	at org.apache.curator.utils.PathUtils.validatePath(PathUtils.java:38)
+	at org.apache.curator.utils.ZKPaths.fixForNamespace(ZKPaths.java:107)
+	at org.apache.curator.framework.imps.NamespaceImpl.fixForNamespace(NamespaceImpl.java:105)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.fixForNamespace(CuratorFrameworkImpl.java:753)
+	at org.apache.curator.framework.imps.GetDataBuilderImpl.forPath(GetDataBuilderImpl.java:296)
+	at org.apache.curator.framework.imps.GetDataBuilderImpl.forPath(GetDataBuilderImpl.java:36)
+	at org.apache.dolphinscheduler.plugin.registry.zookeeper.ZookeeperRegistry.get(ZookeeperRegistry.java:156)
+	... 60 common frames omitted
+[INFO] 2025-11-06 10:58:30.830 +0800 org.apache.dolphinscheduler.alert.AlertServer:[77] - AlertServer is staring ...
+[INFO] 2025-11-06 10:58:30.832 +0800 org.apache.dolphinscheduler.alert.plugin.AlertPluginManager:[57] - AlertPluginManager start...
+[INFO] 2025-11-06 10:58:30.940 +0800 org.apache.dolphinscheduler.alert.plugin.AlertPluginManager:[60] - AlertPluginManager started...
+[INFO] 2025-11-06 10:58:31.063 +0800 org.apache.dolphinscheduler.extract.base.server.NettyRemotingServer:[111] - AlertRpcServer bind success at port: 50052
+[INFO] 2025-11-06 10:58:31.064 +0800 org.apache.dolphinscheduler.alert.registry.AlertRegistryClient:[49] - AlertRegistryClient starting...
+[INFO] 2025-11-06 10:58:31.075 +0800 org.apache.dolphinscheduler.common.model.BaseHeartBeatTask:[47] - Starting AlertHeartbeatTask...
+[INFO] 2025-11-06 10:58:31.077 +0800 org.apache.dolphinscheduler.common.model.BaseHeartBeatTask:[49] - Started AlertHeartbeatTask, heartBeatInterval: 60000...
+[INFO] 2025-11-06 10:58:31.080 +0800 org.apache.dolphinscheduler.alert.registry.AlertRegistryClient:[53] - AlertRegistryClient started...
+[INFO] 2025-11-06 10:58:31.116 +0800 org.apache.dolphinscheduler.common.constants.SystemConstants:[30] - init timezone: sun.util.calendar.ZoneInfo[id="Asia/Shanghai",offset=28800000,dstSavings=0,useDaylight=false,transitions=31,lastRule=null]
+[INFO] 2025-11-06 10:58:31.141 +0800 org.apache.dolphinscheduler.registry.api.ha.DefaultServerStatusChangeListener:[27] - The status is active now.
+[INFO] 2025-11-06 10:58:31.143 +0800 org.apache.dolphinscheduler.alert.service.AlertBootstrapService:[48] - AlertBootstrapService starting...
+[INFO] 2025-11-06 10:58:31.152 +0800 org.apache.dolphinscheduler.alert.service.AbstractEventFetcher:[58] - AlertEventFetcher starting...
+[INFO] 2025-11-06 10:58:31.153 +0800 org.apache.dolphinscheduler.alert.service.AbstractEventFetcher:[60] - AlertEventFetcher started...
+[INFO] 2025-11-06 10:58:31.154 +0800 org.apache.dolphinscheduler.alert.service.AbstractEventLoop:[57] - org.apache.dolphinscheduler.alert.service.AlertEventLoop starting...
+[INFO] 2025-11-06 10:58:31.155 +0800 org.apache.dolphinscheduler.alert.service.AbstractEventLoop:[59] - org.apache.dolphinscheduler.alert.service.AlertEventLoop started...
+[INFO] 2025-11-06 10:58:31.156 +0800 org.apache.dolphinscheduler.alert.service.AlertBootstrapService:[51] - AlertBootstrapService started...
+[INFO] 2025-11-06 10:58:31.157 +0800 org.apache.dolphinscheduler.alert.service.AlertHAServer:[40] - AlertHAServer started...
+[INFO] 2025-11-06 10:58:31.157 +0800 org.apache.dolphinscheduler.alert.AlertServer:[97] - AlertServer is started ...
+[INFO] 2025-11-06 10:58:32.603 +0800 org.apache.dolphinscheduler.alert.AlertServer:[61] - Started AlertServer in 11.868 seconds (JVM running for 12.489)
+[INFO] 2025-11-06 10:58:32.615 +0800 org.apache.dolphinscheduler.common.lifecycle.ServerLifeCycleManager:[88] - The current server status changed from RUNNING to STOPPED
+[INFO] 2025-11-06 10:58:32.615 +0800 org.apache.dolphinscheduler.alert.AlertServer:[110] - AlertServer is stopping, cause: AlertServer destroy
+[INFO] 2025-11-06 10:58:32.616 +0800 org.apache.dolphinscheduler.alert.service.AlertBootstrapService:[56] - AlertBootstrapService stopping...
+[INFO] 2025-11-06 10:58:32.618 +0800 org.apache.dolphinscheduler.alert.service.AlertBootstrapService:[59] - AlertBootstrapService stopped...
+[INFO] 2025-11-06 10:58:32.618 +0800 org.apache.dolphinscheduler.alert.service.AlertHAServer:[45] - AlertHAServer shutdown...
+[INFO] 2025-11-06 10:58:32.619 +0800 org.apache.dolphinscheduler.alert.registry.AlertRegistryClient:[58] - AlertRegistryClient closing...
+[WARN] 2025-11-06 10:58:32.619 +0800 org.apache.dolphinscheduler.common.model.BaseHeartBeatTask:[78] - AlertHeartbeatTask finished...
+[INFO] 2025-11-06 10:58:32.620 +0800 org.apache.dolphinscheduler.alert.registry.AlertRegistryClient:[60] - AlertRegistryClient closed...
+[INFO] 2025-11-06 10:58:32.621 +0800 org.apache.dolphinscheduler.extract.base.server.NettyRemotingServer:[149] - AlertRpcServer closing
+[INFO] 2025-11-06 10:58:32.623 +0800 org.apache.dolphinscheduler.extract.base.server.NettyRemotingServer:[153] - AlertRpcServer stop bind at port: 50052
+[INFO] 2025-11-06 10:58:32.634 +0800 org.apache.dolphinscheduler.extract.base.server.NettyRemotingServer:[167] - AlertRpcServer closed
+[INFO] 2025-11-06 10:58:35.637 +0800 org.apache.dolphinscheduler.alert.AlertServer:[119] - AlertServer stopped, cause: AlertServer destroy
+[INFO] 2025-11-06 10:58:35.640 +0800 org.apache.dolphinscheduler.alert.service.AlertBootstrapService:[56] - AlertBootstrapService stopping...
+[WARN] 2025-11-06 10:58:35.642 +0800 org.apache.dolphinscheduler.alert.service.AbstractEventFetcher:[96] - The AlertEventFetcher is not started
+[WARN] 2025-11-06 10:58:35.643 +0800 org.apache.dolphinscheduler.alert.service.AbstractEventLoop:[98] - org.apache.dolphinscheduler.alert.service.AlertEventLoop is not started
+[INFO] 2025-11-06 10:58:35.646 +0800 org.apache.dolphinscheduler.alert.service.AlertBootstrapService:[59] - AlertBootstrapService stopped...
+[INFO] 2025-11-06 10:58:35.648 +0800 org.apache.dolphinscheduler.alert.registry.AlertRegistryClient:[58] - AlertRegistryClient closing...
+[WARN] 2025-11-06 10:58:35.649 +0800 org.apache.dolphinscheduler.common.model.BaseHeartBeatTask:[78] - AlertHeartbeatTask finished...
+[INFO] 2025-11-06 10:58:35.650 +0800 org.apache.dolphinscheduler.alert.registry.AlertRegistryClient:[60] - AlertRegistryClient closed...
+[INFO] 2025-11-06 10:58:35.651 +0800 org.apache.dolphinscheduler.alert.service.AlertHAServer:[45] - AlertHAServer shutdown...
+[WARN] 2025-11-06 10:58:35.675 +0800 org.apache.zookeeper.ClientCnxn:[1286] - An exception was thrown while closing send thread for session 0x10003e100570008.
+org.apache.zookeeper.ClientCnxn$EndOfStreamException: Unable to read additional data from server sessionid 0x10003e100570008, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1282)
+[INFO] 2025-11-06 10:58:35.787 +0800 com.zaxxer.hikari.HikariDataSource:[350] - HikariPool-1 - Shutdown initiated...
+[INFO] 2025-11-06 10:58:35.801 +0800 com.zaxxer.hikari.HikariDataSource:[352] - HikariPool-1 - Shutdown completed.

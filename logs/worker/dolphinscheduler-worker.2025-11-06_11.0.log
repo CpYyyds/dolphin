@@ -1,0 +1,1187 @@
+[WI-0][TI-0] - 2025-11-06 11:04:03.751 WARN  [Worker-Server] o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[WI-0][TI-0] - 2025-11-06 11:04:04.211 WARN  [Worker-Server] o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[WI-0][TI-0] - 2025-11-06 11:04:04.213 INFO  [Worker-Server] o.a.d.s.w.WorkerServer:[640] - The following 1 profile is active: "mysql"
+[WI-0][TI-0] - 2025-11-06 11:04:05.042 WARN  [Worker-Server] o.m.s.m.ClassPathMapperScanner:[44] - No MyBatis mapper was found in '[org.apache.dolphinscheduler.server.worker]' package. Please check your configuration.
+[WI-0][TI-0] - 2025-11-06 11:04:05.097 INFO  [Worker-Server] o.s.c.c.s.GenericScope:[283] - BeanFactory id=f001ad87-3a6a-3f67-ad4a-5009cf2fa20b
+[WI-0][TI-0] - 2025-11-06 11:04:05.389 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:04:05.393 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:04:05.396 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$415/453940999] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:04:05.401 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:04:05.414 INFO  [Worker-Server] o.a.d.c.u.NetUtils:[312] - Get all NetworkInterfaces: [name:eth0 (eth0), name:lo (lo)]
+[WI-0][TI-0] - 2025-11-06 11:04:05.452 INFO  [Worker-Server] o.a.d.s.w.c.WorkerConfig:[97] - 
+****************************Worker Configuration**************************************
+  listen-port -> 1234
+  max-heartbeat-interval -> PT10S
+  host-weight -> 100
+  tenantConfig -> TenantConfig(autoCreateTenantEnabled=true, defaultTenantEnabled=false)
+  server-load-protection -> WorkerServerLoadProtectionConfig()
+  address -> 172.28.0.6:1234
+  registry-path: /nodes/worker/172.28.0.6:1234
+  physical-task-config -> PhysicalTaskConfig(taskExecutorThreadSize=25)
+  group -> default
+****************************Worker Configuration**************************************
+[WI-0][TI-0] - 2025-11-06 11:04:05.454 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'workerConfig' of type [org.apache.dolphinscheduler.server.worker.config.WorkerConfig$$EnhancerBySpringCGLIB$$83d0030f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:04:05.535 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:04:05.549 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'kubernetes.manifests-io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:04:05.559 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration' of type [io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:04:05.574 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultApiClient' of type [io.kubernetes.client.openapi.ApiClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:04:05.652 INFO  [Worker-Server] o.a.d.p.r.z.ZookeeperRegistryAutoConfiguration:[37] - Load ZookeeperRegistryAutoConfiguration
+[WI-0][TI-0] - 2025-11-06 11:04:05.671 INFO  [Worker-Server] o.a.d.p.r.z.ZookeeperRegistryProperties:[96] - 
+****************************ZookeeperRegistryProperties**************************************
+  namespace -> dolphinscheduler
+  connectString -> zookeeper:2181
+  retryPolicy -> ZookeeperRegistryProperties.ZookeeperProperties.RetryPolicy(baseSleepTime=PT0.1S, maxRetries=3, maxSleep=PT1S)
+  digest -> 
+  sessionTimeout -> PT1M
+  connectionTimeout -> PT30S
+  blockUntilConnected -> PT30S
+****************************ZookeeperRegistryProperties**************************************
+[WI-0][TI-0] - 2025-11-06 11:04:05.785 INFO  [Worker-Server] o.a.d.p.r.z.ZookeeperRegistry:[113] - ZookeeperRegistry started at: 36/ms
+[WI-0][TI-0] - 2025-11-06 11:04:06.109 INFO  [Worker-Server] c.z.h.HikariDataSource:[110] - HikariPool-1 - Starting...
+[WI-0][TI-0] - 2025-11-06 11:04:06.336 INFO  [Worker-Server] c.z.h.HikariDataSource:[123] - HikariPool-1 - Start completed.
+[WI-0][TI-0] - 2025-11-06 11:04:06.590 INFO  [Worker-Server] o.a.d.e.b.s.NettyRemotingServer:[111] - WorkerRpcServer bind success at port: 1234
+[WI-0][TI-0] - 2025-11-06 11:04:06.600 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SUB_WORKFLOW
+[WI-0][TI-0] - 2025-11-06 11:04:06.602 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DEPENDENT
+[WI-0][TI-0] - 2025-11-06 11:04:06.602 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: CONDITIONS
+[WI-0][TI-0] - 2025-11-06 11:04:06.604 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SWITCH
+[WI-0][TI-0] - 2025-11-06 11:04:06.605 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: LogicFakeTask
+[WI-0][TI-0] - 2025-11-06 11:04:06.605 WARN  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[44] - The task plugin has already been loaded
+[WI-0][TI-0] - 2025-11-06 11:04:06.608 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorProvider:[41] - Initialize DataSourceProcessorProvider
+[WI-0][TI-0] - 2025-11-06 11:04:06.648 INFO  [Worker-Server] o.a.d.c.c.SystemConstants:[30] - init timezone: sun.util.calendar.ZoneInfo[id="Asia/Shanghai",offset=28800000,dstSavings=0,useDaylight=false,transitions=31,lastRule=null]
+[WI-0][TI-0] - 2025-11-06 11:04:06.704 INFO  [Worker-Server] o.a.d.s.w.r.WorkerRegistryClient:[94] - Worker node: 172.28.0.6:1234 registry to registry center /nodes/worker/172.28.0.6:1234 successfully
+[WI-0][TI-0] - 2025-11-06 11:04:06.712 INFO  [Worker-Server] o.a.d.c.m.BaseHeartBeatTask:[47] - Starting WorkerHeartBeatTask...
+[WI-0][TI-0] - 2025-11-06 11:04:06.713 INFO  [Worker-Server] o.a.d.c.m.BaseHeartBeatTask:[49] - Started WorkerHeartBeatTask, heartBeatInterval: 10000...
+[WI-0][TI-0] - 2025-11-06 11:04:06.715 INFO  [Worker-Server] o.a.d.s.w.r.WorkerRegistryClient:[102] - Worker node: 172.28.0.6:1234 registry finished
+[WI-0][TI-0] - 2025-11-06 11:04:06.719 INFO  [Worker-Server] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[95] - PhysicalTaskExecutorEventBusCoordinator started, worker size: 12
+[WI-0][TI-0] - 2025-11-06 11:04:06.719 INFO  [Worker-Server] o.a.d.t.e.TaskEngine:[53] - PhysicalTaskEngine started
+[WI-0][TI-0] - 2025-11-06 11:04:06.720 INFO  [Worker-Server] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[81] - PhysicalTaskExecutorLifecycleEventReporter started
+[WI-0][TI-0] - 2025-11-06 11:04:06.721 INFO  [Worker-Server] o.a.d.s.w.e.PhysicalTaskEngineDelegator:[57] - PhysicalTaskEngineDelegator started
+[WI-0][TI-0] - 2025-11-06 11:04:08.430 INFO  [Worker-Server] o.a.d.s.w.WorkerServer:[61] - Started WorkerServer in 5.675 seconds (JVM running for 6.165)
+[WI-0][TI-0] - 2025-11-06 11:04:08.437 INFO  [Thread-6] o.a.d.c.l.ServerLifeCycleManager:[88] - The current server status changed from RUNNING to STOPPED
+[WI-0][TI-0] - 2025-11-06 11:04:08.445 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.TaskEngine:[87] - PhysicalTaskEngine closed
+[WI-0][TI-0] - 2025-11-06 11:04:08.446 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[107] - PhysicalTaskExecutorEventBusCoordinator closed
+[WI-0][TI-0] - 2025-11-06 11:04:08.447 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[107] - PhysicalTaskExecutorEventBusCoordinator closed
+[WI-0][TI-0] - 2025-11-06 11:04:08.447 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[174] - PhysicalTaskExecutorLifecycleEventReporter closed
+[WI-0][TI-0] - 2025-11-06 11:04:08.448 WARN  [SpringApplicationShutdownHook] o.a.d.c.m.BaseHeartBeatTask:[78] - WorkerHeartBeatTask finished...
+[WI-0][TI-0] - 2025-11-06 11:04:08.471 WARN  [Worker-Server-SendThread(zookeeper:2181)] o.a.z.ClientCnxn:[1286] - An exception was thrown while closing send thread for session 0x10003f00c6c0002.
+org.apache.zookeeper.ClientCnxn$EndOfStreamException: Unable to read additional data from server sessionid 0x10003f00c6c0002, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1282)
+[WI-0][TI-0] - 2025-11-06 11:04:08.574 INFO  [SpringApplicationShutdownHook] o.a.d.s.w.r.WorkerRegistryClient:[124] - Closed WorkerRegistryClient
+[WI-0][TI-0] - 2025-11-06 11:04:08.576 INFO  [SpringApplicationShutdownHook] c.z.h.HikariDataSource:[350] - HikariPool-1 - Shutdown initiated...
+[WI-0][TI-0] - 2025-11-06 11:04:08.598 INFO  [SpringApplicationShutdownHook] c.z.h.HikariDataSource:[352] - HikariPool-1 - Shutdown completed.
+[WI-0][TI-0] - 2025-11-06 11:04:08.602 INFO  [SpringApplicationShutdownHook] o.a.d.e.b.s.NettyRemotingServer:[149] - WorkerRpcServer closing
+[WI-0][TI-0] - 2025-11-06 11:04:08.603 INFO  [SpringApplicationShutdownHook] o.a.d.e.b.s.NettyRemotingServer:[153] - WorkerRpcServer stop bind at port: 1234
+[WI-0][TI-0] - 2025-11-06 11:04:08.612 INFO  [SpringApplicationShutdownHook] o.a.d.e.b.s.NettyRemotingServer:[167] - WorkerRpcServer closed
+[WI-0][TI-0] - 2025-11-06 11:05:00.293 WARN  [Worker-Server] o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[WI-0][TI-0] - 2025-11-06 11:05:00.670 WARN  [Worker-Server] o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[WI-0][TI-0] - 2025-11-06 11:05:00.671 INFO  [Worker-Server] o.a.d.s.w.WorkerServer:[640] - The following 1 profile is active: "mysql"
+[WI-0][TI-0] - 2025-11-06 11:05:01.675 WARN  [Worker-Server] o.m.s.m.ClassPathMapperScanner:[44] - No MyBatis mapper was found in '[org.apache.dolphinscheduler.server.worker]' package. Please check your configuration.
+[WI-0][TI-0] - 2025-11-06 11:05:01.740 INFO  [Worker-Server] o.s.c.c.s.GenericScope:[283] - BeanFactory id=f001ad87-3a6a-3f67-ad4a-5009cf2fa20b
+[WI-0][TI-0] - 2025-11-06 11:05:02.151 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:05:02.154 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:05:02.158 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$415/1070523353] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:05:02.165 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:05:02.183 INFO  [Worker-Server] o.a.d.c.u.NetUtils:[312] - Get all NetworkInterfaces: [name:eth0 (eth0), name:lo (lo)]
+[WI-0][TI-0] - 2025-11-06 11:05:02.226 INFO  [Worker-Server] o.a.d.s.w.c.WorkerConfig:[97] - 
+****************************Worker Configuration**************************************
+  listen-port -> 1234
+  max-heartbeat-interval -> PT10S
+  host-weight -> 100
+  tenantConfig -> TenantConfig(autoCreateTenantEnabled=true, defaultTenantEnabled=false)
+  server-load-protection -> WorkerServerLoadProtectionConfig()
+  address -> 172.28.0.6:1234
+  registry-path: /nodes/worker/172.28.0.6:1234
+  physical-task-config -> PhysicalTaskConfig(taskExecutorThreadSize=25)
+  group -> default
+****************************Worker Configuration**************************************
+[WI-0][TI-0] - 2025-11-06 11:05:02.227 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'workerConfig' of type [org.apache.dolphinscheduler.server.worker.config.WorkerConfig$$EnhancerBySpringCGLIB$$51b64891] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:05:02.309 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:05:02.322 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'kubernetes.manifests-io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:05:02.331 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration' of type [io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:05:02.344 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultApiClient' of type [io.kubernetes.client.openapi.ApiClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:05:02.429 INFO  [Worker-Server] o.a.d.p.r.z.ZookeeperRegistryAutoConfiguration:[37] - Load ZookeeperRegistryAutoConfiguration
+[WI-0][TI-0] - 2025-11-06 11:05:02.447 INFO  [Worker-Server] o.a.d.p.r.z.ZookeeperRegistryProperties:[96] - 
+****************************ZookeeperRegistryProperties**************************************
+  namespace -> dolphinscheduler
+  connectString -> zookeeper:2181
+  retryPolicy -> ZookeeperRegistryProperties.ZookeeperProperties.RetryPolicy(baseSleepTime=PT0.1S, maxRetries=3, maxSleep=PT1S)
+  digest -> 
+  sessionTimeout -> PT1M
+  connectionTimeout -> PT30S
+  blockUntilConnected -> PT30S
+****************************ZookeeperRegistryProperties**************************************
+[WI-0][TI-0] - 2025-11-06 11:05:02.579 INFO  [Worker-Server] o.a.d.p.r.z.ZookeeperRegistry:[113] - ZookeeperRegistry started at: 55/ms
+[WI-0][TI-0] - 2025-11-06 11:05:02.978 INFO  [Worker-Server] c.z.h.HikariDataSource:[110] - HikariPool-1 - Starting...
+[WI-0][TI-0] - 2025-11-06 11:05:03.188 INFO  [Worker-Server] c.z.h.HikariDataSource:[123] - HikariPool-1 - Start completed.
+[WI-0][TI-0] - 2025-11-06 11:05:03.514 INFO  [Worker-Server] o.a.d.e.b.s.NettyRemotingServer:[111] - WorkerRpcServer bind success at port: 1234
+[WI-0][TI-0] - 2025-11-06 11:05:03.525 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SUB_WORKFLOW
+[WI-0][TI-0] - 2025-11-06 11:05:03.527 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DEPENDENT
+[WI-0][TI-0] - 2025-11-06 11:05:03.529 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: CONDITIONS
+[WI-0][TI-0] - 2025-11-06 11:05:03.531 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SWITCH
+[WI-0][TI-0] - 2025-11-06 11:05:03.532 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: LogicFakeTask
+[WI-0][TI-0] - 2025-11-06 11:05:03.533 WARN  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[44] - The task plugin has already been loaded
+[WI-0][TI-0] - 2025-11-06 11:05:03.538 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorProvider:[41] - Initialize DataSourceProcessorProvider
+[WI-0][TI-0] - 2025-11-06 11:05:03.592 INFO  [Worker-Server] o.a.d.c.c.SystemConstants:[30] - init timezone: sun.util.calendar.ZoneInfo[id="Asia/Shanghai",offset=28800000,dstSavings=0,useDaylight=false,transitions=31,lastRule=null]
+[WI-0][TI-0] - 2025-11-06 11:05:03.642 INFO  [Worker-Server] o.a.d.s.w.r.WorkerRegistryClient:[94] - Worker node: 172.28.0.6:1234 registry to registry center /nodes/worker/172.28.0.6:1234 successfully
+[WI-0][TI-0] - 2025-11-06 11:05:03.648 INFO  [Worker-Server] o.a.d.c.m.BaseHeartBeatTask:[47] - Starting WorkerHeartBeatTask...
+[WI-0][TI-0] - 2025-11-06 11:05:03.649 INFO  [Worker-Server] o.a.d.c.m.BaseHeartBeatTask:[49] - Started WorkerHeartBeatTask, heartBeatInterval: 10000...
+[WI-0][TI-0] - 2025-11-06 11:05:03.651 INFO  [Worker-Server] o.a.d.s.w.r.WorkerRegistryClient:[102] - Worker node: 172.28.0.6:1234 registry finished
+[WI-0][TI-0] - 2025-11-06 11:05:03.654 INFO  [Worker-Server] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[95] - PhysicalTaskExecutorEventBusCoordinator started, worker size: 12
+[WI-0][TI-0] - 2025-11-06 11:05:03.654 INFO  [Worker-Server] o.a.d.t.e.TaskEngine:[53] - PhysicalTaskEngine started
+[WI-0][TI-0] - 2025-11-06 11:05:03.655 INFO  [Worker-Server] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[81] - PhysicalTaskExecutorLifecycleEventReporter started
+[WI-0][TI-0] - 2025-11-06 11:05:03.656 INFO  [Worker-Server] o.a.d.s.w.e.PhysicalTaskEngineDelegator:[57] - PhysicalTaskEngineDelegator started
+[WI-0][TI-0] - 2025-11-06 11:05:05.275 INFO  [Worker-Server] o.a.d.s.w.WorkerServer:[61] - Started WorkerServer in 6.088 seconds (JVM running for 6.999)
+[WI-0][TI-0] - 2025-11-06 11:05:05.281 INFO  [Thread-6] o.a.d.c.l.ServerLifeCycleManager:[88] - The current server status changed from RUNNING to STOPPED
+[WI-0][TI-0] - 2025-11-06 11:05:05.291 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.TaskEngine:[87] - PhysicalTaskEngine closed
+[WI-0][TI-0] - 2025-11-06 11:05:05.293 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[107] - PhysicalTaskExecutorEventBusCoordinator closed
+[WI-0][TI-0] - 2025-11-06 11:05:05.294 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[107] - PhysicalTaskExecutorEventBusCoordinator closed
+[WI-0][TI-0] - 2025-11-06 11:05:05.294 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[174] - PhysicalTaskExecutorLifecycleEventReporter closed
+[WI-0][TI-0] - 2025-11-06 11:05:05.295 WARN  [SpringApplicationShutdownHook] o.a.d.c.m.BaseHeartBeatTask:[78] - WorkerHeartBeatTask finished...
+[WI-0][TI-0] - 2025-11-06 11:05:05.414 INFO  [SpringApplicationShutdownHook] o.a.d.s.w.r.WorkerRegistryClient:[124] - Closed WorkerRegistryClient
+[WI-0][TI-0] - 2025-11-06 11:05:05.416 INFO  [SpringApplicationShutdownHook] c.z.h.HikariDataSource:[350] - HikariPool-1 - Shutdown initiated...
+[WI-0][TI-0] - 2025-11-06 11:05:05.438 INFO  [SpringApplicationShutdownHook] c.z.h.HikariDataSource:[352] - HikariPool-1 - Shutdown completed.
+[WI-0][TI-0] - 2025-11-06 11:05:05.440 INFO  [SpringApplicationShutdownHook] o.a.d.e.b.s.NettyRemotingServer:[149] - WorkerRpcServer closing
+[WI-0][TI-0] - 2025-11-06 11:05:05.442 INFO  [SpringApplicationShutdownHook] o.a.d.e.b.s.NettyRemotingServer:[153] - WorkerRpcServer stop bind at port: 1234
+[WI-0][TI-0] - 2025-11-06 11:05:05.452 INFO  [SpringApplicationShutdownHook] o.a.d.e.b.s.NettyRemotingServer:[167] - WorkerRpcServer closed
+[WI-0][TI-0] - 2025-11-06 11:08:43.714 WARN  [Worker-Server] o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[WI-0][TI-0] - 2025-11-06 11:08:44.098 WARN  [Worker-Server] o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[WI-0][TI-0] - 2025-11-06 11:08:44.099 INFO  [Worker-Server] o.a.d.s.w.WorkerServer:[640] - The following 1 profile is active: "mysql"
+[WI-0][TI-0] - 2025-11-06 11:08:44.943 WARN  [Worker-Server] o.m.s.m.ClassPathMapperScanner:[44] - No MyBatis mapper was found in '[org.apache.dolphinscheduler.server.worker]' package. Please check your configuration.
+[WI-0][TI-0] - 2025-11-06 11:08:44.997 INFO  [Worker-Server] o.s.c.c.s.GenericScope:[283] - BeanFactory id=f001ad87-3a6a-3f67-ad4a-5009cf2fa20b
+[WI-0][TI-0] - 2025-11-06 11:08:45.318 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:08:45.322 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:08:45.325 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$415/1573349881] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:08:45.331 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:08:45.343 INFO  [Worker-Server] o.a.d.c.u.NetUtils:[312] - Get all NetworkInterfaces: [name:eth0 (eth0), name:lo (lo)]
+[WI-0][TI-0] - 2025-11-06 11:08:45.380 INFO  [Worker-Server] o.a.d.s.w.c.WorkerConfig:[97] - 
+****************************Worker Configuration**************************************
+  listen-port -> 1234
+  max-heartbeat-interval -> PT10S
+  host-weight -> 100
+  tenantConfig -> TenantConfig(autoCreateTenantEnabled=true, defaultTenantEnabled=false)
+  server-load-protection -> WorkerServerLoadProtectionConfig()
+  address -> 172.28.0.6:1234
+  registry-path: /nodes/worker/172.28.0.6:1234
+  physical-task-config -> PhysicalTaskConfig(taskExecutorThreadSize=25)
+  group -> default
+****************************Worker Configuration**************************************
+[WI-0][TI-0] - 2025-11-06 11:08:45.381 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'workerConfig' of type [org.apache.dolphinscheduler.server.worker.config.WorkerConfig$$EnhancerBySpringCGLIB$$19bcc2ee] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:08:45.449 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:08:45.460 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'kubernetes.manifests-io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:08:45.470 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration' of type [io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:08:45.480 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultApiClient' of type [io.kubernetes.client.openapi.ApiClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:08:45.555 INFO  [Worker-Server] o.a.d.p.r.z.ZookeeperRegistryAutoConfiguration:[37] - Load ZookeeperRegistryAutoConfiguration
+[WI-0][TI-0] - 2025-11-06 11:08:45.572 INFO  [Worker-Server] o.a.d.p.r.z.ZookeeperRegistryProperties:[96] - 
+****************************ZookeeperRegistryProperties**************************************
+  namespace -> dolphinscheduler
+  connectString -> zookeeper:2181
+  retryPolicy -> ZookeeperRegistryProperties.ZookeeperProperties.RetryPolicy(baseSleepTime=PT0.1S, maxRetries=3, maxSleep=PT1S)
+  digest -> 
+  sessionTimeout -> PT1M
+  connectionTimeout -> PT30S
+  blockUntilConnected -> PT30S
+****************************ZookeeperRegistryProperties**************************************
+[WI-0][TI-0] - 2025-11-06 11:08:45.674 INFO  [Worker-Server] o.a.d.p.r.z.ZookeeperRegistry:[113] - ZookeeperRegistry started at: 41/ms
+[WI-0][TI-0] - 2025-11-06 11:08:46.000 INFO  [Worker-Server] c.z.h.HikariDataSource:[110] - HikariPool-1 - Starting...
+[WI-0][TI-0] - 2025-11-06 11:08:46.164 INFO  [Worker-Server] c.z.h.HikariDataSource:[123] - HikariPool-1 - Start completed.
+[WI-0][TI-0] - 2025-11-06 11:08:46.437 INFO  [Worker-Server] o.a.d.e.b.s.NettyRemotingServer:[111] - WorkerRpcServer bind success at port: 1234
+[WI-0][TI-0] - 2025-11-06 11:08:46.444 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SUB_WORKFLOW
+[WI-0][TI-0] - 2025-11-06 11:08:46.447 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DEPENDENT
+[WI-0][TI-0] - 2025-11-06 11:08:46.448 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: CONDITIONS
+[WI-0][TI-0] - 2025-11-06 11:08:46.450 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SWITCH
+[WI-0][TI-0] - 2025-11-06 11:08:46.451 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: LogicFakeTask
+[WI-0][TI-0] - 2025-11-06 11:08:46.452 WARN  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[44] - The task plugin has already been loaded
+[WI-0][TI-0] - 2025-11-06 11:08:46.454 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorProvider:[41] - Initialize DataSourceProcessorProvider
+[WI-0][TI-0] - 2025-11-06 11:08:46.496 INFO  [Worker-Server] o.a.d.c.c.SystemConstants:[30] - init timezone: sun.util.calendar.ZoneInfo[id="Asia/Shanghai",offset=28800000,dstSavings=0,useDaylight=false,transitions=31,lastRule=null]
+[WI-0][TI-0] - 2025-11-06 11:08:46.542 INFO  [Worker-Server] o.a.d.s.w.r.WorkerRegistryClient:[94] - Worker node: 172.28.0.6:1234 registry to registry center /nodes/worker/172.28.0.6:1234 successfully
+[WI-0][TI-0] - 2025-11-06 11:08:46.549 INFO  [Worker-Server] o.a.d.c.m.BaseHeartBeatTask:[47] - Starting WorkerHeartBeatTask...
+[WI-0][TI-0] - 2025-11-06 11:08:46.550 INFO  [Worker-Server] o.a.d.c.m.BaseHeartBeatTask:[49] - Started WorkerHeartBeatTask, heartBeatInterval: 10000...
+[WI-0][TI-0] - 2025-11-06 11:08:46.551 INFO  [Worker-Server] o.a.d.s.w.r.WorkerRegistryClient:[102] - Worker node: 172.28.0.6:1234 registry finished
+[WI-0][TI-0] - 2025-11-06 11:08:46.554 INFO  [Worker-Server] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[95] - PhysicalTaskExecutorEventBusCoordinator started, worker size: 12
+[WI-0][TI-0] - 2025-11-06 11:08:46.555 INFO  [Worker-Server] o.a.d.t.e.TaskEngine:[53] - PhysicalTaskEngine started
+[WI-0][TI-0] - 2025-11-06 11:08:46.555 INFO  [Worker-Server] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[81] - PhysicalTaskExecutorLifecycleEventReporter started
+[WI-0][TI-0] - 2025-11-06 11:08:46.556 INFO  [Worker-Server] o.a.d.s.w.e.PhysicalTaskEngineDelegator:[57] - PhysicalTaskEngineDelegator started
+[WI-0][TI-0] - 2025-11-06 11:08:48.214 INFO  [Worker-Server] o.a.d.s.w.WorkerServer:[61] - Started WorkerServer in 5.568 seconds (JVM running for 6.28)
+[WI-0][TI-0] - 2025-11-06 11:08:48.221 INFO  [Thread-6] o.a.d.c.l.ServerLifeCycleManager:[88] - The current server status changed from RUNNING to STOPPED
+[WI-0][TI-0] - 2025-11-06 11:08:48.230 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.TaskEngine:[87] - PhysicalTaskEngine closed
+[WI-0][TI-0] - 2025-11-06 11:08:48.231 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[107] - PhysicalTaskExecutorEventBusCoordinator closed
+[WI-0][TI-0] - 2025-11-06 11:08:48.233 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[107] - PhysicalTaskExecutorEventBusCoordinator closed
+[WI-0][TI-0] - 2025-11-06 11:08:48.234 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[174] - PhysicalTaskExecutorLifecycleEventReporter closed
+[WI-0][TI-0] - 2025-11-06 11:08:48.234 WARN  [SpringApplicationShutdownHook] o.a.d.c.m.BaseHeartBeatTask:[78] - WorkerHeartBeatTask finished...
+[WI-0][TI-0] - 2025-11-06 11:08:48.358 INFO  [SpringApplicationShutdownHook] o.a.d.s.w.r.WorkerRegistryClient:[124] - Closed WorkerRegistryClient
+[WI-0][TI-0] - 2025-11-06 11:08:48.359 INFO  [SpringApplicationShutdownHook] c.z.h.HikariDataSource:[350] - HikariPool-1 - Shutdown initiated...
+[WI-0][TI-0] - 2025-11-06 11:08:48.376 INFO  [SpringApplicationShutdownHook] c.z.h.HikariDataSource:[352] - HikariPool-1 - Shutdown completed.
+[WI-0][TI-0] - 2025-11-06 11:08:48.380 INFO  [SpringApplicationShutdownHook] o.a.d.e.b.s.NettyRemotingServer:[149] - WorkerRpcServer closing
+[WI-0][TI-0] - 2025-11-06 11:08:48.382 INFO  [SpringApplicationShutdownHook] o.a.d.e.b.s.NettyRemotingServer:[153] - WorkerRpcServer stop bind at port: 1234
+[WI-0][TI-0] - 2025-11-06 11:08:48.392 INFO  [SpringApplicationShutdownHook] o.a.d.e.b.s.NettyRemotingServer:[167] - WorkerRpcServer closed
+[WI-0][TI-0] - 2025-11-06 11:09:40.093 WARN  [Worker-Server] o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[WI-0][TI-0] - 2025-11-06 11:09:40.505 WARN  [Worker-Server] o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[WI-0][TI-0] - 2025-11-06 11:09:40.506 INFO  [Worker-Server] o.a.d.s.w.WorkerServer:[640] - The following 1 profile is active: "mysql"
+[WI-0][TI-0] - 2025-11-06 11:09:41.389 WARN  [Worker-Server] o.m.s.m.ClassPathMapperScanner:[44] - No MyBatis mapper was found in '[org.apache.dolphinscheduler.server.worker]' package. Please check your configuration.
+[WI-0][TI-0] - 2025-11-06 11:09:41.446 INFO  [Worker-Server] o.s.c.c.s.GenericScope:[283] - BeanFactory id=f001ad87-3a6a-3f67-ad4a-5009cf2fa20b
+[WI-0][TI-0] - 2025-11-06 11:09:41.745 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:09:41.749 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:09:41.756 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$415/1070523353] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:09:41.763 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:09:41.781 INFO  [Worker-Server] o.a.d.c.u.NetUtils:[312] - Get all NetworkInterfaces: [name:eth0 (eth0), name:lo (lo)]
+[WI-0][TI-0] - 2025-11-06 11:09:41.814 INFO  [Worker-Server] o.a.d.s.w.c.WorkerConfig:[97] - 
+****************************Worker Configuration**************************************
+  listen-port -> 1234
+  max-heartbeat-interval -> PT10S
+  host-weight -> 100
+  tenantConfig -> TenantConfig(autoCreateTenantEnabled=true, defaultTenantEnabled=false)
+  server-load-protection -> WorkerServerLoadProtectionConfig()
+  address -> 172.28.0.6:1234
+  registry-path: /nodes/worker/172.28.0.6:1234
+  physical-task-config -> PhysicalTaskConfig(taskExecutorThreadSize=25)
+  group -> default
+****************************Worker Configuration**************************************
+[WI-0][TI-0] - 2025-11-06 11:09:41.815 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'workerConfig' of type [org.apache.dolphinscheduler.server.worker.config.WorkerConfig$$EnhancerBySpringCGLIB$$51b64891] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:09:41.887 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:09:41.899 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'kubernetes.manifests-io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:09:41.906 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration' of type [io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:09:41.916 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultApiClient' of type [io.kubernetes.client.openapi.ApiClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:09:41.991 INFO  [Worker-Server] o.a.d.p.r.z.ZookeeperRegistryAutoConfiguration:[37] - Load ZookeeperRegistryAutoConfiguration
+[WI-0][TI-0] - 2025-11-06 11:09:42.009 INFO  [Worker-Server] o.a.d.p.r.z.ZookeeperRegistryProperties:[96] - 
+****************************ZookeeperRegistryProperties**************************************
+  namespace -> dolphinscheduler
+  connectString -> zookeeper:2181
+  retryPolicy -> ZookeeperRegistryProperties.ZookeeperProperties.RetryPolicy(baseSleepTime=PT0.1S, maxRetries=3, maxSleep=PT1S)
+  digest -> 
+  sessionTimeout -> PT1M
+  connectionTimeout -> PT30S
+  blockUntilConnected -> PT30S
+****************************ZookeeperRegistryProperties**************************************
+[WI-0][TI-0] - 2025-11-06 11:09:42.166 INFO  [Worker-Server] o.a.d.p.r.z.ZookeeperRegistry:[113] - ZookeeperRegistry started at: 56/ms
+[WI-0][TI-0] - 2025-11-06 11:09:42.498 INFO  [Worker-Server] c.z.h.HikariDataSource:[110] - HikariPool-1 - Starting...
+[WI-0][TI-0] - 2025-11-06 11:09:42.675 INFO  [Worker-Server] c.z.h.HikariDataSource:[123] - HikariPool-1 - Start completed.
+[WI-0][TI-0] - 2025-11-06 11:09:42.959 INFO  [Worker-Server] o.a.d.e.b.s.NettyRemotingServer:[111] - WorkerRpcServer bind success at port: 1234
+[WI-0][TI-0] - 2025-11-06 11:09:42.966 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SUB_WORKFLOW
+[WI-0][TI-0] - 2025-11-06 11:09:42.968 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DEPENDENT
+[WI-0][TI-0] - 2025-11-06 11:09:42.970 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: CONDITIONS
+[WI-0][TI-0] - 2025-11-06 11:09:42.971 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SWITCH
+[WI-0][TI-0] - 2025-11-06 11:09:42.972 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: LogicFakeTask
+[WI-0][TI-0] - 2025-11-06 11:09:42.973 WARN  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[44] - The task plugin has already been loaded
+[WI-0][TI-0] - 2025-11-06 11:09:42.975 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorProvider:[41] - Initialize DataSourceProcessorProvider
+[WI-0][TI-0] - 2025-11-06 11:09:43.014 INFO  [Worker-Server] o.a.d.c.c.SystemConstants:[30] - init timezone: sun.util.calendar.ZoneInfo[id="Asia/Shanghai",offset=28800000,dstSavings=0,useDaylight=false,transitions=31,lastRule=null]
+[WI-0][TI-0] - 2025-11-06 11:09:43.062 INFO  [Worker-Server] o.a.d.s.w.r.WorkerRegistryClient:[94] - Worker node: 172.28.0.6:1234 registry to registry center /nodes/worker/172.28.0.6:1234 successfully
+[WI-0][TI-0] - 2025-11-06 11:09:43.069 INFO  [Worker-Server] o.a.d.c.m.BaseHeartBeatTask:[47] - Starting WorkerHeartBeatTask...
+[WI-0][TI-0] - 2025-11-06 11:09:43.070 INFO  [Worker-Server] o.a.d.c.m.BaseHeartBeatTask:[49] - Started WorkerHeartBeatTask, heartBeatInterval: 10000...
+[WI-0][TI-0] - 2025-11-06 11:09:43.072 INFO  [Worker-Server] o.a.d.s.w.r.WorkerRegistryClient:[102] - Worker node: 172.28.0.6:1234 registry finished
+[WI-0][TI-0] - 2025-11-06 11:09:43.075 INFO  [Worker-Server] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[95] - PhysicalTaskExecutorEventBusCoordinator started, worker size: 12
+[WI-0][TI-0] - 2025-11-06 11:09:43.076 INFO  [Worker-Server] o.a.d.t.e.TaskEngine:[53] - PhysicalTaskEngine started
+[WI-0][TI-0] - 2025-11-06 11:09:43.077 INFO  [Worker-Server] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[81] - PhysicalTaskExecutorLifecycleEventReporter started
+[WI-0][TI-0] - 2025-11-06 11:09:43.077 INFO  [Worker-Server] o.a.d.s.w.e.PhysicalTaskEngineDelegator:[57] - PhysicalTaskEngineDelegator started
+[WI-0][TI-0] - 2025-11-06 11:09:44.754 INFO  [Worker-Server] o.a.d.s.w.WorkerServer:[61] - Started WorkerServer in 6.089 seconds (JVM running for 6.945)
+[WI-0][TI-0] - 2025-11-06 11:09:44.761 INFO  [Thread-6] o.a.d.c.l.ServerLifeCycleManager:[88] - The current server status changed from RUNNING to STOPPED
+[WI-0][TI-0] - 2025-11-06 11:09:44.770 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.TaskEngine:[87] - PhysicalTaskEngine closed
+[WI-0][TI-0] - 2025-11-06 11:09:44.771 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[107] - PhysicalTaskExecutorEventBusCoordinator closed
+[WI-0][TI-0] - 2025-11-06 11:09:44.773 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[107] - PhysicalTaskExecutorEventBusCoordinator closed
+[WI-0][TI-0] - 2025-11-06 11:09:44.774 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[174] - PhysicalTaskExecutorLifecycleEventReporter closed
+[WI-0][TI-0] - 2025-11-06 11:09:44.774 WARN  [SpringApplicationShutdownHook] o.a.d.c.m.BaseHeartBeatTask:[78] - WorkerHeartBeatTask finished...
+[WI-0][TI-0] - 2025-11-06 11:09:44.798 WARN  [Worker-Server-SendThread(zookeeper:2181)] o.a.z.ClientCnxn:[1286] - An exception was thrown while closing send thread for session 0x10003f51ea10003.
+org.apache.zookeeper.ClientCnxn$EndOfStreamException: Unable to read additional data from server sessionid 0x10003f51ea10003, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1282)
+[WI-0][TI-0] - 2025-11-06 11:09:44.901 INFO  [SpringApplicationShutdownHook] o.a.d.s.w.r.WorkerRegistryClient:[124] - Closed WorkerRegistryClient
+[WI-0][TI-0] - 2025-11-06 11:09:44.902 INFO  [SpringApplicationShutdownHook] c.z.h.HikariDataSource:[350] - HikariPool-1 - Shutdown initiated...
+[WI-0][TI-0] - 2025-11-06 11:09:44.918 INFO  [SpringApplicationShutdownHook] c.z.h.HikariDataSource:[352] - HikariPool-1 - Shutdown completed.
+[WI-0][TI-0] - 2025-11-06 11:09:44.920 INFO  [SpringApplicationShutdownHook] o.a.d.e.b.s.NettyRemotingServer:[149] - WorkerRpcServer closing
+[WI-0][TI-0] - 2025-11-06 11:09:44.921 INFO  [SpringApplicationShutdownHook] o.a.d.e.b.s.NettyRemotingServer:[153] - WorkerRpcServer stop bind at port: 1234
+[WI-0][TI-0] - 2025-11-06 11:09:44.929 INFO  [SpringApplicationShutdownHook] o.a.d.e.b.s.NettyRemotingServer:[167] - WorkerRpcServer closed
+[WI-0][TI-0] - 2025-11-06 11:10:35.568 WARN  [Worker-Server] o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[WI-0][TI-0] - 2025-11-06 11:10:36.076 WARN  [Worker-Server] o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[WI-0][TI-0] - 2025-11-06 11:10:36.077 INFO  [Worker-Server] o.a.d.s.w.WorkerServer:[640] - The following 1 profile is active: "mysql"
+[WI-0][TI-0] - 2025-11-06 11:10:37.042 WARN  [Worker-Server] o.m.s.m.ClassPathMapperScanner:[44] - No MyBatis mapper was found in '[org.apache.dolphinscheduler.server.worker]' package. Please check your configuration.
+[WI-0][TI-0] - 2025-11-06 11:10:37.101 INFO  [Worker-Server] o.s.c.c.s.GenericScope:[283] - BeanFactory id=f001ad87-3a6a-3f67-ad4a-5009cf2fa20b
+[WI-0][TI-0] - 2025-11-06 11:10:37.445 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:10:37.449 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:10:37.453 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$415/1573349881] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:10:37.460 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:10:37.479 INFO  [Worker-Server] o.a.d.c.u.NetUtils:[312] - Get all NetworkInterfaces: [name:eth0 (eth0), name:lo (lo)]
+[WI-0][TI-0] - 2025-11-06 11:10:37.518 INFO  [Worker-Server] o.a.d.s.w.c.WorkerConfig:[97] - 
+****************************Worker Configuration**************************************
+  listen-port -> 1234
+  max-heartbeat-interval -> PT10S
+  host-weight -> 100
+  tenantConfig -> TenantConfig(autoCreateTenantEnabled=true, defaultTenantEnabled=false)
+  server-load-protection -> WorkerServerLoadProtectionConfig()
+  address -> 172.28.0.6:1234
+  registry-path: /nodes/worker/172.28.0.6:1234
+  physical-task-config -> PhysicalTaskConfig(taskExecutorThreadSize=25)
+  group -> default
+****************************Worker Configuration**************************************
+[WI-0][TI-0] - 2025-11-06 11:10:37.521 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'workerConfig' of type [org.apache.dolphinscheduler.server.worker.config.WorkerConfig$$EnhancerBySpringCGLIB$$19bcc2ee] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:10:37.589 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:10:37.601 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'kubernetes.manifests-io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:10:37.609 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration' of type [io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:10:37.620 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultApiClient' of type [io.kubernetes.client.openapi.ApiClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:10:37.709 INFO  [Worker-Server] o.a.d.p.r.z.ZookeeperRegistryAutoConfiguration:[37] - Load ZookeeperRegistryAutoConfiguration
+[WI-0][TI-0] - 2025-11-06 11:10:37.733 INFO  [Worker-Server] o.a.d.p.r.z.ZookeeperRegistryProperties:[96] - 
+****************************ZookeeperRegistryProperties**************************************
+  namespace -> dolphinscheduler
+  connectString -> zookeeper:2181
+  retryPolicy -> ZookeeperRegistryProperties.ZookeeperProperties.RetryPolicy(baseSleepTime=PT0.1S, maxRetries=3, maxSleep=PT1S)
+  digest -> 
+  sessionTimeout -> PT1M
+  connectionTimeout -> PT30S
+  blockUntilConnected -> PT30S
+****************************ZookeeperRegistryProperties**************************************
+[WI-0][TI-0] - 2025-11-06 11:10:37.896 INFO  [Worker-Server] o.a.d.p.r.z.ZookeeperRegistry:[113] - ZookeeperRegistry started at: 50/ms
+[WI-0][TI-0] - 2025-11-06 11:10:38.213 INFO  [Worker-Server] c.z.h.HikariDataSource:[110] - HikariPool-1 - Starting...
+[WI-0][TI-0] - 2025-11-06 11:10:38.453 INFO  [Worker-Server] c.z.h.HikariDataSource:[123] - HikariPool-1 - Start completed.
+[WI-0][TI-0] - 2025-11-06 11:10:38.747 INFO  [Worker-Server] o.a.d.e.b.s.NettyRemotingServer:[111] - WorkerRpcServer bind success at port: 1234
+[WI-0][TI-0] - 2025-11-06 11:10:38.755 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SUB_WORKFLOW
+[WI-0][TI-0] - 2025-11-06 11:10:38.758 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DEPENDENT
+[WI-0][TI-0] - 2025-11-06 11:10:38.759 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: CONDITIONS
+[WI-0][TI-0] - 2025-11-06 11:10:38.761 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SWITCH
+[WI-0][TI-0] - 2025-11-06 11:10:38.762 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: LogicFakeTask
+[WI-0][TI-0] - 2025-11-06 11:10:38.763 WARN  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[44] - The task plugin has already been loaded
+[WI-0][TI-0] - 2025-11-06 11:10:38.765 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorProvider:[41] - Initialize DataSourceProcessorProvider
+[WI-0][TI-0] - 2025-11-06 11:10:38.802 INFO  [Worker-Server] o.a.d.m.m.BaseServerLoadProtection:[38] - OverLoad: the system cpu usage: 1.0 is over then the maxSystemCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 11:10:38.810 INFO  [Worker-Server] o.a.d.c.c.SystemConstants:[30] - init timezone: sun.util.calendar.ZoneInfo[id="Asia/Shanghai",offset=28800000,dstSavings=0,useDaylight=false,transitions=31,lastRule=null]
+[WI-0][TI-0] - 2025-11-06 11:10:38.865 INFO  [Worker-Server] o.a.d.s.w.r.WorkerRegistryClient:[94] - Worker node: 172.28.0.6:1234 registry to registry center /nodes/worker/172.28.0.6:1234 successfully
+[WI-0][TI-0] - 2025-11-06 11:10:38.873 INFO  [Worker-Server] o.a.d.c.m.BaseHeartBeatTask:[47] - Starting WorkerHeartBeatTask...
+[WI-0][TI-0] - 2025-11-06 11:10:38.875 INFO  [Worker-Server] o.a.d.c.m.BaseHeartBeatTask:[49] - Started WorkerHeartBeatTask, heartBeatInterval: 10000...
+[WI-0][TI-0] - 2025-11-06 11:10:38.875 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[38] - OverLoad: the system cpu usage: 1.0 is over then the maxSystemCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 11:10:38.876 INFO  [Worker-Server] o.a.d.s.w.r.WorkerRegistryClient:[102] - Worker node: 172.28.0.6:1234 registry finished
+[WI-0][TI-0] - 2025-11-06 11:10:38.878 INFO  [Worker-Server] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[95] - PhysicalTaskExecutorEventBusCoordinator started, worker size: 12
+[WI-0][TI-0] - 2025-11-06 11:10:38.879 INFO  [Worker-Server] o.a.d.t.e.TaskEngine:[53] - PhysicalTaskEngine started
+[WI-0][TI-0] - 2025-11-06 11:10:38.880 INFO  [Worker-Server] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[81] - PhysicalTaskExecutorLifecycleEventReporter started
+[WI-0][TI-0] - 2025-11-06 11:10:38.880 INFO  [Worker-Server] o.a.d.s.w.e.PhysicalTaskEngineDelegator:[57] - PhysicalTaskEngineDelegator started
+[WI-0][TI-0] - 2025-11-06 11:10:40.659 INFO  [Worker-Server] o.a.d.s.w.WorkerServer:[61] - Started WorkerServer in 6.349 seconds (JVM running for 6.901)
+[WI-0][TI-0] - 2025-11-06 11:10:40.666 INFO  [Thread-6] o.a.d.c.l.ServerLifeCycleManager:[88] - The current server status changed from RUNNING to STOPPED
+[WI-0][TI-0] - 2025-11-06 11:10:40.674 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.TaskEngine:[87] - PhysicalTaskEngine closed
+[WI-0][TI-0] - 2025-11-06 11:10:40.675 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[107] - PhysicalTaskExecutorEventBusCoordinator closed
+[WI-0][TI-0] - 2025-11-06 11:10:40.676 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[107] - PhysicalTaskExecutorEventBusCoordinator closed
+[WI-0][TI-0] - 2025-11-06 11:10:40.678 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[174] - PhysicalTaskExecutorLifecycleEventReporter closed
+[WI-0][TI-0] - 2025-11-06 11:10:40.679 WARN  [SpringApplicationShutdownHook] o.a.d.c.m.BaseHeartBeatTask:[78] - WorkerHeartBeatTask finished...
+[WI-0][TI-0] - 2025-11-06 11:10:40.702 WARN  [Worker-Server-SendThread(zookeeper:2181)] o.a.z.ClientCnxn:[1286] - An exception was thrown while closing send thread for session 0x10003f51ea10005.
+org.apache.zookeeper.ClientCnxn$EndOfStreamException: Unable to read additional data from server sessionid 0x10003f51ea10005, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1282)
+[WI-0][TI-0] - 2025-11-06 11:10:40.805 INFO  [SpringApplicationShutdownHook] o.a.d.s.w.r.WorkerRegistryClient:[124] - Closed WorkerRegistryClient
+[WI-0][TI-0] - 2025-11-06 11:10:40.809 INFO  [SpringApplicationShutdownHook] c.z.h.HikariDataSource:[350] - HikariPool-1 - Shutdown initiated...
+[WI-0][TI-0] - 2025-11-06 11:10:40.832 INFO  [SpringApplicationShutdownHook] c.z.h.HikariDataSource:[352] - HikariPool-1 - Shutdown completed.
+[WI-0][TI-0] - 2025-11-06 11:10:40.835 INFO  [SpringApplicationShutdownHook] o.a.d.e.b.s.NettyRemotingServer:[149] - WorkerRpcServer closing
+[WI-0][TI-0] - 2025-11-06 11:10:40.837 INFO  [SpringApplicationShutdownHook] o.a.d.e.b.s.NettyRemotingServer:[153] - WorkerRpcServer stop bind at port: 1234
+[WI-0][TI-0] - 2025-11-06 11:10:40.850 INFO  [SpringApplicationShutdownHook] o.a.d.e.b.s.NettyRemotingServer:[167] - WorkerRpcServer closed
+[WI-0][TI-0] - 2025-11-06 11:11:31.414 WARN  [Worker-Server] o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[WI-0][TI-0] - 2025-11-06 11:11:31.816 WARN  [Worker-Server] o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[WI-0][TI-0] - 2025-11-06 11:11:31.818 INFO  [Worker-Server] o.a.d.s.w.WorkerServer:[640] - The following 1 profile is active: "mysql"
+[WI-0][TI-0] - 2025-11-06 11:11:32.699 WARN  [Worker-Server] o.m.s.m.ClassPathMapperScanner:[44] - No MyBatis mapper was found in '[org.apache.dolphinscheduler.server.worker]' package. Please check your configuration.
+[WI-0][TI-0] - 2025-11-06 11:11:32.757 INFO  [Worker-Server] o.s.c.c.s.GenericScope:[283] - BeanFactory id=f001ad87-3a6a-3f67-ad4a-5009cf2fa20b
+[WI-0][TI-0] - 2025-11-06 11:11:33.049 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:11:33.052 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:11:33.055 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$415/1070523353] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:11:33.060 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:11:33.073 INFO  [Worker-Server] o.a.d.c.u.NetUtils:[312] - Get all NetworkInterfaces: [name:eth0 (eth0), name:lo (lo)]
+[WI-0][TI-0] - 2025-11-06 11:11:33.106 INFO  [Worker-Server] o.a.d.s.w.c.WorkerConfig:[97] - 
+****************************Worker Configuration**************************************
+  listen-port -> 1234
+  max-heartbeat-interval -> PT10S
+  host-weight -> 100
+  tenantConfig -> TenantConfig(autoCreateTenantEnabled=true, defaultTenantEnabled=false)
+  server-load-protection -> WorkerServerLoadProtectionConfig()
+  address -> 172.28.0.6:1234
+  registry-path: /nodes/worker/172.28.0.6:1234
+  physical-task-config -> PhysicalTaskConfig(taskExecutorThreadSize=25)
+  group -> default
+****************************Worker Configuration**************************************
+[WI-0][TI-0] - 2025-11-06 11:11:33.106 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'workerConfig' of type [org.apache.dolphinscheduler.server.worker.config.WorkerConfig$$EnhancerBySpringCGLIB$$51b64891] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:11:33.183 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:11:33.195 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'kubernetes.manifests-io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:11:33.204 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration' of type [io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:11:33.215 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultApiClient' of type [io.kubernetes.client.openapi.ApiClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:11:33.287 INFO  [Worker-Server] o.a.d.p.r.z.ZookeeperRegistryAutoConfiguration:[37] - Load ZookeeperRegistryAutoConfiguration
+[WI-0][TI-0] - 2025-11-06 11:11:33.303 INFO  [Worker-Server] o.a.d.p.r.z.ZookeeperRegistryProperties:[96] - 
+****************************ZookeeperRegistryProperties**************************************
+  namespace -> dolphinscheduler
+  connectString -> zookeeper:2181
+  retryPolicy -> ZookeeperRegistryProperties.ZookeeperProperties.RetryPolicy(baseSleepTime=PT0.1S, maxRetries=3, maxSleep=PT1S)
+  digest -> 
+  sessionTimeout -> PT1M
+  connectionTimeout -> PT30S
+  blockUntilConnected -> PT30S
+****************************ZookeeperRegistryProperties**************************************
+[WI-0][TI-0] - 2025-11-06 11:11:33.439 INFO  [Worker-Server] o.a.d.p.r.z.ZookeeperRegistry:[113] - ZookeeperRegistry started at: 51/ms
+[WI-0][TI-0] - 2025-11-06 11:11:33.776 INFO  [Worker-Server] c.z.h.HikariDataSource:[110] - HikariPool-1 - Starting...
+[WI-0][TI-0] - 2025-11-06 11:11:33.982 INFO  [Worker-Server] c.z.h.HikariDataSource:[123] - HikariPool-1 - Start completed.
+[WI-0][TI-0] - 2025-11-06 11:11:34.234 INFO  [Worker-Server] o.a.d.e.b.s.NettyRemotingServer:[111] - WorkerRpcServer bind success at port: 1234
+[WI-0][TI-0] - 2025-11-06 11:11:34.248 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SUB_WORKFLOW
+[WI-0][TI-0] - 2025-11-06 11:11:34.251 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DEPENDENT
+[WI-0][TI-0] - 2025-11-06 11:11:34.252 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: CONDITIONS
+[WI-0][TI-0] - 2025-11-06 11:11:34.255 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SWITCH
+[WI-0][TI-0] - 2025-11-06 11:11:34.256 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: LogicFakeTask
+[WI-0][TI-0] - 2025-11-06 11:11:34.257 WARN  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[44] - The task plugin has already been loaded
+[WI-0][TI-0] - 2025-11-06 11:11:34.261 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorProvider:[41] - Initialize DataSourceProcessorProvider
+[WI-0][TI-0] - 2025-11-06 11:11:34.313 INFO  [Worker-Server] o.a.d.c.c.SystemConstants:[30] - init timezone: sun.util.calendar.ZoneInfo[id="Asia/Shanghai",offset=28800000,dstSavings=0,useDaylight=false,transitions=31,lastRule=null]
+[WI-0][TI-0] - 2025-11-06 11:11:34.362 INFO  [Worker-Server] o.a.d.s.w.r.WorkerRegistryClient:[94] - Worker node: 172.28.0.6:1234 registry to registry center /nodes/worker/172.28.0.6:1234 successfully
+[WI-0][TI-0] - 2025-11-06 11:11:34.368 INFO  [Worker-Server] o.a.d.c.m.BaseHeartBeatTask:[47] - Starting WorkerHeartBeatTask...
+[WI-0][TI-0] - 2025-11-06 11:11:34.370 INFO  [Worker-Server] o.a.d.c.m.BaseHeartBeatTask:[49] - Started WorkerHeartBeatTask, heartBeatInterval: 10000...
+[WI-0][TI-0] - 2025-11-06 11:11:34.372 INFO  [Worker-Server] o.a.d.s.w.r.WorkerRegistryClient:[102] - Worker node: 172.28.0.6:1234 registry finished
+[WI-0][TI-0] - 2025-11-06 11:11:34.375 INFO  [Worker-Server] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[95] - PhysicalTaskExecutorEventBusCoordinator started, worker size: 12
+[WI-0][TI-0] - 2025-11-06 11:11:34.375 INFO  [Worker-Server] o.a.d.t.e.TaskEngine:[53] - PhysicalTaskEngine started
+[WI-0][TI-0] - 2025-11-06 11:11:34.376 INFO  [Worker-Server] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[81] - PhysicalTaskExecutorLifecycleEventReporter started
+[WI-0][TI-0] - 2025-11-06 11:11:34.377 INFO  [Worker-Server] o.a.d.s.w.e.PhysicalTaskEngineDelegator:[57] - PhysicalTaskEngineDelegator started
+[WI-0][TI-0] - 2025-11-06 11:11:35.996 INFO  [Worker-Server] o.a.d.s.w.WorkerServer:[61] - Started WorkerServer in 5.635 seconds (JVM running for 6.205)
+[WI-0][TI-0] - 2025-11-06 11:11:36.002 INFO  [Thread-6] o.a.d.c.l.ServerLifeCycleManager:[88] - The current server status changed from RUNNING to STOPPED
+[WI-0][TI-0] - 2025-11-06 11:11:36.013 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.TaskEngine:[87] - PhysicalTaskEngine closed
+[WI-0][TI-0] - 2025-11-06 11:11:36.014 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[107] - PhysicalTaskExecutorEventBusCoordinator closed
+[WI-0][TI-0] - 2025-11-06 11:11:36.016 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[107] - PhysicalTaskExecutorEventBusCoordinator closed
+[WI-0][TI-0] - 2025-11-06 11:11:36.017 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[174] - PhysicalTaskExecutorLifecycleEventReporter closed
+[WI-0][TI-0] - 2025-11-06 11:11:36.017 WARN  [SpringApplicationShutdownHook] o.a.d.c.m.BaseHeartBeatTask:[78] - WorkerHeartBeatTask finished...
+[WI-0][TI-0] - 2025-11-06 11:11:36.032 WARN  [Worker-Server-SendThread(zookeeper:2181)] o.a.z.ClientCnxn:[1286] - An exception was thrown while closing send thread for session 0x10003f51ea10007.
+org.apache.zookeeper.ClientCnxn$EndOfStreamException: Unable to read additional data from server sessionid 0x10003f51ea10007, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1282)
+[WI-0][TI-0] - 2025-11-06 11:11:36.136 INFO  [SpringApplicationShutdownHook] o.a.d.s.w.r.WorkerRegistryClient:[124] - Closed WorkerRegistryClient
+[WI-0][TI-0] - 2025-11-06 11:11:36.139 INFO  [SpringApplicationShutdownHook] c.z.h.HikariDataSource:[350] - HikariPool-1 - Shutdown initiated...
+[WI-0][TI-0] - 2025-11-06 11:11:36.155 INFO  [SpringApplicationShutdownHook] c.z.h.HikariDataSource:[352] - HikariPool-1 - Shutdown completed.
+[WI-0][TI-0] - 2025-11-06 11:11:36.157 INFO  [SpringApplicationShutdownHook] o.a.d.e.b.s.NettyRemotingServer:[149] - WorkerRpcServer closing
+[WI-0][TI-0] - 2025-11-06 11:11:36.158 INFO  [SpringApplicationShutdownHook] o.a.d.e.b.s.NettyRemotingServer:[153] - WorkerRpcServer stop bind at port: 1234
+[WI-0][TI-0] - 2025-11-06 11:11:36.165 INFO  [SpringApplicationShutdownHook] o.a.d.e.b.s.NettyRemotingServer:[167] - WorkerRpcServer closed
+[WI-0][TI-0] - 2025-11-06 11:12:27.240 WARN  [Worker-Server] o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[WI-0][TI-0] - 2025-11-06 11:12:27.631 WARN  [Worker-Server] o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[WI-0][TI-0] - 2025-11-06 11:12:27.633 INFO  [Worker-Server] o.a.d.s.w.WorkerServer:[640] - The following 1 profile is active: "mysql"
+[WI-0][TI-0] - 2025-11-06 11:12:28.530 WARN  [Worker-Server] o.m.s.m.ClassPathMapperScanner:[44] - No MyBatis mapper was found in '[org.apache.dolphinscheduler.server.worker]' package. Please check your configuration.
+[WI-0][TI-0] - 2025-11-06 11:12:28.599 INFO  [Worker-Server] o.s.c.c.s.GenericScope:[283] - BeanFactory id=f001ad87-3a6a-3f67-ad4a-5009cf2fa20b
+[WI-0][TI-0] - 2025-11-06 11:12:28.979 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:12:28.985 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:12:28.988 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$415/1573349881] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:12:28.994 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:12:29.015 INFO  [Worker-Server] o.a.d.c.u.NetUtils:[312] - Get all NetworkInterfaces: [name:eth0 (eth0), name:lo (lo)]
+[WI-0][TI-0] - 2025-11-06 11:12:29.052 INFO  [Worker-Server] o.a.d.s.w.c.WorkerConfig:[97] - 
+****************************Worker Configuration**************************************
+  listen-port -> 1234
+  max-heartbeat-interval -> PT10S
+  host-weight -> 100
+  tenantConfig -> TenantConfig(autoCreateTenantEnabled=true, defaultTenantEnabled=false)
+  server-load-protection -> WorkerServerLoadProtectionConfig()
+  address -> 172.28.0.6:1234
+  registry-path: /nodes/worker/172.28.0.6:1234
+  physical-task-config -> PhysicalTaskConfig(taskExecutorThreadSize=25)
+  group -> default
+****************************Worker Configuration**************************************
+[WI-0][TI-0] - 2025-11-06 11:12:29.052 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'workerConfig' of type [org.apache.dolphinscheduler.server.worker.config.WorkerConfig$$EnhancerBySpringCGLIB$$19bcc2ee] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:12:29.110 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:12:29.120 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'kubernetes.manifests-io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:12:29.130 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration' of type [io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:12:29.141 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultApiClient' of type [io.kubernetes.client.openapi.ApiClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:12:29.210 INFO  [Worker-Server] o.a.d.p.r.z.ZookeeperRegistryAutoConfiguration:[37] - Load ZookeeperRegistryAutoConfiguration
+[WI-0][TI-0] - 2025-11-06 11:12:29.226 INFO  [Worker-Server] o.a.d.p.r.z.ZookeeperRegistryProperties:[96] - 
+****************************ZookeeperRegistryProperties**************************************
+  namespace -> dolphinscheduler
+  connectString -> zookeeper:2181
+  retryPolicy -> ZookeeperRegistryProperties.ZookeeperProperties.RetryPolicy(baseSleepTime=PT0.1S, maxRetries=3, maxSleep=PT1S)
+  digest -> 
+  sessionTimeout -> PT1M
+  connectionTimeout -> PT30S
+  blockUntilConnected -> PT30S
+****************************ZookeeperRegistryProperties**************************************
+[WI-0][TI-0] - 2025-11-06 11:12:29.356 INFO  [Worker-Server] o.a.d.p.r.z.ZookeeperRegistry:[113] - ZookeeperRegistry started at: 46/ms
+[WI-0][TI-0] - 2025-11-06 11:12:29.692 INFO  [Worker-Server] c.z.h.HikariDataSource:[110] - HikariPool-1 - Starting...
+[WI-0][TI-0] - 2025-11-06 11:12:29.860 INFO  [Worker-Server] c.z.h.HikariDataSource:[123] - HikariPool-1 - Start completed.
+[WI-0][TI-0] - 2025-11-06 11:12:30.196 INFO  [Worker-Server] o.a.d.e.b.s.NettyRemotingServer:[111] - WorkerRpcServer bind success at port: 1234
+[WI-0][TI-0] - 2025-11-06 11:12:30.204 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SUB_WORKFLOW
+[WI-0][TI-0] - 2025-11-06 11:12:30.205 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DEPENDENT
+[WI-0][TI-0] - 2025-11-06 11:12:30.206 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: CONDITIONS
+[WI-0][TI-0] - 2025-11-06 11:12:30.208 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SWITCH
+[WI-0][TI-0] - 2025-11-06 11:12:30.209 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: LogicFakeTask
+[WI-0][TI-0] - 2025-11-06 11:12:30.209 WARN  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[44] - The task plugin has already been loaded
+[WI-0][TI-0] - 2025-11-06 11:12:30.212 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorProvider:[41] - Initialize DataSourceProcessorProvider
+[WI-0][TI-0] - 2025-11-06 11:12:30.252 INFO  [Worker-Server] o.a.d.m.m.BaseServerLoadProtection:[38] - OverLoad: the system cpu usage: 1.0 is over then the maxSystemCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 11:12:30.259 INFO  [Worker-Server] o.a.d.c.c.SystemConstants:[30] - init timezone: sun.util.calendar.ZoneInfo[id="Asia/Shanghai",offset=28800000,dstSavings=0,useDaylight=false,transitions=31,lastRule=null]
+[WI-0][TI-0] - 2025-11-06 11:12:30.316 INFO  [Worker-Server] o.a.d.s.w.r.WorkerRegistryClient:[94] - Worker node: 172.28.0.6:1234 registry to registry center /nodes/worker/172.28.0.6:1234 successfully
+[WI-0][TI-0] - 2025-11-06 11:12:30.324 INFO  [Worker-Server] o.a.d.c.m.BaseHeartBeatTask:[47] - Starting WorkerHeartBeatTask...
+[WI-0][TI-0] - 2025-11-06 11:12:30.327 INFO  [Worker-Server] o.a.d.c.m.BaseHeartBeatTask:[49] - Started WorkerHeartBeatTask, heartBeatInterval: 10000...
+[WI-0][TI-0] - 2025-11-06 11:12:30.327 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[38] - OverLoad: the system cpu usage: 1.0 is over then the maxSystemCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 11:12:30.327 INFO  [Worker-Server] o.a.d.s.w.r.WorkerRegistryClient:[102] - Worker node: 172.28.0.6:1234 registry finished
+[WI-0][TI-0] - 2025-11-06 11:12:30.331 INFO  [Worker-Server] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[95] - PhysicalTaskExecutorEventBusCoordinator started, worker size: 12
+[WI-0][TI-0] - 2025-11-06 11:12:30.332 INFO  [Worker-Server] o.a.d.t.e.TaskEngine:[53] - PhysicalTaskEngine started
+[WI-0][TI-0] - 2025-11-06 11:12:30.333 INFO  [Worker-Server] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[81] - PhysicalTaskExecutorLifecycleEventReporter started
+[WI-0][TI-0] - 2025-11-06 11:12:30.333 INFO  [Worker-Server] o.a.d.s.w.e.PhysicalTaskEngineDelegator:[57] - PhysicalTaskEngineDelegator started
+[WI-0][TI-0] - 2025-11-06 11:12:32.077 INFO  [Worker-Server] o.a.d.s.w.WorkerServer:[61] - Started WorkerServer in 5.886 seconds (JVM running for 6.384)
+[WI-0][TI-0] - 2025-11-06 11:12:32.083 INFO  [Thread-6] o.a.d.c.l.ServerLifeCycleManager:[88] - The current server status changed from RUNNING to STOPPED
+[WI-0][TI-0] - 2025-11-06 11:12:32.093 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.TaskEngine:[87] - PhysicalTaskEngine closed
+[WI-0][TI-0] - 2025-11-06 11:12:32.094 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[107] - PhysicalTaskExecutorEventBusCoordinator closed
+[WI-0][TI-0] - 2025-11-06 11:12:32.095 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[107] - PhysicalTaskExecutorEventBusCoordinator closed
+[WI-0][TI-0] - 2025-11-06 11:12:32.095 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[174] - PhysicalTaskExecutorLifecycleEventReporter closed
+[WI-0][TI-0] - 2025-11-06 11:12:32.096 WARN  [SpringApplicationShutdownHook] o.a.d.c.m.BaseHeartBeatTask:[78] - WorkerHeartBeatTask finished...
+[WI-0][TI-0] - 2025-11-06 11:12:32.114 WARN  [Worker-Server-SendThread(zookeeper:2181)] o.a.z.ClientCnxn:[1286] - An exception was thrown while closing send thread for session 0x10003f51ea10009.
+org.apache.zookeeper.ClientCnxn$EndOfStreamException: Unable to read additional data from server sessionid 0x10003f51ea10009, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1282)
+[WI-0][TI-0] - 2025-11-06 11:12:32.216 INFO  [SpringApplicationShutdownHook] o.a.d.s.w.r.WorkerRegistryClient:[124] - Closed WorkerRegistryClient
+[WI-0][TI-0] - 2025-11-06 11:12:32.219 INFO  [SpringApplicationShutdownHook] c.z.h.HikariDataSource:[350] - HikariPool-1 - Shutdown initiated...
+[WI-0][TI-0] - 2025-11-06 11:12:32.237 INFO  [SpringApplicationShutdownHook] c.z.h.HikariDataSource:[352] - HikariPool-1 - Shutdown completed.
+[WI-0][TI-0] - 2025-11-06 11:12:32.239 INFO  [SpringApplicationShutdownHook] o.a.d.e.b.s.NettyRemotingServer:[149] - WorkerRpcServer closing
+[WI-0][TI-0] - 2025-11-06 11:12:32.240 INFO  [SpringApplicationShutdownHook] o.a.d.e.b.s.NettyRemotingServer:[153] - WorkerRpcServer stop bind at port: 1234
+[WI-0][TI-0] - 2025-11-06 11:12:32.248 INFO  [SpringApplicationShutdownHook] o.a.d.e.b.s.NettyRemotingServer:[167] - WorkerRpcServer closed
+[WI-0][TI-0] - 2025-11-06 11:13:23.078 WARN  [Worker-Server] o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[WI-0][TI-0] - 2025-11-06 11:13:23.459 WARN  [Worker-Server] o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[WI-0][TI-0] - 2025-11-06 11:13:23.461 INFO  [Worker-Server] o.a.d.s.w.WorkerServer:[640] - The following 1 profile is active: "mysql"
+[WI-0][TI-0] - 2025-11-06 11:13:24.348 WARN  [Worker-Server] o.m.s.m.ClassPathMapperScanner:[44] - No MyBatis mapper was found in '[org.apache.dolphinscheduler.server.worker]' package. Please check your configuration.
+[WI-0][TI-0] - 2025-11-06 11:13:24.401 INFO  [Worker-Server] o.s.c.c.s.GenericScope:[283] - BeanFactory id=f001ad87-3a6a-3f67-ad4a-5009cf2fa20b
+[WI-0][TI-0] - 2025-11-06 11:13:24.724 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:13:24.727 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:13:24.730 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$415/1573349881] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:13:24.737 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:13:24.752 INFO  [Worker-Server] o.a.d.c.u.NetUtils:[312] - Get all NetworkInterfaces: [name:eth0 (eth0), name:lo (lo)]
+[WI-0][TI-0] - 2025-11-06 11:13:24.797 INFO  [Worker-Server] o.a.d.s.w.c.WorkerConfig:[97] - 
+****************************Worker Configuration**************************************
+  listen-port -> 1234
+  max-heartbeat-interval -> PT10S
+  host-weight -> 100
+  tenantConfig -> TenantConfig(autoCreateTenantEnabled=true, defaultTenantEnabled=false)
+  server-load-protection -> WorkerServerLoadProtectionConfig()
+  address -> 172.28.0.6:1234
+  registry-path: /nodes/worker/172.28.0.6:1234
+  physical-task-config -> PhysicalTaskConfig(taskExecutorThreadSize=25)
+  group -> default
+****************************Worker Configuration**************************************
+[WI-0][TI-0] - 2025-11-06 11:13:24.798 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'workerConfig' of type [org.apache.dolphinscheduler.server.worker.config.WorkerConfig$$EnhancerBySpringCGLIB$$19bcc2ee] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:13:24.860 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:13:24.873 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'kubernetes.manifests-io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:13:24.884 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration' of type [io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:13:24.894 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultApiClient' of type [io.kubernetes.client.openapi.ApiClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:13:24.967 INFO  [Worker-Server] o.a.d.p.r.z.ZookeeperRegistryAutoConfiguration:[37] - Load ZookeeperRegistryAutoConfiguration
+[WI-0][TI-0] - 2025-11-06 11:13:24.996 INFO  [Worker-Server] o.a.d.p.r.z.ZookeeperRegistryProperties:[96] - 
+****************************ZookeeperRegistryProperties**************************************
+  namespace -> dolphinscheduler
+  connectString -> zookeeper:2181
+  retryPolicy -> ZookeeperRegistryProperties.ZookeeperProperties.RetryPolicy(baseSleepTime=PT0.1S, maxRetries=3, maxSleep=PT1S)
+  digest -> 
+  sessionTimeout -> PT1M
+  connectionTimeout -> PT30S
+  blockUntilConnected -> PT30S
+****************************ZookeeperRegistryProperties**************************************
+[WI-0][TI-0] - 2025-11-06 11:13:25.116 INFO  [Worker-Server] o.a.d.p.r.z.ZookeeperRegistry:[113] - ZookeeperRegistry started at: 40/ms
+[WI-0][TI-0] - 2025-11-06 11:13:25.457 INFO  [Worker-Server] c.z.h.HikariDataSource:[110] - HikariPool-1 - Starting...
+[WI-0][TI-0] - 2025-11-06 11:13:25.671 INFO  [Worker-Server] c.z.h.HikariDataSource:[123] - HikariPool-1 - Start completed.
+[WI-0][TI-0] - 2025-11-06 11:13:25.968 INFO  [Worker-Server] o.a.d.e.b.s.NettyRemotingServer:[111] - WorkerRpcServer bind success at port: 1234
+[WI-0][TI-0] - 2025-11-06 11:13:25.978 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SUB_WORKFLOW
+[WI-0][TI-0] - 2025-11-06 11:13:25.981 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DEPENDENT
+[WI-0][TI-0] - 2025-11-06 11:13:25.982 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: CONDITIONS
+[WI-0][TI-0] - 2025-11-06 11:13:25.984 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SWITCH
+[WI-0][TI-0] - 2025-11-06 11:13:25.986 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: LogicFakeTask
+[WI-0][TI-0] - 2025-11-06 11:13:25.987 WARN  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[44] - The task plugin has already been loaded
+[WI-0][TI-0] - 2025-11-06 11:13:25.989 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorProvider:[41] - Initialize DataSourceProcessorProvider
+[WI-0][TI-0] - 2025-11-06 11:13:26.036 INFO  [Worker-Server] o.a.d.c.c.SystemConstants:[30] - init timezone: sun.util.calendar.ZoneInfo[id="Asia/Shanghai",offset=28800000,dstSavings=0,useDaylight=false,transitions=31,lastRule=null]
+[WI-0][TI-0] - 2025-11-06 11:13:26.087 INFO  [Worker-Server] o.a.d.s.w.r.WorkerRegistryClient:[94] - Worker node: 172.28.0.6:1234 registry to registry center /nodes/worker/172.28.0.6:1234 successfully
+[WI-0][TI-0] - 2025-11-06 11:13:26.092 INFO  [Worker-Server] o.a.d.c.m.BaseHeartBeatTask:[47] - Starting WorkerHeartBeatTask...
+[WI-0][TI-0] - 2025-11-06 11:13:26.094 INFO  [Worker-Server] o.a.d.c.m.BaseHeartBeatTask:[49] - Started WorkerHeartBeatTask, heartBeatInterval: 10000...
+[WI-0][TI-0] - 2025-11-06 11:13:26.095 INFO  [Worker-Server] o.a.d.s.w.r.WorkerRegistryClient:[102] - Worker node: 172.28.0.6:1234 registry finished
+[WI-0][TI-0] - 2025-11-06 11:13:26.098 INFO  [Worker-Server] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[95] - PhysicalTaskExecutorEventBusCoordinator started, worker size: 12
+[WI-0][TI-0] - 2025-11-06 11:13:26.099 INFO  [Worker-Server] o.a.d.t.e.TaskEngine:[53] - PhysicalTaskEngine started
+[WI-0][TI-0] - 2025-11-06 11:13:26.099 INFO  [Worker-Server] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[81] - PhysicalTaskExecutorLifecycleEventReporter started
+[WI-0][TI-0] - 2025-11-06 11:13:26.100 INFO  [Worker-Server] o.a.d.s.w.e.PhysicalTaskEngineDelegator:[57] - PhysicalTaskEngineDelegator started
+[WI-0][TI-0] - 2025-11-06 11:13:27.832 INFO  [Worker-Server] o.a.d.s.w.WorkerServer:[61] - Started WorkerServer in 5.779 seconds (JVM running for 6.25)
+[WI-0][TI-0] - 2025-11-06 11:13:27.837 INFO  [Thread-6] o.a.d.c.l.ServerLifeCycleManager:[88] - The current server status changed from RUNNING to STOPPED
+[WI-0][TI-0] - 2025-11-06 11:13:27.847 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.TaskEngine:[87] - PhysicalTaskEngine closed
+[WI-0][TI-0] - 2025-11-06 11:13:27.848 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[107] - PhysicalTaskExecutorEventBusCoordinator closed
+[WI-0][TI-0] - 2025-11-06 11:13:27.849 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[107] - PhysicalTaskExecutorEventBusCoordinator closed
+[WI-0][TI-0] - 2025-11-06 11:13:27.850 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[174] - PhysicalTaskExecutorLifecycleEventReporter closed
+[WI-0][TI-0] - 2025-11-06 11:13:27.851 WARN  [SpringApplicationShutdownHook] o.a.d.c.m.BaseHeartBeatTask:[78] - WorkerHeartBeatTask finished...
+[WI-0][TI-0] - 2025-11-06 11:13:27.867 WARN  [Worker-Server-SendThread(zookeeper:2181)] o.a.z.ClientCnxn:[1286] - An exception was thrown while closing send thread for session 0x10003f51ea1000b.
+org.apache.zookeeper.ClientCnxn$EndOfStreamException: Unable to read additional data from server sessionid 0x10003f51ea1000b, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1282)
+[WI-0][TI-0] - 2025-11-06 11:13:27.970 INFO  [SpringApplicationShutdownHook] o.a.d.s.w.r.WorkerRegistryClient:[124] - Closed WorkerRegistryClient
+[WI-0][TI-0] - 2025-11-06 11:13:27.972 INFO  [SpringApplicationShutdownHook] c.z.h.HikariDataSource:[350] - HikariPool-1 - Shutdown initiated...
+[WI-0][TI-0] - 2025-11-06 11:13:27.990 INFO  [SpringApplicationShutdownHook] c.z.h.HikariDataSource:[352] - HikariPool-1 - Shutdown completed.
+[WI-0][TI-0] - 2025-11-06 11:13:27.992 INFO  [SpringApplicationShutdownHook] o.a.d.e.b.s.NettyRemotingServer:[149] - WorkerRpcServer closing
+[WI-0][TI-0] - 2025-11-06 11:13:27.993 INFO  [SpringApplicationShutdownHook] o.a.d.e.b.s.NettyRemotingServer:[153] - WorkerRpcServer stop bind at port: 1234
+[WI-0][TI-0] - 2025-11-06 11:13:28.003 INFO  [SpringApplicationShutdownHook] o.a.d.e.b.s.NettyRemotingServer:[167] - WorkerRpcServer closed
+[WI-0][TI-0] - 2025-11-06 11:15:16.885 WARN  [Worker-Server] o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[WI-0][TI-0] - 2025-11-06 11:15:17.304 WARN  [Worker-Server] o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[WI-0][TI-0] - 2025-11-06 11:15:17.306 INFO  [Worker-Server] o.a.d.s.w.WorkerServer:[640] - The following 1 profile is active: "mysql"
+[WI-0][TI-0] - 2025-11-06 11:15:18.141 WARN  [Worker-Server] o.m.s.m.ClassPathMapperScanner:[44] - No MyBatis mapper was found in '[org.apache.dolphinscheduler.server.worker]' package. Please check your configuration.
+[WI-0][TI-0] - 2025-11-06 11:15:18.196 INFO  [Worker-Server] o.s.c.c.s.GenericScope:[283] - BeanFactory id=f001ad87-3a6a-3f67-ad4a-5009cf2fa20b
+[WI-0][TI-0] - 2025-11-06 11:15:18.504 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:15:18.508 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:15:18.511 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$415/1573349881] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:15:18.517 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:15:18.530 INFO  [Worker-Server] o.a.d.c.u.NetUtils:[312] - Get all NetworkInterfaces: [name:eth0 (eth0), name:lo (lo)]
+[WI-0][TI-0] - 2025-11-06 11:15:18.562 INFO  [Worker-Server] o.a.d.s.w.c.WorkerConfig:[97] - 
+****************************Worker Configuration**************************************
+  listen-port -> 1234
+  max-heartbeat-interval -> PT10S
+  host-weight -> 100
+  tenantConfig -> TenantConfig(autoCreateTenantEnabled=true, defaultTenantEnabled=false)
+  server-load-protection -> WorkerServerLoadProtectionConfig()
+  address -> 172.28.0.6:1234
+  registry-path: /nodes/worker/172.28.0.6:1234
+  physical-task-config -> PhysicalTaskConfig(taskExecutorThreadSize=25)
+  group -> default
+****************************Worker Configuration**************************************
+[WI-0][TI-0] - 2025-11-06 11:15:18.563 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'workerConfig' of type [org.apache.dolphinscheduler.server.worker.config.WorkerConfig$$EnhancerBySpringCGLIB$$19bcc2ee] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:15:18.629 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:15:18.641 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'kubernetes.manifests-io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:15:18.648 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration' of type [io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:15:18.662 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultApiClient' of type [io.kubernetes.client.openapi.ApiClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:15:18.734 INFO  [Worker-Server] o.a.d.p.r.z.ZookeeperRegistryAutoConfiguration:[37] - Load ZookeeperRegistryAutoConfiguration
+[WI-0][TI-0] - 2025-11-06 11:15:18.757 INFO  [Worker-Server] o.a.d.p.r.z.ZookeeperRegistryProperties:[96] - 
+****************************ZookeeperRegistryProperties**************************************
+  namespace -> dolphinscheduler
+  connectString -> zookeeper:2181
+  retryPolicy -> ZookeeperRegistryProperties.ZookeeperProperties.RetryPolicy(baseSleepTime=PT0.1S, maxRetries=3, maxSleep=PT1S)
+  digest -> 
+  sessionTimeout -> PT1M
+  connectionTimeout -> PT30S
+  blockUntilConnected -> PT30S
+****************************ZookeeperRegistryProperties**************************************
+[WI-0][TI-0] - 2025-11-06 11:15:18.890 INFO  [Worker-Server] o.a.d.p.r.z.ZookeeperRegistry:[113] - ZookeeperRegistry started at: 45/ms
+[WI-0][TI-0] - 2025-11-06 11:15:19.209 INFO  [Worker-Server] c.z.h.HikariDataSource:[110] - HikariPool-1 - Starting...
+[WI-0][TI-0] - 2025-11-06 11:15:19.400 INFO  [Worker-Server] c.z.h.HikariDataSource:[123] - HikariPool-1 - Start completed.
+[WI-0][TI-0] - 2025-11-06 11:15:19.730 INFO  [Worker-Server] o.a.d.e.b.s.NettyRemotingServer:[111] - WorkerRpcServer bind success at port: 1234
+[WI-0][TI-0] - 2025-11-06 11:15:19.737 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SUB_WORKFLOW
+[WI-0][TI-0] - 2025-11-06 11:15:19.739 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DEPENDENT
+[WI-0][TI-0] - 2025-11-06 11:15:19.740 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: CONDITIONS
+[WI-0][TI-0] - 2025-11-06 11:15:19.742 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SWITCH
+[WI-0][TI-0] - 2025-11-06 11:15:19.743 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: LogicFakeTask
+[WI-0][TI-0] - 2025-11-06 11:15:19.744 WARN  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[44] - The task plugin has already been loaded
+[WI-0][TI-0] - 2025-11-06 11:15:19.747 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorProvider:[41] - Initialize DataSourceProcessorProvider
+[WI-0][TI-0] - 2025-11-06 11:15:19.786 INFO  [Worker-Server] o.a.d.c.c.SystemConstants:[30] - init timezone: sun.util.calendar.ZoneInfo[id="Asia/Shanghai",offset=28800000,dstSavings=0,useDaylight=false,transitions=31,lastRule=null]
+[WI-0][TI-0] - 2025-11-06 11:15:19.839 INFO  [Worker-Server] o.a.d.s.w.r.WorkerRegistryClient:[94] - Worker node: 172.28.0.6:1234 registry to registry center /nodes/worker/172.28.0.6:1234 successfully
+[WI-0][TI-0] - 2025-11-06 11:15:19.845 INFO  [Worker-Server] o.a.d.c.m.BaseHeartBeatTask:[47] - Starting WorkerHeartBeatTask...
+[WI-0][TI-0] - 2025-11-06 11:15:19.847 INFO  [Worker-Server] o.a.d.c.m.BaseHeartBeatTask:[49] - Started WorkerHeartBeatTask, heartBeatInterval: 10000...
+[WI-0][TI-0] - 2025-11-06 11:15:19.849 INFO  [Worker-Server] o.a.d.s.w.r.WorkerRegistryClient:[102] - Worker node: 172.28.0.6:1234 registry finished
+[WI-0][TI-0] - 2025-11-06 11:15:19.851 INFO  [Worker-Server] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[95] - PhysicalTaskExecutorEventBusCoordinator started, worker size: 12
+[WI-0][TI-0] - 2025-11-06 11:15:19.852 INFO  [Worker-Server] o.a.d.t.e.TaskEngine:[53] - PhysicalTaskEngine started
+[WI-0][TI-0] - 2025-11-06 11:15:19.853 INFO  [Worker-Server] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[81] - PhysicalTaskExecutorLifecycleEventReporter started
+[WI-0][TI-0] - 2025-11-06 11:15:19.853 INFO  [Worker-Server] o.a.d.s.w.e.PhysicalTaskEngineDelegator:[57] - PhysicalTaskEngineDelegator started
+[WI-0][TI-0] - 2025-11-06 11:15:21.464 INFO  [Worker-Server] o.a.d.s.w.WorkerServer:[61] - Started WorkerServer in 5.614 seconds (JVM running for 6.087)
+[WI-0][TI-0] - 2025-11-06 11:15:21.470 INFO  [Thread-6] o.a.d.c.l.ServerLifeCycleManager:[88] - The current server status changed from RUNNING to STOPPED
+[WI-0][TI-0] - 2025-11-06 11:15:21.479 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.TaskEngine:[87] - PhysicalTaskEngine closed
+[WI-0][TI-0] - 2025-11-06 11:15:21.481 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[107] - PhysicalTaskExecutorEventBusCoordinator closed
+[WI-0][TI-0] - 2025-11-06 11:15:21.482 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[107] - PhysicalTaskExecutorEventBusCoordinator closed
+[WI-0][TI-0] - 2025-11-06 11:15:21.483 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[174] - PhysicalTaskExecutorLifecycleEventReporter closed
+[WI-0][TI-0] - 2025-11-06 11:15:21.483 WARN  [SpringApplicationShutdownHook] o.a.d.c.m.BaseHeartBeatTask:[78] - WorkerHeartBeatTask finished...
+[WI-0][TI-0] - 2025-11-06 11:15:21.601 INFO  [SpringApplicationShutdownHook] o.a.d.s.w.r.WorkerRegistryClient:[124] - Closed WorkerRegistryClient
+[WI-0][TI-0] - 2025-11-06 11:15:21.603 INFO  [SpringApplicationShutdownHook] c.z.h.HikariDataSource:[350] - HikariPool-1 - Shutdown initiated...
+[WI-0][TI-0] - 2025-11-06 11:15:21.623 INFO  [SpringApplicationShutdownHook] c.z.h.HikariDataSource:[352] - HikariPool-1 - Shutdown completed.
+[WI-0][TI-0] - 2025-11-06 11:15:21.625 INFO  [SpringApplicationShutdownHook] o.a.d.e.b.s.NettyRemotingServer:[149] - WorkerRpcServer closing
+[WI-0][TI-0] - 2025-11-06 11:15:21.627 INFO  [SpringApplicationShutdownHook] o.a.d.e.b.s.NettyRemotingServer:[153] - WorkerRpcServer stop bind at port: 1234
+[WI-0][TI-0] - 2025-11-06 11:15:21.636 INFO  [SpringApplicationShutdownHook] o.a.d.e.b.s.NettyRemotingServer:[167] - WorkerRpcServer closed
+[WI-0][TI-0] - 2025-11-06 11:16:12.970 WARN  [Worker-Server] o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[WI-0][TI-0] - 2025-11-06 11:16:13.350 WARN  [Worker-Server] o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[WI-0][TI-0] - 2025-11-06 11:16:13.351 INFO  [Worker-Server] o.a.d.s.w.WorkerServer:[640] - The following 1 profile is active: "mysql"
+[WI-0][TI-0] - 2025-11-06 11:16:14.191 WARN  [Worker-Server] o.m.s.m.ClassPathMapperScanner:[44] - No MyBatis mapper was found in '[org.apache.dolphinscheduler.server.worker]' package. Please check your configuration.
+[WI-0][TI-0] - 2025-11-06 11:16:14.250 INFO  [Worker-Server] o.s.c.c.s.GenericScope:[283] - BeanFactory id=f001ad87-3a6a-3f67-ad4a-5009cf2fa20b
+[WI-0][TI-0] - 2025-11-06 11:16:14.563 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:16:14.568 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:16:14.572 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$415/1573349881] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:16:14.579 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:16:14.597 INFO  [Worker-Server] o.a.d.c.u.NetUtils:[312] - Get all NetworkInterfaces: [name:eth0 (eth0), name:lo (lo)]
+[WI-0][TI-0] - 2025-11-06 11:16:14.633 INFO  [Worker-Server] o.a.d.s.w.c.WorkerConfig:[97] - 
+****************************Worker Configuration**************************************
+  listen-port -> 1234
+  max-heartbeat-interval -> PT10S
+  host-weight -> 100
+  tenantConfig -> TenantConfig(autoCreateTenantEnabled=true, defaultTenantEnabled=false)
+  server-load-protection -> WorkerServerLoadProtectionConfig()
+  address -> 172.28.0.6:1234
+  registry-path: /nodes/worker/172.28.0.6:1234
+  physical-task-config -> PhysicalTaskConfig(taskExecutorThreadSize=25)
+  group -> default
+****************************Worker Configuration**************************************
+[WI-0][TI-0] - 2025-11-06 11:16:14.634 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'workerConfig' of type [org.apache.dolphinscheduler.server.worker.config.WorkerConfig$$EnhancerBySpringCGLIB$$19bcc2ee] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:16:14.695 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:16:14.707 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'kubernetes.manifests-io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:16:14.716 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration' of type [io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:16:14.727 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultApiClient' of type [io.kubernetes.client.openapi.ApiClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:16:14.793 INFO  [Worker-Server] o.a.d.p.r.z.ZookeeperRegistryAutoConfiguration:[37] - Load ZookeeperRegistryAutoConfiguration
+[WI-0][TI-0] - 2025-11-06 11:16:14.816 INFO  [Worker-Server] o.a.d.p.r.z.ZookeeperRegistryProperties:[96] - 
+****************************ZookeeperRegistryProperties**************************************
+  namespace -> dolphinscheduler
+  connectString -> zookeeper:2181
+  retryPolicy -> ZookeeperRegistryProperties.ZookeeperProperties.RetryPolicy(baseSleepTime=PT0.1S, maxRetries=3, maxSleep=PT1S)
+  digest -> 
+  sessionTimeout -> PT1M
+  connectionTimeout -> PT30S
+  blockUntilConnected -> PT30S
+****************************ZookeeperRegistryProperties**************************************
+[WI-0][TI-0] - 2025-11-06 11:16:14.975 INFO  [Worker-Server] o.a.d.p.r.z.ZookeeperRegistry:[113] - ZookeeperRegistry started at: 59/ms
+[WI-0][TI-0] - 2025-11-06 11:16:15.300 INFO  [Worker-Server] c.z.h.HikariDataSource:[110] - HikariPool-1 - Starting...
+[WI-0][TI-0] - 2025-11-06 11:16:15.485 INFO  [Worker-Server] c.z.h.HikariDataSource:[123] - HikariPool-1 - Start completed.
+[WI-0][TI-0] - 2025-11-06 11:16:15.813 INFO  [Worker-Server] o.a.d.e.b.s.NettyRemotingServer:[111] - WorkerRpcServer bind success at port: 1234
+[WI-0][TI-0] - 2025-11-06 11:16:15.821 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SUB_WORKFLOW
+[WI-0][TI-0] - 2025-11-06 11:16:15.823 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DEPENDENT
+[WI-0][TI-0] - 2025-11-06 11:16:15.825 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: CONDITIONS
+[WI-0][TI-0] - 2025-11-06 11:16:15.826 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SWITCH
+[WI-0][TI-0] - 2025-11-06 11:16:15.827 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: LogicFakeTask
+[WI-0][TI-0] - 2025-11-06 11:16:15.828 WARN  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[44] - The task plugin has already been loaded
+[WI-0][TI-0] - 2025-11-06 11:16:15.830 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorProvider:[41] - Initialize DataSourceProcessorProvider
+[WI-0][TI-0] - 2025-11-06 11:16:15.869 INFO  [Worker-Server] o.a.d.c.c.SystemConstants:[30] - init timezone: sun.util.calendar.ZoneInfo[id="Asia/Shanghai",offset=28800000,dstSavings=0,useDaylight=false,transitions=31,lastRule=null]
+[WI-0][TI-0] - 2025-11-06 11:16:15.923 INFO  [Worker-Server] o.a.d.s.w.r.WorkerRegistryClient:[94] - Worker node: 172.28.0.6:1234 registry to registry center /nodes/worker/172.28.0.6:1234 successfully
+[WI-0][TI-0] - 2025-11-06 11:16:15.930 INFO  [Worker-Server] o.a.d.c.m.BaseHeartBeatTask:[47] - Starting WorkerHeartBeatTask...
+[WI-0][TI-0] - 2025-11-06 11:16:15.931 INFO  [Worker-Server] o.a.d.c.m.BaseHeartBeatTask:[49] - Started WorkerHeartBeatTask, heartBeatInterval: 10000...
+[WI-0][TI-0] - 2025-11-06 11:16:15.932 INFO  [Worker-Server] o.a.d.s.w.r.WorkerRegistryClient:[102] - Worker node: 172.28.0.6:1234 registry finished
+[WI-0][TI-0] - 2025-11-06 11:16:15.935 INFO  [Worker-Server] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[95] - PhysicalTaskExecutorEventBusCoordinator started, worker size: 12
+[WI-0][TI-0] - 2025-11-06 11:16:15.935 INFO  [Worker-Server] o.a.d.t.e.TaskEngine:[53] - PhysicalTaskEngine started
+[WI-0][TI-0] - 2025-11-06 11:16:15.936 INFO  [Worker-Server] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[81] - PhysicalTaskExecutorLifecycleEventReporter started
+[WI-0][TI-0] - 2025-11-06 11:16:15.937 INFO  [Worker-Server] o.a.d.s.w.e.PhysicalTaskEngineDelegator:[57] - PhysicalTaskEngineDelegator started
+[WI-0][TI-0] - 2025-11-06 11:16:17.852 INFO  [Worker-Server] o.a.d.s.w.WorkerServer:[61] - Started WorkerServer in 5.947 seconds (JVM running for 6.507)
+[WI-0][TI-0] - 2025-11-06 11:16:17.859 INFO  [Thread-6] o.a.d.c.l.ServerLifeCycleManager:[88] - The current server status changed from RUNNING to STOPPED
+[WI-0][TI-0] - 2025-11-06 11:16:17.869 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.TaskEngine:[87] - PhysicalTaskEngine closed
+[WI-0][TI-0] - 2025-11-06 11:16:17.871 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[107] - PhysicalTaskExecutorEventBusCoordinator closed
+[WI-0][TI-0] - 2025-11-06 11:16:17.872 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[107] - PhysicalTaskExecutorEventBusCoordinator closed
+[WI-0][TI-0] - 2025-11-06 11:16:17.873 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[174] - PhysicalTaskExecutorLifecycleEventReporter closed
+[WI-0][TI-0] - 2025-11-06 11:16:17.874 WARN  [SpringApplicationShutdownHook] o.a.d.c.m.BaseHeartBeatTask:[78] - WorkerHeartBeatTask finished...
+[WI-0][TI-0] - 2025-11-06 11:16:17.898 WARN  [Worker-Server-SendThread(zookeeper:2181)] o.a.z.ClientCnxn:[1286] - An exception was thrown while closing send thread for session 0x10003fb34bf0004.
+org.apache.zookeeper.ClientCnxn$EndOfStreamException: Unable to read additional data from server sessionid 0x10003fb34bf0004, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1282)
+[WI-0][TI-0] - 2025-11-06 11:16:18.001 INFO  [SpringApplicationShutdownHook] o.a.d.s.w.r.WorkerRegistryClient:[124] - Closed WorkerRegistryClient
+[WI-0][TI-0] - 2025-11-06 11:16:18.003 INFO  [SpringApplicationShutdownHook] c.z.h.HikariDataSource:[350] - HikariPool-1 - Shutdown initiated...
+[WI-0][TI-0] - 2025-11-06 11:16:18.022 INFO  [SpringApplicationShutdownHook] c.z.h.HikariDataSource:[352] - HikariPool-1 - Shutdown completed.
+[WI-0][TI-0] - 2025-11-06 11:16:18.024 INFO  [SpringApplicationShutdownHook] o.a.d.e.b.s.NettyRemotingServer:[149] - WorkerRpcServer closing
+[WI-0][TI-0] - 2025-11-06 11:16:18.025 INFO  [SpringApplicationShutdownHook] o.a.d.e.b.s.NettyRemotingServer:[153] - WorkerRpcServer stop bind at port: 1234
+[WI-0][TI-0] - 2025-11-06 11:16:18.034 INFO  [SpringApplicationShutdownHook] o.a.d.e.b.s.NettyRemotingServer:[167] - WorkerRpcServer closed
+[WI-0][TI-0] - 2025-11-06 11:17:12.967 WARN  [Worker-Server] o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[WI-0][TI-0] - 2025-11-06 11:17:13.347 WARN  [Worker-Server] o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[WI-0][TI-0] - 2025-11-06 11:17:13.348 INFO  [Worker-Server] o.a.d.s.w.WorkerServer:[640] - The following 1 profile is active: "mysql"
+[WI-0][TI-0] - 2025-11-06 11:17:14.245 WARN  [Worker-Server] o.m.s.m.ClassPathMapperScanner:[44] - No MyBatis mapper was found in '[org.apache.dolphinscheduler.server.worker]' package. Please check your configuration.
+[WI-0][TI-0] - 2025-11-06 11:17:14.303 INFO  [Worker-Server] o.s.c.c.s.GenericScope:[283] - BeanFactory id=f001ad87-3a6a-3f67-ad4a-5009cf2fa20b
+[WI-0][TI-0] - 2025-11-06 11:17:14.625 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:17:14.630 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:17:14.632 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$415/1573349881] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:17:14.638 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:17:14.652 INFO  [Worker-Server] o.a.d.c.u.NetUtils:[312] - Get all NetworkInterfaces: [name:eth0 (eth0), name:lo (lo)]
+[WI-0][TI-0] - 2025-11-06 11:17:14.688 INFO  [Worker-Server] o.a.d.s.w.c.WorkerConfig:[97] - 
+****************************Worker Configuration**************************************
+  listen-port -> 1234
+  max-heartbeat-interval -> PT10S
+  host-weight -> 100
+  tenantConfig -> TenantConfig(autoCreateTenantEnabled=true, defaultTenantEnabled=false)
+  server-load-protection -> WorkerServerLoadProtectionConfig()
+  address -> 172.28.0.3:1234
+  registry-path: /nodes/worker/172.28.0.3:1234
+  physical-task-config -> PhysicalTaskConfig(taskExecutorThreadSize=25)
+  group -> default
+****************************Worker Configuration**************************************
+[WI-0][TI-0] - 2025-11-06 11:17:14.691 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'workerConfig' of type [org.apache.dolphinscheduler.server.worker.config.WorkerConfig$$EnhancerBySpringCGLIB$$19bcc2ee] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:17:14.763 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:17:14.772 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'kubernetes.manifests-io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:17:14.780 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration' of type [io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:17:14.790 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultApiClient' of type [io.kubernetes.client.openapi.ApiClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:17:14.874 INFO  [Worker-Server] o.a.d.p.r.z.ZookeeperRegistryAutoConfiguration:[37] - Load ZookeeperRegistryAutoConfiguration
+[WI-0][TI-0] - 2025-11-06 11:17:14.896 INFO  [Worker-Server] o.a.d.p.r.z.ZookeeperRegistryProperties:[96] - 
+****************************ZookeeperRegistryProperties**************************************
+  namespace -> dolphinscheduler
+  connectString -> zookeeper:2181
+  retryPolicy -> ZookeeperRegistryProperties.ZookeeperProperties.RetryPolicy(baseSleepTime=PT0.1S, maxRetries=3, maxSleep=PT1S)
+  digest -> 
+  sessionTimeout -> PT1M
+  connectionTimeout -> PT30S
+  blockUntilConnected -> PT30S
+****************************ZookeeperRegistryProperties**************************************
+[WI-0][TI-0] - 2025-11-06 11:17:15.034 INFO  [Worker-Server] o.a.d.p.r.z.ZookeeperRegistry:[113] - ZookeeperRegistry started at: 54/ms
+[WI-0][TI-0] - 2025-11-06 11:17:15.347 INFO  [Worker-Server] c.z.h.HikariDataSource:[110] - HikariPool-1 - Starting...
+[WI-0][TI-0] - 2025-11-06 11:17:15.549 INFO  [Worker-Server] c.z.h.HikariDataSource:[123] - HikariPool-1 - Start completed.
+[WI-0][TI-0] - 2025-11-06 11:17:15.836 INFO  [Worker-Server] o.a.d.e.b.s.NettyRemotingServer:[111] - WorkerRpcServer bind success at port: 1234
+[WI-0][TI-0] - 2025-11-06 11:17:15.844 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SUB_WORKFLOW
+[WI-0][TI-0] - 2025-11-06 11:17:15.846 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DEPENDENT
+[WI-0][TI-0] - 2025-11-06 11:17:15.847 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: CONDITIONS
+[WI-0][TI-0] - 2025-11-06 11:17:15.849 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SWITCH
+[WI-0][TI-0] - 2025-11-06 11:17:15.850 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: LogicFakeTask
+[WI-0][TI-0] - 2025-11-06 11:17:15.850 WARN  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[44] - The task plugin has already been loaded
+[WI-0][TI-0] - 2025-11-06 11:17:15.853 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorProvider:[41] - Initialize DataSourceProcessorProvider
+[WI-0][TI-0] - 2025-11-06 11:17:15.892 INFO  [Worker-Server] o.a.d.c.c.SystemConstants:[30] - init timezone: sun.util.calendar.ZoneInfo[id="Asia/Shanghai",offset=28800000,dstSavings=0,useDaylight=false,transitions=31,lastRule=null]
+[WI-0][TI-0] - 2025-11-06 11:17:15.941 INFO  [Worker-Server] o.a.d.s.w.r.WorkerRegistryClient:[94] - Worker node: 172.28.0.3:1234 registry to registry center /nodes/worker/172.28.0.3:1234 successfully
+[WI-0][TI-0] - 2025-11-06 11:17:15.950 INFO  [Worker-Server] o.a.d.c.m.BaseHeartBeatTask:[47] - Starting WorkerHeartBeatTask...
+[WI-0][TI-0] - 2025-11-06 11:17:15.951 INFO  [Worker-Server] o.a.d.c.m.BaseHeartBeatTask:[49] - Started WorkerHeartBeatTask, heartBeatInterval: 10000...
+[WI-0][TI-0] - 2025-11-06 11:17:15.953 INFO  [Worker-Server] o.a.d.s.w.r.WorkerRegistryClient:[102] - Worker node: 172.28.0.3:1234 registry finished
+[WI-0][TI-0] - 2025-11-06 11:17:15.956 INFO  [Worker-Server] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[95] - PhysicalTaskExecutorEventBusCoordinator started, worker size: 12
+[WI-0][TI-0] - 2025-11-06 11:17:15.957 INFO  [Worker-Server] o.a.d.t.e.TaskEngine:[53] - PhysicalTaskEngine started
+[WI-0][TI-0] - 2025-11-06 11:17:15.957 INFO  [Worker-Server] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[81] - PhysicalTaskExecutorLifecycleEventReporter started
+[WI-0][TI-0] - 2025-11-06 11:17:15.958 INFO  [Worker-Server] o.a.d.s.w.e.PhysicalTaskEngineDelegator:[57] - PhysicalTaskEngineDelegator started
+[WI-0][TI-0] - 2025-11-06 11:17:17.777 INFO  [Worker-Server] o.a.d.s.w.WorkerServer:[61] - Started WorkerServer in 5.819 seconds (JVM running for 6.289)
+[WI-0][TI-0] - 2025-11-06 11:17:17.783 INFO  [Thread-6] o.a.d.c.l.ServerLifeCycleManager:[88] - The current server status changed from RUNNING to STOPPED
+[WI-0][TI-0] - 2025-11-06 11:17:17.793 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.TaskEngine:[87] - PhysicalTaskEngine closed
+[WI-0][TI-0] - 2025-11-06 11:17:17.795 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[107] - PhysicalTaskExecutorEventBusCoordinator closed
+[WI-0][TI-0] - 2025-11-06 11:17:17.796 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[107] - PhysicalTaskExecutorEventBusCoordinator closed
+[WI-0][TI-0] - 2025-11-06 11:17:17.797 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[174] - PhysicalTaskExecutorLifecycleEventReporter closed
+[WI-0][TI-0] - 2025-11-06 11:17:17.797 WARN  [SpringApplicationShutdownHook] o.a.d.c.m.BaseHeartBeatTask:[78] - WorkerHeartBeatTask finished...
+[WI-0][TI-0] - 2025-11-06 11:17:17.920 INFO  [SpringApplicationShutdownHook] o.a.d.s.w.r.WorkerRegistryClient:[124] - Closed WorkerRegistryClient
+[WI-0][TI-0] - 2025-11-06 11:17:17.922 INFO  [SpringApplicationShutdownHook] c.z.h.HikariDataSource:[350] - HikariPool-1 - Shutdown initiated...
+[WI-0][TI-0] - 2025-11-06 11:17:17.944 INFO  [SpringApplicationShutdownHook] c.z.h.HikariDataSource:[352] - HikariPool-1 - Shutdown completed.
+[WI-0][TI-0] - 2025-11-06 11:17:17.946 INFO  [SpringApplicationShutdownHook] o.a.d.e.b.s.NettyRemotingServer:[149] - WorkerRpcServer closing
+[WI-0][TI-0] - 2025-11-06 11:17:17.948 INFO  [SpringApplicationShutdownHook] o.a.d.e.b.s.NettyRemotingServer:[153] - WorkerRpcServer stop bind at port: 1234
+[WI-0][TI-0] - 2025-11-06 11:17:17.957 INFO  [SpringApplicationShutdownHook] o.a.d.e.b.s.NettyRemotingServer:[167] - WorkerRpcServer closed
+[WI-0][TI-0] - 2025-11-06 11:18:09.116 WARN  [Worker-Server] o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[WI-0][TI-0] - 2025-11-06 11:18:09.498 WARN  [Worker-Server] o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[WI-0][TI-0] - 2025-11-06 11:18:09.500 INFO  [Worker-Server] o.a.d.s.w.WorkerServer:[640] - The following 1 profile is active: "mysql"
+[WI-0][TI-0] - 2025-11-06 11:18:10.363 WARN  [Worker-Server] o.m.s.m.ClassPathMapperScanner:[44] - No MyBatis mapper was found in '[org.apache.dolphinscheduler.server.worker]' package. Please check your configuration.
+[WI-0][TI-0] - 2025-11-06 11:18:10.417 INFO  [Worker-Server] o.s.c.c.s.GenericScope:[283] - BeanFactory id=f001ad87-3a6a-3f67-ad4a-5009cf2fa20b
+[WI-0][TI-0] - 2025-11-06 11:18:10.725 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:18:10.727 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:18:10.730 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$415/1573349881] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:18:10.735 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:18:10.747 INFO  [Worker-Server] o.a.d.c.u.NetUtils:[312] - Get all NetworkInterfaces: [name:eth0 (eth0), name:lo (lo)]
+[WI-0][TI-0] - 2025-11-06 11:18:10.789 INFO  [Worker-Server] o.a.d.s.w.c.WorkerConfig:[97] - 
+****************************Worker Configuration**************************************
+  listen-port -> 1234
+  max-heartbeat-interval -> PT10S
+  host-weight -> 100
+  tenantConfig -> TenantConfig(autoCreateTenantEnabled=true, defaultTenantEnabled=false)
+  server-load-protection -> WorkerServerLoadProtectionConfig()
+  address -> 172.28.0.3:1234
+  registry-path: /nodes/worker/172.28.0.3:1234
+  physical-task-config -> PhysicalTaskConfig(taskExecutorThreadSize=25)
+  group -> default
+****************************Worker Configuration**************************************
+[WI-0][TI-0] - 2025-11-06 11:18:10.790 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'workerConfig' of type [org.apache.dolphinscheduler.server.worker.config.WorkerConfig$$EnhancerBySpringCGLIB$$19bcc2ee] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:18:10.884 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:18:10.896 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'kubernetes.manifests-io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:18:10.903 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration' of type [io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:18:10.914 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultApiClient' of type [io.kubernetes.client.openapi.ApiClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:18:10.981 INFO  [Worker-Server] o.a.d.p.r.z.ZookeeperRegistryAutoConfiguration:[37] - Load ZookeeperRegistryAutoConfiguration
+[WI-0][TI-0] - 2025-11-06 11:18:10.994 INFO  [Worker-Server] o.a.d.p.r.z.ZookeeperRegistryProperties:[96] - 
+****************************ZookeeperRegistryProperties**************************************
+  namespace -> dolphinscheduler
+  connectString -> zookeeper:2181
+  retryPolicy -> ZookeeperRegistryProperties.ZookeeperProperties.RetryPolicy(baseSleepTime=PT0.1S, maxRetries=3, maxSleep=PT1S)
+  digest -> 
+  sessionTimeout -> PT1M
+  connectionTimeout -> PT30S
+  blockUntilConnected -> PT30S
+****************************ZookeeperRegistryProperties**************************************
+[WI-0][TI-0] - 2025-11-06 11:18:11.104 INFO  [Worker-Server] o.a.d.p.r.z.ZookeeperRegistry:[113] - ZookeeperRegistry started at: 48/ms
+[WI-0][TI-0] - 2025-11-06 11:18:11.457 INFO  [Worker-Server] c.z.h.HikariDataSource:[110] - HikariPool-1 - Starting...
+[WI-0][TI-0] - 2025-11-06 11:18:11.661 INFO  [Worker-Server] c.z.h.HikariDataSource:[123] - HikariPool-1 - Start completed.
+[WI-0][TI-0] - 2025-11-06 11:18:11.921 INFO  [Worker-Server] o.a.d.e.b.s.NettyRemotingServer:[111] - WorkerRpcServer bind success at port: 1234
+[WI-0][TI-0] - 2025-11-06 11:18:11.929 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SUB_WORKFLOW
+[WI-0][TI-0] - 2025-11-06 11:18:11.931 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DEPENDENT
+[WI-0][TI-0] - 2025-11-06 11:18:11.931 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: CONDITIONS
+[WI-0][TI-0] - 2025-11-06 11:18:11.933 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SWITCH
+[WI-0][TI-0] - 2025-11-06 11:18:11.934 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: LogicFakeTask
+[WI-0][TI-0] - 2025-11-06 11:18:11.935 WARN  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[44] - The task plugin has already been loaded
+[WI-0][TI-0] - 2025-11-06 11:18:11.937 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorProvider:[41] - Initialize DataSourceProcessorProvider
+[WI-0][TI-0] - 2025-11-06 11:18:11.978 INFO  [Worker-Server] o.a.d.c.c.SystemConstants:[30] - init timezone: sun.util.calendar.ZoneInfo[id="Asia/Shanghai",offset=28800000,dstSavings=0,useDaylight=false,transitions=31,lastRule=null]
+[WI-0][TI-0] - 2025-11-06 11:18:12.028 INFO  [Worker-Server] o.a.d.s.w.r.WorkerRegistryClient:[94] - Worker node: 172.28.0.3:1234 registry to registry center /nodes/worker/172.28.0.3:1234 successfully
+[WI-0][TI-0] - 2025-11-06 11:18:12.035 INFO  [Worker-Server] o.a.d.c.m.BaseHeartBeatTask:[47] - Starting WorkerHeartBeatTask...
+[WI-0][TI-0] - 2025-11-06 11:18:12.036 INFO  [Worker-Server] o.a.d.c.m.BaseHeartBeatTask:[49] - Started WorkerHeartBeatTask, heartBeatInterval: 10000...
+[WI-0][TI-0] - 2025-11-06 11:18:12.037 INFO  [Worker-Server] o.a.d.s.w.r.WorkerRegistryClient:[102] - Worker node: 172.28.0.3:1234 registry finished
+[WI-0][TI-0] - 2025-11-06 11:18:12.040 INFO  [Worker-Server] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[95] - PhysicalTaskExecutorEventBusCoordinator started, worker size: 12
+[WI-0][TI-0] - 2025-11-06 11:18:12.040 INFO  [Worker-Server] o.a.d.t.e.TaskEngine:[53] - PhysicalTaskEngine started
+[WI-0][TI-0] - 2025-11-06 11:18:12.041 INFO  [Worker-Server] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[81] - PhysicalTaskExecutorLifecycleEventReporter started
+[WI-0][TI-0] - 2025-11-06 11:18:12.041 INFO  [Worker-Server] o.a.d.s.w.e.PhysicalTaskEngineDelegator:[57] - PhysicalTaskEngineDelegator started
+[WI-0][TI-0] - 2025-11-06 11:18:13.763 INFO  [Worker-Server] o.a.d.s.w.WorkerServer:[61] - Started WorkerServer in 5.707 seconds (JVM running for 6.191)
+[WI-0][TI-0] - 2025-11-06 11:18:13.769 INFO  [Thread-6] o.a.d.c.l.ServerLifeCycleManager:[88] - The current server status changed from RUNNING to STOPPED
+[WI-0][TI-0] - 2025-11-06 11:18:13.778 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.TaskEngine:[87] - PhysicalTaskEngine closed
+[WI-0][TI-0] - 2025-11-06 11:18:13.780 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[107] - PhysicalTaskExecutorEventBusCoordinator closed
+[WI-0][TI-0] - 2025-11-06 11:18:13.781 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[107] - PhysicalTaskExecutorEventBusCoordinator closed
+[WI-0][TI-0] - 2025-11-06 11:18:13.782 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[174] - PhysicalTaskExecutorLifecycleEventReporter closed
+[WI-0][TI-0] - 2025-11-06 11:18:13.782 WARN  [SpringApplicationShutdownHook] o.a.d.c.m.BaseHeartBeatTask:[78] - WorkerHeartBeatTask finished...
+[WI-0][TI-0] - 2025-11-06 11:18:13.809 WARN  [Worker-Server-SendThread(zookeeper:2181)] o.a.z.ClientCnxn:[1286] - An exception was thrown while closing send thread for session 0x10003fd37880003.
+org.apache.zookeeper.ClientCnxn$EndOfStreamException: Unable to read additional data from server sessionid 0x10003fd37880003, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1282)
+[WI-0][TI-0] - 2025-11-06 11:18:13.911 INFO  [SpringApplicationShutdownHook] o.a.d.s.w.r.WorkerRegistryClient:[124] - Closed WorkerRegistryClient
+[WI-0][TI-0] - 2025-11-06 11:18:13.913 INFO  [SpringApplicationShutdownHook] c.z.h.HikariDataSource:[350] - HikariPool-1 - Shutdown initiated...
+[WI-0][TI-0] - 2025-11-06 11:18:13.930 INFO  [SpringApplicationShutdownHook] c.z.h.HikariDataSource:[352] - HikariPool-1 - Shutdown completed.
+[WI-0][TI-0] - 2025-11-06 11:18:13.933 INFO  [SpringApplicationShutdownHook] o.a.d.e.b.s.NettyRemotingServer:[149] - WorkerRpcServer closing
+[WI-0][TI-0] - 2025-11-06 11:18:13.934 INFO  [SpringApplicationShutdownHook] o.a.d.e.b.s.NettyRemotingServer:[153] - WorkerRpcServer stop bind at port: 1234
+[WI-0][TI-0] - 2025-11-06 11:18:13.941 INFO  [SpringApplicationShutdownHook] o.a.d.e.b.s.NettyRemotingServer:[167] - WorkerRpcServer closed
+[WI-0][TI-0] - 2025-11-06 11:19:41.848 WARN  [Worker-Server] o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[WI-0][TI-0] - 2025-11-06 11:19:42.231 WARN  [Worker-Server] o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[WI-0][TI-0] - 2025-11-06 11:19:42.233 INFO  [Worker-Server] o.a.d.s.w.WorkerServer:[640] - The following 1 profile is active: "mysql"
+[WI-0][TI-0] - 2025-11-06 11:19:43.080 WARN  [Worker-Server] o.m.s.m.ClassPathMapperScanner:[44] - No MyBatis mapper was found in '[org.apache.dolphinscheduler.server.worker]' package. Please check your configuration.
+[WI-0][TI-0] - 2025-11-06 11:19:43.135 INFO  [Worker-Server] o.s.c.c.s.GenericScope:[283] - BeanFactory id=f001ad87-3a6a-3f67-ad4a-5009cf2fa20b
+[WI-0][TI-0] - 2025-11-06 11:19:43.457 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:19:43.461 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:19:43.463 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$415/1573349881] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:19:43.469 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:19:43.486 INFO  [Worker-Server] o.a.d.c.u.NetUtils:[312] - Get all NetworkInterfaces: [name:eth0 (eth0), name:lo (lo)]
+[WI-0][TI-0] - 2025-11-06 11:19:43.523 INFO  [Worker-Server] o.a.d.s.w.c.WorkerConfig:[97] - 
+****************************Worker Configuration**************************************
+  listen-port -> 1234
+  max-heartbeat-interval -> PT10S
+  host-weight -> 100
+  tenantConfig -> TenantConfig(autoCreateTenantEnabled=true, defaultTenantEnabled=false)
+  server-load-protection -> WorkerServerLoadProtectionConfig()
+  address -> 172.28.0.3:1234
+  registry-path: /nodes/worker/172.28.0.3:1234
+  physical-task-config -> PhysicalTaskConfig(taskExecutorThreadSize=25)
+  group -> default
+****************************Worker Configuration**************************************
+[WI-0][TI-0] - 2025-11-06 11:19:43.524 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'workerConfig' of type [org.apache.dolphinscheduler.server.worker.config.WorkerConfig$$EnhancerBySpringCGLIB$$19bcc2ee] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:19:43.621 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:19:43.634 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'kubernetes.manifests-io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:19:43.645 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration' of type [io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:19:43.657 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultApiClient' of type [io.kubernetes.client.openapi.ApiClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:19:43.729 INFO  [Worker-Server] o.a.d.p.r.z.ZookeeperRegistryAutoConfiguration:[37] - Load ZookeeperRegistryAutoConfiguration
+[WI-0][TI-0] - 2025-11-06 11:19:43.743 INFO  [Worker-Server] o.a.d.p.r.z.ZookeeperRegistryProperties:[96] - 
+****************************ZookeeperRegistryProperties**************************************
+  namespace -> dolphinscheduler
+  connectString -> zookeeper:2181
+  retryPolicy -> ZookeeperRegistryProperties.ZookeeperProperties.RetryPolicy(baseSleepTime=PT0.1S, maxRetries=3, maxSleep=PT1S)
+  digest -> 
+  sessionTimeout -> PT1M
+  connectionTimeout -> PT30S
+  blockUntilConnected -> PT30S
+****************************ZookeeperRegistryProperties**************************************
+[WI-0][TI-0] - 2025-11-06 11:19:43.845 INFO  [Worker-Server] o.a.d.p.r.z.ZookeeperRegistry:[113] - ZookeeperRegistry started at: 40/ms
+[WI-0][TI-0] - 2025-11-06 11:19:44.162 INFO  [Worker-Server] c.z.h.HikariDataSource:[110] - HikariPool-1 - Starting...
+[WI-0][TI-0] - 2025-11-06 11:19:44.375 INFO  [Worker-Server] c.z.h.HikariDataSource:[123] - HikariPool-1 - Start completed.
+[WI-0][TI-0] - 2025-11-06 11:19:44.630 INFO  [Worker-Server] o.a.d.e.b.s.NettyRemotingServer:[111] - WorkerRpcServer bind success at port: 1234
+[WI-0][TI-0] - 2025-11-06 11:19:44.638 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SUB_WORKFLOW
+[WI-0][TI-0] - 2025-11-06 11:19:44.640 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DEPENDENT
+[WI-0][TI-0] - 2025-11-06 11:19:44.641 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: CONDITIONS
+[WI-0][TI-0] - 2025-11-06 11:19:44.643 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SWITCH
+[WI-0][TI-0] - 2025-11-06 11:19:44.644 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: LogicFakeTask
+[WI-0][TI-0] - 2025-11-06 11:19:44.644 WARN  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[44] - The task plugin has already been loaded
+[WI-0][TI-0] - 2025-11-06 11:19:44.647 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorProvider:[41] - Initialize DataSourceProcessorProvider
+[WI-0][TI-0] - 2025-11-06 11:19:44.693 INFO  [Worker-Server] o.a.d.c.c.SystemConstants:[30] - init timezone: sun.util.calendar.ZoneInfo[id="Asia/Shanghai",offset=28800000,dstSavings=0,useDaylight=false,transitions=31,lastRule=null]
+[WI-0][TI-0] - 2025-11-06 11:19:44.750 INFO  [Worker-Server] o.a.d.s.w.r.WorkerRegistryClient:[94] - Worker node: 172.28.0.3:1234 registry to registry center /nodes/worker/172.28.0.3:1234 successfully
+[WI-0][TI-0] - 2025-11-06 11:19:44.757 INFO  [Worker-Server] o.a.d.c.m.BaseHeartBeatTask:[47] - Starting WorkerHeartBeatTask...
+[WI-0][TI-0] - 2025-11-06 11:19:44.758 INFO  [Worker-Server] o.a.d.c.m.BaseHeartBeatTask:[49] - Started WorkerHeartBeatTask, heartBeatInterval: 10000...
+[WI-0][TI-0] - 2025-11-06 11:19:44.760 INFO  [Worker-Server] o.a.d.s.w.r.WorkerRegistryClient:[102] - Worker node: 172.28.0.3:1234 registry finished
+[WI-0][TI-0] - 2025-11-06 11:19:44.763 INFO  [Worker-Server] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[95] - PhysicalTaskExecutorEventBusCoordinator started, worker size: 12
+[WI-0][TI-0] - 2025-11-06 11:19:44.763 INFO  [Worker-Server] o.a.d.t.e.TaskEngine:[53] - PhysicalTaskEngine started
+[WI-0][TI-0] - 2025-11-06 11:19:44.764 INFO  [Worker-Server] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[81] - PhysicalTaskExecutorLifecycleEventReporter started
+[WI-0][TI-0] - 2025-11-06 11:19:44.765 INFO  [Worker-Server] o.a.d.s.w.e.PhysicalTaskEngineDelegator:[57] - PhysicalTaskEngineDelegator started
+[WI-0][TI-0] - 2025-11-06 11:19:46.514 INFO  [Worker-Server] o.a.d.s.w.WorkerServer:[61] - Started WorkerServer in 5.698 seconds (JVM running for 6.137)
+[WI-0][TI-0] - 2025-11-06 11:19:46.520 INFO  [Thread-6] o.a.d.c.l.ServerLifeCycleManager:[88] - The current server status changed from RUNNING to STOPPED
+[WI-0][TI-0] - 2025-11-06 11:19:46.528 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.TaskEngine:[87] - PhysicalTaskEngine closed
+[WI-0][TI-0] - 2025-11-06 11:19:46.530 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[107] - PhysicalTaskExecutorEventBusCoordinator closed
+[WI-0][TI-0] - 2025-11-06 11:19:46.531 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[107] - PhysicalTaskExecutorEventBusCoordinator closed
+[WI-0][TI-0] - 2025-11-06 11:19:46.531 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[174] - PhysicalTaskExecutorLifecycleEventReporter closed
+[WI-0][TI-0] - 2025-11-06 11:19:46.532 WARN  [SpringApplicationShutdownHook] o.a.d.c.m.BaseHeartBeatTask:[78] - WorkerHeartBeatTask finished...
+[WI-0][TI-0] - 2025-11-06 11:19:46.656 INFO  [SpringApplicationShutdownHook] o.a.d.s.w.r.WorkerRegistryClient:[124] - Closed WorkerRegistryClient
+[WI-0][TI-0] - 2025-11-06 11:19:46.657 INFO  [SpringApplicationShutdownHook] c.z.h.HikariDataSource:[350] - HikariPool-1 - Shutdown initiated...
+[WI-0][TI-0] - 2025-11-06 11:19:46.672 INFO  [SpringApplicationShutdownHook] c.z.h.HikariDataSource:[352] - HikariPool-1 - Shutdown completed.
+[WI-0][TI-0] - 2025-11-06 11:19:46.673 INFO  [SpringApplicationShutdownHook] o.a.d.e.b.s.NettyRemotingServer:[149] - WorkerRpcServer closing
+[WI-0][TI-0] - 2025-11-06 11:19:46.675 INFO  [SpringApplicationShutdownHook] o.a.d.e.b.s.NettyRemotingServer:[153] - WorkerRpcServer stop bind at port: 1234
+[WI-0][TI-0] - 2025-11-06 11:19:46.682 INFO  [SpringApplicationShutdownHook] o.a.d.e.b.s.NettyRemotingServer:[167] - WorkerRpcServer closed
+[WI-0][TI-0] - 2025-11-06 11:20:38.781 WARN  [Worker-Server] o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[WI-0][TI-0] - 2025-11-06 11:20:39.328 WARN  [Worker-Server] o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[WI-0][TI-0] - 2025-11-06 11:20:39.330 INFO  [Worker-Server] o.a.d.s.w.WorkerServer:[640] - The following 1 profile is active: "mysql"
+[WI-0][TI-0] - 2025-11-06 11:20:40.451 WARN  [Worker-Server] o.m.s.m.ClassPathMapperScanner:[44] - No MyBatis mapper was found in '[org.apache.dolphinscheduler.server.worker]' package. Please check your configuration.
+[WI-0][TI-0] - 2025-11-06 11:20:40.508 INFO  [Worker-Server] o.s.c.c.s.GenericScope:[283] - BeanFactory id=f001ad87-3a6a-3f67-ad4a-5009cf2fa20b
+[WI-0][TI-0] - 2025-11-06 11:20:40.829 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:20:40.833 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:20:40.836 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$415/1573349881] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:20:40.844 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:20:40.859 INFO  [Worker-Server] o.a.d.c.u.NetUtils:[312] - Get all NetworkInterfaces: [name:eth0 (eth0), name:lo (lo)]
+[WI-0][TI-0] - 2025-11-06 11:20:40.893 INFO  [Worker-Server] o.a.d.s.w.c.WorkerConfig:[97] - 
+****************************Worker Configuration**************************************
+  listen-port -> 1234
+  max-heartbeat-interval -> PT10S
+  host-weight -> 100
+  tenantConfig -> TenantConfig(autoCreateTenantEnabled=true, defaultTenantEnabled=false)
+  server-load-protection -> WorkerServerLoadProtectionConfig()
+  address -> 172.28.0.3:1234
+  registry-path: /nodes/worker/172.28.0.3:1234
+  physical-task-config -> PhysicalTaskConfig(taskExecutorThreadSize=25)
+  group -> default
+****************************Worker Configuration**************************************
+[WI-0][TI-0] - 2025-11-06 11:20:40.895 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'workerConfig' of type [org.apache.dolphinscheduler.server.worker.config.WorkerConfig$$EnhancerBySpringCGLIB$$19bcc2ee] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:20:40.956 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:20:40.970 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'kubernetes.manifests-io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:20:40.979 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration' of type [io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:20:40.989 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultApiClient' of type [io.kubernetes.client.openapi.ApiClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:20:41.074 INFO  [Worker-Server] o.a.d.p.r.z.ZookeeperRegistryAutoConfiguration:[37] - Load ZookeeperRegistryAutoConfiguration
+[WI-0][TI-0] - 2025-11-06 11:20:41.095 INFO  [Worker-Server] o.a.d.p.r.z.ZookeeperRegistryProperties:[96] - 
+****************************ZookeeperRegistryProperties**************************************
+  namespace -> dolphinscheduler
+  connectString -> zookeeper:2181
+  retryPolicy -> ZookeeperRegistryProperties.ZookeeperProperties.RetryPolicy(baseSleepTime=PT0.1S, maxRetries=3, maxSleep=PT1S)
+  digest -> 
+  sessionTimeout -> PT1M
+  connectionTimeout -> PT30S
+  blockUntilConnected -> PT30S
+****************************ZookeeperRegistryProperties**************************************
+[WI-0][TI-0] - 2025-11-06 11:20:41.334 INFO  [Worker-Server] o.a.d.p.r.z.ZookeeperRegistry:[113] - ZookeeperRegistry started at: 85/ms
+[WI-0][TI-0] - 2025-11-06 11:20:41.731 INFO  [Worker-Server] c.z.h.HikariDataSource:[110] - HikariPool-1 - Starting...
+[WI-0][TI-0] - 2025-11-06 11:20:41.931 INFO  [Worker-Server] c.z.h.HikariDataSource:[123] - HikariPool-1 - Start completed.
+[WI-0][TI-0] - 2025-11-06 11:20:42.210 INFO  [Worker-Server] o.a.d.e.b.s.NettyRemotingServer:[111] - WorkerRpcServer bind success at port: 1234
+[WI-0][TI-0] - 2025-11-06 11:20:42.220 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SUB_WORKFLOW
+[WI-0][TI-0] - 2025-11-06 11:20:42.222 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DEPENDENT
+[WI-0][TI-0] - 2025-11-06 11:20:42.224 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: CONDITIONS
+[WI-0][TI-0] - 2025-11-06 11:20:42.225 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SWITCH
+[WI-0][TI-0] - 2025-11-06 11:20:42.226 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: LogicFakeTask
+[WI-0][TI-0] - 2025-11-06 11:20:42.227 WARN  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[44] - The task plugin has already been loaded
+[WI-0][TI-0] - 2025-11-06 11:20:42.230 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorProvider:[41] - Initialize DataSourceProcessorProvider
+[WI-0][TI-0] - 2025-11-06 11:20:42.280 INFO  [Worker-Server] o.a.d.c.c.SystemConstants:[30] - init timezone: sun.util.calendar.ZoneInfo[id="Asia/Shanghai",offset=28800000,dstSavings=0,useDaylight=false,transitions=31,lastRule=null]
+[WI-0][TI-0] - 2025-11-06 11:20:42.382 INFO  [Worker-Server] o.a.d.s.w.r.WorkerRegistryClient:[94] - Worker node: 172.28.0.3:1234 registry to registry center /nodes/worker/172.28.0.3:1234 successfully
+[WI-0][TI-0] - 2025-11-06 11:20:42.395 INFO  [Worker-Server] o.a.d.c.m.BaseHeartBeatTask:[47] - Starting WorkerHeartBeatTask...
+[WI-0][TI-0] - 2025-11-06 11:20:42.397 INFO  [Worker-Server] o.a.d.c.m.BaseHeartBeatTask:[49] - Started WorkerHeartBeatTask, heartBeatInterval: 10000...
+[WI-0][TI-0] - 2025-11-06 11:20:42.398 INFO  [Worker-Server] o.a.d.s.w.r.WorkerRegistryClient:[102] - Worker node: 172.28.0.3:1234 registry finished
+[WI-0][TI-0] - 2025-11-06 11:20:42.402 INFO  [Worker-Server] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[95] - PhysicalTaskExecutorEventBusCoordinator started, worker size: 12
+[WI-0][TI-0] - 2025-11-06 11:20:42.403 INFO  [Worker-Server] o.a.d.t.e.TaskEngine:[53] - PhysicalTaskEngine started
+[WI-0][TI-0] - 2025-11-06 11:20:42.404 INFO  [Worker-Server] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[81] - PhysicalTaskExecutorLifecycleEventReporter started
+[WI-0][TI-0] - 2025-11-06 11:20:42.404 INFO  [Worker-Server] o.a.d.s.w.e.PhysicalTaskEngineDelegator:[57] - PhysicalTaskEngineDelegator started
+[WI-0][TI-0] - 2025-11-06 11:20:44.200 INFO  [Worker-Server] o.a.d.s.w.WorkerServer:[61] - Started WorkerServer in 6.905 seconds (JVM running for 7.758)
+[WI-0][TI-0] - 2025-11-06 11:20:44.207 INFO  [Thread-6] o.a.d.c.l.ServerLifeCycleManager:[88] - The current server status changed from RUNNING to STOPPED
+[WI-0][TI-0] - 2025-11-06 11:20:44.212 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.TaskEngine:[87] - PhysicalTaskEngine closed
+[WI-0][TI-0] - 2025-11-06 11:20:44.213 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[107] - PhysicalTaskExecutorEventBusCoordinator closed
+[WI-0][TI-0] - 2025-11-06 11:20:44.215 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[107] - PhysicalTaskExecutorEventBusCoordinator closed
+[WI-0][TI-0] - 2025-11-06 11:20:44.216 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[174] - PhysicalTaskExecutorLifecycleEventReporter closed
+[WI-0][TI-0] - 2025-11-06 11:20:44.217 WARN  [SpringApplicationShutdownHook] o.a.d.c.m.BaseHeartBeatTask:[78] - WorkerHeartBeatTask finished...
+[WI-0][TI-0] - 2025-11-06 11:20:44.243 WARN  [Worker-Server-SendThread(zookeeper:2181)] o.a.z.ClientCnxn:[1286] - An exception was thrown while closing send thread for session 0x10003ff78a10003.
+org.apache.zookeeper.ClientCnxn$EndOfStreamException: Unable to read additional data from server sessionid 0x10003ff78a10003, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1282)
+[WI-0][TI-0] - 2025-11-06 11:20:44.349 INFO  [SpringApplicationShutdownHook] o.a.d.s.w.r.WorkerRegistryClient:[124] - Closed WorkerRegistryClient
+[WI-0][TI-0] - 2025-11-06 11:20:44.354 INFO  [SpringApplicationShutdownHook] c.z.h.HikariDataSource:[350] - HikariPool-1 - Shutdown initiated...
+[WI-0][TI-0] - 2025-11-06 11:20:44.377 INFO  [SpringApplicationShutdownHook] c.z.h.HikariDataSource:[352] - HikariPool-1 - Shutdown completed.
+[WI-0][TI-0] - 2025-11-06 11:20:44.380 INFO  [SpringApplicationShutdownHook] o.a.d.e.b.s.NettyRemotingServer:[149] - WorkerRpcServer closing
+[WI-0][TI-0] - 2025-11-06 11:20:44.381 INFO  [SpringApplicationShutdownHook] o.a.d.e.b.s.NettyRemotingServer:[153] - WorkerRpcServer stop bind at port: 1234
+[WI-0][TI-0] - 2025-11-06 11:20:44.393 INFO  [SpringApplicationShutdownHook] o.a.d.e.b.s.NettyRemotingServer:[167] - WorkerRpcServer closed
+[WI-0][TI-0] - 2025-11-06 11:39:16.174 WARN  [Worker-Server] o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[WI-0][TI-0] - 2025-11-06 11:39:16.626 WARN  [Worker-Server] o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[WI-0][TI-0] - 2025-11-06 11:39:16.628 INFO  [Worker-Server] o.a.d.s.w.WorkerServer:[640] - The following 1 profile is active: "mysql"
+[WI-0][TI-0] - 2025-11-06 11:39:17.773 WARN  [Worker-Server] o.m.s.m.ClassPathMapperScanner:[44] - No MyBatis mapper was found in '[org.apache.dolphinscheduler.server.worker]' package. Please check your configuration.
+[WI-0][TI-0] - 2025-11-06 11:39:17.854 INFO  [Worker-Server] o.s.c.c.s.GenericScope:[283] - BeanFactory id=f001ad87-3a6a-3f67-ad4a-5009cf2fa20b
+[WI-0][TI-0] - 2025-11-06 11:39:18.254 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:39:18.259 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:39:18.263 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$415/1573349881] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:39:18.271 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:39:18.296 INFO  [Worker-Server] o.a.d.c.u.NetUtils:[312] - Get all NetworkInterfaces: [name:eth0 (eth0), name:lo (lo)]
+[WI-0][TI-0] - 2025-11-06 11:39:18.342 INFO  [Worker-Server] o.a.d.s.w.c.WorkerConfig:[97] - 
+****************************Worker Configuration**************************************
+  listen-port -> 1234
+  max-heartbeat-interval -> PT10S
+  host-weight -> 100
+  tenantConfig -> TenantConfig(autoCreateTenantEnabled=true, defaultTenantEnabled=false)
+  server-load-protection -> WorkerServerLoadProtectionConfig()
+  address -> 172.28.0.3:1234
+  registry-path: /nodes/worker/172.28.0.3:1234
+  physical-task-config -> PhysicalTaskConfig(taskExecutorThreadSize=25)
+  group -> default
+****************************Worker Configuration**************************************
+[WI-0][TI-0] - 2025-11-06 11:39:18.343 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'workerConfig' of type [org.apache.dolphinscheduler.server.worker.config.WorkerConfig$$EnhancerBySpringCGLIB$$19bcc2ee] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:39:18.442 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:39:18.452 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'kubernetes.manifests-io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:39:18.464 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration' of type [io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:39:18.479 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultApiClient' of type [io.kubernetes.client.openapi.ApiClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:39:18.572 INFO  [Worker-Server] o.a.d.p.r.z.ZookeeperRegistryAutoConfiguration:[37] - Load ZookeeperRegistryAutoConfiguration
+[WI-0][TI-0] - 2025-11-06 11:39:18.594 INFO  [Worker-Server] o.a.d.p.r.z.ZookeeperRegistryProperties:[96] - 
+****************************ZookeeperRegistryProperties**************************************
+  namespace -> dolphinscheduler
+  connectString -> zookeeper:2181
+  retryPolicy -> ZookeeperRegistryProperties.ZookeeperProperties.RetryPolicy(baseSleepTime=PT0.1S, maxRetries=3, maxSleep=PT1S)
+  digest -> 
+  sessionTimeout -> PT1M
+  connectionTimeout -> PT30S
+  blockUntilConnected -> PT30S
+****************************ZookeeperRegistryProperties**************************************
+[WI-0][TI-0] - 2025-11-06 11:39:18.733 INFO  [Worker-Server] o.a.d.p.r.z.ZookeeperRegistry:[113] - ZookeeperRegistry started at: 57/ms
+[WI-0][TI-0] - 2025-11-06 11:39:19.173 INFO  [Worker-Server] c.z.h.HikariDataSource:[110] - HikariPool-1 - Starting...
+[WI-0][TI-0] - 2025-11-06 11:39:19.525 INFO  [Worker-Server] c.z.h.HikariDataSource:[123] - HikariPool-1 - Start completed.
+[WI-0][TI-0] - 2025-11-06 11:39:19.925 INFO  [Worker-Server] o.a.d.e.b.s.NettyRemotingServer:[111] - WorkerRpcServer bind success at port: 1234
+[WI-0][TI-0] - 2025-11-06 11:39:19.941 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SUB_WORKFLOW
+[WI-0][TI-0] - 2025-11-06 11:39:19.946 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DEPENDENT
+[WI-0][TI-0] - 2025-11-06 11:39:19.948 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: CONDITIONS
+[WI-0][TI-0] - 2025-11-06 11:39:19.950 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SWITCH
+[WI-0][TI-0] - 2025-11-06 11:39:19.952 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: LogicFakeTask
+[WI-0][TI-0] - 2025-11-06 11:39:19.953 WARN  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[44] - The task plugin has already been loaded
+[WI-0][TI-0] - 2025-11-06 11:39:19.957 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorProvider:[41] - Initialize DataSourceProcessorProvider
+[WI-0][TI-0] - 2025-11-06 11:39:20.014 INFO  [Worker-Server] o.a.d.m.m.BaseServerLoadProtection:[46] - OverLoad: the jvm cpu usage: 1.0 is over then the maxJvmCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 11:39:20.024 INFO  [Worker-Server] o.a.d.c.c.SystemConstants:[30] - init timezone: sun.util.calendar.ZoneInfo[id="Asia/Shanghai",offset=28800000,dstSavings=0,useDaylight=false,transitions=31,lastRule=null]
+[WI-0][TI-0] - 2025-11-06 11:39:20.093 INFO  [Worker-Server] o.a.d.s.w.r.WorkerRegistryClient:[94] - Worker node: 172.28.0.3:1234 registry to registry center /nodes/worker/172.28.0.3:1234 successfully
+[WI-0][TI-0] - 2025-11-06 11:39:20.101 INFO  [Worker-Server] o.a.d.c.m.BaseHeartBeatTask:[47] - Starting WorkerHeartBeatTask...
+[WI-0][TI-0] - 2025-11-06 11:39:20.103 INFO  [Worker-Server] o.a.d.c.m.BaseHeartBeatTask:[49] - Started WorkerHeartBeatTask, heartBeatInterval: 10000...
+[WI-0][TI-0] - 2025-11-06 11:39:20.103 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[46] - OverLoad: the jvm cpu usage: 1.0 is over then the maxJvmCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 11:39:20.103 INFO  [Worker-Server] o.a.d.s.w.r.WorkerRegistryClient:[102] - Worker node: 172.28.0.3:1234 registry finished
+[WI-0][TI-0] - 2025-11-06 11:39:20.107 INFO  [Worker-Server] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[95] - PhysicalTaskExecutorEventBusCoordinator started, worker size: 12
+[WI-0][TI-0] - 2025-11-06 11:39:20.108 INFO  [Worker-Server] o.a.d.t.e.TaskEngine:[53] - PhysicalTaskEngine started
+[WI-0][TI-0] - 2025-11-06 11:39:20.109 INFO  [Worker-Server] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[81] - PhysicalTaskExecutorLifecycleEventReporter started
+[WI-0][TI-0] - 2025-11-06 11:39:20.110 INFO  [Worker-Server] o.a.d.s.w.e.PhysicalTaskEngineDelegator:[57] - PhysicalTaskEngineDelegator started
+[WI-0][TI-0] - 2025-11-06 11:39:22.416 INFO  [Worker-Server] o.a.d.s.w.WorkerServer:[61] - Started WorkerServer in 8.259 seconds (JVM running for 9.246)
+[WI-0][TI-0] - 2025-11-06 11:39:22.424 INFO  [Thread-6] o.a.d.c.l.ServerLifeCycleManager:[88] - The current server status changed from RUNNING to STOPPED
+[WI-0][TI-0] - 2025-11-06 11:39:22.429 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.TaskEngine:[87] - PhysicalTaskEngine closed
+[WI-0][TI-0] - 2025-11-06 11:39:22.430 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[107] - PhysicalTaskExecutorEventBusCoordinator closed
+[WI-0][TI-0] - 2025-11-06 11:39:22.431 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[107] - PhysicalTaskExecutorEventBusCoordinator closed
+[WI-0][TI-0] - 2025-11-06 11:39:22.432 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[174] - PhysicalTaskExecutorLifecycleEventReporter closed
+[WI-0][TI-0] - 2025-11-06 11:39:22.433 WARN  [SpringApplicationShutdownHook] o.a.d.c.m.BaseHeartBeatTask:[78] - WorkerHeartBeatTask finished...
+[WI-0][TI-0] - 2025-11-06 11:39:22.560 INFO  [SpringApplicationShutdownHook] o.a.d.s.w.r.WorkerRegistryClient:[124] - Closed WorkerRegistryClient
+[WI-0][TI-0] - 2025-11-06 11:39:22.563 INFO  [SpringApplicationShutdownHook] c.z.h.HikariDataSource:[350] - HikariPool-1 - Shutdown initiated...
+[WI-0][TI-0] - 2025-11-06 11:39:22.591 INFO  [SpringApplicationShutdownHook] c.z.h.HikariDataSource:[352] - HikariPool-1 - Shutdown completed.
+[WI-0][TI-0] - 2025-11-06 11:39:22.594 INFO  [SpringApplicationShutdownHook] o.a.d.e.b.s.NettyRemotingServer:[149] - WorkerRpcServer closing
+[WI-0][TI-0] - 2025-11-06 11:39:22.596 INFO  [SpringApplicationShutdownHook] o.a.d.e.b.s.NettyRemotingServer:[153] - WorkerRpcServer stop bind at port: 1234
+[WI-0][TI-0] - 2025-11-06 11:39:22.608 INFO  [SpringApplicationShutdownHook] o.a.d.e.b.s.NettyRemotingServer:[167] - WorkerRpcServer closed
+[WI-0][TI-0] - 2025-11-06 11:57:27.158 WARN  [Worker-Server] o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[WI-0][TI-0] - 2025-11-06 11:57:27.560 WARN  [Worker-Server] o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[WI-0][TI-0] - 2025-11-06 11:57:27.562 INFO  [Worker-Server] o.a.d.s.w.WorkerServer:[640] - The following 1 profile is active: "mysql"
+[WI-0][TI-0] - 2025-11-06 11:57:28.541 WARN  [Worker-Server] o.m.s.m.ClassPathMapperScanner:[44] - No MyBatis mapper was found in '[org.apache.dolphinscheduler.server.worker]' package. Please check your configuration.
+[WI-0][TI-0] - 2025-11-06 11:57:28.609 INFO  [Worker-Server] o.s.c.c.s.GenericScope:[283] - BeanFactory id=f001ad87-3a6a-3f67-ad4a-5009cf2fa20b
+[WI-0][TI-0] - 2025-11-06 11:57:29.032 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:57:29.037 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:57:29.041 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$415/1573349881] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:57:29.048 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:57:29.067 INFO  [Worker-Server] o.a.d.c.u.NetUtils:[312] - Get all NetworkInterfaces: [name:eth0 (eth0), name:lo (lo)]
+[WI-0][TI-0] - 2025-11-06 11:57:29.155 INFO  [Worker-Server] o.a.d.s.w.c.WorkerConfig:[97] - 
+****************************Worker Configuration**************************************
+  listen-port -> 1234
+  max-heartbeat-interval -> PT10S
+  host-weight -> 100
+  tenantConfig -> TenantConfig(autoCreateTenantEnabled=true, defaultTenantEnabled=false)
+  server-load-protection -> WorkerServerLoadProtectionConfig()
+  address -> 172.28.0.3:1234
+  registry-path: /nodes/worker/172.28.0.3:1234
+  physical-task-config -> PhysicalTaskConfig(taskExecutorThreadSize=25)
+  group -> default
+****************************Worker Configuration**************************************
+[WI-0][TI-0] - 2025-11-06 11:57:29.156 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'workerConfig' of type [org.apache.dolphinscheduler.server.worker.config.WorkerConfig$$EnhancerBySpringCGLIB$$19bcc2ee] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:57:29.278 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:57:29.294 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'kubernetes.manifests-io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:57:29.303 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration' of type [io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:57:29.317 INFO  [Worker-Server] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultApiClient' of type [io.kubernetes.client.openapi.ApiClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - 2025-11-06 11:57:29.384 INFO  [Worker-Server] o.a.d.p.r.z.ZookeeperRegistryAutoConfiguration:[37] - Load ZookeeperRegistryAutoConfiguration
+[WI-0][TI-0] - 2025-11-06 11:57:29.400 INFO  [Worker-Server] o.a.d.p.r.z.ZookeeperRegistryProperties:[96] - 
+****************************ZookeeperRegistryProperties**************************************
+  namespace -> dolphinscheduler
+  connectString -> zookeeper:2181
+  retryPolicy -> ZookeeperRegistryProperties.ZookeeperProperties.RetryPolicy(baseSleepTime=PT0.1S, maxRetries=3, maxSleep=PT1S)
+  digest -> 
+  sessionTimeout -> PT1M
+  connectionTimeout -> PT30S
+  blockUntilConnected -> PT30S
+****************************ZookeeperRegistryProperties**************************************
+[WI-0][TI-0] - 2025-11-06 11:57:29.637 INFO  [Worker-Server] o.a.d.p.r.z.ZookeeperRegistry:[113] - ZookeeperRegistry started at: 66/ms
+[WI-0][TI-0] - 2025-11-06 11:57:30.029 INFO  [Worker-Server] c.z.h.HikariDataSource:[110] - HikariPool-1 - Starting...
+[WI-0][TI-0] - 2025-11-06 11:57:30.243 INFO  [Worker-Server] c.z.h.HikariDataSource:[123] - HikariPool-1 - Start completed.
+[WI-0][TI-0] - 2025-11-06 11:57:30.552 INFO  [Worker-Server] o.a.d.e.b.s.NettyRemotingServer:[111] - WorkerRpcServer bind success at port: 1234
+[WI-0][TI-0] - 2025-11-06 11:57:30.560 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SUB_WORKFLOW
+[WI-0][TI-0] - 2025-11-06 11:57:30.563 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DEPENDENT
+[WI-0][TI-0] - 2025-11-06 11:57:30.564 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: CONDITIONS
+[WI-0][TI-0] - 2025-11-06 11:57:30.565 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SWITCH
+[WI-0][TI-0] - 2025-11-06 11:57:30.567 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: LogicFakeTask
+[WI-0][TI-0] - 2025-11-06 11:57:30.568 WARN  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[44] - The task plugin has already been loaded
+[WI-0][TI-0] - 2025-11-06 11:57:30.571 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorProvider:[41] - Initialize DataSourceProcessorProvider
+[WI-0][TI-0] - 2025-11-06 11:57:30.615 INFO  [Worker-Server] o.a.d.c.c.SystemConstants:[30] - init timezone: sun.util.calendar.ZoneInfo[id="Asia/Shanghai",offset=28800000,dstSavings=0,useDaylight=false,transitions=31,lastRule=null]
+[WI-0][TI-0] - 2025-11-06 11:57:30.669 INFO  [Worker-Server] o.a.d.s.w.r.WorkerRegistryClient:[94] - Worker node: 172.28.0.3:1234 registry to registry center /nodes/worker/172.28.0.3:1234 successfully
+[WI-0][TI-0] - 2025-11-06 11:57:30.676 INFO  [Worker-Server] o.a.d.c.m.BaseHeartBeatTask:[47] - Starting WorkerHeartBeatTask...
+[WI-0][TI-0] - 2025-11-06 11:57:30.677 INFO  [Worker-Server] o.a.d.c.m.BaseHeartBeatTask:[49] - Started WorkerHeartBeatTask, heartBeatInterval: 10000...
+[WI-0][TI-0] - 2025-11-06 11:57:30.679 INFO  [Worker-Server] o.a.d.s.w.r.WorkerRegistryClient:[102] - Worker node: 172.28.0.3:1234 registry finished
+[WI-0][TI-0] - 2025-11-06 11:57:30.682 INFO  [Worker-Server] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[95] - PhysicalTaskExecutorEventBusCoordinator started, worker size: 12
+[WI-0][TI-0] - 2025-11-06 11:57:30.682 INFO  [Worker-Server] o.a.d.t.e.TaskEngine:[53] - PhysicalTaskEngine started
+[WI-0][TI-0] - 2025-11-06 11:57:30.683 INFO  [Worker-Server] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[81] - PhysicalTaskExecutorLifecycleEventReporter started
+[WI-0][TI-0] - 2025-11-06 11:57:30.683 INFO  [Worker-Server] o.a.d.s.w.e.PhysicalTaskEngineDelegator:[57] - PhysicalTaskEngineDelegator started
+[WI-0][TI-0] - 2025-11-06 11:57:32.388 INFO  [Worker-Server] o.a.d.s.w.WorkerServer:[61] - Started WorkerServer in 6.476 seconds (JVM running for 7.869)
+[WI-0][TI-0] - 2025-11-06 11:57:32.394 INFO  [Thread-6] o.a.d.c.l.ServerLifeCycleManager:[88] - The current server status changed from RUNNING to STOPPED
+[WI-0][TI-0] - 2025-11-06 11:57:32.402 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.TaskEngine:[87] - PhysicalTaskEngine closed
+[WI-0][TI-0] - 2025-11-06 11:57:32.404 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[107] - PhysicalTaskExecutorEventBusCoordinator closed
+[WI-0][TI-0] - 2025-11-06 11:57:32.405 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[107] - PhysicalTaskExecutorEventBusCoordinator closed
+[WI-0][TI-0] - 2025-11-06 11:57:32.405 INFO  [SpringApplicationShutdownHook] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[174] - PhysicalTaskExecutorLifecycleEventReporter closed
+[WI-0][TI-0] - 2025-11-06 11:57:32.406 WARN  [SpringApplicationShutdownHook] o.a.d.c.m.BaseHeartBeatTask:[78] - WorkerHeartBeatTask finished...
+[WI-0][TI-0] - 2025-11-06 11:57:32.524 INFO  [SpringApplicationShutdownHook] o.a.d.s.w.r.WorkerRegistryClient:[124] - Closed WorkerRegistryClient
+[WI-0][TI-0] - 2025-11-06 11:57:32.527 INFO  [SpringApplicationShutdownHook] c.z.h.HikariDataSource:[350] - HikariPool-1 - Shutdown initiated...
+[WI-0][TI-0] - 2025-11-06 11:57:32.547 INFO  [SpringApplicationShutdownHook] c.z.h.HikariDataSource:[352] - HikariPool-1 - Shutdown completed.
+[WI-0][TI-0] - 2025-11-06 11:57:32.550 INFO  [SpringApplicationShutdownHook] o.a.d.e.b.s.NettyRemotingServer:[149] - WorkerRpcServer closing
+[WI-0][TI-0] - 2025-11-06 11:57:32.551 INFO  [SpringApplicationShutdownHook] o.a.d.e.b.s.NettyRemotingServer:[153] - WorkerRpcServer stop bind at port: 1234
+[WI-0][TI-0] - 2025-11-06 11:57:32.560 INFO  [SpringApplicationShutdownHook] o.a.d.e.b.s.NettyRemotingServer:[167] - WorkerRpcServer closed

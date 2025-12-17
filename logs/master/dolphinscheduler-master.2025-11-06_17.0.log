@@ -1,0 +1,949 @@
+[WI-0][TI-0] - 2025-11-06 17:04:54.499 INFO  [Master-Server] o.a.d.c.u.NetUtils:[312] - Get all NetworkInterfaces: [name:eth0 (eth0), name:lo (lo)]
+[WI-0][TI-0] - 2025-11-06 17:04:54.605 INFO  [Master-Server] o.a.d.s.m.c.MasterConfig:[126] - 
+****************************Master Configuration**************************************
+  listen-port -> 5678
+  workflow-event-bus-fire-thread-count -> 25
+  logic-task-config -> LogicTaskConfig(taskExecutorThreadCount=25)
+  max-heartbeat-interval -> PT10S
+  server-load-protection -> MasterServerLoadProtectionConfig(maxConcurrentWorkflowInstances=2147483647)
+  master-address -> 172.28.0.6:5678
+  master-registry-path: /nodes/master/172.28.0.6:5678
+  worker-group-refresh-interval: PT5M
+  command-fetch-strategy: CommandFetchStrategy(type=ID_SLOT_BASED, config=CommandFetchStrategy.IdSlotBasedFetchConfig(idStep=1, fetchSize=10))
+  worker-load-balancer-configuration-properties: WorkerLoadBalancerConfigurationProperties(type=ROUND_ROBIN, dynamicWeightConfigProperties=WorkerLoadBalancerConfigurationProperties.DynamicWeightConfigProperties(cpuUsageWeight=30, memoryUsageWeight=30, taskThreadPoolUsageWeight=40))
+****************************Master Configuration**************************************
+[WI-0][TI-0] - 2025-11-06 17:04:54.870 INFO  [Master-Server] o.a.d.p.r.z.ZookeeperRegistryAutoConfiguration:[37] - Load ZookeeperRegistryAutoConfiguration
+[WI-0][TI-0] - 2025-11-06 17:04:54.892 INFO  [Master-Server] o.a.d.p.r.z.ZookeeperRegistryProperties:[96] - 
+****************************ZookeeperRegistryProperties**************************************
+  namespace -> dolphinscheduler
+  connectString -> zookeeper:2181
+  retryPolicy -> ZookeeperRegistryProperties.ZookeeperProperties.RetryPolicy(baseSleepTime=PT0.1S, maxRetries=3, maxSleep=PT1S)
+  digest -> 
+  sessionTimeout -> PT1M
+  connectionTimeout -> PT30S
+  blockUntilConnected -> PT30S
+****************************ZookeeperRegistryProperties**************************************
+[WI-0][TI-0] - 2025-11-06 17:04:55.089 INFO  [Master-Server] o.a.d.p.r.z.ZookeeperRegistry:[113] - ZookeeperRegistry started at: 71/ms
+[WI-0][TI-0] - 2025-11-06 17:04:56.095 INFO  [Master-Server] c.z.h.HikariDataSource:[110] - HikariPool-1 - Starting...
+[WI-0][TI-0] - 2025-11-06 17:04:56.330 INFO  [Master-Server] c.z.h.HikariDataSource:[123] - HikariPool-1 - Start completed.
+[WI-0][TI-0] - 2025-11-06 17:04:59.884 INFO  [Master-Server] o.q.i.StdSchedulerFactory:[1220] - Using default implementation for ThreadExecutor
+[WI-0][TI-0] - 2025-11-06 17:04:59.910 INFO  [Master-Server] o.q.c.SchedulerSignalerImpl:[61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[WI-0][TI-0] - 2025-11-06 17:04:59.911 INFO  [Master-Server] o.q.c.QuartzScheduler:[229] - Quartz Scheduler v.2.3.2 created.
+[WI-0][TI-0] - 2025-11-06 17:04:59.913 INFO  [Master-Server] o.q.s.RAMJobStore:[155] - RAMJobStore initialized.
+[WI-0][TI-0] - 2025-11-06 17:04:59.916 INFO  [Master-Server] o.q.c.QuartzScheduler:[294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[WI-0][TI-0] - 2025-11-06 17:04:59.917 INFO  [Master-Server] o.q.i.StdSchedulerFactory:[1374] - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+[WI-0][TI-0] - 2025-11-06 17:04:59.918 INFO  [Master-Server] o.q.i.StdSchedulerFactory:[1378] - Quartz scheduler version: 2.3.2
+[WI-0][TI-0] - 2025-11-06 17:04:59.918 INFO  [Master-Server] o.q.c.QuartzScheduler:[2293] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@4ca907af
+[WI-0][TI-0] - 2025-11-06 17:05:00.437 INFO  [Master-Server] o.a.d.e.b.s.NettyRemotingServer:[111] - MasterRpcServer bind success at port: 5678
+[WI-0][TI-0] - 2025-11-06 17:05:00.517 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: JAVA
+[WI-0][TI-0] - 2025-11-06 17:05:00.526 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: JUPYTER
+[WI-0][TI-0] - 2025-11-06 17:05:00.530 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SPARK
+[WI-0][TI-0] - 2025-11-06 17:05:00.535 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: FLINK_STREAM
+[WI-0][TI-0] - 2025-11-06 17:05:00.538 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: PYTHON
+[WI-0][TI-0] - 2025-11-06 17:05:00.542 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: ALIYUN_SERVERLESS_SPARK
+[WI-0][TI-0] - 2025-11-06 17:05:00.545 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DATASYNC
+[WI-0][TI-0] - 2025-11-06 17:05:00.547 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DATA_FACTORY
+[WI-0][TI-0] - 2025-11-06 17:05:00.550 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: CHUNJUN
+[WI-0][TI-0] - 2025-11-06 17:05:00.555 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: CONDITIONS
+[WI-0][TI-0] - 2025-11-06 17:05:00.560 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: REMOTESHELL
+[WI-0][TI-0] - 2025-11-06 17:05:00.562 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SUB_WORKFLOW
+[WI-0][TI-0] - 2025-11-06 17:05:00.565 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: PROCEDURE
+[WI-0][TI-0] - 2025-11-06 17:05:00.568 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SHELL
+[WI-0][TI-0] - 2025-11-06 17:05:00.569 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DEPENDENT
+[WI-0][TI-0] - 2025-11-06 17:05:00.571 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SQOOP
+[WI-0][TI-0] - 2025-11-06 17:05:00.573 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: MR
+[WI-0][TI-0] - 2025-11-06 17:05:00.577 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: PYTORCH
+[WI-0][TI-0] - 2025-11-06 17:05:00.580 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: K8S
+[WI-0][TI-0] - 2025-11-06 17:05:00.583 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SAGEMAKER
+[WI-0][TI-0] - 2025-11-06 17:05:00.589 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SEATUNNEL
+[WI-0][TI-0] - 2025-11-06 17:05:00.592 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: HTTP
+[WI-0][TI-0] - 2025-11-06 17:05:00.596 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: EMR
+[WI-0][TI-0] - 2025-11-06 17:05:00.598 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DMS
+[WI-0][TI-0] - 2025-11-06 17:05:00.601 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: KUBEFLOW
+[WI-0][TI-0] - 2025-11-06 17:05:00.604 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SQL
+[WI-0][TI-0] - 2025-11-06 17:05:00.608 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DVC
+[WI-0][TI-0] - 2025-11-06 17:05:00.611 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DATAX
+[WI-0][TI-0] - 2025-11-06 17:05:00.618 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: ZEPPELIN
+[WI-0][TI-0] - 2025-11-06 17:05:00.622 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DINKY
+[WI-0][TI-0] - 2025-11-06 17:05:00.624 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: MLFLOW
+[WI-0][TI-0] - 2025-11-06 17:05:00.626 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SWITCH
+[WI-0][TI-0] - 2025-11-06 17:05:00.631 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: OPENMLDB
+[WI-0][TI-0] - 2025-11-06 17:05:00.632 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: LogicFakeTask
+[WI-0][TI-0] - 2025-11-06 17:05:00.637 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: LINKIS
+[WI-0][TI-0] - 2025-11-06 17:05:00.641 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: HIVECLI
+[WI-0][TI-0] - 2025-11-06 17:05:00.643 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: FLINK
+[WI-0][TI-0] - 2025-11-06 17:05:00.644 WARN  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[44] - The task plugin has already been loaded
+[WI-0][TI-0] - 2025-11-06 17:05:00.664 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> K8S
+[WI-0][TI-0] - 2025-11-06 17:05:00.668 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> ZEPPELIN
+[WI-0][TI-0] - 2025-11-06 17:05:00.671 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> SSH
+[WI-0][TI-0] - 2025-11-06 17:05:00.675 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> CLICKHOUSE
+[WI-0][TI-0] - 2025-11-06 17:05:00.678 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> DATABEND
+[WI-0][TI-0] - 2025-11-06 17:05:00.683 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> DB2
+[WI-0][TI-0] - 2025-11-06 17:05:00.689 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> HIVE
+[WI-0][TI-0] - 2025-11-06 17:05:00.694 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> MYSQL
+[WI-0][TI-0] - 2025-11-06 17:05:00.698 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> OCEANBASE
+[WI-0][TI-0] - 2025-11-06 17:05:00.702 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> ORACLE
+[WI-0][TI-0] - 2025-11-06 17:05:00.706 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> POSTGRESQL
+[WI-0][TI-0] - 2025-11-06 17:05:00.711 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> SQLSERVER
+[WI-0][TI-0] - 2025-11-06 17:05:00.716 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> REDSHIFT
+[WI-0][TI-0] - 2025-11-06 17:05:00.719 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> ATHENA
+[WI-0][TI-0] - 2025-11-06 17:05:00.722 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> SPARK
+[WI-0][TI-0] - 2025-11-06 17:05:00.726 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> PRESTO
+[WI-0][TI-0] - 2025-11-06 17:05:00.729 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> TRINO
+[WI-0][TI-0] - 2025-11-06 17:05:00.732 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> STARROCKS
+[WI-0][TI-0] - 2025-11-06 17:05:00.737 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> AZURESQL
+[WI-0][TI-0] - 2025-11-06 17:05:00.741 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> DAMENG
+[WI-0][TI-0] - 2025-11-06 17:05:00.747 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> SNOWFLAKE
+[WI-0][TI-0] - 2025-11-06 17:05:00.753 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> KYUUBI
+[WI-0][TI-0] - 2025-11-06 17:05:00.764 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> VERTICA
+[WI-0][TI-0] - 2025-11-06 17:05:00.767 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> DORIS
+[WI-0][TI-0] - 2025-11-06 17:05:00.771 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> SAGEMAKER
+[WI-0][TI-0] - 2025-11-06 17:05:00.775 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> HANA
+[WI-0][TI-0] - 2025-11-06 17:05:00.783 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> ALIYUN_SERVERLESS_SPARK
+[WI-0][TI-0] - 2025-11-06 17:05:00.785 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> DOLPHINDB
+[WI-0][TI-0] - 2025-11-06 17:05:00.790 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorProvider:[41] - Initialize DataSourceProcessorProvider
+[WI-0][TI-0] - 2025-11-06 17:05:00.812 INFO  [Master-Server] o.a.d.s.m.r.MasterRegistryClient:[96] - Master node : 172.28.0.6:5678 registering to registry center
+[WI-0][TI-0] - 2025-11-06 17:05:00.941 INFO  [Master-Server] o.a.d.c.c.SystemConstants:[30] - init timezone: sun.util.calendar.ZoneInfo[id="Asia/Shanghai",offset=28800000,dstSavings=0,useDaylight=false,transitions=31,lastRule=null]
+[WI-0][TI-0] - 2025-11-06 17:05:01.030 INFO  [Master-Server] o.a.d.c.m.BaseHeartBeatTask:[47] - Starting MasterHeartBeatTask...
+[WI-0][TI-0] - 2025-11-06 17:05:01.032 INFO  [Master-Server] o.a.d.c.m.BaseHeartBeatTask:[49] - Started MasterHeartBeatTask, heartBeatInterval: 10000...
+[WI-0][TI-0] - 2025-11-06 17:05:01.033 INFO  [Master-Server] o.a.d.s.m.r.MasterRegistryClient:[109] - Master node : 172.28.0.6:5678 registered to registry center successfully
+[WI-0][TI-0] - 2025-11-06 17:05:01.118 INFO  [Master-Server] o.a.d.r.a.h.DefaultServerStatusChangeListener:[27] - The status is active now.
+[WI-0][TI-0] - 2025-11-06 17:05:01.119 INFO  [Master-Server] o.a.d.s.m.e.TaskGroupCoordinator:[82] - TaskGroupCoordinator starting...
+[WI-0][TI-0] - 2025-11-06 17:05:01.121 INFO  [Master-Server] o.a.d.s.m.e.TaskGroupCoordinator:[93] - TaskGroupCoordinator started...
+[WI-0][TI-0] - 2025-11-06 17:05:01.122 INFO  [Master-Server] o.a.d.s.m.e.MasterCoordinator:[55] - MasterCoordinator started...
+[WI-0][TI-0] - 2025-11-06 17:05:01.203 INFO  [Master-Server] o.a.d.s.m.c.MasterSlotManager:[89] - Do rebalance success, current master slot: 0, total master slots: 1
+[WI-0][TI-0] - 2025-11-06 17:05:01.215 INFO  [Master-Server] o.a.d.s.m.c.ClusterManager:[76] - Initialized MasterClusters: [ {
+  "processId" : 226,
+  "serverStartupTime" : 1762419900177,
+  "address" : "172.28.0.6:5678",
+  "cpuUsage" : 0.0,
+  "memoryUsage" : 0.4606752707028364,
+  "serverStatus" : "NORMAL"
+} ]
+[WI-0][TI-0] - 2025-11-06 17:05:01.220 INFO  [Master-Server] o.a.d.s.m.c.ClusterManager:[93] - Initialized WorkerClusters: [ ]
+[WI-0][TI-0] - 2025-11-06 17:05:01.225 INFO  [Curator-TreeCache-0] o.a.d.s.m.c.AbstractClusterSubscribeListener:[41] - Server MasterServerMetadata(super=BaseServerMetadata(processId=226, serverStartupTime=1762419900177, address=172.28.0.6:5678, cpuUsage=0.0, memoryUsage=0.4606752707028364, serverStatus=NORMAL)) added
+[WI-0][TI-0] - 2025-11-06 17:05:01.476 INFO  [Master-Server] o.a.d.s.m.c.ClusterManager:[59] - ClusterManager started...
+[WI-0][TI-0] - 2025-11-06 17:05:01.480 INFO  [Master-Server] o.a.d.s.m.c.ClusterStateMonitors:[46] - ClusterStateMonitors started...
+[WI-0][TI-0] - 2025-11-06 17:05:01.861 INFO  [Master-Server] o.a.d.s.m.e.WorkflowEventBusFireWorkers:[71] - WorkflowEventBusFireWorkers started, worker size: 25
+[WI-0][TI-0] - 2025-11-06 17:05:01.862 INFO  [Master-Server] o.a.d.s.m.e.WorkflowEventBusCoordinator:[40] - WorkflowEventBusCoordinator started
+[WI-0][TI-0] - 2025-11-06 17:05:01.863 INFO  [Master-Server] o.a.d.s.m.e.c.CommandEngine:[96] - MasterSchedulerBootstrap starting..
+[WI-0][TI-0] - 2025-11-06 17:05:01.864 INFO  [Master-Server] o.a.d.s.m.e.c.CommandEngine:[101] - MasterSchedulerBootstrap started...
+[WI-0][TI-0] - 2025-11-06 17:05:01.864 INFO  [Master-Server] o.a.d.s.m.e.t.d.WorkerGroupDispatcherCoordinator:[49] - WorkerGroupTaskDispatcherManager started...
+[WI-0][TI-0] - 2025-11-06 17:05:01.866 INFO  [Master-Server] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[95] - LogicTaskExecutorEventBusCoordinator started, worker size: 12
+[WI-0][TI-0] - 2025-11-06 17:05:01.867 INFO  [Master-Server] o.a.d.t.e.TaskEngine:[53] - LogicTaskEngine started
+[WI-0][TI-0] - 2025-11-06 17:05:01.868 INFO  [Master-Server] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[81] - LogicTaskExecutorLifecycleEventReporter started
+[WI-0][TI-0] - 2025-11-06 17:05:01.869 INFO  [Master-Server] o.a.d.s.m.e.e.LogicTaskEngineDelegator:[50] - LogicTaskEngineDelegator started
+[WI-0][TI-0] - 2025-11-06 17:05:01.869 INFO  [Master-Server] o.a.d.s.m.e.WorkflowEngine:[55] - WorkflowEngine started
+[WI-0][TI-0] - 2025-11-06 17:05:01.870 INFO  [Master-Server] o.q.c.QuartzScheduler:[547] - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+[WI-0][TI-0] - 2025-11-06 17:05:01.871 INFO  [Master-Server] o.a.d.s.m.e.s.SystemEventBus:[40] - Published SystemEvent: GlobalMasterFailoverEvent{eventTime=Thu Nov 06 17:05:00 CST 2025}
+[WI-0][TI-0] - 2025-11-06 17:05:01.872 INFO  [Master-Server] o.a.d.s.m.e.s.SystemEventBusFireWorker:[62] - SystemEventBusFireWorker started
+[WI-0][TI-0] - 2025-11-06 17:05:01.874 INFO  [SystemEventBusFireWorker] o.a.d.s.m.f.FailoverCoordinator:[73] - Global master failover starting
+[WI-0][TI-0] - 2025-11-06 17:05:01.875 INFO  [Master-Server] o.a.d.s.m.MasterServer:[164] - MasterServer initialized successfully in 1698 ms
+[WI-0][TI-0] - 2025-11-06 17:05:01.893 INFO  [SystemEventBusFireWorker] o.a.d.s.m.f.FailoverCoordinator:[99] - Global master failover finished, cost: 19/ms
+[WI-0][TI-0] - 2025-11-06 17:05:01.894 INFO  [SystemEventBusFireWorker] o.a.d.s.m.e.s.SystemEventBusFireWorker:[103] - Fire SystemEvent: GlobalMasterFailoverEvent{eventTime=Thu Nov 06 17:05:00 CST 2025} cost: 21 ms
+[WI-0][TI-0] - 2025-11-06 17:05:06.375 INFO  [Curator-TreeCache-0] o.a.d.s.m.c.AbstractClusterSubscribeListener:[41] - Server WorkerServerMetadata(workerGroup=default, workerWeight=100.0, taskThreadPoolUsage=0.0) added
+[WI-0][TI-0] - 2025-11-06 17:05:07.909 WARN  [Curator-TreeCache-0] o.a.d.s.m.c.AbstractClusterSubscribeListener:[45] - Server WorkerServerMetadata(workerGroup=default, workerWeight=100.0, taskThreadPoolUsage=0.0) removed
+[WI-0][TI-0] - 2025-11-06 17:05:07.911 INFO  [Curator-TreeCache-0] o.a.d.s.m.e.s.SystemEventBus:[40] - Published SystemEvent: WorkerFailoverEvent{workerServerMetadata='WorkerServerMetadata(workerGroup=default, workerWeight=100.0, taskThreadPoolUsage=0.0)', eventTime=Thu Nov 06 17:05:07 CST 2025, delayTime=30000}
+[WI-0][TI-0] - 2025-11-06 17:05:27.032 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.7154942716497208 is over then the maxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 17:05:27.034 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 17:05:27.095 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.7154942716497208 is over then the maxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 17:05:27.120 WARN  [Curator-TreeCache-0] o.a.d.s.m.c.MasterSlotManager:[75] - Do rebalance failed, cannot found the current master: 172.28.0.6:5678 in the normal master clusters: []. Please check the current master server status
+[WI-0][TI-0] - 2025-11-06 17:05:28.036 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[38] - OverLoad: the system cpu usage: 0.7019867549668874 is over then the maxSystemCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 17:05:28.037 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 17:05:28.116 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[38] - OverLoad: the system cpu usage: 0.7019867549668874 is over then the maxSystemCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 17:05:29.040 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.7542279489042766 is over then the maxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 17:05:29.045 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 17:05:29.118 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.7542279489042766 is over then the maxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 17:05:30.048 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[38] - OverLoad: the system cpu usage: 0.791044776119403 is over then the maxSystemCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 17:05:30.050 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 17:05:30.120 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[38] - OverLoad: the system cpu usage: 0.791044776119403 is over then the maxSystemCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 17:05:31.051 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[38] - OverLoad: the system cpu usage: 0.8105175292153589 is over then the maxSystemCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 17:05:31.056 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 17:05:31.133 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[38] - OverLoad: the system cpu usage: 0.8105175292153589 is over then the maxSystemCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 17:05:32.063 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[38] - OverLoad: the system cpu usage: 0.8896265560165975 is over then the maxSystemCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 17:05:32.077 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 17:05:32.141 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[38] - OverLoad: the system cpu usage: 0.8896265560165975 is over then the maxSystemCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 17:05:33.080 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8380967823947567 is over then the maxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 17:05:33.084 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 17:05:33.143 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8380967823947567 is over then the maxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 17:05:34.088 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8399309955498435 is over then the maxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 17:05:34.090 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 17:05:34.145 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8399309955498435 is over then the maxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 17:05:35.093 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8424743710625724 is over then the maxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 17:05:35.094 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 17:05:35.147 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8424743710625724 is over then the maxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 17:05:36.098 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.844353626286952 is over then the maxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 17:05:36.099 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 17:05:36.148 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.844353626286952 is over then the maxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 17:05:37.102 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8446474006722279 is over then the maxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 17:05:37.105 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 17:05:37.152 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8446474006722279 is over then the maxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 17:05:37.177 WARN  [Curator-TreeCache-0] o.a.d.s.m.c.MasterSlotManager:[75] - Do rebalance failed, cannot found the current master: 172.28.0.6:5678 in the normal master clusters: []. Please check the current master server status
+[WI-0][TI-0] - 2025-11-06 17:05:37.908 INFO  [SystemEventBusFireWorker] o.a.d.s.m.f.FailoverCoordinator:[191] - Worker[WorkerServerMetadata(workerGroup=default, workerWeight=100.0, taskThreadPoolUsage=0.0)] failover starting
+[WI-0][TI-0] - 2025-11-06 17:05:37.911 INFO  [SystemEventBusFireWorker] o.a.d.r.a.RegistryClient:[177] - persist key: /nodes/failover-finish-nodes/172.28.0.6:1234-1762419905932-300, value: 1762419937911
+[WI-0][TI-0] - 2025-11-06 17:05:37.916 INFO  [SystemEventBusFireWorker] o.a.d.s.m.f.FailoverCoordinator:[225] - Worker[172.28.0.6:1234] failover 0 tasks finished, cost: 7/ms
+[WI-0][TI-0] - 2025-11-06 17:05:37.917 INFO  [SystemEventBusFireWorker] o.a.d.s.m.e.s.SystemEventBusFireWorker:[103] - Fire SystemEvent: WorkerFailoverEvent{workerServerMetadata='WorkerServerMetadata(workerGroup=default, workerWeight=100.0, taskThreadPoolUsage=0.0)', eventTime=Thu Nov 06 17:05:07 CST 2025, delayTime=30000} cost: 9 ms
+[WI-0][TI-0] - 2025-11-06 17:05:38.109 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.844706455829745 is over then the maxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 17:05:38.110 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 17:05:38.174 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.844706455829745 is over then the maxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 17:05:39.112 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8443266010453764 is over then the maxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 17:05:39.115 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 17:05:39.175 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8443266010453764 is over then the maxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 17:05:40.121 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.IdSlotBasedCommandFetcher:[60] - MasterSlotManager check slot (-1 -> 1)is invalidated.
+[WI-0][TI-0] - 2025-11-06 17:05:40.191 INFO  [Curator-TreeCache-0] o.a.d.s.m.c.MasterSlotManager:[89] - Do rebalance success, current master slot: 0, total master slots: 1
+[WI-0][TI-0] - 2025-11-06 17:08:23.973 INFO  [MasterCommandHandleThreadPool] o.a.d.s.m.e.WorkflowEventBus:[41] - Publish event: WorkflowStartLifecycleEvent{workflow=aaa-20251106170823477}
+[WI-0][TI-0] - 2025-11-06 17:08:23.977 INFO  [MasterCommandHandleThreadPool] o.a.d.s.m.e.c.CommandEngine:[174] - Success bootstrap command {
+  "id" : 1,
+  "commandType" : "START_PROCESS",
+  "workflowDefinitionCode" : 156661445799520,
+  "workflowDefinitionVersion" : 1,
+  "workflowInstanceId" : 1,
+  "commandParam" : "{\"commandType\":\"START_PROCESS\",\"subWorkflowInstance\":false,\"startNodes\":[],\"commandParams\":[],\"timeZone\":\"Asia/Shanghai\"}",
+  "workflowInstancePriority" : "MEDIUM",
+  "executorId" : 0,
+  "taskDependType" : "TASK_POST",
+  "failureStrategy" : "CONTINUE",
+  "warningType" : "NONE",
+  "warningGroupId" : null,
+  "scheduleTime" : null,
+  "startTime" : null,
+  "updateTime" : "2025-11-06 17:08:24",
+  "workerGroup" : null,
+  "tenantCode" : "default",
+  "environmentCode" : -1,
+  "dryRun" : 0
+}
+[WI-1][TI-0] - 2025-11-06 17:08:24.024 INFO  [ds-workflow-eventbus-worker-22] o.a.d.s.m.e.w.l.h.AbstractWorkflowLifecycleEventHandler:[47] - Begin fire workflow aaa-20251106170823477 LifecycleEvent[WorkflowStartLifecycleEvent{workflow=aaa-20251106170823477}] with state: RUNNING_EXECUTION
+[WI-1][TI-0] - 2025-11-06 17:08:24.026 INFO  [ds-workflow-eventbus-worker-22] o.a.d.s.m.e.WorkflowEventBus:[41] - Publish event: TaskStartLifecycleEvent{task=aaa}
+[WI-1][TI-0] - 2025-11-06 17:08:24.027 INFO  [ds-workflow-eventbus-worker-22] o.a.d.s.m.e.w.l.h.AbstractWorkflowLifecycleEventHandler:[52] - Fired workflow aaa-20251106170823477 LifecycleEvent[WorkflowStartLifecycleEvent{workflow=aaa-20251106170823477}] with state: RUNNING_EXECUTION
+[WI-1][TI-0] - 2025-11-06 17:08:24.038 INFO  [ds-workflow-eventbus-worker-22] o.a.d.s.m.e.WorkflowEventBus:[41] - Publish event: TaskDispatchLifecycleEvent{task=aaa}
+[WI-1][TI-0] - 2025-11-06 17:08:24.039 INFO  [ds-workflow-eventbus-worker-22] o.a.d.s.m.e.t.l.h.AbstractTaskLifecycleEventHandler:[47] - Fired task aaa TaskStartLifecycleEvent{task=aaa} with state SUBMITTED_SUCCESS
+[WI-1][TI-0] - 2025-11-06 17:08:24.063 INFO  [ds-workflow-eventbus-worker-22] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[56] - Initialize WorkerGroupDispatcher: WorkerGroupTaskDispatcher-default
+[WI-1][TI-0] - 2025-11-06 17:08:24.064 INFO  [ds-workflow-eventbus-worker-22] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[62] - The WorkerGroupTaskDispatcher-default starting...
+[WI-1][TI-0] - 2025-11-06 17:08:24.064 INFO  [ds-workflow-eventbus-worker-22] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[64] - The WorkerGroupTaskDispatcher-default  started
+[WI-1][TI-0] - 2025-11-06 17:08:24.065 INFO  [ds-workflow-eventbus-worker-22] o.a.d.s.m.e.t.d.WorkerGroupDispatcherCoordinator:[59] - Success add Task[id=1] to WorkerGroupDispatcher[name=default]
+[WI-1][TI-0] - 2025-11-06 17:08:24.065 INFO  [ds-workflow-eventbus-worker-22] o.a.d.s.m.e.t.l.h.AbstractTaskLifecycleEventHandler:[47] - Fired task aaa TaskDispatchLifecycleEvent{task=aaa} with state SUBMITTED_SUCCESS
+[WI-1][TI-1] - 2025-11-06 17:08:24.073 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 1000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:08:25.070 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 2000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:08:27.070 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 3000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:08:30.071 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 4000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:08:34.071 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 5000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:08:39.072 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 6000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:08:45.072 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 7000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:08:52.070 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 8000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:09:00.071 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 9000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:09:09.071 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 10000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:09:19.069 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 11000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:09:30.070 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 12000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:09:42.071 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 13000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:09:55.069 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 14000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:10:09.069 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 15000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:10:24.068 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 16000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:10:40.067 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 17000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:10:57.062 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 18000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:11:15.062 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 19000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:11:34.064 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 20000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:11:54.062 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 21000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:12:15.063 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 22000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:12:37.061 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 23000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:13:00.059 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 24000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:13:24.057 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 25000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:13:49.057 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 26000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:14:15.057 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 27000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:14:42.056 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 28000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:15:10.054 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 29000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:15:39.052 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 30000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:16:09.051 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 31000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:16:40.049 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 32000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:17:12.048 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 33000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:17:45.046 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 34000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:18:19.022 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 35000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:18:54.015 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 36000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:19:30.017 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 37000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:20:07.018 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 38000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:20:45.012 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 39000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:21:24.003 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 40000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:22:04.000 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 41000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:22:44.997 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 42000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:23:26.990 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 43000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:24:09.987 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 44000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:24:53.980 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 45000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:25:38.978 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 46000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-0][TI-0] - 2025-11-06 17:25:50.588 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[46] - OverLoad: the jvm cpu usage: 1.0 is over then the maxJvmCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 17:25:50.592 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-1][TI-1] - 2025-11-06 17:26:24.966 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 47000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:27:11.960 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 48000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:27:59.950 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 49000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:28:48.940 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 50000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:29:38.936 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 51000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:30:29.929 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 52000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:31:21.915 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 53000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:32:14.915 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 54000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:33:08.902 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 55000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:34:03.898 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 56000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:34:59.891 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 57000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:35:56.890 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 58000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:36:54.887 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 59000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:37:53.884 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 60000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:38:53.883 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 60000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:39:53.878 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 60000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:40:53.874 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 60000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:41:53.871 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 60000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:42:53.868 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 60000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-0][TI-0] - 2025-11-06 17:43:33.490 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[46] - OverLoad: the jvm cpu usage: 1.0 is over then the maxJvmCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 17:43:33.493 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 17:43:34.486 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[46] - OverLoad: the jvm cpu usage: 1.0 is over then the maxJvmCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 17:43:34.507 WARN  [Curator-TreeCache-0] o.a.d.s.m.c.MasterSlotManager:[75] - Do rebalance failed, cannot found the current master: 172.28.0.6:5678 in the normal master clusters: []. Please check the current master server status
+[WI-0][TI-0] - 2025-11-06 17:43:35.504 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.IdSlotBasedCommandFetcher:[60] - MasterSlotManager check slot (-1 -> 1)is invalidated.
+[WI-0][TI-0] - 2025-11-06 17:43:35.520 INFO  [Curator-TreeCache-0] o.a.d.s.m.c.MasterSlotManager:[89] - Do rebalance success, current master slot: 0, total master slots: 1
+[WI-1][TI-1] - 2025-11-06 17:43:53.860 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 60000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:44:53.860 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 60000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:45:53.860 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 60000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:46:53.856 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 60000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:47:53.853 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 60000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:48:53.848 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 60000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:49:53.845 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 60000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:50:53.843 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 60000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:51:53.839 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 60000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-1][TI-1] - 2025-11-06 17:52:53.837 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 1 failed will retry after: 60000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=1, name=aaa, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-0][TI-0] - 2025-11-06 17:53:41.336 WARN  [MasterCommandLoopThread] c.z.h.p.ProxyConnection:[182] - HikariPool-1 - Connection com.mysql.cj.jdbc.ConnectionImpl@5b1f6661 marked as broken because of SQLSTATE(08S01), ErrorCode(0)
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 12 milliseconds ago. The last packet sent successfully to the server was 12 milliseconds ago.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:175)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:2022)
+	at com.zaxxer.hikari.pool.ProxyConnection.setAutoCommit(ProxyConnection.java:414)
+	at com.zaxxer.hikari.pool.HikariProxyConnection.setAutoCommit(HikariProxyConnection.java)
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:287)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.startTransaction(AbstractPlatformTransactionManager.java:400)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:373)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.createTransactionIfNecessary(TransactionAspectSupport.java:595)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:382)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at org.apache.dolphinscheduler.server.master.engine.command.IdSlotBasedCommandFetcher$$EnhancerBySpringCGLIB$$7a4e134.fetchCommands(<generated>)
+	at org.apache.dolphinscheduler.server.master.engine.command.CommandEngine.run(CommandEngine.java:123)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 12 milliseconds ago. The last packet sent successfully to the server was 12 milliseconds ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:62)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:150)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:166)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:582)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:762)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:701)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryPacket(NativeProtocol.java:1052)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryString(NativeProtocol.java:998)
+	at com.mysql.cj.NativeSession.execSQL(NativeSession.java:655)
+	at com.mysql.cj.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:2005)
+	... 13 common frames omitted
+Caused by: java.io.EOFException: Can not read response from server. Expected to read 4 bytes, read 0 bytes before connection was unexpectedly lost.
+	at com.mysql.cj.protocol.FullReadInputStream.readFully(FullReadInputStream.java:67)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeaderLocal(SimplePacketReader.java:81)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:63)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:45)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:52)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:41)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:54)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:44)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:576)
+	... 19 common frames omitted
+[WI-0][TI-0] - 2025-11-06 17:53:41.339 ERROR [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[144] - Master schedule workflow error
+org.springframework.transaction.CannotCreateTransactionException: Could not open JDBC Connection for transaction; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 12 milliseconds ago. The last packet sent successfully to the server was 12 milliseconds ago.
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:309)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.startTransaction(AbstractPlatformTransactionManager.java:400)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:373)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.createTransactionIfNecessary(TransactionAspectSupport.java:595)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:382)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at org.apache.dolphinscheduler.server.master.engine.command.IdSlotBasedCommandFetcher$$EnhancerBySpringCGLIB$$7a4e134.fetchCommands(<generated>)
+	at org.apache.dolphinscheduler.server.master.engine.command.CommandEngine.run(CommandEngine.java:123)
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 12 milliseconds ago. The last packet sent successfully to the server was 12 milliseconds ago.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:175)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:2022)
+	at com.zaxxer.hikari.pool.ProxyConnection.setAutoCommit(ProxyConnection.java:414)
+	at com.zaxxer.hikari.pool.HikariProxyConnection.setAutoCommit(HikariProxyConnection.java)
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:287)
+	... 10 common frames omitted
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 12 milliseconds ago. The last packet sent successfully to the server was 12 milliseconds ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:62)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:150)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:166)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:582)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:762)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:701)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryPacket(NativeProtocol.java:1052)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryString(NativeProtocol.java:998)
+	at com.mysql.cj.NativeSession.execSQL(NativeSession.java:655)
+	at com.mysql.cj.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:2005)
+	... 13 common frames omitted
+Caused by: java.io.EOFException: Can not read response from server. Expected to read 4 bytes, read 0 bytes before connection was unexpectedly lost.
+	at com.mysql.cj.protocol.FullReadInputStream.readFully(FullReadInputStream.java:67)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeaderLocal(SimplePacketReader.java:81)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:63)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:45)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:52)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:41)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:54)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:44)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:576)
+	... 19 common frames omitted
+[WI-0][TI-0] - 2025-11-06 17:53:42.344 WARN  [MasterCommandLoopThread] c.z.h.p.PoolBase:[184] - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4c80e651 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+[WI-0][TI-0] - 2025-11-06 17:53:42.347 WARN  [MasterCommandLoopThread] c.z.h.p.PoolBase:[184] - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6c8cbdce (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+[WI-0][TI-0] - 2025-11-06 17:53:42.350 WARN  [MasterCommandLoopThread] c.z.h.p.PoolBase:[184] - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@62b7228c (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+[WI-0][TI-0] - 2025-11-06 17:53:42.354 WARN  [MasterCommandLoopThread] c.z.h.p.PoolBase:[184] - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2fdb8a3d (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.

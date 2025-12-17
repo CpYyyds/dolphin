@@ -1,0 +1,60 @@
+2025-11-07 11:05:38.394 INFO  - 🐬 Initialize Task Context
+2025-11-07 11:05:38.412 INFO  - TenantCode: cpy check successfully
+2025-11-07 11:05:38.414 INFO  - TaskInstance working directory: /tmp/dolphinscheduler/exec/process/4 create successfully
+2025-11-07 11:05:38.436 INFO  - Download resource file /tmp/dolphinscheduler/default/resources/flink-file-wordcount-1.0-SNAPSHOT.jar -> /tmp/dolphinscheduler/exec/process/4/flink-file-wordcount-1.0-SNAPSHOT.jar successfully
+2025-11-07 11:05:38.440 INFO  - Download resources successfully: 
+ResourceContext(resourceItemMap={/tmp/dolphinscheduler/default/resources/flink-file-wordcount-1.0-SNAPSHOT.jar=ResourceContext.ResourceItem(resourceAbsolutePathInStorage=/tmp/dolphinscheduler/default/resources/flink-file-wordcount-1.0-SNAPSHOT.jar, resourceAbsolutePathInLocal=/tmp/dolphinscheduler/exec/process/4/flink-file-wordcount-1.0-SNAPSHOT.jar)})
+2025-11-07 11:05:38.449 INFO  - 🐬 Load Task Instance Plugin
+2025-11-07 11:05:38.450 INFO  - Initialized physicalTask: FLINK successfully
+2025-11-07 11:05:38.452 INFO  - Initialize flink task params {
+  "localParams" : [ ],
+  "varPool" : [ ],
+  "mainJar" : {
+    "id" : null,
+    "resourceName" : "/tmp/dolphinscheduler/default/resources/flink-file-wordcount-1.0-SNAPSHOT.jar",
+    "res" : null
+  },
+  "mainClass" : "org.example.HelloWorld",
+  "deployMode" : "cluster",
+  "mainArgs" : "--output /tmp/flink/output",
+  "slot" : 1,
+  "parallelism" : 1,
+  "appName" : null,
+  "taskManager" : 2,
+  "jobManagerMemory" : "1G",
+  "taskManagerMemory" : "2G",
+  "resourceList" : [ ],
+  "yarnQueue" : "",
+  "others" : null,
+  "flinkVersion" : ">=1.12",
+  "programType" : "JAVA",
+  "initScript" : "",
+  "rawScript" : ""
+}
+2025-11-07 11:05:38.456 INFO  - Writing content: set execution.target=yarn-per-job;
+set taskmanager.numberOfTaskSlots=1;
+set jobmanager.memory.process.size=1G;
+set taskmanager.memory.process.size=2G;
+set parallelism.default=1;
+
+2025-11-07 11:05:38.458 INFO  - To file: /tmp/dolphinscheduler/exec/process/4/4_init.sql
+2025-11-07 11:05:38.460 INFO  - Set taskVarPool: null successfully
+2025-11-07 11:05:38.461 INFO  - 🐬 Execute Task Instance
+2025-11-07 11:05:38.463 INFO  - Final Script Content:
+====================
+#!/bin/bash
+BASEDIR=$(cd `dirname $0`; pwd)
+cd $BASEDIR
+export FLINK_HOME=/usr/local/flink
+export PATH=$FLINK_HOME/bin:$PATH
+${FLINK_HOME}/bin/flink run -t yarn-per-job -ys 1 -yjm 1G -ytm 2G -p 1 -sae -c org.example.HelloWorld /tmp/dolphinscheduler/exec/process/4/flink-file-wordcount-1.0-SNAPSHOT.jar --output /tmp/flink/output
+====================
+2025-11-07 11:05:38.465 INFO  - Executing shell command : sudo -u cpy -i /tmp/dolphinscheduler/exec/process/4/4.sh
+2025-11-07 11:05:38.472 INFO  - process start, process id is: 1320
+2025-11-07 11:05:39.474 INFO  -  -> 
+	Please specify JAVA_HOME. Either in Flink config ./conf/flink-conf.yaml or as system-wide JAVA_HOME.
+2025-11-07 11:05:39.478 INFO  - process has exited. execute path:/tmp/dolphinscheduler/exec/process/4, processId:1320 ,exitStatusCode:1 ,processWaitForStatus:true ,processExitValue:1
+2025-11-07 11:05:39.479 INFO  - Start finding appId in /opt/dolphinscheduler/worker-server/logs/20251107/156727085175776/2/3/4.log, fetch way: log 
+2025-11-07 11:05:39.646 INFO  - 🐬 Finalize Task Instance
+2025-11-07 11:05:39.648 INFO  - FINALIZE_SESSION
+2025-11-07 11:05:39.651 INFO  - Deleted task exec directory: /tmp/dolphinscheduler/exec/process/4

@@ -1,0 +1,35 @@
+2025-11-06 21:16:02.739 INFO  - 🐬 Initialize Task Context
+2025-11-06 21:16:02.801 INFO  - create linux os user: cpy
+2025-11-06 21:16:02.802 INFO  - execute cmd: sudo useradd -m -g root
+ cpy
+2025-11-06 21:16:02.892 INFO  - Create tenant cpy under userGroup: root
+ success
+2025-11-06 21:16:02.894 INFO  - TenantCode: cpy check successfully
+2025-11-06 21:16:02.900 INFO  - TaskInstance working directory: /tmp/dolphinscheduler/exec/process/2 create successfully
+2025-11-06 21:16:02.912 INFO  - Download resources successfully: 
+ResourceContext(resourceItemMap={})
+2025-11-06 21:16:02.917 INFO  - 🐬 Load Task Instance Plugin
+2025-11-06 21:16:02.922 INFO  - Initialized physicalTask: SHELL successfully
+2025-11-06 21:16:02.925 INFO  - Initialize shell task params {
+  "localParams" : [ ],
+  "varPool" : [ ],
+  "rawScript" : "echo \"hello\"",
+  "resourceList" : [ ]
+}
+2025-11-06 21:16:02.926 INFO  - Set taskVarPool: null successfully
+2025-11-06 21:16:02.926 INFO  - 🐬 Execute Task Instance
+2025-11-06 21:16:02.965 INFO  - Final Script Content:
+====================
+#!/bin/bash
+BASEDIR=$(cd `dirname $0`; pwd)
+cd $BASEDIR
+echo "hello"
+====================
+2025-11-06 21:16:02.968 INFO  - Executing shell command : sudo -u cpy -i /tmp/dolphinscheduler/exec/process/2/2.sh
+2025-11-06 21:16:02.976 INFO  - process start, process id is: 1135
+2025-11-06 21:16:03.975 INFO  -  -> 
+	hello
+2025-11-06 21:16:03.977 INFO  - process has exited. execute path:/tmp/dolphinscheduler/exec/process/2, processId:1135 ,exitStatusCode:0 ,processWaitForStatus:true ,processExitValue:0
+2025-11-06 21:16:04.103 INFO  - 🐬 Finalize Task Instance
+2025-11-06 21:16:04.104 INFO  - FINALIZE_SESSION
+2025-11-06 21:16:04.141 INFO  - Deleted task exec directory: /tmp/dolphinscheduler/exec/process/2

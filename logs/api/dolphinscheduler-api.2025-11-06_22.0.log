@@ -1,0 +1,8 @@
+2025-11-06 22:31:23.786 WARN  [HikariPool-1 housekeeper] c.z.h.p.HikariPool:[788] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h24s685ms394µs90ns).
+2025-11-06 22:31:23.793 WARN  [main-SendThread(zookeeper:2181)] o.a.z.ClientCnxn:[1249] - Client session timed out, have not heard from server in 3597851ms for session id 0x100061b44310002
+2025-11-06 22:31:24.150 WARN  [main-SendThread(zookeeper:2181)] o.a.z.ClientCnxn:[1292] - Session 0x100061b44310002 for server zookeeper/172.28.0.3:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+org.apache.zookeeper.ClientCnxn$SessionTimeoutException: Client session timed out, have not heard from server in 3597851ms for session id 0x100061b44310002
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1250)
+2025-11-06 22:31:24.155 ERROR [NettyClientThread-] o.a.d.e.b.c.NettyClientHandler:[69] - NettyClientHandler catch an exception on channel: [id: 0xe4bd19ae, L:/172.28.0.6:39680 - R:172.28.0.6/172.28.0.6:5678]
+io.netty.channel.unix.Errors$NativeIoException: readAddress(..) failed: Connection reset by peer
+2025-11-06 22:31:24.312 INFO  [NettyClientThread-] o.a.d.e.b.c.NettyClientHandler:[46] - Channel inactive: [id: 0xe4bd19ae, L:/172.28.0.6:39680 ! R:172.28.0.6/172.28.0.6:5678]

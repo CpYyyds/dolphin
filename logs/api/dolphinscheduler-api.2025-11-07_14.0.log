@@ -1,0 +1,29 @@
+2025-11-07 14:34:11.939 INFO  [qtp128654041-174] o.a.d.a.i.LoginHandlerInterceptor:[75] - user does not exist
+2025-11-07 14:34:11.940 INFO  [qtp128654041-434] o.a.d.a.i.LoginHandlerInterceptor:[75] - user does not exist
+2025-11-07 14:34:11.939 INFO  [qtp128654041-223] o.a.d.a.i.LoginHandlerInterceptor:[75] - user does not exist
+2025-11-07 14:34:11.939 INFO  [qtp128654041-435] o.a.d.a.i.LoginHandlerInterceptor:[75] - user does not exist
+2025-11-07 14:34:11.943 INFO  [qtp128654041-233] o.a.d.a.i.LoginHandlerInterceptor:[75] - user does not exist
+2025-11-07 14:34:11.939 INFO  [qtp128654041-226] o.a.d.a.i.LoginHandlerInterceptor:[75] - user does not exist
+2025-11-07 14:34:45.301 WARN  [main-SendThread(zookeeper:2181)] o.a.z.ClientCnxn:[1292] - Session 0x10008db96ff0007 for server zookeeper/172.28.0.3:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+org.apache.zookeeper.ClientCnxn$EndOfStreamException: Unable to read additional data from server sessionid 0x10008db96ff0007, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1282)
+2025-11-07 14:34:50.421 ERROR [main-SendThread(zookeeper:2181)] o.a.z.c.StaticHostProvider:[148] - Unable to resolve address: zookeeper:2181
+java.net.UnknownHostException: zookeeper: No address associated with hostname
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1330)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1283)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1199)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:88)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:141)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:368)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1197)
+2025-11-07 14:34:51.084 WARN  [main-SendThread(zookeeper:2181)] o.a.z.ClientCnxn:[1292] - Session 0x10008db96ff0007 for server zookeeper:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+java.lang.IllegalArgumentException: Unable to canonicalize address zookeeper:2181 because it's not resolvable
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:78)
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:41)
+	at org.apache.zookeeper.ClientCnxn$SendThread.startConnect(ClientCnxn.java:1151)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1200)

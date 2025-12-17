@@ -1,0 +1,176 @@
+2025-11-06 21:01:36.215 WARN  [main-SendThread(zookeeper:2181)] o.a.z.ClientCnxn:[1292] - Session 0x10006006b1e0003 for server zookeeper/172.28.0.3:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+org.apache.zookeeper.ClientCnxn$EndOfStreamException: Unable to read additional data from server sessionid 0x10006006b1e0003, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1282)
+2025-11-06 21:01:37.963 WARN  [qtp1294966332-183] c.z.h.p.PoolBase:[184] - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1b5541cd (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-11-06 21:01:37.967 WARN  [qtp1294966332-183] c.z.h.p.PoolBase:[184] - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@55c36fb1 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-11-06 21:01:37.970 WARN  [qtp1294966332-183] c.z.h.p.PoolBase:[184] - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4eba5941 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-11-06 21:01:37.973 WARN  [qtp1294966332-183] c.z.h.p.PoolBase:[184] - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7f502272 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-11-06 21:01:37.976 WARN  [qtp1294966332-183] c.z.h.p.PoolBase:[184] - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@268e313a (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-11-06 21:01:37.977 WARN  [qtp1294966332-183] c.z.h.p.PoolBase:[184] - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@687e6cbd (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-11-06 21:01:41.334 ERROR [main-SendThread(zookeeper:2181)] o.a.z.c.StaticHostProvider:[148] - Unable to resolve address: zookeeper:2181
+java.net.UnknownHostException: zookeeper: No address associated with hostname
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1330)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1283)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1199)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:88)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:141)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:368)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1197)
+2025-11-06 21:01:42.055 WARN  [main-SendThread(zookeeper:2181)] o.a.z.ClientCnxn:[1292] - Session 0x10006006b1e0003 for server zookeeper:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+java.lang.IllegalArgumentException: Unable to canonicalize address zookeeper:2181 because it's not resolvable
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:78)
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:41)
+	at org.apache.zookeeper.ClientCnxn$SendThread.startConnect(ClientCnxn.java:1151)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1200)
+2025-11-06 21:09:56.602 INFO  [main] o.e.j.u.log:[170] - Logging initialized @11593ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-11-06 21:09:57.208 INFO  [main] o.e.j.s.Server:[375] - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 1.8.0_342-b07
+2025-11-06 21:09:57.287 INFO  [main] o.e.j.s.h.C.application:[2368] - Initializing Spring embedded WebApplicationContext
+2025-11-06 21:09:58.539 INFO  [main] c.z.h.HikariDataSource:[110] - HikariPool-1 - Starting...
+2025-11-06 21:09:59.036 INFO  [main] c.z.h.HikariDataSource:[123] - HikariPool-1 - Start completed.
+2025-11-06 21:10:00.993 INFO  [main] o.a.d.a.c.ApiConfig:[58] - API config: auditEnable -> true 
+2025-11-06 21:10:00.999 INFO  [main] o.a.d.a.c.ApiConfig:[59] - API config: trafficControl -> ApiConfig.TrafficConfiguration(globalSwitch=false, maxGlobalQpsRate=300, tenantSwitch=false, defaultTenantQpsRate=10, customizeTenantQpsRate={}) 
+2025-11-06 21:10:01.001 INFO  [main] o.a.d.a.c.ApiConfig:[60] - API config: pythonGateway -> ApiConfig.PythonGatewayConfiguration(enabled=true, gatewayServerAddress=127.0.0.1, gatewayServerPort=25333, pythonAddress=127.0.0.1, pythonPort=25334, connectTimeout=0, readTimeout=0, authToken=jwUDzpLsNKEFER4*a8gruBH_GsAurNxU7A@Xc) 
+2025-11-06 21:10:01.538 INFO  [main] o.e.j.s.session:[334] - DefaultSessionIdManager workerName=node0
+2025-11-06 21:10:01.582 INFO  [main] o.e.j.s.session:[339] - No SessionScavenger set, using defaults
+2025-11-06 21:10:01.589 INFO  [main] o.e.j.s.session:[132] - node0 Scavenging every 660000ms
+2025-11-06 21:10:01.609 INFO  [main] o.e.j.s.h.ContextHandler:[921] - Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@2842ef02{application,/dolphinscheduler,[file:///tmp/jetty-docbase.12345.2415020823869985564/, jar:file:/opt/dolphinscheduler/api-server/libs/swagger-ui-4.11.1.jar!/META-INF/resources],AVAILABLE}
+2025-11-06 21:10:01.610 INFO  [main] o.e.j.s.Server:[415] - Started @16605ms
+2025-11-06 21:10:08.032 INFO  [main] o.a.d.p.r.z.ZookeeperRegistryAutoConfiguration:[37] - Load ZookeeperRegistryAutoConfiguration
+2025-11-06 21:10:08.112 INFO  [main] o.a.d.p.r.z.ZookeeperRegistryProperties:[96] - 
+****************************ZookeeperRegistryProperties**************************************
+  namespace -> dolphinscheduler
+  connectString -> zookeeper:2181
+  retryPolicy -> ZookeeperRegistryProperties.ZookeeperProperties.RetryPolicy(baseSleepTime=PT1S, maxRetries=3, maxSleep=PT5S)
+  digest -> 
+  sessionTimeout -> PT5M
+  connectionTimeout -> PT2M
+  blockUntilConnected -> PT30M
+****************************ZookeeperRegistryProperties**************************************
+2025-11-06 21:10:08.612 INFO  [main] o.a.d.p.r.z.ZookeeperRegistry:[113] - ZookeeperRegistry started at: 91/ms
+2025-11-06 21:10:09.232 INFO  [main] c.a.c.i.ReflectionUtils:[542] - Unable to create MethodHandles to use Java 9+ MethodHandles.privateLookupIn. Will attempt to fallback to using the package-private constructor.
+2025-11-06 21:10:09.330 INFO  [main] c.a.c.i.j.JacksonVersion:[222] - Package versions: jackson-core=2.13.4, jackson-databind=2.13.4, jackson-dataformat-xml=2.13.3, jackson-datatype-jsr310=2.13.4, azure-core=1.36.0, Troubleshooting version conflicts: https://aka.ms/azsdk/java/dependency/troubleshoot
+2025-11-06 21:10:22.585 INFO  [main] o.q.i.StdSchedulerFactory:[1220] - Using default implementation for ThreadExecutor
+2025-11-06 21:10:22.614 INFO  [main] o.q.c.SchedulerSignalerImpl:[61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2025-11-06 21:10:22.615 INFO  [main] o.q.c.QuartzScheduler:[229] - Quartz Scheduler v.2.3.2 created.
+2025-11-06 21:10:22.617 INFO  [main] o.q.s.RAMJobStore:[155] - RAMJobStore initialized.
+2025-11-06 21:10:22.620 INFO  [main] o.q.c.QuartzScheduler:[294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2025-11-06 21:10:22.623 INFO  [main] o.q.i.StdSchedulerFactory:[1374] - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2025-11-06 21:10:22.625 INFO  [main] o.q.i.StdSchedulerFactory:[1378] - Quartz scheduler version: 2.3.2
+2025-11-06 21:10:22.626 INFO  [main] o.q.c.QuartzScheduler:[2293] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@71ed3bc8
+2025-11-06 21:10:24.315 INFO  [main] o.a.d.a.p.PythonGateway:[678] - PythonGatewayService started on: /127.0.0.1
+2025-11-06 21:10:24.399 INFO  [Thread-13] p.GatewayServer:[573] - Gateway Server Started
+2025-11-06 21:10:38.049 INFO  [main] o.s.l.c.s.AbstractContextSource:[425] - Property 'userDn' not set - anonymous context will be used for read-write operations
+2025-11-06 21:10:41.089 INFO  [main] o.e.j.s.h.C.application:[2368] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-06 21:10:41.109 INFO  [main] o.e.j.s.AbstractConnector:[333] - Started ServerConnector@12a6e8ed{HTTP/1.1, (http/1.1)}{0.0.0.0:12345}
+2025-11-06 21:10:41.113 INFO  [main] o.q.c.QuartzScheduler:[547] - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2025-11-06 21:10:41.145 INFO  [main] o.a.d.a.ApiApplicationServer:[64] - Received spring application context ready event will load taskPlugin and write to DB
+2025-11-06 21:10:41.192 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> K8S
+2025-11-06 21:10:41.197 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> ZEPPELIN
+2025-11-06 21:10:41.201 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> SSH
+2025-11-06 21:10:41.207 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> CLICKHOUSE
+2025-11-06 21:10:41.212 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> DATABEND
+2025-11-06 21:10:41.217 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> DB2
+2025-11-06 21:10:41.222 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> HIVE
+2025-11-06 21:10:41.226 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> MYSQL
+2025-11-06 21:10:41.228 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> OCEANBASE
+2025-11-06 21:10:41.230 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> ORACLE
+2025-11-06 21:10:41.233 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> POSTGRESQL
+2025-11-06 21:10:41.238 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> SQLSERVER
+2025-11-06 21:10:41.243 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> REDSHIFT
+2025-11-06 21:10:41.247 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> ATHENA
+2025-11-06 21:10:41.250 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> SPARK
+2025-11-06 21:10:41.254 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> PRESTO
+2025-11-06 21:10:41.260 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> TRINO
+2025-11-06 21:10:41.273 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> STARROCKS
+2025-11-06 21:10:41.293 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> AZURESQL
+2025-11-06 21:10:41.302 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> DAMENG
+2025-11-06 21:10:41.309 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> SNOWFLAKE
+2025-11-06 21:10:41.315 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> KYUUBI
+2025-11-06 21:10:41.322 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> VERTICA
+2025-11-06 21:10:41.326 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> DORIS
+2025-11-06 21:10:41.329 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> SAGEMAKER
+2025-11-06 21:10:41.336 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> HANA
+2025-11-06 21:10:41.341 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> ALIYUN_SERVERLESS_SPARK
+2025-11-06 21:10:41.345 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> DOLPHINDB
+2025-11-06 21:10:41.350 INFO  [main] o.a.d.p.d.a.p.DataSourceProcessorProvider:[41] - Initialize DataSourceProcessorProvider
+2025-11-06 21:10:41.445 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: JAVA
+2025-11-06 21:10:41.450 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: JUPYTER
+2025-11-06 21:10:41.455 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SPARK
+2025-11-06 21:10:41.460 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: FLINK_STREAM
+2025-11-06 21:10:41.463 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: PYTHON
+2025-11-06 21:10:41.467 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: ALIYUN_SERVERLESS_SPARK
+2025-11-06 21:10:41.470 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DATASYNC
+2025-11-06 21:10:41.472 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DATA_FACTORY
+2025-11-06 21:10:41.475 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: CHUNJUN
+2025-11-06 21:10:41.477 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: CONDITIONS
+2025-11-06 21:10:41.480 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: REMOTESHELL
+2025-11-06 21:10:41.481 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SUB_WORKFLOW
+2025-11-06 21:10:41.485 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: PROCEDURE
+2025-11-06 21:10:41.487 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SHELL
+2025-11-06 21:10:41.488 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DEPENDENT
+2025-11-06 21:10:41.490 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SQOOP
+2025-11-06 21:10:41.492 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: MR
+2025-11-06 21:10:41.495 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: PYTORCH
+2025-11-06 21:10:41.499 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: K8S
+2025-11-06 21:10:41.503 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SAGEMAKER
+2025-11-06 21:10:41.508 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SEATUNNEL
+2025-11-06 21:10:41.513 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: HTTP
+2025-11-06 21:10:41.518 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: EMR
+2025-11-06 21:10:41.520 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DMS
+2025-11-06 21:10:41.522 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: KUBEFLOW
+2025-11-06 21:10:41.524 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SQL
+2025-11-06 21:10:41.527 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DVC
+2025-11-06 21:10:41.529 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DATAX
+2025-11-06 21:10:41.532 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: ZEPPELIN
+2025-11-06 21:10:41.535 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DINKY
+2025-11-06 21:10:41.537 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: MLFLOW
+2025-11-06 21:10:41.538 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SWITCH
+2025-11-06 21:10:41.540 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: OPENMLDB
+2025-11-06 21:10:41.541 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: LogicFakeTask
+2025-11-06 21:10:41.543 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: LINKIS
+2025-11-06 21:10:41.546 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: HIVECLI
+2025-11-06 21:10:41.547 INFO  [main] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: FLINK
+2025-11-06 21:10:41.547 WARN  [main] o.a.d.p.t.a.TaskPluginManager:[44] - The task plugin has already been loaded
+2025-11-06 21:14:01.088 INFO  [qtp1751850541-171] o.a.d.a.i.LoginHandlerInterceptor:[75] - user does not exist
+2025-11-06 21:14:01.088 INFO  [qtp1751850541-24] o.a.d.a.i.LoginHandlerInterceptor:[75] - user does not exist
+2025-11-06 21:14:02.467 INFO  [qtp1751850541-27] o.a.d.a.s.i.AbstractAuthenticator:[101] - Session is created, userName:admin.
+2025-11-06 21:14:02.516 INFO  [qtp1751850541-174] o.a.d.c.c.SystemConstants:[30] - init timezone: sun.util.calendar.ZoneInfo[id="Asia/Shanghai",offset=28800000,dstSavings=0,useDaylight=false,transitions=31,lastRule=null]
+2025-11-06 21:14:02.720 ERROR [qtp1751850541-29] o.a.d.a.e.ApiExceptionHandler:[40] - org.apache.dolphinscheduler.api.controller.WorkflowInstanceController#queryWorkflowInstanceList[12 args] Meet a ServiceException: 该项目不存在,请刷新页面
+2025-11-06 21:14:16.588 INFO  [qtp1751850541-24] o.a.d.a.s.i.ProjectServiceImpl:[134] - Project is created and id is :1
+2025-11-06 21:14:20.140 INFO  [qtp1751850541-177] o.a.d.a.c.TaskTypeConfiguration:[73] - support default universal task types: [SHELL, JAVA, PYTHON, PROCEDURE, SQL, SPARK, FLINK, HTTP, MR, DINKY, FLINK_STREAM, HIVECLI, REMOTESHELL]
+2025-11-06 21:14:20.142 INFO  [qtp1751850541-177] o.a.d.a.c.TaskTypeConfiguration:[74] - support default cloud task types: [EMR, K8S, DMS, DATA_FACTORY, ALIYUN_SERVERLESS_SPARK]
+2025-11-06 21:14:20.143 INFO  [qtp1751850541-177] o.a.d.a.c.TaskTypeConfiguration:[75] - support default logic task types: [SUB_WORKFLOW, DEPENDENT, CONDITIONS, SWITCH]
+2025-11-06 21:14:20.144 INFO  [qtp1751850541-177] o.a.d.a.c.TaskTypeConfiguration:[76] - support default dataIntegration task types: [SEATUNNEL, DATAX, SQOOP]
+2025-11-06 21:14:20.145 INFO  [qtp1751850541-177] o.a.d.a.c.TaskTypeConfiguration:[77] - support default machineLearning task types: [JUPYTER, MLFLOW, OPENMLDB, DVC, SAGEMAKER, PYTORCH, KUBEFLOW]
+2025-11-06 21:14:20.146 INFO  [qtp1751850541-177] o.a.d.a.c.TaskTypeConfiguration:[78] - support default other task types: [ZEPPELIN, CHUNJUN, DATASYNC, LINKIS]
+2025-11-06 21:14:45.580 INFO  [qtp1751850541-29] o.a.d.a.s.i.WorkflowDefinitionServiceImpl:[382] - Save workflow definition complete, workflowDefinitionCode:156676593209248, workflowDefinitionVersion:1.
+2025-11-06 21:14:45.595 INFO  [qtp1751850541-29] o.a.d.a.s.i.WorkflowDefinitionServiceImpl:[394] - Save workflow task relations complete, projectCode:156676563539872, workflowDefinitionCode:156676593209248, workflowDefinitionVersion:1.
+2025-11-06 21:14:52.366 INFO  [qtp1751850541-27] o.a.d.e.b.c.JdkDynamicRpcClientProxyFactory:[56] - Create DynamicRpcClientProxy cache for host: 172.28.0.6:5678
+2025-11-06 21:14:53.359 INFO  [qtp1751850541-27] o.a.d.c.u.NetUtils:[312] - Get all NetworkInterfaces: [name:eth0 (eth0), name:lo (lo)]
+2025-11-06 21:15:51.034 INFO  [qtp1751850541-25] o.a.d.a.s.i.ResourcesServiceImpl:[184] - Success upload resource file: /tmp/dolphinscheduler/default/resources/flink-file-wordcount-1.0-SNAPSHOT.jar complete.
+2025-11-06 21:17:24.061 INFO  [qtp1751850541-174] o.a.d.a.s.i.WorkflowDefinitionServiceImpl:[382] - Save workflow definition complete, workflowDefinitionCode:156676755523488, workflowDefinitionVersion:1.
+2025-11-06 21:17:24.069 INFO  [qtp1751850541-174] o.a.d.a.s.i.WorkflowDefinitionServiceImpl:[394] - Save workflow task relations complete, projectCode:156676563539872, workflowDefinitionCode:156676755523488, workflowDefinitionVersion:1.
+2025-11-06 21:18:03.653 INFO  [qtp1751850541-27] o.a.d.a.s.i.WorkflowDefinitionServiceImpl:[903] - The task has not changed, so skip
+2025-11-06 21:18:03.656 INFO  [qtp1751850541-27] o.a.d.a.s.i.WorkflowDefinitionServiceImpl:[933] - workflow definition needs to be updated, projectCode:156676563539872, workflowDefinitionCode:156676755523488, workflowDefinitionVersion:1.
+2025-11-06 21:18:03.664 INFO  [qtp1751850541-27] o.a.d.a.s.i.WorkflowDefinitionServiceImpl:[944] - Update workflow definition complete, workflowDefinitionCode:156676755523488, workflowDefinitionVersion:2.
+2025-11-06 21:18:03.683 INFO  [qtp1751850541-27] o.a.d.a.s.i.WorkflowDefinitionServiceImpl:[953] - Update workflow task relations complete, projectCode:156676563539872, workflowDefinitionCode:156676755523488, workflowDefinitionVersion:2.
+2025-11-06 21:23:55.295 INFO  [qtp1751850541-24] o.a.d.a.s.i.WorkflowInstanceServiceImpl:[717] - Update workflow definition complete, projectCode:156676563539872, workflowDefinitionName:wow.
+2025-11-06 21:23:55.302 INFO  [qtp1751850541-24] o.a.d.a.s.i.WorkflowInstanceServiceImpl:[729] - Update task relations complete, projectCode:156676563539872, workflowDefinitionCode:156676755523488, workflowDefinitionVersion:3.
+2025-11-06 21:23:55.313 INFO  [qtp1751850541-24] o.a.d.a.s.i.WorkflowInstanceServiceImpl:[750] - Update workflow instance complete, projectCode:156676563539872, workflowDefinitionCode:156676755523488, workflowDefinitionVersion:3, workflowInstanceId:3
+2025-11-06 21:24:18.986 INFO  [qtp1751850541-171] o.a.d.a.s.i.WorkflowDefinitionServiceImpl:[933] - workflow definition needs to be updated, projectCode:156676563539872, workflowDefinitionCode:156676755523488, workflowDefinitionVersion:2.
+2025-11-06 21:24:18.994 INFO  [qtp1751850541-171] o.a.d.a.s.i.WorkflowDefinitionServiceImpl:[944] - Update workflow definition complete, workflowDefinitionCode:156676755523488, workflowDefinitionVersion:4.
+2025-11-06 21:24:19.005 INFO  [qtp1751850541-171] o.a.d.a.s.i.WorkflowDefinitionServiceImpl:[953] - Update workflow task relations complete, projectCode:156676563539872, workflowDefinitionCode:156676755523488, workflowDefinitionVersion:4.
+2025-11-06 21:30:12.309 INFO  [qtp1751850541-183] o.a.d.a.s.i.WorkflowDefinitionServiceImpl:[382] - Save workflow definition complete, workflowDefinitionCode:156677542271904, workflowDefinitionVersion:1.
+2025-11-06 21:30:12.313 INFO  [qtp1751850541-183] o.a.d.a.s.i.WorkflowDefinitionServiceImpl:[394] - Save workflow task relations complete, projectCode:156676563539872, workflowDefinitionCode:156677542271904, workflowDefinitionVersion:1.

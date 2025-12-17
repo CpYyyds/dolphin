@@ -1,0 +1,1581 @@
+[WI-0][TI-0] - 2025-11-07 15:01:04.304 WARN  [Worker-Server] o.m.s.m.ClassPathMapperScanner:[44] - No MyBatis mapper was found in '[org.apache.dolphinscheduler.server.worker]' package. Please check your configuration.
+[WI-0][TI-0] - 2025-11-07 15:01:05.936 INFO  [Worker-Server] o.a.d.c.u.NetUtils:[312] - Get all NetworkInterfaces: [name:eth0 (eth0), name:lo (lo)]
+[WI-0][TI-0] - 2025-11-07 15:01:06.067 INFO  [Worker-Server] o.a.d.s.w.c.WorkerConfig:[97] - 
+****************************Worker Configuration**************************************
+  listen-port -> 1234
+  max-heartbeat-interval -> PT10S
+  host-weight -> 100
+  tenantConfig -> TenantConfig(autoCreateTenantEnabled=true, defaultTenantEnabled=false)
+  server-load-protection -> WorkerServerLoadProtectionConfig()
+  address -> 172.28.0.6:1234
+  registry-path: /nodes/worker/172.28.0.6:1234
+  physical-task-config -> PhysicalTaskConfig(taskExecutorThreadSize=100)
+  group -> default
+****************************Worker Configuration**************************************
+[WI-0][TI-0] - 2025-11-07 15:01:06.640 INFO  [Worker-Server] o.e.j.u.log:[170] - Logging initialized @14451ms to org.eclipse.jetty.util.log.Slf4jLog
+[WI-0][TI-0] - 2025-11-07 15:01:07.303 INFO  [Worker-Server] o.e.j.s.Server:[375] - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 1.8.0_342-b07
+[WI-0][TI-0] - 2025-11-07 15:01:07.439 INFO  [Worker-Server] o.e.j.s.h.C.application:[2368] - Initializing Spring embedded WebApplicationContext
+[WI-0][TI-0] - 2025-11-07 15:01:09.163 INFO  [Worker-Server] c.z.h.HikariDataSource:[110] - HikariPool-1 - Starting...
+[WI-0][TI-0] - 2025-11-07 15:01:09.765 INFO  [Worker-Server] c.z.h.HikariDataSource:[123] - HikariPool-1 - Start completed.
+[WI-0][TI-0] - 2025-11-07 15:01:10.749 INFO  [Worker-Server] o.e.j.s.session:[334] - DefaultSessionIdManager workerName=node0
+[WI-0][TI-0] - 2025-11-07 15:01:10.755 INFO  [Worker-Server] o.e.j.s.session:[339] - No SessionScavenger set, using defaults
+[WI-0][TI-0] - 2025-11-07 15:01:10.760 INFO  [Worker-Server] o.e.j.s.session:[132] - node0 Scavenging every 660000ms
+[WI-0][TI-0] - 2025-11-07 15:01:10.780 INFO  [Worker-Server] o.e.j.s.h.ContextHandler:[921] - Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@1224e1b6{application,/,[file:///tmp/jetty-docbase.1235.1856456766425060712/],AVAILABLE}
+[WI-0][TI-0] - 2025-11-07 15:01:10.834 INFO  [Worker-Server] o.e.j.s.Server:[415] - Started @18646ms
+[WI-0][TI-0] - 2025-11-07 15:01:11.236 INFO  [Worker-Server] o.a.d.p.r.z.ZookeeperRegistryAutoConfiguration:[37] - Load ZookeeperRegistryAutoConfiguration
+[WI-0][TI-0] - 2025-11-07 15:01:11.271 INFO  [Worker-Server] o.a.d.p.r.z.ZookeeperRegistryProperties:[96] - 
+****************************ZookeeperRegistryProperties**************************************
+  namespace -> dolphinscheduler
+  connectString -> zookeeper:2181
+  retryPolicy -> ZookeeperRegistryProperties.ZookeeperProperties.RetryPolicy(baseSleepTime=PT1S, maxRetries=3, maxSleep=PT5S)
+  digest -> 
+  sessionTimeout -> PT5M
+  connectionTimeout -> PT2M
+  blockUntilConnected -> PT30M
+****************************ZookeeperRegistryProperties**************************************
+[WI-0][TI-0] - 2025-11-07 15:01:11.851 INFO  [Worker-Server] o.a.d.p.r.z.ZookeeperRegistry:[113] - ZookeeperRegistry started at: 200/ms
+[WI-0][TI-0] - 2025-11-07 15:01:12.867 INFO  [Worker-Server] o.a.d.e.b.s.NettyRemotingServer:[111] - WorkerRpcServer bind success at port: 1234
+[WI-0][TI-0] - 2025-11-07 15:01:13.055 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: JAVA
+[WI-0][TI-0] - 2025-11-07 15:01:13.061 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: JUPYTER
+[WI-0][TI-0] - 2025-11-07 15:01:13.067 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SPARK
+[WI-0][TI-0] - 2025-11-07 15:01:13.075 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: FLINK_STREAM
+[WI-0][TI-0] - 2025-11-07 15:01:13.081 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: PYTHON
+[WI-0][TI-0] - 2025-11-07 15:01:13.084 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: ALIYUN_SERVERLESS_SPARK
+[WI-0][TI-0] - 2025-11-07 15:01:13.135 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DATASYNC
+[WI-0][TI-0] - 2025-11-07 15:01:13.140 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DATA_FACTORY
+[WI-0][TI-0] - 2025-11-07 15:01:13.146 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: CHUNJUN
+[WI-0][TI-0] - 2025-11-07 15:01:13.149 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: CONDITIONS
+[WI-0][TI-0] - 2025-11-07 15:01:13.154 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: REMOTESHELL
+[WI-0][TI-0] - 2025-11-07 15:01:13.156 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SUB_WORKFLOW
+[WI-0][TI-0] - 2025-11-07 15:01:13.161 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: PROCEDURE
+[WI-0][TI-0] - 2025-11-07 15:01:13.165 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SHELL
+[WI-0][TI-0] - 2025-11-07 15:01:13.167 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DEPENDENT
+[WI-0][TI-0] - 2025-11-07 15:01:13.171 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SQOOP
+[WI-0][TI-0] - 2025-11-07 15:01:13.176 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: MR
+[WI-0][TI-0] - 2025-11-07 15:01:13.182 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: PYTORCH
+[WI-0][TI-0] - 2025-11-07 15:01:13.240 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: K8S
+[WI-0][TI-0] - 2025-11-07 15:01:13.245 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SAGEMAKER
+[WI-0][TI-0] - 2025-11-07 15:01:13.254 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SEATUNNEL
+[WI-0][TI-0] - 2025-11-07 15:01:13.258 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: HTTP
+[WI-0][TI-0] - 2025-11-07 15:01:13.267 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: EMR
+[WI-0][TI-0] - 2025-11-07 15:01:13.273 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DMS
+[WI-0][TI-0] - 2025-11-07 15:01:13.277 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: KUBEFLOW
+[WI-0][TI-0] - 2025-11-07 15:01:13.282 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SQL
+[WI-0][TI-0] - 2025-11-07 15:01:13.286 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DVC
+[WI-0][TI-0] - 2025-11-07 15:01:13.289 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DATAX
+[WI-0][TI-0] - 2025-11-07 15:01:13.337 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: ZEPPELIN
+[WI-0][TI-0] - 2025-11-07 15:01:13.342 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DINKY
+[WI-0][TI-0] - 2025-11-07 15:01:13.346 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: MLFLOW
+[WI-0][TI-0] - 2025-11-07 15:01:13.348 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SWITCH
+[WI-0][TI-0] - 2025-11-07 15:01:13.353 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: OPENMLDB
+[WI-0][TI-0] - 2025-11-07 15:01:13.355 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: LogicFakeTask
+[WI-0][TI-0] - 2025-11-07 15:01:13.359 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: LINKIS
+[WI-0][TI-0] - 2025-11-07 15:01:13.362 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: HIVECLI
+[WI-0][TI-0] - 2025-11-07 15:01:13.364 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: FLINK
+[WI-0][TI-0] - 2025-11-07 15:01:13.367 WARN  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[44] - The task plugin has already been loaded
+[WI-0][TI-0] - 2025-11-07 15:01:13.439 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> K8S
+[WI-0][TI-0] - 2025-11-07 15:01:13.443 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> ZEPPELIN
+[WI-0][TI-0] - 2025-11-07 15:01:13.447 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> SSH
+[WI-0][TI-0] - 2025-11-07 15:01:13.453 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> CLICKHOUSE
+[WI-0][TI-0] - 2025-11-07 15:01:13.457 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> DATABEND
+[WI-0][TI-0] - 2025-11-07 15:01:13.465 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> DB2
+[WI-0][TI-0] - 2025-11-07 15:01:13.470 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> HIVE
+[WI-0][TI-0] - 2025-11-07 15:01:13.475 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> MYSQL
+[WI-0][TI-0] - 2025-11-07 15:01:13.480 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> OCEANBASE
+[WI-0][TI-0] - 2025-11-07 15:01:13.484 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> ORACLE
+[WI-0][TI-0] - 2025-11-07 15:01:13.538 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> POSTGRESQL
+[WI-0][TI-0] - 2025-11-07 15:01:13.543 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> SQLSERVER
+[WI-0][TI-0] - 2025-11-07 15:01:13.547 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> REDSHIFT
+[WI-0][TI-0] - 2025-11-07 15:01:13.551 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> ATHENA
+[WI-0][TI-0] - 2025-11-07 15:01:13.556 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> SPARK
+[WI-0][TI-0] - 2025-11-07 15:01:13.560 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> PRESTO
+[WI-0][TI-0] - 2025-11-07 15:01:13.564 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> TRINO
+[WI-0][TI-0] - 2025-11-07 15:01:13.568 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> STARROCKS
+[WI-0][TI-0] - 2025-11-07 15:01:13.575 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> AZURESQL
+[WI-0][TI-0] - 2025-11-07 15:01:13.582 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> DAMENG
+[WI-0][TI-0] - 2025-11-07 15:01:13.586 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> SNOWFLAKE
+[WI-0][TI-0] - 2025-11-07 15:01:13.639 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> KYUUBI
+[WI-0][TI-0] - 2025-11-07 15:01:13.642 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> VERTICA
+[WI-0][TI-0] - 2025-11-07 15:01:13.646 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> DORIS
+[WI-0][TI-0] - 2025-11-07 15:01:13.649 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> SAGEMAKER
+[WI-0][TI-0] - 2025-11-07 15:01:13.653 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> HANA
+[WI-0][TI-0] - 2025-11-07 15:01:13.658 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> ALIYUN_SERVERLESS_SPARK
+[WI-0][TI-0] - 2025-11-07 15:01:13.661 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> DOLPHINDB
+[WI-0][TI-0] - 2025-11-07 15:01:13.667 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorProvider:[41] - Initialize DataSourceProcessorProvider
+[WI-0][TI-0] - 2025-11-07 15:01:13.842 INFO  [Worker-Server] o.a.d.c.c.SystemConstants:[30] - init timezone: sun.util.calendar.ZoneInfo[id="Asia/Shanghai",offset=28800000,dstSavings=0,useDaylight=false,transitions=31,lastRule=null]
+[WI-0][TI-0] - 2025-11-07 15:01:14.054 INFO  [Worker-Server] o.a.d.s.w.r.WorkerRegistryClient:[94] - Worker node: 172.28.0.6:1234 registry to registry center /nodes/worker/172.28.0.6:1234 successfully
+[WI-0][TI-0] - 2025-11-07 15:01:14.064 INFO  [Worker-Server] o.a.d.c.m.BaseHeartBeatTask:[47] - Starting WorkerHeartBeatTask...
+[WI-0][TI-0] - 2025-11-07 15:01:14.065 INFO  [Worker-Server] o.a.d.c.m.BaseHeartBeatTask:[49] - Started WorkerHeartBeatTask, heartBeatInterval: 10000...
+[WI-0][TI-0] - 2025-11-07 15:01:14.066 INFO  [Worker-Server] o.a.d.s.w.r.WorkerRegistryClient:[102] - Worker node: 172.28.0.6:1234 registry finished
+[WI-0][TI-0] - 2025-11-07 15:01:14.071 INFO  [Worker-Server] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[95] - PhysicalTaskExecutorEventBusCoordinator started, worker size: 12
+[WI-0][TI-0] - 2025-11-07 15:01:14.072 INFO  [Worker-Server] o.a.d.t.e.TaskEngine:[53] - PhysicalTaskEngine started
+[WI-0][TI-0] - 2025-11-07 15:01:14.073 INFO  [Worker-Server] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[81] - PhysicalTaskExecutorLifecycleEventReporter started
+[WI-0][TI-0] - 2025-11-07 15:01:14.074 INFO  [Worker-Server] o.a.d.s.w.e.PhysicalTaskEngineDelegator:[57] - PhysicalTaskEngineDelegator started
+[WI-0][TI-0] - 2025-11-07 15:01:24.047 INFO  [Worker-Server] o.e.j.s.h.C.application:[2368] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[WI-0][TI-0] - 2025-11-07 15:01:24.148 INFO  [Worker-Server] o.e.j.s.AbstractConnector:[333] - Started ServerConnector@53125718{HTTP/1.1, (http/1.1)}{0.0.0.0:1235}
+[WI-0][TI-0] - 2025-11-07 15:08:28.914 INFO  [WorkerRpcServer-methodInvoker-0] o.a.d.s.w.r.PhysicalTaskExecutorOperatorImpl:[49] - Receive TaskExecutorDispatchResponse: TaskExecutorDispatchRequest(taskExecutionContext=TaskExecutionContext(taskInstanceId=1, taskName=wow, firstSubmitTime=1762499307983, startTime=0, taskType=FLINK, workflowInstanceHost=172.28.0.6:5678, host=172.28.0.6:1234, executePath=null, logPath=null, appInfoPath=null, processId=0, workflowDefinitionCode=156742551912128, workflowDefinitionVersion=1, appIds=null, workflowInstanceId=1, scheduleTime=0, globalParams=[], executorId=1, tenantCode=cpy, workflowDefinitionId=0, taskParams={"localParams":[],"initScript":"","rawScript":"","resourceList":[{"resourceName":"/tmp/dolphinscheduler/default/resources/flink-file-wordcount-1.0-SNAPSHOT.jar"}],"programType":"JAVA","mainClass":"org.example.HelloWorld","mainJar":{"resourceName":"/tmp/dolphinscheduler/default/resources/flink-file-wordcount-1.0-SNAPSHOT.jar"},"deployMode":"local","mainArgs":"--output /tmp/flink/output","yarnQueue":"","flinkVersion":"<1.10","jobManagerMemory":"1G","taskManagerMemory":"2G","slot":1,"taskManager":2,"parallelism":1}, environmentConfig=export JAVA_HOME=/usr/local/openjdk-8
+export FLINK_HOME=/usr/local/flink
+export DOLPHINSCHEDULER_HOME=/opt/dolphinscheduler
+export PATH=$JAVA_HOME/bin:$FLINK_HOME/bin:$DOLPHINSCHEDULER_HOME/bin:$PATH, prepareParamsMap={system.task.definition.name=Property(prop=system.task.definition.name, direct=IN, type=VARCHAR, value=wow), system.project.name=Property(prop=system.project.name, direct=IN, type=VARCHAR, value=wow), system.project.code=Property(prop=system.project.code, direct=IN, type=VARCHAR, value=156742253745856), system.workflow.instance.id=Property(prop=system.workflow.instance.id, direct=IN, type=VARCHAR, value=1), system.biz.curdate=Property(prop=system.biz.curdate, direct=IN, type=VARCHAR, value=20251107), system.biz.date=Property(prop=system.biz.date, direct=IN, type=VARCHAR, value=20251106), system.task.instance.id=Property(prop=system.task.instance.id, direct=IN, type=VARCHAR, value=1), system.workflow.definition.name=Property(prop=system.workflow.definition.name, direct=IN, type=VARCHAR, value=wow), system.task.definition.code=Property(prop=system.task.definition.code, direct=IN, type=VARCHAR, value=156742482211520), system.workflow.definition.code=Property(prop=system.workflow.definition.code, direct=IN, type=VARCHAR, value=156742551912128), system.datetime=Property(prop=system.datetime, direct=IN, type=VARCHAR, value=20251107150828)}, taskAppId=null, taskTimeoutStrategy=null, taskTimeout=2147483647, workerGroup=default, resourceParametersHelper=org.apache.dolphinscheduler.plugin.task.api.parameters.resource.ResourceParametersHelper@38bcf1a7, endTime=0, sqlTaskExecutionContext=null, k8sTaskExecutionContext=null, resourceContext=null, varPool=null, dryRun=0, cpuQuota=-1, memoryMax=-1, dispatchFailTimes=0, failover=false))
+[WI-0][TI-1] - 2025-11-07 15:08:29.012 INFO  [WorkerRpcServer-methodInvoker-0] o.a.d.t.e.e.TaskExecutorEventBus:[32] - Publish TaskExecutorDispatchedLifecycleEvent: {
+  "taskInstanceId" : 1,
+  "eventCreateTime" : 1762499309002,
+  "type" : "DISPATCHED",
+  "workflowInstanceId" : 1,
+  "taskInstanceHost" : "172.28.0.6:1234",
+  "latestReportTime" : null
+}
+[WI-0][TI-0] - 2025-11-07 15:08:29.014 INFO  [WorkerRpcServer-methodInvoker-0] o.a.d.s.w.r.PhysicalTaskExecutorOperatorImpl:[53] - Handle TaskExecutorDispatchResponse: TaskExecutorDispatchRequest(taskExecutionContext=TaskExecutionContext(taskInstanceId=1, taskName=wow, firstSubmitTime=1762499307983, startTime=0, taskType=FLINK, workflowInstanceHost=172.28.0.6:5678, host=172.28.0.6:1234, executePath=null, logPath=/opt/dolphinscheduler/worker-server/logs/20251107/156742551912128/1/1/1.log, appInfoPath=null, processId=0, workflowDefinitionCode=156742551912128, workflowDefinitionVersion=1, appIds=null, workflowInstanceId=1, scheduleTime=0, globalParams=[], executorId=1, tenantCode=cpy, workflowDefinitionId=0, taskParams={"localParams":[],"initScript":"","rawScript":"","resourceList":[{"resourceName":"/tmp/dolphinscheduler/default/resources/flink-file-wordcount-1.0-SNAPSHOT.jar"}],"programType":"JAVA","mainClass":"org.example.HelloWorld","mainJar":{"resourceName":"/tmp/dolphinscheduler/default/resources/flink-file-wordcount-1.0-SNAPSHOT.jar"},"deployMode":"local","mainArgs":"--output /tmp/flink/output","yarnQueue":"","flinkVersion":"<1.10","jobManagerMemory":"1G","taskManagerMemory":"2G","slot":1,"taskManager":2,"parallelism":1}, environmentConfig=export JAVA_HOME=/usr/local/openjdk-8
+export FLINK_HOME=/usr/local/flink
+export DOLPHINSCHEDULER_HOME=/opt/dolphinscheduler
+export PATH=$JAVA_HOME/bin:$FLINK_HOME/bin:$DOLPHINSCHEDULER_HOME/bin:$PATH, prepareParamsMap={system.task.definition.name=Property(prop=system.task.definition.name, direct=IN, type=VARCHAR, value=wow), system.project.name=Property(prop=system.project.name, direct=IN, type=VARCHAR, value=wow), system.project.code=Property(prop=system.project.code, direct=IN, type=VARCHAR, value=156742253745856), system.workflow.instance.id=Property(prop=system.workflow.instance.id, direct=IN, type=VARCHAR, value=1), system.biz.curdate=Property(prop=system.biz.curdate, direct=IN, type=VARCHAR, value=20251107), system.biz.date=Property(prop=system.biz.date, direct=IN, type=VARCHAR, value=20251106), system.task.instance.id=Property(prop=system.task.instance.id, direct=IN, type=VARCHAR, value=1), system.workflow.definition.name=Property(prop=system.workflow.definition.name, direct=IN, type=VARCHAR, value=wow), system.task.definition.code=Property(prop=system.task.definition.code, direct=IN, type=VARCHAR, value=156742482211520), system.workflow.definition.code=Property(prop=system.workflow.definition.code, direct=IN, type=VARCHAR, value=156742551912128), system.datetime=Property(prop=system.datetime, direct=IN, type=VARCHAR, value=20251107150828)}, taskAppId=null, taskTimeoutStrategy=null, taskTimeout=2147483647, workerGroup=default, resourceParametersHelper=org.apache.dolphinscheduler.plugin.task.api.parameters.resource.ResourceParametersHelper@38bcf1a7, endTime=0, sqlTaskExecutionContext=null, k8sTaskExecutionContext=null, resourceContext=null, varPool=null, dryRun=0, cpuQuota=-1, memoryMax=-1, dispatchFailTimes=0, failover=false)) success
+[WI-0][TI-1] - 2025-11-07 15:08:29.018 INFO  [exclusive-task-executor-container-worker-0] o.a.d.p.t.a.l.TaskInstanceLogHeader:[33] - 🐬 Initialize Task Context
+[WI-0][TI-1] - 2025-11-07 15:08:29.051 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-1] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[111] - Report : {
+  "taskInstanceId" : 1,
+  "eventCreateTime" : 1762499309002,
+  "type" : "DISPATCHED",
+  "workflowInstanceId" : 1,
+  "taskInstanceHost" : "172.28.0.6:1234",
+  "latestReportTime" : null
+}
+[WI-0][TI-1] - 2025-11-07 15:08:29.081 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-1] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[191] - Success fire TaskExecutorDispatchedLifecycleEvent: {"taskInstanceId":1,"eventCreateTime":1762499309002,"type":"DISPATCHED","workflowInstanceId":1,"taskInstanceHost":"172.28.0.6:1234","latestReportTime":null} 
+[WI-0][TI-1] - 2025-11-07 15:08:29.104 INFO  [exclusive-task-executor-container-worker-0] o.a.d.t.e.AbstractTaskExecutor:[130] - Initialized taskContext {
+  "taskInstanceId" : 1,
+  "taskName" : "wow",
+  "firstSubmitTime" : 1762499307983,
+  "startTime" : 1762499309079,
+  "taskType" : "FLINK",
+  "workflowInstanceHost" : "172.28.0.6:5678",
+  "host" : "172.28.0.6:1234",
+  "logPath" : "/opt/dolphinscheduler/worker-server/logs/20251107/156742551912128/1/1/1.log",
+  "processId" : 0,
+  "workflowDefinitionCode" : 156742551912128,
+  "workflowDefinitionVersion" : 1,
+  "workflowInstanceId" : 1,
+  "scheduleTime" : 0,
+  "globalParams" : "[]",
+  "executorId" : 1,
+  "tenantCode" : "cpy",
+  "workflowDefinitionId" : 0,
+  "taskParams" : "{\"localParams\":[],\"initScript\":\"\",\"rawScript\":\"\",\"resourceList\":[{\"resourceName\":\"/tmp/dolphinscheduler/default/resources/flink-file-wordcount-1.0-SNAPSHOT.jar\"}],\"programType\":\"JAVA\",\"mainClass\":\"org.example.HelloWorld\",\"mainJar\":{\"resourceName\":\"/tmp/dolphinscheduler/default/resources/flink-file-wordcount-1.0-SNAPSHOT.jar\"},\"deployMode\":\"local\",\"mainArgs\":\"--output /tmp/flink/output\",\"yarnQueue\":\"\",\"flinkVersion\":\"<1.10\",\"jobManagerMemory\":\"1G\",\"taskManagerMemory\":\"2G\",\"slot\":1,\"taskManager\":2,\"parallelism\":1}",
+  "environmentConfig" : "export JAVA_HOME=/usr/local/openjdk-8\nexport FLINK_HOME=/usr/local/flink\nexport DOLPHINSCHEDULER_HOME=/opt/dolphinscheduler\nexport PATH=$JAVA_HOME/bin:$FLINK_HOME/bin:$DOLPHINSCHEDULER_HOME/bin:$PATH",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "wow"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "wow"
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "156742253745856"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "1"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20251107"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20251106"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "1"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "wow"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "156742482211520"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "156742551912128"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20251107150828"
+    }
+  },
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "resourceParametersHelper" : {
+    "resourceMap" : { }
+  },
+  "endTime" : 0,
+  "dryRun" : 0,
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "dispatchFailTimes" : 0,
+  "failover" : false
+}
+[WI-0][TI-1] - 2025-11-07 15:08:29.161 INFO  [exclusive-task-executor-container-worker-0] o.a.d.c.u.OSUtils:[228] - create linux os user: cpy
+[WI-0][TI-1] - 2025-11-07 15:08:29.166 INFO  [exclusive-task-executor-container-worker-0] o.a.d.c.u.OSUtils:[230] - execute cmd: sudo useradd -m -g root
+ cpy
+[WI-0][TI-1] - 2025-11-07 15:08:29.307 INFO  [exclusive-task-executor-container-worker-0] o.a.d.c.u.OSUtils:[213] - Create tenant cpy under userGroup: root
+ success
+[WI-0][TI-1] - 2025-11-07 15:08:29.309 INFO  [exclusive-task-executor-container-worker-0] o.a.d.s.w.e.PhysicalTaskExecutor:[128] - TenantCode: cpy check successfully
+[WI-0][TI-1] - 2025-11-07 15:08:29.309 INFO  [PhysicalTaskExecutorLifecycleEventReporter] o.a.d.e.b.c.JdkDynamicRpcClientProxyFactory:[56] - Create DynamicRpcClientProxy cache for host: 172.28.0.6:5678
+[WI-0][TI-1] - 2025-11-07 15:08:29.320 INFO  [exclusive-task-executor-container-worker-0] o.a.d.s.w.e.PhysicalTaskExecutor:[131] - TaskInstance working directory: /tmp/dolphinscheduler/exec/process/1 create successfully
+[WI-0][TI-1] - 2025-11-07 15:08:29.414 INFO  [exclusive-task-executor-container-worker-0] o.a.d.s.w.u.TaskExecutionContextUtils:[89] - Download resource file /tmp/dolphinscheduler/default/resources/flink-file-wordcount-1.0-SNAPSHOT.jar -> /tmp/dolphinscheduler/exec/process/1/flink-file-wordcount-1.0-SNAPSHOT.jar successfully
+[WI-0][TI-0] - 2025-11-07 15:08:29.425 INFO  [WorkerRpcServer-methodInvoker-1] o.a.d.s.w.r.PhysicalTaskExecutorOperatorImpl:[101] - Receive TaskExecutorLifecycleEventAck: ITaskExecutorLifecycleEventReporter.TaskExecutorLifecycleEventAck(taskExecutorId=1, taskExecutorLifecycleEventType=DISPATCHED)
+[WI-0][TI-1] - 2025-11-07 15:08:29.426 INFO  [PhysicalTaskExecutorLifecycleEventReporter] o.a.d.e.m.TaskExecutorEventRemoteReporterClient:[73] - Report: TaskExecutorDispatchedLifecycleEvent(super=AbstractTaskExecutorLifecycleEvent(super=AbstractDelayEvent(delayTime=0, createTimeInNano=167262076690112, expiredTimeInNano=167262076697712), taskInstanceId=1, eventCreateTime=1762499309002, type=DISPATCHED), workflowInstanceId=1, taskInstanceHost=172.28.0.6:1234, latestReportTime=1762499309088) to master success
+[WI-0][TI-1] - 2025-11-07 15:08:29.430 INFO  [exclusive-task-executor-container-worker-0] o.a.d.s.w.e.PhysicalTaskExecutor:[138] - Download resources successfully: 
+ResourceContext(resourceItemMap={/tmp/dolphinscheduler/default/resources/flink-file-wordcount-1.0-SNAPSHOT.jar=ResourceContext.ResourceItem(resourceAbsolutePathInStorage=/tmp/dolphinscheduler/default/resources/flink-file-wordcount-1.0-SNAPSHOT.jar, resourceAbsolutePathInLocal=/tmp/dolphinscheduler/exec/process/1/flink-file-wordcount-1.0-SNAPSHOT.jar)})
+[WI-0][TI-0] - 2025-11-07 15:08:29.431 INFO  [WorkerRpcServer-methodInvoker-1] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[137] - Success removed TaskExecutorDispatchedLifecycleEvent(super=AbstractTaskExecutorLifecycleEvent(super=AbstractDelayEvent(delayTime=0, createTimeInNano=167262076690112, expiredTimeInNano=167262076697712), taskInstanceId=1, eventCreateTime=1762499309002, type=DISPATCHED), workflowInstanceId=1, taskInstanceHost=172.28.0.6:1234, latestReportTime=1762499309088) by ack: ITaskExecutorLifecycleEventReporter.TaskExecutorLifecycleEventAck(taskExecutorId=1, taskExecutorLifecycleEventType=DISPATCHED)
+[WI-0][TI-1] - 2025-11-07 15:08:29.435 INFO  [exclusive-task-executor-container-worker-0] o.a.d.s.w.e.PhysicalTaskExecutor:[140] - Initialized Task Context{
+  "taskInstanceId" : 1,
+  "taskName" : "wow",
+  "firstSubmitTime" : 1762499307983,
+  "startTime" : 1762499309079,
+  "taskType" : "FLINK",
+  "workflowInstanceHost" : "172.28.0.6:5678",
+  "host" : "172.28.0.6:1234",
+  "executePath" : "/tmp/dolphinscheduler/exec/process/1",
+  "logPath" : "/opt/dolphinscheduler/worker-server/logs/20251107/156742551912128/1/1/1.log",
+  "appInfoPath" : "/tmp/dolphinscheduler/exec/process/1/appInfo.log",
+  "processId" : 0,
+  "workflowDefinitionCode" : 156742551912128,
+  "workflowDefinitionVersion" : 1,
+  "workflowInstanceId" : 1,
+  "scheduleTime" : 0,
+  "globalParams" : "[]",
+  "executorId" : 1,
+  "tenantCode" : "cpy",
+  "workflowDefinitionId" : 0,
+  "taskParams" : "{\"localParams\":[],\"initScript\":\"\",\"rawScript\":\"\",\"resourceList\":[{\"resourceName\":\"/tmp/dolphinscheduler/default/resources/flink-file-wordcount-1.0-SNAPSHOT.jar\"}],\"programType\":\"JAVA\",\"mainClass\":\"org.example.HelloWorld\",\"mainJar\":{\"resourceName\":\"/tmp/dolphinscheduler/default/resources/flink-file-wordcount-1.0-SNAPSHOT.jar\"},\"deployMode\":\"local\",\"mainArgs\":\"--output /tmp/flink/output\",\"yarnQueue\":\"\",\"flinkVersion\":\"<1.10\",\"jobManagerMemory\":\"1G\",\"taskManagerMemory\":\"2G\",\"slot\":1,\"taskManager\":2,\"parallelism\":1}",
+  "environmentConfig" : "export JAVA_HOME=/usr/local/openjdk-8\nexport FLINK_HOME=/usr/local/flink\nexport DOLPHINSCHEDULER_HOME=/opt/dolphinscheduler\nexport PATH=$JAVA_HOME/bin:$FLINK_HOME/bin:$DOLPHINSCHEDULER_HOME/bin:$PATH",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "wow"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "wow"
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "156742253745856"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "1"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20251107"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20251106"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "1"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "wow"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "156742482211520"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "156742551912128"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20251107150828"
+    }
+  },
+  "taskAppId" : "1",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "resourceParametersHelper" : {
+    "resourceMap" : { }
+  },
+  "endTime" : 0,
+  "resourceContext" : { },
+  "dryRun" : 0,
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "dispatchFailTimes" : 0,
+  "failover" : false
+}
+[WI-0][TI-1] - 2025-11-07 15:08:29.439 INFO  [exclusive-task-executor-container-worker-0] o.a.d.t.e.e.TaskExecutorEventBus:[32] - Publish TaskExecutorStartedLifecycleEvent: {
+  "taskInstanceId" : 1,
+  "eventCreateTime" : 1762499309437,
+  "type" : "RUNNING",
+  "workflowInstanceId" : 1,
+  "taskInstanceHost" : "172.28.0.6:1234",
+  "startTime" : 1762499309079,
+  "logPath" : "/opt/dolphinscheduler/worker-server/logs/20251107/156742551912128/1/1/1.log",
+  "executePath" : "/tmp/dolphinscheduler/exec/process/1",
+  "latestReportTime" : null
+}
+[WI-0][TI-1] - 2025-11-07 15:08:29.440 INFO  [exclusive-task-executor-container-worker-0] o.a.d.p.t.a.l.TaskInstanceLogHeader:[37] - 🐬 Load Task Instance Plugin
+[WI-0][TI-1] - 2025-11-07 15:08:29.447 INFO  [exclusive-task-executor-container-worker-0] o.a.d.s.w.e.PhysicalTaskExecutor:[66] - Initialized physicalTask: FLINK successfully
+[WI-0][TI-1] - 2025-11-07 15:08:29.454 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-9] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[111] - Report : {
+  "taskInstanceId" : 1,
+  "eventCreateTime" : 1762499309437,
+  "type" : "RUNNING",
+  "workflowInstanceId" : 1,
+  "taskInstanceHost" : "172.28.0.6:1234",
+  "startTime" : 1762499309079,
+  "logPath" : "/opt/dolphinscheduler/worker-server/logs/20251107/156742551912128/1/1/1.log",
+  "executePath" : "/tmp/dolphinscheduler/exec/process/1",
+  "latestReportTime" : null
+}
+[WI-0][TI-1] - 2025-11-07 15:08:29.454 INFO  [exclusive-task-executor-container-worker-0] o.a.d.p.t.f.FlinkTask:[60] - Initialize flink task params {
+  "localParams" : [ ],
+  "varPool" : [ ],
+  "mainJar" : {
+    "id" : null,
+    "resourceName" : "/tmp/dolphinscheduler/default/resources/flink-file-wordcount-1.0-SNAPSHOT.jar",
+    "res" : null
+  },
+  "mainClass" : "org.example.HelloWorld",
+  "deployMode" : "local",
+  "mainArgs" : "--output /tmp/flink/output",
+  "slot" : 1,
+  "parallelism" : 1,
+  "appName" : null,
+  "taskManager" : 2,
+  "jobManagerMemory" : "1G",
+  "taskManagerMemory" : "2G",
+  "resourceList" : [ {
+    "id" : null,
+    "resourceName" : "/tmp/dolphinscheduler/default/resources/flink-file-wordcount-1.0-SNAPSHOT.jar",
+    "res" : null
+  } ],
+  "yarnQueue" : "",
+  "others" : null,
+  "flinkVersion" : "<1.10",
+  "programType" : "JAVA",
+  "initScript" : "",
+  "rawScript" : ""
+}
+[WI-0][TI-1] - 2025-11-07 15:08:29.456 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-9] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[191] - Success fire TaskExecutorStartedLifecycleEvent: {"taskInstanceId":1,"eventCreateTime":1762499309437,"type":"RUNNING","workflowInstanceId":1,"taskInstanceHost":"172.28.0.6:1234","startTime":1762499309079,"logPath":"/opt/dolphinscheduler/worker-server/logs/20251107/156742551912128/1/1/1.log","executePath":"/tmp/dolphinscheduler/exec/process/1","latestReportTime":null} 
+[WI-0][TI-1] - 2025-11-07 15:08:29.469 INFO  [PhysicalTaskExecutorLifecycleEventReporter] o.a.d.e.m.TaskExecutorEventRemoteReporterClient:[73] - Report: TaskExecutorStartedLifecycleEvent(super=AbstractTaskExecutorLifecycleEvent(super=AbstractDelayEvent(delayTime=0, createTimeInNano=167262511781571, expiredTimeInNano=167262511781971), taskInstanceId=1, eventCreateTime=1762499309437, type=RUNNING), workflowInstanceId=1, taskInstanceHost=172.28.0.6:1234, startTime=1762499309079, logPath=/opt/dolphinscheduler/worker-server/logs/20251107/156742551912128/1/1/1.log, executePath=/tmp/dolphinscheduler/exec/process/1, latestReportTime=1762499309456) to master success
+[WI-0][TI-1] - 2025-11-07 15:08:29.479 INFO  [exclusive-task-executor-container-worker-0] o.a.d.p.t.f.FileUtils:[101] - Writing content: set execution.target=local;
+set parallelism.default=1;
+
+[WI-0][TI-1] - 2025-11-07 15:08:29.480 INFO  [exclusive-task-executor-container-worker-0] o.a.d.p.t.f.FileUtils:[102] - To file: /tmp/dolphinscheduler/exec/process/1/1_init.sql
+[WI-0][TI-1] - 2025-11-07 15:08:29.481 INFO  [exclusive-task-executor-container-worker-0] o.a.d.s.w.e.PhysicalTaskExecutor:[71] - Set taskVarPool: null successfully
+[WI-0][TI-1] - 2025-11-07 15:08:29.482 INFO  [exclusive-task-executor-container-worker-0] o.a.d.p.t.a.l.TaskInstanceLogHeader:[41] - 🐬 Execute Task Instance
+[WI-0][TI-0] - 2025-11-07 15:08:29.547 INFO  [WorkerRpcServer-methodInvoker-2] o.a.d.s.w.r.PhysicalTaskExecutorOperatorImpl:[101] - Receive TaskExecutorLifecycleEventAck: ITaskExecutorLifecycleEventReporter.TaskExecutorLifecycleEventAck(taskExecutorId=1, taskExecutorLifecycleEventType=RUNNING)
+[WI-0][TI-0] - 2025-11-07 15:08:29.547 INFO  [WorkerRpcServer-methodInvoker-2] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[137] - Success removed TaskExecutorStartedLifecycleEvent(super=AbstractTaskExecutorLifecycleEvent(super=AbstractDelayEvent(delayTime=0, createTimeInNano=167262511781571, expiredTimeInNano=167262511781971), taskInstanceId=1, eventCreateTime=1762499309437, type=RUNNING), workflowInstanceId=1, taskInstanceHost=172.28.0.6:1234, startTime=1762499309079, logPath=/opt/dolphinscheduler/worker-server/logs/20251107/156742551912128/1/1/1.log, executePath=/tmp/dolphinscheduler/exec/process/1, latestReportTime=1762499309456) by ack: ITaskExecutorLifecycleEventReporter.TaskExecutorLifecycleEventAck(taskExecutorId=1, taskExecutorLifecycleEventType=RUNNING)
+[WI-0][TI-1] - 2025-11-07 15:08:29.552 INFO  [exclusive-task-executor-container-worker-0] o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[64] - Final Script Content:
+====================
+#!/bin/bash
+BASEDIR=$(cd `dirname $0`; pwd)
+cd $BASEDIR
+export JAVA_HOME=/usr/local/openjdk-8
+export FLINK_HOME=/usr/local/flink
+export DOLPHINSCHEDULER_HOME=/opt/dolphinscheduler
+export PATH=$JAVA_HOME/bin:$FLINK_HOME/bin:$DOLPHINSCHEDULER_HOME/bin:$PATH
+${FLINK_HOME}/bin/flink run -p 1 -sae -c org.example.HelloWorld /tmp/dolphinscheduler/exec/process/1/flink-file-wordcount-1.0-SNAPSHOT.jar --output /tmp/flink/output
+====================
+[WI-0][TI-1] - 2025-11-07 15:08:29.556 INFO  [exclusive-task-executor-container-worker-0] o.a.d.p.t.a.s.BaseShellInterceptor:[46] - Executing shell command : sudo -u cpy -i /tmp/dolphinscheduler/exec/process/1/1.sh
+[WI-0][TI-1] - 2025-11-07 15:08:29.564 INFO  [exclusive-task-executor-container-worker-0] o.a.d.p.t.a.AbstractCommandExecutor:[151] - process start, process id is: 1158
+[WI-0][TI-1] - 2025-11-07 15:08:29.568 INFO  [exclusive-task-executor-container-worker-0] o.a.d.t.e.e.TaskExecutorEventBus:[32] - Publish TaskExecutorRuntimeContextChangedLifecycleEvent: {
+  "taskInstanceId" : 1,
+  "eventCreateTime" : 1762499309566,
+  "type" : "RUNTIME_CONTEXT_CHANGE",
+  "workflowInstanceId" : 1,
+  "taskInstanceHost" : "172.28.0.6:1234",
+  "processId" : 1158,
+  "appIds" : null,
+  "latestReportTime" : null
+}
+[WI-0][TI-1] - 2025-11-07 15:08:29.605 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-0] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[111] - Report : {
+  "taskInstanceId" : 1,
+  "eventCreateTime" : 1762499309566,
+  "type" : "RUNTIME_CONTEXT_CHANGE",
+  "workflowInstanceId" : 1,
+  "taskInstanceHost" : "172.28.0.6:1234",
+  "processId" : 1158,
+  "appIds" : null,
+  "latestReportTime" : null
+}
+[WI-0][TI-1] - 2025-11-07 15:08:29.606 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-0] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[191] - Success fire TaskExecutorRuntimeContextChangedLifecycleEvent: {"taskInstanceId":1,"eventCreateTime":1762499309566,"type":"RUNTIME_CONTEXT_CHANGE","workflowInstanceId":1,"taskInstanceHost":"172.28.0.6:1234","processId":1158,"appIds":null,"latestReportTime":null} 
+[WI-0][TI-1] - 2025-11-07 15:08:29.616 INFO  [PhysicalTaskExecutorLifecycleEventReporter] o.a.d.e.m.TaskExecutorEventRemoteReporterClient:[73] - Report: TaskExecutorRuntimeContextChangedLifecycleEvent(super=AbstractTaskExecutorLifecycleEvent(super=AbstractDelayEvent(delayTime=0, createTimeInNano=167262640219193, expiredTimeInNano=167262640219693), taskInstanceId=1, eventCreateTime=1762499309566, type=RUNTIME_CONTEXT_CHANGE), workflowInstanceId=1, taskInstanceHost=172.28.0.6:1234, processId=1158, appIds=null, latestReportTime=1762499309606) to master success
+[WI-0][TI-0] - 2025-11-07 15:08:29.670 INFO  [WorkerRpcServer-methodInvoker-3] o.a.d.s.w.r.PhysicalTaskExecutorOperatorImpl:[101] - Receive TaskExecutorLifecycleEventAck: ITaskExecutorLifecycleEventReporter.TaskExecutorLifecycleEventAck(taskExecutorId=1, taskExecutorLifecycleEventType=RUNTIME_CONTEXT_CHANGE)
+[WI-0][TI-0] - 2025-11-07 15:08:29.671 INFO  [WorkerRpcServer-methodInvoker-3] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[137] - Success removed TaskExecutorRuntimeContextChangedLifecycleEvent(super=AbstractTaskExecutorLifecycleEvent(super=AbstractDelayEvent(delayTime=0, createTimeInNano=167262640219193, expiredTimeInNano=167262640219693), taskInstanceId=1, eventCreateTime=1762499309566, type=RUNTIME_CONTEXT_CHANGE), workflowInstanceId=1, taskInstanceHost=172.28.0.6:1234, processId=1158, appIds=null, latestReportTime=1762499309606) by ack: ITaskExecutorLifecycleEventReporter.TaskExecutorLifecycleEventAck(taskExecutorId=1, taskExecutorLifecycleEventType=RUNTIME_CONTEXT_CHANGE)
+[WI-0][TI-0] - 2025-11-07 15:08:31.563 INFO  [TaskInstanceLogOutput-thread-wow] o.a.d.p.t.a.AbstractTask:[163] -  -> 
+	2025-11-07 15:08:30,676 main ERROR FileManager (/usr/local/flink/log/flink-cpy-client-dolphinscheduler.log) java.io.FileNotFoundException: /usr/local/flink/log/flink-cpy-client-dolphinscheduler.log (Permission denied) java.io.FileNotFoundException: /usr/local/flink/log/flink-cpy-client-dolphinscheduler.log (Permission denied)
+		at java.io.FileOutputStream.open0(Native Method)
+		at java.io.FileOutputStream.open(FileOutputStream.java:270)
+		at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+		at org.apache.logging.log4j.core.appender.FileManager$FileManagerFactory.createManager(FileManager.java:438)
+		at org.apache.logging.log4j.core.appender.FileManager$FileManagerFactory.createManager(FileManager.java:422)
+		at org.apache.logging.log4j.core.appender.AbstractManager.getManager(AbstractManager.java:114)
+		at org.apache.logging.log4j.core.appender.OutputStreamManager.getManager(OutputStreamManager.java:100)
+		at org.apache.logging.log4j.core.appender.FileManager.getFileManager(FileManager.java:182)
+		at org.apache.logging.log4j.core.appender.FileAppender$Builder.build(FileAppender.java:96)
+		at org.apache.logging.log4j.core.appender.FileAppender$Builder.build(FileAppender.java:52)
+		at org.apache.logging.log4j.core.config.plugins.util.PluginBuilder.build(PluginBuilder.java:122)
+		at org.apache.logging.log4j.core.config.AbstractConfiguration.createPluginObject(AbstractConfiguration.java:1120)
+		at org.apache.logging.log4j.core.config.AbstractConfiguration.createConfiguration(AbstractConfiguration.java:1045)
+		at org.apache.logging.log4j.core.config.AbstractConfiguration.createConfiguration(AbstractConfiguration.java:1037)
+		at org.apache.logging.log4j.core.config.AbstractConfiguration.doConfigure(AbstractConfiguration.java:651)
+		at org.apache.logging.log4j.core.config.AbstractConfiguration.initialize(AbstractConfiguration.java:247)
+		at org.apache.logging.log4j.core.config.AbstractConfiguration.start(AbstractConfiguration.java:293)
+		at org.apache.logging.log4j.core.LoggerContext.setConfiguration(LoggerContext.java:626)
+		at org.apache.logging.log4j.core.LoggerContext.reconfigure(LoggerContext.java:699)
+		at org.apache.logging.log4j.core.LoggerContext.reconfigure(LoggerContext.java:716)
+		at org.apache.logging.log4j.core.LoggerContext.start(LoggerContext.java:270)
+		at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:155)
+		at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:47)
+		at org.apache.logging.log4j.LogManager.getContext(LogManager.java:196)
+		at org.apache.logging.log4j.spi.AbstractLoggerAdapter.getContext(AbstractLoggerAdapter.java:137)
+		at org.apache.logging.slf4j.Log4jLoggerFactory.getContext(Log4jLoggerFactory.java:55)
+		at org.apache.logging.log4j.spi.AbstractLoggerAdapter.getLogger(AbstractLoggerAdapter.java:47)
+		at org.apache.logging.slf4j.Log4jLoggerFactory.getLogger(Log4jLoggerFactory.java:33)
+		at org.slf4j.LoggerFactory.getLogger(LoggerFactory.java:363)
+		at org.slf4j.LoggerFactory.getLogger(LoggerFactory.java:388)
+		at org.apache.flink.client.cli.CliFrontend.<clinit>(CliFrontend.java:93)
+	
+	2025-11-07 15:08:30,696 main ERROR Could not create plugin of type class org.apache.logging.log4j.core.appender.FileAppender for element FILE: java.lang.IllegalStateException: ManagerFactory [org.apache.logging.log4j.core.appender.FileManager$FileManagerFactory@8e0379d] unable to create manager for [/usr/local/flink/log/flink-cpy-client-dolphinscheduler.log] with data [org.apache.logging.log4j.core.appender.FileManager$FactoryData@341b80b2] java.lang.IllegalStateException: ManagerFactory [org.apache.logging.log4j.core.appender.FileManager$FileManagerFactory@8e0379d] unable to create manager for [/usr/local/flink/log/flink-cpy-client-dolphinscheduler.log] with data [org.apache.logging.log4j.core.appender.FileManager$FactoryData@341b80b2]
+		at org.apache.logging.log4j.core.appender.AbstractManager.getManager(AbstractManager.java:116)
+		at org.apache.logging.log4j.core.appender.OutputStreamManager.getManager(OutputStreamManager.java:100)
+		at org.apache.logging.log4j.core.appender.FileManager.getFileManager(FileManager.java:182)
+		at org.apache.logging.log4j.core.appender.FileAppender$Builder.build(FileAppender.java:96)
+		at org.apache.logging.log4j.core.appender.FileAppender$Builder.build(FileAppender.java:52)
+		at org.apache.logging.log4j.core.config.plugins.util.PluginBuilder.build(PluginBuilder.java:122)
+		at org.apache.logging.log4j.core.config.AbstractConfiguration.createPluginObject(AbstractConfiguration.java:1120)
+		at org.apache.logging.log4j.core.config.AbstractConfiguration.createConfiguration(AbstractConfiguration.java:1045)
+		at org.apache.logging.log4j.core.config.AbstractConfiguration.createConfiguration(AbstractConfiguration.java:1037)
+		at org.apache.logging.log4j.core.config.AbstractConfiguration.doConfigure(AbstractConfiguration.java:651)
+		at org.apache.logging.log4j.core.config.AbstractConfiguration.initialize(AbstractConfiguration.java:247)
+		at org.apache.logging.log4j.core.config.AbstractConfiguration.start(AbstractConfiguration.java:293)
+		at org.apache.logging.log4j.core.LoggerContext.setConfiguration(LoggerContext.java:626)
+		at org.apache.logging.log4j.core.LoggerContext.reconfigure(LoggerContext.java:699)
+		at org.apache.logging.log4j.core.LoggerContext.reconfigure(LoggerContext.java:716)
+		at org.apache.logging.log4j.core.LoggerContext.start(LoggerContext.java:270)
+		at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:155)
+		at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:47)
+		at org.apache.logging.log4j.LogManager.getContext(LogManager.java:196)
+		at org.apache.logging.log4j.spi.AbstractLoggerAdapter.getContext(AbstractLoggerAdapter.java:137)
+		at org.apache.logging.slf4j.Log4jLoggerFactory.getContext(Log4jLoggerFactory.java:55)
+		at org.apache.logging.log4j.spi.AbstractLoggerAdapter.getLogger(AbstractLoggerAdapter.java:47)
+		at org.apache.logging.slf4j.Log4jLoggerFactory.getLogger(Log4jLoggerFactory.java:33)
+		at org.slf4j.LoggerFactory.getLogger(LoggerFactory.java:363)
+		at org.slf4j.LoggerFactory.getLogger(LoggerFactory.java:388)
+		at org.apache.flink.client.cli.CliFrontend.<clinit>(CliFrontend.java:93)
+	
+	2025-11-07 15:08:30,703 main ERROR Unable to invoke factory method in class org.apache.logging.log4j.core.appender.FileAppender for element FILE: java.lang.IllegalStateException: No factory method found for class org.apache.logging.log4j.core.appender.FileAppender java.lang.IllegalStateException: No factory method found for class org.apache.logging.log4j.core.appender.FileAppender
+		at org.apache.logging.log4j.core.config.plugins.util.PluginBuilder.findFactoryMethod(PluginBuilder.java:236)
+		at org.apache.logging.log4j.core.config.plugins.util.PluginBuilder.build(PluginBuilder.java:134)
+		at org.apache.logging.log4j.core.config.AbstractConfiguration.createPluginObject(AbstractConfiguration.java:1120)
+		at org.apache.logging.log4j.core.config.AbstractConfiguration.createConfiguration(AbstractConfiguration.java:1045)
+		at org.apache.logging.log4j.core.config.AbstractConfiguration.createConfiguration(AbstractConfiguration.java:1037)
+		at org.apache.logging.log4j.core.config.AbstractConfiguration.doConfigure(AbstractConfiguration.java:651)
+		at org.apache.logging.log4j.core.config.AbstractConfiguration.initialize(AbstractConfiguration.java:247)
+		at org.apache.logging.log4j.core.config.AbstractConfiguration.start(AbstractConfiguration.java:293)
+		at org.apache.logging.log4j.core.LoggerContext.setConfiguration(LoggerContext.java:626)
+		at org.apache.logging.log4j.core.LoggerContext.reconfigure(LoggerContext.java:699)
+		at org.apache.logging.log4j.core.LoggerContext.reconfigure(LoggerContext.java:716)
+		at org.apache.logging.log4j.core.LoggerContext.start(LoggerContext.java:270)
+		at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:155)
+		at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:47)
+		at org.apache.logging.log4j.LogManager.getContext(LogManager.java:196)
+		at org.apache.logging.log4j.spi.AbstractLoggerAdapter.getContext(AbstractLoggerAdapter.java:137)
+		at org.apache.logging.slf4j.Log4jLoggerFactory.getContext(Log4jLoggerFactory.java:55)
+		at org.apache.logging.log4j.spi.AbstractLoggerAdapter.getLogger(AbstractLoggerAdapter.java:47)
+		at org.apache.logging.slf4j.Log4jLoggerFactory.getLogger(Log4jLoggerFactory.java:33)
+		at org.slf4j.LoggerFactory.getLogger(LoggerFactory.java:363)
+		at org.slf4j.LoggerFactory.getLogger(LoggerFactory.java:388)
+		at org.apache.flink.client.cli.CliFrontend.<clinit>(CliFrontend.java:93)
+	
+	2025-11-07 15:08:30,705 main ERROR Null object returned for FILE in Appenders.
+	2025-11-07 15:08:30,705 main ERROR Unable to locate appender "FileAppender" for logger config "root"
+	2025-11-07 15:08:30,706 main ERROR Unable to locate appender "FileAppender" for logger config "org.apache.hadoop.hive"
+	╔════════════════════════════════════════════════╗
+	║   Flink Hello World 程序（低资源版）          ║
+	╠════════════════════════════════════════════════╣
+	║  输出路径：/tmp/flink/output
+	╚════════════════════════════════════════════════╝
+	
+	📝 结果将输出到文件：/tmp/flink/output
+	
+[WI-0][TI-0] - 2025-11-07 15:08:34.571 INFO  [TaskInstanceLogOutput-thread-wow] o.a.d.p.t.a.AbstractTask:[163] -  -> 
+	Job has been submitted with JobID ecf75abad18c964e4929b35255805ea6
+[WI-0][TI-0] - 2025-11-07 15:08:36.573 INFO  [TaskInstanceLogOutput-thread-wow] o.a.d.p.t.a.AbstractTask:[163] -  -> 
+	Program execution finished
+	Job with JobID ecf75abad18c964e4929b35255805ea6 has finished.
+	Job Runtime: 1773 ms
+	
+	
+	✅ 任务执行完成！
+	📂 请查看输出目录：/tmp/flink/output
+[WI-0][TI-1] - 2025-11-07 15:08:36.577 INFO  [exclusive-task-executor-container-worker-0] o.a.d.p.t.a.AbstractCommandExecutor:[201] - process has exited. execute path:/tmp/dolphinscheduler/exec/process/1, processId:1158 ,exitStatusCode:0 ,processWaitForStatus:true ,processExitValue:0
+[WI-0][TI-1] - 2025-11-07 15:08:36.578 INFO  [exclusive-task-executor-container-worker-0] o.a.d.p.t.a.u.LogUtils:[78] - Start finding appId in /opt/dolphinscheduler/worker-server/logs/20251107/156742551912128/1/1/1.log, fetch way: log 
+[WI-0][TI-1] - 2025-11-07 15:08:36.599 INFO  [exclusive-task-executor-container-worker-0] o.a.d.t.e.e.TaskExecutorEventBus:[32] - Publish TaskExecutorSuccessLifecycleEvent: {
+  "taskInstanceId" : 1,
+  "eventCreateTime" : 1762499316597,
+  "type" : "SUCCESS",
+  "workflowInstanceId" : 1,
+  "taskInstanceHost" : "172.28.0.6:1234",
+  "endTime" : 1762499316597,
+  "varPool" : null,
+  "latestReportTime" : null
+}
+[WI-0][TI-1] - 2025-11-07 15:08:36.647 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-8] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[111] - Report : {
+  "taskInstanceId" : 1,
+  "eventCreateTime" : 1762499316597,
+  "type" : "SUCCESS",
+  "workflowInstanceId" : 1,
+  "taskInstanceHost" : "172.28.0.6:1234",
+  "endTime" : 1762499316597,
+  "varPool" : null,
+  "latestReportTime" : null
+}
+[WI-0][TI-1] - 2025-11-07 15:08:36.648 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-8] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[191] - Success fire TaskExecutorSuccessLifecycleEvent: {"taskInstanceId":1,"eventCreateTime":1762499316597,"type":"SUCCESS","workflowInstanceId":1,"taskInstanceHost":"172.28.0.6:1234","endTime":1762499316597,"varPool":null,"latestReportTime":null} 
+[WI-0][TI-1] - 2025-11-07 15:08:36.664 INFO  [PhysicalTaskExecutorLifecycleEventReporter] o.a.d.e.m.TaskExecutorEventRemoteReporterClient:[73] - Report: TaskExecutorSuccessLifecycleEvent(super=AbstractTaskExecutorLifecycleEvent(super=AbstractDelayEvent(delayTime=0, createTimeInNano=167269673409369, expiredTimeInNano=167269673409469), taskInstanceId=1, eventCreateTime=1762499316597, type=SUCCESS), workflowInstanceId=1, taskInstanceHost=172.28.0.6:1234, endTime=1762499316597, varPool=null, latestReportTime=1762499316648) to master success
+[WI-0][TI-0] - 2025-11-07 15:08:36.713 INFO  [WorkerRpcServer-methodInvoker-4] o.a.d.s.w.r.PhysicalTaskExecutorOperatorImpl:[101] - Receive TaskExecutorLifecycleEventAck: ITaskExecutorLifecycleEventReporter.TaskExecutorLifecycleEventAck(taskExecutorId=1, taskExecutorLifecycleEventType=SUCCESS)
+[WI-0][TI-0] - 2025-11-07 15:08:36.714 INFO  [WorkerRpcServer-methodInvoker-4] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[137] - Success removed TaskExecutorSuccessLifecycleEvent(super=AbstractTaskExecutorLifecycleEvent(super=AbstractDelayEvent(delayTime=0, createTimeInNano=167269673409369, expiredTimeInNano=167269673409469), taskInstanceId=1, eventCreateTime=1762499316597, type=SUCCESS), workflowInstanceId=1, taskInstanceHost=172.28.0.6:1234, endTime=1762499316597, varPool=null, latestReportTime=1762499316648) by ack: ITaskExecutorLifecycleEventReporter.TaskExecutorLifecycleEventAck(taskExecutorId=1, taskExecutorLifecycleEventType=SUCCESS)
+[WI-0][TI-0] - 2025-11-07 15:08:36.724 INFO  [WorkerRpcServer-methodInvoker-4] o.a.d.t.e.e.TaskExecutorEventBus:[32] - Publish TaskExecutorFinalizeLifecycleEvent: {
+  "taskInstanceId" : 1,
+  "eventCreateTime" : 1762499316722,
+  "type" : "FINALIZE"
+}
+[WI-0][TI-1] - 2025-11-07 15:08:36.747 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-10] o.a.d.p.t.a.l.TaskInstanceLogHeader:[45] - 🐬 Finalize Task Instance
+[WI-0][TI-1] - 2025-11-07 15:08:36.756 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-10] o.a.d.t.e.c.AbstractTaskExecutorContainer:[99] - FINALIZE_SESSION
+[WI-0][TI-1] - 2025-11-07 15:08:36.818 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-10] o.a.d.s.w.u.TaskExecutionContextUtils:[117] - Deleted task exec directory: /tmp/dolphinscheduler/exec/process/1
+[WI-0][TI-1] - 2025-11-07 15:08:36.820 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-10] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[191] - Success fire TaskExecutorFinalizeLifecycleEvent: {"taskInstanceId":1,"eventCreateTime":1762499316722,"type":"FINALIZE"} 
+[WI-0][TI-0] - 2025-11-07 15:38:22.229 WARN  [Worker-Server] o.m.s.m.ClassPathMapperScanner:[44] - No MyBatis mapper was found in '[org.apache.dolphinscheduler.server.worker]' package. Please check your configuration.
+[WI-0][TI-0] - 2025-11-07 15:38:22.791 INFO  [Worker-Server] o.a.d.c.u.NetUtils:[312] - Get all NetworkInterfaces: [name:eth0 (eth0), name:lo (lo)]
+[WI-0][TI-0] - 2025-11-07 15:38:22.847 INFO  [Worker-Server] o.a.d.s.w.c.WorkerConfig:[97] - 
+****************************Worker Configuration**************************************
+  listen-port -> 1234
+  max-heartbeat-interval -> PT10S
+  host-weight -> 100
+  tenantConfig -> TenantConfig(autoCreateTenantEnabled=true, defaultTenantEnabled=false)
+  server-load-protection -> WorkerServerLoadProtectionConfig()
+  address -> 172.28.0.6:1234
+  registry-path: /nodes/worker/172.28.0.6:1234
+  physical-task-config -> PhysicalTaskConfig(taskExecutorThreadSize=100)
+  group -> default
+****************************Worker Configuration**************************************
+[WI-0][TI-0] - 2025-11-07 15:38:23.262 INFO  [Worker-Server] o.e.j.u.log:[170] - Logging initialized @9240ms to org.eclipse.jetty.util.log.Slf4jLog
+[WI-0][TI-0] - 2025-11-07 15:38:23.599 INFO  [Worker-Server] o.e.j.s.Server:[375] - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 1.8.0_342-b07
+[WI-0][TI-0] - 2025-11-07 15:38:23.666 INFO  [Worker-Server] o.e.j.s.h.C.application:[2368] - Initializing Spring embedded WebApplicationContext
+[WI-0][TI-0] - 2025-11-07 15:38:24.636 INFO  [Worker-Server] c.z.h.HikariDataSource:[110] - HikariPool-1 - Starting...
+[WI-0][TI-0] - 2025-11-07 15:38:24.867 INFO  [Worker-Server] c.z.h.HikariDataSource:[123] - HikariPool-1 - Start completed.
+[WI-0][TI-0] - 2025-11-07 15:38:25.309 INFO  [Worker-Server] o.e.j.s.session:[334] - DefaultSessionIdManager workerName=node0
+[WI-0][TI-0] - 2025-11-07 15:38:25.310 INFO  [Worker-Server] o.e.j.s.session:[339] - No SessionScavenger set, using defaults
+[WI-0][TI-0] - 2025-11-07 15:38:25.334 INFO  [Worker-Server] o.e.j.s.session:[132] - node0 Scavenging every 600000ms
+[WI-0][TI-0] - 2025-11-07 15:38:25.355 INFO  [Worker-Server] o.e.j.s.h.ContextHandler:[921] - Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@65d7eea4{application,/,[file:///tmp/jetty-docbase.1235.4631734506028545410/],AVAILABLE}
+[WI-0][TI-0] - 2025-11-07 15:38:25.357 INFO  [Worker-Server] o.e.j.s.Server:[415] - Started @11335ms
+[WI-0][TI-0] - 2025-11-07 15:38:25.548 INFO  [Worker-Server] o.a.d.p.r.z.ZookeeperRegistryAutoConfiguration:[37] - Load ZookeeperRegistryAutoConfiguration
+[WI-0][TI-0] - 2025-11-07 15:38:25.581 INFO  [Worker-Server] o.a.d.p.r.z.ZookeeperRegistryProperties:[96] - 
+****************************ZookeeperRegistryProperties**************************************
+  namespace -> dolphinscheduler
+  connectString -> zookeeper:2181
+  retryPolicy -> ZookeeperRegistryProperties.ZookeeperProperties.RetryPolicy(baseSleepTime=PT1S, maxRetries=3, maxSleep=PT5S)
+  digest -> 
+  sessionTimeout -> PT5M
+  connectionTimeout -> PT2M
+  blockUntilConnected -> PT30M
+****************************ZookeeperRegistryProperties**************************************
+[WI-0][TI-0] - 2025-11-07 15:38:26.089 INFO  [Worker-Server] o.a.d.p.r.z.ZookeeperRegistry:[113] - ZookeeperRegistry started at: 244/ms
+[WI-0][TI-0] - 2025-11-07 15:38:26.678 INFO  [Worker-Server] o.a.d.e.b.s.NettyRemotingServer:[111] - WorkerRpcServer bind success at port: 1234
+[WI-0][TI-0] - 2025-11-07 15:38:26.763 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: JAVA
+[WI-0][TI-0] - 2025-11-07 15:38:26.767 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: JUPYTER
+[WI-0][TI-0] - 2025-11-07 15:38:26.771 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SPARK
+[WI-0][TI-0] - 2025-11-07 15:38:26.776 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: FLINK_STREAM
+[WI-0][TI-0] - 2025-11-07 15:38:26.780 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: PYTHON
+[WI-0][TI-0] - 2025-11-07 15:38:26.783 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: ALIYUN_SERVERLESS_SPARK
+[WI-0][TI-0] - 2025-11-07 15:38:26.787 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DATASYNC
+[WI-0][TI-0] - 2025-11-07 15:38:26.791 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DATA_FACTORY
+[WI-0][TI-0] - 2025-11-07 15:38:26.794 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: CHUNJUN
+[WI-0][TI-0] - 2025-11-07 15:38:26.796 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: CONDITIONS
+[WI-0][TI-0] - 2025-11-07 15:38:26.799 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: REMOTESHELL
+[WI-0][TI-0] - 2025-11-07 15:38:26.800 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SUB_WORKFLOW
+[WI-0][TI-0] - 2025-11-07 15:38:26.802 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: PROCEDURE
+[WI-0][TI-0] - 2025-11-07 15:38:26.804 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SHELL
+[WI-0][TI-0] - 2025-11-07 15:38:26.806 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DEPENDENT
+[WI-0][TI-0] - 2025-11-07 15:38:26.809 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SQOOP
+[WI-0][TI-0] - 2025-11-07 15:38:26.812 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: MR
+[WI-0][TI-0] - 2025-11-07 15:38:26.816 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: PYTORCH
+[WI-0][TI-0] - 2025-11-07 15:38:26.836 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: K8S
+[WI-0][TI-0] - 2025-11-07 15:38:26.844 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SAGEMAKER
+[WI-0][TI-0] - 2025-11-07 15:38:26.851 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SEATUNNEL
+[WI-0][TI-0] - 2025-11-07 15:38:26.854 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: HTTP
+[WI-0][TI-0] - 2025-11-07 15:38:26.860 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: EMR
+[WI-0][TI-0] - 2025-11-07 15:38:26.863 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DMS
+[WI-0][TI-0] - 2025-11-07 15:38:26.866 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: KUBEFLOW
+[WI-0][TI-0] - 2025-11-07 15:38:26.870 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SQL
+[WI-0][TI-0] - 2025-11-07 15:38:26.873 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DVC
+[WI-0][TI-0] - 2025-11-07 15:38:26.877 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DATAX
+[WI-0][TI-0] - 2025-11-07 15:38:26.880 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: ZEPPELIN
+[WI-0][TI-0] - 2025-11-07 15:38:26.882 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DINKY
+[WI-0][TI-0] - 2025-11-07 15:38:26.885 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: MLFLOW
+[WI-0][TI-0] - 2025-11-07 15:38:26.887 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SWITCH
+[WI-0][TI-0] - 2025-11-07 15:38:26.889 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: OPENMLDB
+[WI-0][TI-0] - 2025-11-07 15:38:26.891 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: LogicFakeTask
+[WI-0][TI-0] - 2025-11-07 15:38:26.895 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: LINKIS
+[WI-0][TI-0] - 2025-11-07 15:38:26.897 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: HIVECLI
+[WI-0][TI-0] - 2025-11-07 15:38:26.899 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: FLINK
+[WI-0][TI-0] - 2025-11-07 15:38:26.900 WARN  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[44] - The task plugin has already been loaded
+[WI-0][TI-0] - 2025-11-07 15:38:26.913 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> K8S
+[WI-0][TI-0] - 2025-11-07 15:38:26.916 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> ZEPPELIN
+[WI-0][TI-0] - 2025-11-07 15:38:26.935 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> SSH
+[WI-0][TI-0] - 2025-11-07 15:38:26.938 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> CLICKHOUSE
+[WI-0][TI-0] - 2025-11-07 15:38:26.941 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> DATABEND
+[WI-0][TI-0] - 2025-11-07 15:38:26.945 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> DB2
+[WI-0][TI-0] - 2025-11-07 15:38:26.950 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> HIVE
+[WI-0][TI-0] - 2025-11-07 15:38:26.954 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> MYSQL
+[WI-0][TI-0] - 2025-11-07 15:38:26.957 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> OCEANBASE
+[WI-0][TI-0] - 2025-11-07 15:38:26.961 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> ORACLE
+[WI-0][TI-0] - 2025-11-07 15:38:26.963 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> POSTGRESQL
+[WI-0][TI-0] - 2025-11-07 15:38:26.967 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> SQLSERVER
+[WI-0][TI-0] - 2025-11-07 15:38:26.971 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> REDSHIFT
+[WI-0][TI-0] - 2025-11-07 15:38:26.974 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> ATHENA
+[WI-0][TI-0] - 2025-11-07 15:38:26.977 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> SPARK
+[WI-0][TI-0] - 2025-11-07 15:38:26.980 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> PRESTO
+[WI-0][TI-0] - 2025-11-07 15:38:26.984 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> TRINO
+[WI-0][TI-0] - 2025-11-07 15:38:26.987 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> STARROCKS
+[WI-0][TI-0] - 2025-11-07 15:38:26.990 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> AZURESQL
+[WI-0][TI-0] - 2025-11-07 15:38:26.993 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> DAMENG
+[WI-0][TI-0] - 2025-11-07 15:38:26.996 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> SNOWFLAKE
+[WI-0][TI-0] - 2025-11-07 15:38:26.998 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> KYUUBI
+[WI-0][TI-0] - 2025-11-07 15:38:27.001 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> VERTICA
+[WI-0][TI-0] - 2025-11-07 15:38:27.003 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> DORIS
+[WI-0][TI-0] - 2025-11-07 15:38:27.005 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> SAGEMAKER
+[WI-0][TI-0] - 2025-11-07 15:38:27.007 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> HANA
+[WI-0][TI-0] - 2025-11-07 15:38:27.010 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> ALIYUN_SERVERLESS_SPARK
+[WI-0][TI-0] - 2025-11-07 15:38:27.012 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> DOLPHINDB
+[WI-0][TI-0] - 2025-11-07 15:38:27.016 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorProvider:[41] - Initialize DataSourceProcessorProvider
+[WI-0][TI-0] - 2025-11-07 15:38:27.064 INFO  [Worker-Server] o.a.d.c.c.SystemConstants:[30] - init timezone: sun.util.calendar.ZoneInfo[id="Asia/Shanghai",offset=28800000,dstSavings=0,useDaylight=false,transitions=31,lastRule=null]
+[WI-0][TI-0] - 2025-11-07 15:38:27.139 INFO  [Worker-Server] o.a.d.s.w.r.WorkerRegistryClient:[94] - Worker node: 172.28.0.6:1234 registry to registry center /nodes/worker/172.28.0.6:1234 successfully
+[WI-0][TI-0] - 2025-11-07 15:38:27.149 INFO  [Worker-Server] o.a.d.c.m.BaseHeartBeatTask:[47] - Starting WorkerHeartBeatTask...
+[WI-0][TI-0] - 2025-11-07 15:38:27.150 INFO  [Worker-Server] o.a.d.c.m.BaseHeartBeatTask:[49] - Started WorkerHeartBeatTask, heartBeatInterval: 10000...
+[WI-0][TI-0] - 2025-11-07 15:38:27.151 INFO  [Worker-Server] o.a.d.s.w.r.WorkerRegistryClient:[102] - Worker node: 172.28.0.6:1234 registry finished
+[WI-0][TI-0] - 2025-11-07 15:38:27.156 INFO  [Worker-Server] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[95] - PhysicalTaskExecutorEventBusCoordinator started, worker size: 12
+[WI-0][TI-0] - 2025-11-07 15:38:27.156 INFO  [Worker-Server] o.a.d.t.e.TaskEngine:[53] - PhysicalTaskEngine started
+[WI-0][TI-0] - 2025-11-07 15:38:27.157 INFO  [Worker-Server] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[81] - PhysicalTaskExecutorLifecycleEventReporter started
+[WI-0][TI-0] - 2025-11-07 15:38:27.158 INFO  [Worker-Server] o.a.d.s.w.e.PhysicalTaskEngineDelegator:[57] - PhysicalTaskEngineDelegator started
+[WI-0][TI-0] - 2025-11-07 15:38:31.164 INFO  [WorkerRpcServer-methodInvoker-0] o.a.d.s.w.r.PhysicalTaskExecutorOperatorImpl:[49] - Receive TaskExecutorDispatchResponse: TaskExecutorDispatchRequest(taskExecutionContext=TaskExecutionContext(taskInstanceId=2, taskName=wow, firstSubmitTime=1762501099360, startTime=0, taskType=FLINK, workflowInstanceHost=172.28.0.6:5678, host=172.28.0.6:1234, executePath=null, logPath=null, appInfoPath=null, processId=0, workflowDefinitionCode=156742551912128, workflowDefinitionVersion=1, appIds=null, workflowInstanceId=2, scheduleTime=0, globalParams=[], executorId=1, tenantCode=cpy, workflowDefinitionId=0, taskParams={"localParams":[],"initScript":"","rawScript":"","resourceList":[{"resourceName":"/tmp/dolphinscheduler/default/resources/flink-file-wordcount-1.0-SNAPSHOT.jar"}],"programType":"JAVA","mainClass":"org.example.HelloWorld","mainJar":{"resourceName":"/tmp/dolphinscheduler/default/resources/flink-file-wordcount-1.0-SNAPSHOT.jar"},"deployMode":"local","mainArgs":"--output /tmp/flink/output","yarnQueue":"","flinkVersion":"<1.10","jobManagerMemory":"1G","taskManagerMemory":"2G","slot":1,"taskManager":2,"parallelism":1}, environmentConfig=export JAVA_HOME=/usr/local/openjdk-8
+export FLINK_HOME=/usr/local/flink
+export DOLPHINSCHEDULER_HOME=/opt/dolphinscheduler
+export PATH=$JAVA_HOME/bin:$FLINK_HOME/bin:$DOLPHINSCHEDULER_HOME/bin:$PATH, prepareParamsMap={system.task.definition.name=Property(prop=system.task.definition.name, direct=IN, type=VARCHAR, value=wow), system.project.name=Property(prop=system.project.name, direct=IN, type=VARCHAR, value=wow), system.project.code=Property(prop=system.project.code, direct=IN, type=VARCHAR, value=156742253745856), system.workflow.instance.id=Property(prop=system.workflow.instance.id, direct=IN, type=VARCHAR, value=2), system.biz.curdate=Property(prop=system.biz.curdate, direct=IN, type=VARCHAR, value=20251107), system.biz.date=Property(prop=system.biz.date, direct=IN, type=VARCHAR, value=20251106), system.task.instance.id=Property(prop=system.task.instance.id, direct=IN, type=VARCHAR, value=2), system.workflow.definition.name=Property(prop=system.workflow.definition.name, direct=IN, type=VARCHAR, value=wow), system.task.definition.code=Property(prop=system.task.definition.code, direct=IN, type=VARCHAR, value=156742482211520), system.workflow.definition.code=Property(prop=system.workflow.definition.code, direct=IN, type=VARCHAR, value=156742551912128), system.datetime=Property(prop=system.datetime, direct=IN, type=VARCHAR, value=20251107153819)}, taskAppId=null, taskTimeoutStrategy=null, taskTimeout=2147483647, workerGroup=default, resourceParametersHelper=org.apache.dolphinscheduler.plugin.task.api.parameters.resource.ResourceParametersHelper@294adfbd, endTime=0, sqlTaskExecutionContext=null, k8sTaskExecutionContext=null, resourceContext=null, varPool=null, dryRun=0, cpuQuota=-1, memoryMax=-1, dispatchFailTimes=4, failover=false))
+[WI-0][TI-2] - 2025-11-07 15:38:31.268 INFO  [WorkerRpcServer-methodInvoker-0] o.a.d.t.e.e.TaskExecutorEventBus:[32] - Publish TaskExecutorDispatchedLifecycleEvent: {
+  "taskInstanceId" : 2,
+  "eventCreateTime" : 1762501111260,
+  "type" : "DISPATCHED",
+  "workflowInstanceId" : 2,
+  "taskInstanceHost" : "172.28.0.6:1234",
+  "latestReportTime" : null
+}
+[WI-0][TI-0] - 2025-11-07 15:38:31.270 INFO  [WorkerRpcServer-methodInvoker-0] o.a.d.s.w.r.PhysicalTaskExecutorOperatorImpl:[53] - Handle TaskExecutorDispatchResponse: TaskExecutorDispatchRequest(taskExecutionContext=TaskExecutionContext(taskInstanceId=2, taskName=wow, firstSubmitTime=1762501099360, startTime=0, taskType=FLINK, workflowInstanceHost=172.28.0.6:5678, host=172.28.0.6:1234, executePath=null, logPath=/opt/dolphinscheduler/worker-server/logs/20251107/156742551912128/1/2/2.log, appInfoPath=null, processId=0, workflowDefinitionCode=156742551912128, workflowDefinitionVersion=1, appIds=null, workflowInstanceId=2, scheduleTime=0, globalParams=[], executorId=1, tenantCode=cpy, workflowDefinitionId=0, taskParams={"localParams":[],"initScript":"","rawScript":"","resourceList":[{"resourceName":"/tmp/dolphinscheduler/default/resources/flink-file-wordcount-1.0-SNAPSHOT.jar"}],"programType":"JAVA","mainClass":"org.example.HelloWorld","mainJar":{"resourceName":"/tmp/dolphinscheduler/default/resources/flink-file-wordcount-1.0-SNAPSHOT.jar"},"deployMode":"local","mainArgs":"--output /tmp/flink/output","yarnQueue":"","flinkVersion":"<1.10","jobManagerMemory":"1G","taskManagerMemory":"2G","slot":1,"taskManager":2,"parallelism":1}, environmentConfig=export JAVA_HOME=/usr/local/openjdk-8
+export FLINK_HOME=/usr/local/flink
+export DOLPHINSCHEDULER_HOME=/opt/dolphinscheduler
+export PATH=$JAVA_HOME/bin:$FLINK_HOME/bin:$DOLPHINSCHEDULER_HOME/bin:$PATH, prepareParamsMap={system.task.definition.name=Property(prop=system.task.definition.name, direct=IN, type=VARCHAR, value=wow), system.project.name=Property(prop=system.project.name, direct=IN, type=VARCHAR, value=wow), system.project.code=Property(prop=system.project.code, direct=IN, type=VARCHAR, value=156742253745856), system.workflow.instance.id=Property(prop=system.workflow.instance.id, direct=IN, type=VARCHAR, value=2), system.biz.curdate=Property(prop=system.biz.curdate, direct=IN, type=VARCHAR, value=20251107), system.biz.date=Property(prop=system.biz.date, direct=IN, type=VARCHAR, value=20251106), system.task.instance.id=Property(prop=system.task.instance.id, direct=IN, type=VARCHAR, value=2), system.workflow.definition.name=Property(prop=system.workflow.definition.name, direct=IN, type=VARCHAR, value=wow), system.task.definition.code=Property(prop=system.task.definition.code, direct=IN, type=VARCHAR, value=156742482211520), system.workflow.definition.code=Property(prop=system.workflow.definition.code, direct=IN, type=VARCHAR, value=156742551912128), system.datetime=Property(prop=system.datetime, direct=IN, type=VARCHAR, value=20251107153819)}, taskAppId=null, taskTimeoutStrategy=null, taskTimeout=2147483647, workerGroup=default, resourceParametersHelper=org.apache.dolphinscheduler.plugin.task.api.parameters.resource.ResourceParametersHelper@294adfbd, endTime=0, sqlTaskExecutionContext=null, k8sTaskExecutionContext=null, resourceContext=null, varPool=null, dryRun=0, cpuQuota=-1, memoryMax=-1, dispatchFailTimes=4, failover=false)) success
+[WI-0][TI-2] - 2025-11-07 15:38:31.271 INFO  [exclusive-task-executor-container-worker-0] o.a.d.p.t.a.l.TaskInstanceLogHeader:[33] - 🐬 Initialize Task Context
+[WI-0][TI-2] - 2025-11-07 15:38:31.340 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-0] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[111] - Report : {
+  "taskInstanceId" : 2,
+  "eventCreateTime" : 1762501111260,
+  "type" : "DISPATCHED",
+  "workflowInstanceId" : 2,
+  "taskInstanceHost" : "172.28.0.6:1234",
+  "latestReportTime" : null
+}
+[WI-0][TI-2] - 2025-11-07 15:38:31.344 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-0] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[191] - Success fire TaskExecutorDispatchedLifecycleEvent: {"taskInstanceId":2,"eventCreateTime":1762501111260,"type":"DISPATCHED","workflowInstanceId":2,"taskInstanceHost":"172.28.0.6:1234","latestReportTime":null} 
+[WI-0][TI-2] - 2025-11-07 15:38:31.360 INFO  [exclusive-task-executor-container-worker-0] o.a.d.t.e.AbstractTaskExecutor:[130] - Initialized taskContext {
+  "taskInstanceId" : 2,
+  "taskName" : "wow",
+  "firstSubmitTime" : 1762501099360,
+  "startTime" : 1762501111339,
+  "taskType" : "FLINK",
+  "workflowInstanceHost" : "172.28.0.6:5678",
+  "host" : "172.28.0.6:1234",
+  "logPath" : "/opt/dolphinscheduler/worker-server/logs/20251107/156742551912128/1/2/2.log",
+  "processId" : 0,
+  "workflowDefinitionCode" : 156742551912128,
+  "workflowDefinitionVersion" : 1,
+  "workflowInstanceId" : 2,
+  "scheduleTime" : 0,
+  "globalParams" : "[]",
+  "executorId" : 1,
+  "tenantCode" : "cpy",
+  "workflowDefinitionId" : 0,
+  "taskParams" : "{\"localParams\":[],\"initScript\":\"\",\"rawScript\":\"\",\"resourceList\":[{\"resourceName\":\"/tmp/dolphinscheduler/default/resources/flink-file-wordcount-1.0-SNAPSHOT.jar\"}],\"programType\":\"JAVA\",\"mainClass\":\"org.example.HelloWorld\",\"mainJar\":{\"resourceName\":\"/tmp/dolphinscheduler/default/resources/flink-file-wordcount-1.0-SNAPSHOT.jar\"},\"deployMode\":\"local\",\"mainArgs\":\"--output /tmp/flink/output\",\"yarnQueue\":\"\",\"flinkVersion\":\"<1.10\",\"jobManagerMemory\":\"1G\",\"taskManagerMemory\":\"2G\",\"slot\":1,\"taskManager\":2,\"parallelism\":1}",
+  "environmentConfig" : "export JAVA_HOME=/usr/local/openjdk-8\nexport FLINK_HOME=/usr/local/flink\nexport DOLPHINSCHEDULER_HOME=/opt/dolphinscheduler\nexport PATH=$JAVA_HOME/bin:$FLINK_HOME/bin:$DOLPHINSCHEDULER_HOME/bin:$PATH",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "wow"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "wow"
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "156742253745856"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "2"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20251107"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20251106"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "2"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "wow"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "156742482211520"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "156742551912128"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20251107153819"
+    }
+  },
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "resourceParametersHelper" : {
+    "resourceMap" : { }
+  },
+  "endTime" : 0,
+  "dryRun" : 0,
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "dispatchFailTimes" : 4,
+  "failover" : false
+}
+[WI-0][TI-2] - 2025-11-07 15:38:31.456 INFO  [exclusive-task-executor-container-worker-0] o.a.d.c.u.OSUtils:[228] - create linux os user: cpy
+[WI-0][TI-2] - 2025-11-07 15:38:31.457 INFO  [exclusive-task-executor-container-worker-0] o.a.d.c.u.OSUtils:[230] - execute cmd: sudo useradd -m -g root
+ cpy
+[WI-0][TI-2] - 2025-11-07 15:38:31.654 INFO  [PhysicalTaskExecutorLifecycleEventReporter] o.a.d.e.b.c.JdkDynamicRpcClientProxyFactory:[56] - Create DynamicRpcClientProxy cache for host: 172.28.0.6:5678
+[WI-0][TI-2] - 2025-11-07 15:38:31.937 INFO  [PhysicalTaskExecutorLifecycleEventReporter] o.a.d.e.m.TaskExecutorEventRemoteReporterClient:[73] - Report: TaskExecutorDispatchedLifecycleEvent(super=AbstractTaskExecutorLifecycleEvent(super=AbstractDelayEvent(delayTime=0, createTimeInNano=169064433307928, expiredTimeInNano=169064433312033), taskInstanceId=2, eventCreateTime=1762501111260, type=DISPATCHED), workflowInstanceId=2, taskInstanceHost=172.28.0.6:1234, latestReportTime=1762501111346) to master success
+[WI-0][TI-0] - 2025-11-07 15:38:31.943 INFO  [WorkerRpcServer-methodInvoker-1] o.a.d.s.w.r.PhysicalTaskExecutorOperatorImpl:[101] - Receive TaskExecutorLifecycleEventAck: ITaskExecutorLifecycleEventReporter.TaskExecutorLifecycleEventAck(taskExecutorId=2, taskExecutorLifecycleEventType=DISPATCHED)
+[WI-0][TI-0] - 2025-11-07 15:38:31.945 INFO  [WorkerRpcServer-methodInvoker-1] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[137] - Success removed TaskExecutorDispatchedLifecycleEvent(super=AbstractTaskExecutorLifecycleEvent(super=AbstractDelayEvent(delayTime=0, createTimeInNano=169064433307928, expiredTimeInNano=169064433312033), taskInstanceId=2, eventCreateTime=1762501111260, type=DISPATCHED), workflowInstanceId=2, taskInstanceHost=172.28.0.6:1234, latestReportTime=1762501111346) by ack: ITaskExecutorLifecycleEventReporter.TaskExecutorLifecycleEventAck(taskExecutorId=2, taskExecutorLifecycleEventType=DISPATCHED)
+[WI-0][TI-2] - 2025-11-07 15:38:31.975 INFO  [exclusive-task-executor-container-worker-0] o.a.d.c.u.OSUtils:[213] - Create tenant cpy under userGroup: root
+ success
+[WI-0][TI-2] - 2025-11-07 15:38:32.036 INFO  [exclusive-task-executor-container-worker-0] o.a.d.s.w.e.PhysicalTaskExecutor:[128] - TenantCode: cpy check successfully
+[WI-0][TI-2] - 2025-11-07 15:38:32.046 INFO  [exclusive-task-executor-container-worker-0] o.a.d.s.w.e.PhysicalTaskExecutor:[131] - TaskInstance working directory: /tmp/dolphinscheduler/exec/process/2 create successfully
+[WI-0][TI-2] - 2025-11-07 15:38:32.152 ERROR [exclusive-task-executor-container-worker-0] o.a.d.t.e.w.TaskExecutorWorker:[75] - PhysicalTaskExecutor{id=2, name=wow, stat=INITIALIZED} execute failed
+org.apache.dolphinscheduler.plugin.task.api.TaskException: Download resource file: /tmp/dolphinscheduler/default/resources/flink-file-wordcount-1.0-SNAPSHOT.jar error
+	at org.apache.dolphinscheduler.server.worker.utils.TaskExecutionContextUtils.downloadResourcesIfNeeded(TaskExecutionContextUtils.java:100)
+	at org.apache.dolphinscheduler.server.worker.executor.PhysicalTaskExecutor.initializeTaskContext(PhysicalTaskExecutor.java:133)
+	at org.apache.dolphinscheduler.task.executor.AbstractTaskExecutor.start(AbstractTaskExecutor.java:66)
+	at org.apache.dolphinscheduler.task.executor.worker.TaskExecutorWorker.start(TaskExecutorWorker.java:65)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.io.FileNotFoundException: Source path does not exist: /tmp/dolphinscheduler/default/resources/flink-file-wordcount-1.0-SNAPSHOT.jar
+	at org.apache.dolphinscheduler.plugin.storage.api.local.LocalStorageOperator.copy(LocalStorageOperator.java:98)
+	at org.apache.dolphinscheduler.plugin.storage.api.local.LocalStorageOperator.download(LocalStorageOperator.java:128)
+	at org.apache.dolphinscheduler.server.worker.utils.TaskExecutionContextUtils.downloadResourcesIfNeeded(TaskExecutionContextUtils.java:88)
+	... 8 common frames omitted
+[WI-0][TI-2] - 2025-11-07 15:38:32.158 INFO  [exclusive-task-executor-container-worker-0] o.a.d.t.e.e.TaskExecutorEventBus:[32] - Publish TaskExecutorFailedLifecycleEvent: {
+  "taskInstanceId" : 2,
+  "eventCreateTime" : 1762501112156,
+  "type" : "FAILED",
+  "workflowInstanceId" : 2,
+  "taskInstanceHost" : "172.28.0.6:1234",
+  "appIds" : null,
+  "endTime" : 1762501112156,
+  "latestReportTime" : null
+}
+[WI-0][TI-2] - 2025-11-07 15:38:32.236 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-10] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[111] - Report : {
+  "taskInstanceId" : 2,
+  "eventCreateTime" : 1762501112156,
+  "type" : "FAILED",
+  "workflowInstanceId" : 2,
+  "taskInstanceHost" : "172.28.0.6:1234",
+  "appIds" : null,
+  "endTime" : 1762501112156,
+  "latestReportTime" : null
+}
+[WI-0][TI-2] - 2025-11-07 15:38:32.238 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-10] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[191] - Success fire TaskExecutorFailedLifecycleEvent: {"taskInstanceId":2,"eventCreateTime":1762501112156,"type":"FAILED","workflowInstanceId":2,"taskInstanceHost":"172.28.0.6:1234","appIds":null,"endTime":1762501112156,"latestReportTime":null} 
+[WI-0][TI-2] - 2025-11-07 15:38:32.256 INFO  [PhysicalTaskExecutorLifecycleEventReporter] o.a.d.e.m.TaskExecutorEventRemoteReporterClient:[73] - Report: TaskExecutorFailedLifecycleEvent(super=AbstractTaskExecutorLifecycleEvent(super=AbstractDelayEvent(delayTime=0, createTimeInNano=169065328780535, expiredTimeInNano=169065328781136), taskInstanceId=2, eventCreateTime=1762501112156, type=FAILED), workflowInstanceId=2, taskInstanceHost=172.28.0.6:1234, appIds=null, endTime=1762501112156, latestReportTime=1762501112238) to master success
+[WI-0][TI-0] - 2025-11-07 15:38:32.275 INFO  [WorkerRpcServer-methodInvoker-2] o.a.d.s.w.r.PhysicalTaskExecutorOperatorImpl:[101] - Receive TaskExecutorLifecycleEventAck: ITaskExecutorLifecycleEventReporter.TaskExecutorLifecycleEventAck(taskExecutorId=2, taskExecutorLifecycleEventType=FAILED)
+[WI-0][TI-0] - 2025-11-07 15:38:32.276 INFO  [WorkerRpcServer-methodInvoker-2] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[137] - Success removed TaskExecutorFailedLifecycleEvent(super=AbstractTaskExecutorLifecycleEvent(super=AbstractDelayEvent(delayTime=0, createTimeInNano=169065328780535, expiredTimeInNano=169065328781136), taskInstanceId=2, eventCreateTime=1762501112156, type=FAILED), workflowInstanceId=2, taskInstanceHost=172.28.0.6:1234, appIds=null, endTime=1762501112156, latestReportTime=1762501112238) by ack: ITaskExecutorLifecycleEventReporter.TaskExecutorLifecycleEventAck(taskExecutorId=2, taskExecutorLifecycleEventType=FAILED)
+[WI-0][TI-0] - 2025-11-07 15:38:32.336 INFO  [WorkerRpcServer-methodInvoker-2] o.a.d.t.e.e.TaskExecutorEventBus:[32] - Publish TaskExecutorFinalizeLifecycleEvent: {
+  "taskInstanceId" : 2,
+  "eventCreateTime" : 1762501112335,
+  "type" : "FINALIZE"
+}
+[WI-0][TI-2] - 2025-11-07 15:38:32.385 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-0] o.a.d.p.t.a.l.TaskInstanceLogHeader:[45] - 🐬 Finalize Task Instance
+[WI-0][TI-2] - 2025-11-07 15:38:32.389 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-0] o.a.d.t.e.c.AbstractTaskExecutorContainer:[99] - FINALIZE_SESSION
+[WI-0][TI-2] - 2025-11-07 15:38:32.458 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-0] o.a.d.s.w.u.TaskExecutionContextUtils:[117] - Deleted task exec directory: /tmp/dolphinscheduler/exec/process/2
+[WI-0][TI-2] - 2025-11-07 15:38:32.461 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-0] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[191] - Success fire TaskExecutorFinalizeLifecycleEvent: {"taskInstanceId":2,"eventCreateTime":1762501112335,"type":"FINALIZE"} 
+[WI-0][TI-0] - 2025-11-07 15:38:34.778 INFO  [Worker-Server] o.e.j.s.h.C.application:[2368] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[WI-0][TI-0] - 2025-11-07 15:38:34.862 INFO  [Worker-Server] o.e.j.s.AbstractConnector:[333] - Started ServerConnector@4ee8051c{HTTP/1.1, (http/1.1)}{0.0.0.0:1235}
+[WI-0][TI-0] - 2025-11-07 15:39:14.539 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9536597181767771 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:39:16.338 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9582054639032856 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:39:17.343 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9594015810767257 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:39:18.346 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9595737418749112 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:39:19.349 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9592814688919451 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:39:20.351 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9593895698582476 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:39:21.353 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9594210993067525 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:39:22.355 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9594916652153112 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:39:23.357 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9595482180356453 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:39:24.360 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9584481906100297 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:39:25.362 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9587734944438105 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:39:26.373 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.955141101789071 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:39:27.375 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9551406013216344 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:39:28.378 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.955097561122088 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:39:29.381 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.955097561122088 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:39:30.382 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9549389129446904 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:39:31.385 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9550019718417001 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:39:32.388 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9553202691313687 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:39:33.390 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9563146979278646 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:39:34.392 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9561115081486108 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:39:35.394 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.955998902975379 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:39:36.404 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9559984025079424 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:39:37.406 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9532733573157329 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:39:38.409 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9533048867642377 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:39:39.411 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9543213361279435 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:39:40.413 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9534995685970696 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:39:41.416 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9517829652895805 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:39:42.418 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9518079886614098 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:39:43.420 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9518395181099146 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:39:44.423 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.952051716303027 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:39:45.425 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.952051716303027 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:39:46.436 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9522053598060588 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:39:47.438 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9522053598060588 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:39:48.441 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9525837131881177 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:39:49.443 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9525837131881177 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:39:50.446 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9526677917174641 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:39:51.448 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9525752052416957 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:39:52.451 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9523825252786102 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:39:53.453 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9512239431629141 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:39:54.456 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9514896913717412 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:39:55.458 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9510617917134604 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:39:56.471 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9551180802869881 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:39:57.474 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9516123058937047 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:39:58.476 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9516353273957877 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:39:59.479 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9516563470281243 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:40:00.480 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9516563470281243 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:40:01.482 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9516878764766292 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:40:02.484 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9517649484618634 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:40:03.486 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9517644479944268 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:40:04.489 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.952173830357554 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:40:05.491 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9520347004101831 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:40:06.501 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9520977593071929 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:40:07.503 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9521923476527077 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:40:08.506 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9521923476527077 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:40:09.508 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9522428948638028 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:40:10.511 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9520877499584612 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:40:11.513 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9520877499584612 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:40:12.515 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9512839992553045 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:40:13.517 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9512839992553045 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:40:14.520 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9512839992553045 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:40:15.523 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9512839992553045 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:40:16.536 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9513155287038093 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:40:17.538 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9511543781892288 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:40:18.540 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9512174370862385 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:40:19.542 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9513370488035825 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:40:20.544 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9513370488035825 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:40:21.547 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9516988867602341 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:40:22.549 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.951730416208739 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:40:23.551 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9517494339713293 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:40:24.553 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9519976658198758 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:40:25.556 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9521042653838685 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:40:26.567 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9521357948323734 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:40:27.569 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9500788736680059 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:40:28.571 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9500788736680059 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:40:29.573 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9500788736680059 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:40:30.574 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9500788736680059 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:40:31.576 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9501094021816376 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:40:32.578 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9501409316301426 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:40:33.580 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9504547247128818 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:40:34.583 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9506108705530966 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:40:35.586 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9502705526962183 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:40:36.599 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9502705526962183 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:40:37.601 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.950333611593228 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:40:38.603 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.950333611593228 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:40:39.606 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9500838783423717 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:40:40.608 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.950344621876833 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:40:41.610 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.950344621876833 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:40:42.612 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9504752438777818 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:40:43.614 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9505067733262867 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:40:44.616 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9505337985678624 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:40:45.619 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9505618247443112 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:40:46.634 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9506233822390112 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:40:47.636 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9506864411360211 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:40:48.638 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9507029565614283 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:40:49.640 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9507029565614283 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:40:50.642 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9507029565614283 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:40:51.644 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9507029565614283 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:40:52.646 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9507344860099333 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:40:53.648 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9507344860099333 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:40:54.650 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9504537237780086 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:40:55.652 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9503065863516524 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:40:56.664 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9503065863516524 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:40:57.666 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9544614670101875 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:40:58.668 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9514671703370948 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:40:59.670 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9514671703370948 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:41:00.667 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9514671703370948 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:41:01.669 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9514671703370948 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:41:02.671 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9514986997855998 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:41:03.673 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9514986997855998 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:41:04.676 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9520957574374466 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:41:05.678 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9516983862927975 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:41:06.709 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9517299157413024 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:41:07.711 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9517614451898073 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:41:08.714 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9517929746383121 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:41:09.716 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9520261924637612 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:41:10.718 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9522248780360857 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:41:11.721 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9522248780360857 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:41:12.723 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9522564074845906 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:41:13.725 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9509952295443944 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:41:14.727 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9509792145864238 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:41:15.729 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9510738029319384 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:41:16.741 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.95145616005349 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:41:17.744 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.95145616005349 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:41:18.746 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9514951965135436 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:41:19.748 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9518865620489537 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:41:20.750 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9518865620489537 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:41:21.752 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9520041718965514 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:41:22.755 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9519546256203294 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:41:23.757 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9523840266809199 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:41:24.759 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9521948499898906 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:41:25.761 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9523945364970883 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:41:26.772 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9525636944906543 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:41:27.775 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9526447702153812 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:41:29.791 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9502270120292353 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:41:30.804 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9502230082897426 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:41:31.806 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9502064928643353 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:41:32.808 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9510507814298554 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:41:33.810 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9510788076063043 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:41:34.812 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9511103370548092 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:41:35.814 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.950890631850148 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:41:36.816 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.950677933189599 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:41:37.818 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.950677933189599 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:41:38.820 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9514661694022217 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:41:39.822 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9516393311352803 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:41:40.845 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9519766461875392 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:41:41.847 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9519766461875392 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:41:42.849 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9520071747011709 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:41:43.851 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9543573697833777 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:41:44.853 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9505873485835771 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:41:45.855 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.950645402806221 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:41:46.857 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.950645402806221 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:41:47.859 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9506769322547259 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:41:48.862 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9508130593974773 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:41:49.867 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9509727085097481 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:41:50.878 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9509516888774115 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:41:51.880 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9511663894077068 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:41:52.882 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9513845932100582 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:41:53.884 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9514161226585631 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:41:54.886 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9519090830836001 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:41:55.889 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.951721908262317 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:41:56.892 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9519836527316513 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:41:57.893 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9519836527316513 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:41:58.896 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9515167166133168 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:42:14.741 INFO  [WorkerRpcServer-methodInvoker-3] o.a.d.s.w.r.PhysicalTaskExecutorOperatorImpl:[49] - Receive TaskExecutorDispatchResponse: TaskExecutorDispatchRequest(taskExecutionContext=TaskExecutionContext(taskInstanceId=3, taskName=wow, firstSubmitTime=1762501334631, startTime=0, taskType=FLINK, workflowInstanceHost=172.28.0.6:5678, host=172.28.0.6:1234, executePath=null, logPath=null, appInfoPath=null, processId=0, workflowDefinitionCode=156742551912128, workflowDefinitionVersion=2, appIds=null, workflowInstanceId=3, scheduleTime=0, globalParams=[], executorId=1, tenantCode=cpy, workflowDefinitionId=0, taskParams={"localParams":[],"initScript":"","rawScript":"","resourceList":[{"resourceName":"/tmp/dolphinscheduler/default/resources/flink-file-wordcount-1.0-SNAPSHOT.jar"}],"programType":"JAVA","mainClass":"org.example.HelloWorld","mainJar":{"resourceName":"/tmp/dolphinscheduler/default/resources/flink-file-wordcount-1.0-SNAPSHOT.jar"},"deployMode":"local","mainArgs":"--output /tmp/flink/output","yarnQueue":"","flinkVersion":"<1.10","jobManagerMemory":"1G","taskManagerMemory":"2G","slot":1,"taskManager":2,"parallelism":1}, environmentConfig=export JAVA_HOME=/usr/local/openjdk-8
+export FLINK_HOME=/usr/local/flink
+export DOLPHINSCHEDULER_HOME=/opt/dolphinscheduler
+export PATH=$JAVA_HOME/bin:$FLINK_HOME/bin:$DOLPHINSCHEDULER_HOME/bin:$PATH, prepareParamsMap={system.task.definition.name=Property(prop=system.task.definition.name, direct=IN, type=VARCHAR, value=wow), system.project.name=Property(prop=system.project.name, direct=IN, type=VARCHAR, value=wow), system.project.code=Property(prop=system.project.code, direct=IN, type=VARCHAR, value=156742253745856), system.workflow.instance.id=Property(prop=system.workflow.instance.id, direct=IN, type=VARCHAR, value=3), system.biz.curdate=Property(prop=system.biz.curdate, direct=IN, type=VARCHAR, value=20251107), system.biz.date=Property(prop=system.biz.date, direct=IN, type=VARCHAR, value=20251106), system.task.instance.id=Property(prop=system.task.instance.id, direct=IN, type=VARCHAR, value=3), system.workflow.definition.name=Property(prop=system.workflow.definition.name, direct=IN, type=VARCHAR, value=wow), system.task.definition.code=Property(prop=system.task.definition.code, direct=IN, type=VARCHAR, value=156742482211520), system.workflow.definition.code=Property(prop=system.workflow.definition.code, direct=IN, type=VARCHAR, value=156742551912128), system.datetime=Property(prop=system.datetime, direct=IN, type=VARCHAR, value=20251107154214)}, taskAppId=null, taskTimeoutStrategy=null, taskTimeout=2147483647, workerGroup=default, resourceParametersHelper=org.apache.dolphinscheduler.plugin.task.api.parameters.resource.ResourceParametersHelper@57ae612a, endTime=0, sqlTaskExecutionContext=null, k8sTaskExecutionContext=null, resourceContext=null, varPool=null, dryRun=0, cpuQuota=-1, memoryMax=-1, dispatchFailTimes=0, failover=false))
+[WI-0][TI-3] - 2025-11-07 15:42:14.753 INFO  [WorkerRpcServer-methodInvoker-3] o.a.d.t.e.e.TaskExecutorEventBus:[32] - Publish TaskExecutorDispatchedLifecycleEvent: {
+  "taskInstanceId" : 3,
+  "eventCreateTime" : 1762501334751,
+  "type" : "DISPATCHED",
+  "workflowInstanceId" : 3,
+  "taskInstanceHost" : "172.28.0.6:1234",
+  "latestReportTime" : null
+}
+[WI-0][TI-0] - 2025-11-07 15:42:14.756 INFO  [WorkerRpcServer-methodInvoker-3] o.a.d.s.w.r.PhysicalTaskExecutorOperatorImpl:[53] - Handle TaskExecutorDispatchResponse: TaskExecutorDispatchRequest(taskExecutionContext=TaskExecutionContext(taskInstanceId=3, taskName=wow, firstSubmitTime=1762501334631, startTime=0, taskType=FLINK, workflowInstanceHost=172.28.0.6:5678, host=172.28.0.6:1234, executePath=null, logPath=/opt/dolphinscheduler/worker-server/logs/20251107/156742551912128/2/3/3.log, appInfoPath=null, processId=0, workflowDefinitionCode=156742551912128, workflowDefinitionVersion=2, appIds=null, workflowInstanceId=3, scheduleTime=0, globalParams=[], executorId=1, tenantCode=cpy, workflowDefinitionId=0, taskParams={"localParams":[],"initScript":"","rawScript":"","resourceList":[{"resourceName":"/tmp/dolphinscheduler/default/resources/flink-file-wordcount-1.0-SNAPSHOT.jar"}],"programType":"JAVA","mainClass":"org.example.HelloWorld","mainJar":{"resourceName":"/tmp/dolphinscheduler/default/resources/flink-file-wordcount-1.0-SNAPSHOT.jar"},"deployMode":"local","mainArgs":"--output /tmp/flink/output","yarnQueue":"","flinkVersion":"<1.10","jobManagerMemory":"1G","taskManagerMemory":"2G","slot":1,"taskManager":2,"parallelism":1}, environmentConfig=export JAVA_HOME=/usr/local/openjdk-8
+export FLINK_HOME=/usr/local/flink
+export DOLPHINSCHEDULER_HOME=/opt/dolphinscheduler
+export PATH=$JAVA_HOME/bin:$FLINK_HOME/bin:$DOLPHINSCHEDULER_HOME/bin:$PATH, prepareParamsMap={system.task.definition.name=Property(prop=system.task.definition.name, direct=IN, type=VARCHAR, value=wow), system.project.name=Property(prop=system.project.name, direct=IN, type=VARCHAR, value=wow), system.project.code=Property(prop=system.project.code, direct=IN, type=VARCHAR, value=156742253745856), system.workflow.instance.id=Property(prop=system.workflow.instance.id, direct=IN, type=VARCHAR, value=3), system.biz.curdate=Property(prop=system.biz.curdate, direct=IN, type=VARCHAR, value=20251107), system.biz.date=Property(prop=system.biz.date, direct=IN, type=VARCHAR, value=20251106), system.task.instance.id=Property(prop=system.task.instance.id, direct=IN, type=VARCHAR, value=3), system.workflow.definition.name=Property(prop=system.workflow.definition.name, direct=IN, type=VARCHAR, value=wow), system.task.definition.code=Property(prop=system.task.definition.code, direct=IN, type=VARCHAR, value=156742482211520), system.workflow.definition.code=Property(prop=system.workflow.definition.code, direct=IN, type=VARCHAR, value=156742551912128), system.datetime=Property(prop=system.datetime, direct=IN, type=VARCHAR, value=20251107154214)}, taskAppId=null, taskTimeoutStrategy=null, taskTimeout=2147483647, workerGroup=default, resourceParametersHelper=org.apache.dolphinscheduler.plugin.task.api.parameters.resource.ResourceParametersHelper@57ae612a, endTime=0, sqlTaskExecutionContext=null, k8sTaskExecutionContext=null, resourceContext=null, varPool=null, dryRun=0, cpuQuota=-1, memoryMax=-1, dispatchFailTimes=0, failover=false)) success
+[WI-0][TI-3] - 2025-11-07 15:42:14.757 INFO  [exclusive-task-executor-container-worker-0] o.a.d.p.t.a.l.TaskInstanceLogHeader:[33] - 🐬 Initialize Task Context
+[WI-0][TI-3] - 2025-11-07 15:42:14.802 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-1] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[111] - Report : {
+  "taskInstanceId" : 3,
+  "eventCreateTime" : 1762501334751,
+  "type" : "DISPATCHED",
+  "workflowInstanceId" : 3,
+  "taskInstanceHost" : "172.28.0.6:1234",
+  "latestReportTime" : null
+}
+[WI-0][TI-3] - 2025-11-07 15:42:14.805 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-1] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[191] - Success fire TaskExecutorDispatchedLifecycleEvent: {"taskInstanceId":3,"eventCreateTime":1762501334751,"type":"DISPATCHED","workflowInstanceId":3,"taskInstanceHost":"172.28.0.6:1234","latestReportTime":null} 
+[WI-0][TI-3] - 2025-11-07 15:42:14.806 INFO  [exclusive-task-executor-container-worker-0] o.a.d.t.e.AbstractTaskExecutor:[130] - Initialized taskContext {
+  "taskInstanceId" : 3,
+  "taskName" : "wow",
+  "firstSubmitTime" : 1762501334631,
+  "startTime" : 1762501334795,
+  "taskType" : "FLINK",
+  "workflowInstanceHost" : "172.28.0.6:5678",
+  "host" : "172.28.0.6:1234",
+  "logPath" : "/opt/dolphinscheduler/worker-server/logs/20251107/156742551912128/2/3/3.log",
+  "processId" : 0,
+  "workflowDefinitionCode" : 156742551912128,
+  "workflowDefinitionVersion" : 2,
+  "workflowInstanceId" : 3,
+  "scheduleTime" : 0,
+  "globalParams" : "[]",
+  "executorId" : 1,
+  "tenantCode" : "cpy",
+  "workflowDefinitionId" : 0,
+  "taskParams" : "{\"localParams\":[],\"initScript\":\"\",\"rawScript\":\"\",\"resourceList\":[{\"resourceName\":\"/tmp/dolphinscheduler/default/resources/flink-file-wordcount-1.0-SNAPSHOT.jar\"}],\"programType\":\"JAVA\",\"mainClass\":\"org.example.HelloWorld\",\"mainJar\":{\"resourceName\":\"/tmp/dolphinscheduler/default/resources/flink-file-wordcount-1.0-SNAPSHOT.jar\"},\"deployMode\":\"local\",\"mainArgs\":\"--output /tmp/flink/output\",\"yarnQueue\":\"\",\"flinkVersion\":\"<1.10\",\"jobManagerMemory\":\"1G\",\"taskManagerMemory\":\"2G\",\"slot\":1,\"taskManager\":2,\"parallelism\":1}",
+  "environmentConfig" : "export JAVA_HOME=/usr/local/openjdk-8\nexport FLINK_HOME=/usr/local/flink\nexport DOLPHINSCHEDULER_HOME=/opt/dolphinscheduler\nexport PATH=$JAVA_HOME/bin:$FLINK_HOME/bin:$DOLPHINSCHEDULER_HOME/bin:$PATH",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "wow"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "wow"
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "156742253745856"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "3"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20251107"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20251106"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "3"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "wow"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "156742482211520"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "156742551912128"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20251107154214"
+    }
+  },
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "resourceParametersHelper" : {
+    "resourceMap" : { }
+  },
+  "endTime" : 0,
+  "dryRun" : 0,
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "dispatchFailTimes" : 0,
+  "failover" : false
+}
+[WI-0][TI-3] - 2025-11-07 15:42:14.808 INFO  [exclusive-task-executor-container-worker-0] o.a.d.s.w.e.PhysicalTaskExecutor:[128] - TenantCode: cpy check successfully
+[WI-0][TI-3] - 2025-11-07 15:42:14.811 INFO  [exclusive-task-executor-container-worker-0] o.a.d.s.w.e.PhysicalTaskExecutor:[131] - TaskInstance working directory: /tmp/dolphinscheduler/exec/process/3 create successfully
+[WI-0][TI-3] - 2025-11-07 15:42:14.826 INFO  [PhysicalTaskExecutorLifecycleEventReporter] o.a.d.e.m.TaskExecutorEventRemoteReporterClient:[73] - Report: TaskExecutorDispatchedLifecycleEvent(super=AbstractTaskExecutorLifecycleEvent(super=AbstractDelayEvent(delayTime=0, createTimeInNano=169287935138530, expiredTimeInNano=169287935138930), taskInstanceId=3, eventCreateTime=1762501334751, type=DISPATCHED), workflowInstanceId=3, taskInstanceHost=172.28.0.6:1234, latestReportTime=1762501334807) to master success
+[WI-0][TI-3] - 2025-11-07 15:42:14.835 INFO  [exclusive-task-executor-container-worker-0] o.a.d.s.w.u.TaskExecutionContextUtils:[89] - Download resource file /tmp/dolphinscheduler/default/resources/flink-file-wordcount-1.0-SNAPSHOT.jar -> /tmp/dolphinscheduler/exec/process/3/flink-file-wordcount-1.0-SNAPSHOT.jar successfully
+[WI-0][TI-3] - 2025-11-07 15:42:14.870 INFO  [exclusive-task-executor-container-worker-0] o.a.d.s.w.e.PhysicalTaskExecutor:[138] - Download resources successfully: 
+ResourceContext(resourceItemMap={/tmp/dolphinscheduler/default/resources/flink-file-wordcount-1.0-SNAPSHOT.jar=ResourceContext.ResourceItem(resourceAbsolutePathInStorage=/tmp/dolphinscheduler/default/resources/flink-file-wordcount-1.0-SNAPSHOT.jar, resourceAbsolutePathInLocal=/tmp/dolphinscheduler/exec/process/3/flink-file-wordcount-1.0-SNAPSHOT.jar)})
+[WI-0][TI-3] - 2025-11-07 15:42:14.883 INFO  [exclusive-task-executor-container-worker-0] o.a.d.s.w.e.PhysicalTaskExecutor:[140] - Initialized Task Context{
+  "taskInstanceId" : 3,
+  "taskName" : "wow",
+  "firstSubmitTime" : 1762501334631,
+  "startTime" : 1762501334795,
+  "taskType" : "FLINK",
+  "workflowInstanceHost" : "172.28.0.6:5678",
+  "host" : "172.28.0.6:1234",
+  "executePath" : "/tmp/dolphinscheduler/exec/process/3",
+  "logPath" : "/opt/dolphinscheduler/worker-server/logs/20251107/156742551912128/2/3/3.log",
+  "appInfoPath" : "/tmp/dolphinscheduler/exec/process/3/appInfo.log",
+  "processId" : 0,
+  "workflowDefinitionCode" : 156742551912128,
+  "workflowDefinitionVersion" : 2,
+  "workflowInstanceId" : 3,
+  "scheduleTime" : 0,
+  "globalParams" : "[]",
+  "executorId" : 1,
+  "tenantCode" : "cpy",
+  "workflowDefinitionId" : 0,
+  "taskParams" : "{\"localParams\":[],\"initScript\":\"\",\"rawScript\":\"\",\"resourceList\":[{\"resourceName\":\"/tmp/dolphinscheduler/default/resources/flink-file-wordcount-1.0-SNAPSHOT.jar\"}],\"programType\":\"JAVA\",\"mainClass\":\"org.example.HelloWorld\",\"mainJar\":{\"resourceName\":\"/tmp/dolphinscheduler/default/resources/flink-file-wordcount-1.0-SNAPSHOT.jar\"},\"deployMode\":\"local\",\"mainArgs\":\"--output /tmp/flink/output\",\"yarnQueue\":\"\",\"flinkVersion\":\"<1.10\",\"jobManagerMemory\":\"1G\",\"taskManagerMemory\":\"2G\",\"slot\":1,\"taskManager\":2,\"parallelism\":1}",
+  "environmentConfig" : "export JAVA_HOME=/usr/local/openjdk-8\nexport FLINK_HOME=/usr/local/flink\nexport DOLPHINSCHEDULER_HOME=/opt/dolphinscheduler\nexport PATH=$JAVA_HOME/bin:$FLINK_HOME/bin:$DOLPHINSCHEDULER_HOME/bin:$PATH",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "wow"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "wow"
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "156742253745856"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "3"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20251107"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20251106"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "3"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "wow"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "156742482211520"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "156742551912128"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20251107154214"
+    }
+  },
+  "taskAppId" : "3",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "resourceParametersHelper" : {
+    "resourceMap" : { }
+  },
+  "endTime" : 0,
+  "resourceContext" : { },
+  "dryRun" : 0,
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "dispatchFailTimes" : 0,
+  "failover" : false
+}
+[WI-0][TI-3] - 2025-11-07 15:42:14.890 INFO  [exclusive-task-executor-container-worker-0] o.a.d.t.e.e.TaskExecutorEventBus:[32] - Publish TaskExecutorStartedLifecycleEvent: {
+  "taskInstanceId" : 3,
+  "eventCreateTime" : 1762501334885,
+  "type" : "RUNNING",
+  "workflowInstanceId" : 3,
+  "taskInstanceHost" : "172.28.0.6:1234",
+  "startTime" : 1762501334795,
+  "logPath" : "/opt/dolphinscheduler/worker-server/logs/20251107/156742551912128/2/3/3.log",
+  "executePath" : "/tmp/dolphinscheduler/exec/process/3",
+  "latestReportTime" : null
+}
+[WI-0][TI-3] - 2025-11-07 15:42:14.891 INFO  [exclusive-task-executor-container-worker-0] o.a.d.p.t.a.l.TaskInstanceLogHeader:[37] - 🐬 Load Task Instance Plugin
+[WI-0][TI-3] - 2025-11-07 15:42:14.903 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-3] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[111] - Report : {
+  "taskInstanceId" : 3,
+  "eventCreateTime" : 1762501334885,
+  "type" : "RUNNING",
+  "workflowInstanceId" : 3,
+  "taskInstanceHost" : "172.28.0.6:1234",
+  "startTime" : 1762501334795,
+  "logPath" : "/opt/dolphinscheduler/worker-server/logs/20251107/156742551912128/2/3/3.log",
+  "executePath" : "/tmp/dolphinscheduler/exec/process/3",
+  "latestReportTime" : null
+}
+[WI-0][TI-3] - 2025-11-07 15:42:14.904 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-3] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[191] - Success fire TaskExecutorStartedLifecycleEvent: {"taskInstanceId":3,"eventCreateTime":1762501334885,"type":"RUNNING","workflowInstanceId":3,"taskInstanceHost":"172.28.0.6:1234","startTime":1762501334795,"logPath":"/opt/dolphinscheduler/worker-server/logs/20251107/156742551912128/2/3/3.log","executePath":"/tmp/dolphinscheduler/exec/process/3","latestReportTime":null} 
+[WI-0][TI-3] - 2025-11-07 15:42:14.907 INFO  [exclusive-task-executor-container-worker-0] o.a.d.s.w.e.PhysicalTaskExecutor:[66] - Initialized physicalTask: FLINK successfully
+[WI-0][TI-0] - 2025-11-07 15:42:14.916 INFO  [WorkerRpcServer-methodInvoker-4] o.a.d.s.w.r.PhysicalTaskExecutorOperatorImpl:[101] - Receive TaskExecutorLifecycleEventAck: ITaskExecutorLifecycleEventReporter.TaskExecutorLifecycleEventAck(taskExecutorId=3, taskExecutorLifecycleEventType=DISPATCHED)
+[WI-0][TI-0] - 2025-11-07 15:42:14.917 INFO  [WorkerRpcServer-methodInvoker-4] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[137] - Success removed TaskExecutorDispatchedLifecycleEvent(super=AbstractTaskExecutorLifecycleEvent(super=AbstractDelayEvent(delayTime=0, createTimeInNano=169287935138530, expiredTimeInNano=169287935138930), taskInstanceId=3, eventCreateTime=1762501334751, type=DISPATCHED), workflowInstanceId=3, taskInstanceHost=172.28.0.6:1234, latestReportTime=1762501334807) by ack: ITaskExecutorLifecycleEventReporter.TaskExecutorLifecycleEventAck(taskExecutorId=3, taskExecutorLifecycleEventType=DISPATCHED)
+[WI-0][TI-3] - 2025-11-07 15:42:14.922 INFO  [exclusive-task-executor-container-worker-0] o.a.d.p.t.f.FlinkTask:[60] - Initialize flink task params {
+  "localParams" : [ ],
+  "varPool" : [ ],
+  "mainJar" : {
+    "id" : null,
+    "resourceName" : "/tmp/dolphinscheduler/default/resources/flink-file-wordcount-1.0-SNAPSHOT.jar",
+    "res" : null
+  },
+  "mainClass" : "org.example.HelloWorld",
+  "deployMode" : "local",
+  "mainArgs" : "--output /tmp/flink/output",
+  "slot" : 1,
+  "parallelism" : 1,
+  "appName" : null,
+  "taskManager" : 2,
+  "jobManagerMemory" : "1G",
+  "taskManagerMemory" : "2G",
+  "resourceList" : [ {
+    "id" : null,
+    "resourceName" : "/tmp/dolphinscheduler/default/resources/flink-file-wordcount-1.0-SNAPSHOT.jar",
+    "res" : null
+  } ],
+  "yarnQueue" : "",
+  "others" : null,
+  "flinkVersion" : "<1.10",
+  "programType" : "JAVA",
+  "initScript" : "",
+  "rawScript" : ""
+}
+[WI-0][TI-3] - 2025-11-07 15:42:14.959 INFO  [PhysicalTaskExecutorLifecycleEventReporter] o.a.d.e.m.TaskExecutorEventRemoteReporterClient:[73] - Report: TaskExecutorStartedLifecycleEvent(super=AbstractTaskExecutorLifecycleEvent(super=AbstractDelayEvent(delayTime=0, createTimeInNano=169288068722203, expiredTimeInNano=169288068722603), taskInstanceId=3, eventCreateTime=1762501334885, type=RUNNING), workflowInstanceId=3, taskInstanceHost=172.28.0.6:1234, startTime=1762501334795, logPath=/opt/dolphinscheduler/worker-server/logs/20251107/156742551912128/2/3/3.log, executePath=/tmp/dolphinscheduler/exec/process/3, latestReportTime=1762501334917) to master success
+[WI-0][TI-3] - 2025-11-07 15:42:14.971 INFO  [exclusive-task-executor-container-worker-0] o.a.d.p.t.f.FileUtils:[101] - Writing content: set execution.target=local;
+set parallelism.default=1;
+
+[WI-0][TI-3] - 2025-11-07 15:42:14.972 INFO  [exclusive-task-executor-container-worker-0] o.a.d.p.t.f.FileUtils:[102] - To file: /tmp/dolphinscheduler/exec/process/3/3_init.sql
+[WI-0][TI-3] - 2025-11-07 15:42:14.975 INFO  [exclusive-task-executor-container-worker-0] o.a.d.s.w.e.PhysicalTaskExecutor:[71] - Set taskVarPool: null successfully
+[WI-0][TI-3] - 2025-11-07 15:42:14.975 INFO  [exclusive-task-executor-container-worker-0] o.a.d.p.t.a.l.TaskInstanceLogHeader:[41] - 🐬 Execute Task Instance
+[WI-0][TI-0] - 2025-11-07 15:42:15.033 INFO  [WorkerRpcServer-methodInvoker-5] o.a.d.s.w.r.PhysicalTaskExecutorOperatorImpl:[101] - Receive TaskExecutorLifecycleEventAck: ITaskExecutorLifecycleEventReporter.TaskExecutorLifecycleEventAck(taskExecutorId=3, taskExecutorLifecycleEventType=RUNNING)
+[WI-0][TI-0] - 2025-11-07 15:42:15.034 INFO  [WorkerRpcServer-methodInvoker-5] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[137] - Success removed TaskExecutorStartedLifecycleEvent(super=AbstractTaskExecutorLifecycleEvent(super=AbstractDelayEvent(delayTime=0, createTimeInNano=169288068722203, expiredTimeInNano=169288068722603), taskInstanceId=3, eventCreateTime=1762501334885, type=RUNNING), workflowInstanceId=3, taskInstanceHost=172.28.0.6:1234, startTime=1762501334795, logPath=/opt/dolphinscheduler/worker-server/logs/20251107/156742551912128/2/3/3.log, executePath=/tmp/dolphinscheduler/exec/process/3, latestReportTime=1762501334917) by ack: ITaskExecutorLifecycleEventReporter.TaskExecutorLifecycleEventAck(taskExecutorId=3, taskExecutorLifecycleEventType=RUNNING)
+[WI-0][TI-3] - 2025-11-07 15:42:15.044 INFO  [exclusive-task-executor-container-worker-0] o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[64] - Final Script Content:
+====================
+#!/bin/bash
+BASEDIR=$(cd `dirname $0`; pwd)
+cd $BASEDIR
+export JAVA_HOME=/usr/local/openjdk-8
+export FLINK_HOME=/usr/local/flink
+export DOLPHINSCHEDULER_HOME=/opt/dolphinscheduler
+export PATH=$JAVA_HOME/bin:$FLINK_HOME/bin:$DOLPHINSCHEDULER_HOME/bin:$PATH
+${FLINK_HOME}/bin/flink run -p 1 -sae -c org.example.HelloWorld /tmp/dolphinscheduler/exec/process/3/flink-file-wordcount-1.0-SNAPSHOT.jar --output /tmp/flink/output
+====================
+[WI-0][TI-3] - 2025-11-07 15:42:15.048 INFO  [exclusive-task-executor-container-worker-0] o.a.d.p.t.a.s.BaseShellInterceptor:[46] - Executing shell command : sudo -u cpy -i /tmp/dolphinscheduler/exec/process/3/3.sh
+[WI-0][TI-3] - 2025-11-07 15:42:15.067 INFO  [exclusive-task-executor-container-worker-0] o.a.d.p.t.a.AbstractCommandExecutor:[151] - process start, process id is: 1052
+[WI-0][TI-3] - 2025-11-07 15:42:15.073 INFO  [exclusive-task-executor-container-worker-0] o.a.d.t.e.e.TaskExecutorEventBus:[32] - Publish TaskExecutorRuntimeContextChangedLifecycleEvent: {
+  "taskInstanceId" : 3,
+  "eventCreateTime" : 1762501335069,
+  "type" : "RUNTIME_CONTEXT_CHANGE",
+  "workflowInstanceId" : 3,
+  "taskInstanceHost" : "172.28.0.6:1234",
+  "processId" : 1052,
+  "appIds" : null,
+  "latestReportTime" : null
+}
+[WI-0][TI-3] - 2025-11-07 15:42:15.104 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-7] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[111] - Report : {
+  "taskInstanceId" : 3,
+  "eventCreateTime" : 1762501335069,
+  "type" : "RUNTIME_CONTEXT_CHANGE",
+  "workflowInstanceId" : 3,
+  "taskInstanceHost" : "172.28.0.6:1234",
+  "processId" : 1052,
+  "appIds" : null,
+  "latestReportTime" : null
+}
+[WI-0][TI-3] - 2025-11-07 15:42:15.109 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-7] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[191] - Success fire TaskExecutorRuntimeContextChangedLifecycleEvent: {"taskInstanceId":3,"eventCreateTime":1762501335069,"type":"RUNTIME_CONTEXT_CHANGE","workflowInstanceId":3,"taskInstanceHost":"172.28.0.6:1234","processId":1052,"appIds":null,"latestReportTime":null} 
+[WI-0][TI-3] - 2025-11-07 15:42:15.168 INFO  [PhysicalTaskExecutorLifecycleEventReporter] o.a.d.e.m.TaskExecutorEventRemoteReporterClient:[73] - Report: TaskExecutorRuntimeContextChangedLifecycleEvent(super=AbstractTaskExecutorLifecycleEvent(super=AbstractDelayEvent(delayTime=0, createTimeInNano=169288253242188, expiredTimeInNano=169288253242488), taskInstanceId=3, eventCreateTime=1762501335069, type=RUNTIME_CONTEXT_CHANGE), workflowInstanceId=3, taskInstanceHost=172.28.0.6:1234, processId=1052, appIds=null, latestReportTime=1762501335109) to master success
+[WI-0][TI-0] - 2025-11-07 15:42:15.267 INFO  [WorkerRpcServer-methodInvoker-6] o.a.d.s.w.r.PhysicalTaskExecutorOperatorImpl:[101] - Receive TaskExecutorLifecycleEventAck: ITaskExecutorLifecycleEventReporter.TaskExecutorLifecycleEventAck(taskExecutorId=3, taskExecutorLifecycleEventType=RUNTIME_CONTEXT_CHANGE)
+[WI-0][TI-0] - 2025-11-07 15:42:15.268 INFO  [WorkerRpcServer-methodInvoker-6] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[137] - Success removed TaskExecutorRuntimeContextChangedLifecycleEvent(super=AbstractTaskExecutorLifecycleEvent(super=AbstractDelayEvent(delayTime=0, createTimeInNano=169288253242188, expiredTimeInNano=169288253242488), taskInstanceId=3, eventCreateTime=1762501335069, type=RUNTIME_CONTEXT_CHANGE), workflowInstanceId=3, taskInstanceHost=172.28.0.6:1234, processId=1052, appIds=null, latestReportTime=1762501335109) by ack: ITaskExecutorLifecycleEventReporter.TaskExecutorLifecycleEventAck(taskExecutorId=3, taskExecutorLifecycleEventType=RUNTIME_CONTEXT_CHANGE)
+[WI-0][TI-0] - 2025-11-07 15:42:17.066 INFO  [TaskInstanceLogOutput-thread-wow] o.a.d.p.t.a.AbstractTask:[163] -  -> 
+	2025-11-07 15:42:16,477 main ERROR FileManager (/usr/local/flink/log/flink-cpy-client-dolphinscheduler.log) java.io.FileNotFoundException: /usr/local/flink/log/flink-cpy-client-dolphinscheduler.log (Permission denied) java.io.FileNotFoundException: /usr/local/flink/log/flink-cpy-client-dolphinscheduler.log (Permission denied)
+		at java.io.FileOutputStream.open0(Native Method)
+		at java.io.FileOutputStream.open(FileOutputStream.java:270)
+		at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+		at org.apache.logging.log4j.core.appender.FileManager$FileManagerFactory.createManager(FileManager.java:438)
+		at org.apache.logging.log4j.core.appender.FileManager$FileManagerFactory.createManager(FileManager.java:422)
+		at org.apache.logging.log4j.core.appender.AbstractManager.getManager(AbstractManager.java:114)
+		at org.apache.logging.log4j.core.appender.OutputStreamManager.getManager(OutputStreamManager.java:100)
+		at org.apache.logging.log4j.core.appender.FileManager.getFileManager(FileManager.java:182)
+		at org.apache.logging.log4j.core.appender.FileAppender$Builder.build(FileAppender.java:96)
+		at org.apache.logging.log4j.core.appender.FileAppender$Builder.build(FileAppender.java:52)
+		at org.apache.logging.log4j.core.config.plugins.util.PluginBuilder.build(PluginBuilder.java:122)
+		at org.apache.logging.log4j.core.config.AbstractConfiguration.createPluginObject(AbstractConfiguration.java:1120)
+		at org.apache.logging.log4j.core.config.AbstractConfiguration.createConfiguration(AbstractConfiguration.java:1045)
+		at org.apache.logging.log4j.core.config.AbstractConfiguration.createConfiguration(AbstractConfiguration.java:1037)
+		at org.apache.logging.log4j.core.config.AbstractConfiguration.doConfigure(AbstractConfiguration.java:651)
+		at org.apache.logging.log4j.core.config.AbstractConfiguration.initialize(AbstractConfiguration.java:247)
+		at org.apache.logging.log4j.core.config.AbstractConfiguration.start(AbstractConfiguration.java:293)
+		at org.apache.logging.log4j.core.LoggerContext.setConfiguration(LoggerContext.java:626)
+		at org.apache.logging.log4j.core.LoggerContext.reconfigure(LoggerContext.java:699)
+		at org.apache.logging.log4j.core.LoggerContext.reconfigure(LoggerContext.java:716)
+		at org.apache.logging.log4j.core.LoggerContext.start(LoggerContext.java:270)
+		at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:155)
+		at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:47)
+		at org.apache.logging.log4j.LogManager.getContext(LogManager.java:196)
+		at org.apache.logging.log4j.spi.AbstractLoggerAdapter.getContext(AbstractLoggerAdapter.java:137)
+		at org.apache.logging.slf4j.Log4jLoggerFactory.getContext(Log4jLoggerFactory.java:55)
+		at org.apache.logging.log4j.spi.AbstractLoggerAdapter.getLogger(AbstractLoggerAdapter.java:47)
+		at org.apache.logging.slf4j.Log4jLoggerFactory.getLogger(Log4jLoggerFactory.java:33)
+		at org.slf4j.LoggerFactory.getLogger(LoggerFactory.java:363)
+		at org.slf4j.LoggerFactory.getLogger(LoggerFactory.java:388)
+		at org.apache.flink.client.cli.CliFrontend.<clinit>(CliFrontend.java:93)
+	
+	2025-11-07 15:42:16,488 main ERROR Could not create plugin of type class org.apache.logging.log4j.core.appender.FileAppender for element FILE: java.lang.IllegalStateException: ManagerFactory [org.apache.logging.log4j.core.appender.FileManager$FileManagerFactory@8e0379d] unable to create manager for [/usr/local/flink/log/flink-cpy-client-dolphinscheduler.log] with data [org.apache.logging.log4j.core.appender.FileManager$FactoryData@341b80b2] java.lang.IllegalStateException: ManagerFactory [org.apache.logging.log4j.core.appender.FileManager$FileManagerFactory@8e0379d] unable to create manager for [/usr/local/flink/log/flink-cpy-client-dolphinscheduler.log] with data [org.apache.logging.log4j.core.appender.FileManager$FactoryData@341b80b2]
+		at org.apache.logging.log4j.core.appender.AbstractManager.getManager(AbstractManager.java:116)
+		at org.apache.logging.log4j.core.appender.OutputStreamManager.getManager(OutputStreamManager.java:100)
+		at org.apache.logging.log4j.core.appender.FileManager.getFileManager(FileManager.java:182)
+		at org.apache.logging.log4j.core.appender.FileAppender$Builder.build(FileAppender.java:96)
+		at org.apache.logging.log4j.core.appender.FileAppender$Builder.build(FileAppender.java:52)
+		at org.apache.logging.log4j.core.config.plugins.util.PluginBuilder.build(PluginBuilder.java:122)
+		at org.apache.logging.log4j.core.config.AbstractConfiguration.createPluginObject(AbstractConfiguration.java:1120)
+		at org.apache.logging.log4j.core.config.AbstractConfiguration.createConfiguration(AbstractConfiguration.java:1045)
+		at org.apache.logging.log4j.core.config.AbstractConfiguration.createConfiguration(AbstractConfiguration.java:1037)
+		at org.apache.logging.log4j.core.config.AbstractConfiguration.doConfigure(AbstractConfiguration.java:651)
+		at org.apache.logging.log4j.core.config.AbstractConfiguration.initialize(AbstractConfiguration.java:247)
+		at org.apache.logging.log4j.core.config.AbstractConfiguration.start(AbstractConfiguration.java:293)
+		at org.apache.logging.log4j.core.LoggerContext.setConfiguration(LoggerContext.java:626)
+		at org.apache.logging.log4j.core.LoggerContext.reconfigure(LoggerContext.java:699)
+		at org.apache.logging.log4j.core.LoggerContext.reconfigure(LoggerContext.java:716)
+		at org.apache.logging.log4j.core.LoggerContext.start(LoggerContext.java:270)
+		at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:155)
+		at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:47)
+		at org.apache.logging.log4j.LogManager.getContext(LogManager.java:196)
+		at org.apache.logging.log4j.spi.AbstractLoggerAdapter.getContext(AbstractLoggerAdapter.java:137)
+		at org.apache.logging.slf4j.Log4jLoggerFactory.getContext(Log4jLoggerFactory.java:55)
+		at org.apache.logging.log4j.spi.AbstractLoggerAdapter.getLogger(AbstractLoggerAdapter.java:47)
+		at org.apache.logging.slf4j.Log4jLoggerFactory.getLogger(Log4jLoggerFactory.java:33)
+		at org.slf4j.LoggerFactory.getLogger(LoggerFactory.java:363)
+		at org.slf4j.LoggerFactory.getLogger(LoggerFactory.java:388)
+		at org.apache.flink.client.cli.CliFrontend.<clinit>(CliFrontend.java:93)
+	
+	2025-11-07 15:42:16,489 main ERROR Unable to invoke factory method in class org.apache.logging.log4j.core.appender.FileAppender for element FILE: java.lang.IllegalStateException: No factory method found for class org.apache.logging.log4j.core.appender.FileAppender java.lang.IllegalStateException: No factory method found for class org.apache.logging.log4j.core.appender.FileAppender
+		at org.apache.logging.log4j.core.config.plugins.util.PluginBuilder.findFactoryMethod(PluginBuilder.java:236)
+		at org.apache.logging.log4j.core.config.plugins.util.PluginBuilder.build(PluginBuilder.java:134)
+		at org.apache.logging.log4j.core.config.AbstractConfiguration.createPluginObject(AbstractConfiguration.java:1120)
+		at org.apache.logging.log4j.core.config.AbstractConfiguration.createConfiguration(AbstractConfiguration.java:1045)
+		at org.apache.logging.log4j.core.config.AbstractConfiguration.createConfiguration(AbstractConfiguration.java:1037)
+		at org.apache.logging.log4j.core.config.AbstractConfiguration.doConfigure(AbstractConfiguration.java:651)
+		at org.apache.logging.log4j.core.config.AbstractConfiguration.initialize(AbstractConfiguration.java:247)
+		at org.apache.logging.log4j.core.config.AbstractConfiguration.start(AbstractConfiguration.java:293)
+		at org.apache.logging.log4j.core.LoggerContext.setConfiguration(LoggerContext.java:626)
+		at org.apache.logging.log4j.core.LoggerContext.reconfigure(LoggerContext.java:699)
+		at org.apache.logging.log4j.core.LoggerContext.reconfigure(LoggerContext.java:716)
+		at org.apache.logging.log4j.core.LoggerContext.start(LoggerContext.java:270)
+		at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:155)
+		at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:47)
+		at org.apache.logging.log4j.LogManager.getContext(LogManager.java:196)
+		at org.apache.logging.log4j.spi.AbstractLoggerAdapter.getContext(AbstractLoggerAdapter.java:137)
+		at org.apache.logging.slf4j.Log4jLoggerFactory.getContext(Log4jLoggerFactory.java:55)
+		at org.apache.logging.log4j.spi.AbstractLoggerAdapter.getLogger(AbstractLoggerAdapter.java:47)
+		at org.apache.logging.slf4j.Log4jLoggerFactory.getLogger(Log4jLoggerFactory.java:33)
+		at org.slf4j.LoggerFactory.getLogger(LoggerFactory.java:363)
+		at org.slf4j.LoggerFactory.getLogger(LoggerFactory.java:388)
+		at org.apache.flink.client.cli.CliFrontend.<clinit>(CliFrontend.java:93)
+	
+	2025-11-07 15:42:16,490 main ERROR Null object returned for FILE in Appenders.
+	2025-11-07 15:42:16,490 main ERROR Unable to locate appender "FileAppender" for logger config "root"
+	2025-11-07 15:42:16,490 main ERROR Unable to locate appender "FileAppender" for logger config "org.apache.hadoop.hive"
+	╔════════════════════════════════════════════════╗
+	║   Flink Hello World 程序（低资源版）          ║
+	╠════════════════════════════════════════════════╣
+	║  输出路径：/tmp/flink/output
+	╚════════════════════════════════════════════════╝
+	
+[WI-0][TI-0] - 2025-11-07 15:42:18.070 INFO  [TaskInstanceLogOutput-thread-wow] o.a.d.p.t.a.AbstractTask:[163] -  -> 
+	📝 结果将输出到文件：/tmp/flink/output
+	
+[WI-0][TI-0] - 2025-11-07 15:42:18.930 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.95244558417562 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:42:19.072 INFO  [TaskInstanceLogOutput-thread-wow] o.a.d.p.t.a.AbstractTask:[163] -  -> 
+	Job has been submitted with JobID ae3d1996e9fa74ec88214888b1dc1f9b
+[WI-0][TI-0] - 2025-11-07 15:42:19.942 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9518480260563367 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:42:21.074 INFO  [TaskInstanceLogOutput-thread-wow] o.a.d.p.t.a.AbstractTask:[163] -  -> 
+	Program execution finished
+	Job with JobID ae3d1996e9fa74ec88214888b1dc1f9b has finished.
+	Job Runtime: 1113 ms
+	
+	
+	✅ 任务执行完成！
+	📂 请查看输出目录：/tmp/flink/output
+[WI-0][TI-3] - 2025-11-07 15:42:21.076 INFO  [exclusive-task-executor-container-worker-0] o.a.d.p.t.a.AbstractCommandExecutor:[201] - process has exited. execute path:/tmp/dolphinscheduler/exec/process/3, processId:1052 ,exitStatusCode:0 ,processWaitForStatus:true ,processExitValue:0
+[WI-0][TI-3] - 2025-11-07 15:42:21.077 INFO  [exclusive-task-executor-container-worker-0] o.a.d.p.t.a.u.LogUtils:[78] - Start finding appId in /opt/dolphinscheduler/worker-server/logs/20251107/156742551912128/2/3/3.log, fetch way: log 
+[WI-0][TI-3] - 2025-11-07 15:42:21.089 INFO  [exclusive-task-executor-container-worker-0] o.a.d.t.e.e.TaskExecutorEventBus:[32] - Publish TaskExecutorSuccessLifecycleEvent: {
+  "taskInstanceId" : 3,
+  "eventCreateTime" : 1762501341087,
+  "type" : "SUCCESS",
+  "workflowInstanceId" : 3,
+  "taskInstanceHost" : "172.28.0.6:1234",
+  "endTime" : 1762501341087,
+  "varPool" : null,
+  "latestReportTime" : null
+}
+[WI-0][TI-3] - 2025-11-07 15:42:21.134 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-7] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[111] - Report : {
+  "taskInstanceId" : 3,
+  "eventCreateTime" : 1762501341087,
+  "type" : "SUCCESS",
+  "workflowInstanceId" : 3,
+  "taskInstanceHost" : "172.28.0.6:1234",
+  "endTime" : 1762501341087,
+  "varPool" : null,
+  "latestReportTime" : null
+}
+[WI-0][TI-3] - 2025-11-07 15:42:21.134 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-7] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[191] - Success fire TaskExecutorSuccessLifecycleEvent: {"taskInstanceId":3,"eventCreateTime":1762501341087,"type":"SUCCESS","workflowInstanceId":3,"taskInstanceHost":"172.28.0.6:1234","endTime":1762501341087,"varPool":null,"latestReportTime":null} 
+[WI-0][TI-3] - 2025-11-07 15:42:21.161 INFO  [PhysicalTaskExecutorLifecycleEventReporter] o.a.d.e.m.TaskExecutorEventRemoteReporterClient:[73] - Report: TaskExecutorSuccessLifecycleEvent(super=AbstractTaskExecutorLifecycleEvent(super=AbstractDelayEvent(delayTime=0, createTimeInNano=169294271195947, expiredTimeInNano=169294271196147), taskInstanceId=3, eventCreateTime=1762501341087, type=SUCCESS), workflowInstanceId=3, taskInstanceHost=172.28.0.6:1234, endTime=1762501341087, varPool=null, latestReportTime=1762501341135) to master success
+[WI-0][TI-0] - 2025-11-07 15:42:21.213 INFO  [WorkerRpcServer-methodInvoker-7] o.a.d.s.w.r.PhysicalTaskExecutorOperatorImpl:[101] - Receive TaskExecutorLifecycleEventAck: ITaskExecutorLifecycleEventReporter.TaskExecutorLifecycleEventAck(taskExecutorId=3, taskExecutorLifecycleEventType=SUCCESS)
+[WI-0][TI-0] - 2025-11-07 15:42:21.214 INFO  [WorkerRpcServer-methodInvoker-7] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[137] - Success removed TaskExecutorSuccessLifecycleEvent(super=AbstractTaskExecutorLifecycleEvent(super=AbstractDelayEvent(delayTime=0, createTimeInNano=169294271195947, expiredTimeInNano=169294271196147), taskInstanceId=3, eventCreateTime=1762501341087, type=SUCCESS), workflowInstanceId=3, taskInstanceHost=172.28.0.6:1234, endTime=1762501341087, varPool=null, latestReportTime=1762501341135) by ack: ITaskExecutorLifecycleEventReporter.TaskExecutorLifecycleEventAck(taskExecutorId=3, taskExecutorLifecycleEventType=SUCCESS)
+[WI-0][TI-0] - 2025-11-07 15:42:21.216 INFO  [WorkerRpcServer-methodInvoker-7] o.a.d.t.e.e.TaskExecutorEventBus:[32] - Publish TaskExecutorFinalizeLifecycleEvent: {
+  "taskInstanceId" : 3,
+  "eventCreateTime" : 1762501341215,
+  "type" : "FINALIZE"
+}
+[WI-0][TI-3] - 2025-11-07 15:42:21.234 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-9] o.a.d.p.t.a.l.TaskInstanceLogHeader:[45] - 🐬 Finalize Task Instance
+[WI-0][TI-3] - 2025-11-07 15:42:21.235 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-9] o.a.d.t.e.c.AbstractTaskExecutorContainer:[99] - FINALIZE_SESSION
+[WI-0][TI-3] - 2025-11-07 15:42:21.251 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-9] o.a.d.s.w.u.TaskExecutionContextUtils:[117] - Deleted task exec directory: /tmp/dolphinscheduler/exec/process/3
+[WI-0][TI-3] - 2025-11-07 15:42:21.252 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-9] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[191] - Success fire TaskExecutorFinalizeLifecycleEvent: {"taskInstanceId":3,"eventCreateTime":1762501341215,"type":"FINALIZE"} 
+[WI-0][TI-0] - 2025-11-07 15:52:42.960 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9504231952643769 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:55:31.380 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9515522498013145 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:56:24.592 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9519120858882196 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:56:25.607 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9520992607095027 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:56:26.609 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.952045710693788 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:56:27.612 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9522298827104516 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:56:28.614 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9522614121589564 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:56:29.616 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.952319966849037 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:56:30.615 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.952319966849037 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:56:31.617 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9523514962975419 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:56:32.619 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9533779550099793 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:56:33.621 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9510552856367848 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:56:34.623 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9510552856367848 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:56:35.633 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9512229422280409 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:56:36.635 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9512544716765459 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:56:37.636 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.951109336119936 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:56:38.638 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9510652949855165 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:56:39.640 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9510652949855165 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:56:40.642 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9510968244340213 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:56:41.644 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9516007951426633 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:56:42.645 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9513966044285362 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:56:43.647 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9514876895019949 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:56:44.649 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9515797755103267 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:56:45.659 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9515152152110071 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:56:46.661 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9515152152110071 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:56:47.663 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9515152152110071 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:58:19.805 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9509286673753286 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:59:02.882 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9500848792772449 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:59:03.890 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9500848792772449 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:59:04.892 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9501154077908767 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:59:14.905 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9503331111257914 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:59:19.921 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.950257540542867 is over then the maxSystemMemoryUsagePercentageThresholds 0.95
+[WI-0][TI-0] - 2025-11-07 15:59:20.932 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9509451828007359 is over then the maxSystemMemoryUsagePercentageThresholds 0.95

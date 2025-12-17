@@ -1,0 +1,1103 @@
+[WI-4][TI-4] - 2025-11-06 21:00:16.247 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 4 failed will retry after: 41000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=4, name=wow, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-4][TI-4] - 2025-11-06 21:00:57.243 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 4 failed will retry after: 42000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=4, name=wow, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-0][TI-0] - 2025-11-06 21:01:34.144 WARN  [MasterCommandLoopThread] c.z.h.p.ProxyConnection:[182] - HikariPool-1 - Connection com.mysql.cj.jdbc.ConnectionImpl@20954fa4 marked as broken because of SQLSTATE(08S01), ErrorCode(0)
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 40 milliseconds ago. The last packet sent successfully to the server was 40 milliseconds ago.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:175)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:2022)
+	at com.zaxxer.hikari.pool.ProxyConnection.setAutoCommit(ProxyConnection.java:414)
+	at com.zaxxer.hikari.pool.HikariProxyConnection.setAutoCommit(HikariProxyConnection.java)
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:287)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.startTransaction(AbstractPlatformTransactionManager.java:400)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:373)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.createTransactionIfNecessary(TransactionAspectSupport.java:595)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:382)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at org.apache.dolphinscheduler.server.master.engine.command.IdSlotBasedCommandFetcher$$EnhancerBySpringCGLIB$$be5fb152.fetchCommands(<generated>)
+	at org.apache.dolphinscheduler.server.master.engine.command.CommandEngine.run(CommandEngine.java:123)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 40 milliseconds ago. The last packet sent successfully to the server was 40 milliseconds ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:62)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:150)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:166)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:582)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:762)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:701)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryPacket(NativeProtocol.java:1052)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryString(NativeProtocol.java:998)
+	at com.mysql.cj.NativeSession.execSQL(NativeSession.java:655)
+	at com.mysql.cj.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:2005)
+	... 13 common frames omitted
+Caused by: java.io.EOFException: Can not read response from server. Expected to read 4 bytes, read 0 bytes before connection was unexpectedly lost.
+	at com.mysql.cj.protocol.FullReadInputStream.readFully(FullReadInputStream.java:67)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeaderLocal(SimplePacketReader.java:81)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:63)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:45)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:52)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:41)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:54)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:44)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:576)
+	... 19 common frames omitted
+[WI-0][TI-0] - 2025-11-06 21:01:34.153 ERROR [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[144] - Master schedule workflow error
+org.springframework.transaction.CannotCreateTransactionException: Could not open JDBC Connection for transaction; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 40 milliseconds ago. The last packet sent successfully to the server was 40 milliseconds ago.
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:309)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.startTransaction(AbstractPlatformTransactionManager.java:400)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:373)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.createTransactionIfNecessary(TransactionAspectSupport.java:595)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:382)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at org.apache.dolphinscheduler.server.master.engine.command.IdSlotBasedCommandFetcher$$EnhancerBySpringCGLIB$$be5fb152.fetchCommands(<generated>)
+	at org.apache.dolphinscheduler.server.master.engine.command.CommandEngine.run(CommandEngine.java:123)
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 40 milliseconds ago. The last packet sent successfully to the server was 40 milliseconds ago.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:175)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:2022)
+	at com.zaxxer.hikari.pool.ProxyConnection.setAutoCommit(ProxyConnection.java:414)
+	at com.zaxxer.hikari.pool.HikariProxyConnection.setAutoCommit(HikariProxyConnection.java)
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:287)
+	... 10 common frames omitted
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 40 milliseconds ago. The last packet sent successfully to the server was 40 milliseconds ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:62)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:150)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:166)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:582)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:762)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:701)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryPacket(NativeProtocol.java:1052)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryString(NativeProtocol.java:998)
+	at com.mysql.cj.NativeSession.execSQL(NativeSession.java:655)
+	at com.mysql.cj.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:2005)
+	... 13 common frames omitted
+Caused by: java.io.EOFException: Can not read response from server. Expected to read 4 bytes, read 0 bytes before connection was unexpectedly lost.
+	at com.mysql.cj.protocol.FullReadInputStream.readFully(FullReadInputStream.java:67)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeaderLocal(SimplePacketReader.java:81)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:63)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:45)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:52)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:41)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:54)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:44)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:576)
+	... 19 common frames omitted
+[WI-0][TI-0] - 2025-11-06 21:01:35.156 WARN  [MasterCommandLoopThread] c.z.h.p.PoolBase:[184] - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3a616f1d (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+[WI-0][TI-0] - 2025-11-06 21:01:35.161 WARN  [MasterCommandLoopThread] c.z.h.p.PoolBase:[184] - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@38a9dcf5 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+[WI-0][TI-0] - 2025-11-06 21:01:35.165 WARN  [MasterCommandLoopThread] c.z.h.p.PoolBase:[184] - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@32f31f4b (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+[WI-0][TI-0] - 2025-11-06 21:01:35.169 WARN  [MasterCommandLoopThread] c.z.h.p.PoolBase:[184] - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1d29220d (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+[WI-0][TI-0] - 2025-11-06 21:01:36.215 WARN  [Master-Server-SendThread(zookeeper:2181)] o.a.z.ClientCnxn:[1292] - Session 0x10006006b1e0001 for server zookeeper/172.28.0.3:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+org.apache.zookeeper.ClientCnxn$EndOfStreamException: Unable to read additional data from server sessionid 0x10006006b1e0001, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1282)
+[WI-0][TI-0] - 2025-11-06 21:01:36.329 WARN  [Curator-ConnectionStateManager-0] o.a.d.p.r.z.ZookeeperConnectionStateListener:[54] - Registry suspended
+[WI-0][TI-0] - 2025-11-06 21:01:36.334 INFO  [Curator-ConnectionStateManager-0] o.a.d.s.m.r.MasterConnectionStateListener:[38] - Master received a SUSPENDED event from registry, the current server state is RUNNING
+[WI-4][TI-4] - 2025-11-06 21:01:39.238 ERROR [WorkerGroupTaskDispatcher-default] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[102] - Dispatch Task: 4 failed will retry after: 43000/ms
+org.apache.dolphinscheduler.server.master.exception.dispatch.TaskDispatchException: Cannot find the host to dispatch Task[id=4, name=wow, workerGroup=default]
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.lambda$dispatch$0(PhysicalTaskExecutorClientDelegator.java:67)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.PhysicalTaskExecutorClientDelegator.dispatch(PhysicalTaskExecutorClientDelegator.java:66)
+	at org.apache.dolphinscheduler.server.master.engine.task.client.TaskExecutorClient.dispatch(TaskExecutorClient.java:54)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.doDispatchTask(WorkerGroupDispatcher.java:94)
+	at org.apache.dolphinscheduler.server.master.engine.task.dispatcher.WorkerGroupDispatcher.run(WorkerGroupDispatcher.java:79)
+[WI-0][TI-0] - 2025-11-06 21:01:41.331 ERROR [Master-Server-SendThread(zookeeper:2181)] o.a.z.c.StaticHostProvider:[148] - Unable to resolve address: zookeeper:2181
+java.net.UnknownHostException: zookeeper: No address associated with hostname
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1330)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1283)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1199)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:88)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:141)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:368)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1197)
+[WI-0][TI-0] - 2025-11-06 21:09:31.275 INFO  [Master-Server] o.a.d.c.u.NetUtils:[312] - Get all NetworkInterfaces: [name:eth0 (eth0), name:lo (lo)]
+[WI-0][TI-0] - 2025-11-06 21:09:31.378 INFO  [Master-Server] o.a.d.s.m.c.MasterConfig:[126] - 
+****************************Master Configuration**************************************
+  listen-port -> 5678
+  workflow-event-bus-fire-thread-count -> 25
+  logic-task-config -> LogicTaskConfig(taskExecutorThreadCount=25)
+  max-heartbeat-interval -> PT10S
+  server-load-protection -> MasterServerLoadProtectionConfig(maxConcurrentWorkflowInstances=2147483647)
+  master-address -> 172.28.0.6:5678
+  master-registry-path: /nodes/master/172.28.0.6:5678
+  worker-group-refresh-interval: PT5M
+  command-fetch-strategy: CommandFetchStrategy(type=ID_SLOT_BASED, config=CommandFetchStrategy.IdSlotBasedFetchConfig(idStep=1, fetchSize=10))
+  worker-load-balancer-configuration-properties: WorkerLoadBalancerConfigurationProperties(type=ROUND_ROBIN, dynamicWeightConfigProperties=WorkerLoadBalancerConfigurationProperties.DynamicWeightConfigProperties(cpuUsageWeight=30, memoryUsageWeight=30, taskThreadPoolUsageWeight=40))
+****************************Master Configuration**************************************
+[WI-0][TI-0] - 2025-11-06 21:09:31.702 INFO  [Master-Server] o.a.d.p.r.z.ZookeeperRegistryAutoConfiguration:[37] - Load ZookeeperRegistryAutoConfiguration
+[WI-0][TI-0] - 2025-11-06 21:09:31.727 INFO  [Master-Server] o.a.d.p.r.z.ZookeeperRegistryProperties:[96] - 
+****************************ZookeeperRegistryProperties**************************************
+  namespace -> dolphinscheduler
+  connectString -> zookeeper:2181
+  retryPolicy -> ZookeeperRegistryProperties.ZookeeperProperties.RetryPolicy(baseSleepTime=PT1S, maxRetries=3, maxSleep=PT5S)
+  digest -> 
+  sessionTimeout -> PT5M
+  connectionTimeout -> PT2M
+  blockUntilConnected -> PT30M
+****************************ZookeeperRegistryProperties**************************************
+[WI-0][TI-0] - 2025-11-06 21:09:31.960 INFO  [Master-Server] o.a.d.p.r.z.ZookeeperRegistry:[113] - ZookeeperRegistry started at: 78/ms
+[WI-0][TI-0] - 2025-11-06 21:09:32.822 INFO  [Master-Server] c.z.h.HikariDataSource:[110] - HikariPool-1 - Starting...
+[WI-0][TI-0] - 2025-11-06 21:09:33.080 INFO  [Master-Server] c.z.h.HikariDataSource:[123] - HikariPool-1 - Start completed.
+[WI-0][TI-0] - 2025-11-06 21:09:37.105 INFO  [Master-Server] o.q.i.StdSchedulerFactory:[1220] - Using default implementation for ThreadExecutor
+[WI-0][TI-0] - 2025-11-06 21:09:37.137 INFO  [Master-Server] o.q.c.SchedulerSignalerImpl:[61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[WI-0][TI-0] - 2025-11-06 21:09:37.139 INFO  [Master-Server] o.q.c.QuartzScheduler:[229] - Quartz Scheduler v.2.3.2 created.
+[WI-0][TI-0] - 2025-11-06 21:09:37.141 INFO  [Master-Server] o.q.s.RAMJobStore:[155] - RAMJobStore initialized.
+[WI-0][TI-0] - 2025-11-06 21:09:37.143 INFO  [Master-Server] o.q.c.QuartzScheduler:[294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[WI-0][TI-0] - 2025-11-06 21:09:37.151 INFO  [Master-Server] o.q.i.StdSchedulerFactory:[1374] - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+[WI-0][TI-0] - 2025-11-06 21:09:37.153 INFO  [Master-Server] o.q.i.StdSchedulerFactory:[1378] - Quartz scheduler version: 2.3.2
+[WI-0][TI-0] - 2025-11-06 21:09:37.154 INFO  [Master-Server] o.q.c.QuartzScheduler:[2293] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@78e50fca
+[WI-0][TI-0] - 2025-11-06 21:09:37.501 INFO  [Master-Server] o.a.d.e.b.s.NettyRemotingServer:[111] - MasterRpcServer bind success at port: 5678
+[WI-0][TI-0] - 2025-11-06 21:09:37.555 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: JAVA
+[WI-0][TI-0] - 2025-11-06 21:09:37.558 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: JUPYTER
+[WI-0][TI-0] - 2025-11-06 21:09:37.588 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SPARK
+[WI-0][TI-0] - 2025-11-06 21:09:37.591 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: FLINK_STREAM
+[WI-0][TI-0] - 2025-11-06 21:09:37.594 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: PYTHON
+[WI-0][TI-0] - 2025-11-06 21:09:37.597 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: ALIYUN_SERVERLESS_SPARK
+[WI-0][TI-0] - 2025-11-06 21:09:37.599 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DATASYNC
+[WI-0][TI-0] - 2025-11-06 21:09:37.602 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DATA_FACTORY
+[WI-0][TI-0] - 2025-11-06 21:09:37.606 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: CHUNJUN
+[WI-0][TI-0] - 2025-11-06 21:09:37.608 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: CONDITIONS
+[WI-0][TI-0] - 2025-11-06 21:09:37.610 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: REMOTESHELL
+[WI-0][TI-0] - 2025-11-06 21:09:37.611 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SUB_WORKFLOW
+[WI-0][TI-0] - 2025-11-06 21:09:37.617 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: PROCEDURE
+[WI-0][TI-0] - 2025-11-06 21:09:37.619 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SHELL
+[WI-0][TI-0] - 2025-11-06 21:09:37.621 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DEPENDENT
+[WI-0][TI-0] - 2025-11-06 21:09:37.623 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SQOOP
+[WI-0][TI-0] - 2025-11-06 21:09:37.626 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: MR
+[WI-0][TI-0] - 2025-11-06 21:09:37.628 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: PYTORCH
+[WI-0][TI-0] - 2025-11-06 21:09:37.631 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: K8S
+[WI-0][TI-0] - 2025-11-06 21:09:37.634 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SAGEMAKER
+[WI-0][TI-0] - 2025-11-06 21:09:37.638 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SEATUNNEL
+[WI-0][TI-0] - 2025-11-06 21:09:37.640 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: HTTP
+[WI-0][TI-0] - 2025-11-06 21:09:37.643 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: EMR
+[WI-0][TI-0] - 2025-11-06 21:09:37.645 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DMS
+[WI-0][TI-0] - 2025-11-06 21:09:37.647 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: KUBEFLOW
+[WI-0][TI-0] - 2025-11-06 21:09:37.649 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SQL
+[WI-0][TI-0] - 2025-11-06 21:09:37.651 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DVC
+[WI-0][TI-0] - 2025-11-06 21:09:37.653 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DATAX
+[WI-0][TI-0] - 2025-11-06 21:09:37.655 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: ZEPPELIN
+[WI-0][TI-0] - 2025-11-06 21:09:37.657 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DINKY
+[WI-0][TI-0] - 2025-11-06 21:09:37.659 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: MLFLOW
+[WI-0][TI-0] - 2025-11-06 21:09:37.660 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SWITCH
+[WI-0][TI-0] - 2025-11-06 21:09:37.662 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: OPENMLDB
+[WI-0][TI-0] - 2025-11-06 21:09:37.663 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: LogicFakeTask
+[WI-0][TI-0] - 2025-11-06 21:09:37.666 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: LINKIS
+[WI-0][TI-0] - 2025-11-06 21:09:37.669 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: HIVECLI
+[WI-0][TI-0] - 2025-11-06 21:09:37.671 INFO  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: FLINK
+[WI-0][TI-0] - 2025-11-06 21:09:37.672 WARN  [Master-Server] o.a.d.p.t.a.TaskPluginManager:[44] - The task plugin has already been loaded
+[WI-0][TI-0] - 2025-11-06 21:09:37.681 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> K8S
+[WI-0][TI-0] - 2025-11-06 21:09:37.683 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> ZEPPELIN
+[WI-0][TI-0] - 2025-11-06 21:09:37.685 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> SSH
+[WI-0][TI-0] - 2025-11-06 21:09:37.688 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> CLICKHOUSE
+[WI-0][TI-0] - 2025-11-06 21:09:37.694 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> DATABEND
+[WI-0][TI-0] - 2025-11-06 21:09:37.697 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> DB2
+[WI-0][TI-0] - 2025-11-06 21:09:37.700 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> HIVE
+[WI-0][TI-0] - 2025-11-06 21:09:37.704 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> MYSQL
+[WI-0][TI-0] - 2025-11-06 21:09:37.707 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> OCEANBASE
+[WI-0][TI-0] - 2025-11-06 21:09:37.710 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> ORACLE
+[WI-0][TI-0] - 2025-11-06 21:09:37.713 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> POSTGRESQL
+[WI-0][TI-0] - 2025-11-06 21:09:37.717 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> SQLSERVER
+[WI-0][TI-0] - 2025-11-06 21:09:37.721 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> REDSHIFT
+[WI-0][TI-0] - 2025-11-06 21:09:37.724 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> ATHENA
+[WI-0][TI-0] - 2025-11-06 21:09:37.728 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> SPARK
+[WI-0][TI-0] - 2025-11-06 21:09:37.730 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> PRESTO
+[WI-0][TI-0] - 2025-11-06 21:09:37.733 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> TRINO
+[WI-0][TI-0] - 2025-11-06 21:09:37.737 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> STARROCKS
+[WI-0][TI-0] - 2025-11-06 21:09:37.741 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> AZURESQL
+[WI-0][TI-0] - 2025-11-06 21:09:37.745 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> DAMENG
+[WI-0][TI-0] - 2025-11-06 21:09:37.748 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> SNOWFLAKE
+[WI-0][TI-0] - 2025-11-06 21:09:37.752 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> KYUUBI
+[WI-0][TI-0] - 2025-11-06 21:09:37.755 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> VERTICA
+[WI-0][TI-0] - 2025-11-06 21:09:37.758 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> DORIS
+[WI-0][TI-0] - 2025-11-06 21:09:37.765 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> SAGEMAKER
+[WI-0][TI-0] - 2025-11-06 21:09:37.769 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> HANA
+[WI-0][TI-0] - 2025-11-06 21:09:37.773 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> ALIYUN_SERVERLESS_SPARK
+[WI-0][TI-0] - 2025-11-06 21:09:37.777 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> DOLPHINDB
+[WI-0][TI-0] - 2025-11-06 21:09:37.788 INFO  [Master-Server] o.a.d.p.d.a.p.DataSourceProcessorProvider:[41] - Initialize DataSourceProcessorProvider
+[WI-0][TI-0] - 2025-11-06 21:09:37.821 INFO  [Master-Server] o.a.d.s.m.r.MasterRegistryClient:[96] - Master node : 172.28.0.6:5678 registering to registry center
+[WI-0][TI-0] - 2025-11-06 21:09:37.877 INFO  [Master-Server] o.a.d.c.c.SystemConstants:[30] - init timezone: sun.util.calendar.ZoneInfo[id="Asia/Shanghai",offset=28800000,dstSavings=0,useDaylight=false,transitions=31,lastRule=null]
+[WI-0][TI-0] - 2025-11-06 21:09:37.951 INFO  [Master-Server] o.a.d.c.m.BaseHeartBeatTask:[47] - Starting MasterHeartBeatTask...
+[WI-0][TI-0] - 2025-11-06 21:09:37.952 INFO  [Master-Server] o.a.d.c.m.BaseHeartBeatTask:[49] - Started MasterHeartBeatTask, heartBeatInterval: 10000...
+[WI-0][TI-0] - 2025-11-06 21:09:37.953 INFO  [Master-Server] o.a.d.s.m.r.MasterRegistryClient:[109] - Master node : 172.28.0.6:5678 registered to registry center successfully
+[WI-0][TI-0] - 2025-11-06 21:09:38.023 INFO  [Master-Server] o.a.d.r.a.h.DefaultServerStatusChangeListener:[27] - The status is active now.
+[WI-0][TI-0] - 2025-11-06 21:09:38.024 INFO  [Master-Server] o.a.d.s.m.e.TaskGroupCoordinator:[82] - TaskGroupCoordinator starting...
+[WI-0][TI-0] - 2025-11-06 21:09:38.025 INFO  [Master-Server] o.a.d.s.m.e.TaskGroupCoordinator:[93] - TaskGroupCoordinator started...
+[WI-0][TI-0] - 2025-11-06 21:09:38.026 INFO  [Master-Server] o.a.d.s.m.e.MasterCoordinator:[55] - MasterCoordinator started...
+[WI-0][TI-0] - 2025-11-06 21:09:38.077 INFO  [Master-Server] o.a.d.s.m.c.MasterSlotManager:[89] - Do rebalance success, current master slot: 0, total master slots: 1
+[WI-0][TI-0] - 2025-11-06 21:09:38.090 INFO  [Master-Server] o.a.d.s.m.c.ClusterManager:[76] - Initialized MasterClusters: [ {
+  "processId" : 210,
+  "serverStartupTime" : 1762434577305,
+  "address" : "172.28.0.6:5678",
+  "cpuUsage" : 0.0,
+  "memoryUsage" : 0.3794909445422024,
+  "serverStatus" : "NORMAL"
+} ]
+[WI-0][TI-0] - 2025-11-06 21:09:38.094 INFO  [Master-Server] o.a.d.s.m.c.ClusterManager:[93] - Initialized WorkerClusters: [ ]
+[WI-0][TI-0] - 2025-11-06 21:09:38.098 INFO  [Curator-TreeCache-0] o.a.d.s.m.c.AbstractClusterSubscribeListener:[41] - Server MasterServerMetadata(super=BaseServerMetadata(processId=210, serverStartupTime=1762434577305, address=172.28.0.6:5678, cpuUsage=0.0, memoryUsage=0.3794909445422024, serverStatus=NORMAL)) added
+[WI-0][TI-0] - 2025-11-06 21:09:38.212 INFO  [Master-Server] o.a.d.s.m.c.ClusterManager:[59] - ClusterManager started...
+[WI-0][TI-0] - 2025-11-06 21:09:38.213 INFO  [Master-Server] o.a.d.s.m.c.ClusterStateMonitors:[46] - ClusterStateMonitors started...
+[WI-0][TI-0] - 2025-11-06 21:09:39.122 INFO  [Master-Server] o.a.d.s.m.e.WorkflowEventBusFireWorkers:[71] - WorkflowEventBusFireWorkers started, worker size: 25
+[WI-0][TI-0] - 2025-11-06 21:09:39.124 INFO  [Master-Server] o.a.d.s.m.e.WorkflowEventBusCoordinator:[40] - WorkflowEventBusCoordinator started
+[WI-0][TI-0] - 2025-11-06 21:09:39.125 INFO  [Master-Server] o.a.d.s.m.e.c.CommandEngine:[96] - MasterSchedulerBootstrap starting..
+[WI-0][TI-0] - 2025-11-06 21:09:39.187 INFO  [Master-Server] o.a.d.s.m.e.c.CommandEngine:[101] - MasterSchedulerBootstrap started...
+[WI-0][TI-0] - 2025-11-06 21:09:39.188 INFO  [Master-Server] o.a.d.s.m.e.t.d.WorkerGroupDispatcherCoordinator:[49] - WorkerGroupTaskDispatcherManager started...
+[WI-0][TI-0] - 2025-11-06 21:09:39.192 INFO  [Master-Server] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[95] - LogicTaskExecutorEventBusCoordinator started, worker size: 12
+[WI-0][TI-0] - 2025-11-06 21:09:39.193 INFO  [Master-Server] o.a.d.t.e.TaskEngine:[53] - LogicTaskEngine started
+[WI-0][TI-0] - 2025-11-06 21:09:39.196 INFO  [Master-Server] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[81] - LogicTaskExecutorLifecycleEventReporter started
+[WI-0][TI-0] - 2025-11-06 21:09:39.198 INFO  [Master-Server] o.a.d.s.m.e.e.LogicTaskEngineDelegator:[50] - LogicTaskEngineDelegator started
+[WI-0][TI-0] - 2025-11-06 21:09:39.199 INFO  [Master-Server] o.a.d.s.m.e.WorkflowEngine:[55] - WorkflowEngine started
+[WI-0][TI-0] - 2025-11-06 21:09:39.200 INFO  [Master-Server] o.q.c.QuartzScheduler:[547] - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+[WI-0][TI-0] - 2025-11-06 21:09:39.203 INFO  [Master-Server] o.a.d.s.m.e.s.SystemEventBus:[40] - Published SystemEvent: GlobalMasterFailoverEvent{eventTime=Thu Nov 06 21:09:37 CST 2025}
+[WI-0][TI-0] - 2025-11-06 21:09:39.205 INFO  [Master-Server] o.a.d.s.m.e.s.SystemEventBusFireWorker:[62] - SystemEventBusFireWorker started
+[WI-0][TI-0] - 2025-11-06 21:09:39.208 INFO  [SystemEventBusFireWorker] o.a.d.s.m.f.FailoverCoordinator:[73] - Global master failover starting
+[WI-0][TI-0] - 2025-11-06 21:09:39.210 INFO  [Master-Server] o.a.d.s.m.MasterServer:[164] - MasterServer initialized successfully in 1905 ms
+[WI-0][TI-0] - 2025-11-06 21:09:39.296 INFO  [SystemEventBusFireWorker] o.a.d.s.m.f.FailoverCoordinator:[99] - Global master failover finished, cost: 87/ms
+[WI-0][TI-0] - 2025-11-06 21:09:39.300 INFO  [SystemEventBusFireWorker] o.a.d.s.m.e.s.SystemEventBusFireWorker:[103] - Fire SystemEvent: GlobalMasterFailoverEvent{eventTime=Thu Nov 06 21:09:37 CST 2025} cost: 94 ms
+[WI-0][TI-0] - 2025-11-06 21:09:47.460 INFO  [Curator-TreeCache-0] o.a.d.s.m.c.AbstractClusterSubscribeListener:[41] - Server WorkerServerMetadata(workerGroup=default, workerWeight=100.0, taskThreadPoolUsage=0.0) added
+[WI-0][TI-0] - 2025-11-06 21:10:34.585 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[38] - OverLoad: the system cpu usage: 1.0 is over then the maxSystemCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 21:10:34.605 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:10:35.581 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[38] - OverLoad: the system cpu usage: 1.0 is over then the maxSystemCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-06 21:10:35.592 WARN  [Curator-TreeCache-0] o.a.d.s.m.c.MasterSlotManager:[75] - Do rebalance failed, cannot found the current master: 172.28.0.6:5678 in the normal master clusters: []. Please check the current master server status
+[WI-0][TI-0] - 2025-11-06 21:10:35.611 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.IdSlotBasedCommandFetcher:[60] - MasterSlotManager check slot (-1 -> 1)is invalidated.
+[WI-0][TI-0] - 2025-11-06 21:10:36.606 INFO  [Curator-TreeCache-0] o.a.d.s.m.c.MasterSlotManager:[89] - Do rebalance success, current master slot: 0, total master slots: 1
+[WI-0][TI-0] - 2025-11-06 21:14:54.089 INFO  [MasterCommandHandleThreadPool] o.a.d.s.m.e.WorkflowEventBus:[41] - Publish event: WorkflowStartLifecycleEvent{workflow=aaa-20251106211453073}
+[WI-0][TI-0] - 2025-11-06 21:14:54.100 INFO  [MasterCommandHandleThreadPool] o.a.d.s.m.e.c.CommandEngine:[174] - Success bootstrap command {
+  "id" : 1,
+  "commandType" : "START_PROCESS",
+  "workflowDefinitionCode" : 156676593209248,
+  "workflowDefinitionVersion" : 1,
+  "workflowInstanceId" : 1,
+  "commandParam" : "{\"commandType\":\"START_PROCESS\",\"subWorkflowInstance\":false,\"startNodes\":[],\"commandParams\":[],\"timeZone\":\"Asia/Shanghai\"}",
+  "workflowInstancePriority" : "MEDIUM",
+  "executorId" : 0,
+  "taskDependType" : "TASK_POST",
+  "failureStrategy" : "CONTINUE",
+  "warningType" : "NONE",
+  "warningGroupId" : null,
+  "scheduleTime" : null,
+  "startTime" : null,
+  "updateTime" : "2025-11-06 21:14:53",
+  "workerGroup" : null,
+  "tenantCode" : "default",
+  "environmentCode" : -1,
+  "dryRun" : 0
+}
+[WI-1][TI-0] - 2025-11-06 21:14:54.171 INFO  [ds-workflow-eventbus-worker-17] o.a.d.s.m.e.w.l.h.AbstractWorkflowLifecycleEventHandler:[47] - Begin fire workflow aaa-20251106211453073 LifecycleEvent[WorkflowStartLifecycleEvent{workflow=aaa-20251106211453073}] with state: RUNNING_EXECUTION
+[WI-1][TI-0] - 2025-11-06 21:14:54.180 INFO  [ds-workflow-eventbus-worker-17] o.a.d.s.m.e.WorkflowEventBus:[41] - Publish event: TaskStartLifecycleEvent{task=aaa}
+[WI-1][TI-0] - 2025-11-06 21:14:54.181 INFO  [ds-workflow-eventbus-worker-17] o.a.d.s.m.e.w.l.h.AbstractWorkflowLifecycleEventHandler:[52] - Fired workflow aaa-20251106211453073 LifecycleEvent[WorkflowStartLifecycleEvent{workflow=aaa-20251106211453073}] with state: RUNNING_EXECUTION
+[WI-1][TI-0] - 2025-11-06 21:14:54.248 INFO  [ds-workflow-eventbus-worker-17] o.a.d.s.m.e.WorkflowEventBus:[41] - Publish event: TaskDispatchLifecycleEvent{task=aaa}
+[WI-1][TI-0] - 2025-11-06 21:14:54.250 INFO  [ds-workflow-eventbus-worker-17] o.a.d.s.m.e.t.l.h.AbstractTaskLifecycleEventHandler:[47] - Fired task aaa TaskStartLifecycleEvent{task=aaa} with state SUBMITTED_SUCCESS
+[WI-1][TI-0] - 2025-11-06 21:14:54.336 INFO  [ds-workflow-eventbus-worker-17] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[56] - Initialize WorkerGroupDispatcher: WorkerGroupTaskDispatcher-default
+[WI-1][TI-0] - 2025-11-06 21:14:54.337 INFO  [ds-workflow-eventbus-worker-17] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[62] - The WorkerGroupTaskDispatcher-default starting...
+[WI-1][TI-0] - 2025-11-06 21:14:54.338 INFO  [ds-workflow-eventbus-worker-17] o.a.d.s.m.e.t.d.WorkerGroupDispatcher:[64] - The WorkerGroupTaskDispatcher-default  started
+[WI-1][TI-0] - 2025-11-06 21:14:54.339 INFO  [ds-workflow-eventbus-worker-17] o.a.d.s.m.e.t.d.WorkerGroupDispatcherCoordinator:[59] - Success add Task[id=1] to WorkerGroupDispatcher[name=default]
+[WI-1][TI-0] - 2025-11-06 21:14:54.339 INFO  [ds-workflow-eventbus-worker-17] o.a.d.s.m.e.t.l.h.AbstractTaskLifecycleEventHandler:[47] - Fired task aaa TaskDispatchLifecycleEvent{task=aaa} with state SUBMITTED_SUCCESS
+[WI-1][TI-1] - 2025-11-06 21:14:54.678 INFO  [WorkerGroupTaskDispatcher-default] o.a.d.e.b.c.JdkDynamicRpcClientProxyFactory:[56] - Create DynamicRpcClientProxy cache for host: 172.28.0.6:1234
+[WI-0][TI-0] - 2025-11-06 21:14:55.486 INFO  [MasterRpcServer-methodInvoker-1] o.a.d.s.m.e.WorkflowEventBus:[41] - Publish event: TaskDispatchedLifecycleEvent{task=aaa, executorHost='172.28.0.6:1234'}
+[WI-1][TI-0] - 2025-11-06 21:14:55.599 INFO  [ds-workflow-eventbus-worker-21] o.a.d.s.m.e.t.l.h.AbstractTaskLifecycleEventHandler:[47] - Fired task aaa TaskDispatchedLifecycleEvent{task=aaa, executorHost='172.28.0.6:1234'} with state SUBMITTED_SUCCESS
+[WI-0][TI-0] - 2025-11-06 21:14:55.624 INFO  [MasterRpcServer-methodInvoker-2] o.a.d.s.m.e.WorkflowEventBus:[41] - Publish event: TaskFailedLifecycleEvent{task=aaa, endTime=Thu Nov 06 21:14:55 CST 2025}
+[WI-1][TI-0] - 2025-11-06 21:14:55.707 INFO  [ds-workflow-eventbus-worker-14] o.a.d.s.m.e.WorkflowEventBus:[41] - Publish event: WorkflowTopologyLogicalTransitionWithTaskFinishLifecycleEvent{task=aaataskState=FAILURE}
+[WI-1][TI-0] - 2025-11-06 21:14:55.719 INFO  [ds-workflow-eventbus-worker-14] o.a.d.s.m.e.t.l.h.AbstractTaskLifecycleEventHandler:[47] - Fired task aaa TaskFailedLifecycleEvent{task=aaa, endTime=Thu Nov 06 21:14:55 CST 2025} with state DISPATCH
+[WI-1][TI-0] - 2025-11-06 21:14:55.721 INFO  [ds-workflow-eventbus-worker-14] o.a.d.s.m.e.w.l.h.AbstractWorkflowLifecycleEventHandler:[47] - Begin fire workflow aaa-20251106211453073 LifecycleEvent[WorkflowTopologyLogicalTransitionWithTaskFinishLifecycleEvent{task=aaataskState=FAILURE}] with state: RUNNING_EXECUTION
+[WI-1][TI-0] - 2025-11-06 21:14:55.722 INFO  [ds-workflow-eventbus-worker-14] o.a.d.s.m.e.WorkflowEventBus:[41] - Publish event: WorkflowFailedLifecycleEvent{workflow=aaa-20251106211453073}
+[WI-1][TI-0] - 2025-11-06 21:14:55.722 INFO  [ds-workflow-eventbus-worker-14] o.a.d.s.m.e.w.l.h.AbstractWorkflowLifecycleEventHandler:[52] - Fired workflow aaa-20251106211453073 LifecycleEvent[WorkflowTopologyLogicalTransitionWithTaskFinishLifecycleEvent{task=aaataskState=FAILURE}] with state: RUNNING_EXECUTION
+[WI-1][TI-0] - 2025-11-06 21:14:55.723 INFO  [ds-workflow-eventbus-worker-14] o.a.d.s.m.e.w.l.h.AbstractWorkflowLifecycleEventHandler:[47] - Begin fire workflow aaa-20251106211453073 LifecycleEvent[WorkflowFailedLifecycleEvent{workflow=aaa-20251106211453073}] with state: RUNNING_EXECUTION
+[WI-1][TI-0] - 2025-11-06 21:14:55.732 INFO  [ds-workflow-eventbus-worker-14] o.a.d.s.m.e.w.s.AbstractWorkflowStateAction:[154] - Success set WorkflowExecuteRunnable: aaa-20251106211453073 state from: RUNNING_EXECUTION to FAILURE
+[WI-1][TI-0] - 2025-11-06 21:14:55.733 INFO  [ds-workflow-eventbus-worker-14] o.a.d.s.m.e.WorkflowEventBus:[41] - Publish event: WorkflowFinalizeLifecycleEvent{workflow=aaa-20251106211453073}
+[WI-1][TI-0] - 2025-11-06 21:14:55.733 INFO  [ds-workflow-eventbus-worker-14] o.a.d.s.m.e.w.l.h.AbstractWorkflowLifecycleEventHandler:[52] - Fired workflow aaa-20251106211453073 LifecycleEvent[WorkflowFailedLifecycleEvent{workflow=aaa-20251106211453073}] with state: FAILURE
+[WI-1][TI-0] - 2025-11-06 21:14:55.734 INFO  [ds-workflow-eventbus-worker-14] o.a.d.s.m.e.w.l.h.AbstractWorkflowLifecycleEventHandler:[47] - Begin fire workflow aaa-20251106211453073 LifecycleEvent[WorkflowFinalizeLifecycleEvent{workflow=aaa-20251106211453073}] with state: FAILURE
+[WI-1][TI-0] - 2025-11-06 21:14:55.739 INFO  [ds-workflow-eventbus-worker-14] o.a.d.s.m.e.w.s.AbstractWorkflowStateAction:[193] - 
+********************************************************************************
+                    Workflow Instance Detail
+********************************************************************************
+Workflow Instance Name:  aaa-20251106211453073
+Command Type:            START_PROCESS
+State:                   FAILURE
+StartNodes:              [aaa]
+TotalTasks:              1
+Host:                    172.28.0.6:5678
+Is SubWorkflow:          NO
+Run Times:               1
+Tenant:                  default
+Work Group:              default
+EventBusSummary:         WorkflowEventBusSummary{eventCount=8, fireSuccessEventCount=8, fireFailedEventCount=0}
+Schedule Time:           null
+Start Time:              Thu Nov 06 21:14:53 CST 2025
+Restart Time:            Thu Nov 06 21:14:53 CST 2025
+End Time:                Thu Nov 06 21:14:55 CST 2025
+[WI-1][TI-0] - 2025-11-06 21:14:55.745 INFO  [ds-workflow-eventbus-worker-14] o.a.d.s.m.e.w.s.AbstractWorkflowStateAction:[199] - Successfully finalize WorkflowExecuteRunnable: aaa-20251106211453073
+[WI-1][TI-0] - 2025-11-06 21:14:55.746 INFO  [ds-workflow-eventbus-worker-14] o.a.d.s.m.e.w.l.h.AbstractWorkflowLifecycleEventHandler:[52] - Fired workflow aaa-20251106211453073 LifecycleEvent[WorkflowFinalizeLifecycleEvent{workflow=aaa-20251106211453073}] with state: FAILURE
+[WI-0][TI-0] - 2025-11-06 21:16:02.682 INFO  [MasterCommandHandleThreadPool] o.a.d.s.m.e.WorkflowEventBus:[41] - Publish event: WorkflowStartLifecycleEvent{workflow=aaa-20251106211602435}
+[WI-0][TI-0] - 2025-11-06 21:16:02.683 INFO  [MasterCommandHandleThreadPool] o.a.d.s.m.e.c.CommandEngine:[174] - Success bootstrap command {
+  "id" : 2,
+  "commandType" : "START_PROCESS",
+  "workflowDefinitionCode" : 156676593209248,
+  "workflowDefinitionVersion" : 1,
+  "workflowInstanceId" : 2,
+  "commandParam" : "{\"commandType\":\"START_PROCESS\",\"subWorkflowInstance\":false,\"startNodes\":[],\"commandParams\":[],\"timeZone\":\"Asia/Shanghai\"}",
+  "workflowInstancePriority" : "MEDIUM",
+  "executorId" : 0,
+  "taskDependType" : "TASK_POST",
+  "failureStrategy" : "CONTINUE",
+  "warningType" : "NONE",
+  "warningGroupId" : null,
+  "scheduleTime" : null,
+  "startTime" : null,
+  "updateTime" : "2025-11-06 21:16:02",
+  "workerGroup" : null,
+  "tenantCode" : "default",
+  "environmentCode" : -1,
+  "dryRun" : 0
+}
+[WI-2][TI-0] - 2025-11-06 21:16:02.712 INFO  [ds-workflow-eventbus-worker-11] o.a.d.s.m.e.w.l.h.AbstractWorkflowLifecycleEventHandler:[47] - Begin fire workflow aaa-20251106211602435 LifecycleEvent[WorkflowStartLifecycleEvent{workflow=aaa-20251106211602435}] with state: RUNNING_EXECUTION
+[WI-2][TI-0] - 2025-11-06 21:16:02.713 INFO  [ds-workflow-eventbus-worker-11] o.a.d.s.m.e.WorkflowEventBus:[41] - Publish event: TaskStartLifecycleEvent{task=aaa}
+[WI-2][TI-0] - 2025-11-06 21:16:02.714 INFO  [ds-workflow-eventbus-worker-11] o.a.d.s.m.e.w.l.h.AbstractWorkflowLifecycleEventHandler:[52] - Fired workflow aaa-20251106211602435 LifecycleEvent[WorkflowStartLifecycleEvent{workflow=aaa-20251106211602435}] with state: RUNNING_EXECUTION
+[WI-2][TI-0] - 2025-11-06 21:16:02.720 INFO  [ds-workflow-eventbus-worker-11] o.a.d.s.m.e.WorkflowEventBus:[41] - Publish event: TaskDispatchLifecycleEvent{task=aaa}
+[WI-2][TI-0] - 2025-11-06 21:16:02.721 INFO  [ds-workflow-eventbus-worker-11] o.a.d.s.m.e.t.l.h.AbstractTaskLifecycleEventHandler:[47] - Fired task aaa TaskStartLifecycleEvent{task=aaa} with state SUBMITTED_SUCCESS
+[WI-2][TI-0] - 2025-11-06 21:16:02.728 INFO  [ds-workflow-eventbus-worker-11] o.a.d.s.m.e.t.d.WorkerGroupDispatcherCoordinator:[59] - Success add Task[id=2] to WorkerGroupDispatcher[name=default]
+[WI-2][TI-0] - 2025-11-06 21:16:02.729 INFO  [ds-workflow-eventbus-worker-11] o.a.d.s.m.e.t.l.h.AbstractTaskLifecycleEventHandler:[47] - Fired task aaa TaskDispatchLifecycleEvent{task=aaa} with state SUBMITTED_SUCCESS
+[WI-0][TI-0] - 2025-11-06 21:16:02.755 INFO  [MasterRpcServer-methodInvoker-4] o.a.d.s.m.e.WorkflowEventBus:[41] - Publish event: TaskDispatchedLifecycleEvent{task=aaa, executorHost='172.28.0.6:1234'}
+[WI-2][TI-0] - 2025-11-06 21:16:02.846 INFO  [ds-workflow-eventbus-worker-3] o.a.d.s.m.e.t.l.h.AbstractTaskLifecycleEventHandler:[47] - Fired task aaa TaskDispatchedLifecycleEvent{task=aaa, executorHost='172.28.0.6:1234'} with state SUBMITTED_SUCCESS
+[WI-0][TI-0] - 2025-11-06 21:16:02.981 INFO  [MasterRpcServer-methodInvoker-5] o.a.d.s.m.e.WorkflowEventBus:[41] - Publish event: TaskRunningLifecycleEvent{task=aaa, logPath='/opt/dolphinscheduler/worker-server/logs/20251106/156676593209248/1/2/2.log', startTime=Thu Nov 06 21:16:02 CST 2025}
+[WI-2][TI-0] - 2025-11-06 21:16:03.060 INFO  [ds-workflow-eventbus-worker-21] o.a.d.s.m.e.t.l.h.AbstractTaskLifecycleEventHandler:[47] - Fired task aaa TaskRunningLifecycleEvent{task=aaa, logPath='/opt/dolphinscheduler/worker-server/logs/20251106/156676593209248/1/2/2.log', startTime=Thu Nov 06 21:16:02 CST 2025} with state DISPATCH
+[WI-0][TI-0] - 2025-11-06 21:16:03.079 INFO  [MasterRpcServer-methodInvoker-6] o.a.d.s.m.e.WorkflowEventBus:[41] - Publish event: TaskRunningLifecycleEvent{task=aaa, runtimeContext=null}
+[WI-2][TI-0] - 2025-11-06 21:16:03.181 INFO  [ds-workflow-eventbus-worker-12] o.a.d.s.m.e.t.l.h.AbstractTaskLifecycleEventHandler:[47] - Fired task aaa TaskRunningLifecycleEvent{task=aaa, runtimeContext=null} with state RUNNING_EXECUTION
+[WI-0][TI-0] - 2025-11-06 21:16:04.028 INFO  [MasterRpcServer-methodInvoker-7] o.a.d.s.m.e.WorkflowEventBus:[41] - Publish event: TaskSuccessLifecycleEvent{task=aaa, endTime=Thu Nov 06 21:16:03 CST 2025, varPool='[]'}
+[WI-2][TI-0] - 2025-11-06 21:16:04.092 INFO  [ds-workflow-eventbus-worker-24] o.a.d.s.m.e.WorkflowEventBus:[41] - Publish event: WorkflowTopologyLogicalTransitionWithTaskFinishLifecycleEvent{task=aaataskState=SUCCESS}
+[WI-2][TI-0] - 2025-11-06 21:16:04.098 INFO  [ds-workflow-eventbus-worker-24] o.a.d.s.m.e.t.l.h.AbstractTaskLifecycleEventHandler:[47] - Fired task aaa TaskSuccessLifecycleEvent{task=aaa, endTime=Thu Nov 06 21:16:03 CST 2025, varPool='[]'} with state RUNNING_EXECUTION
+[WI-2][TI-0] - 2025-11-06 21:16:04.099 INFO  [ds-workflow-eventbus-worker-24] o.a.d.s.m.e.w.l.h.AbstractWorkflowLifecycleEventHandler:[47] - Begin fire workflow aaa-20251106211602435 LifecycleEvent[WorkflowTopologyLogicalTransitionWithTaskFinishLifecycleEvent{task=aaataskState=SUCCESS}] with state: RUNNING_EXECUTION
+[WI-2][TI-0] - 2025-11-06 21:16:04.100 INFO  [ds-workflow-eventbus-worker-24] o.a.d.s.m.e.WorkflowEventBus:[41] - Publish event: WorkflowSucceedLifecycleEvent{workflow=aaa-20251106211602435}
+[WI-2][TI-0] - 2025-11-06 21:16:04.101 INFO  [ds-workflow-eventbus-worker-24] o.a.d.s.m.e.w.l.h.AbstractWorkflowLifecycleEventHandler:[52] - Fired workflow aaa-20251106211602435 LifecycleEvent[WorkflowTopologyLogicalTransitionWithTaskFinishLifecycleEvent{task=aaataskState=SUCCESS}] with state: RUNNING_EXECUTION
+[WI-2][TI-0] - 2025-11-06 21:16:04.101 INFO  [ds-workflow-eventbus-worker-24] o.a.d.s.m.e.w.l.h.AbstractWorkflowLifecycleEventHandler:[47] - Begin fire workflow aaa-20251106211602435 LifecycleEvent[WorkflowSucceedLifecycleEvent{workflow=aaa-20251106211602435}] with state: RUNNING_EXECUTION
+[WI-2][TI-0] - 2025-11-06 21:16:04.113 INFO  [ds-workflow-eventbus-worker-24] o.a.d.s.m.e.w.s.AbstractWorkflowStateAction:[154] - Success set WorkflowExecuteRunnable: aaa-20251106211602435 state from: RUNNING_EXECUTION to SUCCESS
+[WI-2][TI-0] - 2025-11-06 21:16:04.113 INFO  [ds-workflow-eventbus-worker-24] o.a.d.s.m.e.WorkflowEventBus:[41] - Publish event: WorkflowFinalizeLifecycleEvent{workflow=aaa-20251106211602435}
+[WI-2][TI-0] - 2025-11-06 21:16:04.114 INFO  [ds-workflow-eventbus-worker-24] o.a.d.s.m.e.w.l.h.AbstractWorkflowLifecycleEventHandler:[52] - Fired workflow aaa-20251106211602435 LifecycleEvent[WorkflowSucceedLifecycleEvent{workflow=aaa-20251106211602435}] with state: SUCCESS
+[WI-2][TI-0] - 2025-11-06 21:16:04.116 INFO  [ds-workflow-eventbus-worker-24] o.a.d.s.m.e.w.l.h.AbstractWorkflowLifecycleEventHandler:[47] - Begin fire workflow aaa-20251106211602435 LifecycleEvent[WorkflowFinalizeLifecycleEvent{workflow=aaa-20251106211602435}] with state: SUCCESS
+[WI-2][TI-0] - 2025-11-06 21:16:04.118 INFO  [ds-workflow-eventbus-worker-24] o.a.d.s.m.e.w.s.AbstractWorkflowStateAction:[193] - 
+********************************************************************************
+                    Workflow Instance Detail
+********************************************************************************
+Workflow Instance Name:  aaa-20251106211602435
+Command Type:            START_PROCESS
+State:                   SUCCESS
+StartNodes:              [aaa]
+TotalTasks:              1
+Host:                    172.28.0.6:5678
+Is SubWorkflow:          NO
+Run Times:               1
+Tenant:                  cpy
+Work Group:              default
+EventBusSummary:         WorkflowEventBusSummary{eventCount=10, fireSuccessEventCount=10, fireFailedEventCount=0}
+Schedule Time:           null
+Start Time:              Thu Nov 06 21:16:02 CST 2025
+Restart Time:            Thu Nov 06 21:16:02 CST 2025
+End Time:                Thu Nov 06 21:16:04 CST 2025
+[WI-2][TI-0] - 2025-11-06 21:16:04.119 INFO  [ds-workflow-eventbus-worker-24] o.a.d.s.m.e.w.s.AbstractWorkflowStateAction:[199] - Successfully finalize WorkflowExecuteRunnable: aaa-20251106211602435
+[WI-2][TI-0] - 2025-11-06 21:16:04.119 INFO  [ds-workflow-eventbus-worker-24] o.a.d.s.m.e.w.l.h.AbstractWorkflowLifecycleEventHandler:[52] - Fired workflow aaa-20251106211602435 LifecycleEvent[WorkflowFinalizeLifecycleEvent{workflow=aaa-20251106211602435}] with state: SUCCESS
+[WI-0][TI-0] - 2025-11-06 21:18:11.755 INFO  [MasterCommandHandleThreadPool] o.a.d.s.m.e.WorkflowEventBus:[41] - Publish event: WorkflowStartLifecycleEvent{workflow=wow-20251106211811230}
+[WI-0][TI-0] - 2025-11-06 21:18:11.757 INFO  [MasterCommandHandleThreadPool] o.a.d.s.m.e.c.CommandEngine:[174] - Success bootstrap command {
+  "id" : 3,
+  "commandType" : "START_PROCESS",
+  "workflowDefinitionCode" : 156676755523488,
+  "workflowDefinitionVersion" : 2,
+  "workflowInstanceId" : 3,
+  "commandParam" : "{\"commandType\":\"START_PROCESS\",\"subWorkflowInstance\":false,\"startNodes\":[],\"commandParams\":[],\"timeZone\":\"Asia/Shanghai\"}",
+  "workflowInstancePriority" : "MEDIUM",
+  "executorId" : 0,
+  "taskDependType" : "TASK_POST",
+  "failureStrategy" : "CONTINUE",
+  "warningType" : "NONE",
+  "warningGroupId" : null,
+  "scheduleTime" : null,
+  "startTime" : null,
+  "updateTime" : "2025-11-06 21:18:11",
+  "workerGroup" : null,
+  "tenantCode" : "default",
+  "environmentCode" : -1,
+  "dryRun" : 0
+}
+[WI-3][TI-0] - 2025-11-06 21:18:11.800 INFO  [ds-workflow-eventbus-worker-14] o.a.d.s.m.e.w.l.h.AbstractWorkflowLifecycleEventHandler:[47] - Begin fire workflow wow-20251106211811230 LifecycleEvent[WorkflowStartLifecycleEvent{workflow=wow-20251106211811230}] with state: RUNNING_EXECUTION
+[WI-3][TI-0] - 2025-11-06 21:18:11.801 INFO  [ds-workflow-eventbus-worker-14] o.a.d.s.m.e.WorkflowEventBus:[41] - Publish event: TaskStartLifecycleEvent{task=wow}
+[WI-3][TI-0] - 2025-11-06 21:18:11.802 INFO  [ds-workflow-eventbus-worker-14] o.a.d.s.m.e.w.l.h.AbstractWorkflowLifecycleEventHandler:[52] - Fired workflow wow-20251106211811230 LifecycleEvent[WorkflowStartLifecycleEvent{workflow=wow-20251106211811230}] with state: RUNNING_EXECUTION
+[WI-3][TI-0] - 2025-11-06 21:18:11.809 INFO  [ds-workflow-eventbus-worker-14] o.a.d.s.m.e.WorkflowEventBus:[41] - Publish event: TaskDispatchLifecycleEvent{task=wow}
+[WI-3][TI-0] - 2025-11-06 21:18:11.810 INFO  [ds-workflow-eventbus-worker-14] o.a.d.s.m.e.t.l.h.AbstractTaskLifecycleEventHandler:[47] - Fired task wow TaskStartLifecycleEvent{task=wow} with state SUBMITTED_SUCCESS
+[WI-3][TI-0] - 2025-11-06 21:18:11.840 INFO  [ds-workflow-eventbus-worker-14] o.a.d.s.m.e.t.d.WorkerGroupDispatcherCoordinator:[59] - Success add Task[id=3] to WorkerGroupDispatcher[name=default]
+[WI-3][TI-0] - 2025-11-06 21:18:11.841 INFO  [ds-workflow-eventbus-worker-14] o.a.d.s.m.e.t.l.h.AbstractTaskLifecycleEventHandler:[47] - Fired task wow TaskDispatchLifecycleEvent{task=wow} with state SUBMITTED_SUCCESS
+[WI-0][TI-0] - 2025-11-06 21:18:11.877 INFO  [MasterRpcServer-methodInvoker-9] o.a.d.s.m.e.WorkflowEventBus:[41] - Publish event: TaskDispatchedLifecycleEvent{task=wow, executorHost='172.28.0.6:1234'}
+[WI-3][TI-0] - 2025-11-06 21:18:11.966 INFO  [ds-workflow-eventbus-worker-17] o.a.d.s.m.e.t.l.h.AbstractTaskLifecycleEventHandler:[47] - Fired task wow TaskDispatchedLifecycleEvent{task=wow, executorHost='172.28.0.6:1234'} with state SUBMITTED_SUCCESS
+[WI-0][TI-0] - 2025-11-06 21:18:11.966 INFO  [MasterRpcServer-methodInvoker-10] o.a.d.s.m.e.WorkflowEventBus:[41] - Publish event: TaskRunningLifecycleEvent{task=wow, logPath='/opt/dolphinscheduler/worker-server/logs/20251106/156676755523488/2/3/3.log', startTime=Thu Nov 06 21:18:11 CST 2025}
+[WI-3][TI-0] - 2025-11-06 21:18:11.987 INFO  [ds-workflow-eventbus-worker-17] o.a.d.s.m.e.t.l.h.AbstractTaskLifecycleEventHandler:[47] - Fired task wow TaskRunningLifecycleEvent{task=wow, logPath='/opt/dolphinscheduler/worker-server/logs/20251106/156676755523488/2/3/3.log', startTime=Thu Nov 06 21:18:11 CST 2025} with state DISPATCH
+[WI-0][TI-0] - 2025-11-06 21:18:11.989 INFO  [MasterRpcServer-methodInvoker-11] o.a.d.s.m.e.WorkflowEventBus:[41] - Publish event: TaskRunningLifecycleEvent{task=wow, runtimeContext=null}
+[WI-3][TI-0] - 2025-11-06 21:18:12.101 INFO  [ds-workflow-eventbus-worker-5] o.a.d.s.m.e.t.l.h.AbstractTaskLifecycleEventHandler:[47] - Fired task wow TaskRunningLifecycleEvent{task=wow, runtimeContext=null} with state RUNNING_EXECUTION
+[WI-0][TI-0] - 2025-11-06 21:18:12.987 INFO  [MasterRpcServer-methodInvoker-12] o.a.d.s.m.e.WorkflowEventBus:[41] - Publish event: TaskFailedLifecycleEvent{task=wow, endTime=Thu Nov 06 21:18:12 CST 2025}
+[WI-3][TI-0] - 2025-11-06 21:18:13.014 INFO  [ds-workflow-eventbus-worker-15] o.a.d.s.m.e.WorkflowEventBus:[41] - Publish event: WorkflowTopologyLogicalTransitionWithTaskFinishLifecycleEvent{task=wowtaskState=FAILURE}
+[WI-3][TI-0] - 2025-11-06 21:18:13.022 INFO  [ds-workflow-eventbus-worker-15] o.a.d.s.m.e.t.l.h.AbstractTaskLifecycleEventHandler:[47] - Fired task wow TaskFailedLifecycleEvent{task=wow, endTime=Thu Nov 06 21:18:12 CST 2025} with state RUNNING_EXECUTION
+[WI-3][TI-0] - 2025-11-06 21:18:13.023 INFO  [ds-workflow-eventbus-worker-15] o.a.d.s.m.e.w.l.h.AbstractWorkflowLifecycleEventHandler:[47] - Begin fire workflow wow-20251106211811230 LifecycleEvent[WorkflowTopologyLogicalTransitionWithTaskFinishLifecycleEvent{task=wowtaskState=FAILURE}] with state: RUNNING_EXECUTION
+[WI-3][TI-0] - 2025-11-06 21:18:13.027 INFO  [ds-workflow-eventbus-worker-15] o.a.d.s.m.e.WorkflowEventBus:[41] - Publish event: WorkflowFailedLifecycleEvent{workflow=wow-20251106211811230}
+[WI-3][TI-0] - 2025-11-06 21:18:13.028 INFO  [ds-workflow-eventbus-worker-15] o.a.d.s.m.e.w.l.h.AbstractWorkflowLifecycleEventHandler:[52] - Fired workflow wow-20251106211811230 LifecycleEvent[WorkflowTopologyLogicalTransitionWithTaskFinishLifecycleEvent{task=wowtaskState=FAILURE}] with state: RUNNING_EXECUTION
+[WI-3][TI-0] - 2025-11-06 21:18:13.029 INFO  [ds-workflow-eventbus-worker-15] o.a.d.s.m.e.w.l.h.AbstractWorkflowLifecycleEventHandler:[47] - Begin fire workflow wow-20251106211811230 LifecycleEvent[WorkflowFailedLifecycleEvent{workflow=wow-20251106211811230}] with state: RUNNING_EXECUTION
+[WI-3][TI-0] - 2025-11-06 21:18:13.039 INFO  [ds-workflow-eventbus-worker-15] o.a.d.s.m.e.w.s.AbstractWorkflowStateAction:[154] - Success set WorkflowExecuteRunnable: wow-20251106211811230 state from: RUNNING_EXECUTION to FAILURE
+[WI-3][TI-0] - 2025-11-06 21:18:13.039 INFO  [ds-workflow-eventbus-worker-15] o.a.d.s.m.e.WorkflowEventBus:[41] - Publish event: WorkflowFinalizeLifecycleEvent{workflow=wow-20251106211811230}
+[WI-3][TI-0] - 2025-11-06 21:18:13.040 INFO  [ds-workflow-eventbus-worker-15] o.a.d.s.m.e.w.l.h.AbstractWorkflowLifecycleEventHandler:[52] - Fired workflow wow-20251106211811230 LifecycleEvent[WorkflowFailedLifecycleEvent{workflow=wow-20251106211811230}] with state: FAILURE
+[WI-3][TI-0] - 2025-11-06 21:18:13.041 INFO  [ds-workflow-eventbus-worker-15] o.a.d.s.m.e.w.l.h.AbstractWorkflowLifecycleEventHandler:[47] - Begin fire workflow wow-20251106211811230 LifecycleEvent[WorkflowFinalizeLifecycleEvent{workflow=wow-20251106211811230}] with state: FAILURE
+[WI-3][TI-0] - 2025-11-06 21:18:13.042 INFO  [ds-workflow-eventbus-worker-15] o.a.d.s.m.e.w.s.AbstractWorkflowStateAction:[193] - 
+********************************************************************************
+                    Workflow Instance Detail
+********************************************************************************
+Workflow Instance Name:  wow-20251106211811230
+Command Type:            START_PROCESS
+State:                   FAILURE
+StartNodes:              [wow]
+TotalTasks:              1
+Host:                    172.28.0.6:5678
+Is SubWorkflow:          NO
+Run Times:               1
+Tenant:                  cpy
+Work Group:              default
+EventBusSummary:         WorkflowEventBusSummary{eventCount=10, fireSuccessEventCount=10, fireFailedEventCount=0}
+Schedule Time:           null
+Start Time:              Thu Nov 06 21:18:11 CST 2025
+Restart Time:            Thu Nov 06 21:18:11 CST 2025
+End Time:                Thu Nov 06 21:18:13 CST 2025
+[WI-3][TI-0] - 2025-11-06 21:18:13.044 INFO  [ds-workflow-eventbus-worker-15] o.a.d.s.m.e.w.s.AbstractWorkflowStateAction:[199] - Successfully finalize WorkflowExecuteRunnable: wow-20251106211811230
+[WI-3][TI-0] - 2025-11-06 21:18:13.045 INFO  [ds-workflow-eventbus-worker-15] o.a.d.s.m.e.w.l.h.AbstractWorkflowLifecycleEventHandler:[52] - Fired workflow wow-20251106211811230 LifecycleEvent[WorkflowFinalizeLifecycleEvent{workflow=wow-20251106211811230}] with state: FAILURE
+[WI-0][TI-0] - 2025-11-06 21:18:40.996 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9002593422256387 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:18:41.001 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:18:41.548 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9002593422256387 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:18:41.572 WARN  [Curator-TreeCache-0] o.a.d.s.m.c.MasterSlotManager:[75] - Do rebalance failed, cannot found the current master: 172.28.0.6:5678 in the normal master clusters: []. Please check the current master server status
+[WI-0][TI-0] - 2025-11-06 21:18:42.014 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.IdSlotBasedCommandFetcher:[60] - MasterSlotManager check slot (-1 -> 1)is invalidated.
+[WI-0][TI-0] - 2025-11-06 21:18:42.581 INFO  [Curator-TreeCache-0] o.a.d.s.m.c.MasterSlotManager:[89] - Do rebalance success, current master slot: 0, total master slots: 1
+[WI-0][TI-0] - 2025-11-06 21:23:16.318 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.900152742661646 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:23:16.320 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:23:17.079 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.900152742661646 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:23:17.093 WARN  [Curator-TreeCache-0] o.a.d.s.m.c.MasterSlotManager:[75] - Do rebalance failed, cannot found the current master: 172.28.0.6:5678 in the normal master clusters: []. Please check the current master server status
+[WI-0][TI-0] - 2025-11-06 21:23:17.321 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.IdSlotBasedCommandFetcher:[60] - MasterSlotManager check slot (-1 -> 1)is invalidated.
+[WI-0][TI-0] - 2025-11-06 21:23:18.127 INFO  [Curator-TreeCache-0] o.a.d.s.m.c.MasterSlotManager:[89] - Do rebalance success, current master slot: 0, total master slots: 1
+[WI-0][TI-0] - 2025-11-06 21:24:26.864 INFO  [MasterCommandHandleThreadPool] o.a.d.s.m.e.WorkflowEventBus:[41] - Publish event: WorkflowStartLifecycleEvent{workflow=wow-20251106212425978}
+[WI-0][TI-0] - 2025-11-06 21:24:26.867 INFO  [MasterCommandHandleThreadPool] o.a.d.s.m.e.c.CommandEngine:[174] - Success bootstrap command {
+  "id" : 4,
+  "commandType" : "START_PROCESS",
+  "workflowDefinitionCode" : 156676755523488,
+  "workflowDefinitionVersion" : 4,
+  "workflowInstanceId" : 4,
+  "commandParam" : "{\"commandType\":\"START_PROCESS\",\"subWorkflowInstance\":false,\"startNodes\":[],\"commandParams\":[],\"timeZone\":\"Asia/Shanghai\"}",
+  "workflowInstancePriority" : "MEDIUM",
+  "executorId" : 0,
+  "taskDependType" : "TASK_POST",
+  "failureStrategy" : "CONTINUE",
+  "warningType" : "NONE",
+  "warningGroupId" : null,
+  "scheduleTime" : null,
+  "startTime" : null,
+  "updateTime" : "2025-11-06 21:24:26",
+  "workerGroup" : null,
+  "tenantCode" : "default",
+  "environmentCode" : -1,
+  "dryRun" : 0
+}
+[WI-4][TI-0] - 2025-11-06 21:24:26.913 INFO  [ds-workflow-eventbus-worker-9] o.a.d.s.m.e.w.l.h.AbstractWorkflowLifecycleEventHandler:[47] - Begin fire workflow wow-20251106212425978 LifecycleEvent[WorkflowStartLifecycleEvent{workflow=wow-20251106212425978}] with state: RUNNING_EXECUTION
+[WI-4][TI-0] - 2025-11-06 21:24:26.915 INFO  [ds-workflow-eventbus-worker-9] o.a.d.s.m.e.WorkflowEventBus:[41] - Publish event: TaskStartLifecycleEvent{task=wow}
+[WI-4][TI-0] - 2025-11-06 21:24:26.916 INFO  [ds-workflow-eventbus-worker-9] o.a.d.s.m.e.w.l.h.AbstractWorkflowLifecycleEventHandler:[52] - Fired workflow wow-20251106212425978 LifecycleEvent[WorkflowStartLifecycleEvent{workflow=wow-20251106212425978}] with state: RUNNING_EXECUTION
+[WI-4][TI-0] - 2025-11-06 21:24:26.923 INFO  [ds-workflow-eventbus-worker-9] o.a.d.s.m.e.WorkflowEventBus:[41] - Publish event: TaskDispatchLifecycleEvent{task=wow}
+[WI-4][TI-0] - 2025-11-06 21:24:26.924 INFO  [ds-workflow-eventbus-worker-9] o.a.d.s.m.e.t.l.h.AbstractTaskLifecycleEventHandler:[47] - Fired task wow TaskStartLifecycleEvent{task=wow} with state SUBMITTED_SUCCESS
+[WI-4][TI-0] - 2025-11-06 21:24:26.927 INFO  [ds-workflow-eventbus-worker-9] o.a.d.s.m.e.t.d.WorkerGroupDispatcherCoordinator:[59] - Success add Task[id=4] to WorkerGroupDispatcher[name=default]
+[WI-4][TI-0] - 2025-11-06 21:24:26.929 INFO  [ds-workflow-eventbus-worker-9] o.a.d.s.m.e.t.l.h.AbstractTaskLifecycleEventHandler:[47] - Fired task wow TaskDispatchLifecycleEvent{task=wow} with state SUBMITTED_SUCCESS
+[WI-0][TI-0] - 2025-11-06 21:24:26.975 INFO  [MasterRpcServer-methodInvoker-14] o.a.d.s.m.e.WorkflowEventBus:[41] - Publish event: TaskDispatchedLifecycleEvent{task=wow, executorHost='172.28.0.6:1234'}
+[WI-4][TI-0] - 2025-11-06 21:24:27.042 INFO  [ds-workflow-eventbus-worker-7] o.a.d.s.m.e.t.l.h.AbstractTaskLifecycleEventHandler:[47] - Fired task wow TaskDispatchedLifecycleEvent{task=wow, executorHost='172.28.0.6:1234'} with state SUBMITTED_SUCCESS
+[WI-0][TI-0] - 2025-11-06 21:24:27.045 INFO  [MasterRpcServer-methodInvoker-15] o.a.d.s.m.e.WorkflowEventBus:[41] - Publish event: TaskRunningLifecycleEvent{task=wow, logPath='/opt/dolphinscheduler/worker-server/logs/20251106/156676755523488/4/4/4.log', startTime=Thu Nov 06 21:24:26 CST 2025}
+[WI-0][TI-0] - 2025-11-06 21:24:27.171 INFO  [MasterRpcServer-methodInvoker-16] o.a.d.s.m.e.WorkflowEventBus:[41] - Publish event: TaskRunningLifecycleEvent{task=wow, runtimeContext=null}
+[WI-4][TI-0] - 2025-11-06 21:24:27.174 INFO  [ds-workflow-eventbus-worker-22] o.a.d.s.m.e.t.l.h.AbstractTaskLifecycleEventHandler:[47] - Fired task wow TaskRunningLifecycleEvent{task=wow, logPath='/opt/dolphinscheduler/worker-server/logs/20251106/156676755523488/4/4/4.log', startTime=Thu Nov 06 21:24:26 CST 2025} with state DISPATCH
+[WI-4][TI-0] - 2025-11-06 21:24:27.189 INFO  [ds-workflow-eventbus-worker-22] o.a.d.s.m.e.t.l.h.AbstractTaskLifecycleEventHandler:[47] - Fired task wow TaskRunningLifecycleEvent{task=wow, runtimeContext=null} with state RUNNING_EXECUTION
+[WI-0][TI-0] - 2025-11-06 21:24:28.035 INFO  [MasterRpcServer-methodInvoker-17] o.a.d.s.m.e.WorkflowEventBus:[41] - Publish event: TaskFailedLifecycleEvent{task=wow, endTime=Thu Nov 06 21:24:27 CST 2025}
+[WI-4][TI-0] - 2025-11-06 21:24:28.103 INFO  [ds-workflow-eventbus-worker-18] o.a.d.s.m.e.WorkflowEventBus:[41] - Publish event: WorkflowTopologyLogicalTransitionWithTaskFinishLifecycleEvent{task=wowtaskState=FAILURE}
+[WI-4][TI-0] - 2025-11-06 21:24:28.113 INFO  [ds-workflow-eventbus-worker-18] o.a.d.s.m.e.t.l.h.AbstractTaskLifecycleEventHandler:[47] - Fired task wow TaskFailedLifecycleEvent{task=wow, endTime=Thu Nov 06 21:24:27 CST 2025} with state RUNNING_EXECUTION
+[WI-4][TI-0] - 2025-11-06 21:24:28.114 INFO  [ds-workflow-eventbus-worker-18] o.a.d.s.m.e.w.l.h.AbstractWorkflowLifecycleEventHandler:[47] - Begin fire workflow wow-20251106212425978 LifecycleEvent[WorkflowTopologyLogicalTransitionWithTaskFinishLifecycleEvent{task=wowtaskState=FAILURE}] with state: RUNNING_EXECUTION
+[WI-4][TI-0] - 2025-11-06 21:24:28.115 INFO  [ds-workflow-eventbus-worker-18] o.a.d.s.m.e.WorkflowEventBus:[41] - Publish event: WorkflowFailedLifecycleEvent{workflow=wow-20251106212425978}
+[WI-4][TI-0] - 2025-11-06 21:24:28.116 INFO  [ds-workflow-eventbus-worker-18] o.a.d.s.m.e.w.l.h.AbstractWorkflowLifecycleEventHandler:[52] - Fired workflow wow-20251106212425978 LifecycleEvent[WorkflowTopologyLogicalTransitionWithTaskFinishLifecycleEvent{task=wowtaskState=FAILURE}] with state: RUNNING_EXECUTION
+[WI-4][TI-0] - 2025-11-06 21:24:28.116 INFO  [ds-workflow-eventbus-worker-18] o.a.d.s.m.e.w.l.h.AbstractWorkflowLifecycleEventHandler:[47] - Begin fire workflow wow-20251106212425978 LifecycleEvent[WorkflowFailedLifecycleEvent{workflow=wow-20251106212425978}] with state: RUNNING_EXECUTION
+[WI-4][TI-0] - 2025-11-06 21:24:28.126 INFO  [ds-workflow-eventbus-worker-18] o.a.d.s.m.e.w.s.AbstractWorkflowStateAction:[154] - Success set WorkflowExecuteRunnable: wow-20251106212425978 state from: RUNNING_EXECUTION to FAILURE
+[WI-4][TI-0] - 2025-11-06 21:24:28.127 INFO  [ds-workflow-eventbus-worker-18] o.a.d.s.m.e.WorkflowEventBus:[41] - Publish event: WorkflowFinalizeLifecycleEvent{workflow=wow-20251106212425978}
+[WI-4][TI-0] - 2025-11-06 21:24:28.128 INFO  [ds-workflow-eventbus-worker-18] o.a.d.s.m.e.w.l.h.AbstractWorkflowLifecycleEventHandler:[52] - Fired workflow wow-20251106212425978 LifecycleEvent[WorkflowFailedLifecycleEvent{workflow=wow-20251106212425978}] with state: FAILURE
+[WI-4][TI-0] - 2025-11-06 21:24:28.129 INFO  [ds-workflow-eventbus-worker-18] o.a.d.s.m.e.w.l.h.AbstractWorkflowLifecycleEventHandler:[47] - Begin fire workflow wow-20251106212425978 LifecycleEvent[WorkflowFinalizeLifecycleEvent{workflow=wow-20251106212425978}] with state: FAILURE
+[WI-4][TI-0] - 2025-11-06 21:24:28.130 INFO  [ds-workflow-eventbus-worker-18] o.a.d.s.m.e.w.s.AbstractWorkflowStateAction:[193] - 
+********************************************************************************
+                    Workflow Instance Detail
+********************************************************************************
+Workflow Instance Name:  wow-20251106212425978
+Command Type:            START_PROCESS
+State:                   FAILURE
+StartNodes:              [wow]
+TotalTasks:              1
+Host:                    172.28.0.6:5678
+Is SubWorkflow:          NO
+Run Times:               1
+Tenant:                  cpy
+Work Group:              default
+EventBusSummary:         WorkflowEventBusSummary{eventCount=10, fireSuccessEventCount=10, fireFailedEventCount=0}
+Schedule Time:           null
+Start Time:              Thu Nov 06 21:24:26 CST 2025
+Restart Time:            Thu Nov 06 21:24:26 CST 2025
+End Time:                Thu Nov 06 21:24:28 CST 2025
+[WI-4][TI-0] - 2025-11-06 21:24:28.133 INFO  [ds-workflow-eventbus-worker-18] o.a.d.s.m.e.w.s.AbstractWorkflowStateAction:[199] - Successfully finalize WorkflowExecuteRunnable: wow-20251106212425978
+[WI-4][TI-0] - 2025-11-06 21:24:28.135 INFO  [ds-workflow-eventbus-worker-18] o.a.d.s.m.e.w.l.h.AbstractWorkflowLifecycleEventHandler:[52] - Fired workflow wow-20251106212425978 LifecycleEvent[WorkflowFinalizeLifecycleEvent{workflow=wow-20251106212425978}] with state: FAILURE
+[WI-0][TI-0] - 2025-11-06 21:24:31.894 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9000506473045825 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:24:31.896 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:24:32.203 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9000506473045825 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:24:32.212 WARN  [Curator-TreeCache-0] o.a.d.s.m.c.MasterSlotManager:[75] - Do rebalance failed, cannot found the current master: 172.28.0.6:5678 in the normal master clusters: []. Please check the current master server status
+[WI-0][TI-0] - 2025-11-06 21:24:32.900 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9042831004157883 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:24:32.901 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:24:33.211 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9042831004157883 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:24:33.907 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9003889632917145 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:24:33.910 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:24:34.213 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9003889632917145 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:24:34.916 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9003889632917145 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:24:34.917 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:24:35.214 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9003889632917145 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:24:35.924 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9004835516372292 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:24:35.926 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:24:36.220 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9004835516372292 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:24:36.932 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9004835516372292 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:24:36.932 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:24:37.221 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9004835516372292 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:24:37.937 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9005275927716487 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:24:37.938 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:24:38.222 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9005275927716487 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:24:38.941 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9008318769730929 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:24:38.942 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:24:39.224 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9008318769730929 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:24:39.945 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9008318769730929 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:24:39.947 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:24:40.229 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9008318769730929 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:24:40.955 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9010520826451907 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:24:40.956 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:24:41.231 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9010520826451907 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:24:41.962 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9010520826451907 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:24:41.963 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:24:42.233 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9010520826451907 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:24:42.250 WARN  [Curator-TreeCache-0] o.a.d.s.m.c.MasterSlotManager:[75] - Do rebalance failed, cannot found the current master: 172.28.0.6:5678 in the normal master clusters: []. Please check the current master server status
+[WI-0][TI-0] - 2025-11-06 21:24:42.971 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9010836120936955 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:24:42.972 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:24:43.247 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9010836120936955 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:24:43.978 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9010711004077808 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:24:43.980 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:24:44.250 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9010711004077808 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:24:44.988 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9009534905601833 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:24:44.992 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:24:45.251 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9009534905601833 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:24:46.000 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9009534905601833 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:24:46.001 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:24:46.254 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9009534905601833 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:24:47.006 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9003619380501389 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:24:47.007 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:24:47.253 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9003619380501389 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:24:48.010 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9009925270202369 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:24:48.011 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:24:48.255 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9009925270202369 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:24:49.018 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9009845195412516 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:24:49.019 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:24:49.256 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9009845195412516 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:24:50.025 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9009915260853637 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:24:50.027 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:24:50.260 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9009915260853637 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:24:51.036 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9009299685906637 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:24:51.039 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:24:51.262 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9009299685906637 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:24:52.043 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9009299685906637 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:24:52.044 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:24:52.266 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9009299685906637 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:24:52.282 WARN  [Curator-TreeCache-0] o.a.d.s.m.c.MasterSlotManager:[75] - Do rebalance failed, cannot found the current master: 172.28.0.6:5678 in the normal master clusters: []. Please check the current master server status
+[WI-0][TI-0] - 2025-11-06 21:24:53.054 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9009930274876735 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:24:53.055 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:24:53.281 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9009930274876735 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:24:54.068 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9009930274876735 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:24:54.070 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:24:54.287 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9009930274876735 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:24:55.080 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9009930274876735 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:24:55.082 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:24:55.290 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9009930274876735 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:24:56.093 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9009930274876735 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:24:56.096 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:24:56.294 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9009930274876735 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:24:57.105 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9009930274876735 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:24:57.108 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:24:57.298 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9009930274876735 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:24:58.118 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9009930274876735 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:24:58.120 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:24:58.299 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9009930274876735 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:24:59.129 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9010245569361784 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:24:59.132 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:24:59.302 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9010245569361784 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:25:00.137 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9009509882230002 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:25:00.139 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:25:00.306 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9009509882230002 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:25:01.148 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9010130461851369 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:25:01.150 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:25:01.307 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9010130461851369 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:25:02.160 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9010130461851369 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:25:02.162 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:25:02.309 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9010130461851369 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:25:02.340 WARN  [Curator-TreeCache-0] o.a.d.s.m.c.MasterSlotManager:[75] - Do rebalance failed, cannot found the current master: 172.28.0.6:5678 in the normal master clusters: []. Please check the current master server status
+[WI-0][TI-0] - 2025-11-06 21:25:03.167 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9010130461851369 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:25:03.170 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:25:03.337 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9010130461851369 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:25:04.177 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.IdSlotBasedCommandFetcher:[60] - MasterSlotManager check slot (-1 -> 1)is invalidated.
+[WI-0][TI-0] - 2025-11-06 21:25:04.352 INFO  [Curator-TreeCache-0] o.a.d.s.m.c.MasterSlotManager:[89] - Do rebalance success, current master slot: 0, total master slots: 1
+[WI-0][TI-0] - 2025-11-06 21:27:21.131 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9024053465937185 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:27:21.133 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:27:21.688 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9024053465937185 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:27:21.699 WARN  [Curator-TreeCache-0] o.a.d.s.m.c.MasterSlotManager:[75] - Do rebalance failed, cannot found the current master: 172.28.0.6:5678 in the normal master clusters: []. Please check the current master server status
+[WI-0][TI-0] - 2025-11-06 21:27:22.137 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.IdSlotBasedCommandFetcher:[60] - MasterSlotManager check slot (-1 -> 1)is invalidated.
+[WI-0][TI-0] - 2025-11-06 21:27:22.707 INFO  [Curator-TreeCache-0] o.a.d.s.m.c.MasterSlotManager:[89] - Do rebalance success, current master slot: 0, total master slots: 1
+[WI-0][TI-0] - 2025-11-06 21:28:49.954 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9000086080399092 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:28:49.957 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:28:50.842 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9000086080399092 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:28:50.852 WARN  [Curator-TreeCache-0] o.a.d.s.m.c.MasterSlotManager:[75] - Do rebalance failed, cannot found the current master: 172.28.0.6:5678 in the normal master clusters: []. Please check the current master server status
+[WI-0][TI-0] - 2025-11-06 21:28:50.966 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.IdSlotBasedCommandFetcher:[60] - MasterSlotManager check slot (-1 -> 1)is invalidated.
+[WI-0][TI-0] - 2025-11-06 21:28:51.858 INFO  [Curator-TreeCache-0] o.a.d.s.m.c.MasterSlotManager:[89] - Do rebalance success, current master slot: 0, total master slots: 1
+[WI-0][TI-0] - 2025-11-06 21:29:00.064 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9000951889064386 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:00.088 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:29:00.858 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9000951889064386 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:00.870 WARN  [Curator-TreeCache-0] o.a.d.s.m.c.MasterSlotManager:[75] - Do rebalance failed, cannot found the current master: 172.28.0.6:5678 in the normal master clusters: []. Please check the current master server status
+[WI-0][TI-0] - 2025-11-06 21:29:01.110 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9003739492686169 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:01.111 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:29:01.869 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9003739492686169 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:02.117 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9004885563115951 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:02.118 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:29:02.870 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9004885563115951 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:03.120 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9006777330026244 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:03.121 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:29:03.877 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9006777330026244 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:04.124 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9007092624511294 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:04.125 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:29:04.878 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9007092624511294 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:05.127 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9007723213481391 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:05.128 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:29:05.880 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9007723213481391 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:06.132 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.900803850796644 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:06.134 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:29:06.885 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.900803850796644 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:07.141 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9012457635431493 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:07.142 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:29:07.888 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9012457635431493 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:08.146 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.IdSlotBasedCommandFetcher:[60] - MasterSlotManager check slot (-1 -> 1)is invalidated.
+[WI-0][TI-0] - 2025-11-06 21:29:08.915 INFO  [Curator-TreeCache-0] o.a.d.s.m.c.MasterSlotManager:[89] - Do rebalance success, current master slot: 0, total master slots: 1
+[WI-0][TI-0] - 2025-11-06 21:29:20.936 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9001262178875069 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:20.945 WARN  [Curator-TreeCache-0] o.a.d.s.m.c.MasterSlotManager:[75] - Do rebalance failed, cannot found the current master: 172.28.0.6:5678 in the normal master clusters: []. Please check the current master server status
+[WI-0][TI-0] - 2025-11-06 21:29:21.241 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9001262178875069 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:21.243 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:29:21.947 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9001262178875069 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:22.244 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9001262178875069 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:22.245 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:29:22.957 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9001577473360118 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:23.247 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9001577473360118 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:23.249 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:29:23.963 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9006502072936122 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:24.250 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9006502072936122 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:24.253 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:29:24.971 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9006502072936122 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:25.256 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9006502072936122 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:25.263 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:29:25.978 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9006502072936122 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:26.264 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9006502072936122 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:26.265 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:29:26.986 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9006502072936122 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:27.267 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9006502072936122 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:27.270 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:29:27.990 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9006502072936122 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:28.271 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9006502072936122 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:28.271 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:29:28.994 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9007132661906221 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:29.273 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9007132661906221 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:29.275 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:29:29.997 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9007763250876318 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:30.277 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9007763250876318 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:30.278 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:29:31.001 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9006477049564293 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:31.010 WARN  [Curator-TreeCache-0] o.a.d.s.m.c.MasterSlotManager:[75] - Do rebalance failed, cannot found the current master: 172.28.0.6:5678 in the normal master clusters: []. Please check the current master server status
+[WI-0][TI-0] - 2025-11-06 21:29:31.279 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9006477049564293 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:31.280 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:29:32.016 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9010630929287955 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:32.281 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9010630929287955 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:32.285 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:29:33.024 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9010630929287955 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:33.287 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9010630929287955 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:33.288 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:29:34.031 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9010946223773004 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:34.289 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9010946223773004 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:34.290 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:29:35.037 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9010946223773004 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:35.291 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9010946223773004 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:35.293 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:29:36.044 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9011541780022541 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:36.297 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9011541780022541 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:36.299 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:29:37.047 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9011541780022541 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:37.300 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9011541780022541 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:37.301 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:29:38.057 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9014519561270227 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:38.302 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9014519561270227 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:38.305 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:29:39.064 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9008448891264441 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:39.305 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9008448891264441 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:39.306 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:29:40.073 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9008448891264441 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:40.308 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9008448891264441 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:40.309 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:29:41.076 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9010405718941491 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:41.086 WARN  [Curator-TreeCache-0] o.a.d.s.m.c.MasterSlotManager:[75] - Do rebalance failed, cannot found the current master: 172.28.0.6:5678 in the normal master clusters: []. Please check the current master server status
+[WI-0][TI-0] - 2025-11-06 21:29:41.310 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9010405718941491 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:41.311 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:29:42.091 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9010405718941491 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:42.312 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9010405718941491 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:42.313 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:29:43.098 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9010405718941491 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:43.315 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9010405718941491 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:43.318 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:29:44.108 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9010405718941491 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:44.324 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9010405718941491 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:44.326 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:29:45.118 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.901072101342654 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:45.334 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.901072101342654 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:45.337 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:29:46.127 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.901051582177754 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:46.338 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.901051582177754 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:46.345 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:29:47.130 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.900867910628527 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:47.345 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.900867910628527 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:47.346 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:29:48.137 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9008994400770319 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:48.348 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9008994400770319 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:48.349 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:29:49.140 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9008994400770319 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:49.351 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9008994400770319 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:49.353 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:29:50.146 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9008994400770319 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:50.354 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9008994400770319 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:50.357 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:29:51.152 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9012302490526152 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:51.161 WARN  [Curator-TreeCache-0] o.a.d.s.m.c.MasterSlotManager:[75] - Do rebalance failed, cannot found the current master: 172.28.0.6:5678 in the normal master clusters: []. Please check the current master server status
+[WI-0][TI-0] - 2025-11-06 21:29:51.361 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9012302490526152 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:51.363 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:29:52.164 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9013878962951397 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:52.365 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9013878962951397 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:52.368 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:29:53.169 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9014194257436445 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:53.371 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9014194257436445 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:53.372 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:29:54.177 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9005456095993658 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:54.374 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9005456095993658 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:54.377 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:29:55.186 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9005456095993658 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:55.380 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9005456095993658 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:55.383 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:29:56.191 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9005446086644926 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:56.385 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9005446086644926 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:56.389 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:29:57.197 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9005761381129975 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:57.392 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9005761381129975 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:57.393 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:29:58.201 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9006076675615025 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:58.395 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9006076675615025 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:58.398 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:29:59.208 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9006076675615025 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:59.401 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9006076675615025 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:29:59.402 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:30:00.216 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9006076675615025 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:00.404 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9006076675615025 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:00.406 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:30:01.226 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9005706329711951 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:01.242 WARN  [Curator-TreeCache-0] o.a.d.s.m.c.MasterSlotManager:[75] - Do rebalance failed, cannot found the current master: 172.28.0.6:5678 in the normal master clusters: []. Please check the current master server status
+[WI-0][TI-0] - 2025-11-06 21:30:01.409 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9005706329711951 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:01.414 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:30:02.245 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9007853335014904 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:02.416 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9007853335014904 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:02.417 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:30:03.249 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9008483923985002 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:03.418 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9008483923985002 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:03.420 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:30:04.253 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9008483923985002 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:04.422 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9008483923985002 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:04.424 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:30:05.263 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9006907451559757 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:05.426 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9006907451559757 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:05.429 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:30:06.270 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9007538040529854 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:06.429 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9007538040529854 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:06.430 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:30:07.275 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9008478919310636 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:07.434 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9008478919310636 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:07.436 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:30:08.290 INFO  [Curator-TreeCache-0] o.a.d.s.m.c.MasterSlotManager:[89] - Do rebalance success, current master slot: 0, total master slots: 1
+[WI-0][TI-0] - 2025-11-06 21:30:09.290 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9034478202641267 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:09.308 WARN  [Curator-TreeCache-0] o.a.d.s.m.c.MasterSlotManager:[75] - Do rebalance failed, cannot found the current master: 172.28.0.6:5678 in the normal master clusters: []. Please check the current master server status
+[WI-0][TI-0] - 2025-11-06 21:30:09.445 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9034478202641267 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:09.446 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:30:10.317 INFO  [Curator-TreeCache-0] o.a.d.s.m.c.MasterSlotManager:[89] - Do rebalance success, current master slot: 0, total master slots: 1
+[WI-0][TI-0] - 2025-11-06 21:30:15.332 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9000421393581606 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:15.339 WARN  [Curator-TreeCache-0] o.a.d.s.m.c.MasterSlotManager:[75] - Do rebalance failed, cannot found the current master: 172.28.0.6:5678 in the normal master clusters: []. Please check the current master server status
+[WI-0][TI-0] - 2025-11-06 21:30:15.470 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9000421393581606 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:15.472 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:30:16.341 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9006877423513562 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:16.473 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9006877423513562 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:16.475 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:30:17.347 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9003053852298046 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:17.479 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9003053852298046 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:17.481 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:30:18.354 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9003053852298046 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:18.482 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9003053852298046 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:18.484 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:30:19.361 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9004860539744121 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:19.485 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9004860539744121 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:19.486 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:30:20.365 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9004860539744121 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:20.489 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9004860539744121 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:20.489 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:30:21.374 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9007312830183392 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:21.491 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9007312830183392 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:21.495 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:30:22.378 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9007147675929318 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:22.498 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9007147675929318 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:22.500 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:30:23.382 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9007147675929318 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:23.501 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9007147675929318 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:23.503 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:30:24.385 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9014084154600397 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:24.508 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9014084154600397 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:24.508 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:30:25.392 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9012858009380762 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:25.399 WARN  [Curator-TreeCache-0] o.a.d.s.m.c.MasterSlotManager:[75] - Do rebalance failed, cannot found the current master: 172.28.0.6:5678 in the normal master clusters: []. Please check the current master server status
+[WI-0][TI-0] - 2025-11-06 21:30:25.510 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9012858009380762 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:25.511 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:30:26.405 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9012853004706396 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:26.512 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9012853004706396 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:26.514 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:30:27.409 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9013018158960469 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:27.515 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9013018158960469 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:27.516 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:30:28.415 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9013018158960469 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:28.518 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9013018158960469 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:28.519 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:30:29.419 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9013333453445518 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:29.521 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9013333453445518 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:29.523 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:30:30.427 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9013964042415616 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:30.528 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9013964042415616 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:30.530 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:30:31.433 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9020425077021939 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:31.532 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9020425077021939 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:31.535 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:30:32.437 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9024649022186723 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:32.536 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9024649022186723 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:32.537 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:30:33.442 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9028432556007311 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:33.539 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9028432556007311 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:33.539 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:30:34.447 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9031585500857802 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:34.540 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9031585500857802 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:34.542 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:30:35.451 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9032531384312948 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:35.459 WARN  [Curator-TreeCache-0] o.a.d.s.m.c.MasterSlotManager:[75] - Do rebalance failed, cannot found the current master: 172.28.0.6:5678 in the normal master clusters: []. Please check the current master server status
+[WI-0][TI-0] - 2025-11-06 21:30:35.543 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9032531384312948 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:35.546 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:30:36.465 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9033792562253145 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:36.549 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9033792562253145 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:36.550 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:30:37.476 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9033792562253145 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:37.552 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9033792562253145 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:37.555 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:30:38.482 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9037886385884416 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:38.557 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9037886385884416 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:38.561 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:30:39.491 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9040403737090442 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:39.565 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9040403737090442 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:39.570 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:30:40.497 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9023017498343453 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:40.572 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9023017498343453 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:40.572 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:30:41.505 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9023628068616087 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:41.574 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9023628068616087 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:41.575 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:30:42.510 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9023628068616087 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:42.576 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9023628068616087 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:42.579 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:30:43.514 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9023628068616087 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:43.582 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9023628068616087 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:43.584 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:30:44.517 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9023628068616087 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:44.585 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9023628068616087 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:44.587 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:30:45.526 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9023628068616087 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:45.543 WARN  [Curator-TreeCache-0] o.a.d.s.m.c.MasterSlotManager:[75] - Do rebalance failed, cannot found the current master: 172.28.0.6:5678 in the normal master clusters: []. Please check the current master server status
+[WI-0][TI-0] - 2025-11-06 21:30:45.590 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9023628068616087 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:45.592 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:30:46.547 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9026160433845212 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:46.595 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9026160433845212 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:46.596 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:30:47.543 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9026160433845212 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:47.598 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9020920539784159 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:47.601 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:30:48.548 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9020920539784159 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:48.605 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9021235834269208 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:48.606 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:30:49.551 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9021235834269208 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:49.608 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9021235834269208 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:49.609 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:30:50.554 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9021235834269208 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:50.612 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9023057535738379 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:50.614 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:30:51.556 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9023057535738379 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:51.616 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.90245789567456 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:51.617 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:30:52.564 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.90245789567456 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:52.623 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9023062540412745 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:52.625 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:30:53.566 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9023062540412745 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:53.628 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9023062540412745 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:53.629 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:30:54.568 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9023062540412745 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:54.631 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9023052531064014 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:54.632 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:30:55.569 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9023052531064014 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:55.576 WARN  [Curator-TreeCache-0] o.a.d.s.m.c.MasterSlotManager:[75] - Do rebalance failed, cannot found the current master: 172.28.0.6:5678 in the normal master clusters: []. Please check the current master server status
+[WI-0][TI-0] - 2025-11-06 21:30:55.634 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9023357816200331 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:55.635 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:30:56.575 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9023357816200331 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:56.637 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9023347806851599 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:56.638 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:30:57.577 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9023347806851599 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:57.642 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9023347806851599 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:57.645 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:30:58.581 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9023347806851599 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:58.650 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9023663101336649 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:58.651 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:30:59.583 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9023663101336649 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:59.659 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9023663101336649 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:30:59.664 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:31:00.589 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9023663101336649 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:31:00.667 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9025860153383259 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:31:00.667 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:31:01.591 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9025860153383259 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:31:01.675 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9027436625808505 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:31:01.676 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:31:02.594 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9027436625808505 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:31:02.681 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9028242378381408 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:31:02.682 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:31:03.598 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9028242378381408 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:31:03.694 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9028557672866457 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:31:03.698 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:31:04.602 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9028557672866457 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:31:04.705 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9028557672866457 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:31:04.708 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:31:05.606 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9028557672866457 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:31:05.622 WARN  [Curator-TreeCache-0] o.a.d.s.m.c.MasterSlotManager:[75] - Do rebalance failed, cannot found the current master: 172.28.0.6:5678 in the normal master clusters: []. Please check the current master server status
+[WI-0][TI-0] - 2025-11-06 21:31:05.716 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9028872967351507 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:31:05.718 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:31:06.621 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9028872967351507 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:31:06.727 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9028872967351507 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:31:06.731 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:31:07.625 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9028872967351507 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:31:07.739 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9031400327906265 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:31:07.741 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:31:08.628 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9031400327906265 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:31:08.746 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9031400327906265 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:31:08.748 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:31:09.633 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9031400327906265 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:31:09.759 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9031400327906265 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:31:09.761 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:31:10.637 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9031400327906265 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:31:10.765 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9033462253744998 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:31:10.766 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:31:11.641 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9033462253744998 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:31:11.770 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9033462253744998 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:31:11.771 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:31:12.642 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9033462253744998 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:31:12.774 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9033452244396266 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:31:12.774 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:31:13.648 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9033452244396266 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:31:13.777 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9034398127851413 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:31:13.778 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:31:14.650 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9034398127851413 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:31:14.786 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9034713422336462 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:31:14.788 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:31:15.653 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9034713422336462 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:31:15.660 WARN  [Curator-TreeCache-0] o.a.d.s.m.c.MasterSlotManager:[75] - Do rebalance failed, cannot found the current master: 172.28.0.6:5678 in the normal master clusters: []. Please check the current master server status
+[WI-0][TI-0] - 2025-11-06 21:31:15.792 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9039127545127149 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:31:15.794 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:31:16.658 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9039127545127149 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:31:16.801 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9039047470337295 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:31:16.801 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:31:17.657 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9039047470337295 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:31:17.800 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9039047470337295 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:31:17.804 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:31:18.667 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9040378713718613 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:31:18.807 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9040378713718613 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:31:18.811 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:31:19.669 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9040378713718613 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:31:19.813 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9040378713718613 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:31:19.814 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:31:20.672 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9039417816240368 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:31:20.815 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9039417816240368 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:31:20.816 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:31:21.675 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9036329932156635 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:31:21.818 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9036329932156635 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:31:21.819 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:31:22.679 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9036329932156635 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:31:22.821 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9036329932156635 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:31:22.822 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:31:23.682 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9036329932156635 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:31:23.823 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9036329932156635 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:31:23.825 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:31:24.686 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9036329932156635 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:31:24.826 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.9036329932156635 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:31:24.830 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-06 21:31:25.689 INFO  [MasterHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.907172298927198 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:31:25.700 WARN  [Curator-TreeCache-0] o.a.d.s.m.c.MasterSlotManager:[75] - Do rebalance failed, cannot found the current master: 172.28.0.6:5678 in the normal master clusters: []. Please check the current master server status
+[WI-0][TI-0] - 2025-11-06 21:31:25.833 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.907172298927198 is over then the maxSystemMemoryUsagePercentageThresholds 0.9
+[WI-0][TI-0] - 2025-11-06 21:31:25.834 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.

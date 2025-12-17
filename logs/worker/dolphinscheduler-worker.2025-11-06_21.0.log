@@ -1,0 +1,1467 @@
+[WI-0][TI-0] - 2025-11-06 21:00:00.983 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8596168821679449 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:00:02.002 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8596088746889595 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:00:03.005 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8596088746889595 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:00:04.017 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8596073732866497 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:00:05.020 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8596073732866497 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:00:06.022 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8598881355185743 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:00:07.024 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8597379952875986 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:00:08.027 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8599481916109647 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:00:09.031 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8598250766215645 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:00:10.034 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8598200719471987 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:00:11.037 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8598831308442085 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:00:12.038 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8598831308442085 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:00:13.042 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8598831308442085 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:00:14.054 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8598826303767719 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:00:15.057 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8598826303767719 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:00:16.060 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8598495995259573 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:00:17.058 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8598495995259573 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:00:18.062 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8600502869680281 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:00:19.064 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8600502869680281 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:00:20.067 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8600502869680281 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:00:21.069 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8601573869994575 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:00:22.071 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8601613907389501 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:00:23.075 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8601368678345575 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:00:24.086 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8601729014899917 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:00:25.088 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8601729014899917 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:00:26.094 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8595488185965692 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:00:27.097 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8595488185965692 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:00:28.100 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8595478176616961 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:00:29.104 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8595478176616961 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:00:30.111 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8595478176616961 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:00:31.118 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8595478176616961 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:00:32.125 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8595478176616961 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:00:33.129 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8595478176616961 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:00:34.141 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8595478176616961 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:00:35.145 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8595478176616961 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:00:36.149 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8636516506416994 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:00:37.159 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8594782526880106 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:00:38.166 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8595378083129643 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:00:39.170 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8595948616007351 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:00:40.178 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8595948616007351 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:00:41.187 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.85962639104924 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:00:42.196 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.85962639104924 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:00:43.201 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.85962639104924 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:00:44.226 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8596579204977449 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:00:45.230 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8596579204977449 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:00:46.235 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8602349594521282 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:00:47.234 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8602349594521282 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:00:48.237 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8599832243315256 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:00:49.243 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8599832243315256 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:00:50.252 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8599832243315256 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:00:51.259 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8605102165422505 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:00:52.263 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8605147207491798 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:00:53.269 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8604716805496334 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:00:54.289 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8603015216211942 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:00:55.291 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8607099030494482 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:00:56.293 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8607259180074189 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:00:57.296 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8607259180074189 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:00:58.300 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8607259180074189 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:00:59.305 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8607259180074189 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:01:00.311 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8607259180074189 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:01:01.317 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8607574474559239 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:01:02.324 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8607574474559239 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:01:03.329 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8608585418781142 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:01:04.341 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8608270124296092 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:01:05.345 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8603525692997259 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:01:06.347 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8603525692997259 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:01:07.350 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8601443748461063 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:01:08.353 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8602394636590576 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:01:09.357 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8604546646567894 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:01:10.361 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8604546646567894 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:01:11.365 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8604486590475504 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:01:12.369 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8604486590475504 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:01:13.374 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8604486590475504 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:01:14.400 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8604486590475504 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:01:15.404 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8601914187851454 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:01:16.406 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8602544776821551 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:01:17.405 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8602544776821551 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:01:18.408 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8601909183177088 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:01:19.413 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8601909183177088 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:01:20.419 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8601909183177088 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:01:21.421 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8600027425615525 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:01:22.427 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8598250766215645 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:01:23.432 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8598035565217913 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:01:24.441 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8598711196257305 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:01:25.443 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8596489120838864 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:01:26.448 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8596489120838864 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:01:27.453 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8596489120838864 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:01:28.458 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8596489120838864 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:01:29.466 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8596489120838864 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:01:30.472 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8596489120838864 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:01:31.474 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8601338650299379 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:01:32.478 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8601093421255452 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:01:33.483 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8599812224617793 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:01:34.490 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8410315234428957 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:01:35.496 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8412597365939788 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:01:36.217 WARN  [Worker-Server-SendThread(zookeeper:2181)] o.a.z.ClientCnxn:[1292] - Session 0x10006006b1e0002 for server zookeeper/172.28.0.3:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+org.apache.zookeeper.ClientCnxn$EndOfStreamException: Unable to read additional data from server sessionid 0x10006006b1e0002, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1282)
+[WI-0][TI-0] - 2025-11-06 21:01:36.348 WARN  [Curator-ConnectionStateManager-0] o.a.d.p.r.z.ZookeeperConnectionStateListener:[54] - Registry suspended
+[WI-0][TI-0] - 2025-11-06 21:01:36.368 INFO  [Curator-ConnectionStateManager-0] o.a.d.s.w.r.WorkerConnectionStateListener:[38] - Worker received a SUSPENDED event from registry, the current server state is RUNNING
+[WI-0][TI-0] - 2025-11-06 21:01:36.501 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8287180226331393 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:01:37.506 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8284848048076904 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:01:38.510 INFO  [WorkerHeartBeatTask] o.a.d.m.m.BaseServerLoadProtection:[61] - OverLoad: the SystemMemoryUsedPercentage: 0.8310286807878559 is over then the maxSystemMemoryUsagePercentageThresholds 0.8
+[WI-0][TI-0] - 2025-11-06 21:01:41.342 ERROR [Worker-Server-SendThread(zookeeper:2181)] o.a.z.c.StaticHostProvider:[148] - Unable to resolve address: zookeeper:2181
+java.net.UnknownHostException: zookeeper: No address associated with hostname
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1330)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1283)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1199)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:88)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:141)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:368)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1197)
+[WI-0][TI-0] - 2025-11-06 21:01:41.697 WARN  [Worker-Server-SendThread(zookeeper:2181)] o.a.z.ClientCnxn:[1292] - Session 0x10006006b1e0002 for server zookeeper:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+java.lang.IllegalArgumentException: Unable to canonicalize address zookeeper:2181 because it's not resolvable
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:78)
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:41)
+	at org.apache.zookeeper.ClientCnxn$SendThread.startConnect(ClientCnxn.java:1151)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1200)
+[WI-0][TI-0] - 2025-11-06 21:09:43.084 WARN  [Worker-Server] o.m.s.m.ClassPathMapperScanner:[44] - No MyBatis mapper was found in '[org.apache.dolphinscheduler.server.worker]' package. Please check your configuration.
+[WI-0][TI-0] - 2025-11-06 21:09:43.548 INFO  [Worker-Server] o.a.d.c.u.NetUtils:[312] - Get all NetworkInterfaces: [name:eth0 (eth0), name:lo (lo)]
+[WI-0][TI-0] - 2025-11-06 21:09:43.603 INFO  [Worker-Server] o.a.d.s.w.c.WorkerConfig:[97] - 
+****************************Worker Configuration**************************************
+  listen-port -> 1234
+  max-heartbeat-interval -> PT10S
+  host-weight -> 100
+  tenantConfig -> TenantConfig(autoCreateTenantEnabled=true, defaultTenantEnabled=false)
+  server-load-protection -> WorkerServerLoadProtectionConfig()
+  address -> 172.28.0.6:1234
+  registry-path: /nodes/worker/172.28.0.6:1234
+  physical-task-config -> PhysicalTaskConfig(taskExecutorThreadSize=100)
+  group -> default
+****************************Worker Configuration**************************************
+[WI-0][TI-0] - 2025-11-06 21:09:43.958 INFO  [Worker-Server] o.e.j.u.log:[170] - Logging initialized @8979ms to org.eclipse.jetty.util.log.Slf4jLog
+[WI-0][TI-0] - 2025-11-06 21:09:44.306 INFO  [Worker-Server] o.e.j.s.Server:[375] - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 1.8.0_342-b07
+[WI-0][TI-0] - 2025-11-06 21:09:44.366 INFO  [Worker-Server] o.e.j.s.h.C.application:[2368] - Initializing Spring embedded WebApplicationContext
+[WI-0][TI-0] - 2025-11-06 21:09:45.202 INFO  [Worker-Server] c.z.h.HikariDataSource:[110] - HikariPool-1 - Starting...
+[WI-0][TI-0] - 2025-11-06 21:09:45.408 INFO  [Worker-Server] c.z.h.HikariDataSource:[123] - HikariPool-1 - Start completed.
+[WI-0][TI-0] - 2025-11-06 21:09:45.796 INFO  [Worker-Server] o.e.j.s.session:[334] - DefaultSessionIdManager workerName=node0
+[WI-0][TI-0] - 2025-11-06 21:09:45.798 INFO  [Worker-Server] o.e.j.s.session:[339] - No SessionScavenger set, using defaults
+[WI-0][TI-0] - 2025-11-06 21:09:45.801 INFO  [Worker-Server] o.e.j.s.session:[132] - node0 Scavenging every 660000ms
+[WI-0][TI-0] - 2025-11-06 21:09:45.814 INFO  [Worker-Server] o.e.j.s.h.ContextHandler:[921] - Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@5d37aa0f{application,/,[file:///tmp/jetty-docbase.1235.8067666497997310731/],AVAILABLE}
+[WI-0][TI-0] - 2025-11-06 21:09:45.815 INFO  [Worker-Server] o.e.j.s.Server:[415] - Started @10836ms
+[WI-0][TI-0] - 2025-11-06 21:09:45.925 INFO  [Worker-Server] o.a.d.p.r.z.ZookeeperRegistryAutoConfiguration:[37] - Load ZookeeperRegistryAutoConfiguration
+[WI-0][TI-0] - 2025-11-06 21:09:45.948 INFO  [Worker-Server] o.a.d.p.r.z.ZookeeperRegistryProperties:[96] - 
+****************************ZookeeperRegistryProperties**************************************
+  namespace -> dolphinscheduler
+  connectString -> zookeeper:2181
+  retryPolicy -> ZookeeperRegistryProperties.ZookeeperProperties.RetryPolicy(baseSleepTime=PT1S, maxRetries=3, maxSleep=PT5S)
+  digest -> 
+  sessionTimeout -> PT5M
+  connectionTimeout -> PT2M
+  blockUntilConnected -> PT30M
+****************************ZookeeperRegistryProperties**************************************
+[WI-0][TI-0] - 2025-11-06 21:09:46.233 INFO  [Worker-Server] o.a.d.p.r.z.ZookeeperRegistry:[113] - ZookeeperRegistry started at: 173/ms
+[WI-0][TI-0] - 2025-11-06 21:09:46.812 INFO  [Worker-Server] o.a.d.e.b.s.NettyRemotingServer:[111] - WorkerRpcServer bind success at port: 1234
+[WI-0][TI-0] - 2025-11-06 21:09:46.908 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: JAVA
+[WI-0][TI-0] - 2025-11-06 21:09:46.913 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: JUPYTER
+[WI-0][TI-0] - 2025-11-06 21:09:46.917 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SPARK
+[WI-0][TI-0] - 2025-11-06 21:09:46.923 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: FLINK_STREAM
+[WI-0][TI-0] - 2025-11-06 21:09:46.926 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: PYTHON
+[WI-0][TI-0] - 2025-11-06 21:09:46.982 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: ALIYUN_SERVERLESS_SPARK
+[WI-0][TI-0] - 2025-11-06 21:09:46.988 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DATASYNC
+[WI-0][TI-0] - 2025-11-06 21:09:46.992 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DATA_FACTORY
+[WI-0][TI-0] - 2025-11-06 21:09:46.996 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: CHUNJUN
+[WI-0][TI-0] - 2025-11-06 21:09:46.998 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: CONDITIONS
+[WI-0][TI-0] - 2025-11-06 21:09:47.001 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: REMOTESHELL
+[WI-0][TI-0] - 2025-11-06 21:09:47.003 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SUB_WORKFLOW
+[WI-0][TI-0] - 2025-11-06 21:09:47.005 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: PROCEDURE
+[WI-0][TI-0] - 2025-11-06 21:09:47.008 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SHELL
+[WI-0][TI-0] - 2025-11-06 21:09:47.010 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DEPENDENT
+[WI-0][TI-0] - 2025-11-06 21:09:47.013 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SQOOP
+[WI-0][TI-0] - 2025-11-06 21:09:47.017 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: MR
+[WI-0][TI-0] - 2025-11-06 21:09:47.020 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: PYTORCH
+[WI-0][TI-0] - 2025-11-06 21:09:47.025 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: K8S
+[WI-0][TI-0] - 2025-11-06 21:09:47.028 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SAGEMAKER
+[WI-0][TI-0] - 2025-11-06 21:09:47.036 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SEATUNNEL
+[WI-0][TI-0] - 2025-11-06 21:09:47.041 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: HTTP
+[WI-0][TI-0] - 2025-11-06 21:09:47.088 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: EMR
+[WI-0][TI-0] - 2025-11-06 21:09:47.092 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DMS
+[WI-0][TI-0] - 2025-11-06 21:09:47.097 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: KUBEFLOW
+[WI-0][TI-0] - 2025-11-06 21:09:47.103 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SQL
+[WI-0][TI-0] - 2025-11-06 21:09:47.106 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DVC
+[WI-0][TI-0] - 2025-11-06 21:09:47.111 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DATAX
+[WI-0][TI-0] - 2025-11-06 21:09:47.114 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: ZEPPELIN
+[WI-0][TI-0] - 2025-11-06 21:09:47.119 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: DINKY
+[WI-0][TI-0] - 2025-11-06 21:09:47.123 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: MLFLOW
+[WI-0][TI-0] - 2025-11-06 21:09:47.125 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: SWITCH
+[WI-0][TI-0] - 2025-11-06 21:09:47.130 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: OPENMLDB
+[WI-0][TI-0] - 2025-11-06 21:09:47.131 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: LogicFakeTask
+[WI-0][TI-0] - 2025-11-06 21:09:47.134 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: LINKIS
+[WI-0][TI-0] - 2025-11-06 21:09:47.136 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: HIVECLI
+[WI-0][TI-0] - 2025-11-06 21:09:47.138 INFO  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[53] - Success register task plugin: FLINK
+[WI-0][TI-0] - 2025-11-06 21:09:47.139 WARN  [Worker-Server] o.a.d.p.t.a.TaskPluginManager:[44] - The task plugin has already been loaded
+[WI-0][TI-0] - 2025-11-06 21:09:47.210 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> K8S
+[WI-0][TI-0] - 2025-11-06 21:09:47.215 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> ZEPPELIN
+[WI-0][TI-0] - 2025-11-06 21:09:47.218 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> SSH
+[WI-0][TI-0] - 2025-11-06 21:09:47.222 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> CLICKHOUSE
+[WI-0][TI-0] - 2025-11-06 21:09:47.225 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> DATABEND
+[WI-0][TI-0] - 2025-11-06 21:09:47.229 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> DB2
+[WI-0][TI-0] - 2025-11-06 21:09:47.233 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> HIVE
+[WI-0][TI-0] - 2025-11-06 21:09:47.236 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> MYSQL
+[WI-0][TI-0] - 2025-11-06 21:09:47.287 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> OCEANBASE
+[WI-0][TI-0] - 2025-11-06 21:09:47.293 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> ORACLE
+[WI-0][TI-0] - 2025-11-06 21:09:47.299 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> POSTGRESQL
+[WI-0][TI-0] - 2025-11-06 21:09:47.304 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> SQLSERVER
+[WI-0][TI-0] - 2025-11-06 21:09:47.308 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> REDSHIFT
+[WI-0][TI-0] - 2025-11-06 21:09:47.312 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> ATHENA
+[WI-0][TI-0] - 2025-11-06 21:09:47.315 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> SPARK
+[WI-0][TI-0] - 2025-11-06 21:09:47.318 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> PRESTO
+[WI-0][TI-0] - 2025-11-06 21:09:47.321 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> TRINO
+[WI-0][TI-0] - 2025-11-06 21:09:47.324 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> STARROCKS
+[WI-0][TI-0] - 2025-11-06 21:09:47.327 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> AZURESQL
+[WI-0][TI-0] - 2025-11-06 21:09:47.330 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> DAMENG
+[WI-0][TI-0] - 2025-11-06 21:09:47.333 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> SNOWFLAKE
+[WI-0][TI-0] - 2025-11-06 21:09:47.336 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> KYUUBI
+[WI-0][TI-0] - 2025-11-06 21:09:47.338 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> VERTICA
+[WI-0][TI-0] - 2025-11-06 21:09:47.341 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> DORIS
+[WI-0][TI-0] - 2025-11-06 21:09:47.343 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> SAGEMAKER
+[WI-0][TI-0] - 2025-11-06 21:09:47.346 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> HANA
+[WI-0][TI-0] - 2025-11-06 21:09:47.349 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> ALIYUN_SERVERLESS_SPARK
+[WI-0][TI-0] - 2025-11-06 21:09:47.351 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorManager:[49] - Success register datasource plugin -> DOLPHINDB
+[WI-0][TI-0] - 2025-11-06 21:09:47.353 INFO  [Worker-Server] o.a.d.p.d.a.p.DataSourceProcessorProvider:[41] - Initialize DataSourceProcessorProvider
+[WI-0][TI-0] - 2025-11-06 21:09:47.396 INFO  [Worker-Server] o.a.d.c.c.SystemConstants:[30] - init timezone: sun.util.calendar.ZoneInfo[id="Asia/Shanghai",offset=28800000,dstSavings=0,useDaylight=false,transitions=31,lastRule=null]
+[WI-0][TI-0] - 2025-11-06 21:09:47.450 INFO  [Worker-Server] o.a.d.s.w.r.WorkerRegistryClient:[94] - Worker node: 172.28.0.6:1234 registry to registry center /nodes/worker/172.28.0.6:1234 successfully
+[WI-0][TI-0] - 2025-11-06 21:09:47.458 INFO  [Worker-Server] o.a.d.c.m.BaseHeartBeatTask:[47] - Starting WorkerHeartBeatTask...
+[WI-0][TI-0] - 2025-11-06 21:09:47.461 INFO  [Worker-Server] o.a.d.c.m.BaseHeartBeatTask:[49] - Started WorkerHeartBeatTask, heartBeatInterval: 10000...
+[WI-0][TI-0] - 2025-11-06 21:09:47.462 INFO  [Worker-Server] o.a.d.s.w.r.WorkerRegistryClient:[102] - Worker node: 172.28.0.6:1234 registry finished
+[WI-0][TI-0] - 2025-11-06 21:09:47.465 INFO  [Worker-Server] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[95] - PhysicalTaskExecutorEventBusCoordinator started, worker size: 12
+[WI-0][TI-0] - 2025-11-06 21:09:47.466 INFO  [Worker-Server] o.a.d.t.e.TaskEngine:[53] - PhysicalTaskEngine started
+[WI-0][TI-0] - 2025-11-06 21:09:47.467 INFO  [Worker-Server] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[81] - PhysicalTaskExecutorLifecycleEventReporter started
+[WI-0][TI-0] - 2025-11-06 21:09:47.467 INFO  [Worker-Server] o.a.d.s.w.e.PhysicalTaskEngineDelegator:[57] - PhysicalTaskEngineDelegator started
+[WI-0][TI-0] - 2025-11-06 21:09:52.525 INFO  [Worker-Server] o.e.j.s.h.C.application:[2368] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[WI-0][TI-0] - 2025-11-06 21:09:52.600 INFO  [Worker-Server] o.e.j.s.AbstractConnector:[333] - Started ServerConnector@53125718{HTTP/1.1, (http/1.1)}{0.0.0.0:1235}
+[WI-0][TI-0] - 2025-11-06 21:14:55.092 INFO  [WorkerRpcServer-methodInvoker-0] o.a.d.s.w.r.PhysicalTaskExecutorOperatorImpl:[49] - Receive TaskExecutorDispatchResponse: TaskExecutorDispatchRequest(taskExecutionContext=TaskExecutionContext(taskInstanceId=1, taskName=aaa, firstSubmitTime=1762434894185, startTime=0, taskType=SHELL, workflowInstanceHost=172.28.0.6:5678, host=172.28.0.6:1234, executePath=null, logPath=null, appInfoPath=null, processId=0, workflowDefinitionCode=156676593209248, workflowDefinitionVersion=1, appIds=null, workflowInstanceId=1, scheduleTime=0, globalParams=[], executorId=1, tenantCode=default, workflowDefinitionId=0, taskParams={"localParams":[],"rawScript":"echo \"hello\"","resourceList":[]}, environmentConfig=null, prepareParamsMap={system.task.definition.name=Property(prop=system.task.definition.name, direct=IN, type=VARCHAR, value=aaa), system.project.name=Property(prop=system.project.name, direct=IN, type=VARCHAR, value=aaa), system.project.code=Property(prop=system.project.code, direct=IN, type=VARCHAR, value=156676563539872), system.workflow.instance.id=Property(prop=system.workflow.instance.id, direct=IN, type=VARCHAR, value=1), system.biz.curdate=Property(prop=system.biz.curdate, direct=IN, type=VARCHAR, value=20251106), system.biz.date=Property(prop=system.biz.date, direct=IN, type=VARCHAR, value=20251105), system.task.instance.id=Property(prop=system.task.instance.id, direct=IN, type=VARCHAR, value=1), system.workflow.definition.name=Property(prop=system.workflow.definition.name, direct=IN, type=VARCHAR, value=aaa), system.task.definition.code=Property(prop=system.task.definition.code, direct=IN, type=VARCHAR, value=156676571441056), system.workflow.definition.code=Property(prop=system.workflow.definition.code, direct=IN, type=VARCHAR, value=156676593209248), system.datetime=Property(prop=system.datetime, direct=IN, type=VARCHAR, value=20251106211454)}, taskAppId=null, taskTimeoutStrategy=null, taskTimeout=2147483647, workerGroup=default, resourceParametersHelper=org.apache.dolphinscheduler.plugin.task.api.parameters.resource.ResourceParametersHelper@24b0216e, endTime=0, sqlTaskExecutionContext=null, k8sTaskExecutionContext=null, resourceContext=null, varPool=null, dryRun=0, cpuQuota=-1, memoryMax=-1, dispatchFailTimes=0, failover=false))
+[WI-0][TI-1] - 2025-11-06 21:14:55.141 INFO  [WorkerRpcServer-methodInvoker-0] o.a.d.t.e.e.TaskExecutorEventBus:[32] - Publish TaskExecutorDispatchedLifecycleEvent: {
+  "taskInstanceId" : 1,
+  "eventCreateTime" : 1762434895134,
+  "type" : "DISPATCHED",
+  "workflowInstanceId" : 1,
+  "taskInstanceHost" : "172.28.0.6:1234",
+  "latestReportTime" : null
+}
+[WI-0][TI-0] - 2025-11-06 21:14:55.142 INFO  [WorkerRpcServer-methodInvoker-0] o.a.d.s.w.r.PhysicalTaskExecutorOperatorImpl:[53] - Handle TaskExecutorDispatchResponse: TaskExecutorDispatchRequest(taskExecutionContext=TaskExecutionContext(taskInstanceId=1, taskName=aaa, firstSubmitTime=1762434894185, startTime=0, taskType=SHELL, workflowInstanceHost=172.28.0.6:5678, host=172.28.0.6:1234, executePath=null, logPath=/opt/dolphinscheduler/worker-server/logs/20251106/156676593209248/1/1/1.log, appInfoPath=null, processId=0, workflowDefinitionCode=156676593209248, workflowDefinitionVersion=1, appIds=null, workflowInstanceId=1, scheduleTime=0, globalParams=[], executorId=1, tenantCode=default, workflowDefinitionId=0, taskParams={"localParams":[],"rawScript":"echo \"hello\"","resourceList":[]}, environmentConfig=null, prepareParamsMap={system.task.definition.name=Property(prop=system.task.definition.name, direct=IN, type=VARCHAR, value=aaa), system.project.name=Property(prop=system.project.name, direct=IN, type=VARCHAR, value=aaa), system.project.code=Property(prop=system.project.code, direct=IN, type=VARCHAR, value=156676563539872), system.workflow.instance.id=Property(prop=system.workflow.instance.id, direct=IN, type=VARCHAR, value=1), system.biz.curdate=Property(prop=system.biz.curdate, direct=IN, type=VARCHAR, value=20251106), system.biz.date=Property(prop=system.biz.date, direct=IN, type=VARCHAR, value=20251105), system.task.instance.id=Property(prop=system.task.instance.id, direct=IN, type=VARCHAR, value=1), system.workflow.definition.name=Property(prop=system.workflow.definition.name, direct=IN, type=VARCHAR, value=aaa), system.task.definition.code=Property(prop=system.task.definition.code, direct=IN, type=VARCHAR, value=156676571441056), system.workflow.definition.code=Property(prop=system.workflow.definition.code, direct=IN, type=VARCHAR, value=156676593209248), system.datetime=Property(prop=system.datetime, direct=IN, type=VARCHAR, value=20251106211454)}, taskAppId=null, taskTimeoutStrategy=null, taskTimeout=2147483647, workerGroup=default, resourceParametersHelper=org.apache.dolphinscheduler.plugin.task.api.parameters.resource.ResourceParametersHelper@24b0216e, endTime=0, sqlTaskExecutionContext=null, k8sTaskExecutionContext=null, resourceContext=null, varPool=null, dryRun=0, cpuQuota=-1, memoryMax=-1, dispatchFailTimes=0, failover=false)) success
+[WI-0][TI-1] - 2025-11-06 21:14:55.144 INFO  [exclusive-task-executor-container-worker-0] o.a.d.p.t.a.l.TaskInstanceLogHeader:[33] - 🐬 Initialize Task Context
+[WI-0][TI-1] - 2025-11-06 21:14:55.175 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-main-0] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[111] - Report : {
+  "taskInstanceId" : 1,
+  "eventCreateTime" : 1762434895134,
+  "type" : "DISPATCHED",
+  "workflowInstanceId" : 1,
+  "taskInstanceHost" : "172.28.0.6:1234",
+  "latestReportTime" : null
+}
+[WI-0][TI-1] - 2025-11-06 21:14:55.198 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-main-0] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[191] - Success fire TaskExecutorDispatchedLifecycleEvent: {"taskInstanceId":1,"eventCreateTime":1762434895134,"type":"DISPATCHED","workflowInstanceId":1,"taskInstanceHost":"172.28.0.6:1234","latestReportTime":null} 
+[WI-0][TI-1] - 2025-11-06 21:14:55.213 INFO  [exclusive-task-executor-container-worker-0] o.a.d.t.e.AbstractTaskExecutor:[130] - Initialized taskContext {
+  "taskInstanceId" : 1,
+  "taskName" : "aaa",
+  "firstSubmitTime" : 1762434894185,
+  "startTime" : 1762434895197,
+  "taskType" : "SHELL",
+  "workflowInstanceHost" : "172.28.0.6:5678",
+  "host" : "172.28.0.6:1234",
+  "logPath" : "/opt/dolphinscheduler/worker-server/logs/20251106/156676593209248/1/1/1.log",
+  "processId" : 0,
+  "workflowDefinitionCode" : 156676593209248,
+  "workflowDefinitionVersion" : 1,
+  "workflowInstanceId" : 1,
+  "scheduleTime" : 0,
+  "globalParams" : "[]",
+  "executorId" : 1,
+  "tenantCode" : "default",
+  "workflowDefinitionId" : 0,
+  "taskParams" : "{\"localParams\":[],\"rawScript\":\"echo \\\"hello\\\"\",\"resourceList\":[]}",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "aaa"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "aaa"
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "156676563539872"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "1"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20251106"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20251105"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "1"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "aaa"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "156676571441056"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "156676593209248"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20251106211454"
+    }
+  },
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "resourceParametersHelper" : {
+    "resourceMap" : { }
+  },
+  "endTime" : 0,
+  "dryRun" : 0,
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "dispatchFailTimes" : 0,
+  "failover" : false
+}
+[WI-0][TI-1] - 2025-11-06 21:14:55.223 ERROR [exclusive-task-executor-container-worker-0] o.a.d.t.e.w.TaskExecutorWorker:[75] - PhysicalTaskExecutor{id=1, name=aaa, stat=INITIALIZED} execute failed
+org.apache.dolphinscheduler.plugin.task.api.TaskException: The tenantCode is default, please enable TenantConfig#isDefaultTenantEnabled
+	at org.apache.dolphinscheduler.server.worker.utils.TenantUtils.getOrCreateActualTenant(TenantUtils.java:64)
+	at org.apache.dolphinscheduler.server.worker.executor.PhysicalTaskExecutor.initializeTaskContext(PhysicalTaskExecutor.java:127)
+	at org.apache.dolphinscheduler.task.executor.AbstractTaskExecutor.start(AbstractTaskExecutor.java:66)
+	at org.apache.dolphinscheduler.task.executor.worker.TaskExecutorWorker.start(TaskExecutorWorker.java:65)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[WI-0][TI-1] - 2025-11-06 21:14:55.236 INFO  [exclusive-task-executor-container-worker-0] o.a.d.t.e.e.TaskExecutorEventBus:[32] - Publish TaskExecutorFailedLifecycleEvent: {
+  "taskInstanceId" : 1,
+  "eventCreateTime" : 1762434895235,
+  "type" : "FAILED",
+  "workflowInstanceId" : 1,
+  "taskInstanceHost" : "172.28.0.6:1234",
+  "appIds" : null,
+  "endTime" : 1762434895224,
+  "latestReportTime" : null
+}
+[WI-0][TI-1] - 2025-11-06 21:14:55.251 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-1] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[111] - Report : {
+  "taskInstanceId" : 1,
+  "eventCreateTime" : 1762434895235,
+  "type" : "FAILED",
+  "workflowInstanceId" : 1,
+  "taskInstanceHost" : "172.28.0.6:1234",
+  "appIds" : null,
+  "endTime" : 1762434895224,
+  "latestReportTime" : null
+}
+[WI-0][TI-1] - 2025-11-06 21:14:55.252 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-1] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[191] - Success fire TaskExecutorFailedLifecycleEvent: {"taskInstanceId":1,"eventCreateTime":1762434895235,"type":"FAILED","workflowInstanceId":1,"taskInstanceHost":"172.28.0.6:1234","appIds":null,"endTime":1762434895224,"latestReportTime":null} 
+[WI-0][TI-1] - 2025-11-06 21:14:55.381 INFO  [PhysicalTaskExecutorLifecycleEventReporter] o.a.d.e.b.c.JdkDynamicRpcClientProxyFactory:[56] - Create DynamicRpcClientProxy cache for host: 172.28.0.6:5678
+[WI-0][TI-1] - 2025-11-06 21:14:55.510 INFO  [PhysicalTaskExecutorLifecycleEventReporter] o.a.d.e.m.TaskExecutorEventRemoteReporterClient:[73] - Report: TaskExecutorDispatchedLifecycleEvent(super=AbstractTaskExecutorLifecycleEvent(super=AbstractDelayEvent(delayTime=0, createTimeInNano=102842696176426, expiredTimeInNano=102842696179126), taskInstanceId=1, eventCreateTime=1762434895134, type=DISPATCHED), workflowInstanceId=1, taskInstanceHost=172.28.0.6:1234, latestReportTime=1762434895202) to master success
+[WI-0][TI-0] - 2025-11-06 21:14:55.591 INFO  [WorkerRpcServer-methodInvoker-1] o.a.d.s.w.r.PhysicalTaskExecutorOperatorImpl:[101] - Receive TaskExecutorLifecycleEventAck: ITaskExecutorLifecycleEventReporter.TaskExecutorLifecycleEventAck(taskExecutorId=1, taskExecutorLifecycleEventType=DISPATCHED)
+[WI-0][TI-0] - 2025-11-06 21:14:55.592 INFO  [WorkerRpcServer-methodInvoker-1] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[137] - Success removed TaskExecutorDispatchedLifecycleEvent(super=AbstractTaskExecutorLifecycleEvent(super=AbstractDelayEvent(delayTime=0, createTimeInNano=102842696176426, expiredTimeInNano=102842696179126), taskInstanceId=1, eventCreateTime=1762434895134, type=DISPATCHED), workflowInstanceId=1, taskInstanceHost=172.28.0.6:1234, latestReportTime=1762434895202) by ack: ITaskExecutorLifecycleEventReporter.TaskExecutorLifecycleEventAck(taskExecutorId=1, taskExecutorLifecycleEventType=DISPATCHED)
+[WI-0][TI-1] - 2025-11-06 21:14:55.632 INFO  [PhysicalTaskExecutorLifecycleEventReporter] o.a.d.e.m.TaskExecutorEventRemoteReporterClient:[73] - Report: TaskExecutorFailedLifecycleEvent(super=AbstractTaskExecutorLifecycleEvent(super=AbstractDelayEvent(delayTime=0, createTimeInNano=102842797025354, expiredTimeInNano=102842797025554), taskInstanceId=1, eventCreateTime=1762434895235, type=FAILED), workflowInstanceId=1, taskInstanceHost=172.28.0.6:1234, appIds=null, endTime=1762434895224, latestReportTime=1762434895594) to master success
+[WI-0][TI-0] - 2025-11-06 21:14:55.712 INFO  [WorkerRpcServer-methodInvoker-2] o.a.d.s.w.r.PhysicalTaskExecutorOperatorImpl:[101] - Receive TaskExecutorLifecycleEventAck: ITaskExecutorLifecycleEventReporter.TaskExecutorLifecycleEventAck(taskExecutorId=1, taskExecutorLifecycleEventType=FAILED)
+[WI-0][TI-0] - 2025-11-06 21:14:55.713 INFO  [WorkerRpcServer-methodInvoker-2] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[137] - Success removed TaskExecutorFailedLifecycleEvent(super=AbstractTaskExecutorLifecycleEvent(super=AbstractDelayEvent(delayTime=0, createTimeInNano=102842797025354, expiredTimeInNano=102842797025554), taskInstanceId=1, eventCreateTime=1762434895235, type=FAILED), workflowInstanceId=1, taskInstanceHost=172.28.0.6:1234, appIds=null, endTime=1762434895224, latestReportTime=1762434895594) by ack: ITaskExecutorLifecycleEventReporter.TaskExecutorLifecycleEventAck(taskExecutorId=1, taskExecutorLifecycleEventType=FAILED)
+[WI-0][TI-0] - 2025-11-06 21:14:55.717 INFO  [WorkerRpcServer-methodInvoker-2] o.a.d.t.e.e.TaskExecutorEventBus:[32] - Publish TaskExecutorFinalizeLifecycleEvent: {
+  "taskInstanceId" : 1,
+  "eventCreateTime" : 1762434895716,
+  "type" : "FINALIZE"
+}
+[WI-0][TI-1] - 2025-11-06 21:14:55.760 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-11] o.a.d.p.t.a.l.TaskInstanceLogHeader:[45] - 🐬 Finalize Task Instance
+[WI-0][TI-1] - 2025-11-06 21:14:55.764 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-11] o.a.d.t.e.c.AbstractTaskExecutorContainer:[99] - FINALIZE_SESSION
+[WI-0][TI-1] - 2025-11-06 21:14:55.767 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-11] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[191] - Success fire TaskExecutorFinalizeLifecycleEvent: {"taskInstanceId":1,"eventCreateTime":1762434895716,"type":"FINALIZE"} 
+[WI-0][TI-0] - 2025-11-06 21:16:02.736 INFO  [WorkerRpcServer-methodInvoker-3] o.a.d.s.w.r.PhysicalTaskExecutorOperatorImpl:[49] - Receive TaskExecutorDispatchResponse: TaskExecutorDispatchRequest(taskExecutionContext=TaskExecutionContext(taskInstanceId=2, taskName=aaa, firstSubmitTime=1762434962714, startTime=0, taskType=SHELL, workflowInstanceHost=172.28.0.6:5678, host=172.28.0.6:1234, executePath=null, logPath=null, appInfoPath=null, processId=0, workflowDefinitionCode=156676593209248, workflowDefinitionVersion=1, appIds=null, workflowInstanceId=2, scheduleTime=0, globalParams=[], executorId=1, tenantCode=cpy, workflowDefinitionId=0, taskParams={"localParams":[],"rawScript":"echo \"hello\"","resourceList":[]}, environmentConfig=null, prepareParamsMap={system.task.definition.name=Property(prop=system.task.definition.name, direct=IN, type=VARCHAR, value=aaa), system.project.name=Property(prop=system.project.name, direct=IN, type=VARCHAR, value=aaa), system.project.code=Property(prop=system.project.code, direct=IN, type=VARCHAR, value=156676563539872), system.workflow.instance.id=Property(prop=system.workflow.instance.id, direct=IN, type=VARCHAR, value=2), system.biz.curdate=Property(prop=system.biz.curdate, direct=IN, type=VARCHAR, value=20251106), system.biz.date=Property(prop=system.biz.date, direct=IN, type=VARCHAR, value=20251105), system.task.instance.id=Property(prop=system.task.instance.id, direct=IN, type=VARCHAR, value=2), system.workflow.definition.name=Property(prop=system.workflow.definition.name, direct=IN, type=VARCHAR, value=aaa), system.task.definition.code=Property(prop=system.task.definition.code, direct=IN, type=VARCHAR, value=156676571441056), system.workflow.definition.code=Property(prop=system.workflow.definition.code, direct=IN, type=VARCHAR, value=156676593209248), system.datetime=Property(prop=system.datetime, direct=IN, type=VARCHAR, value=20251106211602)}, taskAppId=null, taskTimeoutStrategy=null, taskTimeout=2147483647, workerGroup=default, resourceParametersHelper=org.apache.dolphinscheduler.plugin.task.api.parameters.resource.ResourceParametersHelper@c0cf3fb, endTime=0, sqlTaskExecutionContext=null, k8sTaskExecutionContext=null, resourceContext=null, varPool=null, dryRun=0, cpuQuota=-1, memoryMax=-1, dispatchFailTimes=0, failover=false))
+[WI-0][TI-2] - 2025-11-06 21:16:02.738 INFO  [WorkerRpcServer-methodInvoker-3] o.a.d.t.e.e.TaskExecutorEventBus:[32] - Publish TaskExecutorDispatchedLifecycleEvent: {
+  "taskInstanceId" : 2,
+  "eventCreateTime" : 1762434962738,
+  "type" : "DISPATCHED",
+  "workflowInstanceId" : 2,
+  "taskInstanceHost" : "172.28.0.6:1234",
+  "latestReportTime" : null
+}
+[WI-0][TI-0] - 2025-11-06 21:16:02.739 INFO  [WorkerRpcServer-methodInvoker-3] o.a.d.s.w.r.PhysicalTaskExecutorOperatorImpl:[53] - Handle TaskExecutorDispatchResponse: TaskExecutorDispatchRequest(taskExecutionContext=TaskExecutionContext(taskInstanceId=2, taskName=aaa, firstSubmitTime=1762434962714, startTime=0, taskType=SHELL, workflowInstanceHost=172.28.0.6:5678, host=172.28.0.6:1234, executePath=null, logPath=/opt/dolphinscheduler/worker-server/logs/20251106/156676593209248/1/2/2.log, appInfoPath=null, processId=0, workflowDefinitionCode=156676593209248, workflowDefinitionVersion=1, appIds=null, workflowInstanceId=2, scheduleTime=0, globalParams=[], executorId=1, tenantCode=cpy, workflowDefinitionId=0, taskParams={"localParams":[],"rawScript":"echo \"hello\"","resourceList":[]}, environmentConfig=null, prepareParamsMap={system.task.definition.name=Property(prop=system.task.definition.name, direct=IN, type=VARCHAR, value=aaa), system.project.name=Property(prop=system.project.name, direct=IN, type=VARCHAR, value=aaa), system.project.code=Property(prop=system.project.code, direct=IN, type=VARCHAR, value=156676563539872), system.workflow.instance.id=Property(prop=system.workflow.instance.id, direct=IN, type=VARCHAR, value=2), system.biz.curdate=Property(prop=system.biz.curdate, direct=IN, type=VARCHAR, value=20251106), system.biz.date=Property(prop=system.biz.date, direct=IN, type=VARCHAR, value=20251105), system.task.instance.id=Property(prop=system.task.instance.id, direct=IN, type=VARCHAR, value=2), system.workflow.definition.name=Property(prop=system.workflow.definition.name, direct=IN, type=VARCHAR, value=aaa), system.task.definition.code=Property(prop=system.task.definition.code, direct=IN, type=VARCHAR, value=156676571441056), system.workflow.definition.code=Property(prop=system.workflow.definition.code, direct=IN, type=VARCHAR, value=156676593209248), system.datetime=Property(prop=system.datetime, direct=IN, type=VARCHAR, value=20251106211602)}, taskAppId=null, taskTimeoutStrategy=null, taskTimeout=2147483647, workerGroup=default, resourceParametersHelper=org.apache.dolphinscheduler.plugin.task.api.parameters.resource.ResourceParametersHelper@c0cf3fb, endTime=0, sqlTaskExecutionContext=null, k8sTaskExecutionContext=null, resourceContext=null, varPool=null, dryRun=0, cpuQuota=-1, memoryMax=-1, dispatchFailTimes=0, failover=false)) success
+[WI-0][TI-2] - 2025-11-06 21:16:02.739 INFO  [exclusive-task-executor-container-worker-0] o.a.d.p.t.a.l.TaskInstanceLogHeader:[33] - 🐬 Initialize Task Context
+[WI-0][TI-2] - 2025-11-06 21:16:02.746 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-0] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[111] - Report : {
+  "taskInstanceId" : 2,
+  "eventCreateTime" : 1762434962738,
+  "type" : "DISPATCHED",
+  "workflowInstanceId" : 2,
+  "taskInstanceHost" : "172.28.0.6:1234",
+  "latestReportTime" : null
+}
+[WI-0][TI-2] - 2025-11-06 21:16:02.752 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-0] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[191] - Success fire TaskExecutorDispatchedLifecycleEvent: {"taskInstanceId":2,"eventCreateTime":1762434962738,"type":"DISPATCHED","workflowInstanceId":2,"taskInstanceHost":"172.28.0.6:1234","latestReportTime":null} 
+[WI-0][TI-2] - 2025-11-06 21:16:02.754 INFO  [exclusive-task-executor-container-worker-0] o.a.d.t.e.AbstractTaskExecutor:[130] - Initialized taskContext {
+  "taskInstanceId" : 2,
+  "taskName" : "aaa",
+  "firstSubmitTime" : 1762434962714,
+  "startTime" : 1762434962751,
+  "taskType" : "SHELL",
+  "workflowInstanceHost" : "172.28.0.6:5678",
+  "host" : "172.28.0.6:1234",
+  "logPath" : "/opt/dolphinscheduler/worker-server/logs/20251106/156676593209248/1/2/2.log",
+  "processId" : 0,
+  "workflowDefinitionCode" : 156676593209248,
+  "workflowDefinitionVersion" : 1,
+  "workflowInstanceId" : 2,
+  "scheduleTime" : 0,
+  "globalParams" : "[]",
+  "executorId" : 1,
+  "tenantCode" : "cpy",
+  "workflowDefinitionId" : 0,
+  "taskParams" : "{\"localParams\":[],\"rawScript\":\"echo \\\"hello\\\"\",\"resourceList\":[]}",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "aaa"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "aaa"
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "156676563539872"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "2"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20251106"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20251105"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "2"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "aaa"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "156676571441056"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "156676593209248"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20251106211602"
+    }
+  },
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "resourceParametersHelper" : {
+    "resourceMap" : { }
+  },
+  "endTime" : 0,
+  "dryRun" : 0,
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "dispatchFailTimes" : 0,
+  "failover" : false
+}
+[WI-0][TI-2] - 2025-11-06 21:16:02.762 INFO  [PhysicalTaskExecutorLifecycleEventReporter] o.a.d.e.m.TaskExecutorEventRemoteReporterClient:[73] - Report: TaskExecutorDispatchedLifecycleEvent(super=AbstractTaskExecutorLifecycleEvent(super=AbstractDelayEvent(delayTime=0, createTimeInNano=102910307618169, expiredTimeInNano=102910307618469), taskInstanceId=2, eventCreateTime=1762434962738, type=DISPATCHED), workflowInstanceId=2, taskInstanceHost=172.28.0.6:1234, latestReportTime=1762434962752) to master success
+[WI-0][TI-2] - 2025-11-06 21:16:02.801 INFO  [exclusive-task-executor-container-worker-0] o.a.d.c.u.OSUtils:[228] - create linux os user: cpy
+[WI-0][TI-2] - 2025-11-06 21:16:02.802 INFO  [exclusive-task-executor-container-worker-0] o.a.d.c.u.OSUtils:[230] - execute cmd: sudo useradd -m -g root
+ cpy
+[WI-0][TI-0] - 2025-11-06 21:16:02.839 INFO  [WorkerRpcServer-methodInvoker-4] o.a.d.s.w.r.PhysicalTaskExecutorOperatorImpl:[101] - Receive TaskExecutorLifecycleEventAck: ITaskExecutorLifecycleEventReporter.TaskExecutorLifecycleEventAck(taskExecutorId=2, taskExecutorLifecycleEventType=DISPATCHED)
+[WI-0][TI-0] - 2025-11-06 21:16:02.842 INFO  [WorkerRpcServer-methodInvoker-4] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[137] - Success removed TaskExecutorDispatchedLifecycleEvent(super=AbstractTaskExecutorLifecycleEvent(super=AbstractDelayEvent(delayTime=0, createTimeInNano=102910307618169, expiredTimeInNano=102910307618469), taskInstanceId=2, eventCreateTime=1762434962738, type=DISPATCHED), workflowInstanceId=2, taskInstanceHost=172.28.0.6:1234, latestReportTime=1762434962752) by ack: ITaskExecutorLifecycleEventReporter.TaskExecutorLifecycleEventAck(taskExecutorId=2, taskExecutorLifecycleEventType=DISPATCHED)
+[WI-0][TI-2] - 2025-11-06 21:16:02.892 INFO  [exclusive-task-executor-container-worker-0] o.a.d.c.u.OSUtils:[213] - Create tenant cpy under userGroup: root
+ success
+[WI-0][TI-2] - 2025-11-06 21:16:02.894 INFO  [exclusive-task-executor-container-worker-0] o.a.d.s.w.e.PhysicalTaskExecutor:[128] - TenantCode: cpy check successfully
+[WI-0][TI-2] - 2025-11-06 21:16:02.900 INFO  [exclusive-task-executor-container-worker-0] o.a.d.s.w.e.PhysicalTaskExecutor:[131] - TaskInstance working directory: /tmp/dolphinscheduler/exec/process/2 create successfully
+[WI-0][TI-2] - 2025-11-06 21:16:02.912 INFO  [exclusive-task-executor-container-worker-0] o.a.d.s.w.e.PhysicalTaskExecutor:[138] - Download resources successfully: 
+ResourceContext(resourceItemMap={})
+[WI-0][TI-2] - 2025-11-06 21:16:02.914 INFO  [exclusive-task-executor-container-worker-0] o.a.d.s.w.e.PhysicalTaskExecutor:[140] - Initialized Task Context{
+  "taskInstanceId" : 2,
+  "taskName" : "aaa",
+  "firstSubmitTime" : 1762434962714,
+  "startTime" : 1762434962751,
+  "taskType" : "SHELL",
+  "workflowInstanceHost" : "172.28.0.6:5678",
+  "host" : "172.28.0.6:1234",
+  "executePath" : "/tmp/dolphinscheduler/exec/process/2",
+  "logPath" : "/opt/dolphinscheduler/worker-server/logs/20251106/156676593209248/1/2/2.log",
+  "appInfoPath" : "/tmp/dolphinscheduler/exec/process/2/appInfo.log",
+  "processId" : 0,
+  "workflowDefinitionCode" : 156676593209248,
+  "workflowDefinitionVersion" : 1,
+  "workflowInstanceId" : 2,
+  "scheduleTime" : 0,
+  "globalParams" : "[]",
+  "executorId" : 1,
+  "tenantCode" : "cpy",
+  "workflowDefinitionId" : 0,
+  "taskParams" : "{\"localParams\":[],\"rawScript\":\"echo \\\"hello\\\"\",\"resourceList\":[]}",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "aaa"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "aaa"
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "156676563539872"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "2"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20251106"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20251105"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "2"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "aaa"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "156676571441056"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "156676593209248"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20251106211602"
+    }
+  },
+  "taskAppId" : "2",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "resourceParametersHelper" : {
+    "resourceMap" : { }
+  },
+  "endTime" : 0,
+  "resourceContext" : { },
+  "dryRun" : 0,
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "dispatchFailTimes" : 0,
+  "failover" : false
+}
+[WI-0][TI-2] - 2025-11-06 21:16:02.916 INFO  [exclusive-task-executor-container-worker-0] o.a.d.t.e.e.TaskExecutorEventBus:[32] - Publish TaskExecutorStartedLifecycleEvent: {
+  "taskInstanceId" : 2,
+  "eventCreateTime" : 1762434962915,
+  "type" : "RUNNING",
+  "workflowInstanceId" : 2,
+  "taskInstanceHost" : "172.28.0.6:1234",
+  "startTime" : 1762434962751,
+  "logPath" : "/opt/dolphinscheduler/worker-server/logs/20251106/156676593209248/1/2/2.log",
+  "executePath" : "/tmp/dolphinscheduler/exec/process/2",
+  "latestReportTime" : null
+}
+[WI-0][TI-2] - 2025-11-06 21:16:02.917 INFO  [exclusive-task-executor-container-worker-0] o.a.d.p.t.a.l.TaskInstanceLogHeader:[37] - 🐬 Load Task Instance Plugin
+[WI-0][TI-2] - 2025-11-06 21:16:02.922 INFO  [exclusive-task-executor-container-worker-0] o.a.d.s.w.e.PhysicalTaskExecutor:[66] - Initialized physicalTask: SHELL successfully
+[WI-0][TI-2] - 2025-11-06 21:16:02.925 INFO  [exclusive-task-executor-container-worker-0] o.a.d.p.t.s.ShellTask:[70] - Initialize shell task params {
+  "localParams" : [ ],
+  "varPool" : [ ],
+  "rawScript" : "echo \"hello\"",
+  "resourceList" : [ ]
+}
+[WI-0][TI-2] - 2025-11-06 21:16:02.926 INFO  [exclusive-task-executor-container-worker-0] o.a.d.s.w.e.PhysicalTaskExecutor:[71] - Set taskVarPool: null successfully
+[WI-0][TI-2] - 2025-11-06 21:16:02.926 INFO  [exclusive-task-executor-container-worker-0] o.a.d.p.t.a.l.TaskInstanceLogHeader:[41] - 🐬 Execute Task Instance
+[WI-0][TI-2] - 2025-11-06 21:16:02.948 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-4] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[111] - Report : {
+  "taskInstanceId" : 2,
+  "eventCreateTime" : 1762434962915,
+  "type" : "RUNNING",
+  "workflowInstanceId" : 2,
+  "taskInstanceHost" : "172.28.0.6:1234",
+  "startTime" : 1762434962751,
+  "logPath" : "/opt/dolphinscheduler/worker-server/logs/20251106/156676593209248/1/2/2.log",
+  "executePath" : "/tmp/dolphinscheduler/exec/process/2",
+  "latestReportTime" : null
+}
+[WI-0][TI-2] - 2025-11-06 21:16:02.949 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-4] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[191] - Success fire TaskExecutorStartedLifecycleEvent: {"taskInstanceId":2,"eventCreateTime":1762434962915,"type":"RUNNING","workflowInstanceId":2,"taskInstanceHost":"172.28.0.6:1234","startTime":1762434962751,"logPath":"/opt/dolphinscheduler/worker-server/logs/20251106/156676593209248/1/2/2.log","executePath":"/tmp/dolphinscheduler/exec/process/2","latestReportTime":null} 
+[WI-0][TI-2] - 2025-11-06 21:16:02.965 INFO  [exclusive-task-executor-container-worker-0] o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[64] - Final Script Content:
+====================
+#!/bin/bash
+BASEDIR=$(cd `dirname $0`; pwd)
+cd $BASEDIR
+echo "hello"
+====================
+[WI-0][TI-2] - 2025-11-06 21:16:02.968 INFO  [exclusive-task-executor-container-worker-0] o.a.d.p.t.a.s.BaseShellInterceptor:[46] - Executing shell command : sudo -u cpy -i /tmp/dolphinscheduler/exec/process/2/2.sh
+[WI-0][TI-2] - 2025-11-06 21:16:02.976 INFO  [exclusive-task-executor-container-worker-0] o.a.d.p.t.a.AbstractCommandExecutor:[151] - process start, process id is: 1135
+[WI-0][TI-2] - 2025-11-06 21:16:02.979 INFO  [exclusive-task-executor-container-worker-0] o.a.d.t.e.e.TaskExecutorEventBus:[32] - Publish TaskExecutorRuntimeContextChangedLifecycleEvent: {
+  "taskInstanceId" : 2,
+  "eventCreateTime" : 1762434962978,
+  "type" : "RUNTIME_CONTEXT_CHANGE",
+  "workflowInstanceId" : 2,
+  "taskInstanceHost" : "172.28.0.6:1234",
+  "processId" : 1135,
+  "appIds" : null,
+  "latestReportTime" : null
+}
+[WI-0][TI-2] - 2025-11-06 21:16:02.985 INFO  [PhysicalTaskExecutorLifecycleEventReporter] o.a.d.e.m.TaskExecutorEventRemoteReporterClient:[73] - Report: TaskExecutorStartedLifecycleEvent(super=AbstractTaskExecutorLifecycleEvent(super=AbstractDelayEvent(delayTime=0, createTimeInNano=102910484347572, expiredTimeInNano=102910484347772), taskInstanceId=2, eventCreateTime=1762434962915, type=RUNNING), workflowInstanceId=2, taskInstanceHost=172.28.0.6:1234, startTime=1762434962751, logPath=/opt/dolphinscheduler/worker-server/logs/20251106/156676593209248/1/2/2.log, executePath=/tmp/dolphinscheduler/exec/process/2, latestReportTime=1762434962949) to master success
+[WI-0][TI-2] - 2025-11-06 21:16:02.997 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-5] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[111] - Report : {
+  "taskInstanceId" : 2,
+  "eventCreateTime" : 1762434962978,
+  "type" : "RUNTIME_CONTEXT_CHANGE",
+  "workflowInstanceId" : 2,
+  "taskInstanceHost" : "172.28.0.6:1234",
+  "processId" : 1135,
+  "appIds" : null,
+  "latestReportTime" : null
+}
+[WI-0][TI-2] - 2025-11-06 21:16:02.998 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-5] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[191] - Success fire TaskExecutorRuntimeContextChangedLifecycleEvent: {"taskInstanceId":2,"eventCreateTime":1762434962978,"type":"RUNTIME_CONTEXT_CHANGE","workflowInstanceId":2,"taskInstanceHost":"172.28.0.6:1234","processId":1135,"appIds":null,"latestReportTime":null} 
+[WI-0][TI-0] - 2025-11-06 21:16:03.058 INFO  [WorkerRpcServer-methodInvoker-5] o.a.d.s.w.r.PhysicalTaskExecutorOperatorImpl:[101] - Receive TaskExecutorLifecycleEventAck: ITaskExecutorLifecycleEventReporter.TaskExecutorLifecycleEventAck(taskExecutorId=2, taskExecutorLifecycleEventType=RUNNING)
+[WI-0][TI-0] - 2025-11-06 21:16:03.058 INFO  [WorkerRpcServer-methodInvoker-5] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[137] - Success removed TaskExecutorStartedLifecycleEvent(super=AbstractTaskExecutorLifecycleEvent(super=AbstractDelayEvent(delayTime=0, createTimeInNano=102910484347572, expiredTimeInNano=102910484347772), taskInstanceId=2, eventCreateTime=1762434962915, type=RUNNING), workflowInstanceId=2, taskInstanceHost=172.28.0.6:1234, startTime=1762434962751, logPath=/opt/dolphinscheduler/worker-server/logs/20251106/156676593209248/1/2/2.log, executePath=/tmp/dolphinscheduler/exec/process/2, latestReportTime=1762434962949) by ack: ITaskExecutorLifecycleEventReporter.TaskExecutorLifecycleEventAck(taskExecutorId=2, taskExecutorLifecycleEventType=RUNNING)
+[WI-0][TI-2] - 2025-11-06 21:16:03.082 INFO  [PhysicalTaskExecutorLifecycleEventReporter] o.a.d.e.m.TaskExecutorEventRemoteReporterClient:[73] - Report: TaskExecutorRuntimeContextChangedLifecycleEvent(super=AbstractTaskExecutorLifecycleEvent(super=AbstractDelayEvent(delayTime=0, createTimeInNano=102910547054650, expiredTimeInNano=102910547054950), taskInstanceId=2, eventCreateTime=1762434962978, type=RUNTIME_CONTEXT_CHANGE), workflowInstanceId=2, taskInstanceHost=172.28.0.6:1234, processId=1135, appIds=null, latestReportTime=1762434963059) to master success
+[WI-0][TI-0] - 2025-11-06 21:16:03.178 INFO  [WorkerRpcServer-methodInvoker-6] o.a.d.s.w.r.PhysicalTaskExecutorOperatorImpl:[101] - Receive TaskExecutorLifecycleEventAck: ITaskExecutorLifecycleEventReporter.TaskExecutorLifecycleEventAck(taskExecutorId=2, taskExecutorLifecycleEventType=RUNTIME_CONTEXT_CHANGE)
+[WI-0][TI-0] - 2025-11-06 21:16:03.179 INFO  [WorkerRpcServer-methodInvoker-6] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[137] - Success removed TaskExecutorRuntimeContextChangedLifecycleEvent(super=AbstractTaskExecutorLifecycleEvent(super=AbstractDelayEvent(delayTime=0, createTimeInNano=102910547054650, expiredTimeInNano=102910547054950), taskInstanceId=2, eventCreateTime=1762434962978, type=RUNTIME_CONTEXT_CHANGE), workflowInstanceId=2, taskInstanceHost=172.28.0.6:1234, processId=1135, appIds=null, latestReportTime=1762434963059) by ack: ITaskExecutorLifecycleEventReporter.TaskExecutorLifecycleEventAck(taskExecutorId=2, taskExecutorLifecycleEventType=RUNTIME_CONTEXT_CHANGE)
+[WI-0][TI-0] - 2025-11-06 21:16:03.975 INFO  [TaskInstanceLogOutput-thread-aaa] o.a.d.p.t.a.AbstractTask:[163] -  -> 
+	hello
+[WI-0][TI-2] - 2025-11-06 21:16:03.977 INFO  [exclusive-task-executor-container-worker-0] o.a.d.p.t.a.AbstractCommandExecutor:[201] - process has exited. execute path:/tmp/dolphinscheduler/exec/process/2, processId:1135 ,exitStatusCode:0 ,processWaitForStatus:true ,processExitValue:0
+[WI-0][TI-2] - 2025-11-06 21:16:03.987 INFO  [exclusive-task-executor-container-worker-0] o.a.d.t.e.e.TaskExecutorEventBus:[32] - Publish TaskExecutorSuccessLifecycleEvent: {
+  "taskInstanceId" : 2,
+  "eventCreateTime" : 1762434963985,
+  "type" : "SUCCESS",
+  "workflowInstanceId" : 2,
+  "taskInstanceHost" : "172.28.0.6:1234",
+  "endTime" : 1762434963985,
+  "varPool" : [ ],
+  "latestReportTime" : null
+}
+[WI-0][TI-2] - 2025-11-06 21:16:04.003 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-1] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[111] - Report : {
+  "taskInstanceId" : 2,
+  "eventCreateTime" : 1762434963985,
+  "type" : "SUCCESS",
+  "workflowInstanceId" : 2,
+  "taskInstanceHost" : "172.28.0.6:1234",
+  "endTime" : 1762434963985,
+  "varPool" : [ ],
+  "latestReportTime" : null
+}
+[WI-0][TI-2] - 2025-11-06 21:16:04.003 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-1] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[191] - Success fire TaskExecutorSuccessLifecycleEvent: {"taskInstanceId":2,"eventCreateTime":1762434963985,"type":"SUCCESS","workflowInstanceId":2,"taskInstanceHost":"172.28.0.6:1234","endTime":1762434963985,"varPool":[],"latestReportTime":null} 
+[WI-0][TI-2] - 2025-11-06 21:16:04.031 INFO  [PhysicalTaskExecutorLifecycleEventReporter] o.a.d.e.m.TaskExecutorEventRemoteReporterClient:[73] - Report: TaskExecutorSuccessLifecycleEvent(super=AbstractTaskExecutorLifecycleEvent(super=AbstractDelayEvent(delayTime=0, createTimeInNano=102911554901997, expiredTimeInNano=102911554902197), taskInstanceId=2, eventCreateTime=1762434963985, type=SUCCESS), workflowInstanceId=2, taskInstanceHost=172.28.0.6:1234, endTime=1762434963985, varPool=[], latestReportTime=1762434964003) to master success
+[WI-0][TI-0] - 2025-11-06 21:16:04.096 INFO  [WorkerRpcServer-methodInvoker-7] o.a.d.s.w.r.PhysicalTaskExecutorOperatorImpl:[101] - Receive TaskExecutorLifecycleEventAck: ITaskExecutorLifecycleEventReporter.TaskExecutorLifecycleEventAck(taskExecutorId=2, taskExecutorLifecycleEventType=SUCCESS)
+[WI-0][TI-0] - 2025-11-06 21:16:04.096 INFO  [WorkerRpcServer-methodInvoker-7] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[137] - Success removed TaskExecutorSuccessLifecycleEvent(super=AbstractTaskExecutorLifecycleEvent(super=AbstractDelayEvent(delayTime=0, createTimeInNano=102911554901997, expiredTimeInNano=102911554902197), taskInstanceId=2, eventCreateTime=1762434963985, type=SUCCESS), workflowInstanceId=2, taskInstanceHost=172.28.0.6:1234, endTime=1762434963985, varPool=[], latestReportTime=1762434964003) by ack: ITaskExecutorLifecycleEventReporter.TaskExecutorLifecycleEventAck(taskExecutorId=2, taskExecutorLifecycleEventType=SUCCESS)
+[WI-0][TI-0] - 2025-11-06 21:16:04.097 INFO  [WorkerRpcServer-methodInvoker-7] o.a.d.t.e.e.TaskExecutorEventBus:[32] - Publish TaskExecutorFinalizeLifecycleEvent: {
+  "taskInstanceId" : 2,
+  "eventCreateTime" : 1762434964097,
+  "type" : "FINALIZE"
+}
+[WI-0][TI-2] - 2025-11-06 21:16:04.103 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-3] o.a.d.p.t.a.l.TaskInstanceLogHeader:[45] - 🐬 Finalize Task Instance
+[WI-0][TI-2] - 2025-11-06 21:16:04.104 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-3] o.a.d.t.e.c.AbstractTaskExecutorContainer:[99] - FINALIZE_SESSION
+[WI-0][TI-2] - 2025-11-06 21:16:04.141 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-3] o.a.d.s.w.u.TaskExecutionContextUtils:[117] - Deleted task exec directory: /tmp/dolphinscheduler/exec/process/2
+[WI-0][TI-2] - 2025-11-06 21:16:04.142 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-3] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[191] - Success fire TaskExecutorFinalizeLifecycleEvent: {"taskInstanceId":2,"eventCreateTime":1762434964097,"type":"FINALIZE"} 
+[WI-0][TI-0] - 2025-11-06 21:18:11.846 INFO  [WorkerRpcServer-methodInvoker-8] o.a.d.s.w.r.PhysicalTaskExecutorOperatorImpl:[49] - Receive TaskExecutorDispatchResponse: TaskExecutorDispatchRequest(taskExecutionContext=TaskExecutionContext(taskInstanceId=3, taskName=wow, firstSubmitTime=1762435091803, startTime=0, taskType=FLINK, workflowInstanceHost=172.28.0.6:5678, host=172.28.0.6:1234, executePath=null, logPath=null, appInfoPath=null, processId=0, workflowDefinitionCode=156676755523488, workflowDefinitionVersion=2, appIds=null, workflowInstanceId=3, scheduleTime=0, globalParams=[], executorId=1, tenantCode=cpy, workflowDefinitionId=0, taskParams={"localParams":[],"initScript":"","rawScript":"","resourceList":[],"programType":"JAVA","mainClass":"org.example.HelloWorld","mainJar":{"resourceName":"/tmp/dolphinscheduler/default/resources/flink-file-wordcount-1.0-SNAPSHOT.jar"},"deployMode":"cluster","mainArgs":"--output /tmp/flink/output","yarnQueue":"","flinkVersion":">=1.12","jobManagerMemory":"1G","taskManagerMemory":"2G","slot":1,"taskManager":2,"parallelism":1}, environmentConfig=null, prepareParamsMap={system.task.definition.name=Property(prop=system.task.definition.name, direct=IN, type=VARCHAR, value=wow), system.project.name=Property(prop=system.project.name, direct=IN, type=VARCHAR, value=aaa), system.project.code=Property(prop=system.project.code, direct=IN, type=VARCHAR, value=156676563539872), system.workflow.instance.id=Property(prop=system.workflow.instance.id, direct=IN, type=VARCHAR, value=3), system.biz.curdate=Property(prop=system.biz.curdate, direct=IN, type=VARCHAR, value=20251106), system.biz.date=Property(prop=system.biz.date, direct=IN, type=VARCHAR, value=20251105), system.task.instance.id=Property(prop=system.task.instance.id, direct=IN, type=VARCHAR, value=3), system.workflow.definition.name=Property(prop=system.workflow.definition.name, direct=IN, type=VARCHAR, value=wow), system.task.definition.code=Property(prop=system.task.definition.code, direct=IN, type=VARCHAR, value=156676695588768), system.workflow.definition.code=Property(prop=system.workflow.definition.code, direct=IN, type=VARCHAR, value=156676755523488), system.datetime=Property(prop=system.datetime, direct=IN, type=VARCHAR, value=20251106211811)}, taskAppId=null, taskTimeoutStrategy=null, taskTimeout=2147483647, workerGroup=default, resourceParametersHelper=org.apache.dolphinscheduler.plugin.task.api.parameters.resource.ResourceParametersHelper@1f366fa9, endTime=0, sqlTaskExecutionContext=null, k8sTaskExecutionContext=null, resourceContext=null, varPool=null, dryRun=0, cpuQuota=-1, memoryMax=-1, dispatchFailTimes=0, failover=false))
+[WI-0][TI-3] - 2025-11-06 21:18:11.848 INFO  [WorkerRpcServer-methodInvoker-8] o.a.d.t.e.e.TaskExecutorEventBus:[32] - Publish TaskExecutorDispatchedLifecycleEvent: {
+  "taskInstanceId" : 3,
+  "eventCreateTime" : 1762435091848,
+  "type" : "DISPATCHED",
+  "workflowInstanceId" : 3,
+  "taskInstanceHost" : "172.28.0.6:1234",
+  "latestReportTime" : null
+}
+[WI-0][TI-0] - 2025-11-06 21:18:11.849 INFO  [WorkerRpcServer-methodInvoker-8] o.a.d.s.w.r.PhysicalTaskExecutorOperatorImpl:[53] - Handle TaskExecutorDispatchResponse: TaskExecutorDispatchRequest(taskExecutionContext=TaskExecutionContext(taskInstanceId=3, taskName=wow, firstSubmitTime=1762435091803, startTime=0, taskType=FLINK, workflowInstanceHost=172.28.0.6:5678, host=172.28.0.6:1234, executePath=null, logPath=/opt/dolphinscheduler/worker-server/logs/20251106/156676755523488/2/3/3.log, appInfoPath=null, processId=0, workflowDefinitionCode=156676755523488, workflowDefinitionVersion=2, appIds=null, workflowInstanceId=3, scheduleTime=0, globalParams=[], executorId=1, tenantCode=cpy, workflowDefinitionId=0, taskParams={"localParams":[],"initScript":"","rawScript":"","resourceList":[],"programType":"JAVA","mainClass":"org.example.HelloWorld","mainJar":{"resourceName":"/tmp/dolphinscheduler/default/resources/flink-file-wordcount-1.0-SNAPSHOT.jar"},"deployMode":"cluster","mainArgs":"--output /tmp/flink/output","yarnQueue":"","flinkVersion":">=1.12","jobManagerMemory":"1G","taskManagerMemory":"2G","slot":1,"taskManager":2,"parallelism":1}, environmentConfig=null, prepareParamsMap={system.task.definition.name=Property(prop=system.task.definition.name, direct=IN, type=VARCHAR, value=wow), system.project.name=Property(prop=system.project.name, direct=IN, type=VARCHAR, value=aaa), system.project.code=Property(prop=system.project.code, direct=IN, type=VARCHAR, value=156676563539872), system.workflow.instance.id=Property(prop=system.workflow.instance.id, direct=IN, type=VARCHAR, value=3), system.biz.curdate=Property(prop=system.biz.curdate, direct=IN, type=VARCHAR, value=20251106), system.biz.date=Property(prop=system.biz.date, direct=IN, type=VARCHAR, value=20251105), system.task.instance.id=Property(prop=system.task.instance.id, direct=IN, type=VARCHAR, value=3), system.workflow.definition.name=Property(prop=system.workflow.definition.name, direct=IN, type=VARCHAR, value=wow), system.task.definition.code=Property(prop=system.task.definition.code, direct=IN, type=VARCHAR, value=156676695588768), system.workflow.definition.code=Property(prop=system.workflow.definition.code, direct=IN, type=VARCHAR, value=156676755523488), system.datetime=Property(prop=system.datetime, direct=IN, type=VARCHAR, value=20251106211811)}, taskAppId=null, taskTimeoutStrategy=null, taskTimeout=2147483647, workerGroup=default, resourceParametersHelper=org.apache.dolphinscheduler.plugin.task.api.parameters.resource.ResourceParametersHelper@1f366fa9, endTime=0, sqlTaskExecutionContext=null, k8sTaskExecutionContext=null, resourceContext=null, varPool=null, dryRun=0, cpuQuota=-1, memoryMax=-1, dispatchFailTimes=0, failover=false)) success
+[WI-0][TI-3] - 2025-11-06 21:18:11.849 INFO  [exclusive-task-executor-container-worker-0] o.a.d.p.t.a.l.TaskInstanceLogHeader:[33] - 🐬 Initialize Task Context
+[WI-0][TI-3] - 2025-11-06 21:18:11.867 INFO  [exclusive-task-executor-container-worker-0] o.a.d.t.e.AbstractTaskExecutor:[130] - Initialized taskContext {
+  "taskInstanceId" : 3,
+  "taskName" : "wow",
+  "firstSubmitTime" : 1762435091803,
+  "startTime" : 1762435091867,
+  "taskType" : "FLINK",
+  "workflowInstanceHost" : "172.28.0.6:5678",
+  "host" : "172.28.0.6:1234",
+  "logPath" : "/opt/dolphinscheduler/worker-server/logs/20251106/156676755523488/2/3/3.log",
+  "processId" : 0,
+  "workflowDefinitionCode" : 156676755523488,
+  "workflowDefinitionVersion" : 2,
+  "workflowInstanceId" : 3,
+  "scheduleTime" : 0,
+  "globalParams" : "[]",
+  "executorId" : 1,
+  "tenantCode" : "cpy",
+  "workflowDefinitionId" : 0,
+  "taskParams" : "{\"localParams\":[],\"initScript\":\"\",\"rawScript\":\"\",\"resourceList\":[],\"programType\":\"JAVA\",\"mainClass\":\"org.example.HelloWorld\",\"mainJar\":{\"resourceName\":\"/tmp/dolphinscheduler/default/resources/flink-file-wordcount-1.0-SNAPSHOT.jar\"},\"deployMode\":\"cluster\",\"mainArgs\":\"--output /tmp/flink/output\",\"yarnQueue\":\"\",\"flinkVersion\":\">=1.12\",\"jobManagerMemory\":\"1G\",\"taskManagerMemory\":\"2G\",\"slot\":1,\"taskManager\":2,\"parallelism\":1}",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "wow"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "aaa"
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "156676563539872"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "3"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20251106"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20251105"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "3"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "wow"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "156676695588768"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "156676755523488"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20251106211811"
+    }
+  },
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "resourceParametersHelper" : {
+    "resourceMap" : { }
+  },
+  "endTime" : 0,
+  "dryRun" : 0,
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "dispatchFailTimes" : 0,
+  "failover" : false
+}
+[WI-0][TI-3] - 2025-11-06 21:18:11.869 INFO  [exclusive-task-executor-container-worker-0] o.a.d.s.w.e.PhysicalTaskExecutor:[128] - TenantCode: cpy check successfully
+[WI-0][TI-3] - 2025-11-06 21:18:11.870 INFO  [exclusive-task-executor-container-worker-0] o.a.d.s.w.e.PhysicalTaskExecutor:[131] - TaskInstance working directory: /tmp/dolphinscheduler/exec/process/3 create successfully
+[WI-0][TI-3] - 2025-11-06 21:18:11.872 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-4] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[111] - Report : {
+  "taskInstanceId" : 3,
+  "eventCreateTime" : 1762435091848,
+  "type" : "DISPATCHED",
+  "workflowInstanceId" : 3,
+  "taskInstanceHost" : "172.28.0.6:1234",
+  "latestReportTime" : null
+}
+[WI-0][TI-3] - 2025-11-06 21:18:11.873 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-4] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[191] - Success fire TaskExecutorDispatchedLifecycleEvent: {"taskInstanceId":3,"eventCreateTime":1762435091848,"type":"DISPATCHED","workflowInstanceId":3,"taskInstanceHost":"172.28.0.6:1234","latestReportTime":null} 
+[WI-0][TI-3] - 2025-11-06 21:18:11.880 INFO  [PhysicalTaskExecutorLifecycleEventReporter] o.a.d.e.m.TaskExecutorEventRemoteReporterClient:[73] - Report: TaskExecutorDispatchedLifecycleEvent(super=AbstractTaskExecutorLifecycleEvent(super=AbstractDelayEvent(delayTime=0, createTimeInNano=103039422709432, expiredTimeInNano=103039422709732), taskInstanceId=3, eventCreateTime=1762435091848, type=DISPATCHED), workflowInstanceId=3, taskInstanceHost=172.28.0.6:1234, latestReportTime=1762435091873) to master success
+[WI-0][TI-3] - 2025-11-06 21:18:11.910 INFO  [exclusive-task-executor-container-worker-0] o.a.d.s.w.u.TaskExecutionContextUtils:[89] - Download resource file /tmp/dolphinscheduler/default/resources/flink-file-wordcount-1.0-SNAPSHOT.jar -> /tmp/dolphinscheduler/exec/process/3/flink-file-wordcount-1.0-SNAPSHOT.jar successfully
+[WI-0][TI-3] - 2025-11-06 21:18:11.913 INFO  [exclusive-task-executor-container-worker-0] o.a.d.s.w.e.PhysicalTaskExecutor:[138] - Download resources successfully: 
+ResourceContext(resourceItemMap={/tmp/dolphinscheduler/default/resources/flink-file-wordcount-1.0-SNAPSHOT.jar=ResourceContext.ResourceItem(resourceAbsolutePathInStorage=/tmp/dolphinscheduler/default/resources/flink-file-wordcount-1.0-SNAPSHOT.jar, resourceAbsolutePathInLocal=/tmp/dolphinscheduler/exec/process/3/flink-file-wordcount-1.0-SNAPSHOT.jar)})
+[WI-0][TI-3] - 2025-11-06 21:18:11.914 INFO  [exclusive-task-executor-container-worker-0] o.a.d.s.w.e.PhysicalTaskExecutor:[140] - Initialized Task Context{
+  "taskInstanceId" : 3,
+  "taskName" : "wow",
+  "firstSubmitTime" : 1762435091803,
+  "startTime" : 1762435091867,
+  "taskType" : "FLINK",
+  "workflowInstanceHost" : "172.28.0.6:5678",
+  "host" : "172.28.0.6:1234",
+  "executePath" : "/tmp/dolphinscheduler/exec/process/3",
+  "logPath" : "/opt/dolphinscheduler/worker-server/logs/20251106/156676755523488/2/3/3.log",
+  "appInfoPath" : "/tmp/dolphinscheduler/exec/process/3/appInfo.log",
+  "processId" : 0,
+  "workflowDefinitionCode" : 156676755523488,
+  "workflowDefinitionVersion" : 2,
+  "workflowInstanceId" : 3,
+  "scheduleTime" : 0,
+  "globalParams" : "[]",
+  "executorId" : 1,
+  "tenantCode" : "cpy",
+  "workflowDefinitionId" : 0,
+  "taskParams" : "{\"localParams\":[],\"initScript\":\"\",\"rawScript\":\"\",\"resourceList\":[],\"programType\":\"JAVA\",\"mainClass\":\"org.example.HelloWorld\",\"mainJar\":{\"resourceName\":\"/tmp/dolphinscheduler/default/resources/flink-file-wordcount-1.0-SNAPSHOT.jar\"},\"deployMode\":\"cluster\",\"mainArgs\":\"--output /tmp/flink/output\",\"yarnQueue\":\"\",\"flinkVersion\":\">=1.12\",\"jobManagerMemory\":\"1G\",\"taskManagerMemory\":\"2G\",\"slot\":1,\"taskManager\":2,\"parallelism\":1}",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "wow"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "aaa"
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "156676563539872"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "3"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20251106"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20251105"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "3"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "wow"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "156676695588768"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "156676755523488"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20251106211811"
+    }
+  },
+  "taskAppId" : "3",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "resourceParametersHelper" : {
+    "resourceMap" : { }
+  },
+  "endTime" : 0,
+  "resourceContext" : { },
+  "dryRun" : 0,
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "dispatchFailTimes" : 0,
+  "failover" : false
+}
+[WI-0][TI-3] - 2025-11-06 21:18:11.915 INFO  [exclusive-task-executor-container-worker-0] o.a.d.t.e.e.TaskExecutorEventBus:[32] - Publish TaskExecutorStartedLifecycleEvent: {
+  "taskInstanceId" : 3,
+  "eventCreateTime" : 1762435091915,
+  "type" : "RUNNING",
+  "workflowInstanceId" : 3,
+  "taskInstanceHost" : "172.28.0.6:1234",
+  "startTime" : 1762435091867,
+  "logPath" : "/opt/dolphinscheduler/worker-server/logs/20251106/156676755523488/2/3/3.log",
+  "executePath" : "/tmp/dolphinscheduler/exec/process/3",
+  "latestReportTime" : null
+}
+[WI-0][TI-3] - 2025-11-06 21:18:11.915 INFO  [exclusive-task-executor-container-worker-0] o.a.d.p.t.a.l.TaskInstanceLogHeader:[37] - 🐬 Load Task Instance Plugin
+[WI-0][TI-3] - 2025-11-06 21:18:11.917 INFO  [exclusive-task-executor-container-worker-0] o.a.d.s.w.e.PhysicalTaskExecutor:[66] - Initialized physicalTask: FLINK successfully
+[WI-0][TI-3] - 2025-11-06 21:18:11.921 INFO  [exclusive-task-executor-container-worker-0] o.a.d.p.t.f.FlinkTask:[60] - Initialize flink task params {
+  "localParams" : [ ],
+  "varPool" : [ ],
+  "mainJar" : {
+    "id" : null,
+    "resourceName" : "/tmp/dolphinscheduler/default/resources/flink-file-wordcount-1.0-SNAPSHOT.jar",
+    "res" : null
+  },
+  "mainClass" : "org.example.HelloWorld",
+  "deployMode" : "cluster",
+  "mainArgs" : "--output /tmp/flink/output",
+  "slot" : 1,
+  "parallelism" : 1,
+  "appName" : null,
+  "taskManager" : 2,
+  "jobManagerMemory" : "1G",
+  "taskManagerMemory" : "2G",
+  "resourceList" : [ ],
+  "yarnQueue" : "",
+  "others" : null,
+  "flinkVersion" : ">=1.12",
+  "programType" : "JAVA",
+  "initScript" : "",
+  "rawScript" : ""
+}
+[WI-0][TI-3] - 2025-11-06 21:18:11.923 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-5] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[111] - Report : {
+  "taskInstanceId" : 3,
+  "eventCreateTime" : 1762435091915,
+  "type" : "RUNNING",
+  "workflowInstanceId" : 3,
+  "taskInstanceHost" : "172.28.0.6:1234",
+  "startTime" : 1762435091867,
+  "logPath" : "/opt/dolphinscheduler/worker-server/logs/20251106/156676755523488/2/3/3.log",
+  "executePath" : "/tmp/dolphinscheduler/exec/process/3",
+  "latestReportTime" : null
+}
+[WI-0][TI-3] - 2025-11-06 21:18:11.923 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-5] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[191] - Success fire TaskExecutorStartedLifecycleEvent: {"taskInstanceId":3,"eventCreateTime":1762435091915,"type":"RUNNING","workflowInstanceId":3,"taskInstanceHost":"172.28.0.6:1234","startTime":1762435091867,"logPath":"/opt/dolphinscheduler/worker-server/logs/20251106/156676755523488/2/3/3.log","executePath":"/tmp/dolphinscheduler/exec/process/3","latestReportTime":null} 
+[WI-0][TI-3] - 2025-11-06 21:18:11.933 INFO  [exclusive-task-executor-container-worker-0] o.a.d.p.t.f.FileUtils:[101] - Writing content: set execution.target=yarn-per-job;
+set taskmanager.numberOfTaskSlots=1;
+set jobmanager.memory.process.size=1G;
+set taskmanager.memory.process.size=2G;
+set parallelism.default=1;
+
+[WI-0][TI-3] - 2025-11-06 21:18:11.935 INFO  [exclusive-task-executor-container-worker-0] o.a.d.p.t.f.FileUtils:[102] - To file: /tmp/dolphinscheduler/exec/process/3/3_init.sql
+[WI-0][TI-3] - 2025-11-06 21:18:11.936 INFO  [exclusive-task-executor-container-worker-0] o.a.d.s.w.e.PhysicalTaskExecutor:[71] - Set taskVarPool: null successfully
+[WI-0][TI-3] - 2025-11-06 21:18:11.936 INFO  [exclusive-task-executor-container-worker-0] o.a.d.p.t.a.l.TaskInstanceLogHeader:[41] - 🐬 Execute Task Instance
+[WI-0][TI-3] - 2025-11-06 21:18:11.939 INFO  [exclusive-task-executor-container-worker-0] o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[64] - Final Script Content:
+====================
+#!/bin/bash
+BASEDIR=$(cd `dirname $0`; pwd)
+cd $BASEDIR
+${FLINK_HOME}/bin/flink run -t yarn-per-job -ys 1 -yjm 1G -ytm 2G -p 1 -sae -c org.example.HelloWorld /tmp/dolphinscheduler/exec/process/3/flink-file-wordcount-1.0-SNAPSHOT.jar --output /tmp/flink/output
+====================
+[WI-0][TI-3] - 2025-11-06 21:18:11.940 INFO  [exclusive-task-executor-container-worker-0] o.a.d.p.t.a.s.BaseShellInterceptor:[46] - Executing shell command : sudo -u cpy -i /tmp/dolphinscheduler/exec/process/3/3.sh
+[WI-0][TI-3] - 2025-11-06 21:18:11.947 INFO  [exclusive-task-executor-container-worker-0] o.a.d.p.t.a.AbstractCommandExecutor:[151] - process start, process id is: 1206
+[WI-0][TI-3] - 2025-11-06 21:18:11.948 INFO  [exclusive-task-executor-container-worker-0] o.a.d.t.e.e.TaskExecutorEventBus:[32] - Publish TaskExecutorRuntimeContextChangedLifecycleEvent: {
+  "taskInstanceId" : 3,
+  "eventCreateTime" : 1762435091948,
+  "type" : "RUNTIME_CONTEXT_CHANGE",
+  "workflowInstanceId" : 3,
+  "taskInstanceHost" : "172.28.0.6:1234",
+  "processId" : 1206,
+  "appIds" : null,
+  "latestReportTime" : null
+}
+[WI-0][TI-0] - 2025-11-06 21:18:11.961 INFO  [WorkerRpcServer-methodInvoker-9] o.a.d.s.w.r.PhysicalTaskExecutorOperatorImpl:[101] - Receive TaskExecutorLifecycleEventAck: ITaskExecutorLifecycleEventReporter.TaskExecutorLifecycleEventAck(taskExecutorId=3, taskExecutorLifecycleEventType=DISPATCHED)
+[WI-0][TI-0] - 2025-11-06 21:18:11.962 INFO  [WorkerRpcServer-methodInvoker-9] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[137] - Success removed TaskExecutorDispatchedLifecycleEvent(super=AbstractTaskExecutorLifecycleEvent(super=AbstractDelayEvent(delayTime=0, createTimeInNano=103039422709432, expiredTimeInNano=103039422709732), taskInstanceId=3, eventCreateTime=1762435091848, type=DISPATCHED), workflowInstanceId=3, taskInstanceHost=172.28.0.6:1234, latestReportTime=1762435091873) by ack: ITaskExecutorLifecycleEventReporter.TaskExecutorLifecycleEventAck(taskExecutorId=3, taskExecutorLifecycleEventType=DISPATCHED)
+[WI-0][TI-3] - 2025-11-06 21:18:11.972 INFO  [PhysicalTaskExecutorLifecycleEventReporter] o.a.d.e.m.TaskExecutorEventRemoteReporterClient:[73] - Report: TaskExecutorStartedLifecycleEvent(super=AbstractTaskExecutorLifecycleEvent(super=AbstractDelayEvent(delayTime=0, createTimeInNano=103039489656504, expiredTimeInNano=103039489659705), taskInstanceId=3, eventCreateTime=1762435091915, type=RUNNING), workflowInstanceId=3, taskInstanceHost=172.28.0.6:1234, startTime=1762435091867, logPath=/opt/dolphinscheduler/worker-server/logs/20251106/156676755523488/2/3/3.log, executePath=/tmp/dolphinscheduler/exec/process/3, latestReportTime=1762435091962) to master success
+[WI-0][TI-3] - 2025-11-06 21:18:11.973 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-main-0] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[111] - Report : {
+  "taskInstanceId" : 3,
+  "eventCreateTime" : 1762435091948,
+  "type" : "RUNTIME_CONTEXT_CHANGE",
+  "workflowInstanceId" : 3,
+  "taskInstanceHost" : "172.28.0.6:1234",
+  "processId" : 1206,
+  "appIds" : null,
+  "latestReportTime" : null
+}
+[WI-0][TI-3] - 2025-11-06 21:18:11.974 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-main-0] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[191] - Success fire TaskExecutorRuntimeContextChangedLifecycleEvent: {"taskInstanceId":3,"eventCreateTime":1762435091948,"type":"RUNTIME_CONTEXT_CHANGE","workflowInstanceId":3,"taskInstanceHost":"172.28.0.6:1234","processId":1206,"appIds":null,"latestReportTime":null} 
+[WI-0][TI-0] - 2025-11-06 21:18:11.982 INFO  [WorkerRpcServer-methodInvoker-10] o.a.d.s.w.r.PhysicalTaskExecutorOperatorImpl:[101] - Receive TaskExecutorLifecycleEventAck: ITaskExecutorLifecycleEventReporter.TaskExecutorLifecycleEventAck(taskExecutorId=3, taskExecutorLifecycleEventType=RUNNING)
+[WI-0][TI-0] - 2025-11-06 21:18:11.983 INFO  [WorkerRpcServer-methodInvoker-10] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[137] - Success removed TaskExecutorStartedLifecycleEvent(super=AbstractTaskExecutorLifecycleEvent(super=AbstractDelayEvent(delayTime=0, createTimeInNano=103039489656504, expiredTimeInNano=103039489659705), taskInstanceId=3, eventCreateTime=1762435091915, type=RUNNING), workflowInstanceId=3, taskInstanceHost=172.28.0.6:1234, startTime=1762435091867, logPath=/opt/dolphinscheduler/worker-server/logs/20251106/156676755523488/2/3/3.log, executePath=/tmp/dolphinscheduler/exec/process/3, latestReportTime=1762435091962) by ack: ITaskExecutorLifecycleEventReporter.TaskExecutorLifecycleEventAck(taskExecutorId=3, taskExecutorLifecycleEventType=RUNNING)
+[WI-0][TI-3] - 2025-11-06 21:18:11.993 INFO  [PhysicalTaskExecutorLifecycleEventReporter] o.a.d.e.m.TaskExecutorEventRemoteReporterClient:[73] - Report: TaskExecutorRuntimeContextChangedLifecycleEvent(super=AbstractTaskExecutorLifecycleEvent(super=AbstractDelayEvent(delayTime=0, createTimeInNano=103039522555173, expiredTimeInNano=103039522555473), taskInstanceId=3, eventCreateTime=1762435091948, type=RUNTIME_CONTEXT_CHANGE), workflowInstanceId=3, taskInstanceHost=172.28.0.6:1234, processId=1206, appIds=null, latestReportTime=1762435091984) to master success
+[WI-0][TI-0] - 2025-11-06 21:18:12.098 INFO  [WorkerRpcServer-methodInvoker-11] o.a.d.s.w.r.PhysicalTaskExecutorOperatorImpl:[101] - Receive TaskExecutorLifecycleEventAck: ITaskExecutorLifecycleEventReporter.TaskExecutorLifecycleEventAck(taskExecutorId=3, taskExecutorLifecycleEventType=RUNTIME_CONTEXT_CHANGE)
+[WI-0][TI-0] - 2025-11-06 21:18:12.099 INFO  [WorkerRpcServer-methodInvoker-11] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[137] - Success removed TaskExecutorRuntimeContextChangedLifecycleEvent(super=AbstractTaskExecutorLifecycleEvent(super=AbstractDelayEvent(delayTime=0, createTimeInNano=103039522555173, expiredTimeInNano=103039522555473), taskInstanceId=3, eventCreateTime=1762435091948, type=RUNTIME_CONTEXT_CHANGE), workflowInstanceId=3, taskInstanceHost=172.28.0.6:1234, processId=1206, appIds=null, latestReportTime=1762435091984) by ack: ITaskExecutorLifecycleEventReporter.TaskExecutorLifecycleEventAck(taskExecutorId=3, taskExecutorLifecycleEventType=RUNTIME_CONTEXT_CHANGE)
+[WI-0][TI-0] - 2025-11-06 21:18:12.948 INFO  [TaskInstanceLogOutput-thread-wow] o.a.d.p.t.a.AbstractTask:[163] -  -> 
+	/tmp/dolphinscheduler/exec/process/3/3.sh: line 4: /bin/flink: No such file or directory
+[WI-0][TI-3] - 2025-11-06 21:18:12.958 INFO  [exclusive-task-executor-container-worker-0] o.a.d.p.t.a.AbstractCommandExecutor:[201] - process has exited. execute path:/tmp/dolphinscheduler/exec/process/3, processId:1206 ,exitStatusCode:127 ,processWaitForStatus:true ,processExitValue:127
+[WI-0][TI-3] - 2025-11-06 21:18:12.963 INFO  [exclusive-task-executor-container-worker-0] o.a.d.p.t.a.u.LogUtils:[78] - Start finding appId in /opt/dolphinscheduler/worker-server/logs/20251106/156676755523488/2/3/3.log, fetch way: log 
+[WI-0][TI-3] - 2025-11-06 21:18:12.977 INFO  [exclusive-task-executor-container-worker-0] o.a.d.t.e.e.TaskExecutorEventBus:[32] - Publish TaskExecutorFailedLifecycleEvent: {
+  "taskInstanceId" : 3,
+  "eventCreateTime" : 1762435092977,
+  "type" : "FAILED",
+  "workflowInstanceId" : 3,
+  "taskInstanceHost" : "172.28.0.6:1234",
+  "appIds" : null,
+  "endTime" : 1762435092977,
+  "latestReportTime" : null
+}
+[WI-0][TI-3] - 2025-11-06 21:18:12.982 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-2] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[111] - Report : {
+  "taskInstanceId" : 3,
+  "eventCreateTime" : 1762435092977,
+  "type" : "FAILED",
+  "workflowInstanceId" : 3,
+  "taskInstanceHost" : "172.28.0.6:1234",
+  "appIds" : null,
+  "endTime" : 1762435092977,
+  "latestReportTime" : null
+}
+[WI-0][TI-3] - 2025-11-06 21:18:12.983 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-2] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[191] - Success fire TaskExecutorFailedLifecycleEvent: {"taskInstanceId":3,"eventCreateTime":1762435092977,"type":"FAILED","workflowInstanceId":3,"taskInstanceHost":"172.28.0.6:1234","appIds":null,"endTime":1762435092977,"latestReportTime":null} 
+[WI-0][TI-3] - 2025-11-06 21:18:12.992 INFO  [PhysicalTaskExecutorLifecycleEventReporter] o.a.d.e.m.TaskExecutorEventRemoteReporterClient:[73] - Report: TaskExecutorFailedLifecycleEvent(super=AbstractTaskExecutorLifecycleEvent(super=AbstractDelayEvent(delayTime=0, createTimeInNano=103040551203642, expiredTimeInNano=103040551203942), taskInstanceId=3, eventCreateTime=1762435092977, type=FAILED), workflowInstanceId=3, taskInstanceHost=172.28.0.6:1234, appIds=null, endTime=1762435092977, latestReportTime=1762435092983) to master success
+[WI-0][TI-0] - 2025-11-06 21:18:13.018 INFO  [WorkerRpcServer-methodInvoker-12] o.a.d.s.w.r.PhysicalTaskExecutorOperatorImpl:[101] - Receive TaskExecutorLifecycleEventAck: ITaskExecutorLifecycleEventReporter.TaskExecutorLifecycleEventAck(taskExecutorId=3, taskExecutorLifecycleEventType=FAILED)
+[WI-0][TI-0] - 2025-11-06 21:18:13.019 INFO  [WorkerRpcServer-methodInvoker-12] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[137] - Success removed TaskExecutorFailedLifecycleEvent(super=AbstractTaskExecutorLifecycleEvent(super=AbstractDelayEvent(delayTime=0, createTimeInNano=103040551203642, expiredTimeInNano=103040551203942), taskInstanceId=3, eventCreateTime=1762435092977, type=FAILED), workflowInstanceId=3, taskInstanceHost=172.28.0.6:1234, appIds=null, endTime=1762435092977, latestReportTime=1762435092983) by ack: ITaskExecutorLifecycleEventReporter.TaskExecutorLifecycleEventAck(taskExecutorId=3, taskExecutorLifecycleEventType=FAILED)
+[WI-0][TI-0] - 2025-11-06 21:18:13.020 INFO  [WorkerRpcServer-methodInvoker-12] o.a.d.t.e.e.TaskExecutorEventBus:[32] - Publish TaskExecutorFinalizeLifecycleEvent: {
+  "taskInstanceId" : 3,
+  "eventCreateTime" : 1762435093020,
+  "type" : "FINALIZE"
+}
+[WI-0][TI-3] - 2025-11-06 21:18:13.032 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-3] o.a.d.p.t.a.l.TaskInstanceLogHeader:[45] - 🐬 Finalize Task Instance
+[WI-0][TI-3] - 2025-11-06 21:18:13.033 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-3] o.a.d.t.e.c.AbstractTaskExecutorContainer:[99] - FINALIZE_SESSION
+[WI-0][TI-3] - 2025-11-06 21:18:13.036 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-3] o.a.d.s.w.u.TaskExecutionContextUtils:[117] - Deleted task exec directory: /tmp/dolphinscheduler/exec/process/3
+[WI-0][TI-3] - 2025-11-06 21:18:13.037 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-3] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[191] - Success fire TaskExecutorFinalizeLifecycleEvent: {"taskInstanceId":3,"eventCreateTime":1762435093020,"type":"FINALIZE"} 
+[WI-0][TI-0] - 2025-11-06 21:24:26.932 INFO  [WorkerRpcServer-methodInvoker-13] o.a.d.s.w.r.PhysicalTaskExecutorOperatorImpl:[49] - Receive TaskExecutorDispatchResponse: TaskExecutorDispatchRequest(taskExecutionContext=TaskExecutionContext(taskInstanceId=4, taskName=wow, firstSubmitTime=1762435466917, startTime=0, taskType=FLINK, workflowInstanceHost=172.28.0.6:5678, host=172.28.0.6:1234, executePath=null, logPath=null, appInfoPath=null, processId=0, workflowDefinitionCode=156676755523488, workflowDefinitionVersion=4, appIds=null, workflowInstanceId=4, scheduleTime=0, globalParams=[], executorId=1, tenantCode=cpy, workflowDefinitionId=0, taskParams={"localParams":[],"initScript":"","rawScript":"","resourceList":[],"programType":"JAVA","mainClass":"org.example.HelloWorld","mainJar":{"resourceName":"/tmp/dolphinscheduler/default/resources/flink-file-wordcount-1.0-SNAPSHOT.jar"},"deployMode":"application","mainArgs":"--output /tmp/flink/output","yarnQueue":"","flinkVersion":">=1.12","jobManagerMemory":"1G","taskManagerMemory":"2G","slot":1,"taskManager":2,"parallelism":1}, environmentConfig=null, prepareParamsMap={system.task.definition.name=Property(prop=system.task.definition.name, direct=IN, type=VARCHAR, value=wow), system.project.name=Property(prop=system.project.name, direct=IN, type=VARCHAR, value=aaa), system.project.code=Property(prop=system.project.code, direct=IN, type=VARCHAR, value=156676563539872), system.workflow.instance.id=Property(prop=system.workflow.instance.id, direct=IN, type=VARCHAR, value=4), system.biz.curdate=Property(prop=system.biz.curdate, direct=IN, type=VARCHAR, value=20251106), system.biz.date=Property(prop=system.biz.date, direct=IN, type=VARCHAR, value=20251105), system.task.instance.id=Property(prop=system.task.instance.id, direct=IN, type=VARCHAR, value=4), system.workflow.definition.name=Property(prop=system.workflow.definition.name, direct=IN, type=VARCHAR, value=wow), system.task.definition.code=Property(prop=system.task.definition.code, direct=IN, type=VARCHAR, value=156676695588768), system.workflow.definition.code=Property(prop=system.workflow.definition.code, direct=IN, type=VARCHAR, value=156676755523488), system.datetime=Property(prop=system.datetime, direct=IN, type=VARCHAR, value=20251106212426)}, taskAppId=null, taskTimeoutStrategy=null, taskTimeout=2147483647, workerGroup=default, resourceParametersHelper=org.apache.dolphinscheduler.plugin.task.api.parameters.resource.ResourceParametersHelper@25df0dee, endTime=0, sqlTaskExecutionContext=null, k8sTaskExecutionContext=null, resourceContext=null, varPool=null, dryRun=0, cpuQuota=-1, memoryMax=-1, dispatchFailTimes=0, failover=false))
+[WI-0][TI-4] - 2025-11-06 21:24:26.934 INFO  [WorkerRpcServer-methodInvoker-13] o.a.d.t.e.e.TaskExecutorEventBus:[32] - Publish TaskExecutorDispatchedLifecycleEvent: {
+  "taskInstanceId" : 4,
+  "eventCreateTime" : 1762435466934,
+  "type" : "DISPATCHED",
+  "workflowInstanceId" : 4,
+  "taskInstanceHost" : "172.28.0.6:1234",
+  "latestReportTime" : null
+}
+[WI-0][TI-0] - 2025-11-06 21:24:26.935 INFO  [WorkerRpcServer-methodInvoker-13] o.a.d.s.w.r.PhysicalTaskExecutorOperatorImpl:[53] - Handle TaskExecutorDispatchResponse: TaskExecutorDispatchRequest(taskExecutionContext=TaskExecutionContext(taskInstanceId=4, taskName=wow, firstSubmitTime=1762435466917, startTime=0, taskType=FLINK, workflowInstanceHost=172.28.0.6:5678, host=172.28.0.6:1234, executePath=null, logPath=/opt/dolphinscheduler/worker-server/logs/20251106/156676755523488/4/4/4.log, appInfoPath=null, processId=0, workflowDefinitionCode=156676755523488, workflowDefinitionVersion=4, appIds=null, workflowInstanceId=4, scheduleTime=0, globalParams=[], executorId=1, tenantCode=cpy, workflowDefinitionId=0, taskParams={"localParams":[],"initScript":"","rawScript":"","resourceList":[],"programType":"JAVA","mainClass":"org.example.HelloWorld","mainJar":{"resourceName":"/tmp/dolphinscheduler/default/resources/flink-file-wordcount-1.0-SNAPSHOT.jar"},"deployMode":"application","mainArgs":"--output /tmp/flink/output","yarnQueue":"","flinkVersion":">=1.12","jobManagerMemory":"1G","taskManagerMemory":"2G","slot":1,"taskManager":2,"parallelism":1}, environmentConfig=null, prepareParamsMap={system.task.definition.name=Property(prop=system.task.definition.name, direct=IN, type=VARCHAR, value=wow), system.project.name=Property(prop=system.project.name, direct=IN, type=VARCHAR, value=aaa), system.project.code=Property(prop=system.project.code, direct=IN, type=VARCHAR, value=156676563539872), system.workflow.instance.id=Property(prop=system.workflow.instance.id, direct=IN, type=VARCHAR, value=4), system.biz.curdate=Property(prop=system.biz.curdate, direct=IN, type=VARCHAR, value=20251106), system.biz.date=Property(prop=system.biz.date, direct=IN, type=VARCHAR, value=20251105), system.task.instance.id=Property(prop=system.task.instance.id, direct=IN, type=VARCHAR, value=4), system.workflow.definition.name=Property(prop=system.workflow.definition.name, direct=IN, type=VARCHAR, value=wow), system.task.definition.code=Property(prop=system.task.definition.code, direct=IN, type=VARCHAR, value=156676695588768), system.workflow.definition.code=Property(prop=system.workflow.definition.code, direct=IN, type=VARCHAR, value=156676755523488), system.datetime=Property(prop=system.datetime, direct=IN, type=VARCHAR, value=20251106212426)}, taskAppId=null, taskTimeoutStrategy=null, taskTimeout=2147483647, workerGroup=default, resourceParametersHelper=org.apache.dolphinscheduler.plugin.task.api.parameters.resource.ResourceParametersHelper@25df0dee, endTime=0, sqlTaskExecutionContext=null, k8sTaskExecutionContext=null, resourceContext=null, varPool=null, dryRun=0, cpuQuota=-1, memoryMax=-1, dispatchFailTimes=0, failover=false)) success
+[WI-0][TI-4] - 2025-11-06 21:24:26.936 INFO  [exclusive-task-executor-container-worker-0] o.a.d.p.t.a.l.TaskInstanceLogHeader:[33] - 🐬 Initialize Task Context
+[WI-0][TI-4] - 2025-11-06 21:24:26.949 INFO  [exclusive-task-executor-container-worker-0] o.a.d.t.e.AbstractTaskExecutor:[130] - Initialized taskContext {
+  "taskInstanceId" : 4,
+  "taskName" : "wow",
+  "firstSubmitTime" : 1762435466917,
+  "startTime" : 1762435466948,
+  "taskType" : "FLINK",
+  "workflowInstanceHost" : "172.28.0.6:5678",
+  "host" : "172.28.0.6:1234",
+  "logPath" : "/opt/dolphinscheduler/worker-server/logs/20251106/156676755523488/4/4/4.log",
+  "processId" : 0,
+  "workflowDefinitionCode" : 156676755523488,
+  "workflowDefinitionVersion" : 4,
+  "workflowInstanceId" : 4,
+  "scheduleTime" : 0,
+  "globalParams" : "[]",
+  "executorId" : 1,
+  "tenantCode" : "cpy",
+  "workflowDefinitionId" : 0,
+  "taskParams" : "{\"localParams\":[],\"initScript\":\"\",\"rawScript\":\"\",\"resourceList\":[],\"programType\":\"JAVA\",\"mainClass\":\"org.example.HelloWorld\",\"mainJar\":{\"resourceName\":\"/tmp/dolphinscheduler/default/resources/flink-file-wordcount-1.0-SNAPSHOT.jar\"},\"deployMode\":\"application\",\"mainArgs\":\"--output /tmp/flink/output\",\"yarnQueue\":\"\",\"flinkVersion\":\">=1.12\",\"jobManagerMemory\":\"1G\",\"taskManagerMemory\":\"2G\",\"slot\":1,\"taskManager\":2,\"parallelism\":1}",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "wow"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "aaa"
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "156676563539872"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "4"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20251106"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20251105"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "4"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "wow"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "156676695588768"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "156676755523488"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20251106212426"
+    }
+  },
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "resourceParametersHelper" : {
+    "resourceMap" : { }
+  },
+  "endTime" : 0,
+  "dryRun" : 0,
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "dispatchFailTimes" : 0,
+  "failover" : false
+}
+[WI-0][TI-4] - 2025-11-06 21:24:26.950 INFO  [exclusive-task-executor-container-worker-0] o.a.d.s.w.e.PhysicalTaskExecutor:[128] - TenantCode: cpy check successfully
+[WI-0][TI-4] - 2025-11-06 21:24:26.952 INFO  [exclusive-task-executor-container-worker-0] o.a.d.s.w.e.PhysicalTaskExecutor:[131] - TaskInstance working directory: /tmp/dolphinscheduler/exec/process/4 create successfully
+[WI-0][TI-4] - 2025-11-06 21:24:26.961 INFO  [exclusive-task-executor-container-worker-0] o.a.d.s.w.u.TaskExecutionContextUtils:[89] - Download resource file /tmp/dolphinscheduler/default/resources/flink-file-wordcount-1.0-SNAPSHOT.jar -> /tmp/dolphinscheduler/exec/process/4/flink-file-wordcount-1.0-SNAPSHOT.jar successfully
+[WI-0][TI-4] - 2025-11-06 21:24:26.964 INFO  [exclusive-task-executor-container-worker-0] o.a.d.s.w.e.PhysicalTaskExecutor:[138] - Download resources successfully: 
+ResourceContext(resourceItemMap={/tmp/dolphinscheduler/default/resources/flink-file-wordcount-1.0-SNAPSHOT.jar=ResourceContext.ResourceItem(resourceAbsolutePathInStorage=/tmp/dolphinscheduler/default/resources/flink-file-wordcount-1.0-SNAPSHOT.jar, resourceAbsolutePathInLocal=/tmp/dolphinscheduler/exec/process/4/flink-file-wordcount-1.0-SNAPSHOT.jar)})
+[WI-0][TI-4] - 2025-11-06 21:24:26.965 INFO  [exclusive-task-executor-container-worker-0] o.a.d.s.w.e.PhysicalTaskExecutor:[140] - Initialized Task Context{
+  "taskInstanceId" : 4,
+  "taskName" : "wow",
+  "firstSubmitTime" : 1762435466917,
+  "startTime" : 1762435466948,
+  "taskType" : "FLINK",
+  "workflowInstanceHost" : "172.28.0.6:5678",
+  "host" : "172.28.0.6:1234",
+  "executePath" : "/tmp/dolphinscheduler/exec/process/4",
+  "logPath" : "/opt/dolphinscheduler/worker-server/logs/20251106/156676755523488/4/4/4.log",
+  "appInfoPath" : "/tmp/dolphinscheduler/exec/process/4/appInfo.log",
+  "processId" : 0,
+  "workflowDefinitionCode" : 156676755523488,
+  "workflowDefinitionVersion" : 4,
+  "workflowInstanceId" : 4,
+  "scheduleTime" : 0,
+  "globalParams" : "[]",
+  "executorId" : 1,
+  "tenantCode" : "cpy",
+  "workflowDefinitionId" : 0,
+  "taskParams" : "{\"localParams\":[],\"initScript\":\"\",\"rawScript\":\"\",\"resourceList\":[],\"programType\":\"JAVA\",\"mainClass\":\"org.example.HelloWorld\",\"mainJar\":{\"resourceName\":\"/tmp/dolphinscheduler/default/resources/flink-file-wordcount-1.0-SNAPSHOT.jar\"},\"deployMode\":\"application\",\"mainArgs\":\"--output /tmp/flink/output\",\"yarnQueue\":\"\",\"flinkVersion\":\">=1.12\",\"jobManagerMemory\":\"1G\",\"taskManagerMemory\":\"2G\",\"slot\":1,\"taskManager\":2,\"parallelism\":1}",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "wow"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "aaa"
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "156676563539872"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "4"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20251106"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20251105"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "4"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "wow"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "156676695588768"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "156676755523488"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20251106212426"
+    }
+  },
+  "taskAppId" : "4",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "resourceParametersHelper" : {
+    "resourceMap" : { }
+  },
+  "endTime" : 0,
+  "resourceContext" : { },
+  "dryRun" : 0,
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "dispatchFailTimes" : 0,
+  "failover" : false
+}
+[WI-0][TI-4] - 2025-11-06 21:24:26.966 INFO  [exclusive-task-executor-container-worker-0] o.a.d.t.e.e.TaskExecutorEventBus:[32] - Publish TaskExecutorStartedLifecycleEvent: {
+  "taskInstanceId" : 4,
+  "eventCreateTime" : 1762435466966,
+  "type" : "RUNNING",
+  "workflowInstanceId" : 4,
+  "taskInstanceHost" : "172.28.0.6:1234",
+  "startTime" : 1762435466948,
+  "logPath" : "/opt/dolphinscheduler/worker-server/logs/20251106/156676755523488/4/4/4.log",
+  "executePath" : "/tmp/dolphinscheduler/exec/process/4",
+  "latestReportTime" : null
+}
+[WI-0][TI-4] - 2025-11-06 21:24:26.966 INFO  [exclusive-task-executor-container-worker-0] o.a.d.p.t.a.l.TaskInstanceLogHeader:[37] - 🐬 Load Task Instance Plugin
+[WI-0][TI-4] - 2025-11-06 21:24:26.967 INFO  [exclusive-task-executor-container-worker-0] o.a.d.s.w.e.PhysicalTaskExecutor:[66] - Initialized physicalTask: FLINK successfully
+[WI-0][TI-4] - 2025-11-06 21:24:26.968 INFO  [exclusive-task-executor-container-worker-0] o.a.d.p.t.f.FlinkTask:[60] - Initialize flink task params {
+  "localParams" : [ ],
+  "varPool" : [ ],
+  "mainJar" : {
+    "id" : null,
+    "resourceName" : "/tmp/dolphinscheduler/default/resources/flink-file-wordcount-1.0-SNAPSHOT.jar",
+    "res" : null
+  },
+  "mainClass" : "org.example.HelloWorld",
+  "deployMode" : "application",
+  "mainArgs" : "--output /tmp/flink/output",
+  "slot" : 1,
+  "parallelism" : 1,
+  "appName" : null,
+  "taskManager" : 2,
+  "jobManagerMemory" : "1G",
+  "taskManagerMemory" : "2G",
+  "resourceList" : [ ],
+  "yarnQueue" : "",
+  "others" : null,
+  "flinkVersion" : ">=1.12",
+  "programType" : "JAVA",
+  "initScript" : "",
+  "rawScript" : ""
+}
+[WI-0][TI-4] - 2025-11-06 21:24:26.969 INFO  [exclusive-task-executor-container-worker-0] o.a.d.p.t.f.FileUtils:[101] - Writing content: set execution.target=yarn-per-job;
+set taskmanager.numberOfTaskSlots=1;
+set jobmanager.memory.process.size=1G;
+set taskmanager.memory.process.size=2G;
+set parallelism.default=1;
+
+[WI-0][TI-4] - 2025-11-06 21:24:26.970 INFO  [exclusive-task-executor-container-worker-0] o.a.d.p.t.f.FileUtils:[102] - To file: /tmp/dolphinscheduler/exec/process/4/4_init.sql
+[WI-0][TI-4] - 2025-11-06 21:24:26.970 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-4] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[111] - Report : {
+  "taskInstanceId" : 4,
+  "eventCreateTime" : 1762435466934,
+  "type" : "DISPATCHED",
+  "workflowInstanceId" : 4,
+  "taskInstanceHost" : "172.28.0.6:1234",
+  "latestReportTime" : null
+}
+[WI-0][TI-4] - 2025-11-06 21:24:26.971 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-4] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[191] - Success fire TaskExecutorDispatchedLifecycleEvent: {"taskInstanceId":4,"eventCreateTime":1762435466934,"type":"DISPATCHED","workflowInstanceId":4,"taskInstanceHost":"172.28.0.6:1234","latestReportTime":null} 
+[WI-0][TI-4] - 2025-11-06 21:24:26.971 INFO  [exclusive-task-executor-container-worker-0] o.a.d.s.w.e.PhysicalTaskExecutor:[71] - Set taskVarPool: null successfully
+[WI-0][TI-4] - 2025-11-06 21:24:26.972 INFO  [exclusive-task-executor-container-worker-0] o.a.d.p.t.a.l.TaskInstanceLogHeader:[41] - 🐬 Execute Task Instance
+[WI-0][TI-4] - 2025-11-06 21:24:26.973 INFO  [exclusive-task-executor-container-worker-0] o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[64] - Final Script Content:
+====================
+#!/bin/bash
+BASEDIR=$(cd `dirname $0`; pwd)
+cd $BASEDIR
+${FLINK_HOME}/bin/flink run-application -t yarn-application -ys 1 -yjm 1G -ytm 2G -p 1 -sae -c org.example.HelloWorld /tmp/dolphinscheduler/exec/process/4/flink-file-wordcount-1.0-SNAPSHOT.jar --output /tmp/flink/output
+====================
+[WI-0][TI-4] - 2025-11-06 21:24:26.974 INFO  [exclusive-task-executor-container-worker-0] o.a.d.p.t.a.s.BaseShellInterceptor:[46] - Executing shell command : sudo -u cpy -i /tmp/dolphinscheduler/exec/process/4/4.sh
+[WI-0][TI-4] - 2025-11-06 21:24:26.978 INFO  [exclusive-task-executor-container-worker-0] o.a.d.p.t.a.AbstractCommandExecutor:[151] - process start, process id is: 1385
+[WI-0][TI-4] - 2025-11-06 21:24:26.980 INFO  [exclusive-task-executor-container-worker-0] o.a.d.t.e.e.TaskExecutorEventBus:[32] - Publish TaskExecutorRuntimeContextChangedLifecycleEvent: {
+  "taskInstanceId" : 4,
+  "eventCreateTime" : 1762435466979,
+  "type" : "RUNTIME_CONTEXT_CHANGE",
+  "workflowInstanceId" : 4,
+  "taskInstanceHost" : "172.28.0.6:1234",
+  "processId" : 1385,
+  "appIds" : null,
+  "latestReportTime" : null
+}
+[WI-0][TI-4] - 2025-11-06 21:24:26.981 INFO  [PhysicalTaskExecutorLifecycleEventReporter] o.a.d.e.m.TaskExecutorEventRemoteReporterClient:[73] - Report: TaskExecutorDispatchedLifecycleEvent(super=AbstractTaskExecutorLifecycleEvent(super=AbstractDelayEvent(delayTime=0, createTimeInNano=103414540480702, expiredTimeInNano=103414540480902), taskInstanceId=4, eventCreateTime=1762435466934, type=DISPATCHED), workflowInstanceId=4, taskInstanceHost=172.28.0.6:1234, latestReportTime=1762435466971) to master success
+[WI-0][TI-4] - 2025-11-06 21:24:27.020 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-5] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[111] - Report : {
+  "taskInstanceId" : 4,
+  "eventCreateTime" : 1762435466966,
+  "type" : "RUNNING",
+  "workflowInstanceId" : 4,
+  "taskInstanceHost" : "172.28.0.6:1234",
+  "startTime" : 1762435466948,
+  "logPath" : "/opt/dolphinscheduler/worker-server/logs/20251106/156676755523488/4/4/4.log",
+  "executePath" : "/tmp/dolphinscheduler/exec/process/4",
+  "latestReportTime" : null
+}
+[WI-0][TI-4] - 2025-11-06 21:24:27.021 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-5] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[191] - Success fire TaskExecutorStartedLifecycleEvent: {"taskInstanceId":4,"eventCreateTime":1762435466966,"type":"RUNNING","workflowInstanceId":4,"taskInstanceHost":"172.28.0.6:1234","startTime":1762435466948,"logPath":"/opt/dolphinscheduler/worker-server/logs/20251106/156676755523488/4/4/4.log","executePath":"/tmp/dolphinscheduler/exec/process/4","latestReportTime":null} 
+[WI-0][TI-0] - 2025-11-06 21:24:27.038 INFO  [WorkerRpcServer-methodInvoker-14] o.a.d.s.w.r.PhysicalTaskExecutorOperatorImpl:[101] - Receive TaskExecutorLifecycleEventAck: ITaskExecutorLifecycleEventReporter.TaskExecutorLifecycleEventAck(taskExecutorId=4, taskExecutorLifecycleEventType=DISPATCHED)
+[WI-0][TI-0] - 2025-11-06 21:24:27.039 INFO  [WorkerRpcServer-methodInvoker-14] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[137] - Success removed TaskExecutorDispatchedLifecycleEvent(super=AbstractTaskExecutorLifecycleEvent(super=AbstractDelayEvent(delayTime=0, createTimeInNano=103414540480702, expiredTimeInNano=103414540480902), taskInstanceId=4, eventCreateTime=1762435466934, type=DISPATCHED), workflowInstanceId=4, taskInstanceHost=172.28.0.6:1234, latestReportTime=1762435466971) by ack: ITaskExecutorLifecycleEventReporter.TaskExecutorLifecycleEventAck(taskExecutorId=4, taskExecutorLifecycleEventType=DISPATCHED)
+[WI-0][TI-4] - 2025-11-06 21:24:27.047 INFO  [PhysicalTaskExecutorLifecycleEventReporter] o.a.d.e.m.TaskExecutorEventRemoteReporterClient:[73] - Report: TaskExecutorStartedLifecycleEvent(super=AbstractTaskExecutorLifecycleEvent(super=AbstractDelayEvent(delayTime=0, createTimeInNano=103414572217409, expiredTimeInNano=103414572217809), taskInstanceId=4, eventCreateTime=1762435466966, type=RUNNING), workflowInstanceId=4, taskInstanceHost=172.28.0.6:1234, startTime=1762435466948, logPath=/opt/dolphinscheduler/worker-server/logs/20251106/156676755523488/4/4/4.log, executePath=/tmp/dolphinscheduler/exec/process/4, latestReportTime=1762435467040) to master success
+[WI-0][TI-4] - 2025-11-06 21:24:27.071 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-6] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[111] - Report : {
+  "taskInstanceId" : 4,
+  "eventCreateTime" : 1762435466979,
+  "type" : "RUNTIME_CONTEXT_CHANGE",
+  "workflowInstanceId" : 4,
+  "taskInstanceHost" : "172.28.0.6:1234",
+  "processId" : 1385,
+  "appIds" : null,
+  "latestReportTime" : null
+}
+[WI-0][TI-4] - 2025-11-06 21:24:27.071 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-6] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[191] - Success fire TaskExecutorRuntimeContextChangedLifecycleEvent: {"taskInstanceId":4,"eventCreateTime":1762435466979,"type":"RUNTIME_CONTEXT_CHANGE","workflowInstanceId":4,"taskInstanceHost":"172.28.0.6:1234","processId":1385,"appIds":null,"latestReportTime":null} 
+[WI-0][TI-0] - 2025-11-06 21:24:27.165 INFO  [WorkerRpcServer-methodInvoker-15] o.a.d.s.w.r.PhysicalTaskExecutorOperatorImpl:[101] - Receive TaskExecutorLifecycleEventAck: ITaskExecutorLifecycleEventReporter.TaskExecutorLifecycleEventAck(taskExecutorId=4, taskExecutorLifecycleEventType=RUNNING)
+[WI-0][TI-0] - 2025-11-06 21:24:27.166 INFO  [WorkerRpcServer-methodInvoker-15] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[137] - Success removed TaskExecutorStartedLifecycleEvent(super=AbstractTaskExecutorLifecycleEvent(super=AbstractDelayEvent(delayTime=0, createTimeInNano=103414572217409, expiredTimeInNano=103414572217809), taskInstanceId=4, eventCreateTime=1762435466966, type=RUNNING), workflowInstanceId=4, taskInstanceHost=172.28.0.6:1234, startTime=1762435466948, logPath=/opt/dolphinscheduler/worker-server/logs/20251106/156676755523488/4/4/4.log, executePath=/tmp/dolphinscheduler/exec/process/4, latestReportTime=1762435467040) by ack: ITaskExecutorLifecycleEventReporter.TaskExecutorLifecycleEventAck(taskExecutorId=4, taskExecutorLifecycleEventType=RUNNING)
+[WI-0][TI-4] - 2025-11-06 21:24:27.175 INFO  [PhysicalTaskExecutorLifecycleEventReporter] o.a.d.e.m.TaskExecutorEventRemoteReporterClient:[73] - Report: TaskExecutorRuntimeContextChangedLifecycleEvent(super=AbstractTaskExecutorLifecycleEvent(super=AbstractDelayEvent(delayTime=0, createTimeInNano=103414585624852, expiredTimeInNano=103414585625152), taskInstanceId=4, eventCreateTime=1762435466979, type=RUNTIME_CONTEXT_CHANGE), workflowInstanceId=4, taskInstanceHost=172.28.0.6:1234, processId=1385, appIds=null, latestReportTime=1762435467167) to master success
+[WI-0][TI-0] - 2025-11-06 21:24:27.185 INFO  [WorkerRpcServer-methodInvoker-16] o.a.d.s.w.r.PhysicalTaskExecutorOperatorImpl:[101] - Receive TaskExecutorLifecycleEventAck: ITaskExecutorLifecycleEventReporter.TaskExecutorLifecycleEventAck(taskExecutorId=4, taskExecutorLifecycleEventType=RUNTIME_CONTEXT_CHANGE)
+[WI-0][TI-0] - 2025-11-06 21:24:27.186 INFO  [WorkerRpcServer-methodInvoker-16] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[137] - Success removed TaskExecutorRuntimeContextChangedLifecycleEvent(super=AbstractTaskExecutorLifecycleEvent(super=AbstractDelayEvent(delayTime=0, createTimeInNano=103414585624852, expiredTimeInNano=103414585625152), taskInstanceId=4, eventCreateTime=1762435466979, type=RUNTIME_CONTEXT_CHANGE), workflowInstanceId=4, taskInstanceHost=172.28.0.6:1234, processId=1385, appIds=null, latestReportTime=1762435467167) by ack: ITaskExecutorLifecycleEventReporter.TaskExecutorLifecycleEventAck(taskExecutorId=4, taskExecutorLifecycleEventType=RUNTIME_CONTEXT_CHANGE)
+[WI-0][TI-0] - 2025-11-06 21:24:27.979 INFO  [TaskInstanceLogOutput-thread-wow] o.a.d.p.t.a.AbstractTask:[163] -  -> 
+	/tmp/dolphinscheduler/exec/process/4/4.sh: line 4: /bin/flink: No such file or directory
+[WI-0][TI-4] - 2025-11-06 21:24:27.984 INFO  [exclusive-task-executor-container-worker-0] o.a.d.p.t.a.AbstractCommandExecutor:[201] - process has exited. execute path:/tmp/dolphinscheduler/exec/process/4, processId:1385 ,exitStatusCode:127 ,processWaitForStatus:true ,processExitValue:127
+[WI-0][TI-4] - 2025-11-06 21:24:27.985 INFO  [exclusive-task-executor-container-worker-0] o.a.d.p.t.a.u.LogUtils:[78] - Start finding appId in /opt/dolphinscheduler/worker-server/logs/20251106/156676755523488/4/4/4.log, fetch way: log 
+[WI-0][TI-4] - 2025-11-06 21:24:27.988 INFO  [exclusive-task-executor-container-worker-0] o.a.d.t.e.e.TaskExecutorEventBus:[32] - Publish TaskExecutorFailedLifecycleEvent: {
+  "taskInstanceId" : 4,
+  "eventCreateTime" : 1762435467988,
+  "type" : "FAILED",
+  "workflowInstanceId" : 4,
+  "taskInstanceHost" : "172.28.0.6:1234",
+  "appIds" : null,
+  "endTime" : 1762435467988,
+  "latestReportTime" : null
+}
+[WI-0][TI-4] - 2025-11-06 21:24:28.027 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-1] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[111] - Report : {
+  "taskInstanceId" : 4,
+  "eventCreateTime" : 1762435467988,
+  "type" : "FAILED",
+  "workflowInstanceId" : 4,
+  "taskInstanceHost" : "172.28.0.6:1234",
+  "appIds" : null,
+  "endTime" : 1762435467988,
+  "latestReportTime" : null
+}
+[WI-0][TI-4] - 2025-11-06 21:24:28.030 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-1] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[191] - Success fire TaskExecutorFailedLifecycleEvent: {"taskInstanceId":4,"eventCreateTime":1762435467988,"type":"FAILED","workflowInstanceId":4,"taskInstanceHost":"172.28.0.6:1234","appIds":null,"endTime":1762435467988,"latestReportTime":1762435468030} 
+[WI-0][TI-4] - 2025-11-06 21:24:28.037 INFO  [PhysicalTaskExecutorLifecycleEventReporter] o.a.d.e.m.TaskExecutorEventRemoteReporterClient:[73] - Report: TaskExecutorFailedLifecycleEvent(super=AbstractTaskExecutorLifecycleEvent(super=AbstractDelayEvent(delayTime=0, createTimeInNano=103415594241554, expiredTimeInNano=103415594241754), taskInstanceId=4, eventCreateTime=1762435467988, type=FAILED), workflowInstanceId=4, taskInstanceHost=172.28.0.6:1234, appIds=null, endTime=1762435467988, latestReportTime=1762435468030) to master success
+[WI-0][TI-0] - 2025-11-06 21:24:28.108 INFO  [WorkerRpcServer-methodInvoker-17] o.a.d.s.w.r.PhysicalTaskExecutorOperatorImpl:[101] - Receive TaskExecutorLifecycleEventAck: ITaskExecutorLifecycleEventReporter.TaskExecutorLifecycleEventAck(taskExecutorId=4, taskExecutorLifecycleEventType=FAILED)
+[WI-0][TI-0] - 2025-11-06 21:24:28.108 INFO  [WorkerRpcServer-methodInvoker-17] o.a.d.t.e.e.TaskExecutorLifecycleEventRemoteReporter:[137] - Success removed TaskExecutorFailedLifecycleEvent(super=AbstractTaskExecutorLifecycleEvent(super=AbstractDelayEvent(delayTime=0, createTimeInNano=103415594241554, expiredTimeInNano=103415594241754), taskInstanceId=4, eventCreateTime=1762435467988, type=FAILED), workflowInstanceId=4, taskInstanceHost=172.28.0.6:1234, appIds=null, endTime=1762435467988, latestReportTime=1762435468030) by ack: ITaskExecutorLifecycleEventReporter.TaskExecutorLifecycleEventAck(taskExecutorId=4, taskExecutorLifecycleEventType=FAILED)
+[WI-0][TI-0] - 2025-11-06 21:24:28.110 INFO  [WorkerRpcServer-methodInvoker-17] o.a.d.t.e.e.TaskExecutorEventBus:[32] - Publish TaskExecutorFinalizeLifecycleEvent: {
+  "taskInstanceId" : 4,
+  "eventCreateTime" : 1762435468109,
+  "type" : "FINALIZE"
+}
+[WI-0][TI-4] - 2025-11-06 21:24:28.128 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-3] o.a.d.p.t.a.l.TaskInstanceLogHeader:[45] - 🐬 Finalize Task Instance
+[WI-0][TI-4] - 2025-11-06 21:24:28.129 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-3] o.a.d.t.e.c.AbstractTaskExecutorContainer:[99] - FINALIZE_SESSION
+[WI-0][TI-4] - 2025-11-06 21:24:28.132 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-3] o.a.d.s.w.u.TaskExecutionContextUtils:[117] - Deleted task exec directory: /tmp/dolphinscheduler/exec/process/4
+[WI-0][TI-4] - 2025-11-06 21:24:28.133 INFO  [PhysicalTaskExecutorEventBusCoordinator-eventbus-coordinator-worker-3] o.a.d.t.e.e.TaskExecutorEventBusCoordinator:[191] - Success fire TaskExecutorFinalizeLifecycleEvent: {"taskInstanceId":4,"eventCreateTime":1762435468109,"type":"FINALIZE"} 

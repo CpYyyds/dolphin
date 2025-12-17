@@ -1,0 +1,4 @@
+[WI-0][TI-0] - 2025-11-07 12:54:31.858 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[46] - OverLoad: the jvm cpu usage: 1.0 is over then the maxJvmCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-07 12:54:31.881 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - 2025-11-07 12:59:52.954 INFO  [MasterCommandLoopThread] o.a.d.m.m.BaseServerLoadProtection:[46] - OverLoad: the jvm cpu usage: 1.0 is over then the maxJvmCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - 2025-11-07 12:59:52.957 WARN  [MasterCommandLoopThread] o.a.d.s.m.e.c.CommandEngine:[118] - The current server is overload, cannot consumes commands.

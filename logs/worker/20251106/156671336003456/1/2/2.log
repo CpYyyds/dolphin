@@ -1,0 +1,37 @@
+2025-11-06 19:49:22.074 INFO  - 🐬 Initialize Task Context
+2025-11-06 19:49:22.155 INFO  - create linux os user: cpy
+2025-11-06 19:49:22.156 INFO  - execute cmd: sudo useradd -m -g root
+ cpy
+2025-11-06 19:49:22.165 ERROR - PhysicalTaskExecutor{id=2, name=miao, stat=INITIALIZED} execute failed
+java.lang.RuntimeException: Create tenant: {} failed
+	at org.apache.dolphinscheduler.common.utils.OSUtils.createUser(OSUtils.java:215)
+	at org.apache.dolphinscheduler.common.utils.OSUtils.createUserIfAbsent(OSUtils.java:189)
+	at org.apache.dolphinscheduler.server.worker.utils.TenantUtils.getOrCreateActualTenant(TenantUtils.java:70)
+	at org.apache.dolphinscheduler.server.worker.executor.PhysicalTaskExecutor.initializeTaskContext(PhysicalTaskExecutor.java:127)
+	at org.apache.dolphinscheduler.task.executor.AbstractTaskExecutor.start(AbstractTaskExecutor.java:66)
+	at org.apache.dolphinscheduler.task.executor.worker.TaskExecutorWorker.start(TaskExecutorWorker.java:65)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.io.IOException: Cannot run program "sudo": error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at org.apache.dolphinscheduler.common.shell.AbstractShell.runCommand(AbstractShell.java:138)
+	at org.apache.dolphinscheduler.common.shell.AbstractShell.run(AbstractShell.java:118)
+	at org.apache.dolphinscheduler.common.shell.ShellExecutor.execute(ShellExecutor.java:125)
+	at org.apache.dolphinscheduler.common.shell.ShellExecutor.execCommand(ShellExecutor.java:103)
+	at org.apache.dolphinscheduler.common.shell.ShellExecutor.execCommand(ShellExecutor.java:86)
+	at org.apache.dolphinscheduler.common.utils.OSUtils.exeShell(OSUtils.java:342)
+	at org.apache.dolphinscheduler.common.utils.OSUtils.exeCmd(OSUtils.java:331)
+	at org.apache.dolphinscheduler.common.utils.OSUtils.createLinuxUser(OSUtils.java:231)
+	at org.apache.dolphinscheduler.common.utils.OSUtils.createUser(OSUtils.java:211)
+	... 10 common frames omitted
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 19 common frames omitted
+2025-11-06 19:49:22.305 INFO  - 🐬 Finalize Task Instance
+2025-11-06 19:49:22.307 INFO  - FINALIZE_SESSION
