@@ -1,0 +1,86 @@
+services:
+  dolphinscheduler:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: dolphinscheduler-app
+    restart: always
+    hostname: dolphinscheduler
+    environment:
+      # ========== 数据库配置 ==========
+      DATABASE_HOST: mysql
+      DATABASE_PORT: 3306
+      DATABASE_USERNAME: root
+      DATABASE_PASSWORD: 123456
+      DATABASE_DATABASE: dolphinscheduler
+
+      SPRING_SERVLET_MULTIPART_MAX_FILE_SIZE: 1024MB
+      SPRING_SERVLET_MULTIPART_MAX_REQUEST_SIZE: 1024MB
+
+      # ========== ZooKeeper 配置 ==========
+      REGISTRY_TYPE: zookeeper
+      REGISTRY_ZOOKEEPER_CONNECT_STRING: zookeeper:2181
+
+      # ========== Flink 连接信息（环境变量方式）==========
+#      FLINK_HOME: /usr/local/flink
+#      FLINK_CONF_DIR: /usr/local/flink/conf
+
+      # ========== 数据库连接池优化 ==========
+      SPRING_DATASOURCE_HIKARI_CONNECTION_TIMEOUT: 30000
+      SPRING_DATASOURCE_HIKARI_MAXIMUM_POOL_SIZE: 50
+      SPRING_DATASOURCE_HIKARI_MINIMUM_IDLE: 5
+      SPRING_DATASOURCE_HIKARI_IDLE_TIMEOUT: 600000
+      SPRING_DATASOURCE_HIKARI_MAX_LIFETIME: 1800000
+
+      # ========== Worker 分组配置 ==========
+      WORKER_GROUPS: "default"
+
+      # ========== 确保 Worker 正确注册 ==========
+      WORKER_LISTEN_PORT: 1234
+      WORKER_SERVER_PORT: 1235
+      WORKER_EXEC_THREADS: 100
+      WORKER_HEARTBEAT_INTERVAL: 10s
+      WORKER_HOST_WEIGHT: 100
+      WORKER_TENANT_AUTO_CREATE: 'true'
+      WORKER_MAX_CPU_LOAD_AVG: -1
+      WORKER_RESERVED_MEMORY: 0.3
+
+      # ========== Alert 配置 ==========
+      ALERT_LISTEN_PORT: 50052        # Alert gRPC 端口
+      ALERT_SERVER_PORT: 50053        # Alert HTTP 管理端口
+
+      TZ: Asia/Shanghai
+
+    ports:
+    - "12345:12345"  # API Server (HTTP)
+    - "5678:5678"    # Master Server (RPC)
+    - "1234:1234"    # Worker Server (RPC)
+    - "1235:1235"    # Worker Server (HTTP 管理端口)
+    - "50052:50052"  # Alert Server (gRPC)
+    - "50053:50053"  # Alert Server (HTTP 管理端口)
+    volumes:
+      - ./logs/master:/opt/dolphinscheduler/master-server/logs
+      - ./logs/worker:/opt/dolphinscheduler/worker-server/logs
+      - ./logs/api:/opt/dolphinscheduler/api-server/logs
+      - ./logs/alert:/opt/dolphinscheduler/alert-server/logs
+      - ./logs/standalone:/opt/dolphinscheduler/standalone-server/logs
+#      - flink-shared:/usr/local/flink
+      - ./scripts/entrypoint.sh:/opt/entrypoint.sh:ro
+#    networks:
+#      - dolphinscheduler-net
+    deploy:
+      resources:
+        limits:
+          memory: 20G  # 从 8G 改为 16G
+          cpus: '4'
+
+
+#volumes:
+#  flink-shared:
+#    external: true
+#    name: flink-shared
+#
+#networks:
+#  dolphinscheduler-net:
+#    external: true
+#    name: dolphinscheduler-network
