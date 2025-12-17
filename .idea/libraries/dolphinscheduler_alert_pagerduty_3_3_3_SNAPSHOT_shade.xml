@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="dolphinscheduler-alert-pagerduty-3.3.3-SNAPSHOT-shade">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/apache-dolphinscheduler-3.3.1-bin/plugins/alert-plugins/dolphinscheduler-alert-pagerduty/target/dolphinscheduler-alert-pagerduty-3.3.3-SNAPSHOT-shade.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

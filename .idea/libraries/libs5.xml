@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="libs5">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/apache-dolphinscheduler-3.3.1-bin/standalone-server/libs/mysql-connector-j-8.0.33.jar!/" />
+      <root url="jar://$PROJECT_DIR$/apache-dolphinscheduler-3.3.1-bin/standalone-server/libs/dolphinscheduler-standalone-server-3.3.3-SNAPSHOT.jar!/" />
+      <root url="jar://$PROJECT_DIR$/apache-dolphinscheduler-3.3.1-bin/standalone-server/libs/spring-boot-configuration-processor-2.6.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
