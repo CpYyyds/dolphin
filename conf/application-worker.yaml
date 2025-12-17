@@ -1,0 +1,57 @@
+spring:
+  config:
+    import: file:/opt/dolphinscheduler/conf/application-common.yaml
+  main:
+    web-application-type: servlet
+    allow-bean-definition-overriding: true
+
+# Worker 配置
+worker:
+  listen-port: 1234              # RPC 监听端口（服务间通信）
+  groups:
+  - default
+  exec-threads: 100
+  heartbeat-interval: 10s
+  host-weight: 100
+  tenant-auto-create: true
+  max-cpu-load-avg: -1
+  reserved-memory: 0.3
+  registry-disconnect-strategy:
+    strategy: stop
+    max-waiting-time: 100s
+  server-load-protection:
+    enabled: true
+    max-system-cpu-usage-percentage-thresholds: 0.95
+    max-jvm-cpu-usage-percentage-thresholds: 0.95
+    max-system-memory-usage-percentage-thresholds: 0.95
+    max-disk-usage-percentage-thresholds: 0.95
+  task-execute-threads-full-policy: REJECT
+  physical-task-config:
+    task-executor-thread-size: 100
+  tenant-config:
+    auto-create-tenant-enabled: true
+    default-tenant-value: default
+    distributed-tenant-enabled: false
+
+# HTTP 管理端口
+server:
+  port: 1235                      # HTTP 管理端口（监控/健康检查）
+
+# 监控端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,metrics,prometheus
+  endpoint:
+    health:
+      enabled: true
+      show-details: always
+  health:
+    db:
+      enabled: true
+    defaults:
+      enabled: false
+  metrics:
+    tags:
+      application: ${spring.application.name}

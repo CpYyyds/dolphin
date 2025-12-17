@@ -1,0 +1,35 @@
+spring:
+  config:
+    import: file:/opt/dolphinscheduler/conf/application-common.yaml
+  main:
+    web-application-type: none  # Master 不需要 Web 容器
+    allow-bean-definition-overriding: true
+
+
+master:
+  listen-port: 5678
+  exec-threads: 100
+  exec-task-num: 20
+  dispatch-task-num: 3
+  host-selector: lower_weight
+  heartbeat-interval: 10s
+  task-commit-retry-times: 5
+  task-commit-interval: 1s
+  state-wheel-interval: 5s
+  max-cpu-load-avg: -1
+  reserved-memory: 0.3
+  registry-disconnect-strategy:
+    strategy: stop
+    max-waiting-time: 100s
+  failover-interval: 10m
+  kill-yarn-job-when-handle-failover: true
+  server-load-protection:
+    enabled: true
+    # 最大 CPU 使用率阈值（0-1）
+    max-cpu-usage-percentage-thresholds: 0.95
+    # 最大系统内存使用率阈值（0-1）⬇️ 修改这里
+    max-system-memory-usage-percentage-thresholds: 0.95 # 从 0.7 改为 0.9
+    # 最大 JVM 内存使用率阈值（0-1）
+    max-jvm-memory-usage-percentage-thresholds: 0.95
+    # 最大磁盘使用率阈值（0-1）
+    max-disk-usage-percentage-thresholds: 0.95

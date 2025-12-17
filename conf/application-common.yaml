@@ -1,0 +1,93 @@
+spring:
+  profiles:
+    active: mysql
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://mysql:3306/dolphinscheduler?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true&autoReconnect=true&failOverReadOnly=false&maxReconnects=10
+    username: root
+    password: 123456
+
+mybatis-plus:
+  mapper-locations: classpath*:org/apache/dolphinscheduler/dao/mapper/*.xml
+  type-aliases-package: org.apache.dolphinscheduler.dao.entity
+  configuration:
+    cache-enabled: false
+    call-setters-on-nulls: true
+    map-underscore-to-camel-case: true
+    jdbc-type-for-null: NULL
+  global-config:
+    db-config:
+      id-type: auto
+    banner: false
+
+# ========== ZooKeeper 配置（禁用历史节点清理）==========
+registry:
+  type: zookeeper
+  zookeeper:
+    namespace: dolphinscheduler
+    connect-string: zookeeper:2181
+    retry-policy:
+      base-sleep-time: 1000ms
+      max-sleep: 5000ms
+      max-retry-times: 30
+    session-timeout: 300s
+    connection-timeout: 120s
+    block-until-connected: 1800s
+    digest: ~
+
+  # ========== 关键：禁用历史节点清理（修复路径错误）==========
+  clean-history-data-cron: "0 0 0 * * ?"  # 设置为永不执行
+  clean-history-data-enable: false         # 禁用历史数据清理
+
+# ==================== Flink 配置（完整版）====================
+task:
+  plugin:
+    dir: /opt/dolphinscheduler/plugins/task-plugins
+    flink:
+      # Flink 本地安装路径（如果使用本地模式）
+      flink-home: /opt/flink
+      flink-conf-dir: /opt/flink/conf
+      flink-lib-dir: /opt/flink/lib
+
+      # Flink 集群连接信息（关键配置）
+      jobmanager:
+        rpc-address: flink-jobmanager
+        rpc-port: 6123
+        web-port: 8081
+
+      # Flink 任务提交配置
+      execution:
+        target: remote  # 提交模式：remote（远程集群）、local（本地）、yarn-session 等
+
+      # REST API 配置（用于任务提交和监控）
+      rest:
+        address: flink-jobmanager
+        port: 8081
+
+resource:
+  storage:
+    type: LOCAL
+    upload-path: /opt/dolphinscheduler/data/resources
+
+
+data-quality:
+  jar-name: dolphinscheduler-data-quality-dev-SNAPSHOT.jar
+
+logging:
+  level:
+    root: INFO
+    org.apache.dolphinscheduler: INFO
+    org.apache.zookeeper: WARN
+    org.apache.curator: WARN
+    org.apache.curator.framework.recipes.cache: ERROR
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%thread] %logger{36} - %msg%n"
+
+
+## 注意事项
+## mysql5.7一定要用这个驱动com.mysql.cj.jdbc.Driver
+## mybatis-plus一定要显式配置
+## dolphinscheduler3.3.1中zookeeper使用有bug，需要禁用历史节点清理
+## 因为alert和api抢占dolphinscheduler-app的server端口12345，必须进行公共配置以及私有配置的分离，配置alert的web-application-type: none
+## api监听ip地址设置为0.0.0.0，防止只能接收容器内部请求（回环地址127.0.0.1）

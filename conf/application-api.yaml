@@ -1,0 +1,53 @@
+spring:
+  config:
+    import: file:/opt/dolphinscheduler/conf/application-common.yaml
+  main:
+    web-application-type: servlet  # 只有 API 启动 Web 容器
+    allow-bean-definition-overriding: true
+
+
+server:
+  port: 12345
+  address: 0.0.0.0
+  servlet:
+    context-path: /dolphinscheduler
+    session:
+      timeout: 120m
+  tomcat:
+    accept-count: 100
+    max-connections: 10000
+    max-threads: 200
+    min-spare-threads: 10
+  multipart:
+    max-file-size: 1024MB      # 单个文件最大大小
+    max-request-size: 1024MB   # 整个请求最大大小
+
+
+api:
+  audit-enable: true
+  traffic-control:
+    global-switch: false
+    max-global-qps-rate: 300
+    tenant-switch: false
+    default-tenant-qps-rate: 10
+  python-gateway:
+    enabled: true
+    gateway-server-address: 127.0.0.1
+    gateway-server-port: 25333
+    python-address: 127.0.0.1
+    python-port: 25334
+    connect-timeout: 0
+    read-timeout: 0
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,metrics,prometheus
+  endpoint:
+    health:
+      enabled: true
+      show-details: always
+  metrics:
+    tags:
+      application: ${spring.application.name}

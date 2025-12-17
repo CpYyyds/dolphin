@@ -1,0 +1,36 @@
+spring:
+  config:
+    import: file:/opt/dolphinscheduler/conf/application-common.yaml
+  main:
+    web-application-type: servlet  # ✅ 改为 servlet，启用 HTTP 管理端口
+    allow-bean-definition-overriding: true
+
+# Alert Server 配置
+alert:
+  port: 50052                     # gRPC 端口（服务间通信）
+  wait-timeout: 0
+  max-heartbeat-interval: 60s
+  sender-parallelism: 100
+
+# HTTP 管理端口
+server:
+  port: 50053                     # HTTP 管理端口（监控/健康检查）
+
+# 监控端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,metrics,prometheus
+  endpoint:
+    health:
+      enabled: true
+      show-details: always
+  health:
+    db:
+      enabled: true
+    defaults:
+      enabled: false
+  metrics:
+    tags:
+      application: ${spring.application.name}
