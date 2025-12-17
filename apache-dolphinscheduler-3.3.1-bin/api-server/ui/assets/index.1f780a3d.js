@@ -1,0 +1,1 @@
+import{s as t}from"./service.ade35c11.js";function c(e){return t({url:`/projects/${e}/project-preference`,method:"get"})}function n(e,r){return t({url:`/projects/${r}/project-preference`,method:"put",data:e})}function p(e,r){return t({url:`/projects/${r}/project-preference`,method:"post",data:e})}export{p as a,c as q,n as u};

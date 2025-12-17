@@ -1,0 +1,1 @@
+import{s as o}from"./service.ade35c11.js";function s(r){return o({url:`/projects/${r}/worker-group`,method:"get"})}function u(r,e){return o({url:`/projects/${e}/worker-group`,method:"post",data:r})}export{u as a,s as q};
